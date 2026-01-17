@@ -1,0 +1,292 @@
+{
+  "scrape_date": "2026-01-17T17:41:06Z",
+  "total_articles": 26,
+  "articles": [
+    {
+      "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+      "author": "Maisie Edwin",
+      "date": "2026-01-13",
+      "time": null,
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 360,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Council owned leisure centre set for expansion",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
+      "author": "Sam McShane",
+      "date": "2026-01-13",
+      "time": null,
+      "category": "Health",
+      "category_primary": "Features",
+      "word_count": 351,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Bournemouth run club celebrates four years of community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
+      "author": "Vishal Seenath",
+      "date": "2026-01-15",
+      "time": null,
+      "category": "Health",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "BREAKING: Oliver Glasner confirms Marc Guehi departure",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
+      "author": "Finn Payne",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Men's Football",
+      "category_primary": "Sport",
+      "word_count": 126,
+      "content_type": "standard"
+    },
+    {
+      "headline": "BREAKING: Oliver Glasner set to leave Crystal Palace in June",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Men's Football",
+      "category_primary": "Sport",
+      "word_count": null,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "author": "Maisie Edwin",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Can UPFs be avoided on a budget?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Features",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Celebrating the RNLI’s work in Poole",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "author": "Luke Hills",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "News Top",
+      "category_primary": "News",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Council ramp up action on online sales of age-restricted products",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
+      "author": "Grace Oakins",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 280,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Features",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "News Top",
+      "category_primary": "News",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Boxing",
+      "category_primary": "Sport",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Hotel staff take the plunge for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "author": "Grace Oakins",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 111,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Kevin Bales tells us how the dementia workshops came to be",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kevin-bales-tells-us-how-the-dementia-workshops-came-to-be/",
+      "author": "Tiana Hynes",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 615,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "author": "Benji Sampson",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "News Top",
+      "category_primary": "News",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Military microphone business in Upton hit by tariffs",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/military-microphone-business-in-upton-hit-by-tariffs/",
+      "author": "Grace Kehoe",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": null,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Podcast: the toll of homelessness",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "1st News",
+      "category_primary": "News",
+      "word_count": 67,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
+      "author": "Tori Turner",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Dorset",
+      "category_primary": "News",
+      "word_count": 353,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Health",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Southern League Premier South preview",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "author": "Jacob Deighton",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 1175,
+      "content_type": "standard"
+    },
+    {
+      "headline": "The fast fashion disconnect",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Fashion",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "Tonight stitch and movie night",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "author": "Julia Apte",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 209,
+      "content_type": "standard"
+    },
+    {
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "author": "Zack Walker",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": 786,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "author": "Julia Apte",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "New Features",
+      "category_primary": "Features",
+      "word_count": null,
+      "content_type": "shorthand"
+    },
+    {
+      "headline": "WATCH: 3:45pm sports bulletin – January 16",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
+      "author": "Unknown",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "News Top",
+      "category_primary": "News",
+      "word_count": null,
+      "content_type": "standard"
+    },
+    {
+      "headline": "Young Cherries fall to disappointing defeat",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "author": "Greg Masding",
+      "date": "2026-01-16",
+      "time": null,
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": 411,
+      "content_type": "standard"
+    }
+  ]
+}
