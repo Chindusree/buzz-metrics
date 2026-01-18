@@ -1,0 +1,379 @@
+{
+  "generated": "2026-01-18T12:32:41Z",
+  "total_flagged": 14,
+  "flagged_articles": [
+    {
+      "id": "8461fc67b669",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+      "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Small",
+        "Party Councillor Simon Bull"
+      ],
+      "verify_evidence": [
+        "Small",
+        "Simon Bull",
+        "Maisie Edwin"
+      ],
+      "confirmed": [
+        "Small",
+        "Simon Bull"
+      ],
+      "possible": [
+        "Maisie Edwin"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "d0dc88d201d3",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
+      "headline": "BREAKING: Oliver Glasner confirms Marc Guehi departure",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Glasner"
+      ],
+      "verify_evidence": [
+        "Marc"
+      ],
+      "confirmed": [
+        "Glasner"
+      ],
+      "possible": [
+        "Marc"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "9b5bcd7f91c2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Ms Armstrong",
+        "Councillor Armstrong"
+      ],
+      "confirmed": [],
+      "possible": [
+        "Armstrong"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "69d0caa89d60",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "headline": "Celebrating the RNLI’s work in Poole",
+      "scrape_count": 1,
+      "verify_count": 5,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Heritage Officer Alison Hulme"
+      ],
+      "verify_evidence": [
+        "David",
+        "David Richmond-Coggan",
+        "Alison Hulme",
+        "Luke Hills",
+        "Nyah"
+      ],
+      "confirmed": [
+        "Heritage Officer Alison Hulme"
+      ],
+      "possible": [
+        "David",
+        "Luke Hills",
+        "Nyah"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "cd1485975ecc",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "scrape_count": 3,
+      "verify_count": 5,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Wilmot",
+        "Wilder",
+        "Jeffs"
+      ],
+      "verify_evidence": [
+        "Wilmot",
+        "Wilder",
+        "Frosty Jacks",
+        "Lambrini",
+        "Jeffs"
+      ],
+      "confirmed": [
+        "Wilmot",
+        "Wilder",
+        "Jeffs"
+      ],
+      "possible": [],
+      "filtered": [
+        "Frosty Jacks",
+        "Lambrini"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f46adb651043",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "scrape_count": 2,
+      "verify_count": 5,
+      "confirmed_count": 2,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Dennis",
+        "Ball"
+      ],
+      "verify_evidence": [
+        "Dennis",
+        "Moritz Baer",
+        "Terry",
+        "Ball",
+        "Pete"
+      ],
+      "confirmed": [
+        "Dennis",
+        "Ball"
+      ],
+      "possible": [
+        "Moritz Baer",
+        "Terry",
+        "Pete"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "eeadb60f952e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Gabrielle"
+      ],
+      "confirmed": [],
+      "possible": [
+        "Gabrielle"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "c63f93303c5a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kevin-bales-tells-us-how-the-dementia-workshops-came-to-be/",
+      "headline": "Kevin Bales tells us how the dementia workshops came to be",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Kevin"
+      ],
+      "confirmed": [],
+      "possible": [
+        "Kevin"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "e48217df8ae6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "scrape_count": 1,
+      "verify_count": 6,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Williams"
+      ],
+      "verify_evidence": [
+        "Williams",
+        "Richard Sydenham",
+        "John Gunderson",
+        "Jerry Mitchell",
+        "Richard",
+        "John"
+      ],
+      "confirmed": [
+        "Williams"
+      ],
+      "possible": [
+        "Richard Sydenham",
+        "John Gunderson",
+        "Jerry Mitchell"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "d0eceb2acc05",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Jordan Lench",
+        "Grace Ashton"
+      ],
+      "confirmed": [],
+      "possible": [
+        "Jordan Lench",
+        "Grace Ashton"
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "37619d905b65",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "headline": "Southern League Premier South preview",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Hill",
+        "He"
+      ],
+      "verify_evidence": [
+        "Yate",
+        "Hill",
+        "Walton"
+      ],
+      "confirmed": [
+        "Hill"
+      ],
+      "possible": [],
+      "filtered": [
+        "Yate",
+        "Walton"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "e24467b3ddf5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "headline": "The fast fashion disconnect",
+      "scrape_count": 3,
+      "verify_count": 6,
+      "confirmed_count": 3,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Augustyn",
+        "Kooli",
+        "Sal"
+      ],
+      "verify_evidence": [
+        "Augustyn",
+        "Kooli",
+        "Agatha Shepherd-Jones",
+        "Sal",
+        "Paige Buffham\nClothes",
+        "Paige Buffham"
+      ],
+      "confirmed": [
+        "Augustyn",
+        "Kooli",
+        "Sal"
+      ],
+      "possible": [
+        "Agatha Shepherd-Jones",
+        "Paige Buffham"
+      ],
+      "filtered": [
+        "Paige Buffham Clothes"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "96eed46a1e57",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "headline": "Tonight stitch and movie night",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Becca Parker"
+      ],
+      "verify_evidence": [
+        "Becca",
+        "Becca Parker",
+        "COVID"
+      ],
+      "confirmed": [
+        "Becca Parker"
+      ],
+      "possible": [],
+      "filtered": [
+        "COVID"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "4c79ed9d0c43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "He"
+      ],
+      "verify_evidence": [
+        "Sarr"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Sarr"
+      ],
+      "review_status": "pending"
+    }
+  ]
+}

@@ -1,6 +1,62 @@
 {
-  "last_updated": "2026-01-18T12:32:26Z",
+  "last_updated": "2026-01-18T12:32:41Z",
   "total_articles": 26,
+  "summary": {
+    "avg_word_count": 668,
+    "avg_quoted_sources": 0.8,
+    "below_minimum_count": 4,
+    "long_form_count": 9,
+    "breaking_news_count": 2,
+    "by_category": {
+      "News": {
+        "count": 13,
+        "avg_word_count": 453,
+        "avg_sources": 0.7
+      },
+      "Features": {
+        "count": 7,
+        "avg_word_count": 945,
+        "avg_sources": 1.4
+      },
+      "Sport": {
+        "count": 6,
+        "avg_word_count": 477,
+        "avg_sources": 0.2
+      }
+    }
+  },
+  "daily_stats": [
+    {
+      "date": "2026-01-13",
+      "article_count": 2,
+      "target": 12,
+      "meets_target": false,
+      "first_publish_time": "12:48",
+      "first_publish_on_time": false,
+      "below_minimum_count": 0,
+      "long_form_count": 0
+    },
+    {
+      "date": "2026-01-15",
+      "article_count": 1,
+      "target": 12,
+      "meets_target": false,
+      "first_publish_time": "09:11",
+      "first_publish_on_time": true,
+      "below_minimum_count": 0,
+      "long_form_count": 0
+    },
+    {
+      "date": "2026-01-16",
+      "article_count": 23,
+      "target": 12,
+      "meets_target": true,
+      "first_publish_time": "08:00",
+      "first_publish_on_time": true,
+      "below_minimum_count": 4,
+      "long_form_count": 9
+    }
+  ],
   "articles": [
     {
       "id": "8461fc67b669",
@@ -37,7 +93,26 @@
           "gender": "unknown"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Small"
+        },
+        {
+          "name": "Simon Bull"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Maisie Edwin"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "a4c66a98b732",
@@ -54,12 +129,20 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "373e62b14b3d",
@@ -76,7 +159,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-run-club-celebrates-four-years-of-community/index.html",
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -98,7 +181,19 @@
       ],
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "William Vaughan"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "d0dc88d201d3",
@@ -115,7 +210,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -128,7 +223,23 @@
           "gender": "unknown"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Glasner"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Marc"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "f9992a6fe68f",
@@ -145,14 +256,22 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
       "warnings": [
         "Unknown author"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "unknown"
     },
     {
       "id": "9b5bcd7f91c2",
@@ -177,7 +296,19 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation",
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Armstrong"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "be5e87cc8d38",
@@ -224,7 +355,22 @@
       "warnings": [
         "Unknown author",
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Brown"
+        },
+        {
+          "name": "Smith"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "69d0caa89d60",
@@ -241,7 +387,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -256,7 +402,29 @@
       ],
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Heritage Officer Alison Hulme"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "David"
+        },
+        {
+          "name": "Luke Hills"
+        },
+        {
+          "name": "Nyah"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "639284301249",
@@ -278,7 +446,15 @@
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum"
     },
     {
       "id": "cd1485975ecc",
@@ -325,7 +501,28 @@
       "warnings": [
         "Unknown author",
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Wilmot"
+        },
+        {
+          "name": "Wilder"
+        },
+        {
+          "name": "Jeffs"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Frosty Jacks",
+        "Lambrini"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "f46adb651043",
@@ -365,7 +562,32 @@
       "warnings": [
         "Unknown author",
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dennis"
+        },
+        {
+          "name": "Ball"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Moritz Baer"
+        },
+        {
+          "name": "Terry"
+        },
+        {
+          "name": "Pete"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "eeadb60f952e",
@@ -391,7 +613,19 @@
         "Unknown author",
         "Shorthand word count may have ~20% inflation",
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Gabrielle"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "6ec57ade366a",
@@ -408,7 +642,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -421,7 +655,19 @@
           "gender": "unknown"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Abi Paler"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum"
     },
     {
       "id": "c63f93303c5a",
@@ -445,7 +691,19 @@
       "source_evidence": [],
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Kevin"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "e48217df8ae6",
@@ -462,7 +720,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/the-king-of-match-racing-ian-williams/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -477,7 +735,29 @@
       ],
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Williams"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Richard Sydenham"
+        },
+        {
+          "name": "John Gunderson"
+        },
+        {
+          "name": "Jerry Mitchell"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "bd8ce48a20b5",
@@ -494,12 +774,20 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "unknown"
     },
     {
       "id": "7baae3c13fab",
@@ -523,7 +811,15 @@
       "source_evidence": [],
       "warnings": [
         "Unknown author"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum"
     },
     {
       "id": "d2d23997eb42",
@@ -540,12 +836,20 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "d0eceb2acc05",
@@ -571,7 +875,22 @@
         "Unknown author",
         "Shorthand word count may have ~20% inflation",
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Jordan Lench"
+        },
+        {
+          "name": "Grace Ashton"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "37619d905b65",
@@ -588,7 +907,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 2,
@@ -608,7 +927,22 @@
           "gender": "unknown"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Hill"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Yate",
+        "Walton"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "e24467b3ddf5",
@@ -655,7 +989,34 @@
       "warnings": [
         "Unknown author",
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Augustyn"
+        },
+        {
+          "name": "Kooli"
+        },
+        {
+          "name": "Sal"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Agatha Shepherd-Jones"
+        },
+        {
+          "name": "Paige Buffham"
+        }
+      ],
+      "sources_filtered_out": [
+        "Paige Buffham Clothes"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form"
     },
     {
       "id": "96eed46a1e57",
@@ -672,7 +1033,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -685,7 +1046,21 @@
           "gender": "female"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Becca Parker"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "COVID"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum"
     },
     {
       "id": "4c79ed9d0c43",
@@ -702,7 +1077,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -715,7 +1090,17 @@
           "gender": "unknown"
         }
       ],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Sarr"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "60218ea980f4",
@@ -732,7 +1117,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -747,7 +1132,19 @@
       ],
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Cindy Lou"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "6f4ce223a9fc",
@@ -764,14 +1161,22 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
       "warnings": [
         "Unknown author"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "unknown"
     },
     {
       "id": "ee8ca65989fa",
@@ -788,12 +1193,20 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard"
     }
   ]
 }
