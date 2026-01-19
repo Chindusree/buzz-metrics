@@ -1,40 +1,51 @@
 {
-  "last_updated": "2026-01-18T23:00:06Z",
-  "total_articles": 4,
+  "last_updated": "2026-01-19T19:09:46Z",
+  "total_articles": 11,
   "articles": [
     {
-      "id": "69d0caa89d60",
-      "headline": "Celebrating the RNLI’s work in Poole",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
-      "author": "Luke Hills",
+      "id": "9b5bcd7f91c2",
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "author": "Maisie Edwin",
       "author_confidence": "high",
       "date": "2026-01-16",
-      "time": "16:33",
-      "category": "News Top",
-      "category_primary": "News",
-      "word_count": 974,
+      "time": "16:07",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": 714,
       "word_count_confidence": "medium",
       "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
-      "quoted_sources": 1,
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 1,
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Heritage Officer Alison Hulme",
-          "full_attribution": "as RNLI Heritage Officer Alison Hulme explained:",
-          "quote_snippet": "We see the Second World War stories as a heritage ",
-          "position": "before",
-          "gender": "unknown"
+          "name": "Sara Armstrong",
+          "full_attribution": "blockquote cite: Sara Armstrong",
+          "quote_snippet": "\"I do support them. I’m a Cherries fan and they do",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Brent Pease",
+          "full_attribution": "Brent Pease, birds in particular have been found t",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "images": {
-        "total": 3,
+        "total": 6,
         "original": 0,
         "stock": 0,
-        "uncredited": 3,
+        "uncredited": 6,
         "details": [
           {
             "src": "./assets/logo-black-no-text.svg",
@@ -42,12 +53,27 @@
             "classification": "uncredited"
           },
           {
-            "src": "./assets/etdJ5qZ3GT/poole-thomas-kirk-wright-3723x2138.jpg",
+            "src": "./assets/I0yt9N1ROU/img_9462-4032x3024.jpg",
             "credit": "No credit found",
             "classification": "uncredited"
           },
           {
-            "src": "./assets/WEHO2Axw63/2-1920x1440.jpg",
+            "src": "./assets/QsqPXdKELx/6e7a6684-4096x3220.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/JH1BdUbHKr/img_9602-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/9tdlHlCpLn/img_0228-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/6kvBDlTPTI/c3494072-903f-42fc-b453-9c4892db190d-756x1008.jpg",
             "credit": "No credit found",
             "classification": "uncredited"
           }
@@ -82,21 +108,27 @@
           "full_attribution": "Brown said. \"I want to give information to people",
           "quote_snippet": "I don't want to make anybody feel guilty about the",
           "position": "after",
-          "gender": "female"
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Heather Smith",
           "full_attribution": "Smith added.\nTypically, purchasing wholefoods and",
           "quote_snippet": "For dinner? Back to basics. Buy raw, plain meat, v",
           "position": "after",
-          "gender": "female"
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Sophia Lloyd",
           "full_attribution": "Sophia Lloyd, a Poole-based nutritionist who speci",
           "quote_snippet": "",
           "position": "role_description",
-          "gender": "female"
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "images": {
@@ -152,6 +184,255 @@
       ]
     },
     {
+      "id": "cd1485975ecc",
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "author": "Olivia Pagden",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "15:39",
+      "category": "Features",
+      "category_primary": "Features",
+      "word_count": 1428,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/index.html",
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 3,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andrew Wilmot",
+          "full_attribution": "Andrew Wilmot, a member of the Smartphone Free Chi",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "James Wilder",
+          "full_attribution": "James Wilder, the deputy head teacher at St. Peter",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Ali Jeffs",
+          "full_attribution": "Ali Jeffs, a mother from Bournemouth,",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/STPzPGahim/905e57e5-104e-4e0b-85ce-1fb24dc88591-956x1203.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/iaUVg0V8ko/tag-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "eeadb60f952e",
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "author": "Benji Sampson",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "14:48",
+      "category": "Boxing",
+      "category_primary": "Sport",
+      "word_count": 799,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Anthony Joshua",
+          "full_attribution": "Anthony Joshua, the first professional boxer she f",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/bXwgocKBPp/4c8a24cf-0515-4e4d-a786-6b179f003c56-1200x1600.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/T1T6LknMl7/e3344afc-65af-409d-99a0-5d7376ade0e4-enhanced-750x1379.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "7baae3c13fab",
+      "headline": "Homelessness: the psychological toll",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
+      "author": "Unknown",
+      "author_confidence": "low",
+      "date": "2026-01-16",
+      "time": "15:59",
+      "category": "1st News",
+      "category_primary": "News",
+      "word_count": 67,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/a3687826-8ae2-4b8b-a550-7d70cc3e5e51-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "warnings": [
+        "Unknown author"
+      ]
+    },
+    {
+      "id": "6ec57ade366a",
+      "headline": "Hotel staff take the plunge for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "author": "Grace Oakins",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "16:03",
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 111,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-FFFCC19A-45C4-4714-8159-7D10F1AC567D-e1768579242331-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "three people dressed as penguins"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0859-1-360x270.jpg",
+            "classification": "original",
+            "credit": "building Outside the Cumberland Hotel in Bournemouth | Photo: Grace Oakins"
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
+      "id": "d2d23997eb42",
+      "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
+      "author": "Tori Turner",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "14:51",
+      "category": "Dorset",
+      "category_primary": "News",
+      "word_count": 344,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Track96-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
+            "classification": "uncredited",
+            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
       "id": "96eed46a1e57",
       "headline": "Tonight stitch and movie night",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
@@ -173,10 +454,12 @@
       "source_evidence": [
         {
           "name": "Becca Parker",
-          "full_attribution": "space. Becca Parker, the events organiser, said:",
-          "quote_snippet": "The idea is that you have a comfortable place to w",
-          "position": "before",
-          "gender": "female"
+          "full_attribution": "Becca Parker, the events organiser,",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "images": {
@@ -195,55 +478,187 @@
       "warnings": []
     },
     {
-      "id": "6ec57ade366a",
-      "headline": "Hotel staff take the plunge for charity",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
-      "author": "Grace Oakins",
+      "id": "69d0caa89d60",
+      "headline": "Unknown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "author": "Luke Hills",
       "author_confidence": "high",
       "date": "2026-01-16",
-      "time": "16:03",
-      "category": "Local",
+      "time": "16:33",
+      "category": "News Top",
       "category_primary": "News",
-      "word_count": 111,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
+      "word_count": 974,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
+      "quoted_sources": 1,
       "quoted_sources_confidence": "high",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
-      "sources_unknown": 2,
+      "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Abi Paler",
-          "full_attribution": "access to services across Dorset. Abi Paler said,",
-          "quote_snippet": "looking at how much we raised I am proud of what w",
-          "position": "before",
-          "gender": "unknown"
-        },
-        {
-          "name": "Dorset Mind",
-          "full_attribution": "Dorset Mind, a local charity that challenges menta",
+          "name": "David Richmond-Coggan",
+          "full_attribution": "David Richmond-Coggan, the RNLI Fundraising Volunt",
           "quote_snippet": "",
           "position": "role_description",
-          "gender": "unknown"
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "images": {
-        "total": 2,
-        "original": 1,
+        "total": 3,
+        "original": 0,
         "stock": 0,
-        "uncredited": 1,
+        "uncredited": 3,
         "details": [
           {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-FFFCC19A-45C4-4714-8159-7D10F1AC567D-e1768579242331-800x400.jpg",
-            "classification": "uncredited",
-            "credit": "three people dressed as penguins"
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
           },
           {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0859-1-360x270.jpg",
-            "classification": "original",
-            "credit": "building Outside the Cumberland Hotel in Bournemouth | Photo: Grace Oakins"
+            "src": "./assets/etdJ5qZ3GT/poole-thomas-kirk-wright-3723x2138.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/WEHO2Axw63/2-1920x1440.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "60218ea980f4",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "author": "Julia Apte",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "16:13",
+      "category": "New Features",
+      "category_primary": "Features",
+      "word_count": 698,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 3,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Frederica Sindici",
+          "full_attribution": "blockquote cite: Frederica Sindici",
+          "quote_snippet": "\"I really believe in this idea and business, becau",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Chanelle Paris",
+          "full_attribution": "blockquote cite: Chanelle Paris",
+          "quote_snippet": "\"We've been vegan for well over 30 years and have ",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Cindy Lou",
+          "full_attribution": "hey've faced finding restaurants. Cindy Lou said:",
+          "quote_snippet": "Even when there are vegan options, they don't tend",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 6,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/hL2Jbp6hFe/img_2340-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/c6VF4hGsht/img_2318-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/3a5JJfLTH7/img_2321-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/u158tTuaQ0/img_2326-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/VbeW0pN9lC/img_2332-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "ee8ca65989fa",
+      "headline": "Young Cherries fall to disappointing defeat",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "author": "Greg Masding",
+      "author_confidence": "high",
+      "date": "2026-01-16",
+      "time": "15:30",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": 411,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-16-at-15.12.52-800x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-16-at-15.13.20-360x193.png",
+            "classification": "uncredited",
+            "credit": "Colchester celebrate their second (Pictures from AFCBTV)"
           }
         ]
       },

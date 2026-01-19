@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sprint 7.9: Controlled Dataset Test
+Sprint 7.9.2: Controlled Dataset Test
 Test extraction on 4 specific URLs only
 """
 
@@ -8,19 +8,17 @@ import json
 from datetime import datetime
 from scrape import extract_article_metadata
 
-# Test URLs - 2 Shorthand, 2 WordPress
+# Sprint 7.9.2: New test URLs
 TEST_URLS = [
-    # Shorthand
-    "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
-    "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
-    # WordPress
-    "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
-    "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+    'https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/',
+    'https://buzz.bournemouth.ac.uk/2026/01/man-charged-after-human-remains-found/',
+    'https://buzz.bournemouth.ac.uk/2025/10/power-restored-after-storm-amy/',
+    'https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/'
 ]
 
 def main():
     print("=" * 80)
-    print("Sprint 7.9: Controlled Dataset Test")
+    print("Sprint 7.9.2: Controlled Dataset Test")
     print("=" * 80)
     print(f"\nTesting {len(TEST_URLS)} URLs:\n")
 
@@ -37,6 +35,15 @@ def main():
             print(f"    Type: {metadata['content_type']}")
             print(f"    Sources: {metadata['quoted_sources']}")
             print(f"    Word count: {metadata['word_count']}")
+
+            # Sprint 7.9.2: Print Shorthand URL if present
+            if metadata.get('shorthand_url'):
+                print(f"    Shorthand URL: {metadata['shorthand_url']}")
+
+            # Sprint 7.9.2: Print source names
+            if metadata.get('source_evidence'):
+                source_names = [s['name'] for s in metadata['source_evidence']]
+                print(f"    Source names: {', '.join(source_names) if source_names else 'None'}")
         else:
             print(f"  ✗ Failed to extract")
         print()

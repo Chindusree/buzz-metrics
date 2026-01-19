@@ -18,6 +18,35 @@ import hashlib
 
 BASE_URL = "https://buzz.bournemouth.ac.uk"
 
+
+def normalize_quotes(text):
+    """
+    Sprint 8.1: Convert all quote variants to standard straight quotes.
+    This prevents hardcoding of quote types in regex patterns.
+
+    Args:
+        text: Text containing various quote characters
+
+    Returns:
+        str: Text with normalized straight quotes
+    """
+    quote_chars = {
+        '"': '"',  # left double quotation mark
+        '"': '"',  # right double quotation mark
+        '„': '"',  # double low-9 quotation mark
+        '«': '"',  # left-pointing double angle quotation mark
+        '»': '"',  # right-pointing double angle quotation mark
+        ''': "'",  # left single quotation mark
+        ''': "'",  # right single quotation mark
+        '‚': "'",  # single low-9 quotation mark
+        '‹': "'",  # single left-pointing angle quotation mark
+        '›': "'",  # single right-pointing angle quotation mark
+    }
+    for fancy, standard in quote_chars.items():
+        text = text.replace(fancy, standard)
+    return text
+
+
 # Pages to scrape - Sprint 7.3: Homepage only (source of truth)
 PAGES = [
     BASE_URL
@@ -68,7 +97,7 @@ CATEGORY_MAP = {
     "1st News": "News",
 }
 
-# Stock photo indicators for Sprint 6.7
+# Stock photo indicators for Sprint 6.7 + Sprint 7.10 (Uncle Bob three-layer detection)
 STOCK_PHOTO_INDICATORS = {
     'credit_keywords': [
         'pixabay', 'unsplash', 'pexels', 'shutterstock', 'getty', 'istock',
@@ -76,7 +105,7 @@ STOCK_PHOTO_INDICATORS = {
         'ap photo', 'afp'
     ],
     'filename_patterns': [
-        'stock-', 'shutterstock_', 'getty-', 'pixabay-'
+        'pexels-', 'unsplash-', 'shutterstock', 'getty-', 'pixabay-', 'stock-', 'shutterstock_', 'istock'
     ],
     'alt_keywords': [
         'stock photo', 'stock image'
@@ -177,6 +206,38 @@ def clean_source_name(name):
     return ' '.join(cleaned_words) if cleaned_words else name
 
 
+# Sprint 7.12: Role indicators for validating job titles in role_pattern
+ROLE_INDICATORS = [
+    # Professional titles
+    'director', 'manager', 'officer', 'chief', 'head', 'lead', 'coordinator', 'supervisor',
+    'president', 'vice president', 'secretary', 'treasurer', 'chairman', 'chair',
+    # Law enforcement & emergency
+    'detective', 'inspector', 'sergeant', 'constable', 'commissioner', 'sheriff',
+    'firefighter', 'paramedic', 'emt',
+    # Medical
+    'doctor', 'dr', 'nurse', 'surgeon', 'physician', 'consultant', 'practitioner',
+    # Education
+    'professor', 'lecturer', 'teacher', 'instructor', 'principal', 'dean',
+    # Government & public service
+    'councillor', 'councilor', 'mayor', 'minister', 'mp', 'mep', 'senator', 'governor',
+    'ambassador', 'diplomat', 'official',
+    # Legal
+    'judge', 'justice', 'lawyer', 'attorney', 'barrister', 'solicitor',
+    # Media & communications
+    'journalist', 'reporter', 'editor', 'correspondent', 'producer', 'presenter',
+    'spokesperson', 'spokesman', 'spokeswoman',
+    # Business
+    'ceo', 'coo', 'cfo', 'cto', 'founder', 'owner', 'partner', 'analyst', 'consultant',
+    # Creative
+    'artist', 'designer', 'architect', 'author', 'writer', 'photographer',
+    # Sports
+    'coach', 'trainer', 'captain', 'player', 'athlete',
+    # Generic descriptors
+    'student', 'graduate', 'resident', 'volunteer', 'member', 'organiser', 'organizer',
+    'founder', 'activist', 'campaigner', 'researcher'
+]
+
+
 def is_false_positive(name):
     """
     Filter out false positive source names.
@@ -213,6 +274,140 @@ def is_false_positive(name):
     # Names with only numbers
     if name.strip().isdigit():
         return True
+
+    # Sprint 8.1: Location pattern filtering (not hardcoded - uses regex)
+    LOCATION_PATTERNS = [
+        r'^In [A-Z][a-z]+',     # "In Ringwood", "In Glasgow"
+        r'^At [A-Z][a-z]+',     # "At Westminster"
+        r'^From [A-Z][a-z]+',   # "From London"
+        r'^Across [A-Z][a-z]+', # "Across Dorset"
+    ]
+
+    for pattern in LOCATION_PATTERNS:
+        if re.match(pattern, name.strip()):
+            return True
+
+    # Sprint 7.9.3: Filter out non-person entities ("Dorset Council", "City Hall", etc.)
+    # Sprint 7.12: Enhanced with more place/organization keywords
+    org_suffixes = ['council', 'committee', 'department', 'bureau', 'agency', 'office',
+                   'association', 'foundation', 'institute', 'organization', 'society',
+                   'club', 'harbour', 'port', 'beach', 'park', 'centre', 'center']
+    name_words = name_lower.split()
+    if name_words and name_words[-1] in org_suffixes:
+        return True
+
+    return False
+
+
+def is_valid_role_description(role_text):
+    """
+    Sprint 7.12: Validate that role description contains actual job titles.
+    Sprint 7.16: Pattern-based detection instead of keyword matching.
+
+    Strategy:
+    1. If the structure is "a/an/the [description]", it's a role intro
+    2. If structure is "also known as [description]", it's a role intro
+    3. Fallback: check for role indicator words (for other patterns)
+
+    The presence of "a/an/the" before a description signals this is
+    introducing someone's role, regardless of specific job title words.
+
+    Args:
+        role_text: The text after the name in "Name Name, role text" pattern
+
+    Returns:
+        bool: True if role_text is a valid role description
+
+    Examples:
+        "a Poole-based nutritionist who" → True (pattern: "a [description]")
+        "also known as The Food Educator," → True (pattern: "also known as")
+        "marketing manager at BU" → True (fallback: contains "manager")
+        "a beautiful coastal harbour" → False (no role context)
+    """
+    if not role_text:
+        return False
+
+    role_lower = role_text.lower().strip()
+
+    # Sprint 7.16.2: Check for non-person entity descriptors at START of description
+    # These indicate the text is describing an entity (book/charity/org), not a person
+    # CRITICAL: Use pattern matching to distinguish:
+    #   "a charity that..." → REJECT (entity)
+    #   "a charity worker who..." → ACCEPT (person's role has job title after descriptor)
+    # Strategy: Check if descriptor is followed by common entity continuations (that/which/who/by/etc)
+    # rather than a job role word.
+    NON_PERSON_DESCRIPTORS = [
+        ('a book', ['by', 'that', 'which', 'about', 'on', 'exploring', 'examining', 'published']),
+        ('a charity', ['that', 'which', 'supporting', 'helping', 'providing', 'based']),
+        ('a local charity', ['that', 'which', 'supporting', 'helping', 'providing']),
+        ('a national charity', ['that', 'which', 'supporting', 'helping', 'providing']),
+        ('an organization', ['that', 'which', 'providing', 'supporting', 'based']),
+        ('an organisation', ['that', 'which', 'providing', 'supporting', 'based']),
+        ('a company', ['that', 'which', 'specialising', 'based', 'providing']),
+        ('a foundation', ['that', 'which', 'supporting', 'dedicated']),
+        ('a trust', ['that', 'which', 'supporting', 'managing']),
+        ('a group', ['that', 'which', 'supporting', 'dedicated']),
+        ('a campaign', ['that', 'which', 'to', 'for', 'aiming']),
+        ('a movement', ['that', 'which', 'to', 'for', 'aiming']),
+        ('a report', ['that', 'which', 'by', 'published', 'examining']),
+        ('a study', ['that', 'which', 'by', 'published', 'examining']),
+        ('a film', ['that', 'which', 'by', 'about', 'exploring']),
+        ('a documentary', ['that', 'which', 'by', 'about', 'exploring']),
+        ('a podcast', ['that', 'which', 'by', 'about', 'exploring']),
+        ('a programme', ['that', 'which', 'exploring', 'examining']),
+        ('a program', ['that', 'which', 'exploring', 'examining', 'to']),
+        ('a project', ['that', 'which', 'to', 'aiming', 'designed']),
+        ('a service', ['that', 'which', 'providing', 'offering']),
+        ('an app', ['that', 'which', 'for', 'helping']),
+        ('a website', ['that', 'which', 'for', 'providing']),
+        ('a brand', ['that', 'which', 'known', 'specialising']),
+        ('a product', ['that', 'which', 'designed', 'used']),
+        ('a magazine', ['that', 'which', 'published', 'covering']),
+        ('a newspaper', ['that', 'which', 'published', 'covering']),
+        ('a journal', ['that', 'which', 'published', 'dedicated']),
+        ('the book', ['that', 'which', 'examining', 'exploring']),
+        ('the charity', ['that', 'which', 'supporting', 'providing']),
+        ('the organization', ['that', 'which', 'providing', 'supporting']),
+        ('the organisation', ['that', 'which', 'providing', 'supporting']),
+        ('the company', ['that', 'which', 'specialising', 'based']),
+        ('the foundation', ['that', 'which', 'supporting', 'dedicated']),
+        ('the campaign', ['that', 'which', 'to', 'for', 'aiming']),
+        ('the report', ['that', 'which', 'published', 'examining']),
+    ]
+
+    for descriptor, entity_continuations in NON_PERSON_DESCRIPTORS:
+        if role_lower.startswith(descriptor + ' '):
+            # Check what comes after the descriptor
+            rest = role_lower[len(descriptor):].strip()
+            # If it continues with entity patterns (that/which/by/etc), reject
+            for continuation in entity_continuations:
+                if rest.startswith(continuation):
+                    return False
+
+    # Sprint 7.16 defensive check: Reject obvious non-role descriptors
+    # These words indicate the text is describing a place/thing, not a person's role
+    # This handles edge cases like "Poole Harbour, a beautiful coastal location"
+    # (though "Poole Harbour" would already be filtered by is_obvious_non_person)
+    non_role_indicators = ['beautiful', 'coastal', 'location', 'place', 'area',
+                           'building', 'venue', 'site', 'stopping', 'which meets']
+    if any(indicator in role_lower for indicator in non_role_indicators):
+        return False
+
+    # Pattern 1: Starts with article (a/an/the) - role introduction pattern
+    # "a Poole-based nutritionist", "an educator", "the marketing manager"
+    if re.match(r'^(?:a|an|the)\s+\w', role_lower):
+        return True
+
+    # Pattern 2: "also known as" - alias/nickname introduction
+    # "also known as The Food Educator"
+    if 'also known as' in role_lower:
+        return True
+
+    # Pattern 3: Fallback - check for role indicator words (for other patterns)
+    # "marketing manager at BU" (no article, but has "manager")
+    for indicator in ROLE_INDICATORS:
+        if indicator in role_lower:
+            return True
 
     return False
 
@@ -405,10 +600,14 @@ def extract_sources(body_text, soup=None):
     # Step 3: Deduplicate
     unique_sources = deduplicate_sources(sources)
 
-    # Step 4: Add gender detection
+    # Step 4: Add gender detection with context analysis
+    # Sprint 8.2: Use context-aware gender detection for structural sources
     for source in unique_sources:
         if 'gender' not in source:
-            source['gender'] = get_gender(source['name'])
+            gender_info = detect_gender_with_context(source['name'], body_text)
+            source['gender'] = gender_info['gender']
+            source['gender_confidence'] = gender_info['confidence']
+            source['gender_method'] = gender_info['method']
 
     return unique_sources
 
@@ -420,6 +619,11 @@ def classify_image(img, article_body):
     Sprint 6.7.2 improvements:
     - Detects uncredited images (no credit pattern found)
     - Better stock detection using generic description phrases
+
+    Sprint 7.10 - Uncle Bob three-layer detection:
+    Layer 1: Filename patterns (pexels-, unsplash-, etc.) - catches stock even if credit is garbage
+    Layer 2: Sibling caption detection - extract_credit_from_context checks .image-caption spans
+    Layer 3: Credit text keywords (Pexels, Unsplash, Getty, etc.) - classifies as stock
 
     Args:
         img: BeautifulSoup img tag
@@ -558,10 +762,137 @@ def extract_images(article_body):
     }
 
 
+# Sprint 8.2: Common ambiguous/unisex names that benefit from context analysis
+AMBIGUOUS_NAMES = [
+    'alex', 'jordan', 'taylor', 'morgan', 'casey', 'riley', 'jamie',
+    'sam', 'chris', 'pat', 'robin', 'terry', 'lee', 'kim', 'abi', 'abby',
+    'ashley', 'avery', 'bailey', 'cameron', 'charlie', 'drew', 'finley',
+    'frankie', 'hayden', 'jesse', 'justice', 'kendall', 'logan', 'mackenzie',
+    'parker', 'peyton', 'quinn', 'reese', 'sage', 'shawn', 'skyler', 'sydney'
+]
+
+
+def find_pronouns_near_name(text, name, window=200):
+    """
+    Sprint 8.2: Find gendered pronouns within window chars of name.
+
+    Args:
+        text: Full article text
+        name: Person's name to search near
+        window: Character window around name to search
+
+    Returns:
+        dict: {'female': count, 'male': count}
+    """
+    female_pronouns = ['she', 'her', 'herself', 'woman', 'female']
+    male_pronouns = ['he', 'him', 'himself', 'man', 'male']
+
+    pronoun_counts = {'female': 0, 'male': 0}
+
+    # Find all occurrences of the name
+    name_positions = []
+    for match in re.finditer(re.escape(name), text, re.IGNORECASE):
+        name_positions.append(match.start())
+
+    if not name_positions:
+        return pronoun_counts
+
+    # For each name occurrence, search in surrounding window
+    for pos in name_positions:
+        start = max(0, pos - window)
+        end = min(len(text), pos + len(name) + window)
+        context = text[start:end].lower()
+
+        # Count pronouns in this window
+        for pronoun in female_pronouns:
+            # Use word boundary to avoid matching substrings
+            if re.search(r'\b' + pronoun + r'\b', context):
+                pronoun_counts['female'] += 1
+
+        for pronoun in male_pronouns:
+            if re.search(r'\b' + pronoun + r'\b', context):
+                pronoun_counts['male'] += 1
+
+    return pronoun_counts
+
+
+def detect_gender_with_context(full_name, surrounding_text):
+    """
+    Sprint 8.2: Detect gender using three-tier approach:
+    1. First name lookup (gender-guesser)
+    2. Pronoun context search if ambiguous
+    3. Statistical fallback
+
+    Args:
+        full_name: Person's full name
+        surrounding_text: Article text for context analysis
+
+    Returns:
+        dict: {
+            'gender': 'male'|'female'|'unknown',
+            'confidence': 'high'|'medium'|'low',
+            'method': 'name_lookup'|'pronoun_context'|'statistical'
+        }
+    """
+    d = gender.Detector()
+
+    # Skip titles to get first name
+    titles = ['councillor', 'cllr', 'dr', 'detective', 'chief', 'inspector',
+              'sergeant', 'professor', 'mr', 'mrs', 'ms', 'miss', 'sir', 'dame']
+
+    words = full_name.split()
+    first_name = None
+    for word in words:
+        if word.lower() not in titles:
+            first_name = word
+            break
+
+    if not first_name:
+        return {'gender': 'unknown', 'confidence': 'low', 'method': 'none'}
+
+    # Step 1: Check gender-guesser
+    result = d.get_gender(first_name)
+
+    # Sprint 8.2: Check if name is in ambiguous list - override gender-guesser
+    # Some names like "Jordan" return 'male' but are culturally ambiguous
+    is_ambiguous = first_name.lower() in AMBIGUOUS_NAMES
+
+    # High confidence: Clear male/female (not mostly_*) AND not in ambiguous list
+    if result == 'male' and not is_ambiguous:
+        return {'gender': 'male', 'confidence': 'high', 'method': 'name_lookup'}
+    elif result == 'female' and not is_ambiguous:
+        return {'gender': 'female', 'confidence': 'high', 'method': 'name_lookup'}
+
+    # Step 2: For ambiguous/mostly_* names, check pronoun context
+    if result in ['mostly_male', 'mostly_female', 'andy', 'unknown'] or is_ambiguous:
+        pronouns = find_pronouns_near_name(surrounding_text, full_name, window=200)
+
+        # Found female pronouns only
+        if pronouns['female'] > 0 and pronouns['male'] == 0:
+            return {'gender': 'female', 'confidence': 'medium', 'method': 'pronoun_context'}
+
+        # Found male pronouns only
+        if pronouns['male'] > 0 and pronouns['female'] == 0:
+            return {'gender': 'male', 'confidence': 'medium', 'method': 'pronoun_context'}
+
+        # Mixed or no pronouns - fall through to Step 3
+
+    # Step 3: Use mostly_* result as low confidence fallback
+    if result == 'mostly_male':
+        return {'gender': 'male', 'confidence': 'low', 'method': 'statistical'}
+    elif result == 'mostly_female':
+        return {'gender': 'female', 'confidence': 'low', 'method': 'statistical'}
+
+    # Unknown
+    return {'gender': 'unknown', 'confidence': 'low', 'method': 'none'}
+
+
 def get_gender(full_name):
     """
     Extract first name and guess gender.
     Returns: 'male', 'female', or 'unknown'
+
+    NOTE: This is the legacy function. New code should use detect_gender_with_context().
     """
     d = gender.Detector()
 
@@ -672,13 +1003,17 @@ def resolve_full_name(partial_name, text):
 def extract_quoted_sources(text):
     """
     Returns list of sources with evidence and gender.
+    Sprint 8.1: Now uses quote normalization to handle all quote types.
     """
     sources = []
 
+    # Sprint 8.1: Normalize quotes first - this handles ALL quote types
+    # No need to hardcode quote variants in regex
+    text = normalize_quotes(text)
+
     # Step 1: Find all quotes with their positions
-    # Match curly and straight quotes (using explicit Unicode escapes)
-    # Use [^\n] instead of . to prevent matching across paragraph boundaries
-    quote_pattern = r'["\u201C\u201D]([^\n"\u201C\u201D]+?)["\u201C\u201D]'
+    # Sprint 8.1: Simplified pattern - only straight quotes after normalization
+    quote_pattern = r'"([^\n"]+?)"'
 
     for match in re.finditer(quote_pattern, text):
         quote_text = match.group(1)
@@ -725,8 +1060,9 @@ def extract_quoted_sources(text):
         # Pattern: [Capitalised Name] said/says/etc: [quote]
         # Also handles: "quote," Name said. "quote2"
         # Also handles: Name, title/role, said: "quote"
+        # Sprint 7.9.3: Made punctuation optional to handle "Name said that..." patterns
         before_match = re.search(
-            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed)[,:.]\s*$',
+            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed)[,:.]?\s*$',
             context_before
         )
 
@@ -735,6 +1071,15 @@ def extract_quoted_sources(text):
             r'[Aa]ccording to\s+' + name_pattern + r'[,]?\s*$',
             context_before
         )
+
+        # Sprint 8.1: Enhanced dash attribution pattern
+        # Handles en-dash (–), em-dash (—), and hyphen (-) attribution
+        # Pattern: "quote text. – Name, role/description"
+        dash_match = None
+        if not after_match and not before_match and not according_match:
+            # Sprint 8.1: Support all dash types, not just en/em dash
+            dash_pattern = r'^[,.\s]*[–—\-]\s*' + name_pattern + r'(?:,\s+[^,]+)?'
+            dash_match = re.search(dash_pattern, context_after)
 
         # Step 5: Extract name and store evidence
         if after_match:
@@ -773,13 +1118,31 @@ def extract_quoted_sources(text):
                     'quote_snippet': quote_text[:50],
                     'position': 'before'
                 })
+        elif dash_match:
+            # Sprint 7.9.3: Handle en-dash attribution
+            name = dash_match.group(1).strip()
+            name = resolve_full_name(name, text)
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': context_after[:50].strip(),
+                    'quote_snippet': quote_text[:50],
+                    'position': 'dash_attribution'
+                })
 
     # Step 5b: Look for full name with role/description (Shorthand pattern)
     # Pattern: "Sophia Lloyd, a Poole-based nutritionist who..."
-    role_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+a\s+[^,]+(?:who|which|that|,)'
+    # Sprint 7.9.3: Updated to accept optional "a", "the", "an" before role description
+    # Made the ending clause optional to handle "Name, manager of Company" patterns
+    # Sprint 7.12: Enhanced to capture and validate role description text
+    role_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+((?:a|the|an)?\s*[a-z][^,]{2,})(?:who|which|that|,|$)'
     for match in re.finditer(role_pattern, text):
         name = match.group(1).strip()
-        if len(name) >= 5:  # Skip very short names
+        role_text = match.group(2).strip()
+
+        # Sprint 7.12: Validate role description contains actual job titles
+        # This prevents false positives like "Poole Harbour, a beautiful coastal location"
+        if len(name) >= 5 and not is_false_positive(name) and is_valid_role_description(role_text):
             sources.append({
                 'name': name,
                 'full_attribution': match.group(0)[:50],
@@ -822,11 +1185,57 @@ def extract_quoted_sources(text):
                     'position': f'lastname_{verb}'
                 })
 
-    # Step 5d: Look for blockquote patterns (Shorthand pull quotes)
+    # Step 5d: Look for standalone dash attribution
+    # Sprint 8.1: Pattern to find "– Dave Richmond, Bournemouth property owner"
+    # This catches blockquote attributions where quote and attribution are in same element
+    # Format: [any text] [en-dash/em-dash/hyphen] [Name, role/description]
+    # Note: Attribution can be mid-line or start of line, not just ^
+    # Sprint 7.14: Tightened to require multi-word name OR comma after name
+    # This prevents single words like "Qualifying" or "Race" from matching
+
+    # Pattern 1: Multi-word name (2+ words) - with optional role after comma
+    multiword_name_pattern = r'([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+)+)'
+    dash_multiword_pattern = r'[–—]\s+' + multiword_name_pattern + r'(?:,\s+[^,\n]+)?'
+
+    # Pattern 2: Single or multi-word name followed by comma and role (required)
+    name_with_comma_pattern = r'([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3}),\s+[^,\n]+'
+
+    # Try pattern 1 first (multi-word names)
+    dash_matches = list(re.finditer(dash_multiword_pattern, text))
+    for match in dash_matches:
+        name = match.group(1).strip()
+        if not is_false_positive(name):
+            sources.append({
+                'name': name,
+                'full_attribution': match.group(0)[:50].strip(),
+                'quote_snippet': '',
+                'position': 'standalone_dash'
+            })
+
+    # Try pattern 2 (name with comma and role)
+    dash_comma_pattern = r'[–—]\s+' + name_with_comma_pattern
+    dash_comma_matches = list(re.finditer(dash_comma_pattern, text))
+    for match in dash_comma_matches:
+        # Extract just the name part (before comma)
+        full_match = match.group(0)
+        # Find the name before the comma
+        name_match = re.search(r'[–—]\s+([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3}),', full_match)
+        if name_match:
+            name = name_match.group(1).strip()
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': match.group(0)[:50].strip(),
+                    'quote_snippet': '',
+                    'position': 'standalone_dash'
+                })
+
+    # Step 5e: Look for blockquote patterns (Shorthand pull quotes)
+    # Sprint 8.1: Updated to use straight quotes after normalization
     # Pattern 1: Blockquote followed by attribution name
     # Format: > "Quote text"
     #         > Name
-    blockquote_pattern = r'>\s*["\u201C]([^\n"]+?)["\u201D]\s*>\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})'
+    blockquote_pattern = r'>\s*"([^\n"]+?)"\s*>\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})'
     for match in re.finditer(blockquote_pattern, text):
         quote_text = match.group(1).strip()
         name = match.group(2).strip()
@@ -840,7 +1249,8 @@ def extract_quoted_sources(text):
 
     # Pattern 2: Blockquote with name on same line (inline attribution)
     # Format: "Quote" - Name  OR  "Quote" Name
-    blockquote_inline = r'["\u201C]([^\n"]+?)["\u201D]\s*[-–—]?\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})(?=\s*$|[\n\r])'
+    # Sprint 8.1: Updated to use straight quotes after normalization
+    blockquote_inline = r'"([^\n"]+?)"\s*[-–—]?\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})(?=\s*$|[\n\r])'
     for match in re.finditer(blockquote_inline, text, re.MULTILINE):
         quote_text = match.group(1).strip()
         name = match.group(2).strip()
@@ -856,11 +1266,38 @@ def extract_quoted_sources(text):
     # Step 6: Deduplicate by normalized name
     unique_sources = deduplicate_sources(sources)
 
-    # Step 7: Add gender detection
+    # Step 7: Add gender detection with context analysis
+    # Sprint 8.2: Use context-aware gender detection
     for source in unique_sources:
-        source['gender'] = get_gender(source['name'])
+        gender_info = detect_gender_with_context(source['name'], text)
+        source['gender'] = gender_info['gender']
+        source['gender_confidence'] = gender_info['confidence']
+        source['gender_method'] = gender_info['method']
 
-    return unique_sources
+    # Step 8: Sprint 7.14 - Filter obvious non-persons before returning
+    # Previously, scrape.py sources bypassed validation and went straight to "confirmed"
+    # Now apply the same validation used by verify.py
+    try:
+        # Import here to avoid circular dependency
+        import sys
+        import os
+        # Add scraper directory to path
+        scraper_dir = os.path.dirname(os.path.abspath(__file__))
+        if scraper_dir not in sys.path:
+            sys.path.insert(0, scraper_dir)
+
+        from reconcile import is_obvious_non_person
+
+        filtered_sources = []
+        for source in unique_sources:
+            name = source.get('name', '')
+            if not is_obvious_non_person(name):
+                filtered_sources.append(source)
+
+        return filtered_sources
+    except ImportError:
+        # If reconcile.py not available, return unfiltered (backward compatibility)
+        return unique_sources
 
 
 def is_valid_newsday(date_str):
@@ -921,7 +1358,10 @@ def extract_image_credit_from_caption(caption_text):
 
 
 def extract_credit_from_context(elem):
-    """Look for credit text near the image"""
+    """
+    Look for credit text near the image.
+    Sprint 7.10: Added sibling .image-caption detection (Uncle Bob Layer 2).
+    """
     if not elem:
         return ''
 
@@ -931,6 +1371,14 @@ def extract_credit_from_context(elem):
         caption = parent.find('figcaption')
         if caption:
             return caption.get_text(strip=True)
+
+    # Sprint 7.10: Check for sibling image-caption span (featured image pattern)
+    if parent:
+        for sibling in parent.next_siblings:
+            if hasattr(sibling, 'get') and sibling.name in ['span', 'div']:
+                sibling_classes = sibling.get('class', [])
+                if 'image-caption' in sibling_classes:
+                    return sibling.get_text(strip=True)
 
     # Check parent/siblings for caption text
     if parent:
@@ -1189,7 +1637,8 @@ def extract_wordpress_content(soup):
         text_parts.append(text)
 
     # Join for body text
-    body_text = ' '.join(text_parts)
+    # Sprint 8.1: Use newlines to preserve line structure for pattern matching
+    body_text = '\n'.join(text_parts)
 
     # Count words
     word_count = count_words(body_text)

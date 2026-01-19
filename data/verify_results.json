@@ -1,7 +1,121 @@
 {
-  "last_updated": "2026-01-18T23:00:29Z",
-  "total_verified": 4,
+  "last_updated": "2026-01-19T19:10:18Z",
+  "total_verified": 11,
   "results": [
+    {
+      "id": "9b5bcd7f91c2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Ms Armstrong",
+          "context": "PERSON within 50 chars of quote: ...rds tweeting in the middle of the night. However, Ms Armstrong is not opposed to the stadium's expansion. \"I do ..."
+        },
+        {
+          "name": "Councillor Armstrong",
+          "context": "PERSON within 50 chars of quote: ...so much in the community.\"Sara Armstrong Instead, Councillor Armstrong believes that this is an opportunity for Vitality..."
+        }
+      ]
+    },
+    {
+      "id": "be5e87cc8d38",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Brown",
+          "context": "PERSON within 50 chars of quote: ...omething that is ultra processed,\" she explained. Brown, who won a 2025 global recognition award for her ..."
+        },
+        {
+          "name": "Heather Smith",
+          "context": "PERSON within 50 chars of quote: ...hoices that you have been doing.\" Planning is key Heather Smith, a nutrition coach based in Dorset, echoes the im..."
+        },
+        {
+          "name": "Smith",
+          "context": "PERSON within 50 chars of quote: ...the chocolate bars and bags of crisps?\" she said. Smith advocates for keeping a plentiful collection of l..."
+        }
+      ]
+    },
+    {
+      "id": "cd1485975ecc",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Wilmot",
+          "context": "PERSON within 50 chars of quote: ...o ban smartphones to under 14s] in Dorset alone,” Wilmot said. “We are speaking with schools across BCP, a..."
+        },
+        {
+          "name": "Wilder",
+          "context": "PERSON within 50 chars of quote: ...lly should be saying no to smartphone ownership,” Wilder said. “Year seven, eight, nine aged children don'..."
+        },
+        {
+          "name": "Frosty Jacks",
+          "context": "PERSON within 50 chars of quote: ... didn't do is give us 30 boys, several bottles of Frosty Jacks or Lambrini, and told us to go nuts,” Wilmot said..."
+        },
+        {
+          "name": "Lambrini",
+          "context": "PERSON within 50 chars of quote: ...ve us 30 boys, several bottles of Frosty Jacks or Lambrini, and told us to go nuts,” Wilmot said. “You don't..."
+        },
+        {
+          "name": "Jeffs",
+          "context": "PERSON within 50 chars of quote: ... track their children to make sure they're safe,” Jeffs said. With personal past trauma involving a missi..."
+        }
+      ]
+    },
+    {
+      "id": "eeadb60f952e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Gabrielle",
+          "context": "PERSON within 50 chars of quote: ...rything.” Now training out of Legacy Boxing Club, Gabrielle believes she’s found the best environment of her ..."
+        }
+      ]
+    },
+    {
+      "id": "7baae3c13fab",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "6ec57ade366a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Abi Paler",
+          "context": "PERSON within 50 chars of quote: ...d inequality of access to services across Dorset. Abi Paler said, “looking at how much we raised I am proud o..."
+        }
+      ]
+    },
+    {
+      "id": "d2d23997eb42",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "96eed46a1e57",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Becca",
+          "context": "PERSON within 50 chars of quote: ...ke an activity she loves and make it more social. Becca said, “It’s a chance to socialise, get a bit of p..."
+        },
+        {
+          "name": "Becca Parker",
+          "context": "PERSON within 50 chars of quote: ...an rent small offices and time in communal space. Becca Parker, the events organiser, said: “The idea is that yo..."
+        },
+        {
+          "name": "COVID",
+          "context": "PERSON within 50 chars of quote: ...orking from home feeling a bit disconnected after COVID.” Studies from the Financial Times have found 25%..."
+        }
+      ]
+    },
     {
       "id": "69d0caa89d60",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
@@ -30,53 +144,21 @@
       ]
     },
     {
-      "id": "be5e87cc8d38",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
-      "verify_quoted_sources": 3,
-      "verify_evidence": [
-        {
-          "name": "Brown",
-          "context": "PERSON within 50 chars of quote: ...omething that is ultra processed,\" she explained. Brown, who won a 2025 global recognition award for her ..."
-        },
-        {
-          "name": "Heather Smith",
-          "context": "PERSON within 50 chars of quote: ...hoices that you have been doing.\" Planning is key Heather Smith, a nutrition coach based in Dorset, echoes the im..."
-        },
-        {
-          "name": "Smith",
-          "context": "PERSON within 50 chars of quote: ...the chocolate bars and bags of crisps?\" she said. Smith advocates for keeping a plentiful collection of l..."
-        }
-      ]
-    },
-    {
-      "id": "96eed46a1e57",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
-      "verify_quoted_sources": 3,
-      "verify_evidence": [
-        {
-          "name": "Becca",
-          "context": "PERSON within 50 chars of quote: ...ke an activity she loves and make it more social. Becca said, “It’s a chance to socialise, get a bit of p..."
-        },
-        {
-          "name": "Becca Parker",
-          "context": "PERSON within 50 chars of quote: ...an rent small offices and time in communal space. Becca Parker, the events organiser, said: “The idea is that yo..."
-        },
-        {
-          "name": "COVID",
-          "context": "PERSON within 50 chars of quote: ...orking from home feeling a bit disconnected after COVID.” Studies from the Financial Times have found 25%..."
-        }
-      ]
-    },
-    {
-      "id": "6ec57ade366a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "id": "60218ea980f4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
       "verify_quoted_sources": 1,
       "verify_evidence": [
         {
-          "name": "Abi Paler",
-          "context": "PERSON within 50 chars of quote: ...d inequality of access to services across Dorset. Abi Paler said, “looking at how much we raised I am proud o..."
+          "name": "Cindy Lou",
+          "context": "PERSON within 50 chars of quote: ...the challenges they've faced finding restaurants. Cindy Lou said: \"Even when there are vegan options, they do..."
         }
       ]
+    },
+    {
+      "id": "ee8ca65989fa",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     }
   ]
 }

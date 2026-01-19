@@ -1,47 +1,47 @@
 {
-  "generated": "2026-01-18T23:00:34Z",
+  "generated": "2026-01-19T19:10:21Z",
   "total_flagged": 2,
   "flagged_articles": [
     {
-      "id": "69d0caa89d60",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
-      "headline": "Celebrating the RNLI’s work in Poole",
-      "scrape_count": 1,
+      "id": "cd1485975ecc",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "scrape_count": 3,
       "verify_count": 5,
-      "confirmed_count": 1,
-      "possible_count": 3,
-      "filtered_count": 0,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 2,
       "scrape_evidence": [
-        "Heritage Officer Alison Hulme"
+        "Andrew Wilmot",
+        "James Wilder",
+        "Ali Jeffs"
       ],
       "verify_evidence": [
-        "David",
-        "David Richmond-Coggan",
-        "Alison Hulme",
-        "Luke Hills",
-        "Nyah"
+        "Wilmot",
+        "Wilder",
+        "Frosty Jacks",
+        "Lambrini",
+        "Jeffs"
       ],
       "confirmed": [
         {
-          "name": "Heritage Officer Alison Hulme",
-          "gender": "unknown"
-        }
-      ],
-      "possible": [
-        {
-          "name": "David",
+          "name": "Andrew Wilmot",
           "gender": "male"
         },
         {
-          "name": "Luke Hills",
+          "name": "James Wilder",
           "gender": "male"
         },
         {
-          "name": "Nyah",
-          "gender": "female"
+          "name": "Ali Jeffs",
+          "gender": "male"
         }
       ],
-      "filtered": [],
+      "possible": [],
+      "filtered": [
+        "Frosty Jacks",
+        "Lambrini"
+      ],
       "review_status": "pending"
     },
     {

@@ -9,6 +9,14 @@ import re
 from rapidfuzz import fuzz
 import gender_guesser.detector as gender
 
+# Sprint 7.15: Import spaCy for intelligent org/person detection
+try:
+    import spacy
+    nlp = spacy.load('en_core_web_sm')
+    SPACY_AVAILABLE = True
+except (ImportError, OSError):
+    SPACY_AVAILABLE = False
+
 # Initialize gender detector
 gd = gender.Detector()
 
@@ -63,6 +71,12 @@ def clean_name(name):
 
 def is_likely_person(name):
     """
+    DEPRECATED: Sprint 7.13 - Use is_obvious_non_person() instead.
+
+    This function is kept for backwards compatibility but should not be used
+    for NER validation. It rejects names with unknown gender, causing false
+    negatives like "Abi Paler".
+
     Validate if name is likely a person using gender-guesser.
     Returns True if name passes validation, False otherwise.
     """
@@ -106,6 +120,96 @@ def is_likely_person(name):
     if gender_result in ['male', 'female', 'mostly_male', 'mostly_female', 'andy']:
         return True
 
+    return False
+
+
+def is_obvious_non_person(name):
+    """
+    Sprint 7.15: Intelligently detect non-persons using spaCy NER + minimal fallback.
+    Sprint 7.16.1: Single-word name handling using gender-guesser as tiebreaker.
+
+    Strategy:
+    1. spaCy NER says ORG/GPE/LOC → reject (organization/place)
+    2. spaCy NER says PERSON → accept
+    3. Single-word names → use gender-guesser (NER unreliable)
+    4. No NER label → check minimal fallback heuristics
+    5. If nothing matches → trust it (default accept)
+
+    This replaces hardcoded lists with intelligent NER-based detection, keeping
+    only minimal fallbacks for cases spaCy misses.
+
+    Args:
+        name: Name string to validate
+
+    Returns:
+        True if this is obviously NOT a person (org/brand/place), False otherwise
+
+    Examples:
+        "Economic Forum" → True (fallback: ends with "forum")
+        "India Council" → True (NER: ORG)
+        "Run Club" → True (NER: ORG)
+        "David Richmond" → False (NER: PERSON)
+        "Abi Paler" → False (no flag, trusted)
+        "Poole Harbour" → True (fallback: ends with "harbour")
+        "Gabrielle" → False (Sprint 7.16.1: gender-guesser → female)
+        "Becca" → False (Sprint 7.16.1: gender-guesser → female)
+    """
+    if not name or len(name.strip()) < 2:
+        return True
+
+    name_lower = name.lower().strip()
+
+    # Step 1: Check known brands FIRST (before NER)
+    # NER can misclassify brands like "COVID" as PERSON
+    brands = ['covid', 'lambrini', 'frosty jacks', 'jack daniels', 'guinness']
+    if any(brand in name_lower for brand in brands):
+        return True
+
+    # Step 1.5: Sprint 7.16.1 - Single-word name handling
+    # spaCy NER misclassifies single-word names (Gabrielle → ORG, Becca → GPE)
+    # Use gender-guesser as tiebreaker for these cases
+    words = name.strip().split()
+    if len(words) == 1:
+        # Check brand blacklist first (brands that sound like names)
+        single_word_blacklist = ['lambrini', 'covid', 'frosty', 'guinness']
+        if name_lower in single_word_blacklist:
+            return True
+
+        # Use gender-guesser to check if it's a recognized first name
+        gender_result = gd.get_gender(name)
+        if gender_result in ['male', 'female', 'mostly_male', 'mostly_female', 'andy']:
+            return False  # It's a known name, keep it
+
+        # Unknown single word - filter it (likely org/brand abbreviation)
+        return True
+
+    # Step 2: Use spaCy NER if available
+    if SPACY_AVAILABLE:
+        try:
+            doc = nlp(name)
+            for ent in doc.ents:
+                # ORG: organization (AFC Bournemouth, India Council, Run Club)
+                # GPE: geopolitical entity (cities, countries)
+                # LOC: location (Poole Harbour, Town Centre)
+                if ent.label_ in ['ORG', 'GPE', 'LOC', 'FAC', 'EVENT']:
+                    return True  # It's an organization/place/event
+                if ent.label_ == 'PERSON':
+                    return False  # It's a person (trust NER)
+        except Exception:
+            # If NER fails, fall through to fallback heuristics
+            pass
+
+    # Step 3: Minimal fallback for cases spaCy misses
+    # Common org/place suffixes that spaCy sometimes misses
+    non_person_suffixes = ['forum', 'harbour', 'harbor', 'centre', 'center',
+                           'park', 'street', 'road', 'avenue', 'building',
+                           'stadium', 'beach']
+    last_word = name_lower.split()[-1] if name_lower.split() else ''
+    if last_word in non_person_suffixes:
+        return True
+
+    # Step 4: Default - trust it
+    # If NER didn't flag it as org/place AND not in fallback list → probably a person
     return False
 
 
@@ -183,11 +287,17 @@ def reconcile_sources(scrape_evidence, verify_evidence):
     Reconcile sources from scrape.py and verify.py.
 
     Sprint 6.7.2: Now includes gender detection for all sources.
+    Sprint 7.13: Trust NER - accept names even with unknown gender.
+    Sprint 7.16: DEFINITIVE FIX - Trust both detection methods equally.
 
-    Principle:
-    - scrape.py is primary (pattern matching)
-    - verify.py adds sources only when confident (not already in scrape)
-    - verify.py sources must pass person validation
+    NEW PHILOSOPHY (Sprint 7.16):
+    - Both scrape.py (patterns) and verify.py (NER) are trusted EQUALLY
+    - If EITHER finds a valid source, it's CONFIRMED
+    - "Possible" is deprecated (no longer used)
+    - "Filtered" is for obvious non-persons (orgs, places, brands)
+
+    This fixes the fundamental issue where NER-detected sources like "Abi Paler"
+    were demoted to "possible" instead of "confirmed".
 
     Args:
         scrape_evidence: List of dicts with 'name' from scrape.py
@@ -195,60 +305,59 @@ def reconcile_sources(scrape_evidence, verify_evidence):
 
     Returns:
         {
-            'confirmed': [{'name': str, 'gender': str}, ...],  # From scrape.py with gender
-            'possible': [{'name': str, 'gender': str}, ...],   # New valid sources with gender
-            'filtered': [name, ...]                             # Rejected names (strings only)
+            'confirmed': [{'name': str, 'gender': str}, ...],  # All valid sources (from either method)
+            'possible': [],                                     # Deprecated (always empty)
+            'filtered': [name, ...]                             # Rejected names (orgs/places/brands)
         }
     """
     result = {
         'confirmed': [],
-        'possible': [],
+        'possible': [],  # Deprecated - kept for backward compatibility
         'filtered': []
     }
 
-    # Step 1: Add all scrape sources to confirmed (these are primary)
-    scrape_names = []
+    all_sources = []
+    seen_names = set()
+
+    # Step 1: Collect all sources from both methods
+    # From scrape.py (pattern matching)
     for source in scrape_evidence:
-        name = source.get('name')
-        cleaned = clean_name(name)
-        if cleaned and cleaned not in scrape_names:
-            scrape_names.append(cleaned)
-            # Add to confirmed with gender
-            result['confirmed'].append({
-                'name': cleaned,
-                'gender': get_gender(cleaned)
-            })
+        name = clean_name(source.get('name', ''))
+        if name and name.lower() not in seen_names:
+            all_sources.append({'name': name, 'source': 'scrape'})
+            seen_names.add(name.lower())
 
-    # Step 2: Process verify sources
+    # From verify.py (NER)
     for source in verify_evidence:
-        name = source.get('name')
-        cleaned = clean_name(name)
-
-        if not cleaned:
+        name = clean_name(source.get('name', ''))
+        if not name:
             continue
 
-        # Check if already in scrape (confirmed)
-        match = find_match_in_list(cleaned, scrape_names)
-        if match:
-            # Already in confirmed, skip
-            continue
+        # Check if already added (use fuzzy matching to avoid duplicates)
+        match = find_match_in_list(name, [s['name'] for s in all_sources])
+        if not match:
+            all_sources.append({'name': name, 'source': 'verify'})
+            seen_names.add(name.lower())
 
-        # Validate as person
-        if is_likely_person(cleaned):
-            # Valid person not in scrape - add to possible
-            # Check not already in possible
-            possible_names = [s['name'] for s in result['possible']]
-            match_in_possible = find_match_in_list(cleaned, possible_names)
-            if not match_in_possible:
-                result['possible'].append({
-                    'name': cleaned,
-                    'gender': get_gender(cleaned)
-                })
+    # Step 2: Validate each source - trust both methods equally
+    for source in all_sources:
+        name = source['name']
+
+        # Sprint 7.15: Use NER-based validation
+        if is_obvious_non_person(name):
+            # Org/place/brand - filter it
+            if name not in result['filtered']:
+                result['filtered'].append(name)
         else:
-            # Not a person - add to filtered
-            # Check not already in filtered
-            if cleaned not in result['filtered']:
-                result['filtered'].append(cleaned)
+            # Valid person - CONFIRM it (regardless of which method found it)
+            # Check not already in confirmed (fuzzy match)
+            confirmed_names = [s['name'] for s in result['confirmed']]
+            match = find_match_in_list(name, confirmed_names)
+            if not match:
+                result['confirmed'].append({
+                    'name': name,
+                    'gender': get_gender(name)  # May be 'unknown', that's OK
+                })
 
     return result
 
