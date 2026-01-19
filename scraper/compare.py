@@ -8,9 +8,33 @@ Adds editorial metrics tracking (word count status, breaking news, daily stats).
 
 import json
 import re
+import shutil
+import os
 from datetime import datetime
 from collections import defaultdict
 from reconcile import reconcile_sources
+
+
+def normalise_category(category):
+    """
+    Normalize category to one of three sections: General News, Sport, Features.
+    Sprint 6.7.2: Provides consistent section grouping.
+    """
+    if not category:
+        return 'General News'
+
+    cat_lower = category.lower()
+
+    sport_keywords = ['afc bournemouth', 'football', 'boxing', 'rugby',
+                      'cricket', 'tennis', 'sport', 'athletic', 'cherries',
+                      "men's football", 'racing', 'match racing', 'formula', 'wheelchair basketball']
+    if any(kw in cat_lower for kw in sport_keywords):
+        return 'Sport'
+
+    if 'feature' in cat_lower or 'lifestyle' in cat_lower or 'health' in cat_lower:
+        return 'Features'
+
+    return 'General News'
 
 
 def is_breaking_news(headline):
@@ -119,14 +143,18 @@ def main():
         verified_article['quoted_sources_confirmed'] = confirmed_count
         verified_article['quoted_sources_possible'] = possible_count
         verified_article['quoted_sources_confidence'] = new_confidence
-        verified_article['source_evidence_confirmed'] = [{'name': name} for name in reconciled['confirmed']]
-        verified_article['source_evidence_possible'] = [{'name': name} for name in reconciled['possible']]
+        # Sprint 6.7.2: reconciled sources now include gender
+        verified_article['source_evidence_confirmed'] = reconciled['confirmed']
+        verified_article['source_evidence_possible'] = reconciled['possible']
         verified_article['sources_filtered_out'] = reconciled['filtered']
 
         # Add editorial metrics fields
         verified_article['is_breaking_news'] = is_breaking
         verified_article['is_long_form'] = is_long_form
         verified_article['word_count_status'] = word_count_status
+
+        # Add normalized category (Sprint 6.7.2)
+        verified_article['category_normalised'] = normalise_category(article.get('category_primary'))
 
         # Flag if there are filtered sources or possible sources (for manual review)
         if filtered_count > 0 or possible_count > 0:
@@ -165,6 +193,37 @@ def main():
     below_minimum_count = sum(1 for a in verified_articles if a.get('word_count_status') == 'below_minimum')
     long_form_count = sum(1 for a in verified_articles if a.get('word_count_status') == 'long_form')
     breaking_news_count = sum(1 for a in verified_articles if a.get('is_breaking_news'))
+
+    # Calculate image statistics
+    total_images = sum(a.get('images', {}).get('total', 0) for a in verified_articles)
+    original_images = sum(a.get('images', {}).get('original', 0) for a in verified_articles)
+    stock_images = sum(a.get('images', {}).get('stock', 0) for a in verified_articles)
+    uncredited_images = sum(a.get('images', {}).get('uncredited', 0) for a in verified_articles)
+
+    # Calculate by_section stats (Sprint 6.7.2)
+    by_section = defaultdict(lambda: {'count': 0, 'total_word_count': 0, 'total_sources': 0})
+    for a in verified_articles:
+        section = a.get('category_normalised', 'General News')
+        by_section[section]['count'] += 1
+        by_section[section]['total_word_count'] += a.get('word_count', 0) or 0
+        by_section[section]['total_sources'] += a.get('quoted_sources_confirmed', 0)
+
+    by_section_formatted = {}
+    for section, stats in by_section.items():
+        by_section_formatted[section] = {
+            'count': stats['count'],
+            'words': stats['total_word_count'],
+            'sources': stats['total_sources']
+        }
+
+    # Calculate gender breakdown (Sprint 6.7.2)
+    gender_counts = {'male': 0, 'female': 0, 'unknown': 0}
+    for a in verified_articles:
+        confirmed_sources = a.get('source_evidence_confirmed', [])
+        for source in confirmed_sources:
+            gender = source.get('gender', 'unknown')
+            if gender in gender_counts:
+                gender_counts[gender] += 1
 
     # Calculate by_category stats
     by_category = defaultdict(lambda: {'count': 0, 'total_word_count': 0, 'total_sources': 0})
@@ -215,6 +274,12 @@ def main():
             'below_minimum_count': below_minimum_count,
             'long_form_count': long_form_count,
             'breaking_news_count': breaking_news_count,
+            'total_images': total_images,
+            'original_images': original_images,
+            'stock_images': stock_images,
+            'uncredited_images': uncredited_images,
+            'gender_breakdown': gender_counts,
+            'by_section': by_section_formatted,
             'by_category': by_category_formatted
         },
         'daily_stats': daily_stats,
@@ -226,6 +291,11 @@ def main():
         json.dump(verified_output, f, indent=2, ensure_ascii=False)
 
     print(f"✓ Saved verified metrics to {verified_path}")
+
+    # Auto-copy to docs for dashboard
+    docs_path = os.path.join(os.path.dirname(verified_path), '..', 'docs', 'metrics_verified.json')
+    shutil.copy(verified_path, docs_path)
+    print(f"✓ Copied to {docs_path}")
 
     # Save flagged articles
     flagged_output = {

@@ -1,94 +1,7 @@
 {
-  "last_updated": "2026-01-18T10:23:05Z",
-  "total_verified": 26,
+  "last_updated": "2026-01-18T23:00:29Z",
+  "total_verified": 4,
   "results": [
-    {
-      "id": "8461fc67b669",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
-      "verify_quoted_sources": 3,
-      "verify_evidence": [
-        {
-          "name": "Small",
-          "context": "PERSON within 50 chars of quote: ...“Disabled people are excluded from these events,” Small said. “The event may not start until 7pm but they..."
-        },
-        {
-          "name": "Simon Bull",
-          "context": "PERSON within 50 chars of quote: ...ability groups, is needed. Green Party Councillor Simon Bull said: “This isn’t just about parking, it’s about ..."
-        },
-        {
-          "name": "Maisie Edwin",
-          "context": "PERSON within 50 chars of quote: ...suspended, accessibility shouldn’t be either.” By Maisie Edwin Category:Bournemouth,Ethics,Local,News,News Top,P..."
-        }
-      ]
-    },
-    {
-      "id": "a4c66a98b732",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "373e62b14b3d",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "William Vaughan",
-          "context": "PERSON within 50 chars of quote: ...t local coffee shops. “It fills me with joy” says William Vaughan, a member of Sole Clinic, who spoke about how he ..."
-        }
-      ]
-    },
-    {
-      "id": "d0dc88d201d3",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Marc",
-          "context": "PERSON within 50 chars of quote: ...aid: “My latest understanding is that a deal with Marc is in the final stages. I can’t confirm a club, b..."
-        }
-      ]
-    },
-    {
-      "id": "f9992a6fe68f",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "9b5bcd7f91c2",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Ms Armstrong",
-          "context": "PERSON within 50 chars of quote: ...rds tweeting in the middle of the night. However, Ms Armstrong is not opposed to the stadium's expansion. \"I do ..."
-        },
-        {
-          "name": "Councillor Armstrong",
-          "context": "PERSON within 50 chars of quote: ...so much in the community.\"Sara Armstrong Instead, Councillor Armstrong believes that this is an opportunity for Vitality..."
-        }
-      ]
-    },
-    {
-      "id": "be5e87cc8d38",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
-      "verify_quoted_sources": 3,
-      "verify_evidence": [
-        {
-          "name": "Brown",
-          "context": "PERSON within 50 chars of quote: ...omething that is ultra processed,\" she explained. Brown, who won a 2025 global recognition award for her ..."
-        },
-        {
-          "name": "Heather Smith",
-          "context": "PERSON within 50 chars of quote: ...hoices that you have been doing.\" Planning is key Heather Smith, a nutrition coach based in Dorset, echoes the im..."
-        },
-        {
-          "name": "Smith",
-          "context": "PERSON within 50 chars of quote: ...the chocolate bars and bags of crisps?\" she said. Smith advocates for keeping a plentiful collection of l..."
-        }
-      ]
-    },
     {
       "id": "69d0caa89d60",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
@@ -117,209 +30,21 @@
       ]
     },
     {
-      "id": "639284301249",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "cd1485975ecc",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
-      "verify_quoted_sources": 5,
-      "verify_evidence": [
-        {
-          "name": "Wilmot",
-          "context": "PERSON within 50 chars of quote: ...o ban smartphones to under 14s] in Dorset alone,” Wilmot said. “We are speaking with schools across BCP, a..."
-        },
-        {
-          "name": "Wilder",
-          "context": "PERSON within 50 chars of quote: ...lly should be saying no to smartphone ownership,” Wilder said. “Year seven, eight, nine aged children don'..."
-        },
-        {
-          "name": "Frosty Jacks",
-          "context": "PERSON within 50 chars of quote: ... didn't do is give us 30 boys, several bottles of Frosty Jacks or Lambrini, and told us to go nuts,” Wilmot said..."
-        },
-        {
-          "name": "Lambrini",
-          "context": "PERSON within 50 chars of quote: ...ve us 30 boys, several bottles of Frosty Jacks or Lambrini, and told us to go nuts,” Wilmot said. “You don't..."
-        },
-        {
-          "name": "Jeffs",
-          "context": "PERSON within 50 chars of quote: ... track their children to make sure they're safe,” Jeffs said. With personal past trauma involving a missi..."
-        }
-      ]
-    },
-    {
-      "id": "f46adb651043",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
-      "verify_quoted_sources": 5,
-      "verify_evidence": [
-        {
-          "name": "Dennis",
-          "context": "PERSON within 50 chars of quote: ...o get into the National League. On the promotion, Dennis said: \"Everything is in place for us to enter the..."
-        },
-        {
-          "name": "Moritz Baer",
-          "context": "PERSON within 50 chars of quote: ...e Ball, regular attendee at Dorset Demons. Photo: Moritz Baer \"Terry's doing a brilliant job here and he's gett..."
-        },
-        {
-          "name": "Terry",
-          "context": "PERSON within 50 chars of quote: ...ar attendee at Dorset Demons. Photo: Moritz Baer \"Terry's doing a brilliant job here and he's getting lot..."
-        },
-        {
-          "name": "Ball",
-          "context": "PERSON within 50 chars of quote: ...nd he's getting lots of people into the game\"Pete Ball When Pete first started playing wheelchair basket..."
-        },
-        {
-          "name": "Pete",
-          "context": "PERSON within 50 chars of quote: ...tting lots of people into the game\"Pete Ball When Pete first started playing wheelchair basketball there..."
-        }
-      ]
-    },
-    {
-      "id": "eeadb60f952e",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Gabrielle",
-          "context": "PERSON within 50 chars of quote: ...rything.” Now training out of Legacy Boxing Club, Gabrielle believes she’s found the best environment of her ..."
-        }
-      ]
-    },
-    {
-      "id": "6ec57ade366a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Abi Paler",
-          "context": "PERSON within 50 chars of quote: ...d inequality of access to services across Dorset. Abi Paler said, “looking at how much we raised I am proud o..."
-        }
-      ]
-    },
-    {
-      "id": "c63f93303c5a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/kevin-bales-tells-us-how-the-dementia-workshops-came-to-be/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Kevin",
-          "context": "PERSON within 50 chars of quote: ...this theme. Clearly passionate about the project, Kevin said “it was really successful. It kind of did wh..."
-        }
-      ]
-    },
-    {
-      "id": "e48217df8ae6",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
-      "verify_quoted_sources": 6,
-      "verify_evidence": [
-        {
-          "name": "Williams",
-          "context": "PERSON within 50 chars of quote: ... to nine Match Racing World Championship titles,” Williams said. “When I started match racing 30 years ago, ..."
-        },
-        {
-          "name": "Richard Sydenham",
-          "context": "PERSON within 50 chars of quote: ...uilt over years rather than seasons. “I sail with Richard Sydenham, John Gunderson and Jerry Mitchell,” Williams sai..."
-        },
-        {
-          "name": "John Gunderson",
-          "context": "PERSON within 50 chars of quote: ...ther than seasons. “I sail with Richard Sydenham, John Gunderson and Jerry Mitchell,” Williams said, “Richard I’ve..."
-        },
-        {
-          "name": "Jerry Mitchell",
-          "context": "PERSON within 50 chars of quote: ...“I sail with Richard Sydenham, John Gunderson and Jerry Mitchell,” Williams said, “Richard I’ve been sailing with ..."
-        },
-        {
-          "name": "Richard",
-          "context": "PERSON within 50 chars of quote: ...hn Gunderson and Jerry Mitchell,” Williams said, “Richard I’ve been sailing with on and off for 30 years, J..."
-        },
-        {
-          "name": "John",
-          "context": "PERSON within 50 chars of quote: ...years, Jerry’s been with the team since 2005, and John is quite new, he’s been in the last three years.”..."
-        }
-      ]
-    },
-    {
-      "id": "bd8ce48a20b5",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/military-microphone-business-in-upton-hit-by-tariffs/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "7baae3c13fab",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "d2d23997eb42",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "d0eceb2acc05",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Jordan Lench",
-          "context": "PERSON within 50 chars of quote: ...that myself…It is easy to feel isolated,” recalls Jordan Lench. “Having something to look forward to each week” ..."
-        },
-        {
-          "name": "Grace Ashton",
-          "context": "PERSON within 50 chars of quote: ... has been built on a close-knit community. Member Grace Ashton, struggled to stay consistent and “dropped off th..."
-        }
-      ]
-    },
-    {
-      "id": "37619d905b65",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "id": "be5e87cc8d38",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
       "verify_quoted_sources": 3,
       "verify_evidence": [
         {
-          "name": "Yate",
-          "context": "PERSON within 50 chars of quote: ...day we all want more. “I want to win the league.” Yate proved a tough test in the FA Trophy for Poole an..."
+          "name": "Brown",
+          "context": "PERSON within 50 chars of quote: ...omething that is ultra processed,\" she explained. Brown, who won a 2025 global recognition award for her ..."
         },
         {
-          "name": "Hill",
-          "context": "PERSON within 50 chars of quote: ...roved a tough test in the FA Trophy for Poole and Hill is aware of a difficult game ahead. “You never kn..."
+          "name": "Heather Smith",
+          "context": "PERSON within 50 chars of quote: ...hoices that you have been doing.\" Planning is key Heather Smith, a nutrition coach based in Dorset, echoes the im..."
         },
         {
-          "name": "Walton",
-          "context": "PERSON within 50 chars of quote: ...n it’s all about getting points.” Despite leaders Walton and Hersham having two games in hand, Poole could..."
-        }
-      ]
-    },
-    {
-      "id": "e24467b3ddf5",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
-      "verify_quoted_sources": 6,
-      "verify_evidence": [
-        {
-          "name": "Augustyn",
-          "context": "PERSON within 50 chars of quote: ... an urgent need for educating the consumer,\" said Augustyn, who presented on sustainable fashion consumption..."
-        },
-        {
-          "name": "Kooli",
-          "context": "PERSON within 50 chars of quote: ...they keeping pace with these regulatory changes?\" Kooli said. \"Maybe big players yes, they have the resou..."
-        },
-        {
-          "name": "Agatha Shepherd-Jones",
-          "context": "PERSON within 50 chars of quote: ...ut small businesses, are they ready?\" Wardrobe by Agatha Shepherd-Jones Wardrobe by Agatha Shepherd-Jones With the 'Digita..."
-        },
-        {
-          "name": "Sal",
-          "context": "PERSON within 50 chars of quote: ...t so well made, there was thought put into them,\" Sal said. \"People didn't buy as many clothes back the..."
-        },
-        {
-          "name": "Paige Buffham\nClothes",
-          "context": "PERSON within 50 chars of quote: ...ops like a dumping ground these days.\" Clothes by Paige Buffham Clothes by Paige Buffham Making the switch For those want..."
-        },
-        {
-          "name": "Paige Buffham",
-          "context": "PERSON within 50 chars of quote: ... these days.\" Clothes by Paige Buffham Clothes by Paige Buffham Making the switch For those wanting to transition..."
+          "name": "Smith",
+          "context": "PERSON within 50 chars of quote: ...the chocolate bars and bags of crisps?\" she said. Smith advocates for keeping a plentiful collection of l..."
         }
       ]
     },
@@ -343,38 +68,15 @@
       ]
     },
     {
-      "id": "4c79ed9d0c43",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "id": "6ec57ade366a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
       "verify_quoted_sources": 1,
       "verify_evidence": [
         {
-          "name": "Sarr",
-          "context": "PERSON within 50 chars of quote: ...ded was incorrect, saying:“The majority felt that Sarr was very likely to gain possession with the abili..."
+          "name": "Abi Paler",
+          "context": "PERSON within 50 chars of quote: ...d inequality of access to services across Dorset. Abi Paler said, “looking at how much we raised I am proud o..."
         }
       ]
-    },
-    {
-      "id": "60218ea980f4",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Cindy Lou",
-          "context": "PERSON within 50 chars of quote: ...the challenges they've faced finding restaurants. Cindy Lou said: \"Even when there are vegan options, they do..."
-        }
-      ]
-    },
-    {
-      "id": "6f4ce223a9fc",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
-    },
-    {
-      "id": "ee8ca65989fa",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
     }
   ]
 }

@@ -1,231 +1,7 @@
 {
-  "last_updated": "2026-01-18T12:32:26Z",
-  "total_articles": 26,
+  "last_updated": "2026-01-18T23:00:06Z",
+  "total_articles": 4,
   "articles": [
-    {
-      "id": "8461fc67b669",
-      "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
-      "author": "Maisie Edwin",
-      "author_confidence": "high",
-      "date": "2026-01-13",
-      "time": "14:23",
-      "category": "Bournemouth",
-      "category_primary": "News",
-      "word_count": 360,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 2,
-      "source_evidence": [
-        {
-          "name": "Small",
-          "full_attribution": "Small said. “The event may not start until 7pm bu",
-          "quote_snippet": "Disabled people are excluded from these events,",
-          "position": "after",
-          "gender": "unknown"
-        },
-        {
-          "name": "Party Councillor Simon Bull",
-          "full_attribution": "s needed. Green Party Councillor Simon Bull said:",
-          "quote_snippet": "This isn’t just about parking, it’s about independ",
-          "position": "before",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "id": "a4c66a98b732",
-      "headline": "Council owned leisure centre set for expansion",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
-      "author": "Sam McShane",
-      "author_confidence": "high",
-      "date": "2026-01-13",
-      "time": "12:48",
-      "category": "Health",
-      "category_primary": "Features",
-      "word_count": 351,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": []
-    },
-    {
-      "id": "373e62b14b3d",
-      "headline": "Bournemouth run club celebrates four years of community",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
-      "author": "Vishal Seenath",
-      "author_confidence": "high",
-      "date": "2026-01-15",
-      "time": "09:11",
-      "category": "Health",
-      "category_primary": "Features",
-      "word_count": 372,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-run-club-celebrates-four-years-of-community/index.html",
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "William Vaughan",
-          "full_attribution": "says William Vaughan, a member of Sole Clinic, wh",
-          "quote_snippet": "It fills me with joy",
-          "position": "after",
-          "gender": "male"
-        },
-        {
-          "name": "He",
-          "full_attribution": "He says that “the connections built make it fun a",
-          "quote_snippet": "they want to have a good time and do something fun",
-          "position": "after",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": [
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
-    {
-      "id": "d0dc88d201d3",
-      "headline": "BREAKING: Oliver Glasner confirms Marc Guehi departure",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
-      "author": "Finn Payne",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "14:05",
-      "category": "Men's Football",
-      "category_primary": "Sport",
-      "word_count": 126,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Glasner",
-          "full_attribution": "d will be unavailable this weekend. Glasner said:",
-          "quote_snippet": "My latest understanding is that a deal with Marc i",
-          "position": "before",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "id": "f9992a6fe68f",
-      "headline": "BREAKING: Oliver Glasner set to leave Crystal Palace in June",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "14:21",
-      "category": "Men's Football",
-      "category_primary": "Sport",
-      "word_count": null,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Unknown author"
-      ]
-    },
-    {
-      "id": "9b5bcd7f91c2",
-      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
-      "author": "Maisie Edwin",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "16:07",
-      "category": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "word_count": 728,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Shorthand word count may have ~20% inflation",
-        "No quoted sources in article >500 words"
-      ]
-    },
-    {
-      "id": "be5e87cc8d38",
-      "headline": "Can UPFs be avoided on a budget?",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "16:25",
-      "category": "Features",
-      "category_primary": "Features",
-      "word_count": 1832,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/UPFs-on-a-budget/index.html",
-      "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 3,
-      "source_evidence": [
-        {
-          "name": "Brown",
-          "full_attribution": "Brown said. \"I want to give information to people",
-          "quote_snippet": "I don't want to make anybody feel guilty about the",
-          "position": "after",
-          "gender": "unknown"
-        },
-        {
-          "name": "She",
-          "full_attribution": "She added: \"I’m not saying stop eating them becau",
-          "quote_snippet": "I want to give information to people for them to g",
-          "position": "after",
-          "gender": "unknown"
-        },
-        {
-          "name": "Smith",
-          "full_attribution": "Smith added.\nTypically, purchasing wholefoods and",
-          "quote_snippet": "For dinner? Back to basics. Buy raw, plain meat, v",
-          "position": "after",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": [
-        "Unknown author",
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
     {
       "id": "69d0caa89d60",
       "headline": "Celebrating the RNLI’s work in Poole",
@@ -236,7 +12,7 @@
       "time": "16:33",
       "category": "News Top",
       "category_primary": "News",
-      "word_count": 983,
+      "word_count": 974,
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
@@ -254,406 +30,124 @@
           "gender": "unknown"
         }
       ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/etdJ5qZ3GT/poole-thomas-kirk-wright-3723x2138.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/WEHO2Axw63/2-1920x1440.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ]
     },
     {
-      "id": "639284301249",
-      "headline": "Council ramp up action on online sales of age-restricted products",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
-      "author": "Grace Oakins",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "14:02",
-      "category": "Bournemouth",
-      "category_primary": "News",
-      "word_count": 280,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": []
-    },
-    {
-      "id": "cd1485975ecc",
-      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "15:39",
-      "category": "Features",
-      "category_primary": "Features",
-      "word_count": 1433,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/index.html",
-      "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 3,
-      "source_evidence": [
-        {
-          "name": "Wilmot",
-          "full_attribution": "Wilmot said.\n“We are speaking with schools across",
-          "quote_snippet": "I know that we're split between Dorset Council and",
-          "position": "after",
-          "gender": "unknown"
-        },
-        {
-          "name": "Wilder",
-          "full_attribution": "Wilder said. “Year seven, eight, nine aged childr",
-          "quote_snippet": "Families really should be saying no to smartphone ",
-          "position": "after",
-          "gender": "unknown"
-        },
-        {
-          "name": "Jeffs",
-          "full_attribution": "Jeffs said.\nWith personal past trauma involving a",
-          "quote_snippet": "I think it's absolutely ludicrous that [schools ar",
-          "position": "after",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": [
-        "Unknown author",
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
-    {
-      "id": "f46adb651043",
-      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "13:18",
-      "category": "News Top",
-      "category_primary": "News",
-      "word_count": 901,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/dorset-demons-spearheading-wheelchair-basketball-in-dorset/index.html",
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Dennis",
-          "full_attribution": "e National League.\nOn the promotion, Dennis said:",
-          "quote_snippet": "Everything is in place for us to enter the Divisio",
-          "position": "before",
-          "gender": "male"
-        },
-        {
-          "name": "Ball",
-          "full_attribution": "required to play at the Dorset Demons, Ball said:",
-          "quote_snippet": "I think it's a lot more skilful than the NBA. That",
-          "position": "before",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": [
-        "Unknown author",
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
-    {
-      "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "14:48",
-      "category": "Boxing",
-      "category_primary": "Sport",
-      "word_count": 813,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Unknown author",
-        "Shorthand word count may have ~20% inflation",
-        "No quoted sources in article >500 words"
-      ]
-    },
-    {
-      "id": "6ec57ade366a",
-      "headline": "Hotel staff take the plunge for charity",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
-      "author": "Grace Oakins",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "16:03",
-      "category": "Local",
-      "category_primary": "News",
-      "word_count": 111,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Abi Paler",
-          "full_attribution": "access to services across Dorset. Abi Paler said,",
-          "quote_snippet": "looking at how much we raised I am proud of what w",
-          "position": "before",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "id": "c63f93303c5a",
-      "headline": "Kevin Bales tells us how the dementia workshops came to be",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/kevin-bales-tells-us-how-the-dementia-workshops-came-to-be/",
-      "author": "Tiana Hynes",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "15:20",
-      "category": "Bournemouth",
-      "category_primary": "News",
-      "word_count": 615,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ]
-    },
-    {
-      "id": "e48217df8ae6",
-      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
-      "author": "Benji Sampson",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "14:21",
-      "category": "News Top",
-      "category_primary": "News",
-      "word_count": 837,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/the-king-of-match-racing-ian-williams/index.html",
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Williams",
-          "full_attribution": "Williams said. “When I started match racing 30 ye",
-          "quote_snippet": "It’s incredible for us to get to nine Match Racing",
-          "position": "after",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": [
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
-    {
-      "id": "bd8ce48a20b5",
-      "headline": "Military microphone business in Upton hit by tariffs",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/military-microphone-business-in-upton-hit-by-tariffs/",
+      "id": "be5e87cc8d38",
+      "headline": "Can UPFs be avoided on a budget?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
       "author": "Grace Kehoe",
       "author_confidence": "high",
       "date": "2026-01-16",
-      "time": "14:18",
-      "category": "Local",
-      "category_primary": "News",
-      "word_count": null,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": []
-    },
-    {
-      "id": "7baae3c13fab",
-      "headline": "Podcast: the toll of homelessness",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "15:59",
-      "category": "1st News",
-      "category_primary": "News",
-      "word_count": 67,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Unknown author"
-      ]
-    },
-    {
-      "id": "d2d23997eb42",
-      "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
-      "author": "Tori Turner",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "14:51",
-      "category": "Dorset",
-      "category_primary": "News",
-      "word_count": 353,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": []
-    },
-    {
-      "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth’s run clubs are building community",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "12:24",
-      "category": "Health",
+      "time": "16:25",
+      "category": "Features",
       "category_primary": "Features",
-      "word_count": 802,
+      "word_count": 1825,
       "word_count_confidence": "medium",
       "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Unknown author",
-        "Shorthand word count may have ~20% inflation",
-        "No quoted sources in article >500 words"
-      ]
-    },
-    {
-      "id": "37619d905b65",
-      "headline": "Southern League Premier South preview",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
-      "author": "Jacob Deighton",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "12:10",
-      "category": "Local",
-      "category_primary": "News",
-      "word_count": 1175,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 2,
-      "source_evidence": [
-        {
-          "name": "Hill",
-          "full_attribution": "son. Looking ahead to tomorrow’s game, Hill said:",
-          "quote_snippet": "We’ve got to be winning now, we want to get as clo",
-          "position": "before",
-          "gender": "unknown"
-        },
-        {
-          "name": "He",
-          "full_attribution": "g to continue his home goalscoring form. He said:",
-          "quote_snippet": "I’m hoping to start but as long as I’m contributin",
-          "position": "before",
-          "gender": "unknown"
-        }
-      ],
-      "warnings": []
-    },
-    {
-      "id": "e24467b3ddf5",
-      "headline": "The fast fashion disconnect",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "08:00",
-      "category": "Fashion",
-      "category_primary": "Features",
-      "word_count": 1128,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/the-fast-fashion-disconnect/index.html",
+      "shorthand_url": "https://buzznews.shorthandstories.com/UPFs-on-a-budget/index.html",
       "quoted_sources": 3,
       "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 0,
-      "sources_unknown": 1,
+      "sources_male": 0,
+      "sources_female": 3,
+      "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Augustyn",
-          "full_attribution": "said Augustyn, who presented on sustainable fashi",
-          "quote_snippet": "One of our findings at the roundtable was that the",
+          "name": "Rebecca Brown",
+          "full_attribution": "Brown said. \"I want to give information to people",
+          "quote_snippet": "I don't want to make anybody feel guilty about the",
           "position": "after",
-          "gender": "male"
+          "gender": "female"
         },
         {
-          "name": "Kooli",
-          "full_attribution": "Kooli said. \"Maybe big players yes, they have the",
-          "quote_snippet": "Decision makers are doing a lot of work, but looki",
+          "name": "Heather Smith",
+          "full_attribution": "Smith added.\nTypically, purchasing wholefoods and",
+          "quote_snippet": "For dinner? Back to basics. Buy raw, plain meat, v",
           "position": "after",
-          "gender": "unknown"
+          "gender": "female"
         },
         {
-          "name": "Sal",
-          "full_attribution": "Sal said. \"People didn't buy as many clothes back",
-          "quote_snippet": "Vintage pieces are just so well made, there was th",
-          "position": "after",
-          "gender": "male"
+          "name": "Sophia Lloyd",
+          "full_attribution": "Sophia Lloyd, a Poole-based nutritionist who speci",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "female"
         }
       ],
+      "images": {
+        "total": 8,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 8,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/VCA1F3YrGf/untitled-1-1920x1080.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/WEMU2w806u/img_9259-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/qLXmqH6Vw0/img_9260-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/3U8ARQVUGI/img_9261-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/kr1fDPeqsB/img_9266-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/RnomLgQ9UW/untitled-2-1920x1080.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ObXe8zeaps/img_9264-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
       "warnings": [
-        "Unknown author",
         "Shorthand word count may have ~20% inflation"
       ]
     },
@@ -685,114 +179,74 @@
           "gender": "female"
         }
       ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_2269-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
       "warnings": []
     },
     {
-      "id": "4c79ed9d0c43",
-      "headline": "VAR errors have AFC Bournemouth in the forefront",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
-      "author": "Zack Walker",
+      "id": "6ec57ade366a",
+      "headline": "Hotel staff take the plunge for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "author": "Grace Oakins",
       "author_confidence": "high",
       "date": "2026-01-16",
-      "time": "14:42",
-      "category": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "word_count": 786,
+      "time": "16:03",
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 111,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
-      "sources_unknown": 1,
+      "sources_unknown": 2,
       "source_evidence": [
         {
-          "name": "He",
-          "full_attribution": "e in the amount of mistakes has occured. He said:",
-          "quote_snippet": "With all the recent rule changes, it becomes incre",
+          "name": "Abi Paler",
+          "full_attribution": "access to services across Dorset. Abi Paler said,",
+          "quote_snippet": "looking at how much we raised I am proud of what w",
           "position": "before",
+          "gender": "unknown"
+        },
+        {
+          "name": "Dorset Mind",
+          "full_attribution": "Dorset Mind, a local charity that challenges menta",
+          "quote_snippet": "",
+          "position": "role_description",
           "gender": "unknown"
         }
       ],
-      "warnings": []
-    },
-    {
-      "id": "60218ea980f4",
-      "headline": "Veganuary: not just a trend but a sustainable goal",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
-      "author": "Julia Apte",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "16:13",
-      "category": "New Features",
-      "category_primary": "Features",
-      "word_count": 698,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 1,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Cindy Lou",
-          "full_attribution": "hey've faced finding restaurants. Cindy Lou said:",
-          "quote_snippet": "Even when there are vegan options, they don't tend",
-          "position": "before",
-          "gender": "female"
-        }
-      ],
-      "warnings": [
-        "Shorthand word count may have ~20% inflation"
-      ]
-    },
-    {
-      "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin – January 16",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
-      "author": "Unknown",
-      "author_confidence": "low",
-      "date": "2026-01-16",
-      "time": "15:28",
-      "category": "News Top",
-      "category_primary": "News",
-      "word_count": null,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "warnings": [
-        "Unknown author"
-      ]
-    },
-    {
-      "id": "ee8ca65989fa",
-      "headline": "Young Cherries fall to disappointing defeat",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
-      "author": "Greg Masding",
-      "author_confidence": "high",
-      "date": "2026-01-16",
-      "time": "15:30",
-      "category": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "word_count": 411,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-FFFCC19A-45C4-4714-8159-7D10F1AC567D-e1768579242331-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "three people dressed as penguins"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0859-1-360x270.jpg",
+            "classification": "original",
+            "credit": "building Outside the Cumberland Hotel in Bournemouth | Photo: Grace Oakins"
+          }
+        ]
+      },
       "warnings": []
     }
   ]

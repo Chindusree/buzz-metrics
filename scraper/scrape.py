@@ -18,13 +18,9 @@ import hashlib
 
 BASE_URL = "https://buzz.bournemouth.ac.uk"
 
-# Pages to scrape
+# Pages to scrape - Sprint 7.3: Homepage only (source of truth)
 PAGES = [
-    BASE_URL,
-    f"{BASE_URL}/category/sport/",
-    f"{BASE_URL}/category/news-top/",
-    f"{BASE_URL}/category/local/",
-    f"{BASE_URL}/category/lifestyle/"
+    BASE_URL
 ]
 
 # Valid newsday date ranges (Mon-Fri only)
@@ -71,6 +67,495 @@ CATEGORY_MAP = {
     "Fashion": "Features",
     "1st News": "News",
 }
+
+# Stock photo indicators for Sprint 6.7
+STOCK_PHOTO_INDICATORS = {
+    'credit_keywords': [
+        'pixabay', 'unsplash', 'pexels', 'shutterstock', 'getty', 'istock',
+        'adobe stock', 'dreamstime', 'alamy', 'reuters', 'pa images', 'pa media',
+        'ap photo', 'afp'
+    ],
+    'filename_patterns': [
+        'stock-', 'shutterstock_', 'getty-', 'pixabay-'
+    ],
+    'alt_keywords': [
+        'stock photo', 'stock image'
+    ]
+}
+
+# Generic stock photo phrases - Sprint 6.7.2
+GENERIC_STOCK_PHRASES = [
+    'person on laptop', 'person on phone', 'person typing',
+    'woman on laptop', 'man on laptop', 'hands typing',
+    'office worker', 'business meeting', 'handshake',
+    'stock photo', 'stock image'
+]
+
+
+# =============================================================================
+# SPRINT 7.8: SHARED HELPER FUNCTIONS
+# =============================================================================
+
+def count_words(text):
+    """
+    Clean word counting on body text only.
+    Excludes navigation, captions, and peripheral content.
+
+    Args:
+        text: Clean body text (already filtered)
+
+    Returns:
+        int: Word count
+    """
+    if not text:
+        return 0
+    words = text.split()
+    return len(words)
+
+
+def is_caption_text(text):
+    """
+    Detect if text is likely a photo caption (not body content).
+
+    Args:
+        text: Text string to check
+
+    Returns:
+        bool: True if likely a caption
+    """
+    if not text:
+        return False
+
+    text_lower = text.lower().strip()
+
+    # Check for caption indicators
+    caption_indicators = [
+        'photo by', 'photo taken by', 'image by', 'photograph by',
+        'credit:', 'credits:', 'source:', 'courtesy of',
+        'picture by', 'pic by', 'getty', 'shutterstock',
+        'unsplash', 'pexels', 'pixabay', 'reuters', 'pa images'
+    ]
+
+    if any(indicator in text_lower for indicator in caption_indicators):
+        return True
+
+    # Check length - captions are typically short
+    word_count = len(text.split())
+    if word_count < 5:
+        return True
+
+    return False
+
+
+def clean_source_name(name):
+    """
+    Remove titles and prefixes from source names.
+
+    Args:
+        name: Full name string
+
+    Returns:
+        str: Cleaned name
+    """
+    if not name:
+        return name
+
+    # Titles to remove
+    titles = [
+        'councillor', 'cllr', 'dr', 'detective', 'chief', 'inspector',
+        'sergeant', 'professor', 'mr', 'mrs', 'ms', 'miss', 'sir', 'dame',
+        'rev', 'reverend', 'father', 'sister', 'brother'
+    ]
+
+    words = name.split()
+    cleaned_words = []
+
+    for word in words:
+        if word.lower() not in titles:
+            cleaned_words.append(word)
+
+    return ' '.join(cleaned_words) if cleaned_words else name
+
+
+def is_false_positive(name):
+    """
+    Filter out false positive source names.
+
+    Args:
+        name: Name string to check
+
+    Returns:
+        bool: True if this is a false positive
+    """
+    if not name:
+        return True
+
+    name_lower = name.lower().strip()
+
+    # Common false positives
+    false_positives = [
+        'the', 'this', 'that', 'they', 'there', 'these', 'those',
+        'what', 'when', 'where', 'which', 'who', 'why', 'how',
+        # Sprint 7.9.1: Add pronouns to filter out false positives
+        'she', 'he', 'they', 'her', 'him', 'them', 'it', 'we', 'us', 'i', 'you',
+        'january', 'february', 'march', 'april', 'may', 'june',
+        'july', 'august', 'september', 'october', 'november', 'december',
+        'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'
+    ]
+
+    if name_lower in false_positives:
+        return True
+
+    # Names that are too short (single letter)
+    if len(name.strip()) < 2:
+        return True
+
+    # Names with only numbers
+    if name.strip().isdigit():
+        return True
+
+    return False
+
+
+def is_credit_text(text):
+    """
+    Identify if text contains image credit information.
+
+    Args:
+        text: Text to check
+
+    Returns:
+        bool: True if this is credit text
+    """
+    if not text:
+        return False
+
+    text_lower = text.lower()
+
+    credit_keywords = [
+        'photo by', 'photo taken by', 'image by', 'photograph by',
+        'credit:', 'credits:', 'source:', '©', 'copyright',
+        'courtesy of', 'picture by'
+    ]
+
+    return any(keyword in text_lower for keyword in credit_keywords)
+
+
+# =============================================================================
+# SPRINT 7.8: SOURCE EXTRACTION FUNCTIONS
+# =============================================================================
+
+def find_attribution_near(quote_elem):
+    """
+    Find attribution text near a structural quote element.
+
+    Args:
+        quote_elem: BeautifulSoup element (blockquote, etc.)
+
+    Returns:
+        str or None: Attribution text if found
+    """
+    if not quote_elem:
+        return None
+
+    # Check for figcaption or caption sibling
+    next_sibling = quote_elem.find_next_sibling()
+    if next_sibling and next_sibling.name in ['figcaption', 'cite', 'p']:
+        text = next_sibling.get_text(strip=True)
+        # Check if it looks like an attribution (short, has a name pattern)
+        if len(text) < 100 and re.search(r'[A-Z][a-z]+', text):
+            return text
+
+    # Check parent for figcaption
+    parent = quote_elem.parent
+    if parent and parent.name == 'figure':
+        caption = parent.find('figcaption')
+        if caption:
+            return caption.get_text(strip=True)
+
+    return None
+
+
+def extract_name_from_attribution(text):
+    """
+    Extract a person's name from attribution text.
+
+    Args:
+        text: Attribution text (e.g., "- John Smith" or "John Smith, CEO")
+
+    Returns:
+        str or None: Extracted name
+    """
+    if not text:
+        return None
+
+    # Remove leading dashes, em-dashes, etc.
+    text = re.sub(r'^[-–—\s]+', '', text)
+
+    # Pattern: Capture full name (2-4 words, capitalized)
+    name_pattern = r'^([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){1,3})'
+    match = re.search(name_pattern, text)
+
+    if match:
+        name = match.group(1).strip()
+        # Clean and validate
+        name = clean_source_name(name)
+        if not is_false_positive(name):
+            return name
+
+    return None
+
+
+def extract_structural_sources(soup):
+    """
+    Extract sources from structural quote elements (blockquotes, pull quotes).
+
+    Sprint 7.8.1: Enhanced to handle inline attributions within blockquotes.
+
+    Args:
+        soup: BeautifulSoup object of article content
+
+    Returns:
+        list: List of source dicts with name, attribution, quote_snippet
+    """
+    sources = []
+
+    if not soup:
+        return sources
+
+    # Find all blockquote elements
+    blockquotes = soup.find_all('blockquote')
+
+    for bq in blockquotes:
+        quote_text = bq.get_text(strip=True)
+
+        # Skip very short quotes
+        if len(quote_text) < 10:
+            continue
+
+        # Skip if it's just an attribution line
+        if len(quote_text.split()) < 5:
+            continue
+
+        # SPRINT 7.8.1: First check for CHILD attribution elements within the blockquote
+        # Shorthand uses <footer><cite> for pull quote attributions
+        cite_elem = bq.find('cite')
+        footer_elem = bq.find('footer')
+
+        attribution_name = None
+        if cite_elem:
+            attribution_name = cite_elem.get_text(strip=True)
+        elif footer_elem:
+            attribution_name = footer_elem.get_text(strip=True)
+
+        if attribution_name:
+            # Validate the name
+            if not is_false_positive(attribution_name) and len(quote_text) >= 10:
+                sources.append({
+                    'name': attribution_name,
+                    'full_attribution': f'blockquote cite: {attribution_name}',
+                    'quote_snippet': quote_text[:50],
+                    'position': 'blockquote-inline'
+                })
+                continue  # Found attribution, don't look elsewhere
+
+        # If no inline attribution found, look for attribution near the blockquote
+        attribution_text = find_attribution_near(bq)
+
+        if attribution_text:
+            name = extract_name_from_attribution(attribution_text)
+            if name:
+                sources.append({
+                    'name': name,
+                    'full_attribution': attribution_text[:50],
+                    'quote_snippet': quote_text[:50],
+                    'position': 'structural_blockquote'
+                })
+
+    return sources
+
+
+def extract_sources(body_text, soup=None):
+    """
+    Unified source extraction combining structural and text-based patterns.
+
+    This function extracts quoted sources from article content using:
+    1. Structural patterns (blockquotes, pull quotes)
+    2. Text-based patterns (inline quotes with attribution)
+
+    Args:
+        body_text: Clean body text (peripherals already removed)
+        soup: Optional BeautifulSoup object for structural extraction
+
+    Returns:
+        list: Deduplicated list of source dicts with gender detection
+    """
+    sources = []
+
+    # Step 1: Extract from structural elements if soup provided
+    if soup:
+        structural_sources = extract_structural_sources(soup)
+        sources.extend(structural_sources)
+
+    # Step 2: Extract from text patterns (using existing extract_quoted_sources logic)
+    # This includes: quotes with attribution, role descriptions, lastname+verbs, blockquote patterns
+    text_sources = extract_quoted_sources(body_text)
+    sources.extend(text_sources)
+
+    # Step 3: Deduplicate
+    unique_sources = deduplicate_sources(sources)
+
+    # Step 4: Add gender detection
+    for source in unique_sources:
+        if 'gender' not in source:
+            source['gender'] = get_gender(source['name'])
+
+    return unique_sources
+
+
+def classify_image(img, article_body):
+    """
+    Classify an image as 'stock', 'original', or 'uncredited'.
+
+    Sprint 6.7.2 improvements:
+    - Detects uncredited images (no credit pattern found)
+    - Better stock detection using generic description phrases
+
+    Args:
+        img: BeautifulSoup img tag
+        article_body: Article body element for finding captions
+
+    Returns:
+        tuple: (classification, credit_text)
+    """
+    # Get all possible credit/caption sources
+    credit_sources = []
+
+    # Check img attributes
+    alt_text = img.get('alt', '')
+    credit_sources.append(alt_text)
+    credit_sources.append(img.get('title', ''))
+    credit_sources.append(img.get('data-caption', ''))
+
+    # Check nearby figcaption
+    parent = img.find_parent('figure')
+    if parent:
+        figcaption = parent.find('figcaption')
+        if figcaption:
+            credit_sources.append(figcaption.get_text(strip=True))
+
+    # Check for caption div
+    img_container = img.find_parent(['div', 'figure'])
+    if img_container:
+        caption_divs = img_container.find_all(['div', 'p'], class_=lambda x: x and ('caption' in str(x).lower() or 'credit' in str(x).lower()))
+        for div in caption_divs:
+            credit_sources.append(div.get_text(strip=True))
+
+    # Combine all credit text
+    credit_text = ' '.join(filter(None, credit_sources))
+    credit_lower = credit_text.lower()
+
+    # Check for stock photo indicators first
+    # 1. Credit text contains stock source
+    for keyword in STOCK_PHOTO_INDICATORS['credit_keywords']:
+        if keyword in credit_lower:
+            return ('stock', credit_text)
+
+    # 2. Filename patterns
+    src = img.get('src', '')
+    src_lower = src.lower()
+    for pattern in STOCK_PHOTO_INDICATORS['filename_patterns']:
+        if pattern in src_lower:
+            return ('stock', credit_text)
+
+    # 3. Alt text contains stock keywords
+    for keyword in STOCK_PHOTO_INDICATORS['alt_keywords']:
+        if keyword in credit_lower:
+            return ('stock', credit_text)
+
+    # 4. Generic stock phrases in alt text (Sprint 6.7.2)
+    alt_lower = alt_text.lower()
+    for phrase in GENERIC_STOCK_PHRASES:
+        if phrase in alt_lower:
+            return ('stock', credit_text or 'No credit')
+
+    # Check for proper credit attribution
+    credit_patterns = ['photo:', 'photo by', 'credit:', 'by ', 'photograph:', 'image:', 'picture:']
+    has_credit = any(p in credit_lower for p in credit_patterns)
+
+    if has_credit:
+        return ('original', credit_text)
+
+    # No credit found - mark as uncredited
+    return ('uncredited', credit_text if credit_text else 'No credit')
+
+
+def extract_images(article_body):
+    """
+    Extract and classify all images from article body.
+
+    Sprint 6.7.2: Now tracks three classifications: original, stock, uncredited
+
+    Returns:
+        dict: {
+            'total': int,
+            'original': int,
+            'stock': int,
+            'uncredited': int,
+            'details': [{'src': str, 'classification': str, 'credit': str}, ...]
+        }
+    """
+    if not article_body:
+        return {
+            'total': 0,
+            'original': 0,
+            'stock': 0,
+            'uncredited': 0,
+            'details': []
+        }
+
+    images = article_body.find_all('img')
+
+    original_count = 0
+    stock_count = 0
+    uncredited_count = 0
+    details = []
+
+    for img in images:
+        src = img.get('src', '')
+
+        # Skip tiny images (likely icons, not content images)
+        width = img.get('width')
+        height = img.get('height')
+        if width and height:
+            try:
+                if int(width) < 100 or int(height) < 100:
+                    continue
+            except:
+                pass
+
+        classification, credit = classify_image(img, article_body)
+
+        if classification == 'original':
+            original_count += 1
+        elif classification == 'stock':
+            stock_count += 1
+        else:  # uncredited
+            uncredited_count += 1
+
+        details.append({
+            'src': src,
+            'classification': classification,
+            'credit': credit if credit else 'No credit found'
+        })
+
+    return {
+        'total': len(details),
+        'original': original_count,
+        'stock': stock_count,
+        'uncredited': uncredited_count,
+        'details': details
+    }
 
 
 def get_gender(full_name):
@@ -153,6 +638,37 @@ def deduplicate_sources(sources):
     return unique
 
 
+def resolve_full_name(partial_name, text):
+    """
+    Sprint 7.9.1: Resolve partial name (surname only) to full name.
+    Searches backwards in text for "[FirstName] [Surname]" pattern.
+
+    Args:
+        partial_name: Surname only (e.g., "Brown")
+        text: Full article text
+
+    Returns:
+        Full name if found (e.g., "Rebecca Brown"), otherwise original partial_name
+    """
+    # If already a full name (has space), return as-is
+    if ' ' in partial_name.strip():
+        return partial_name
+
+    # Pattern: [FirstName] [Surname] where Surname matches partial_name
+    # Look for capitalized first name followed by the partial name
+    pattern = r'\b([A-Z][a-z]+)\s+' + re.escape(partial_name) + r'\b'
+
+    matches = list(re.finditer(pattern, text))
+    if matches:
+        # Return the first occurrence (earliest in text)
+        first_match = matches[0]
+        full_name = first_match.group(0).strip()
+        return full_name
+
+    # No full name found, return original
+    return partial_name
+
+
 def extract_quoted_sources(text):
     """
     Returns list of sources with evidence and gender.
@@ -223,27 +739,118 @@ def extract_quoted_sources(text):
         # Step 5: Extract name and store evidence
         if after_match:
             name = after_match.group(1).strip()
-            sources.append({
-                'name': name,
-                'full_attribution': context_after[:50].strip(),
-                'quote_snippet': quote_text[:50],
-                'position': 'after'
-            })
+            # Sprint 7.9.1: Resolve partial names to full names
+            name = resolve_full_name(name, text)
+            # Sprint 7.9.1: Filter out false positives (pronouns, etc.)
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': context_after[:50].strip(),
+                    'quote_snippet': quote_text[:50],
+                    'position': 'after'
+                })
         elif before_match:
             name = before_match.group(1).strip()
-            sources.append({
-                'name': name,
-                'full_attribution': context_before[-50:].strip(),
-                'quote_snippet': quote_text[:50],
-                'position': 'before'
-            })
+            # Sprint 7.9.1: Resolve partial names to full names
+            name = resolve_full_name(name, text)
+            # Sprint 7.9.1: Filter out false positives (pronouns, etc.)
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': context_before[-50:].strip(),
+                    'quote_snippet': quote_text[:50],
+                    'position': 'before'
+                })
         elif according_match:
             name = according_match.group(1).strip()
+            # Sprint 7.9.1: Resolve partial names to full names
+            name = resolve_full_name(name, text)
+            # Sprint 7.9.1: Filter out false positives (pronouns, etc.)
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': context_before[-50:].strip(),
+                    'quote_snippet': quote_text[:50],
+                    'position': 'before'
+                })
+
+    # Step 5b: Look for full name with role/description (Shorthand pattern)
+    # Pattern: "Sophia Lloyd, a Poole-based nutritionist who..."
+    role_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+a\s+[^,]+(?:who|which|that|,)'
+    for match in re.finditer(role_pattern, text):
+        name = match.group(1).strip()
+        if len(name) >= 5:  # Skip very short names
             sources.append({
                 'name': name,
-                'full_attribution': context_before[-50:].strip(),
+                'full_attribution': match.group(0)[:50],
+                'quote_snippet': '',
+                'position': 'role_description'
+            })
+
+    # Step 5c: Look for last name + action verbs (journalism style)
+    # Pattern: "Lloyd advises...", "Brown believes...", "Smith emphasises..."
+    # This catches follow-up references after full name introduction
+    lastname_verbs = ['advises', 'believes', 'emphasises', 'suggests', 'recommends',
+                      'argues', 'maintains', 'insists', 'stresses', 'points out',
+                      'notes', 'observes', 'warns', 'highlights', 'explains']
+
+    # First extract all full names to build last name database
+    full_names_found = set()
+    for source in sources:
+        if 'name' in source and ' ' in source['name']:
+            full_names_found.add(source['name'])
+
+    # Now look for last name references
+    for verb in lastname_verbs:
+        # Pattern: Lastname verb
+        pattern = r'\b([A-Z][A-Za-z\'\-]+)\s+' + verb
+        for match in re.finditer(pattern, text):
+            lastname = match.group(1)
+            # Check if this lastname matches any full name we found
+            matching_full_name = None
+            for full_name in full_names_found:
+                if full_name.endswith(' ' + lastname):
+                    matching_full_name = full_name
+                    break
+
+            if matching_full_name:
+                # Add as the full name (will be deduplicated later)
+                sources.append({
+                    'name': matching_full_name,
+                    'full_attribution': f'{lastname} {verb}',
+                    'quote_snippet': '',
+                    'position': f'lastname_{verb}'
+                })
+
+    # Step 5d: Look for blockquote patterns (Shorthand pull quotes)
+    # Pattern 1: Blockquote followed by attribution name
+    # Format: > "Quote text"
+    #         > Name
+    blockquote_pattern = r'>\s*["\u201C]([^\n"]+?)["\u201D]\s*>\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})'
+    for match in re.finditer(blockquote_pattern, text):
+        quote_text = match.group(1).strip()
+        name = match.group(2).strip()
+        if len(quote_text) >= 10:  # Skip short quotes
+            sources.append({
+                'name': name,
+                'full_attribution': f'blockquote > {name}',
                 'quote_snippet': quote_text[:50],
-                'position': 'before'
+                'position': 'blockquote'
+            })
+
+    # Pattern 2: Blockquote with name on same line (inline attribution)
+    # Format: "Quote" - Name  OR  "Quote" Name
+    blockquote_inline = r'["\u201C]([^\n"]+?)["\u201D]\s*[-–—]?\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})(?=\s*$|[\n\r])'
+    for match in re.finditer(blockquote_inline, text, re.MULTILINE):
+        quote_text = match.group(1).strip()
+        name = match.group(2).strip()
+        # Filter out common false positives
+        if len(quote_text) >= 10 and name not in ['The', 'This', 'That', 'They', 'There']:
+            sources.append({
+                'name': name,
+                'full_attribution': f'inline attribution - {name}',
+                'quote_snippet': quote_text[:50],
+                'position': 'blockquote-inline'
             })
 
     # Step 6: Deduplicate by normalized name
@@ -278,10 +885,349 @@ def is_valid_newsday(date_str):
         return False
 
 
-def extract_shorthand_content(shorthand_url):
+def is_placeholder_image(src):
+    """Skip placeholder/base64 tiny images"""
+    if not src:
+        return True
+    if 'data:image/gif;base64' in src:
+        return True
+    if 'data:image/svg+xml;base64' in src:
+        return True
+    if len(src) < 20:  # Too short to be real
+        return True
+    if 'placeholder' in src.lower():
+        return True
+    return False
+
+
+def extract_image_credit_from_caption(caption_text):
+    """Extract photographer name from caption"""
+    if not caption_text:
+        return None
+
+    patterns = [
+        r'Photo(?:\s+taken)?\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+        r'Credits?:?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+        r'Image(?:\s+by)?:?\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+        r'©\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, caption_text)
+        if match:
+            return match.group(1)
+
+    return None
+
+
+def extract_credit_from_context(elem):
+    """Look for credit text near the image"""
+    if not elem:
+        return ''
+
+    # Check figcaption
+    parent = elem.parent
+    if parent and parent.name == 'figure':
+        caption = parent.find('figcaption')
+        if caption:
+            return caption.get_text(strip=True)
+
+    # Check parent/siblings for caption text
+    if parent:
+        text = parent.get_text()
+        # Look for "Photo by", "Photo taken by", "Credits", etc.
+        credit_match = re.search(
+            r'(?:Photo(?:\s+taken)?\s+by|Credits?:?|Image:?)\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)',
+            text
+        )
+        if credit_match:
+            return credit_match.group(0)
+
+    return ''
+
+
+def count_shorthand_images(soup):
     """
-    Fetch and extract text content from a Shorthand embed page.
-    Returns tuple: (cleaned_text, word_count) or (None, None) if extraction fails.
+    Count images in Shorthand pages comprehensively.
+    Returns list of image dicts with src, credit, and classification.
+    """
+    images = []
+    seen_srcs = set()  # Avoid duplicates
+
+    # 1. Standard <img> tags
+    for img in soup.find_all('img'):
+        src = img.get('src', '')
+        if src and src not in seen_srcs and not is_placeholder_image(src):
+            seen_srcs.add(src)
+            credit = extract_credit_from_context(img)
+            images.append({
+                'src': src,
+                'credit': credit,
+                'method': 'img_tag'
+            })
+
+    # 2. <figure> elements (may have <figcaption>)
+    for fig in soup.find_all('figure'):
+        img = fig.find('img')
+        if img:
+            src = img.get('src', '')
+            if src and src not in seen_srcs and not is_placeholder_image(src):
+                seen_srcs.add(src)
+                caption = fig.find('figcaption')
+                credit = caption.get_text(strip=True) if caption else ''
+                images.append({
+                    'src': src,
+                    'credit': credit,
+                    'method': 'figure'
+                })
+
+    # 3. Background images in style attributes
+    for elem in soup.find_all(style=re.compile(r'background-image|background:\s*url')):
+        style = elem.get('style', '')
+        url_match = re.search(r'url\(["\']?([^"\')\s]+)["\']?\)', style)
+        if url_match:
+            src = url_match.group(1)
+            if src not in seen_srcs and not is_placeholder_image(src):
+                seen_srcs.add(src)
+                images.append({
+                    'src': src,
+                    'credit': 'Background image',
+                    'method': 'css_background'
+                })
+
+    # 4. Data attributes (Shorthand uses these)
+    for elem in soup.find_all(attrs={'data-src': True}):
+        src = elem.get('data-src')
+        if src and src not in seen_srcs and not is_placeholder_image(src):
+            seen_srcs.add(src)
+            credit = extract_credit_from_context(elem)
+            images.append({
+                'src': src,
+                'credit': credit,
+                'method': 'data_src'
+            })
+
+    # Also check data-lazy-src
+    for elem in soup.find_all(attrs={'data-lazy-src': True}):
+        src = elem.get('data-lazy-src')
+        if src and src not in seen_srcs and not is_placeholder_image(src):
+            seen_srcs.add(src)
+            credit = extract_credit_from_context(elem)
+            images.append({
+                'src': src,
+                'credit': credit,
+                'method': 'data_lazy_src'
+            })
+
+    return images
+
+
+# =============================================================================
+# SPRINT 7.8: CLEAN CONTENT EXTRACTION FUNCTIONS
+# =============================================================================
+
+def extract_wordpress_images(soup):
+    """
+    Extract and classify images from WordPress article body.
+
+    Args:
+        soup: BeautifulSoup object of article content
+
+    Returns:
+        dict: Image statistics and details
+    """
+    if not soup:
+        return {
+            'total': 0,
+            'original': 0,
+            'stock': 0,
+            'uncredited': 0,
+            'details': []
+        }
+
+    # Use existing extract_images function
+    return extract_images(soup)
+
+
+def extract_shorthand_images_clean(soup):
+    """
+    Extract and classify images from Shorthand content.
+
+    Args:
+        soup: BeautifulSoup object of Shorthand page
+
+    Returns:
+        dict: Image statistics and details
+    """
+    if not soup:
+        return {
+            'total': 0,
+            'original': 0,
+            'stock': 0,
+            'uncredited': 0,
+            'details': []
+        }
+
+    # Get raw image list from count_shorthand_images
+    shorthand_images = count_shorthand_images(soup)
+
+    original_count = 0
+    stock_count = 0
+    uncredited_count = 0
+    details = []
+
+    for img in shorthand_images:
+        # Classify each Shorthand image
+        credit = extract_image_credit_from_caption(img.get('credit', ''))
+        classification = 'original' if credit else 'uncredited'
+
+        if classification == 'original':
+            original_count += 1
+        elif classification == 'stock':
+            stock_count += 1
+        else:
+            uncredited_count += 1
+
+        details.append({
+            'src': img['src'],
+            'credit': credit if credit else 'No credit found',
+            'classification': classification
+        })
+
+    return {
+        'total': len(details),
+        'original': original_count,
+        'stock': stock_count,
+        'uncredited': uncredited_count,
+        'details': details
+    }
+
+
+def extract_wordpress_content(soup):
+    """
+    Extract clean body content from WordPress article.
+
+    Removes peripheral content (navigation, captions, author boxes, etc.)
+    and returns only the article body text.
+
+    Args:
+        soup: BeautifulSoup object of full article page
+
+    Returns:
+        dict: {
+            'body_text': str,
+            'word_count': int,
+            'sources': list,
+            'images': dict
+        }
+    """
+    if not soup:
+        return {
+            'body_text': '',
+            'word_count': 0,
+            'sources': [],
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+        }
+
+    # Find article body container
+    article_body = soup.find('article') or soup.find('div', class_=lambda x: x and ('content' in str(x).lower() or 'entry' in str(x).lower()))
+
+    if not article_body:
+        return {
+            'body_text': '',
+            'word_count': 0,
+            'sources': [],
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+        }
+
+    # Remove peripheral elements
+    peripherals_to_remove = [
+        'script', 'style', 'nav', 'footer', 'aside', 'header',
+        # Author boxes
+        {'name': 'div', 'class': lambda x: x and 'author' in str(x).lower()},
+        # Related posts
+        {'name': 'div', 'class': lambda x: x and 'related' in str(x).lower()},
+        # Navigation
+        {'name': 'div', 'class': lambda x: x and 'navigation' in str(x).lower()},
+        # Comments
+        {'name': 'div', 'id': lambda x: x and 'comment' in str(x).lower()},
+        # Social sharing
+        {'name': 'div', 'class': lambda x: x and 'share' in str(x).lower()},
+        # Sidebars
+        {'name': 'div', 'class': lambda x: x and 'sidebar' in str(x).lower()},
+        # Captions (will extract separately)
+        {'name': 'figcaption'},
+    ]
+
+    # Create a copy to work with
+    article_copy = BeautifulSoup(str(article_body), 'lxml')
+
+    # Remove peripherals
+    for item in peripherals_to_remove:
+        if isinstance(item, str):
+            for tag in article_copy.find_all(item):
+                tag.decompose()
+        elif isinstance(item, dict):
+            for tag in article_copy.find_all(**item):
+                tag.decompose()
+
+    # Extract clean body text from only content elements
+    content_elements = article_copy.find_all(['p', 'h2', 'h3', 'h4', 'blockquote'])
+
+    text_parts = []
+    for elem in content_elements:
+        text = elem.get_text(strip=True)
+
+        # Skip caption text
+        if is_caption_text(text):
+            continue
+
+        # Skip very short fragments
+        if len(text.split()) < 3:
+            continue
+
+        text_parts.append(text)
+
+    # Join for body text
+    body_text = ' '.join(text_parts)
+
+    # Count words
+    word_count = count_words(body_text)
+
+    # Extract sources using unified function
+    sources = extract_sources(body_text, article_body)
+
+    # Extract images
+    images = extract_wordpress_images(article_body)
+
+    return {
+        'body_text': body_text,
+        'word_count': word_count,
+        'sources': sources,
+        'images': images
+    }
+
+
+def extract_shorthand_content_new(shorthand_url):
+    """
+    Extract clean body content from Shorthand article.
+
+    Removes peripheral content (navigation, captions, credits, etc.)
+    and returns only the article body text.
+
+    Sprint 7.8: Refactored with clean architecture.
+
+    Args:
+        shorthand_url: URL of Shorthand page
+
+    Returns:
+        dict: {
+            'body_text': str,
+            'word_count': int,
+            'author': str or None,
+            'sources': list,
+            'images': dict
+        }
     """
     try:
         print(f"    Fetching Shorthand: {shorthand_url}")
@@ -289,6 +1235,178 @@ def extract_shorthand_content(shorthand_url):
         response.raise_for_status()
 
         soup = BeautifulSoup(response.content, 'lxml')
+
+        # Extract author from Shorthand byline
+        author = None
+        byline_patterns = [
+            r'By\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+            r'Words\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+            r'Written\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+        ]
+
+        # Look for byline in elements with relevant classes
+        byline_elements = soup.find_all(['p', 'span', 'div'], class_=lambda x: x and any(
+            keyword in str(x).lower() for keyword in ['byline', 'author', 'credit', 'writer']))
+
+        for elem in byline_elements:
+            text = elem.get_text(strip=True)
+            for pattern in byline_patterns:
+                match = re.search(pattern, text)
+                if match:
+                    author = match.group(1).strip()
+                    break
+            if author:
+                break
+
+        # If not found in specific elements, check all text
+        if not author:
+            all_text = soup.get_text()
+            for pattern in byline_patterns:
+                match = re.search(pattern, all_text[:2000])
+                if match:
+                    author = match.group(1).strip()
+                    break
+
+        # Remove peripheral elements
+        # SPRINT 7.8.1: Don't remove footer elements inside blockquotes (they contain cite attributions)
+        peripherals_to_remove = ['nav', 'header']
+        for tag_name in peripherals_to_remove:
+            for tag in soup.find_all(tag_name):
+                tag.decompose()
+
+        # Remove footer elements that are NOT inside blockquotes
+        for footer in soup.find_all('footer'):
+            # Check if this footer is a child of a blockquote
+            if not footer.find_parent('blockquote'):
+                footer.decompose()
+
+        # Remove social and credits sections
+        for div in soup.find_all('div', class_=lambda x: x and any(
+                keyword in str(x).lower() for keyword in ['social', 'credit', 'share', 'navigation'])):
+            div.decompose()
+
+        # Extract text from content elements only
+        content_tags = soup.find_all(['p', 'blockquote', 'h1', 'h2', 'h3'])
+
+        text_parts = []
+        for tag in content_tags:
+            text = tag.get_text(strip=True)
+
+            # Skip caption text
+            if is_caption_text(text):
+                continue
+
+            # Skip UI elements
+            text_lower = text.lower()
+            skip_phrases = ['built with', 'click to', 'scroll to', 'shorthand']
+            if any(phrase in text_lower for phrase in skip_phrases):
+                continue
+
+            # Skip very short fragments
+            if len(text.split()) < 3:
+                continue
+
+            text_parts.append(text)
+
+        # Join for body text
+        body_text = ' '.join(text_parts)
+
+        # Count words
+        word_count = count_words(body_text)
+
+        # Extract sources using unified function
+        # For quote extraction, join paragraphs with newline to prevent cross-paragraph quotes
+        text_for_quotes = '\n'.join(text_parts)
+        sources = extract_sources(text_for_quotes, soup)
+
+        # Extract images
+        images = extract_shorthand_images_clean(soup)
+
+        print(f"    Shorthand word count: {word_count}")
+        if author:
+            print(f"    Shorthand author: {author}")
+        if images['total'] > 0:
+            print(f"    Shorthand images found: {images['total']}")
+
+        return {
+            'body_text': body_text,
+            'word_count': word_count,
+            'author': author,
+            'sources': sources,
+            'images': images
+        }
+
+    except requests.RequestException as e:
+        print(f"    Error fetching Shorthand page: {e}")
+        return {
+            'body_text': '',
+            'word_count': 0,
+            'author': None,
+            'sources': [],
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+        }
+    except Exception as e:
+        print(f"    Error parsing Shorthand content: {e}")
+        return {
+            'body_text': '',
+            'word_count': 0,
+            'author': None,
+            'sources': [],
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+        }
+
+
+# =============================================================================
+# OLD SHORTHAND FUNCTION (DEPRECATED - Sprint 7.8)
+# Kept for backward compatibility during transition
+# =============================================================================
+
+def extract_shorthand_content(shorthand_url):
+    """
+    DEPRECATED: Use extract_shorthand_content_new() instead.
+
+    Fetch and extract text content and author from a Shorthand embed page.
+    Returns tuple: (cleaned_text, word_count, author) or (None, None, None) if extraction fails.
+    Sprint 7.3: Now extracts byline from Shorthand pages.
+    Sprint 7.6: Enhanced image counting for Shorthand pages.
+    """
+    try:
+        print(f"    Fetching Shorthand: {shorthand_url}")
+        response = requests.get(shorthand_url, timeout=10)
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.content, 'lxml')
+
+        # Extract author from Shorthand byline (Sprint 7.3)
+        author = None
+        byline_patterns = [
+            r'By\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',  # "By Vishal Seenath"
+            r'Words\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',  # "Words by..."
+            r'Written\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',  # "Written by..."
+        ]
+
+        # Look for byline in elements with relevant classes
+        byline_elements = soup.find_all(['p', 'span', 'div'], class_=lambda x: x and any(
+            keyword in str(x).lower() for keyword in ['byline', 'author', 'credit', 'writer']))
+
+        for elem in byline_elements:
+            text = elem.get_text(strip=True)
+            for pattern in byline_patterns:
+                match = re.search(pattern, text)
+                if match:
+                    author = match.group(1).strip()
+                    break
+            if author:
+                break
+
+        # If not found in specific elements, check all text
+        if not author:
+            all_text = soup.get_text()
+            for pattern in byline_patterns:
+                match = re.search(pattern, all_text[:2000])  # Check first 2000 chars
+                if match:
+                    author = match.group(1).strip()
+                    break
 
         # Extract text from paragraphs, blockquotes, and headings
         content_tags = soup.find_all(['p', 'blockquote', 'h1', 'h2', 'h3'])
@@ -332,15 +1450,23 @@ def extract_shorthand_content(shorthand_url):
         # For quote extraction, join paragraphs with newline to prevent cross-paragraph quotes
         text_for_quotes = '\n'.join(text_parts)
 
+        # Count images in Shorthand page (Sprint 7.6)
+        shorthand_images = count_shorthand_images(soup)
+        image_count = len(shorthand_images)
+
         print(f"    Shorthand word count: {word_count}")
-        return (text_for_quotes, word_count)
+        if author:
+            print(f"    Shorthand author: {author}")
+        if image_count > 0:
+            print(f"    Shorthand images found: {image_count}")
+        return (text_for_quotes, word_count, author, shorthand_images)
 
     except requests.RequestException as e:
         print(f"    Error fetching Shorthand page: {e}")
-        return (None, None)
+        return (None, None, None, [])
     except Exception as e:
         print(f"    Error parsing Shorthand content: {e}")
-        return (None, None)
+        return (None, None, None, [])
 
 
 def scrape_page_for_articles(url):
@@ -536,14 +1662,16 @@ def extract_article_metadata(url):
                 if cat_match:
                     category = cat_match.group(1).replace('-', ' ').title()
 
-        # Find main content area
-        article_body = soup.find('article') or soup.find('div', class_=lambda x: x and ('content' in str(x).lower() or 'entry' in str(x).lower()))
+        # ==========================================================
+        # SPRINT 7.8: CLEAN ARCHITECTURE CONTENT EXTRACTION
+        # ==========================================================
 
         # Detect Shorthand embed first
         content_type = "standard"
         word_count = None
         shorthand_url = None
-        article_text = None
+        source_evidence = []
+        images = {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
 
         iframe = soup.find('iframe', src=re.compile(r'shorthandstories\.com'))
         if iframe:
@@ -555,37 +1683,26 @@ def extract_article_metadata(url):
                 if not shorthand_url.startswith('http'):
                     shorthand_url = 'https:' + shorthand_url if shorthand_url.startswith('//') else shorthand_url
 
-                # Fetch text and word count from Shorthand page
-                article_text, word_count = extract_shorthand_content(shorthand_url)
+                # Use new clean extraction function (Sprint 7.8)
+                shorthand_data = extract_shorthand_content_new(shorthand_url)
+
+                word_count = shorthand_data['word_count']
+                source_evidence = shorthand_data['sources']
+                images = shorthand_data['images']
+
+                # Override author with Shorthand byline if found
+                if shorthand_data['author']:
+                    author = shorthand_data['author']
             else:
                 print(f"    Warning: Shorthand iframe found but no src URL")
                 word_count = None
         else:
-            # Count words in article body paragraphs
-            if article_body:
-                # Remove script, style, nav, footer, aside elements
-                for tag in article_body(['script', 'style', 'nav', 'footer', 'aside', 'header']):
-                    tag.decompose()
+            # Use new clean extraction function for WordPress (Sprint 7.8)
+            wordpress_data = extract_wordpress_content(soup)
 
-                # Count words in paragraphs
-                paragraphs = article_body.find_all('p')
-                text = ' '.join([p.get_text(strip=True) for p in paragraphs])
-                words = text.split()
-                word_count = len(words) if words else None
-                article_text = text
-
-        # Extract quoted sources from the actual article text
-        # For Shorthand: use fetched Shorthand content
-        # For standard: use article body text
-        if article_text:
-            source_evidence = extract_quoted_sources(article_text)
-        else:
-            # Fallback to extracting from page body if Shorthand fetch failed
-            if article_body:
-                fallback_text = article_body.get_text(separator=' ', strip=True)
-            else:
-                fallback_text = soup.get_text(separator=' ', strip=True)
-            source_evidence = extract_quoted_sources(fallback_text)
+            word_count = wordpress_data['word_count']
+            source_evidence = wordpress_data['sources']
+            images = wordpress_data['images']
 
         # Map category to primary category
         category_primary = CATEGORY_MAP.get(category, "News")  # Default to "News"
@@ -640,6 +1757,7 @@ def extract_article_metadata(url):
             'sources_female': sources_female,
             'sources_unknown': sources_unknown,
             'source_evidence': source_evidence,
+            'images': images,
             'warnings': warnings
         }
 

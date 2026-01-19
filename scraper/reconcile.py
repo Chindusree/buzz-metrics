@@ -109,6 +109,28 @@ def is_likely_person(name):
     return False
 
 
+def get_gender(name):
+    """
+    Get gender for a name using gender-guesser.
+    Sprint 6.7.2: Returns 'male', 'female', or 'unknown'.
+    """
+    if not name:
+        return 'unknown'
+
+    # Extract first name (first word)
+    first_name = name.split()[0]
+
+    result = gd.get_gender(first_name)
+
+    # Map to simplified categories
+    if result in ['male', 'mostly_male']:
+        return 'male'
+    elif result in ['female', 'mostly_female']:
+        return 'female'
+
+    return 'unknown'
+
+
 def names_match(name1, name2, threshold=85):
     """
     Check if two names match using fuzzy matching.
@@ -160,6 +182,8 @@ def reconcile_sources(scrape_evidence, verify_evidence):
     """
     Reconcile sources from scrape.py and verify.py.
 
+    Sprint 6.7.2: Now includes gender detection for all sources.
+
     Principle:
     - scrape.py is primary (pattern matching)
     - verify.py adds sources only when confident (not already in scrape)
@@ -171,9 +195,9 @@ def reconcile_sources(scrape_evidence, verify_evidence):
 
     Returns:
         {
-            'confirmed': [name, ...],  # From scrape.py (cleaned)
-            'possible': [name, ...],   # New valid sources from verify.py
-            'filtered': [name, ...]    # Rejected from verify.py (brands, places, etc.)
+            'confirmed': [{'name': str, 'gender': str}, ...],  # From scrape.py with gender
+            'possible': [{'name': str, 'gender': str}, ...],   # New valid sources with gender
+            'filtered': [name, ...]                             # Rejected names (strings only)
         }
     """
     result = {
@@ -189,8 +213,11 @@ def reconcile_sources(scrape_evidence, verify_evidence):
         cleaned = clean_name(name)
         if cleaned and cleaned not in scrape_names:
             scrape_names.append(cleaned)
-
-    result['confirmed'] = scrape_names
+            # Add to confirmed with gender
+            result['confirmed'].append({
+                'name': cleaned,
+                'gender': get_gender(cleaned)
+            })
 
     # Step 2: Process verify sources
     for source in verify_evidence:
@@ -210,9 +237,13 @@ def reconcile_sources(scrape_evidence, verify_evidence):
         if is_likely_person(cleaned):
             # Valid person not in scrape - add to possible
             # Check not already in possible
-            match_in_possible = find_match_in_list(cleaned, result['possible'])
+            possible_names = [s['name'] for s in result['possible']]
+            match_in_possible = find_match_in_list(cleaned, possible_names)
             if not match_in_possible:
-                result['possible'].append(cleaned)
+                result['possible'].append({
+                    'name': cleaned,
+                    'gender': get_gender(cleaned)
+                })
         else:
             # Not a person - add to filtered
             # Check not already in filtered
