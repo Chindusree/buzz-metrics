@@ -762,6 +762,100 @@ def extract_images(article_body):
     }
 
 
+def extract_embeds(article_body):
+    """
+    Sprint 7.17: Extract embedded video and audio content from article.
+
+    Detects:
+    - YouTube embeds (iframe src contains youtube.com or youtu.be)
+    - Vimeo embeds (iframe src contains vimeo.com)
+    - SoundCloud embeds (iframe src contains soundcloud.com)
+    - Spotify embeds (iframe src contains spotify.com)
+    - HTML5 native video/audio tags
+    - BU Media embeds (iframe src contains bournemouth.ac.uk)
+
+    Args:
+        article_body: BeautifulSoup object of article body
+
+    Returns:
+        dict: {
+            'video_count': int,
+            'audio_count': int,
+            'video_evidence': [{'platform': str, 'url': str}, ...],
+            'audio_evidence': [{'platform': str, 'url': str}, ...]
+        }
+    """
+    if not article_body:
+        return {
+            'video_count': 0,
+            'audio_count': 0,
+            'video_evidence': [],
+            'audio_evidence': []
+        }
+
+    video_evidence = []
+    audio_evidence = []
+
+    # Check all iframes for embedded content
+    for iframe in article_body.find_all('iframe'):
+        src = iframe.get('src', '').lower()
+
+        if not src:
+            continue
+
+        # Video platforms
+        if 'youtube.com' in src or 'youtu.be' in src:
+            video_evidence.append({'platform': 'youtube', 'url': iframe.get('src', '')})
+        elif 'vimeo.com' in src:
+            video_evidence.append({'platform': 'vimeo', 'url': iframe.get('src', '')})
+        elif 'soundcloud.com' in src:
+            # SoundCloud can be audio (podcast/music) or video - check if it's video
+            # Most SoundCloud embeds are audio
+            audio_evidence.append({'platform': 'soundcloud', 'url': iframe.get('src', '')})
+        elif 'spotify.com' in src:
+            # Spotify embeds are typically audio (podcasts, music)
+            audio_evidence.append({'platform': 'spotify', 'url': iframe.get('src', '')})
+        elif 'bournemouth.ac.uk' in src:
+            # BU Media - check if it's video or audio (default to video if unclear)
+            # Most BU embeds are video interviews
+            video_evidence.append({'platform': 'bu-media', 'url': iframe.get('src', '')})
+
+    # Check native HTML5 video elements
+    for video in article_body.find_all('video'):
+        src = video.get('src', '')
+        # Check for source tags if no src attribute
+        if not src:
+            source_tag = video.find('source', src=True)
+            if source_tag:
+                src = source_tag.get('src', '')
+
+        video_evidence.append({
+            'platform': 'html5',
+            'url': src if src else 'embedded'
+        })
+
+    # Check native HTML5 audio elements
+    for audio in article_body.find_all('audio'):
+        src = audio.get('src', '')
+        # Check for source tags if no src attribute
+        if not src:
+            source_tag = audio.find('source', src=True)
+            if source_tag:
+                src = source_tag.get('src', '')
+
+        audio_evidence.append({
+            'platform': 'html5',
+            'url': src if src else 'embedded'
+        })
+
+    return {
+        'video_count': len(video_evidence),
+        'audio_count': len(audio_evidence),
+        'video_evidence': video_evidence,
+        'audio_evidence': audio_evidence
+    }
+
+
 # Sprint 8.2: Common ambiguous/unisex names that benefit from context analysis
 AMBIGUOUS_NAMES = [
     'alex', 'jordan', 'taylor', 'morgan', 'casey', 'riley', 'jamie',
@@ -1574,7 +1668,8 @@ def extract_wordpress_content(soup):
             'body_text': '',
             'word_count': 0,
             'sources': [],
-            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []},
+            'embeds': {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []}
         }
 
     # Find article body container
@@ -1585,7 +1680,8 @@ def extract_wordpress_content(soup):
             'body_text': '',
             'word_count': 0,
             'sources': [],
-            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []},
+            'embeds': {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []}
         }
 
     # Remove peripheral elements
@@ -1649,11 +1745,15 @@ def extract_wordpress_content(soup):
     # Extract images
     images = extract_wordpress_images(article_body)
 
+    # Sprint 7.17: Extract embedded video/audio content
+    embeds = extract_embeds(article_body)
+
     return {
         'body_text': body_text,
         'word_count': word_count,
         'sources': sources,
-        'images': images
+        'images': images,
+        'embeds': embeds
     }
 
 
@@ -1771,18 +1871,24 @@ def extract_shorthand_content_new(shorthand_url):
         # Extract images
         images = extract_shorthand_images_clean(soup)
 
+        # Sprint 7.17: Extract embedded video/audio content
+        embeds = extract_embeds(soup)
+
         print(f"    Shorthand word count: {word_count}")
         if author:
             print(f"    Shorthand author: {author}")
         if images['total'] > 0:
             print(f"    Shorthand images found: {images['total']}")
+        if embeds['video_count'] > 0 or embeds['audio_count'] > 0:
+            print(f"    Shorthand embeds found: {embeds['video_count']} video, {embeds['audio_count']} audio")
 
         return {
             'body_text': body_text,
             'word_count': word_count,
             'author': author,
             'sources': sources,
-            'images': images
+            'images': images,
+            'embeds': embeds
         }
 
     except requests.RequestException as e:
@@ -1792,7 +1898,8 @@ def extract_shorthand_content_new(shorthand_url):
             'word_count': 0,
             'author': None,
             'sources': [],
-            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []},
+            'embeds': {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []}
         }
     except Exception as e:
         print(f"    Error parsing Shorthand content: {e}")
@@ -1801,7 +1908,8 @@ def extract_shorthand_content_new(shorthand_url):
             'word_count': 0,
             'author': None,
             'sources': [],
-            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+            'images': {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []},
+            'embeds': {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []}
         }
 
 
@@ -2121,6 +2229,7 @@ def extract_article_metadata(url):
         shorthand_url = None
         source_evidence = []
         images = {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []}
+        embeds = {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []}
 
         iframe = soup.find('iframe', src=re.compile(r'shorthandstories\.com'))
         if iframe:
@@ -2138,6 +2247,7 @@ def extract_article_metadata(url):
                 word_count = shorthand_data['word_count']
                 source_evidence = shorthand_data['sources']
                 images = shorthand_data['images']
+                embeds = shorthand_data['embeds']
 
                 # Override author with Shorthand byline if found
                 if shorthand_data['author']:
@@ -2152,6 +2262,7 @@ def extract_article_metadata(url):
             word_count = wordpress_data['word_count']
             source_evidence = wordpress_data['sources']
             images = wordpress_data['images']
+            embeds = wordpress_data['embeds']
 
         # Map category to primary category
         category_primary = CATEGORY_MAP.get(category, "News")  # Default to "News"
@@ -2207,6 +2318,7 @@ def extract_article_metadata(url):
             'sources_unknown': sources_unknown,
             'source_evidence': source_evidence,
             'images': images,
+            'embeds': embeds,
             'warnings': warnings
         }
 

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T19:09:46Z",
+  "last_updated": "2026-01-19T21:22:37Z",
   "total_articles": 11,
   "articles": [
     {
@@ -78,6 +78,12 @@
             "classification": "uncredited"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
@@ -179,6 +185,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ]
@@ -254,6 +266,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ]
@@ -311,6 +329,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ]
@@ -345,6 +369,17 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/a3687826-8ae2-4b8b-a550-7d70cc3e5e51-800x400.jpg",
             "classification": "uncredited",
             "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2248668341&show_artwork=true&maxheight=750&maxwidth=500"
           }
         ]
       },
@@ -390,6 +425,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": []
     },
     {
@@ -429,6 +470,12 @@
             "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": []
     },
@@ -474,6 +521,12 @@
             "credit": "No credit"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": []
     },
@@ -529,6 +582,12 @@
             "classification": "uncredited"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
@@ -620,6 +679,17 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ]
@@ -661,6 +731,12 @@
             "credit": "Colchester celebrate their second (Pictures from AFCBTV)"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": []
     }

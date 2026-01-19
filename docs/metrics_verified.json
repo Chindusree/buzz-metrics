@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T19:10:21Z",
+  "last_updated": "2026-01-19T21:23:03Z",
   "total_articles": 11,
   "summary": {
     "avg_word_count": 689,
@@ -141,6 +141,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
@@ -259,6 +265,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
@@ -356,6 +368,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
@@ -438,6 +456,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
@@ -493,6 +517,17 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2248668341&show_artwork=true&maxheight=750&maxwidth=500"
+          }
+        ]
+      },
       "warnings": [
         "Unknown author"
       ],
@@ -543,6 +578,12 @@
             "credit": "building Outside the Cumberland Hotel in Bournemouth | Photo: Grace Oakins"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
@@ -598,6 +639,12 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": [],
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
@@ -651,6 +698,12 @@
             "credit": "No credit"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
@@ -722,6 +775,12 @@
             "classification": "uncredited"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
@@ -839,6 +898,17 @@
           }
         ]
       },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
@@ -902,6 +972,12 @@
             "credit": "Colchester celebrate their second (Pictures from AFCBTV)"
           }
         ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
       },
       "warnings": [],
       "quoted_sources_confirmed": 0,
