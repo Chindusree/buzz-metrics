@@ -1212,11 +1212,14 @@
             // Populate date selector
             populateDateSelector();
 
-            // Set to "all" dates initially
-            document.getElementById('dateSelect').value = 'all';
+            // Sprint 7.21: Default to today's date (or most recent if no articles today)
+            const today = new Date().toISOString().split('T')[0];
+            const availableDates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+            const defaultDate = availableDates.includes(today) ? today : availableDates[0];
 
-            // Update all sections
-            updateDashboard('all');
+            // Set date selector and update dashboard
+            document.getElementById('dateSelect').value = defaultDate;
+            updateDashboard(defaultDate);
         }
 
         function populateDateSelector() {
