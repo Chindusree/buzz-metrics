@@ -225,6 +225,12 @@
             text-align: left;
         }
 
+        /* Override font size for "At a Glance" section */
+        #overview .section-header-title {
+            font-size: 60px;
+            font-weight: 500;
+        }
+
         .h3-title {
             font-family: var(--font-headline);
             font-size: 20px;
@@ -305,6 +311,7 @@
         .hero-content {
             background: var(--bg-card);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 75vh;
@@ -541,7 +548,7 @@
             margin-top: 15px;
         }
 
-        /* Publication Rhythm */
+        /* Publication rhythm */
         .rhythm-grid {
             overflow-x: auto;
             margin-top: 20px;
@@ -606,7 +613,7 @@
             font-size: 14px;
         }
 
-        /* All Stories Table */
+        /* All stories Table */
         .table-controls {
             display: flex;
             justify-content: space-between;
@@ -955,7 +962,7 @@
                 <span class="nav-dot">·</span>
                 <a href="#targets" class="nav-item">Targets</a>
                 <span class="nav-dot">·</span>
-                <a href="#stories" class="nav-item">Stories & Contributors</a>
+                <a href="#stories" class="nav-item">Stories & contributors</a>
             </nav>
             <div class="header-date-selector">
                 <select id="dateSelect">
@@ -968,9 +975,9 @@
     <main class="dashboard">
         <!-- OVERVIEW SECTION -->
         <section id="overview" class="section">
-            <!-- Hero header on gray background -->
-            <div class="hero-header">
-                <h1 class="hero-title">At a Glance</h1>
+            <!-- Hero header on gray background (like Analysis section) -->
+            <div class="section-header">
+                <h1 class="section-header-title">At a Glance</h1>
             </div>
 
             <!-- Hero content - white cards section -->
@@ -1007,17 +1014,17 @@
 
             <!-- Analysis content -->
             <div class="container">
-                <h2 class="h2-title">50:50: The Equity Project</h2>
+                <h2 class="h2-title">The Inclusive Project</h2>
                 <div style="max-width: 400px; margin: 0 auto;">
                     <canvas id="genderChart"></canvas>
                     <!-- Sprint 7.24: Inclusive gender disclaimer -->
                     <p class="gender-note">Based on name analysis. May not reflect individuals' stated gender identity.</p>
                 </div>
 
-            <h2 class="h2-title" style="margin-top: 60px;">Section Breakdown</h2>
+            <h2 class="h2-title" style="margin-top: 60px;">Section breakdown</h2>
             <div class="section-cards" id="sectionCards"></div>
 
-            <h2 class="h2-title" style="margin-top: 60px;">Publication Rhythm</h2>
+            <h2 class="h2-title" style="margin-top: 60px;">Publication rhythm</h2>
             <div class="rhythm-grid">
                 <table class="rhythm-table" id="rhythmTable">
                     <thead>
@@ -1043,7 +1050,7 @@
 
             <!-- Targets content -->
             <div class="container">
-                <h2 class="h2-title">Editorial Expectations</h2>
+                <h2 class="h2-title">Editorial expectations</h2>
                 <table class="targets-table">
                 <thead>
                     <tr>
@@ -1063,12 +1070,12 @@
         <section id="stories" class="section">
             <!-- Stories header on gray background -->
             <div class="section-header">
-                <h2 class="section-header-title">Stories & Contributors</h2>
+                <h2 class="section-header-title">Stories & contributors</h2>
             </div>
 
             <!-- Stories content -->
             <div class="container">
-                <h2 class="h2-title">All Stories</h2>
+                <h2 class="h2-title">All stories</h2>
                 <div class="table-controls">
                 <div class="table-control">
                     <label for="sortSelect">Sort by:</label>
@@ -1094,7 +1101,7 @@
                             <th onclick="sortStoriesTable('headline')">Headline</th>
                             <th onclick="sortStoriesTable('author')">Author</th>
                             <th onclick="sortStoriesTable('words')">Words</th>
-                            <th onclick="sortStoriesTable('sources')">Quoted Sources</th>
+                            <th onclick="sortStoriesTable('sources')">Quoted sources</th>
                             <th onclick="sortStoriesTable('images')">Images</th>
                         </tr>
                     </thead>
@@ -1140,11 +1147,11 @@
         <p>Gender determined from first names. Report issues to [lecturer email].</p>
     </footer>
 
-    <!-- Modal for Quoted Sources -->
+    <!-- Modal for Quoted sources -->
     <div id="sourcesModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title">Quoted Sources</h3>
+                <h3 class="modal-title">Quoted sources</h3>
                 <span class="modal-close" onclick="closeModal()">&times;</span>
             </div>
             <div id="modalBody"></div>
