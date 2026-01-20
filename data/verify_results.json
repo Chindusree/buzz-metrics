@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-20T16:45:23Z",
-  "total_verified": 56,
+  "last_updated": "2026-01-20T17:17:50Z",
+  "total_verified": 57,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -500,6 +500,12 @@
     {
       "id": "88d04616a6c5",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/police-find-missing-woman/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "269a6d260911",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-previously-wanted-christchurch-man-arrested/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
