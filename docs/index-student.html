@@ -821,8 +821,9 @@
             const sectionData = {};
 
             // Aggregate data by section
+            // Sprint 7.28: Use display_category instead of category_normalised
             filteredArticles.forEach(article => {
-                const section = article.category_normalised || 'Unknown';
+                const section = article.display_category || 'Unknown';
                 if (!sectionData[section]) {
                     sectionData[section] = {
                         count: 0,
@@ -894,12 +895,13 @@
                 'Sport': Array(13).fill(0)
             };
 
+            // Sprint 7.28: Use display_category instead of category_normalised
             filteredArticles.forEach(article => {
                 if (!article.time) return;
                 const hour = parseInt(article.time.split(':')[0]);
                 if (hour < 6 || hour > 18) return;
 
-                const section = article.category_normalised;
+                const section = article.display_category;
                 if (rhythmData[section]) {
                     const index = hour - 6;
                     rhythmData[section][index]++;

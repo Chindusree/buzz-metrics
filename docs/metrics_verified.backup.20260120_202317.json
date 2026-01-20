@@ -124,8 +124,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "0faceff20735",
@@ -197,8 +196,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "d0dc88d201d3",
@@ -253,8 +251,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "f9992a6fe68f",
@@ -306,8 +303,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "0c209a33d1b4",
@@ -394,8 +390,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "9b5bcd7f91c2",
@@ -511,8 +506,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "be5e87cc8d38",
@@ -640,8 +634,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "639284301249",
@@ -696,8 +689,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "cd1485975ecc",
@@ -803,8 +795,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "Sport"
+      "category_normalised": "Features"
     },
     {
       "id": "f46adb651043",
@@ -926,8 +917,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "4cb8a4a6c238",
@@ -984,8 +974,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "eeadb60f952e",
@@ -1066,8 +1055,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "7baae3c13fab",
@@ -1124,8 +1112,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "6ec57ade366a",
@@ -1185,8 +1172,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c63f93303c5a",
@@ -1265,8 +1251,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "e48217df8ae6",
@@ -1354,8 +1339,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "2edf13de5329",
@@ -1423,8 +1407,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "bd8ce48a20b5",
@@ -1479,8 +1462,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "5db595468971",
@@ -1612,8 +1594,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "d2d23997eb42",
@@ -1668,8 +1649,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "d0eceb2acc05",
@@ -1778,8 +1758,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "37619d905b65",
@@ -1873,8 +1852,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "e24467b3ddf5",
@@ -2022,8 +2000,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "96eed46a1e57",
@@ -2090,8 +2067,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "69d0caa89d60",
@@ -2180,8 +2156,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "4c79ed9d0c43",
@@ -2261,8 +2236,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "60218ea980f4",
@@ -2396,8 +2370,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Features",
-      "display_category": "Sport"
+      "category_normalised": "Features"
     },
     {
       "id": "0b0c3fa2d0b3",
@@ -2446,8 +2419,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "6f4ce223a9fc",
@@ -2498,8 +2470,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "f6a028fa8bd4",
@@ -2609,8 +2580,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "ee8ca65989fa",
@@ -2665,8 +2635,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "57387ebc3115",
@@ -2716,8 +2685,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "88d04616a6c5",
@@ -2767,8 +2735,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "269a6d260911",
@@ -2818,8 +2785,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c773fba290e1",
@@ -2886,8 +2852,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "050bcc50448e",
@@ -2956,8 +2921,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "9b454f4d9db2",
@@ -3032,8 +2996,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "afe1ce257901",
@@ -3103,8 +3066,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "5448a03abf18",
@@ -3156,8 +3118,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "466fd9f7d8aa",
@@ -3207,8 +3168,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "751bf1ee1b06",
@@ -3275,8 +3235,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "1f955f6870b9",
@@ -3335,8 +3294,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "55443b4c77b8",
@@ -3411,8 +3369,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "dba46286581f",
@@ -3467,8 +3424,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "1b1ad423d795",
@@ -3537,8 +3493,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c8e150c3ac4a",
@@ -3618,8 +3573,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "7cb42367054e",
@@ -3679,8 +3633,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "6d9be8b6178f",
@@ -3755,8 +3708,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "de466f5f7de9",
@@ -3827,8 +3779,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "d4b3ea2b5fe9",
@@ -3898,8 +3849,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "18e9279b8b3b",
@@ -4007,8 +3957,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "2eae8e0631ec",
@@ -4090,8 +4039,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "da7bf409819e",
@@ -4153,8 +4101,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "a86542bf9945",
@@ -4210,8 +4157,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "d876027cfbdd",
@@ -4263,8 +4209,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "21f9581ca358",
@@ -4314,8 +4259,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "deb020fa7530",
@@ -4380,8 +4324,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     }
   ]
 }

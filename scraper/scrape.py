@@ -48,6 +48,43 @@ def normalize_quotes(text):
     return text
 
 
+def get_display_category(raw_category, headline, tags=None):
+    """
+    Sprint 7.28: Determine display category for dashboard visualization.
+
+    Returns 'Sport' or 'General News' based on category, headline, and tags.
+    This is computed once per article and stored in display_category field.
+
+    Args:
+        raw_category: Original category from article
+        headline: Article headline
+        tags: List of article tags (optional)
+
+    Returns:
+        str: 'Sport' or 'General News'
+    """
+    cat = (raw_category or '').lower()
+    headline_lower = (headline or '').lower()
+    tags_text = ' '.join(tags or []).lower()
+
+    text_to_check = f"{cat} {headline_lower} {tags_text}"
+
+    SPORT_KEYWORDS = [
+        'sport', 'football', 'afc bournemouth', 'cherries', 'cricket',
+        'rugby', 'basketball', 'swimming', 'swimmers', 'swim', 'tennis',
+        'golf', 'boxing', 'f1', 'formula', 'lions', 'rec', 'hamworthy',
+        'athletic', 'fc', 'united', 'match', 'league', 'cup',
+        'player', 'signing', 'transfer', 'goal', 'score', 'defeat',
+        'play-off', 'playoff', 'quarter final', 'semi final',
+        'nba', 'nfl', 'olympics', 'commonwealth', 'spurs', 'tottenham',
+        'solanke', 'jimenez', 'tavernier', 'rating', 'ratings'
+    ]
+
+    if any(kw in text_to_check for kw in SPORT_KEYWORDS):
+        return 'Sport'
+    return 'General News'
+
+
 # Pages to scrape - Sprint 7.3: Homepage only (source of truth)
 PAGES = [
     BASE_URL
@@ -2461,6 +2498,9 @@ def extract_article_metadata(url):
         if len(source_evidence) == 0 and word_count and word_count > 500:
             warnings.append("No quoted sources in article >500 words")
 
+        # Sprint 7.28: Compute display category for dashboard visualization
+        display_category = get_display_category(category, headline)
+
         return {
             'id': article_id,
             'headline': headline,
@@ -2471,6 +2511,7 @@ def extract_article_metadata(url):
             'time': article_time,
             'category': category,
             'category_primary': category_primary,
+            'display_category': display_category,
             'word_count': word_count,
             'word_count_confidence': word_count_confidence,
             'content_type': content_type,
