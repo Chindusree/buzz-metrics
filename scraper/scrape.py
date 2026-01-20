@@ -2590,6 +2590,24 @@ def main():
     }
 
     output_path = '../data/metrics_raw.json'
+
+    # CRITICAL SAFETY CHECK: Never reduce article count (prevents data loss)
+    if os.path.exists(output_path):
+        with open(output_path, 'r', encoding='utf-8') as f:
+            existing = json.load(f)
+            existing_count = len(existing.get('articles', []))
+            if len(articles) < existing_count:
+                print("\n" + "!" * 80)
+                print("⚠️  SAFETY BLOCK: Refusing to overwrite data")
+                print("!" * 80)
+                print(f"New data has {len(articles)} articles, existing has {existing_count}")
+                print("This prevents accidental data loss during development.")
+                print()
+                print("If this is intentional (e.g., purging data), manually delete the file first:")
+                print(f"  rm {output_path}")
+                print("!" * 80)
+                return
+
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 

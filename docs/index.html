@@ -880,6 +880,15 @@
             margin-bottom: 5px;
         }
 
+        /* Sprint 7.24: Gender disclaimer styling */
+        .gender-note {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
         /* Footer */
         footer {
             background: white;
@@ -999,6 +1008,8 @@
                 <h2 class="h2-title">50:50: The Equity Project</h2>
                 <div style="max-width: 400px; margin: 0 auto;">
                     <canvas id="genderChart"></canvas>
+                    <!-- Sprint 7.24: Inclusive gender disclaimer -->
+                    <p class="gender-note">Based on name analysis. May not reflect individuals' stated gender identity.</p>
                 </div>
 
             <h2 class="h2-title" style="margin-top: 60px;">Section Breakdown</h2>
@@ -1299,10 +1310,12 @@
             genderChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Female', 'Male', 'Unknown'],
+                    // Sprint 7.24: Updated to inclusive pronoun labels
+                    labels: ['She/Her', 'He/Him', 'They/Unknown'],
                     datasets: [{
                         data: [genderCounts.female, genderCounts.male, genderCounts.unknown],
-                        backgroundColor: ['#E91E8C', '#3B82F6', '#9CA3AF'],
+                        // Sprint 7.24: Less gendered colors (purple, blue, grey)
+                        backgroundColor: ['#8B5CF6', '#3B82F6', '#9CA3AF'],
                         borderWidth: 0
                     }]
                 },

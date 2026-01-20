@@ -2,11 +2,7 @@ name: Scrape BUzz Articles
 
 on:
   schedule:
-    # Every 30 mins from 8am to 5pm UTC, Mon-Fri
-    # This covers UK working hours (8am-5pm in winter, 9am-6pm in summer BST)
     - cron: '*/15 8-17 * * 1-5'
-
-  # Allow manual trigger
   workflow_dispatch:
 
 jobs:
@@ -26,6 +22,7 @@ jobs:
         run: |
           cd scraper
           pip install -r requirements.txt
+          python -m spacy download en_core_web_sm
 
       - name: Run scraper (incremental)
         run: |
