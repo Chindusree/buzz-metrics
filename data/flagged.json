@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-20T15:04:13Z",
-  "total_flagged": 17,
+  "generated": "2026-01-20T15:54:50Z",
+  "total_flagged": 18,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -581,20 +581,54 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
       "headline": "Sweet receives first professional contract",
       "scrape_count": 0,
-      "verify_count": 2,
+      "verify_count": 3,
       "confirmed_count": 0,
       "possible_count": 0,
-      "filtered_count": 2,
+      "filtered_count": 3,
       "scrape_evidence": [],
       "verify_evidence": [
         "Carty",
+        "Sweet",
         "Hampshire"
       ],
       "confirmed": [],
       "possible": [],
       "filtered": [
         "Carty",
+        "Sweet",
         "Hampshire"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "c8e150c3ac4a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
+      "scrape_count": 2,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jadien Davies",
+        "Robin"
+      ],
+      "verify_evidence": [
+        "Evelyn Eales"
+      ],
+      "confirmed": [
+        {
+          "name": "Robin",
+          "gender": "male"
+        },
+        {
+          "name": "Evelyn Eales",
+          "gender": "female"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Jadien Davies"
       ],
       "review_status": "pending"
     }

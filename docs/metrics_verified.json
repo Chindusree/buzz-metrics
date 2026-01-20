@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-20T15:04:13Z",
-  "total_articles": 50,
+  "last_updated": "2026-01-20T15:54:50Z",
+  "total_articles": 53,
   "summary": {
-    "avg_word_count": 596,
+    "avg_word_count": 602,
     "avg_quoted_sources": 1.5,
     "below_minimum_count": 15,
     "long_form_count": 11,
     "breaking_news_count": 3,
-    "total_images": 124,
-    "original_images": 41,
+    "total_images": 128,
+    "original_images": 42,
     "stock_images": 3,
-    "uncredited_images": 80,
+    "uncredited_images": 83,
     "gender_breakdown": {
-      "male": 41,
-      "female": 20,
+      "male": 42,
+      "female": 22,
       "unknown": 15
     },
     "by_section": {
       "Sport": {
-        "count": 12,
-        "words": 6162,
+        "count": 13,
+        "words": 6935,
         "sources": 17
       },
       "General News": {
-        "count": 32,
-        "words": 13725,
-        "sources": 39
+        "count": 34,
+        "words": 15063,
+        "sources": 42
       },
       "Features": {
         "count": 6,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 12,
-        "avg_word_count": 514,
-        "avg_sources": 1.4
+        "count": 13,
+        "avg_word_count": 533,
+        "avg_sources": 1.3
       },
       "News": {
-        "count": 32,
-        "avg_word_count": 429,
+        "count": 34,
+        "avg_word_count": 443,
         "avg_sources": 1.2
       },
       "Features": {
@@ -64,10 +64,10 @@
     },
     {
       "date": "2026-01-20",
-      "article_count": 19,
+      "article_count": 22,
       "target": 12,
       "meets_target": true,
-      "first_publish_time": "09:15",
+      "first_publish_time": "08:48",
       "first_publish_on_time": true,
       "below_minimum_count": 5,
       "long_form_count": 1
@@ -3748,6 +3748,7 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Carty",
+        "Sweet",
         "Hampshire"
       ],
       "is_breaking_news": false,
@@ -3856,6 +3857,208 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News"
+    },
+    {
+      "id": "d4b3ea2b5fe9",
+      "headline": "New Greek restaurant set to open in Wallisdown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/new-greek-restaurant-set-to-open-in-wallisdown/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "12:48",
+      "category": "News",
+      "category_primary": "News",
+      "word_count": 611,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Angela Ntente",
+          "full_attribution": "Ntente said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6541-1-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "The new restaurants doors, which are set to be open, with construction equipment outside"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6537-1-225x300.jpeg",
+            "classification": "uncredited",
+            "credit": "Pictures of various drinks on the walls of Crete Island A close up look into the inside of Crete Island"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Angela Ntente",
+          "gender": "female"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "c8e150c3ac4a",
+      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "08:58",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 727,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Jadien Davies",
+          "full_attribution": "Jadien Davies, who ran the event, said",
+          "quote_snippet": "",
+          "position": "who_clause",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        },
+        {
+          "name": "Robin",
+          "full_attribution": "speaker, Robin, shared",
+          "quote_snippet": "",
+          "position": "introducer",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260117_124618850-4-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Robin",
+          "gender": "male"
+        },
+        {
+          "name": "Evelyn Eales",
+          "gender": "female"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Jadien Davies"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "5448a03abf18",
+      "headline": "Cherries denied three points late on by Brighton equaliser",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
+      "author": "Jack Hillman",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "08:48",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "word_count": 773,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/AFCB-800x400.jpg",
+            "classification": "original",
+            "credit": "afcb"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-20T15:04:12Z",
-  "total_verified": 50,
+  "last_updated": "2026-01-20T15:54:30Z",
+  "total_verified": 53,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -671,11 +671,15 @@
     {
       "id": "a86542bf9945",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
-      "verify_quoted_sources": 2,
+      "verify_quoted_sources": 3,
       "verify_evidence": [
         {
           "name": "Carty",
-          "context": "PERSON within 50 chars of quote: ... was testament to why she got the contract”, said Carty. “In Francesca we feel we have unearthed a player..."
+          "context": "PERSON within 50 chars of quote: ... was testament to why she got the contract,” said Carty. “In Francesca we feel we have unearthed a player..."
+        },
+        {
+          "name": "Sweet",
+          "context": "PERSON within 50 chars of quote: ...n’s domestic game for years to come,” Carty said. Sweet herself talked about her excitement to start her ..."
         },
         {
           "name": "Hampshire",
@@ -692,6 +696,38 @@
     {
       "id": "21f9581ca358",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/witness-appeal-following-burglary-in-weymouth/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "d4b3ea2b5fe9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/new-greek-restaurant-set-to-open-in-wallisdown/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Angela Ntente",
+          "context": "PERSON within 50 chars of quote: ...amily full of chefs, it felt like the right move. Angela Ntente said “I came from a family that are all chefs; my..."
+        },
+        {
+          "name": "Angela",
+          "context": "PERSON within 50 chars of quote: ...find it challenging as well.” Angela Ntente said. Angela used to work in a restaurant in Bearwood and the ..."
+        }
+      ]
+    },
+    {
+      "id": "c8e150c3ac4a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Evelyn Eales",
+          "context": "PERSON within 50 chars of quote: ...he risk and see what it was like to take charge.” Evelyn Eales, the health and safety co-ordinator for the march..."
+        }
+      ]
+    },
+    {
+      "id": "5448a03abf18",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     }
