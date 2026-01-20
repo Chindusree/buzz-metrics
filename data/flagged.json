@@ -1,7 +1,36 @@
 {
-  "generated": "2026-01-19T21:23:03Z",
-  "total_flagged": 2,
+  "generated": "2026-01-20T07:43:26Z",
+  "total_flagged": 9,
   "flagged_articles": [
+    {
+      "id": "96eed46a1e57",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "headline": "Tonight stitch and movie night",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Becca Parker"
+      ],
+      "verify_evidence": [
+        "Becca",
+        "Becca Parker",
+        "COVID"
+      ],
+      "confirmed": [
+        {
+          "name": "Becca Parker",
+          "gender": "female"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "COVID"
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "cd1485975ecc",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
@@ -45,31 +74,248 @@
       "review_status": "pending"
     },
     {
-      "id": "96eed46a1e57",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
-      "headline": "Tonight stitch and movie night",
+      "id": "4c79ed9d0c43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "scrape_count": 2,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Ewan Corbett",
+        "Premier League"
+      ],
+      "verify_evidence": [
+        "Sarr"
+      ],
+      "confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male"
+        },
+        {
+          "name": "Premier League",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Sarr"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "e48217df8ae6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "scrape_count": 0,
+      "verify_count": 6,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Williams",
+        "Richard Sydenham",
+        "John Gunderson",
+        "Jerry Mitchell",
+        "Richard",
+        "John"
+      ],
+      "confirmed": [
+        {
+          "name": "Richard Sydenham",
+          "gender": "male"
+        },
+        {
+          "name": "John Gunderson",
+          "gender": "male"
+        },
+        {
+          "name": "Jerry Mitchell",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Williams"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "37619d905b65",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "headline": "Southern League Premier South preview",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Marcin Rogalski",
+        "IK Hill"
+      ],
+      "verify_evidence": [
+        "Yate",
+        "Hill",
+        "Walton"
+      ],
+      "confirmed": [
+        {
+          "name": "Marcin Rogalski",
+          "gender": "male"
+        },
+        {
+          "name": "IK Hill",
+          "gender": "unknown"
+        },
+        {
+          "name": "Walton",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Yate"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "21a723b0aed1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
+      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Rayan",
+        "@rayann"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Rayan"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2edf13de5329",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-charged-after-human-remains-found/",
+      "headline": "Man charged after human remains found",
       "scrape_count": 1,
       "verify_count": 3,
       "confirmed_count": 1,
       "possible_count": 0,
-      "filtered_count": 1,
+      "filtered_count": 2,
       "scrape_evidence": [
-        "Becca Parker"
+        "Neil Meade"
       ],
       "verify_evidence": [
-        "Becca",
-        "Becca Parker",
-        "COVID"
+        "Neil Meade",
+        "Craig’s",
+        "Breton"
       ],
       "confirmed": [
         {
-          "name": "Becca Parker",
+          "name": "Neil Meade",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Craig’s",
+        "Breton"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "5db595468971",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "headline": "Poole Town’s Kitmen aiming to complete the 92",
+      "scrape_count": 2,
+      "verify_count": 10,
+      "confirmed_count": 4,
+      "possible_count": 0,
+      "filtered_count": 3,
+      "scrape_evidence": [
+        "Matt Reeds",
+        "Dan Wilson"
+      ],
+      "verify_evidence": [
+        "Nottingham Forest",
+        "Wembley",
+        "Wilson",
+        "Dan",
+        "Dan Wilson",
+        "Matt Reeds",
+        "Lauren Kelly",
+        "Reeds",
+        "Brentford",
+        "Harrogate"
+      ],
+      "confirmed": [
+        {
+          "name": "Matt Reeds",
+          "gender": "male"
+        },
+        {
+          "name": "Dan Wilson",
+          "gender": "male"
+        },
+        {
+          "name": "Nottingham Forest",
+          "gender": "unknown"
+        },
+        {
+          "name": "Lauren Kelly",
           "gender": "female"
         }
       ],
       "possible": [],
       "filtered": [
-        "COVID"
+        "Wembley",
+        "Brentford",
+        "Harrogate"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "0faceff20735",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
+      "headline": "Andoni Iraola looks ahead to Brighton test",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Fabian Hurzeler",
+        "Brighton",
+        "Ryan",
+        "David Brooks"
+      ],
+      "confirmed": [
+        {
+          "name": "Fabian Hurzeler",
+          "gender": "male"
+        },
+        {
+          "name": "Ryan",
+          "gender": "male"
+        },
+        {
+          "name": "David Brooks",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Brighton"
       ],
       "review_status": "pending"
     }

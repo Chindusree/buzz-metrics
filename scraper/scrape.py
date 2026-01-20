@@ -612,6 +612,45 @@ def extract_sources(body_text, soup=None):
     return unique_sources
 
 
+def extract_credit_from_caption(text):
+    """
+    Sprint 7.18: Extract credit name from caption text.
+
+    Parses common credit patterns to extract the actual photographer/credit name:
+    - (Credit: Name)
+    - Photo by Name
+    - Caption | Name
+    - Caption / Name
+
+    Args:
+        text: Caption text to parse
+
+    Returns:
+        str or None: Extracted credit name, or None if no pattern matched
+    """
+    if not text:
+        return None
+
+    # Patterns in priority order
+    patterns = [
+        r'\((?:Credit|Photo|Image|Pic):\s*([^)]+)\)',  # (Credit: Name)
+        r'(?:Credit|Photo|Image|Pic):\s*(.+?)(?:\.|$)',  # Credit: Name
+        r'(?:Photo(?:graph)?|Image|Pic)\s+by\s+(.+?)(?:\.|$)',  # Photo by Name
+        r'\|\s*(.+?)$',  # Caption | Name
+        r'/\s*([A-Z][a-z]+ [A-Z][a-z]+)\s*$',  # Caption / Firstname Lastname
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            credit = match.group(1).strip()
+            # Validate it looks like a name or source
+            if len(credit) > 2 and len(credit) < 50:
+                return credit
+
+    return None
+
+
 def classify_image(img, article_body):
     """
     Classify an image as 'stock', 'original', or 'uncredited'.
@@ -624,6 +663,10 @@ def classify_image(img, article_body):
     Layer 1: Filename patterns (pexels-, unsplash-, etc.) - catches stock even if credit is garbage
     Layer 2: Sibling caption detection - extract_credit_from_context checks .image-caption spans
     Layer 3: Credit text keywords (Pexels, Unsplash, Getty, etc.) - classifies as stock
+
+    Sprint 7.18 - Credit extraction fix:
+    - Extract actual credit name from captions using extract_credit_from_caption()
+    - Parse patterns like "(Credit: Name)" to get the name itself
 
     Args:
         img: BeautifulSoup img tag
@@ -648,12 +691,21 @@ def classify_image(img, article_body):
         if figcaption:
             credit_sources.append(figcaption.get_text(strip=True))
 
-    # Check for caption div
+    # Check for caption div/span (Sprint 7.18: added span to search)
     img_container = img.find_parent(['div', 'figure'])
     if img_container:
-        caption_divs = img_container.find_all(['div', 'p'], class_=lambda x: x and ('caption' in str(x).lower() or 'credit' in str(x).lower()))
+        caption_divs = img_container.find_all(['div', 'p', 'span'], class_=lambda x: x and ('caption' in str(x).lower() or 'credit' in str(x).lower()))
         for div in caption_divs:
             credit_sources.append(div.get_text(strip=True))
+
+    # Sprint 7.18: Also check for sibling span.image-caption elements (WordPress pattern)
+    # The caption is a sibling of div.featured-image, not the img itself
+    # Structure: <div class="featured-image"><picture><img></picture></div><span class="image-caption">...</span>
+    featured_image_div = img.find_parent('div', class_='featured-image')
+    if featured_image_div:
+        sibling_caption = featured_image_div.find_next_sibling('span', class_='image-caption')
+        if sibling_caption:
+            credit_sources.append(sibling_caption.get_text(strip=True))
 
     # Combine all credit text
     credit_text = ' '.join(filter(None, credit_sources))
@@ -683,11 +735,19 @@ def classify_image(img, article_body):
         if phrase in alt_lower:
             return ('stock', credit_text or 'No credit')
 
-    # Check for proper credit attribution
+    # Sprint 7.18: Extract actual credit name from caption
+    extracted_credit = extract_credit_from_caption(credit_text)
+
+    if extracted_credit:
+        # Credit name successfully extracted - classify as original
+        return ('original', extracted_credit)
+
+    # Fallback: Check for credit pattern keywords (old behavior)
     credit_patterns = ['photo:', 'photo by', 'credit:', 'by ', 'photograph:', 'image:', 'picture:']
     has_credit = any(p in credit_lower for p in credit_patterns)
 
     if has_credit:
+        # Has credit pattern but couldn't extract name - return full text
         return ('original', credit_text)
 
     # No credit found - mark as uncredited
@@ -1455,6 +1515,7 @@ def extract_credit_from_context(elem):
     """
     Look for credit text near the image.
     Sprint 7.10: Added sibling .image-caption detection (Uncle Bob Layer 2).
+    Sprint 7.18: Added Shorthand caption detection (Theme-Caption, Caption divs).
     """
     if not elem:
         return ''
@@ -1473,6 +1534,23 @@ def extract_credit_from_context(elem):
                 sibling_classes = sibling.get('class', [])
                 if 'image-caption' in sibling_classes:
                     return sibling.get_text(strip=True)
+
+    # Sprint 7.18: Check for Shorthand caption patterns
+    # Look for parent or ancestor with Caption/Theme-Caption class
+    current = elem
+    for _ in range(5):  # Check up to 5 levels up
+        if not current:
+            break
+        current = current.parent
+        if current and hasattr(current, 'get'):
+            classes = current.get('class', [])
+            # Shorthand uses Caption, Theme-Caption, etc.
+            if any('caption' in str(c).lower() for c in classes):
+                # Found a caption container, get all text from p tags
+                for p in current.find_all('p'):
+                    text = p.get_text(strip=True)
+                    if text:
+                        return text
 
     # Check parent/siblings for caption text
     if parent:
@@ -1620,7 +1698,8 @@ def extract_shorthand_images_clean(soup):
 
     for img in shorthand_images:
         # Classify each Shorthand image
-        credit = extract_image_credit_from_caption(img.get('credit', ''))
+        # Sprint 7.18: Use new extract_credit_from_caption() for better pattern matching
+        credit = extract_credit_from_caption(img.get('credit', ''))
         classification = 'original' if credit else 'uncredited'
 
         if classification == 'original':

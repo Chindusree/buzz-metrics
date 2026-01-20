@@ -934,7 +934,7 @@
     <!-- Sprint 9.2.1: Unified header with navigation and date selector -->
     <div class="header-wrapper">
         <header class="header-bar">
-            <img src="assets/buzz-logo.png" alt="BUzz" height="36">
+            <img src="buzz-logo-dash-nowhite.png" alt="BUzz" height="36">
             <nav class="sticky-nav">
                 <a href="#overview" class="nav-item active">At a Glance</a>
                 <span class="nav-dot">·</span>
@@ -979,7 +979,6 @@
             <div class="card">
                 <div class="card-value" id="imagesCount">0</div>
                 <div class="card-label">IMAGES</div>
-                <div class="card-sublabel" id="uncreditedCount">0 uncredited</div>
             </div>
                     </div>
                 </div>
@@ -1083,9 +1082,8 @@
                     </select>
                 </div>
                 <div class="table-control">
-                    <label for="sectionFilter">Section:</label>
                     <select id="sectionFilter">
-                        <option value="all">All Sections</option>
+                        <option value="all">Sort by Sections</option>
                     </select>
                 </div>
             </div>
@@ -1275,13 +1273,11 @@
             const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
             const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
             const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
-            const uncreditedImages = filteredArticles.reduce((sum, a) => sum + (a.images?.uncredited || 0), 0);
 
             document.getElementById('storiesCount').textContent = filteredArticles.length;
             document.getElementById('wordsCount').textContent = totalWords.toLocaleString();
             document.getElementById('sourcesCount').textContent = totalSources;
             document.getElementById('imagesCount').textContent = totalImages;
-            document.getElementById('uncreditedCount').textContent = `${uncreditedImages} uncredited`;
         }
 
         function updateSourceDiversity() {
@@ -1476,7 +1472,7 @@
             // Populate section filter
             const sectionFilter = document.getElementById('sectionFilter');
             const currentFilter = sectionFilter.value;
-            sectionFilter.innerHTML = '<option value="all">All Sections</option>';
+            sectionFilter.innerHTML = '<option value="all">Sort by Sections</option>';
 
             const sections = [...new Set(filteredArticles.map(a => a.category_normalised))];
             sections.forEach(section => {
@@ -1545,12 +1541,8 @@
             return '';
         }
 
-        // Sprint 9: Show subtle text instead of emoji badge
+        // Sprint 7.18.1: Remove uncredited text from article table
         function getImageBadge(article) {
-            const uncredited = article.images?.uncredited || 0;
-            if (uncredited > 0) {
-                return ` <span class="uncredited-note">(${uncredited} uncredited)</span>`;
-            }
             return '';
         }
 

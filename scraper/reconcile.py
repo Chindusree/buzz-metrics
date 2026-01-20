@@ -161,8 +161,14 @@ def is_obvious_non_person(name):
 
     # Step 1: Check known brands FIRST (before NER)
     # NER can misclassify brands like "COVID" as PERSON
-    brands = ['covid', 'lambrini', 'frosty jacks', 'jack daniels', 'guinness']
+    # Sprint 7.18.2: Added Studio Sal, Ralph Lauren, Big Give
+    brands = ['covid', 'lambrini', 'frosty jacks', 'jack daniels', 'guinness',
+              'studio sal', 'ralph lauren', 'big give']
     if any(brand in name_lower for brand in brands):
+        return True
+
+    # Sprint 7.18.2: Check for "Studio " prefix pattern
+    if name.startswith('Studio '):
         return True
 
     # Step 1.5: Sprint 7.16.1 - Single-word name handling
