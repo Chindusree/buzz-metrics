@@ -802,6 +802,40 @@
             font-style: italic;
         }
 
+        /* Sprint 7.29: Contributor modal styles */
+        .contributor-name-link {
+            color: #0066CC;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contributor-name-link:hover {
+            text-decoration: underline;
+        }
+
+        .contributor-story-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .contributor-story-link {
+            color: #0066CC;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contributor-story-link:hover {
+            text-decoration: underline;
+        }
+
+        .contributor-story-count {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
         /* Contributors Section */
         .contributors-header {
             display: flex;
@@ -1161,6 +1195,17 @@
                 <span class="modal-close" onclick="closeModal()">&times;</span>
             </div>
             <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Sprint 7.29: Contributor stories modal -->
+    <div id="contributorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contributorModalTitle"></h3>
+                <span class="modal-close" onclick="closeContributorModal()">&times;</span>
+            </div>
+            <div id="contributorModalBody"></div>
         </div>
     </div>
 
@@ -1727,11 +1772,77 @@
             document.getElementById('sourcesModal').style.display = 'none';
         }
 
+        // Sprint 7.29: Show contributor stories modal
+        function showContributorStories(authorName) {
+            const modal = document.getElementById('contributorModal');
+            const modalTitle = document.getElementById('contributorModalTitle');
+            const modalBody = document.getElementById('contributorModalBody');
+
+            // Get articles for the selected period (matching contributors table logic)
+            let articles = filteredArticles;
+            if (contributorsPeriod === 'today') {
+                const selectedDate = document.getElementById('dateSelect').value;
+                if (selectedDate !== 'all') {
+                    articles = metricsData.articles.filter(a => a.date === selectedDate);
+                } else {
+                    const latestDate = metricsData.daily_stats[metricsData.daily_stats.length - 1]?.date;
+                    articles = metricsData.articles.filter(a => a.date === latestDate);
+                }
+            }
+
+            // Filter articles by author
+            const authorArticles = articles.filter(a => a.author === authorName);
+
+            // Set modal title
+            modalTitle.textContent = authorName;
+
+            // Build modal content
+            modalBody.innerHTML = '';
+
+            if (authorArticles.length === 0) {
+                modalBody.innerHTML = '<p>No stories found.</p>';
+            } else {
+                const countP = document.createElement('p');
+                countP.className = 'contributor-story-count';
+                countP.textContent = `${authorArticles.length} ${authorArticles.length === 1 ? 'story' : 'stories'}`;
+                modalBody.appendChild(countP);
+
+                const ul = document.createElement('ul');
+                ul.style.listStyle = 'none';
+                ul.style.padding = '0';
+
+                authorArticles.forEach(article => {
+                    const li = document.createElement('li');
+                    li.className = 'contributor-story-item';
+
+                    const link = document.createElement('a');
+                    link.href = article.url;
+                    link.target = '_blank';
+                    link.className = 'contributor-story-link';
+                    link.textContent = article.headline;
+
+                    li.appendChild(link);
+                    ul.appendChild(li);
+                });
+
+                modalBody.appendChild(ul);
+            }
+
+            modal.style.display = 'block';
+        }
+
+        function closeContributorModal() {
+            document.getElementById('contributorModal').style.display = 'none';
+        }
+
         // Close modal when clicking outside
         window.onclick = function(event) {
-            const modal = document.getElementById('sourcesModal');
-            if (event.target === modal) {
+            const sourcesModal = document.getElementById('sourcesModal');
+            const contributorModal = document.getElementById('contributorModal');
+            if (event.target === sourcesModal) {
                 closeModal();
+            } else if (event.target === contributorModal) {
+                closeContributorModal();
             }
         }
 
@@ -1824,8 +1935,9 @@
                 const met350Ratio = `${stats.met350}/${stats.stories}`;
 
                 const row = document.createElement('tr');
+                // Sprint 7.29: Make author name clickable to show stories
                 row.innerHTML = `
-                    <td>${author}</td>
+                    <td><a href="#" class="contributor-name-link" onclick="event.preventDefault(); showContributorStories('${author.replace(/'/g, "\\'")}');">${author}</a></td>
                     <td>${stats.stories}</td>
                     <td>${avgSources}</td>
                     <td>${genderDisplay}</td>
