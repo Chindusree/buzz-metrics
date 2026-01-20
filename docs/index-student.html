@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUzz Student Metrics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Sprint 7.19: Chart.js for donut chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Sprint 9.2: Refined Apple Design System */
+        :root {
+            /* Fonts */
+            --font-headline: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Source Serif Pro', Georgia, serif;
+
+            /* Colors - refined */
+            --text-primary: #1d1d1f;
+            --text-body: #3d3d3f;
+            --text-secondary: #6e6e73;
+            --text-tertiary: #aeaeb2;
+            --border: #e5e5e7;
+            --border-subtle: rgba(0, 0, 0, 0.04);
+            --bg-page: #f5f5f7;
+            --bg-card: #ffffff;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+            /* Status colors */
+            --green: #34c759;
+            --orange: #ff9500;
+            --red: #ff3b30;
+
+            /* Gender gradients */
+            --female-start: #ff6b9d;
+            --female-end: #c44569;
+            --male-start: #4a90d9;
+            --male-end: #2c5aa0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sprint 9.2: Contained content with breathing room */
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        /* Sprint 9.2.1: Unified header with navigation on same line */
+        .header-wrapper {
+            position: sticky;
+            top: 0;
+            background: var(--bg-page);
+            width: 100%;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .header-bar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 80px;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .header-bar img {
+            height: 36px;
+            background: var(--bg-page);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        /* Navigation on same line as logo */
+        .sticky-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .nav-item {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .nav-item.active {
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        .nav-dot {
+            color: var(--text-tertiary);
+            font-size: 14px;
+        }
+
+        /* Header date selector - right aligned */
+        .header-date-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .header-date-selector label {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-secondary);
+        }
+
+        .header-date-selector select {
+            font-family: var(--font-headline);
+            font-size: 13px;
+            font-weight: 400;
+            padding: 6px 12px;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            background: var(--bg-card);
+            color: var(--text-body);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .header-date-selector select:hover {
+            border-color: var(--text-secondary);
+        }
+
+        .header-date-selector select:focus {
+            outline: none;
+            border-color: var(--text-primary);
+        }
+
+        /* Sprint 9.2: Typography Hierarchy - lighter, tighter */
+        .h1-title {
+            font-family: var(--font-headline);
+            font-size: 60px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin-bottom: 48px;
+        }
+
+        /* Sprint 9.2.2: Hero section title */
+        .hero-title {
+            font-family: var(--font-headline);
+            font-size: 60px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin: 0 auto 64px auto;
+            max-width: 1200px;
+            padding: 0 80px;
+        }
+
+        .h2-title {
+            font-family: var(--font-headline);
+            font-size: 30px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 28px;
+        }
+
+        /* Section header on gray background (like "Analysis") */
+        .section-header {
+            padding: 80px 0 64px 0;
+        }
+
+        .section-header-title {
+            font-family: var(--font-headline);
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+            text-align: left;
+        }
+
+        /* Override font size for "At a glance" section */
+        #overview .section-header-title {
+            font-size: 60px;
+            font-weight: 500;
+        }
+
+        .h3-title {
+            font-family: var(--font-headline);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            display: none; /* Logo replaces title */
+        }
+
+        /* Sprint 9.2: Section Spacing - more generous */
+        .section {
+            padding: 80px 0;
+            min-height: 80vh;
+        }
+
+        /* Content area for sections */
+        .section-content {
+            padding: 80px 0;
+        }
+
+        /* Sprint 9.2.2: Hero section - Apple Store style */
+        #overview {
+            min-height: auto;
+            padding: 0;
+        }
+
+        /* Hero header on gray background */
+        .hero-header {
+            padding: 64px 0 48px 0;
+            text-align: center;
+        }
+
+        /* Hero content - white cards section */
+        .hero-content {
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+            padding: 0;
+        }
+
+        /* Analysis section follows hero pattern */
+        #analysis {
+            min-height: auto;
+            padding: 0 0 24px 0;
+            margin-top: 80px;
+        }
+
+        #analysis .container {
+            padding-bottom: 24px;
+        }
+
+        /* Stats Cards - 30% larger */
+        .stats-grid,
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 31px;
+            margin: 0;
+        }
+
+        .card,
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 26px;
+            padding: 52px 42px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-subtle);
+            min-height: 234px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover,
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-value {
+            font-family: var(--font-headline);
+            font-size: 73px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .card-label {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        .card-sublabel {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        /* Sprint 9: Content Sections */
+        .section {
+            background: var(--bg-card);
+            padding: 32px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: 0;
+            text-transform: none;
+            margin-bottom: 20px;
+        }
+
+        /* Sprint 9.1: Coverage by Section - elevated cards */
+        .section-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .section-card-count {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        .section-card-stat {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .section-card-time {
+            margin-top: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Sprint 9: Time status colors (no dots) */
+        .time-good {
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .time-warning {
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+        .time-late {
+            color: var(--red);
+            font-weight: 500;
+        }
+
+        .legend {
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        /* Publication rhythm */
+        .rhythm-grid {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .rhythm-table {
+            min-width: 600px;
+            border-collapse: collapse;
+        }
+
+        .rhythm-table th {
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .rhythm-table td {
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 14px;
+        }
+
+        .rhythm-table .category-label {
+            text-align: left;
+            font-weight: 600;
+            padding-right: 15px;
+        }
+
+        .rhythm-target {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Sprint 7.24: Gender disclaimer styling */
+        .gender-note {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sprint 9.2.1: Unified header with navigation and date selector -->
+    <div class="header-wrapper">
+        <header class="header-bar">
+            <img src="buzz-logo-dash-nowhite.png" alt="BUzz" height="36">
+            <nav class="sticky-nav">
+                <a href="#overview" class="nav-item active">At a glance</a>
+                <span class="nav-dot">·</span>
+                <a href="#analysis" class="nav-item">Analysis</a>
+            </nav>
+            <div class="header-date-selector">
+                <select id="dateSelect">
+                    <option value="all">Select dates</option>
+                </select>
+            </div>
+        </header>
+    </div>
+
+    <main class="dashboard">
+        <!-- OVERVIEW SECTION -->
+        <section id="overview" class="section">
+            <!-- Hero header on gray background (like Analysis section) -->
+            <div class="section-header">
+                <h1 class="section-header-title">At a glance</h1>
+            </div>
+
+            <!-- Hero content - white cards section -->
+            <div class="hero-content">
+                <div class="dashboard">
+                    <div class="cards-grid" id="todayCards">
+            <div class="card">
+                <div class="card-value" id="storiesCount">0</div>
+                <div class="card-label">STORIES</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="wordsCount">0</div>
+                <div class="card-label">WORDS</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="sourcesCount">0</div>
+                <div class="card-label">QUOTED SOURCES</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="imagesCount">0</div>
+                <div class="card-label">IMAGES</div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANALYSIS SECTION -->
+        <section id="analysis" class="section">
+            <!-- Analysis header on gray background -->
+            <div class="section-header">
+                <h2 class="section-header-title">Analysis</h2>
+            </div>
+
+            <!-- Analysis content -->
+            <div class="container">
+                <h2 class="h2-title">The Inclusive Project</h2>
+                <div style="max-width: 400px; margin: 0 auto;">
+                    <canvas id="genderChart"></canvas>
+                    <!-- Sprint 7.24: Inclusive gender disclaimer -->
+                    <p class="gender-note">Based on name analysis. May not reflect individuals' stated gender identity.</p>
+                </div>
+
+            <h2 class="h2-title" style="margin-top: 60px;">Section breakdown</h2>
+            <div class="section-cards" id="sectionCards"></div>
+
+            <h2 class="h2-title" style="margin-top: 60px;">Publication rhythm</h2>
+            <div class="rhythm-grid">
+                <table class="rhythm-table" id="rhythmTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>06</th><th>07</th><th>08</th><th>09</th><th>10</th><th>11</th>
+                            <th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rhythmBody"></tbody>
+                </table>
+            </div>
+            <div class="rhythm-target">██ = 2+ stories &nbsp;&nbsp; █ = 1 story &nbsp;&nbsp; · = none<br>Target: First story before 10:00</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Quoted source counts are estimates using pattern matching with NLP verification.</p>
+        <p>Gender determined from first names. Report issues to [lecturer email].</p>
+    </footer>
+
+    <script>
+        // Global data
+        let metricsData = null;
+        let filteredArticles = [];
+
+        // Sprint 9.1: Navigation scroll detection
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            setupSmoothScroll();
+            setupScrollSpy();
+        });
+
+        // Sprint 9.2.1: Smooth scroll with unified header
+        function setupSmoothScroll() {
+            document.querySelectorAll('.nav-item').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('.header-wrapper').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Sprint 9.2.1: Update active nav item on scroll
+        function setupScrollSpy() {
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const headerHeight = document.querySelector('.header-wrapper').offsetHeight;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 100;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === '#' + current) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('./metrics_verified.json');
+                metricsData = await response.json();
+                initializeDashboard();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Failed to load metrics data. Please check the console for details.');
+            }
+        }
+
+        function initializeDashboard() {
+            // Populate date selector
+            populateDateSelector();
+
+            // Sprint 7.21: Default to today's date (or most recent if no articles today)
+            const today = new Date().toISOString().split('T')[0];
+            const availableDates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+            const defaultDate = availableDates.includes(today) ? today : availableDates[0];
+
+            // Set date selector and update dashboard
+            document.getElementById('dateSelect').value = defaultDate;
+            updateDashboard(defaultDate);
+        }
+
+        function populateDateSelector() {
+            const dateSelect = document.getElementById('dateSelect');
+            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                const d = new Date(date);
+                option.textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+                dateSelect.appendChild(option);
+            });
+
+            dateSelect.addEventListener('change', (e) => {
+                updateDashboard(e.target.value);
+            });
+        }
+
+        function updateDashboard(selectedDate) {
+            // Filter articles
+            if (selectedDate === 'all') {
+                filteredArticles = metricsData.articles;
+            } else {
+                filteredArticles = metricsData.articles.filter(a => a.date === selectedDate);
+            }
+
+            // Update all sections
+            updateTodayCards();
+            updateSourceDiversity();
+            updateCoverageBySection();
+            updatePublicationRhythm();
+        }
+
+        function updateTodayCards() {
+            const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
+            const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
+            const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
+
+            document.getElementById('storiesCount').textContent = filteredArticles.length;
+            document.getElementById('wordsCount').textContent = totalWords.toLocaleString();
+            document.getElementById('sourcesCount').textContent = totalSources;
+            document.getElementById('imagesCount').textContent = totalImages;
+        }
+
+        // Sprint 7.19: Gender donut chart
+        let genderChart = null;
+
+        function updateSourceDiversity() {
+            const genderCounts = { male: 0, female: 0, unknown: 0 };
+
+            filteredArticles.forEach(article => {
+                const sources = article.source_evidence_confirmed || [];
+                sources.forEach(source => {
+                    const gender = source.gender || 'unknown';
+                    if (genderCounts.hasOwnProperty(gender)) {
+                        genderCounts[gender]++;
+                    }
+                });
+            });
+
+            const total = genderCounts.female + genderCounts.male + genderCounts.unknown;
+            const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+            const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+            const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
+
+            // Destroy existing chart if it exists
+            if (genderChart) {
+                genderChart.destroy();
+            }
+
+            // Create donut chart
+            const ctx = document.getElementById('genderChart').getContext('2d');
+            genderChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    // Sprint 7.24: Updated to inclusive pronoun labels
+                    labels: ['She/Her', 'He/Him', 'They/Unknown'],
+                    datasets: [{
+                        data: [genderCounts.female, genderCounts.male, genderCounts.unknown],
+                        // Sprint 7.24: Less gendered colors (purple, blue, grey)
+                        backgroundColor: ['#8B5CF6', '#3B82F6', '#9CA3AF'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    cutout: '60%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 20,
+                                font: {
+                                    family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+                                    size: 14
+                                },
+                                generateLabels: function(chart) {
+                                    const data = chart.data;
+                                    return data.labels.map((label, i) => {
+                                        const count = data.datasets[0].data[i];
+                                        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+                                        return {
+                                            text: `${label}: ${count} (${percent}%)`,
+                                            fillStyle: data.datasets[0].backgroundColor[i],
+                                            hidden: false,
+                                            index: i
+                                        };
+                                    });
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    const percent = total > 0 ? Math.round((value / total) * 100) : 0;
+                                    return `${label}: ${value} (${percent}%)`;
+                                }
+                            }
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true
+                }
+            });
+        }
+
+        function updateCoverageBySection() {
+            const sectionData = {};
+
+            // Aggregate data by section
+            filteredArticles.forEach(article => {
+                const section = article.category_normalised || 'Unknown';
+                if (!sectionData[section]) {
+                    sectionData[section] = {
+                        count: 0,
+                        words: 0,
+                        sources: 0,
+                        firstPublish: null
+                    };
+                }
+                sectionData[section].count++;
+                sectionData[section].words += article.word_count || 0;
+                sectionData[section].sources += article.quoted_sources_confirmed || 0;
+
+                if (article.time) {
+                    if (!sectionData[section].firstPublish || article.time < sectionData[section].firstPublish) {
+                        sectionData[section].firstPublish = article.time;
+                    }
+                }
+            });
+
+            // Render section cards
+            const container = document.getElementById('sectionCards');
+            container.innerHTML = '';
+
+            // Filter to only show General News and Sport
+            const sectionsToShow = ['General News', 'Sport'];
+
+            Object.entries(sectionData).forEach(([section, data]) => {
+                // Skip sections not in the filter list
+                if (!sectionsToShow.includes(section)) return;
+                const card = document.createElement('div');
+                card.className = 'section-card';
+
+                const trafficLightClass = getTrafficLight(data.firstPublish);
+                const sourcesLabel = data.sources === 1 ? 'quoted source' : 'quoted sources';
+                const timeDisplay = data.firstPublish
+                    ? `<span class="${trafficLightClass}">${data.firstPublish}</span>`
+                    : 'N/A';
+
+                card.innerHTML = `
+                    <div class="section-card-header">
+                        <div class="section-card-title">${section}</div>
+                        <div class="section-card-count">${data.count}</div>
+                    </div>
+                    <div class="section-card-stat">${data.words.toLocaleString()} words</div>
+                    <div class="section-card-stat">${data.sources} ${sourcesLabel}</div>
+                    <div class="section-card-time">
+                        First published: ${timeDisplay}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Sprint 9: Return CSS class name instead of emoji
+        function getTrafficLight(time) {
+            if (!time) return '';
+            const hour = parseInt(time.split(':')[0]);
+            const minute = parseInt(time.split(':')[1]);
+            const totalMinutes = hour * 60 + minute;
+
+            if (totalMinutes < 600) return 'time-good'; // Before 10:00
+            if (totalMinutes < 720) return 'time-warning'; // 10:00-12:00
+            return 'time-late'; // After 12:00
+        }
+
+        function updatePublicationRhythm() {
+            const rhythmData = {
+                'General News': Array(13).fill(0),
+                'Sport': Array(13).fill(0)
+            };
+
+            filteredArticles.forEach(article => {
+                if (!article.time) return;
+                const hour = parseInt(article.time.split(':')[0]);
+                if (hour < 6 || hour > 18) return;
+
+                const section = article.category_normalised;
+                if (rhythmData[section]) {
+                    const index = hour - 6;
+                    rhythmData[section][index]++;
+                }
+            });
+
+            const tbody = document.getElementById('rhythmBody');
+            tbody.innerHTML = '';
+
+            Object.entries(rhythmData).forEach(([section, counts]) => {
+                const row = document.createElement('tr');
+                const labelCell = document.createElement('td');
+                labelCell.className = 'category-label';
+                labelCell.textContent = section;
+                row.appendChild(labelCell);
+
+                counts.forEach(count => {
+                    const cell = document.createElement('td');
+                    if (count === 0) {
+                        cell.textContent = '·';
+                    } else if (count === 1) {
+                        cell.textContent = '█';
+                    } else {
+                        cell.textContent = '██';
+                    }
+                    row.appendChild(cell);
+                });
+
+                tbody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>
