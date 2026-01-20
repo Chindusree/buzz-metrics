@@ -1182,7 +1182,8 @@ def extract_quoted_sources(text):
         # Skip quotes that are just attribution (e.g., " Wilder said. ")
         attribution_words = ['said', 'says', 'explained', 'explains', 'added', 'adds',
                            'told', 'tells', 'noted', 'argued', 'claimed', 'commented',
-                           'stated', 'remarked', 'announced', 'confirmed', 'revealed']
+                           'stated', 'remarked', 'announced', 'confirmed', 'revealed',
+                           'shared', 'shares']
         quote_lower = quote_text.lower().strip()
         # If the quote is mostly just "Name said." or similar, skip it
         word_count_quote = len(quote_text.split())
@@ -1200,14 +1201,14 @@ def extract_quoted_sources(text):
         name_pattern = r'([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})'
 
         after_match = re.search(
-            r'^[,.\s]*(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed)\s+' + name_pattern,
+            r'^[,.\s]*(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)\s+' + name_pattern,
             context_after
         )
 
         if not after_match:
             # Try reversed pattern: , [Name] said
             after_match = re.search(
-                r'^[,.\s]*' + name_pattern + r'\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed)',
+                r'^[,.\s]*' + name_pattern + r'\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)',
                 context_after
             )
 
@@ -1217,7 +1218,7 @@ def extract_quoted_sources(text):
         # Also handles: Name, title/role, said: "quote"
         # Sprint 7.9.3: Made punctuation optional to handle "Name said that..." patterns
         before_match = re.search(
-            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed)[,:.]?\s*$',
+            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)[,:.]?\s*$',
             context_before
         )
 
@@ -1284,6 +1285,34 @@ def extract_quoted_sources(text):
                     'quote_snippet': quote_text[:50],
                     'position': 'dash_attribution'
                 })
+
+    # Sprint 7.22: Step 5a - Who clause pattern
+    # Pattern: "Jadien Davies, who ran the event, said that..."
+    # Captures: Full Name, who [clause], verb
+    who_clause_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+who\s+[^,]+,\s+(?:said|says|told|tells|added|adds|explained|shared)'
+    for match in re.finditer(who_clause_pattern, text):
+        name = match.group(1).strip()
+        if not is_false_positive(name):
+            sources.append({
+                'name': name,
+                'full_attribution': match.group(0)[:50],
+                'quote_snippet': '',
+                'position': 'who_clause'
+            })
+
+    # Sprint 7.22: Step 5a2 - Introducer pattern
+    # Pattern: "One speaker, Robin, shared a powerful story"
+    # Captures: role introducer, Name, verb
+    introducer_pattern = r'(?:speaker|organiser|organizer|coordinator|attendee|participant|protester|protestor|resident|volunteer),\s+([A-Z][A-Za-z\'\-]+),\s+(?:said|says|told|shared|added|explained)'
+    for match in re.finditer(introducer_pattern, text):
+        name = match.group(1).strip()
+        if not is_false_positive(name):
+            sources.append({
+                'name': name,
+                'full_attribution': match.group(0)[:50],
+                'quote_snippet': '',
+                'position': 'introducer'
+            })
 
     # Step 5b: Look for full name with role/description (Shorthand pattern)
     # Pattern: "Sophia Lloyd, a Poole-based nutritionist who..."
@@ -1432,6 +1461,8 @@ def extract_quoted_sources(text):
     # Step 8: Sprint 7.14 - Filter obvious non-persons before returning
     # Previously, scrape.py sources bypassed validation and went straight to "confirmed"
     # Now apply the same validation used by verify.py
+    # Sprint 7.22: Skip filtering for strong attribution patterns (who_clause, introducer)
+    #              as these provide strong evidence of personhood despite spaCy NER errors
     try:
         # Import here to avoid circular dependency
         import sys
@@ -1443,10 +1474,18 @@ def extract_quoted_sources(text):
 
         from reconcile import is_obvious_non_person
 
+        # Sprint 7.22: Strong patterns that bypass NER filtering
+        strong_patterns = {'who_clause', 'introducer', 'role_description'}
+
         filtered_sources = []
         for source in unique_sources:
             name = source.get('name', '')
-            if not is_obvious_non_person(name):
+            position = source.get('position', '')
+
+            # Skip NER check for strong attribution patterns
+            if position in strong_patterns:
+                filtered_sources.append(source)
+            elif not is_obvious_non_person(name):
                 filtered_sources.append(source)
 
         return filtered_sources

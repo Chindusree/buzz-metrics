@@ -1,61 +1,105 @@
 {
-  "generated": "2026-01-20T09:52:25Z",
-  "total_flagged": 10,
+  "generated": "2026-01-20T11:43:27Z",
+  "total_flagged": 12,
   "flagged_articles": [
     {
-      "id": "21a723b0aed1",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
-      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
-      "scrape_count": 0,
-      "verify_count": 2,
-      "confirmed_count": 0,
+      "id": "60218ea980f4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "scrape_count": 4,
+      "verify_count": 1,
+      "confirmed_count": 3,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Rayan",
-        "@rayann"
+      "scrape_evidence": [
+        "Frederica Sindici",
+        "Chanelle Paris",
+        "Cindy Lou",
+        "Economic Forum"
       ],
-      "confirmed": [],
+      "verify_evidence": [
+        "Cindy Lou"
+      ],
+      "confirmed": [
+        {
+          "name": "Frederica Sindici",
+          "gender": "female"
+        },
+        {
+          "name": "Chanelle Paris",
+          "gender": "female"
+        },
+        {
+          "name": "Cindy Lou",
+          "gender": "female"
+        }
+      ],
       "possible": [],
       "filtered": [
-        "Rayan"
+        "Economic Forum"
       ],
       "review_status": "pending"
     },
     {
-      "id": "0faceff20735",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
-      "headline": "Andoni Iraola looks ahead to Brighton test",
-      "scrape_count": 0,
-      "verify_count": 4,
-      "confirmed_count": 3,
+      "id": "9b5bcd7f91c2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "scrape_count": 3,
+      "verify_count": 2,
+      "confirmed_count": 2,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Sara Armstrong",
+        "AFC Bournemouth",
+        "Brent Pease"
+      ],
       "verify_evidence": [
-        "Fabian Hurzeler",
-        "Brighton",
-        "Ryan",
-        "David Brooks"
+        "Ms Armstrong",
+        "Councillor Armstrong"
       ],
       "confirmed": [
         {
-          "name": "Fabian Hurzeler",
-          "gender": "male"
+          "name": "Sara Armstrong",
+          "gender": "female"
         },
         {
-          "name": "Ryan",
-          "gender": "male"
-        },
-        {
-          "name": "David Brooks",
+          "name": "Brent Pease",
           "gender": "male"
         }
       ],
       "possible": [],
       "filtered": [
-        "Brighton"
+        "AFC Bournemouth"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "96eed46a1e57",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "headline": "Tonight stitch and movie night",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Becca Parker"
+      ],
+      "verify_evidence": [
+        "Becca",
+        "Becca Parker",
+        "COVID"
+      ],
+      "confirmed": [
+        {
+          "name": "Becca Parker",
+          "gender": "female"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "COVID"
       ],
       "review_status": "pending"
     },
@@ -102,15 +146,49 @@
       "review_status": "pending"
     },
     {
+      "id": "4c79ed9d0c43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "scrape_count": 2,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Ewan Corbett",
+        "Premier League"
+      ],
+      "verify_evidence": [
+        "Sarr"
+      ],
+      "confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male"
+        },
+        {
+          "name": "Premier League",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Sarr"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "e48217df8ae6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 6,
       "confirmed_count": 3,
       "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Red Sea"
+      ],
       "verify_evidence": [
         "Williams",
         "Richard Sydenham",
@@ -135,7 +213,67 @@
       ],
       "possible": [],
       "filtered": [
+        "Red Sea",
         "Williams"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "37619d905b65",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "headline": "Southern League Premier South preview",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Marcin Rogalski",
+        "IK Hill"
+      ],
+      "verify_evidence": [
+        "Yate",
+        "Hill",
+        "Walton"
+      ],
+      "confirmed": [
+        {
+          "name": "Marcin Rogalski",
+          "gender": "male"
+        },
+        {
+          "name": "IK Hill",
+          "gender": "unknown"
+        },
+        {
+          "name": "Walton",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Yate"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "21a723b0aed1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
+      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Rayan",
+        "@rayann"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Rayan"
       ],
       "review_status": "pending"
     },
@@ -221,121 +359,90 @@
       "review_status": "pending"
     },
     {
-      "id": "37619d905b65",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
-      "headline": "Southern League Premier South preview",
-      "scrape_count": 2,
-      "verify_count": 3,
-      "confirmed_count": 3,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Marcin Rogalski",
-        "IK Hill"
-      ],
-      "verify_evidence": [
-        "Yate",
-        "Hill",
-        "Walton"
-      ],
-      "confirmed": [
-        {
-          "name": "Marcin Rogalski",
-          "gender": "male"
-        },
-        {
-          "name": "IK Hill",
-          "gender": "unknown"
-        },
-        {
-          "name": "Walton",
-          "gender": "male"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Yate"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "96eed46a1e57",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
-      "headline": "Tonight stitch and movie night",
-      "scrape_count": 1,
-      "verify_count": 3,
-      "confirmed_count": 1,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Becca Parker"
-      ],
-      "verify_evidence": [
-        "Becca",
-        "Becca Parker",
-        "COVID"
-      ],
-      "confirmed": [
-        {
-          "name": "Becca Parker",
-          "gender": "female"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "COVID"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "4c79ed9d0c43",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
-      "headline": "VAR errors have AFC Bournemouth in the forefront",
-      "scrape_count": 2,
-      "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Ewan Corbett",
-        "Premier League"
-      ],
-      "verify_evidence": [
-        "Sarr"
-      ],
-      "confirmed": [
-        {
-          "name": "Ewan Corbett",
-          "gender": "male"
-        },
-        {
-          "name": "Premier League",
-          "gender": "unknown"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Sarr"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "da7bf409819e",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
-      "headline": "ITV’s This Morning pays Bournemouth University a visit",
+      "id": "0faceff20735",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
+      "headline": "Andoni Iraola looks ahead to Brighton test",
       "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 3,
       "possible_count": 0,
       "filtered_count": 1,
       "scrape_evidence": [],
       "verify_evidence": [
-        "Quickenden"
+        "Fabian Hurzeler",
+        "Brighton",
+        "Ryan",
+        "David Brooks"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Fabian Hurzeler",
+          "gender": "male"
+        },
+        {
+          "name": "Ryan",
+          "gender": "male"
+        },
+        {
+          "name": "David Brooks",
+          "gender": "male"
+        }
+      ],
       "possible": [],
       "filtered": [
-        "Quickenden"
+        "Brighton"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "e24467b3ddf5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "headline": "The fast fashion disconnect",
+      "scrape_count": 4,
+      "verify_count": 6,
+      "confirmed_count": 5,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Marcjanna Augustyn",
+        "Kaouther Kooli",
+        "Ralph Lauren",
+        "Big Give"
+      ],
+      "verify_evidence": [
+        "Augustyn",
+        "Kooli",
+        "Agatha Shepherd-Jones",
+        "Sal",
+        "Paige Buffham\nClothes",
+        "Paige Buffham"
+      ],
+      "confirmed": [
+        {
+          "name": "Marcjanna Augustyn",
+          "gender": "unknown"
+        },
+        {
+          "name": "Kaouther Kooli",
+          "gender": "unknown"
+        },
+        {
+          "name": "Agatha Shepherd-Jones",
+          "gender": "female"
+        },
+        {
+          "name": "Sal",
+          "gender": "male"
+        },
+        {
+          "name": "Paige Buffham Clothes",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Ralph Lauren",
+        "Big Give"
       ],
       "review_status": "pending"
     }
