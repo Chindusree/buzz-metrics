@@ -1037,7 +1037,13 @@
                     <tbody id="rhythmBody"></tbody>
                 </table>
             </div>
-            <div class="rhythm-target">██ = 2+ stories &nbsp;&nbsp; █ = 1 story &nbsp;&nbsp; · = none<br>Target: First story before 10:00</div>
+            <div class="rhythm-target">
+                <span style="background-color: #E91E8C; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 3+ stories &nbsp;&nbsp;
+                <span style="background-color: #F06292; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 2 stories &nbsp;&nbsp;
+                <span style="background-color: #F8BBD9; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 1 story &nbsp;&nbsp;
+                <span style="color: #999;">·</span> = none<br>
+                Target: First story before 10:00
+            </div>
             </div>
         </section>
 
@@ -1444,6 +1450,14 @@
             return 'time-late'; // After 12:00
         }
 
+        // Sprint 7.29: BUzz brand color gradient for heatmap
+        function getHeatmapColor(count) {
+            if (count === 0) return '#E5E5E5';  // Light grey
+            if (count === 1) return '#F8BBD9';  // Light pink
+            if (count === 2) return '#F06292';  // Medium pink
+            return '#E91E8C';                    // Full BUzz pink (3+)
+        }
+
         function updatePublicationRhythm() {
             const rhythmData = {
                 'General News': Array(13).fill(0),
@@ -1475,13 +1489,12 @@
 
                 counts.forEach(count => {
                     const cell = document.createElement('td');
-                    if (count === 0) {
-                        cell.textContent = '·';
-                    } else if (count === 1) {
-                        cell.textContent = '█';
-                    } else {
-                        cell.textContent = '██';
-                    }
+                    // Sprint 7.29: Use colored squares with BUzz brand gradient
+                    const color = getHeatmapColor(count);
+                    cell.style.backgroundColor = color;
+                    cell.style.color = count === 0 ? '#999' : '#fff';
+                    cell.style.fontWeight = count === 0 ? 'normal' : 'bold';
+                    cell.textContent = count === 0 ? '·' : '■';
                     row.appendChild(cell);
                 });
 
