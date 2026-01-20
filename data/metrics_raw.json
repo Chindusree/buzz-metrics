@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-20T09:35:18Z",
-  "total_articles": 35,
+  "last_updated": "2026-01-20T09:46:57Z",
+  "total_articles": 36,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -1991,6 +1991,52 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/865917B8-7E07-4FDA-A5F6-8EB752FBEAD4_1_102_o-800x400.jpeg",
             "classification": "original",
             "credit": "Jack Hillman"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "7954c341e1bf",
+      "headline": "BREAKING NEWS: Police seek help in finding missing Poole woman",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-seek-help-to-find-missing-woman/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "09:43",
+      "category": "1st News",
+      "category_primary": "News",
+      "word_count": 143,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1727c894-d9f5-f011-9d8c-6045bdd24049-300x400.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1727c894-d9f5-f011-9d8c-6045bdd24049-1-200x300.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
           }
         ]
       },

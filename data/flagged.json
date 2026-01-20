@@ -1,33 +1,61 @@
 {
-  "generated": "2026-01-20T07:43:26Z",
-  "total_flagged": 9,
+  "generated": "2026-01-20T09:52:25Z",
+  "total_flagged": 10,
   "flagged_articles": [
     {
-      "id": "96eed46a1e57",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
-      "headline": "Tonight stitch and movie night",
-      "scrape_count": 1,
-      "verify_count": 3,
-      "confirmed_count": 1,
+      "id": "21a723b0aed1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
+      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [
-        "Becca Parker"
-      ],
+      "scrape_evidence": [],
       "verify_evidence": [
-        "Becca",
-        "Becca Parker",
-        "COVID"
+        "Rayan",
+        "@rayann"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Rayan"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "0faceff20735",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
+      "headline": "Andoni Iraola looks ahead to Brighton test",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Fabian Hurzeler",
+        "Brighton",
+        "Ryan",
+        "David Brooks"
       ],
       "confirmed": [
         {
-          "name": "Becca Parker",
-          "gender": "female"
+          "name": "Fabian Hurzeler",
+          "gender": "male"
+        },
+        {
+          "name": "Ryan",
+          "gender": "male"
+        },
+        {
+          "name": "David Brooks",
+          "gender": "male"
         }
       ],
       "possible": [],
       "filtered": [
-        "COVID"
+        "Brighton"
       ],
       "review_status": "pending"
     },
@@ -74,38 +102,6 @@
       "review_status": "pending"
     },
     {
-      "id": "4c79ed9d0c43",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
-      "headline": "VAR errors have AFC Bournemouth in the forefront",
-      "scrape_count": 2,
-      "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Ewan Corbett",
-        "Premier League"
-      ],
-      "verify_evidence": [
-        "Sarr"
-      ],
-      "confirmed": [
-        {
-          "name": "Ewan Corbett",
-          "gender": "male"
-        },
-        {
-          "name": "Premier League",
-          "gender": "unknown"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Sarr"
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "e48217df8ae6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
@@ -140,65 +136,6 @@
       "possible": [],
       "filtered": [
         "Williams"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "37619d905b65",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
-      "headline": "Southern League Premier South preview",
-      "scrape_count": 2,
-      "verify_count": 3,
-      "confirmed_count": 3,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Marcin Rogalski",
-        "IK Hill"
-      ],
-      "verify_evidence": [
-        "Yate",
-        "Hill",
-        "Walton"
-      ],
-      "confirmed": [
-        {
-          "name": "Marcin Rogalski",
-          "gender": "male"
-        },
-        {
-          "name": "IK Hill",
-          "gender": "unknown"
-        },
-        {
-          "name": "Walton",
-          "gender": "male"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Yate"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "21a723b0aed1",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
-      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
-      "scrape_count": 0,
-      "verify_count": 2,
-      "confirmed_count": 0,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Rayan",
-        "@rayann"
-      ],
-      "confirmed": [],
-      "possible": [],
-      "filtered": [
-        "Rayan"
       ],
       "review_status": "pending"
     },
@@ -284,38 +221,121 @@
       "review_status": "pending"
     },
     {
-      "id": "0faceff20735",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
-      "headline": "Andoni Iraola looks ahead to Brighton test",
-      "scrape_count": 0,
-      "verify_count": 4,
+      "id": "37619d905b65",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "headline": "Southern League Premier South preview",
+      "scrape_count": 2,
+      "verify_count": 3,
       "confirmed_count": 3,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Marcin Rogalski",
+        "IK Hill"
+      ],
       "verify_evidence": [
-        "Fabian Hurzeler",
-        "Brighton",
-        "Ryan",
-        "David Brooks"
+        "Yate",
+        "Hill",
+        "Walton"
       ],
       "confirmed": [
         {
-          "name": "Fabian Hurzeler",
+          "name": "Marcin Rogalski",
           "gender": "male"
         },
         {
-          "name": "Ryan",
-          "gender": "male"
+          "name": "IK Hill",
+          "gender": "unknown"
         },
         {
-          "name": "David Brooks",
+          "name": "Walton",
           "gender": "male"
         }
       ],
       "possible": [],
       "filtered": [
-        "Brighton"
+        "Yate"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "96eed46a1e57",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "headline": "Tonight stitch and movie night",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Becca Parker"
+      ],
+      "verify_evidence": [
+        "Becca",
+        "Becca Parker",
+        "COVID"
+      ],
+      "confirmed": [
+        {
+          "name": "Becca Parker",
+          "gender": "female"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "COVID"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "4c79ed9d0c43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "scrape_count": 2,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Ewan Corbett",
+        "Premier League"
+      ],
+      "verify_evidence": [
+        "Sarr"
+      ],
+      "confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male"
+        },
+        {
+          "name": "Premier League",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Sarr"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "da7bf409819e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
+      "headline": "ITV’s This Morning pays Bournemouth University a visit",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Quickenden"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Quickenden"
       ],
       "review_status": "pending"
     }
