@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-20T12:29:01Z",
-  "total_verified": 41,
+  "last_updated": "2026-01-20T15:04:12Z",
+  "total_verified": 50,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -504,6 +504,44 @@
       "verify_evidence": []
     },
     {
+      "id": "c773fba290e1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-take-on-sporting-wessex-in-quarter-final-clash/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Defender",
+          "context": "PERSON within 50 chars of quote: ... from their disappointing league campaign so far. Defender, Harvey Bertrand, said: “I feel like the cup is e..."
+        },
+        {
+          "name": "Harvey Bertrand",
+          "context": "PERSON within 50 chars of quote: ...r disappointing league campaign so far. Defender, Harvey Bertrand, said: “I feel like the cup is extremely importan..."
+        }
+      ]
+    },
+    {
+      "id": "9b454f4d9db2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Grant Hancox",
+          "context": "PERSON within 50 chars of quote: ... Hancox penalty in the dying embers of the match. Grant Hancox says: “Credit to Old Tiffs, they are a great team..."
+        },
+        {
+          "name": "Head Coach",
+          "context": "PERSON within 50 chars of quote: ...ing this form has been a challenge for the squad. Head Coach, Will Croker, says: “Saturday’s performance was n..."
+        },
+        {
+          "name": "Will Croker",
+          "context": "PERSON within 50 chars of quote: ...m has been a challenge for the squad. Head Coach, Will Croker, says: “Saturday’s performance was not perfect; i..."
+        },
+        {
+          "name": "Connor McCaffrey",
+          "context": "PERSON within 50 chars of quote: ...oth our centres to hamstring strains. Our flanker Connor McCaffrey filled in and we had two yellow cards. “Old Tiffs..."
+        }
+      ]
+    },
+    {
       "id": "afe1ce257901",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
       "verify_quoted_sources": 0,
@@ -514,6 +552,17 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "751bf1ee1b06",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Abbas Araghchi",
+          "context": "PERSON within 50 chars of quote: ...heir rescue” if Tehran kills peaceful protesters. Abbas Araghchi, Iran’s foreign minister, said Trump was given an..."
+        }
+      ]
     },
     {
       "id": "1f955f6870b9",
@@ -531,10 +580,21 @@
       ]
     },
     {
-      "id": "dba46286581f",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/hamworthy-recreation-play-off-push-continues/",
+      "id": "55443b4c77b8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "dba46286581f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hamworthy-recreation-play-off-push-continues/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Jack",
+          "context": "PERSON within 50 chars of quote: ...or discussed the impact he has had on the squad: “Jack is a great lad, I’ve worked with Jack for the las..."
+        }
+      ]
     },
     {
       "id": "1b1ad423d795",
@@ -552,10 +612,31 @@
       ]
     },
     {
+      "id": "7cb42367054e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "6d9be8b6178f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/brie-lieve-it-or-not-its-national-cheese-lovers-day/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "de466f5f7de9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Karen",
+          "context": "PERSON within 50 chars of quote: ...make is quite overwhelming sometimes,” she added. Karen continued to talk about how important these event..."
+        },
+        {
+          "name": "Barbara Adams",
+          "context": "PERSON within 50 chars of quote: ... their rooms and socialise. One of the residents, Barbara Adams, said: “It’s good. You can join in if you’re that..."
+        }
+      ]
     },
     {
       "id": "18e9279b8b3b",
@@ -586,6 +667,33 @@
           "context": "PERSON within 50 chars of quote: ...Jake Quickenden ready to present the competition. Quickenden said: “I think the students will enjoy this today..."
         }
       ]
+    },
+    {
+      "id": "a86542bf9945",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Carty",
+          "context": "PERSON within 50 chars of quote: ... was testament to why she got the contract”, said Carty. “In Francesca we feel we have unearthed a player..."
+        },
+        {
+          "name": "Hampshire",
+          "context": "PERSON within 50 chars of quote: ...oward the new season. “I’m really excited to join Hampshire, everyone at the club has been very welcoming whi..."
+        }
+      ]
+    },
+    {
+      "id": "d876027cfbdd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "21f9581ca358",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/witness-appeal-following-burglary-in-weymouth/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     }
   ]
 }

@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-20T12:29:08Z",
-  "total_articles": 41,
+  "last_updated": "2026-01-20T15:04:13Z",
+  "total_articles": 50,
   "summary": {
-    "avg_word_count": 582,
-    "avg_quoted_sources": 1.6,
-    "below_minimum_count": 14,
-    "long_form_count": 10,
+    "avg_word_count": 596,
+    "avg_quoted_sources": 1.5,
+    "below_minimum_count": 15,
+    "long_form_count": 11,
     "breaking_news_count": 3,
-    "total_images": 108,
-    "original_images": 29,
-    "stock_images": 2,
-    "uncredited_images": 77,
+    "total_images": 124,
+    "original_images": 41,
+    "stock_images": 3,
+    "uncredited_images": 80,
     "gender_breakdown": {
-      "male": 36,
-      "female": 17,
-      "unknown": 14
+      "male": 41,
+      "female": 20,
+      "unknown": 15
     },
     "by_section": {
       "Sport": {
-        "count": 11,
-        "words": 5465,
+        "count": 12,
+        "words": 6162,
         "sources": 17
       },
       "General News": {
-        "count": 24,
-        "words": 8561,
-        "sources": 30
+        "count": 32,
+        "words": 13725,
+        "sources": 39
       },
       "Features": {
         "count": 6,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 11,
-        "avg_word_count": 497,
-        "avg_sources": 1.5
+        "count": 12,
+        "avg_word_count": 514,
+        "avg_sources": 1.4
       },
       "News": {
-        "count": 24,
-        "avg_word_count": 357,
+        "count": 32,
+        "avg_word_count": 429,
         "avg_sources": 1.2
       },
       "Features": {
@@ -64,13 +64,13 @@
     },
     {
       "date": "2026-01-20",
-      "article_count": 10,
+      "article_count": 19,
       "target": 12,
-      "meets_target": false,
+      "meets_target": true,
       "first_publish_time": "09:15",
       "first_publish_on_time": true,
-      "below_minimum_count": 4,
-      "long_form_count": 0
+      "below_minimum_count": 5,
+      "long_form_count": 1
     }
   ],
   "articles": [
@@ -2738,6 +2738,148 @@
       "category_normalised": "General News"
     },
     {
+      "id": "c773fba290e1",
+      "headline": "Bashley take on Sporting Wessex in Quarter Final Clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-take-on-sporting-wessex-in-quarter-final-clash/",
+      "author": "Will Russell",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:05",
+      "category": "News",
+      "category_primary": "News",
+      "word_count": 712,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Harvey Bertrand",
+          "full_attribution": "Bertrand said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_1538-2-1-800x400.png",
+            "classification": "original",
+            "credit": "Will Russell"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Harvey Bertrand",
+          "gender": "male"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Defender"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "9b454f4d9db2",
+      "headline": "Bournemouth Lions Set Themselves Up For Greatness",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:10",
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 1094,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Grant Hancox",
+          "full_attribution": "Hancox says:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DSC09712-1-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Harrison Walsh"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male"
+        },
+        {
+          "name": "Head Coach",
+          "gender": "unknown"
+        },
+        {
+          "name": "Connor McCaffrey",
+          "gender": "male"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Will Croker"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
       "id": "afe1ce257901",
       "headline": "Cherries closing in on deal for Mandas",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
@@ -2858,6 +3000,73 @@
       "category_normalised": "General News"
     },
     {
+      "id": "751bf1ee1b06",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "author": "Isabelle Taylor",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "13:49",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "word_count": 545,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Protest-1-e1768909327393-800x400.jpg",
+            "classification": "original",
+            "credit": "Tiana Hynes"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9421-1-e1768908962720.jpg",
+            "classification": "original",
+            "credit": "Tiana Hynes"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Protester-Tianacopy-225x300.jpg",
+            "classification": "original",
+            "credit": "Tiana Hynes"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Abbas Araghchi",
+          "gender": "male"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "1f955f6870b9",
       "headline": "Ex-Cherries Star Solanke returns to Spurs UCL Squad",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ex-cherries-star-solanke-returns-to-spurs-ucl-squad/",
@@ -2917,6 +3126,81 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "55443b4c77b8",
+      "headline": "Habitat management takes place at Talbot Woodland",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
+      "author": "Sam Morris",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:50",
+      "category": "Local",
+      "category_primary": "News",
+      "word_count": 686,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Martha Searle",
+          "full_attribution": "Searle explained",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0444-800x400.jpg",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-20-at-14.01.22-270x300.png",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2250836237&show_artwork=true&maxheight=750&maxwidth=500"
+          }
+        ]
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Martha Searle",
+          "gender": "female"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "dba46286581f",
       "headline": "Hamworthy Recreation Play off push continues",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hamworthy-recreation-play-off-push-continues/",
@@ -2956,9 +3240,14 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "Jack",
+          "gender": "male"
+        }
+      ],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3036,6 +3325,66 @@
       "category_normalised": "General News"
     },
     {
+      "id": "7cb42367054e",
+      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
+      "author": "Derin Mehmet",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "13:48",
+      "category": "Boscombe",
+      "category_primary": "News",
+      "word_count": 407,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_2180-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Boscombe Park, Derin Mehmet"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6498.heic",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-9-scaled.jpg",
+            "classification": "original",
+            "credit": "Derin Mehmet"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "6d9be8b6178f",
       "headline": "Its national cheese lovers day: Brie-lieve it or not",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/brie-lieve-it-or-not-its-national-cheese-lovers-day/",
@@ -3108,6 +3457,77 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "de466f5f7de9",
+      "headline": "Local care home combats loneliness on Blue Monday",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:02",
+      "category": "News",
+      "category_primary": "News",
+      "word_count": 682,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-EE3FCBA4-3454-4EBB-9673-C8DE40F326B1-1-e1768919752687.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-2DBE193E-A7B6-4711-A2F1-8923A72161CF-1.jpeg",
+            "classification": "original",
+            "credit": "Justina Reynolds)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-40AD86DE-37B8-49B4-9D93-6CC7EF96A3F1-1-225x300.jpeg",
+            "classification": "original",
+            "credit": "Justina Reynolds)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Karen",
+          "gender": "female"
+        },
+        {
+          "name": "Barbara Adams",
+          "gender": "female"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -3278,6 +3698,163 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "a86542bf9945",
+      "headline": "Sweet receives first professional contract",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:50",
+      "category": "cricket",
+      "category_primary": "News",
+      "word_count": 775,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-20-at-14.45.01-800x400.jpeg",
+            "classification": "original",
+            "credit": "Utilita Bowl: Picture by Will Russel"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Carty",
+        "Hampshire"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "d876027cfbdd",
+      "headline": "Wimborne trip to Plymouth postponed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:47",
+      "category": "Local Football",
+      "category_primary": "Sport",
+      "word_count": 697,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/parkway-photo-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Jacob Deighton)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "21f9581ca358",
+      "headline": "Witnesses appeal following burglary in Weymouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/witness-appeal-following-burglary-in-weymouth/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-20",
+      "time": "14:24",
+      "category": "News",
+      "category_primary": "News",
+      "word_count": 263,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/ethan-wilkinson-UJdx3XM3xao-unsplash-1-640x400.jpg",
+            "classification": "stock",
+            "credit": "Stock image from Ethan Wilkinson"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     }
   ]

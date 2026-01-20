@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-20T12:29:08Z",
-  "total_flagged": 14,
+  "generated": "2026-01-20T15:04:13Z",
+  "total_flagged": 17,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -447,6 +447,72 @@
       "review_status": "pending"
     },
     {
+      "id": "c773fba290e1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-take-on-sporting-wessex-in-quarter-final-clash/",
+      "headline": "Bashley take on Sporting Wessex in Quarter Final Clash",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Harvey Bertrand"
+      ],
+      "verify_evidence": [
+        "Defender",
+        "Harvey Bertrand"
+      ],
+      "confirmed": [
+        {
+          "name": "Harvey Bertrand",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Defender"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "9b454f4d9db2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
+      "headline": "Bournemouth Lions Set Themselves Up For Greatness",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Grant Hancox"
+      ],
+      "verify_evidence": [
+        "Grant Hancox",
+        "Head Coach",
+        "Will Croker",
+        "Connor McCaffrey"
+      ],
+      "confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male"
+        },
+        {
+          "name": "Head Coach",
+          "gender": "unknown"
+        },
+        {
+          "name": "Connor McCaffrey",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Will Croker"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "18e9279b8b3b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-swimmers-set-for-national-spotlight-after-commonwealth-games-trials-qualification/",
       "headline": "Poole swimmers set for national spotlight after Commonwealth Games trials qualification",
@@ -507,6 +573,28 @@
       "possible": [],
       "filtered": [
         "Quickenden"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "a86542bf9945",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
+      "headline": "Sweet receives first professional contract",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Carty",
+        "Hampshire"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Carty",
+        "Hampshire"
       ],
       "review_status": "pending"
     }
