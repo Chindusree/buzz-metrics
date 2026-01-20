@@ -1798,12 +1798,15 @@
             });
 
             // Update toggle text with count
+            // Sprint 7.23: Added null guard to prevent error when element doesn't exist
             const toggle = document.getElementById('contributorsToggle');
-            const totalContributors = Object.keys(authorStats).length;
-            if (!toggle.textContent.includes('Hide')) {
-                toggle.textContent = `▶ View contributor breakdown (${totalContributors} contributors)`;
-            } else {
-                toggle.textContent = `▼ Hide contributor breakdown (${totalContributors} contributors)`;
+            if (toggle) {
+                const totalContributors = Object.keys(authorStats).length;
+                if (!toggle.textContent.includes('Hide')) {
+                    toggle.textContent = `▶ View contributor breakdown (${totalContributors} contributors)`;
+                } else {
+                    toggle.textContent = `▼ Hide contributor breakdown (${totalContributors} contributors)`;
+                }
             }
         }
     </script>
