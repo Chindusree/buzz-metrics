@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-20T15:54:30Z",
-  "total_verified": 53,
+  "last_updated": "2026-01-20T16:45:23Z",
+  "total_verified": 56,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -519,6 +519,25 @@
       ]
     },
     {
+      "id": "050bcc50448e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Bleazard",
+          "context": "PERSON within 50 chars of quote: ...e against tough opposition. Reacting to the game, Bleazard said: “We know the levels Man City are at and the..."
+        },
+        {
+          "name": "Striker Sophie Quirk",
+          "context": "PERSON within 50 chars of quote: ...ng, as a team, you could take a lot of pride in.” Striker Sophie Quirk impressed many with her performance on Sunday. Sh..."
+        },
+        {
+          "name": "Quirk",
+          "context": "PERSON within 50 chars of quote: ... being each other’s extra 20%. They were superb.” Quirk echoed these comments: “It’s the work rate. It’s ..."
+        }
+      ]
+    },
+    {
       "id": "9b454f4d9db2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
       "verify_quoted_sources": 4,
@@ -544,6 +563,12 @@
     {
       "id": "afe1ce257901",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "5448a03abf18",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -612,6 +637,17 @@
       ]
     },
     {
+      "id": "c8e150c3ac4a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Evelyn Eales",
+          "context": "PERSON within 50 chars of quote: ...he risk and see what it was like to take charge.” Evelyn Eales, the health and safety co-ordinator for the march..."
+        }
+      ]
+    },
+    {
       "id": "7cb42367054e",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "verify_quoted_sources": 0,
@@ -639,6 +675,21 @@
       ]
     },
     {
+      "id": "d4b3ea2b5fe9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/new-greek-restaurant-set-to-open-in-wallisdown/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Angela Ntente",
+          "context": "PERSON within 50 chars of quote: ...amily full of chefs, it felt like the right move. Angela Ntente said “I came from a family that are all chefs; my..."
+        },
+        {
+          "name": "Angela",
+          "context": "PERSON within 50 chars of quote: ...find it challenging as well.” Angela Ntente said. Angela used to work in a restaurant in Bearwood and the ..."
+        }
+      ]
+    },
+    {
       "id": "18e9279b8b3b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-swimmers-set-for-national-spotlight-after-commonwealth-games-trials-qualification/",
       "verify_quoted_sources": 3,
@@ -654,6 +705,21 @@
         {
           "name": "Club Pathway",
           "context": "PERSON within 50 chars of quote: ...you are sacrificing going out with your friends.” Club Pathway and leadership Poole Swimming Club has a track re..."
+        }
+      ]
+    },
+    {
+      "id": "2eae8e0631ec",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Eckert",
+          "context": "PERSON within 50 chars of quote: ... and we have a big, big game coming up tomorrow.” Eckert spoke about the changes coming to the squad tomor..."
+        },
+        {
+          "name": "Chris Wilder’s",
+          "context": "PERSON within 50 chars of quote: ...w” The German discussed the challenges of dancing Chris Wilder’s, Sheffield United, “They create a lot. I think to..."
         }
       ]
     },
@@ -700,34 +766,8 @@
       "verify_evidence": []
     },
     {
-      "id": "d4b3ea2b5fe9",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/new-greek-restaurant-set-to-open-in-wallisdown/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Angela Ntente",
-          "context": "PERSON within 50 chars of quote: ...amily full of chefs, it felt like the right move. Angela Ntente said “I came from a family that are all chefs; my..."
-        },
-        {
-          "name": "Angela",
-          "context": "PERSON within 50 chars of quote: ...find it challenging as well.” Angela Ntente said. Angela used to work in a restaurant in Bearwood and the ..."
-        }
-      ]
-    },
-    {
-      "id": "c8e150c3ac4a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Evelyn Eales",
-          "context": "PERSON within 50 chars of quote: ...he risk and see what it was like to take charge.” Evelyn Eales, the health and safety co-ordinator for the march..."
-        }
-      ]
-    },
-    {
-      "id": "5448a03abf18",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
+      "id": "deb020fa7530",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     }

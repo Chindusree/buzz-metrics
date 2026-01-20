@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-20T15:54:50Z",
+  "generated": "2026-01-20T16:45:24Z",
   "total_flagged": 18,
   "flagged_articles": [
     {
@@ -513,6 +513,38 @@
       "review_status": "pending"
     },
     {
+      "id": "c8e150c3ac4a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
+      "scrape_count": 2,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jadien Davies",
+        "Robin"
+      ],
+      "verify_evidence": [
+        "Evelyn Eales"
+      ],
+      "confirmed": [
+        {
+          "name": "Robin",
+          "gender": "male"
+        },
+        {
+          "name": "Evelyn Eales",
+          "gender": "female"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Jadien Davies"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "18e9279b8b3b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-swimmers-set-for-national-spotlight-after-commonwealth-games-trials-qualification/",
       "headline": "Poole swimmers set for national spotlight after Commonwealth Games trials qualification",
@@ -597,38 +629,6 @@
         "Carty",
         "Sweet",
         "Hampshire"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "c8e150c3ac4a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
-      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
-      "scrape_count": 2,
-      "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Jadien Davies",
-        "Robin"
-      ],
-      "verify_evidence": [
-        "Evelyn Eales"
-      ],
-      "confirmed": [
-        {
-          "name": "Robin",
-          "gender": "male"
-        },
-        {
-          "name": "Evelyn Eales",
-          "gender": "female"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Jadien Davies"
       ],
       "review_status": "pending"
     }
