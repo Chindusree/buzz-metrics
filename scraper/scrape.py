@@ -1314,6 +1314,23 @@ def extract_quoted_sources(text):
                 'position': 'introducer'
             })
 
+    # Sprint 7.25: Lastname-only attribution pattern
+    # Pattern: "Senior said:", "Davies told BUzz:", "Brown discussed"
+    # After full name introduction (e.g., "Chris Senior spoke about..."),
+    # subsequent references use lastname only
+    lastname_verb_pattern = r'\b([A-Z][a-z]+)\s+(?:said|says|told|tells|added|adds|explained|explains|discussed|talked|spoke)[\s:,]'
+    for match in re.finditer(lastname_verb_pattern, text):
+        lastname = match.group(1).strip()
+        # Resolve to full name if introduced earlier in article
+        full_name = resolve_full_name(lastname, text)
+        if full_name and ' ' in full_name and not is_false_positive(full_name):
+            sources.append({
+                'name': full_name,
+                'full_attribution': match.group(0).strip(),
+                'quote_snippet': '',
+                'position': 'lastname_verb'
+            })
+
     # Step 5b: Look for full name with role/description (Shorthand pattern)
     # Pattern: "Sophia Lloyd, a Poole-based nutritionist who..."
     # Sprint 7.9.3: Updated to accept optional "a", "the", "an" before role description
@@ -1447,8 +1464,35 @@ def extract_quoted_sources(text):
                 'position': 'blockquote-inline'
             })
 
+    # Sprint 7.25: Filter out historical/descriptive mentions without quotes
+    # For role_description sources, verify they have actual quoted material
+    # This prevents capturing historical figures mentioned for context only
+    filtered_sources = []
+    for source in sources:
+        position = source.get('position', '')
+        name = source.get('name', '')
+
+        # If it's a role_description source without a quote, check if there's
+        # any quoted material from this person in the article
+        if position == 'role_description' and not source.get('quote_snippet'):
+            # Look for any quote attribution with this person's name
+            # Check for patterns like "Name said:", "Name explained:", etc.
+            lastname = name.split()[-1] if ' ' in name else name
+            quote_attribution_pattern = r'"[^"]+"\s*[,\s]*' + re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed)'
+            reverse_pattern = re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed)[:\s,]+"[^"]+'
+
+            has_quotes = bool(re.search(quote_attribution_pattern, text, re.IGNORECASE)) or \
+                        bool(re.search(reverse_pattern, text, re.IGNORECASE))
+
+            if has_quotes:
+                filtered_sources.append(source)
+            # Otherwise skip - likely historical/contextual mention
+        else:
+            # Keep all other sources
+            filtered_sources.append(source)
+
     # Step 6: Deduplicate by normalized name
-    unique_sources = deduplicate_sources(sources)
+    unique_sources = deduplicate_sources(filtered_sources)
 
     # Step 7: Add gender detection with context analysis
     # Sprint 8.2: Use context-aware gender detection
@@ -1835,7 +1879,8 @@ def extract_wordpress_content(soup):
                 tag.decompose()
 
     # Extract clean body text from only content elements
-    content_elements = article_copy.find_all(['p', 'h2', 'h3', 'h4', 'blockquote'])
+    # Sprint 7.25: Added 'div' to handle articles with div-based content (e.g., x_elementToProof)
+    content_elements = article_copy.find_all(['p', 'div', 'h2', 'h3', 'h4', 'blockquote'])
 
     text_parts = []
     for elem in content_elements:
