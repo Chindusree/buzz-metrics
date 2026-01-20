@@ -14,6 +14,7 @@ from datetime import datetime
 from collections import defaultdict
 import gender_guesser.detector as gender
 import hashlib
+import os
 
 
 BASE_URL = "https://buzz.bournemouth.ac.uk"
@@ -2406,10 +2407,39 @@ def extract_article_metadata(url):
         return None
 
 
+def load_existing_data():
+    """
+    Sprint 7.20: Load existing metrics_raw.json if it exists.
+    Returns existing data structure or empty structure if file doesn't exist.
+    """
+    path = '../data/metrics_raw.json'
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load existing data: {e}")
+            return {'articles': []}
+    return {'articles': []}
+
+
+def get_existing_urls(data):
+    """
+    Sprint 7.20: Extract set of URLs already in the dataset.
+    """
+    return set(article['url'] for article in data.get('articles', []))
+
+
 def main():
     print("=" * 80)
-    print("BUzz Metrics Scraper - Sprint 2")
+    print("BUzz Metrics Scraper - Sprint 7.20 (Incremental)")
     print("=" * 80)
+    print()
+
+    # Sprint 7.20: Load existing data
+    existing_data = load_existing_data()
+    existing_urls = get_existing_urls(existing_data)
+    print(f"Existing articles in dataset: {len(existing_urls)}")
     print()
 
     # Collect all article URLs from pages
@@ -2420,20 +2450,34 @@ def main():
         all_urls.update(urls)
 
     print(f"\n{'-' * 80}")
-    print(f"Total unique article URLs found: {len(all_urls)}")
+    print(f"Total unique article URLs found on front page: {len(all_urls)}")
+
+    # Sprint 7.20: Filter to new URLs only
+    new_urls = all_urls - existing_urls
+    print(f"Already have {len(existing_urls)} articles")
+    print(f"New articles to process: {len(new_urls)}")
     print(f"{'-' * 80}\n")
 
-    # Extract metadata for each article
-    articles = []
-    for url in sorted(all_urls):
+    if not new_urls:
+        print("✓ No new articles found. Dataset is up to date.")
+        print(f"Total articles: {len(existing_urls)}")
+        return
+
+    # Extract metadata for NEW articles only
+    new_articles = []
+    for url in sorted(new_urls):
         metadata = extract_article_metadata(url)
         if metadata:
             # Filter by valid newsday dates
             if is_valid_newsday(metadata['date']):
-                articles.append(metadata)
+                new_articles.append(metadata)
+
+    # Sprint 7.20: Combine with existing data
+    articles = existing_data['articles'] + new_articles
 
     print(f"\n{'-' * 80}")
-    print(f"Successfully extracted: {len(articles)} articles (from valid newsdays)")
+    print(f"Successfully extracted {len(new_articles)} new articles")
+    print(f"Total articles in dataset: {len(articles)}")
     print(f"{'-' * 80}\n")
 
     # Sort articles by date
