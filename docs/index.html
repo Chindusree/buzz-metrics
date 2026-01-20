@@ -1935,10 +1935,10 @@
                 const met350Ratio = `${stats.met350}/${stats.stories}`;
 
                 const row = document.createElement('tr');
-                // Sprint 7.29: Make author name clickable to show stories
+                // Sprint 7.29: Make story count clickable to show stories
                 row.innerHTML = `
-                    <td><a href="#" class="contributor-name-link" onclick="event.preventDefault(); showContributorStories('${author.replace(/'/g, "\\'")}');">${author}</a></td>
-                    <td>${stats.stories}</td>
+                    <td>${author}</td>
+                    <td><a href="#" class="contributor-name-link" onclick="event.preventDefault(); showContributorStories('${author.replace(/'/g, "\\'")}');">${stats.stories}</a></td>
                     <td>${avgSources}</td>
                     <td>${genderDisplay}</td>
                     <td>${met350Ratio}</td>
