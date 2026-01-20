@@ -967,6 +967,7 @@ AMBIGUOUS_NAMES = [
 def find_pronouns_near_name(text, name, window=200):
     """
     Sprint 8.2: Find gendered pronouns within window chars of name.
+    Sprint 7.31: Extended to detect they/them pronouns.
 
     Args:
         text: Full article text
@@ -974,12 +975,13 @@ def find_pronouns_near_name(text, name, window=200):
         window: Character window around name to search
 
     Returns:
-        dict: {'female': count, 'male': count}
+        dict: {'female': count, 'male': count, 'they': count}
     """
     female_pronouns = ['she', 'her', 'herself', 'woman', 'female']
     male_pronouns = ['he', 'him', 'himself', 'man', 'male']
+    they_pronouns = ['they', 'them', 'their', 'theirs', 'themselves']
 
-    pronoun_counts = {'female': 0, 'male': 0}
+    pronoun_counts = {'female': 0, 'male': 0, 'they': 0}
 
     # Find all occurrences of the name
     name_positions = []
@@ -1005,15 +1007,68 @@ def find_pronouns_near_name(text, name, window=200):
             if re.search(r'\b' + pronoun + r'\b', context):
                 pronoun_counts['male'] += 1
 
+        for pronoun in they_pronouns:
+            if re.search(r'\b' + pronoun + r'\b', context):
+                pronoun_counts['they'] += 1
+
     return pronoun_counts
+
+
+def detect_pronoun_from_context(name, text):
+    """
+    Sprint 7.31: Detect pronoun from attribution context.
+
+    Looks for pronoun used when quoting this source in patterns like:
+    - "Smith said she was..."
+    - "She told reporters..."
+    - "They explained that..."
+
+    Args:
+        name: Person's full name
+        text: Article text
+
+    Returns:
+        str: 'she', 'he', 'they', or None
+    """
+    # Get last name for pattern matching
+    lastname = name.split()[-1] if name else ''
+    if not lastname:
+        return None
+
+    # Patterns to find pronoun near attribution verbs
+    patterns = [
+        # Pattern: "Smith said she/he/they ..."
+        (r'\b' + re.escape(lastname) + r'\b[^.]{0,50}?\b(she|he|they)\s+(?:said|told|added|explained|stated|claimed|noted)', 'after_name'),
+        # Pattern: "She/He/They said..." (at start of sentence near name)
+        (r'\.\s+(She|He|They)\s+(?:said|told|added|explained|stated|claimed|noted)[^.]{0,100}?' + re.escape(lastname), 'before_name'),
+    ]
+
+    found_pronouns = []
+
+    for pattern, position in patterns:
+        for match in re.finditer(pattern, text, re.IGNORECASE):
+            pronoun = match.group(1).lower()
+            found_pronouns.append(pronoun)
+
+    # Return most common pronoun if found
+    if found_pronouns:
+        # Count occurrences
+        from collections import Counter
+        counts = Counter(found_pronouns)
+        most_common = counts.most_common(1)[0][0]
+        return most_common
+
+    return None
 
 
 def detect_gender_with_context(full_name, surrounding_text):
     """
     Sprint 8.2: Detect gender using three-tier approach:
-    1. First name lookup (gender-guesser)
-    2. Pronoun context search if ambiguous
-    3. Statistical fallback
+    Sprint 7.31: Extended to support they/them pronouns
+    1. Explicit pronoun detection (they said, she said, he said)
+    2. First name lookup (gender-guesser)
+    3. Pronoun context search if ambiguous
+    4. Statistical fallback
 
     Args:
         full_name: Person's full name
@@ -1021,11 +1076,20 @@ def detect_gender_with_context(full_name, surrounding_text):
 
     Returns:
         dict: {
-            'gender': 'male'|'female'|'unknown',
+            'gender': 'male'|'female'|'they'|'unknown',
             'confidence': 'high'|'medium'|'low',
-            'method': 'name_lookup'|'pronoun_context'|'statistical'
+            'method': 'name_lookup'|'pronoun_context'|'statistical'|'pronoun_attribution'
         }
     """
+    # Sprint 7.31: Step 0 - Check for explicit pronoun in attribution
+    detected_pronoun = detect_pronoun_from_context(full_name, surrounding_text)
+    if detected_pronoun == 'they':
+        return {'gender': 'they', 'confidence': 'high', 'method': 'pronoun_attribution'}
+    elif detected_pronoun == 'she':
+        return {'gender': 'female', 'confidence': 'high', 'method': 'pronoun_attribution'}
+    elif detected_pronoun == 'he':
+        return {'gender': 'male', 'confidence': 'high', 'method': 'pronoun_attribution'}
+
     d = gender.Detector()
 
     # Skip titles to get first name
@@ -1059,12 +1123,16 @@ def detect_gender_with_context(full_name, surrounding_text):
     if result in ['mostly_male', 'mostly_female', 'andy', 'unknown'] or is_ambiguous:
         pronouns = find_pronouns_near_name(surrounding_text, full_name, window=200)
 
+        # Sprint 7.31: Check for they/them pronouns first
+        if pronouns['they'] > 0 and pronouns['male'] == 0 and pronouns['female'] == 0:
+            return {'gender': 'they', 'confidence': 'medium', 'method': 'pronoun_context'}
+
         # Found female pronouns only
-        if pronouns['female'] > 0 and pronouns['male'] == 0:
+        if pronouns['female'] > 0 and pronouns['male'] == 0 and pronouns['they'] == 0:
             return {'gender': 'female', 'confidence': 'medium', 'method': 'pronoun_context'}
 
         # Found male pronouns only
-        if pronouns['male'] > 0 and pronouns['female'] == 0:
+        if pronouns['male'] > 0 and pronouns['female'] == 0 and pronouns['they'] == 0:
             return {'gender': 'male', 'confidence': 'medium', 'method': 'pronoun_context'}
 
         # Mixed or no pronouns - fall through to Step 3

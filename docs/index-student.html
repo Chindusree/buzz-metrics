@@ -482,6 +482,14 @@
             text-align: center;
         }
 
+        /* Sprint 7.32: Consistent footnote styling */
+        .footnote {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
         /* Footer */
         footer {
             background: white;
@@ -501,12 +509,66 @@
                 text-align: center;
             }
 
+            /* Sprint 7.31: Navigation improvements */
+            .sticky-nav {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .nav-dot {
+                display: none;
+            }
+
+            /* Sprint 7.31: Hero cards - 2x2 grid on tablet */
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            /* Section breakdown - stack */
+            .section-cards {
+                grid-template-columns: 1fr;
+            }
+
+            /* Sprint 7.31: Donut chart - smaller */
+            #genderChart {
+                max-width: 280px !important;
+                max-height: 280px !important;
+            }
+
+            /* Sprint 7.31: Heatmap - horizontal scroll */
+            .rhythm-grid {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .rhythm-table {
+                min-width: 600px;
+            }
+        }
+
+        /* Sprint 7.31: Small phones (iPhone SE) */
+        @media (max-width: 480px) {
+            /* Hero cards - single column */
             .cards-grid {
                 grid-template-columns: 1fr;
             }
 
-            .section-cards {
-                grid-template-columns: 1fr;
+            /* Reduce stat number size */
+            .card-value {
+                font-size: 2.5rem;
+            }
+
+            /* Smaller navigation text */
+            .nav-item {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+
+            /* Donut chart even smaller */
+            #genderChart {
+                max-width: 240px !important;
+                max-height: 240px !important;
             }
         }
 
@@ -555,7 +617,7 @@
             </div>
             <div class="card">
                 <div class="card-value" id="sourcesCount">0</div>
-                <div class="card-label">QUOTED SOURCES</div>
+                <div class="card-label">SOURCES</div>
             </div>
             <div class="card">
                 <div class="card-value" id="imagesCount">0</div>
@@ -579,7 +641,8 @@
                 <div style="max-width: 400px; margin: 0 auto;">
                     <canvas id="genderChart"></canvas>
                     <!-- Sprint 7.24: Inclusive gender disclaimer -->
-                    <p class="gender-note">Based on name analysis. May not reflect individuals' stated gender identity.</p>
+                    <!-- Sprint 7.32: Changed to .footnote for consistency -->
+                    <p class="footnote" style="text-align: center;">Based on name analysis. May not reflect individuals' stated gender identity.</p>
                 </div>
 
             <h2 class="h2-title" style="margin-top: 60px;">Section breakdown</h2>
@@ -598,7 +661,8 @@
                     <tbody id="rhythmBody"></tbody>
                 </table>
             </div>
-            <div class="rhythm-target">
+            <!-- Sprint 7.32: Changed to .footnote for consistency -->
+            <div class="footnote">
                 <span style="background-color: #E91E8C; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 3+ stories &nbsp;&nbsp;
                 <span style="background-color: #F06292; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 2 stories &nbsp;&nbsp;
                 <span style="background-color: #F8BBD9; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 1 story &nbsp;&nbsp;
@@ -743,7 +807,8 @@
         let genderChart = null;
 
         function updateSourceDiversity() {
-            const genderCounts = { male: 0, female: 0, unknown: 0 };
+            // Sprint 7.31: Extended to support they/them as separate category
+            const genderCounts = { male: 0, female: 0, they: 0, unknown: 0 };
 
             filteredArticles.forEach(article => {
                 const sources = article.source_evidence_confirmed || [];
@@ -751,13 +816,17 @@
                     const gender = source.gender || 'unknown';
                     if (genderCounts.hasOwnProperty(gender)) {
                         genderCounts[gender]++;
+                    } else {
+                        // Fallback for any unexpected gender values
+                        genderCounts.unknown++;
                     }
                 });
             });
 
-            const total = genderCounts.female + genderCounts.male + genderCounts.unknown;
+            const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
             const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
             const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+            const theyPercent = total > 0 ? Math.round((genderCounts.they / total) * 100) : 0;
             const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
 
             // Destroy existing chart if it exists
@@ -770,12 +839,12 @@
             genderChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    // Sprint 7.24: Updated to inclusive pronoun labels
-                    labels: ['She/Her', 'He/Him', 'They/Unknown'],
+                    // Sprint 7.31: Four-segment donut with they/them separated
+                    labels: ['She/Her', 'He/Him', 'They/Them', 'Unknown'],
                     datasets: [{
-                        data: [genderCounts.female, genderCounts.male, genderCounts.unknown],
-                        // Sprint 7.24: Less gendered colors (purple, blue, grey)
-                        backgroundColor: ['#8B5CF6', '#3B82F6', '#9CA3AF'],
+                        data: [genderCounts.female, genderCounts.male, genderCounts.they, genderCounts.unknown],
+                        // Sprint 7.31: BUzz pink, blue, purple, grey
+                        backgroundColor: ['#E91E8C', '#3B82F6', '#8B5CF6', '#9CA3AF'],
                         borderWidth: 0
                     }]
                 },

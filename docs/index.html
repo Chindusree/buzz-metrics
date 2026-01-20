@@ -932,6 +932,14 @@
             text-align: center;
         }
 
+        /* Sprint 7.32: Consistent footnote styling */
+        .footnote {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
         /* Footer */
         footer {
             background: white;
@@ -944,38 +952,103 @@
         }
 
         /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
+                @media (max-width: 768px) {
+            /* Fix header padding - was 80px! */
+            .header-bar {
+                padding: 12px 16px;
+                flex-wrap: wrap;
+                gap: 12px;
             }
-
+            
+            .sticky-nav {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .nav-dot {
+                display: none;
+            }
+            
+            .nav-item {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+            
+            .header-date-selector {
+                order: 2;
+            }
+            
+            /* Hero cards 2x2 */
             .cards-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
             }
-
+            
+            .card-value {
+                font-size: 2.5rem;
+            }
+            
+            .card-label {
+                font-size: 10px;
+            }
+            
+            /* Section cards stack */
             .section-cards {
                 grid-template-columns: 1fr;
             }
-
-            .table-controls {
-                flex-direction: column;
-                align-items: stretch;
+            
+            /* Heatmap scroll */
+            .rhythm-grid {
+                overflow-x: auto;
             }
-
+            
+            .rhythm-table {
+                min-width: 500px;
+            }
+            
+            /* Stories table scroll */
             .stories-table {
-                font-size: 12px;
+                font-size: 11px;
             }
-
+            
             .stories-table th,
             .stories-table td {
-                padding: 8px 4px;
+                padding: 6px 4px;
             }
-
-            .modal-content {
-                margin: 20px;
-                padding: 20px;
+            
+            /* Section padding */
+            .section {
+                padding: 40px 16px;
+            }
+            
+            .h2-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-value {
+                font-size: 2rem;
+            }
+            
+            .sticky-nav {
+                gap: 4px;
+            }
+            
+            .nav-item {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+            
+            .section-header-title {
+                font-size: 1.5rem;
             }
         }
 
@@ -1028,7 +1101,7 @@
             </div>
             <div class="card">
                 <div class="card-value" id="sourcesCount">0</div>
-                <div class="card-label">QUOTED SOURCES</div>
+                <div class="card-label">SOURCES</div>
             </div>
             <div class="card">
                 <div class="card-value" id="imagesCount">0</div>
@@ -1052,7 +1125,8 @@
                 <div style="max-width: 400px; margin: 0 auto;">
                     <canvas id="genderChart"></canvas>
                     <!-- Sprint 7.24: Inclusive gender disclaimer -->
-                    <p class="gender-note">Based on name analysis. May not reflect individuals' stated gender identity.</p>
+                    <!-- Sprint 7.32: Changed to .footnote for consistency -->
+                    <p class="footnote" style="text-align: center;">Based on name analysis. May not reflect individuals' stated gender identity.</p>
                 </div>
 
             <h2 class="h2-title" style="margin-top: 60px;">Section breakdown</h2>
@@ -1071,7 +1145,8 @@
                     <tbody id="rhythmBody"></tbody>
                 </table>
             </div>
-            <div class="rhythm-target">
+            <!-- Sprint 7.32: Changed to .footnote for consistency -->
+            <div class="footnote">
                 <span style="background-color: #E91E8C; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 3+ stories &nbsp;&nbsp;
                 <span style="background-color: #F06292; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 2 stories &nbsp;&nbsp;
                 <span style="background-color: #F8BBD9; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 1 story &nbsp;&nbsp;
@@ -1148,6 +1223,12 @@
                     <tbody id="storiesBody"></tbody>
                 </table>
             </div>
+
+            <!-- Sprint 7.32: Stories table footnote -->
+            <p class="footnote">
+                <strong>Colour key</strong><br>
+                Green: on target or above | Orange: close (or exempt) | Red: below target
+            </p>
 
             <h2 class="h2-title" style="margin-top: 60px;">Contributors</h2>
             <div id="contributorsContent">
@@ -1343,7 +1424,8 @@
         let genderChart = null;
 
         function updateSourceDiversity() {
-            const genderCounts = { male: 0, female: 0, unknown: 0 };
+            // Sprint 7.31: Extended to support they/them as separate category
+            const genderCounts = { male: 0, female: 0, they: 0, unknown: 0 };
 
             filteredArticles.forEach(article => {
                 const sources = article.source_evidence_confirmed || [];
@@ -1351,13 +1433,17 @@
                     const gender = source.gender || 'unknown';
                     if (genderCounts.hasOwnProperty(gender)) {
                         genderCounts[gender]++;
+                    } else {
+                        // Fallback for any unexpected gender values
+                        genderCounts.unknown++;
                     }
                 });
             });
 
-            const total = genderCounts.female + genderCounts.male + genderCounts.unknown;
+            const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
             const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
             const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+            const theyPercent = total > 0 ? Math.round((genderCounts.they / total) * 100) : 0;
             const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
 
             // Destroy existing chart if it exists
@@ -1370,12 +1456,12 @@
             genderChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    // Sprint 7.24: Updated to inclusive pronoun labels
-                    labels: ['She/Her', 'He/Him', 'They/Unknown'],
+                    // Sprint 7.31: Four-segment donut with they/them separated
+                    labels: ['She/Her', 'He/Him', 'They/Them', 'Unknown'],
                     datasets: [{
-                        data: [genderCounts.female, genderCounts.male, genderCounts.unknown],
-                        // Sprint 7.24: Less gendered colors (purple, blue, grey)
-                        backgroundColor: ['#8B5CF6', '#3B82F6', '#9CA3AF'],
+                        data: [genderCounts.female, genderCounts.male, genderCounts.they, genderCounts.unknown],
+                        // Sprint 7.31: BUzz pink, blue, purple, grey
+                        backgroundColor: ['#E91E8C', '#3B82F6', '#8B5CF6', '#9CA3AF'],
                         borderWidth: 0
                     }]
                 },
@@ -1615,6 +1701,19 @@
             renderStoriesTable();
         }
 
+        // Sprint 7.32: Inline color coding functions
+        function getWordCountColor(count) {
+            if (count < 250) return '#EF4444';  // Red
+            if (count <= 350) return '#F59E0B'; // Orange
+            return '#22C55E';                    // Green
+        }
+
+        function getSourceCountColor(count) {
+            if (count === 0) return '#EF4444';  // Red
+            if (count === 1) return '#F59E0B';  // Orange
+            return '#22C55E';                    // Green
+        }
+
         function renderStoriesTable() {
             const sectionFilter = document.getElementById('sectionFilter').value;
             let articles = filteredArticles;
@@ -1634,9 +1733,17 @@
 
                 const wordBadge = getWordBadge(article);
                 const imageBadge = getImageBadge(article);
-                const sourcesCell = article.quoted_sources_confirmed > 0
-                    ? `<span class="sources-clickable" onclick="showSources('${article.id}')">${article.quoted_sources_confirmed}</span>`
-                    : article.quoted_sources_confirmed;
+
+                // Sprint 7.32: Color-coded sources with clickable behavior preserved
+                const sourceCount = article.quoted_sources_confirmed || 0;
+                const sourceColor = getSourceCountColor(sourceCount);
+                const sourcesCell = sourceCount > 0
+                    ? `<span class="sources-clickable" onclick="showSources('${article.id}')" style="color: ${sourceColor}; font-weight: 600;">${sourceCount}</span>`
+                    : `<span style="color: ${sourceColor}; font-weight: 600;">${sourceCount}</span>`;
+
+                // Sprint 7.32: Color-coded word count
+                const wordCount = article.word_count || 0;
+                const wordColor = getWordCountColor(wordCount);
 
                 row.innerHTML = `
                     <td>${article.time || 'N/A'}</td>
@@ -1648,7 +1755,7 @@
                         ${wordBadge}
                     </td>
                     <td>${article.author || 'Unknown'}</td>
-                    <td>${article.word_count || 'N/A'}</td>
+                    <td style="color: ${wordColor}; font-weight: 600;">${wordCount}</td>
                     <td>${sourcesCell}</td>
                     <td>${article.images?.total || 0}${imageBadge}</td>
                 `;
@@ -1657,15 +1764,7 @@
         }
 
         function getWordBadge(article) {
-            if (article.is_breaking_news) {
-                return '<span class="badge badge-breaking">📰</span>';
-            }
-            if (article.word_count_status === 'below_minimum') {
-                return '<span class="badge badge-below">🔴</span>';
-            }
-            if (article.is_long_form) {
-                return '<span class="badge badge-longform">✓</span>';
-            }
+            // Sprint 7.32: Removed badges - color coding in table columns replaces them
             return '';
         }
 
