@@ -1147,6 +1147,60 @@ def detect_gender_with_context(full_name, surrounding_text):
     return {'gender': 'unknown', 'confidence': 'low', 'method': 'none'}
 
 
+def has_direct_quote(name, text):
+    """
+    Sprint 7.33: Check if this person has their own words quoted directly.
+
+    A quoted source must have their own words attributed to them.
+    Being mentioned or referenced inside someone else's quote does NOT count.
+
+    Args:
+        name: Person's name
+        text: Article text
+
+    Returns:
+        bool: True if person has direct quote, False otherwise
+    """
+    if not name or not text:
+        return False
+
+    # Normalize text and name for matching
+    text_lower = text.lower()
+    name_lower = name.lower()
+
+    # Get last name for pattern matching (more reliable than full name)
+    lastname = name.split()[-1] if name else ''
+    if not lastname:
+        return False
+
+    lastname_escaped = re.escape(lastname)
+
+    # Attribution verbs that indicate direct quotes
+    attribution_verbs = r'(?:said|told|added|explained|stated|claimed|noted|commented|revealed|confirmed|announced)'
+
+    # Pattern 1: Name + verb + quotation nearby
+    # Example: "Smith said: \"...\"" or "Smith told reporters he was..."
+    pattern1 = rf'\b{lastname_escaped}\b[^.{{0,100}}]{attribution_verbs}[^.{{0,100}}]["""\']'
+
+    # Pattern 2: Quotation + Name + verb
+    # Example: "..." Smith said
+    pattern2 = rf'["""\'][^"""\']+["""\'][^.{{0,50}}]\b{lastname_escaped}\b[^.{{0,50}}]{attribution_verbs}'
+
+    # Pattern 3: Verb + Name (for reported speech)
+    # Example: According to Smith / Smith explained that
+    pattern3 = rf'\b{lastname_escaped}\b\s+{attribution_verbs}\s+(?:that|how|why|when|where)'
+
+    # Check if any pattern matches
+    if re.search(pattern1, text, re.IGNORECASE):
+        return True
+    if re.search(pattern2, text, re.IGNORECASE):
+        return True
+    if re.search(pattern3, text, re.IGNORECASE):
+        return True
+
+    return False
+
+
 def get_gender(full_name):
     """
     Extract first name and guess gender.
@@ -2515,6 +2569,12 @@ def extract_article_metadata(url):
 
                 word_count = shorthand_data['word_count']
                 source_evidence = shorthand_data['sources']
+
+                # Sprint 7.33: Filter sources to only include those with direct quotes
+                # Use the 'position' field that extract_sources() already provides
+                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
+                source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
+
                 images = shorthand_data['images']
                 embeds = shorthand_data['embeds']
 
@@ -2530,6 +2590,12 @@ def extract_article_metadata(url):
 
             word_count = wordpress_data['word_count']
             source_evidence = wordpress_data['sources']
+
+            # Sprint 7.33: Filter sources to only include those with direct quotes
+            # Use the 'position' field that extract_sources() already provides
+            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
+            source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
+
             images = wordpress_data['images']
             embeds = wordpress_data['embeds']
 
