@@ -125,6 +125,19 @@ def main():
         # Reconcile sources using fuzzy matching
         reconciled = reconcile_sources(scrape_evidence, verify_evidence)
 
+        # Sprint 7.35: Apply position filter AFTER reconciliation
+        # This is the ONLY place filtering happens - single source of truth
+        from constants import DIRECT_QUOTE_POSITIONS, FALSE_POSITIVE_NAMES
+
+        def is_valid_confirmed_source(source):
+            """Source must have valid position AND not be a known false positive."""
+            position = source.get('position', '')
+            name = source.get('name', '')
+            return position in DIRECT_QUOTE_POSITIONS and name not in FALSE_POSITIVE_NAMES
+
+        reconciled['confirmed'] = [s for s in reconciled['confirmed'] if is_valid_confirmed_source(s)]
+        reconciled['possible'] = [s for s in reconciled['possible'] if s.get('name', '') not in FALSE_POSITIVE_NAMES]
+
         confirmed_count = len(reconciled['confirmed'])
         possible_count = len(reconciled['possible'])
         filtered_count = len(reconciled['filtered'])

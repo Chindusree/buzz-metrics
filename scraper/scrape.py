@@ -2570,10 +2570,8 @@ def extract_article_metadata(url):
                 word_count = shorthand_data['word_count']
                 source_evidence = shorthand_data['sources']
 
-                # Sprint 7.33: Filter sources to only include those with direct quotes
-                # Use the 'position' field that extract_sources() already provides
-                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
-                source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
+                # Sprint 7.35: Filtering moved to compare.py (single source of truth)
+                # source_evidence passes through unfiltered here
 
                 images = shorthand_data['images']
                 embeds = shorthand_data['embeds']
@@ -2591,10 +2589,8 @@ def extract_article_metadata(url):
             word_count = wordpress_data['word_count']
             source_evidence = wordpress_data['sources']
 
-            # Sprint 7.33: Filter sources to only include those with direct quotes
-            # Use the 'position' field that extract_sources() already provides
-            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
-            source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
+            # Sprint 7.35: Filtering moved to compare.py (single source of truth)
+            # source_evidence passes through unfiltered here
 
             images = wordpress_data['images']
             embeds = wordpress_data['embeds']
@@ -2650,7 +2646,7 @@ def extract_article_metadata(url):
             'word_count_confidence': word_count_confidence,
             'content_type': content_type,
             'shorthand_url': shorthand_url,
-            'quoted_sources': len(source_evidence),
+            'quoted_sources': len(source_evidence),  # Raw count; compare.py applies final filter
             'quoted_sources_confidence': quoted_sources_confidence,
             'sources_male': sources_male,
             'sources_female': sources_female,
