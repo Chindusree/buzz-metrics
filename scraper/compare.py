@@ -140,7 +140,7 @@ def main():
 
         # Create verified article with new reconciliation fields
         verified_article = article.copy()
-        verified_article['quoted_sources_confirmed'] = confirmed_count
+        verified_article['quoted_sources_confirmed'] = len(reconciled['confirmed'])
         verified_article['quoted_sources_possible'] = possible_count
         verified_article['quoted_sources_confidence'] = new_confidence
         # Sprint 6.7.2: reconciled sources now include gender
