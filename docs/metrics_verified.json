@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-01-21T11:37:39Z",
-  "total_articles": 69,
+  "last_updated": "2026-01-21T12:02:27Z",
+  "total_articles": 71,
   "summary": {
-    "avg_word_count": 607,
-    "avg_quoted_sources": 1.6,
+    "avg_word_count": 605,
+    "avg_quoted_sources": 1.5,
     "below_minimum_count": 18,
     "long_form_count": 12,
-    "breaking_news_count": 5,
-    "total_images": 148,
-    "original_images": 53,
+    "breaking_news_count": 6,
+    "total_images": 151,
+    "original_images": 56,
     "stock_images": 3,
     "uncredited_images": 92,
     "gender_breakdown": {
-      "male": 59,
+      "male": 60,
       "female": 25,
-      "unknown": 23
+      "unknown": 24
     },
     "by_section": {
       "Sport": {
@@ -23,9 +23,9 @@
         "sources": 23
       },
       "General News": {
-        "count": 46,
-        "words": 21943,
-        "sources": 63
+        "count": 48,
+        "words": 23028,
+        "sources": 65
       },
       "Features": {
         "count": 7,
@@ -40,8 +40,8 @@
         "avg_sources": 1.4
       },
       "News": {
-        "count": 46,
-        "avg_word_count": 477,
+        "count": 48,
+        "avg_word_count": 480,
         "avg_sources": 1.4
       },
       "Features": {
@@ -74,7 +74,7 @@
     },
     {
       "date": "2026-01-21",
-      "article_count": 12,
+      "article_count": 14,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "09:14",
@@ -4456,6 +4456,64 @@
       "category_normalised": "General News"
     },
     {
+      "id": "57f209a96481",
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:56",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 477,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Dort-800x400.jpeg",
+            "classification": "original",
+            "credit": "Jacob Deighton"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dorchester Town",
+          "gender": "unknown"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Weymouth"
+      ],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "d8ca9935fd92",
       "headline": "Bashley through to semi-finals",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
@@ -5090,6 +5148,69 @@
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "df1649c0e0e4",
+      "headline": "The Talented Mr. Ripley is debuting at Poole Lighthouse",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-talented-mr-ripley-is-debuting-at-poole-lighthouse/",
+      "author": "Anna Bodiam",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:44",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 608,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/LtoR-Bruce-Herbelin-Earle-as-Dic-800x400.jpg",
+            "classification": "original",
+            "credit": "Mark Senior"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/LtoR-Bruce-Herbelin-Earle-as-Dic-720x480.jpg",
+            "classification": "original",
+            "credit": "Mark Senior"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Mark Leipacher",
+          "gender": "male"
+        }
+      ],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,

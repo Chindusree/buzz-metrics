@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-21T11:37:39Z",
-  "total_flagged": 20,
+  "generated": "2026-01-21T12:02:27Z",
+  "total_flagged": 21,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -629,6 +629,32 @@
         "Carty",
         "Sweet",
         "Hampshire"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "57f209a96481",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Weymouth",
+        "Dorchester Town"
+      ],
+      "confirmed": [
+        {
+          "name": "Dorchester Town",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Weymouth"
       ],
       "review_status": "pending"
     },

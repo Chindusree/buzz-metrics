@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T11:34:55Z",
-  "total_articles": 69,
+  "last_updated": "2026-01-21T11:59:21Z",
+  "total_articles": 71,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -3428,6 +3428,48 @@
       "warnings": []
     },
     {
+      "id": "57f209a96481",
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:56",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 477,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Dort-800x400.jpeg",
+            "classification": "original",
+            "credit": "Jacob Deighton"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "d8ca9935fd92",
       "headline": "Bashley through to semi-finals",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
@@ -3881,6 +3923,55 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
             "classification": "uncredited",
             "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "df1649c0e0e4",
+      "headline": "The Talented Mr. Ripley is debuting at Poole Lighthouse",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-talented-mr-ripley-is-debuting-at-poole-lighthouse/",
+      "author": "Anna Bodiam",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:44",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 608,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/LtoR-Bruce-Herbelin-Earle-as-Dic-800x400.jpg",
+            "classification": "original",
+            "credit": "Mark Senior"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/LtoR-Bruce-Herbelin-Earle-as-Dic-720x480.jpg",
+            "classification": "original",
+            "credit": "Mark Senior"
           }
         ]
       },
