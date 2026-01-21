@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T10:37:24Z",
-  "total_articles": 64,
+  "last_updated": "2026-01-21T11:34:55Z",
+  "total_articles": 69,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -3428,6 +3428,142 @@
       "warnings": []
     },
     {
+      "id": "d8ca9935fd92",
+      "headline": "Bashley through to semi-finals",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:19",
+      "category": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 713,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Kieran Filmer",
+          "full_attribution": "Filmer says:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_2995-800x400.jpeg",
+            "classification": "original",
+            "credit": "Will Russell"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "773a7ef6193c",
+      "headline": "Dorset Police appealing for witnesses for Sherborne Burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "10:37",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 325,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-10.33.17-800x400.png",
+            "classification": "original",
+            "credit": "Image Credit : FreePik"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "b7229ac5ec0d",
+      "headline": "Driver dies after sustained injuries from three-car crash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driver-dies-after-sustained-injuries-from-three-car-crash/",
+      "author": "Oliver Kent",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "10:49",
+      "category": "Health",
+      "category_primary": "Features",
+      "display_category": "General News",
+      "word_count": 283,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-10.47.35-800x400.png",
+            "classification": "original",
+            "credit": "Dorset Police"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "3c6478494fe3",
       "headline": "Flood Warning for Poole and Christchurch Harbour",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
@@ -3520,6 +3656,99 @@
         "audio_evidence": []
       },
       "warnings": []
+    },
+    {
+      "id": "dd4407355e61",
+      "headline": "Hampshire’s Dawson set for ODI return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:24",
+      "category": "cricket",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 766,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/hampshire-bowl-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Utilita Bowl Utilita Bowl, home of Hamshire Cricket."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "9fc5b169ab48",
+      "headline": "Mark McAdam speaks Cherries transfers",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mark-mcadam-speaks-cherries-transfers/",
+      "author": "Jack Hillman",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:03",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1307,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Image-21-01-2026-at-10.39-799x400.jpg",
+            "classification": "uncredited",
+            "credit": "Mark McAdam talking about the transfer window Mark McAdam discusses the Cherries transfer business"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/9d5d16a6-78dc-4bdc-a81a-12427725414e-360x216.jpg",
+            "classification": "original",
+            "credit": "Mark McAdam"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
     },
     {
       "id": "f0a84d7a7b2b",

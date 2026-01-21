@@ -1,34 +1,61 @@
 {
-  "last_updated": "2026-01-21T11:13:17Z",
-  "total_verified": 64,
+  "last_updated": "2026-01-21T11:37:37Z",
+  "total_verified": 69,
   "results": [
     {
       "id": "21a723b0aed1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
-      "verify_quoted_sources": null,
-      "verify_evidence": [],
-      "error": "Failed to fetch article text"
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Rayan",
+          "context": "PERSON within 50 chars of quote: ...ers.” View this post on InstagramA post shared by Rayan (@rayann) A post shared by Rayan (@rayann) Iraola..."
+        },
+        {
+          "name": "@rayann",
+          "context": "PERSON within 50 chars of quote: ...iew this post on InstagramA post shared by Rayan (@rayann) A post shared by Rayan (@rayann) Iraola added: “..."
+        }
+      ]
     },
     {
       "id": "0faceff20735",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
-      "verify_quoted_sources": null,
-      "verify_evidence": [],
-      "error": "Failed to fetch article text"
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Fabian Hurzeler",
+          "context": "PERSON within 50 chars of quote: ...a was quick to praise the squad available to boss Fabian Hurzeler. He said: “They play very well. “It’s a very good..."
+        },
+        {
+          "name": "Brighton",
+          "context": "PERSON within 50 chars of quote: ...ch are as good or better than the ones starting.” Brighton have only won one of their last eight games, but ..."
+        },
+        {
+          "name": "Ryan",
+          "context": "PERSON within 50 chars of quote: ... due to a knee injury. On Christie, Iraola said: “Ryan is feeling better. “I hope he can be available fo..."
+        },
+        {
+          "name": "David Brooks",
+          "context": "PERSON within 50 chars of quote: ... the Spaniard has labelled his squad “thin”, with David Brooks set to be the latest absentee due to twisting his..."
+        }
+      ]
     },
     {
       "id": "d0dc88d201d3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
-      "verify_quoted_sources": null,
-      "verify_evidence": [],
-      "error": "Failed to fetch article text"
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Marc",
+          "context": "PERSON within 50 chars of quote: ...aid: “My latest understanding is that a deal with Marc is in the final stages. I can’t confirm a club, b..."
+        }
+      ]
     },
     {
       "id": "f9992a6fe68f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
-      "verify_quoted_sources": null,
-      "verify_evidence": [],
-      "error": "Failed to fetch article text"
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "0c209a33d1b4",
@@ -749,6 +776,55 @@
       "verify_evidence": []
     },
     {
+      "id": "d8ca9935fd92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Head Coach",
+          "context": "PERSON within 50 chars of quote: ...in in 2026 after some tough losses in the league. Head Coach, Kieran Filmer, says: “Really pleased, I think th..."
+        },
+        {
+          "name": "Kieran Filmer",
+          "context": "PERSON within 50 chars of quote: ...fter some tough losses in the league. Head Coach, Kieran Filmer, says: “Really pleased, I think the coaching team..."
+        },
+        {
+          "name": "Hayden Wells",
+          "context": "PERSON within 50 chars of quote: ...ers with less minutes.” Man of the match debutant Hayden Wells opened his Bashley account with an unorthodox str..."
+        },
+        {
+          "name": "Stoneham FC",
+          "context": "PERSON within 50 chars of quote: ...s.” Bashley now have a semi-final fixture against Stoneham FC, but first, Westbury United in the league is a ma..."
+        },
+        {
+          "name": "Filmer",
+          "context": "PERSON within 50 chars of quote: ...n and now they need to build on this performance. Filmer says: “I think we take this in our stride and bui..."
+        }
+      ]
+    },
+    {
+      "id": "773a7ef6193c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Jamie Randell",
+          "context": "PERSON within 50 chars of quote: ...including documents were stolen. Police Constable Jamie Randell, of Dorset Police, said: “We are carrying out a n..."
+        }
+      ]
+    },
+    {
+      "id": "b7229ac5ec0d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driver-dies-after-sustained-injuries-from-three-car-crash/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Paul Hind",
+          "context": "PERSON within 50 chars of quote: ... driver of the BMW was unscathed. Police sergeant Paul Hind of the roads policing team said that his team, “o..."
+        }
+      ]
+    },
+    {
       "id": "3c6478494fe3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
       "verify_quoted_sources": 0,
@@ -766,6 +842,35 @@
         {
           "name": "Solanke",
           "context": "PERSON within 50 chars of quote: ...in hispost-match interviewwith Tottenham Hotspur, Solanke said: “Incredible. Even just starting the game wa..."
+        }
+      ]
+    },
+    {
+      "id": "dd4407355e61",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "9fc5b169ab48",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mark-mcadam-speaks-cherries-transfers/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Bill Foley’s",
+          "context": "PERSON within 50 chars of quote: ... on players who suddenly become available.” Since Bill Foley’s arrival, AFC Bournemouth’s transfer budget has be..."
+        },
+        {
+          "name": "Dean Huijsen",
+          "context": "PERSON within 50 chars of quote: ... to. “Real Madrid, the biggest club in the world. Dean Huijsen will want to go. “PSG, European champions, Ilia Z..."
+        },
+        {
+          "name": "Ilia Zabarnyi",
+          "context": "PERSON within 50 chars of quote: ...uijsen will want to go. “PSG, European champions, Ilia Zabarnyi with a massive opportunity. Same with Milos Kerke..."
+        },
+        {
+          "name": "Milos Kerkez",
+          "context": "PERSON within 50 chars of quote: ...ia Zabarnyi with a massive opportunity. Same with Milos Kerkez to Liverpool. “Dango Ouattara got an opportunity ..."
         }
       ]
     },
