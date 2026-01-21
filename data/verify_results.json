@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T10:12:55Z",
-  "total_verified": 63,
+  "last_updated": "2026-01-21T10:39:54Z",
+  "total_verified": 64,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -778,6 +778,12 @@
       "verify_evidence": []
     },
     {
+      "id": "70e178a99b5d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "3c6478494fe3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
       "verify_quoted_sources": 0,
@@ -790,11 +796,11 @@
       "verify_evidence": [
         {
           "name": "Tottenham Hotspur",
-          "context": "PERSON within 50 chars of quote: ...League. Speaking in his post-match interview with Tottenham Hotspur, Solanke said: “Incredible. Even just starting th..."
+          "context": "PERSON within 50 chars of quote: ...r League. Speaking in hispost-match interviewwith Tottenham Hotspur, Solanke said: “Incredible. Even just starting th..."
         },
         {
           "name": "Solanke",
-          "context": "PERSON within 50 chars of quote: ... his post-match interview with Tottenham Hotspur, Solanke said: “Incredible. Even just starting the game wa..."
+          "context": "PERSON within 50 chars of quote: ...in hispost-match interviewwith Tottenham Hotspur, Solanke said: “Incredible. Even just starting the game wa..."
         }
       ]
     },

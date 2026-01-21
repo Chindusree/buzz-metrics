@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T10:10:19Z",
-  "total_articles": 63,
+  "last_updated": "2026-01-21T10:37:24Z",
+  "total_articles": 64,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -3374,6 +3374,58 @@
       },
       "warnings": [],
       "display_category": "General News"
+    },
+    {
+      "id": "70e178a99b5d",
+      "headline": "BREAKING NEWS: Cherries agree deal in principle for Rayan",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
+      "author": "Jack Hillman",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "10:10",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 333,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Mark McAdam",
+          "full_attribution": "— Mark McAdam",
+          "quote_snippet": "",
+          "position": "standalone_dash",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_1078-1-800x400.png",
+            "classification": "original",
+            "credit": "Jack Hillman"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "3c6478494fe3",
