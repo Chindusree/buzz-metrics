@@ -330,7 +330,11 @@ def reconcile_sources(scrape_evidence, verify_evidence):
     for source in scrape_evidence:
         name = clean_name(source.get('name', ''))
         if name and name.lower() not in seen_names:
-            all_sources.append({'name': name, 'source': 'scrape'})
+            all_sources.append({
+                'name': name,
+                'source': 'scrape',
+                'position': source.get('position', '')  # Sprint 7.35: Preserve position
+            })
             seen_names.add(name.lower())
 
     # From verify.py (NER)
@@ -342,7 +346,11 @@ def reconcile_sources(scrape_evidence, verify_evidence):
         # Check if already added (use fuzzy matching to avoid duplicates)
         match = find_match_in_list(name, [s['name'] for s in all_sources])
         if not match:
-            all_sources.append({'name': name, 'source': 'verify'})
+            all_sources.append({
+                'name': name,
+                'source': 'verify',
+                'position': ''  # Sprint 7.35: NER has no position
+            })
             seen_names.add(name.lower())
 
     # Step 2: Validate each source - trust both methods equally
@@ -362,7 +370,8 @@ def reconcile_sources(scrape_evidence, verify_evidence):
             if not match:
                 result['confirmed'].append({
                     'name': name,
-                    'gender': get_gender(name)  # May be 'unknown', that's OK
+                    'gender': get_gender(name),  # May be 'unknown', that's OK
+                    'position': source.get('position', '')  # Sprint 7.35: Preserve position
                 })
 
     return result
