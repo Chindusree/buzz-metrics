@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T09:11:48Z",
-  "total_verified": 57,
+  "last_updated": "2026-01-21T09:38:02Z",
+  "total_verified": 60,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -776,6 +776,78 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "f0a84d7a7b2b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
+      "verify_quoted_sources": 9,
+      "verify_evidence": [
+        {
+          "name": "Dan Ford",
+          "context": "PERSON within 50 chars of quote: ... from Poole regarding the sponsorship co-promoter Dan Ford said: “David and Guy are true speedway people and..."
+        },
+        {
+          "name": "David",
+          "context": "PERSON within 50 chars of quote: ...rding the sponsorship co-promoter Dan Ford said: “David and Guy are true speedway people and brilliant ba..."
+        },
+        {
+          "name": "Guy",
+          "context": "PERSON within 50 chars of quote: ...sponsorship co-promoter Dan Ford said: “David and Guy are true speedway people and brilliant backers of..."
+        },
+        {
+          "name": "Wessex",
+          "context": "PERSON within 50 chars of quote: ...ant as we look ahead to another exciting season.” Wessex have seen the Pirates win 4 league titles and 4 k..."
+        },
+        {
+          "name": "Tulisa Broom",
+          "context": "PERSON within 50 chars of quote: ... some of the comments left since the news such as Tulisa Broom who said on Facebook: “Yes, now Nigel can still s..."
+        },
+        {
+          "name": "Nigel",
+          "context": "PERSON within 50 chars of quote: ...h as Tulisa Broom who said on Facebook: “Yes, now Nigel can still say please welcome our Poole Wessex mar..."
+        },
+        {
+          "name": "Cook",
+          "context": "PERSON within 50 chars of quote: ...the club” After re-signing their exciting trio of Cook, Kerr and Lawson the Pirates look to make it back..."
+        },
+        {
+          "name": "Kerr",
+          "context": "PERSON within 50 chars of quote: ...ub” After re-signing their exciting trio of Cook, Kerr and Lawson the Pirates look to make it back-to-ba..."
+        },
+        {
+          "name": "Lawson",
+          "context": "PERSON within 50 chars of quote: ... better than last season and win the treble. With Lawson also being titled: “the best rider in the league”..."
+        }
+      ]
+    },
+    {
+      "id": "975a95f9add2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "8a49bc59dabd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/younger-men-should-embrace-gardening-say-bournemouth-nursery/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Minds",
+          "context": "PERSON within 50 chars of quote: ...erg, PR and communications manager for Plants and Minds, said: “There was a time when the horticulture in..."
+        },
+        {
+          "name": "Chestnut Nursery",
+          "context": "PERSON within 50 chars of quote: ... a bad day.” The other Plants and Minds location, Chestnut Nursery in Poole, has seen a 300% increase in volunteer i..."
+        },
+        {
+          "name": "Sandi Marshall",
+          "context": "PERSON within 50 chars of quote: ...se volunteers have all then moved into paid work. Sandi Marshall, Cherry Tree Nursery manager, said: “There was on..."
+        },
+        {
+          "name": "Andy",
+          "context": "PERSON within 50 chars of quote: ...he nurseries. In a press release for Blue Monday, Andy, one of the volunteers, added: “No matter how tou..."
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-21T09:11:50Z",
-  "total_flagged": 18,
+  "generated": "2026-01-21T09:38:04Z",
+  "total_flagged": 20,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -629,6 +629,102 @@
         "Carty",
         "Sweet",
         "Hampshire"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f0a84d7a7b2b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
+      "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
+      "scrape_count": 1,
+      "verify_count": 9,
+      "confirmed_count": 7,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Dan Ford"
+      ],
+      "verify_evidence": [
+        "Dan Ford",
+        "David",
+        "Guy",
+        "Wessex",
+        "Tulisa Broom",
+        "Nigel",
+        "Cook",
+        "Kerr",
+        "Lawson"
+      ],
+      "confirmed": [
+        {
+          "name": "Dan Ford",
+          "gender": "male"
+        },
+        {
+          "name": "David",
+          "gender": "male"
+        },
+        {
+          "name": "Guy",
+          "gender": "male"
+        },
+        {
+          "name": "Tulisa Broom",
+          "gender": "unknown"
+        },
+        {
+          "name": "Nigel",
+          "gender": "male"
+        },
+        {
+          "name": "Kerr",
+          "gender": "male"
+        },
+        {
+          "name": "Lawson",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Wessex",
+        "Cook"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "8a49bc59dabd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/younger-men-should-embrace-gardening-say-bournemouth-nursery/",
+      "headline": "Younger Men should embrace gardening, say Bournemouth nursery",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Minds",
+        "Chestnut Nursery",
+        "Sandi Marshall",
+        "Andy"
+      ],
+      "confirmed": [
+        {
+          "name": "Chestnut Nursery",
+          "gender": "unknown"
+        },
+        {
+          "name": "Sandi Marshall",
+          "gender": "male"
+        },
+        {
+          "name": "Andy",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Minds"
       ],
       "review_status": "pending"
     }
