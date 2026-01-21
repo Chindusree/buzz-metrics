@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T09:35:50Z",
-  "total_articles": 60,
+  "last_updated": "2026-01-21T10:10:19Z",
+  "total_articles": 63,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -3376,6 +3376,100 @@
       "display_category": "General News"
     },
     {
+      "id": "3c6478494fe3",
+      "headline": "Flood Warning for Poole and Christchurch Harbour",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "09:46",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 125,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/5899812303_eacf88aee6_b-800x400.jpg",
+            "classification": "original",
+            "credit": "Photo byHoward Lake(CC BY-SA 2.0)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "c2ee008d4395",
+      "headline": "Former Cherries favourite Solanke scores on UCL return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-cherries-favourite-solanke-scores-on-ucl-return/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "10:03",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 787,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Dominic Solanke",
+          "full_attribution": "Solanke said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/afcb-solanke-1-800x400.jpg",
+            "classification": "original",
+            "credit": "afcb"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "f0a84d7a7b2b",
       "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
@@ -3454,6 +3548,60 @@
         "stock": 0,
         "uncredited": 0,
         "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "d1bd9b463503",
+      "headline": "The Pantry Boscombe provides education amidst cost of living crisis.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-pantry-boscombe-provides-education-amidst-cost-of-living-crisis/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "09:44",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 729,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111616773-2-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Volunteers at The Pantry in Boscombe. Volunteers gather outside the food truck for the 'Feed our Community' initiative"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_104223295-1-360x270.jpg",
+            "classification": "uncredited",
+            "credit": "Food in crates ready to be distributed at the food bank.  Food at the Bournemouth bank in crates at the Boscombe Pantry."
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
+            "classification": "uncredited",
+            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,

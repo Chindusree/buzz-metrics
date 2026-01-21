@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T09:38:02Z",
-  "total_verified": 60,
+  "last_updated": "2026-01-21T10:12:55Z",
+  "total_verified": 63,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -778,6 +778,27 @@
       "verify_evidence": []
     },
     {
+      "id": "3c6478494fe3",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "c2ee008d4395",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-cherries-favourite-solanke-scores-on-ucl-return/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Tottenham Hotspur",
+          "context": "PERSON within 50 chars of quote: ...League. Speaking in his post-match interview with Tottenham Hotspur, Solanke said: “Incredible. Even just starting th..."
+        },
+        {
+          "name": "Solanke",
+          "context": "PERSON within 50 chars of quote: ... his post-match interview with Tottenham Hotspur, Solanke said: “Incredible. Even just starting the game wa..."
+        }
+      ]
+    },
+    {
       "id": "f0a84d7a7b2b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
       "verify_quoted_sources": 9,
@@ -823,6 +844,12 @@
     {
       "id": "975a95f9add2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "d1bd9b463503",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-pantry-boscombe-provides-education-amidst-cost-of-living-crisis/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
