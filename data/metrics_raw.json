@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T11:59:21Z",
-  "total_articles": 71,
+  "last_updated": "2026-01-21T12:54:16Z",
+  "total_articles": 75,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -3470,6 +3470,48 @@
       "warnings": []
     },
     {
+      "id": "2d58c002b3d1",
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "11:56",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 475,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Dort-800x400.jpeg",
+            "classification": "original",
+            "credit": "Jacob Deighton"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "d8ca9935fd92",
       "headline": "Bashley through to semi-finals",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
@@ -3522,6 +3564,63 @@
       "warnings": []
     },
     {
+      "id": "417a0e30a759",
+      "headline": "Boscombe community wears their visibility cloaks and gets poetical",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boscombe-community-wears-their-visibility-cloaks-and-gets-poetical/",
+      "author": "Naomi Kativu",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "12:10",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 372,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Claire Hillier",
+          "full_attribution": "Hillier said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6797-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0675-225x300.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "773a7ef6193c",
       "headline": "Dorset Police appealing for witnesses for Sherborne Burglary",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
@@ -3552,6 +3651,63 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-10.33.17-800x400.png",
             "classification": "original",
             "credit": "Image Credit : FreePik"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "db69e98901c4",
+      "headline": "Dorset Police release an image appeal following burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-release-an-image-appeal-following-burglary/",
+      "author": "Isabelle Taylor",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "12:14",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 301,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Dorset Police",
+          "full_attribution": "Police said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-12.20.12-616x400.png",
+            "classification": "original",
+            "credit": "Dorset Police"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Hotel_Celebrity_burglary_Sunday_28_December_2025-236x300.jpg",
+            "classification": "original",
+            "credit": "Image released by Dorset police of a man they would like to speak to regarding a burglary Image appeal following burglary- Credit Dorset Police"
           }
         ]
       },
@@ -3833,6 +3989,72 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/poole-pirates-phot-e1768985429977-800x400.jpg",
             "classification": "uncredited",
             "credit": "Wimborne Road Stadium Wimborne Road stadium : Cameron Dennison"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "f744169320dd",
+      "headline": "Poole Sailors win first SailGP Race",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-sailors-win-first-sailgp-race/",
+      "author": "Paige Buffham",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "12:51",
+      "category": "Health",
+      "category_primary": "Features",
+      "display_category": "General News",
+      "word_count": 863,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Dylan Fletcher",
+          "full_attribution": "Fletcher said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        },
+        {
+          "name": "Three Poole",
+          "full_attribution": "Poole said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-10.03.10.png",
+            "classification": "original",
+            "credit": "SailGP]"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-10.01.51-1-360x176.png",
+            "classification": "original",
+            "credit": "SailGB"
           }
         ]
       },

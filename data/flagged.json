@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-21T12:02:27Z",
-  "total_flagged": 21,
+  "generated": "2026-01-21T12:57:27Z",
+  "total_flagged": 23,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -659,6 +659,32 @@
       "review_status": "pending"
     },
     {
+      "id": "2d58c002b3d1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Weymouth",
+        "Dorchester Town"
+      ],
+      "confirmed": [
+        {
+          "name": "Dorchester Town",
+          "gender": "unknown"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Weymouth"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "f0a84d7a7b2b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
       "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
@@ -715,6 +741,66 @@
       "filtered": [
         "Wessex",
         "Cook"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f744169320dd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-sailors-win-first-sailgp-race/",
+      "headline": "Poole Sailors win first SailGP Race",
+      "scrape_count": 2,
+      "verify_count": 8,
+      "confirmed_count": 7,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Dylan Fletcher",
+        "Three Poole"
+      ],
+      "verify_evidence": [
+        "Emirate",
+        "Fletcher",
+        "GB",
+        "Hannah Mills",
+        "Ellie Aldridge",
+        "Said Mills",
+        "Stu",
+        "Tom Slingsby"
+      ],
+      "confirmed": [
+        {
+          "name": "Dylan Fletcher",
+          "gender": "male"
+        },
+        {
+          "name": "Three Poole",
+          "gender": "unknown"
+        },
+        {
+          "name": "Hannah Mills",
+          "gender": "female"
+        },
+        {
+          "name": "Ellie Aldridge",
+          "gender": "female"
+        },
+        {
+          "name": "Said Mills",
+          "gender": "male"
+        },
+        {
+          "name": "Stu",
+          "gender": "male"
+        },
+        {
+          "name": "Tom Slingsby",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Emirate",
+        "GB"
       ],
       "review_status": "pending"
     },

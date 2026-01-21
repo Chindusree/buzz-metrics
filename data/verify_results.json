@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T12:02:25Z",
-  "total_verified": 71,
+  "last_updated": "2026-01-21T12:57:25Z",
+  "total_verified": 75,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -791,6 +791,21 @@
       ]
     },
     {
+      "id": "2d58c002b3d1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Weymouth",
+          "context": "PERSON within 50 chars of quote: ... and have not yet been contacted by the police..” Weymouth then went on to say: “We are backing the police i..."
+        },
+        {
+          "name": "Dorchester Town",
+          "context": "PERSON within 50 chars of quote: ...ation please contact Dorset police.” We contacted Dorchester Town and are awaiting a reply. If you have any details..."
+        }
+      ]
+    },
+    {
       "id": "d8ca9935fd92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
       "verify_quoted_sources": 5,
@@ -818,6 +833,21 @@
       ]
     },
     {
+      "id": "417a0e30a759",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boscombe-community-wears-their-visibility-cloaks-and-gets-poetical/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Benjamin Zephaniah",
+          "context": "PERSON within 50 chars of quote: ...avitated towards” said Baroche. It was poets like Benjamin Zephaniah and John Cooper Clarke that gave her the inspirat..."
+        },
+        {
+          "name": "Hillier",
+          "context": "PERSON within 50 chars of quote: ... as Claire H the Poet also reiterated this point. Hillier said “there’s the drive and desire for that conne..."
+        }
+      ]
+    },
+    {
       "id": "773a7ef6193c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
       "verify_quoted_sources": 1,
@@ -825,6 +855,17 @@
         {
           "name": "Jamie Randell",
           "context": "PERSON within 50 chars of quote: ...including documents were stolen. Police Constable Jamie Randell, of Dorset Police, said: “We are carrying out a n..."
+        }
+      ]
+    },
+    {
+      "id": "db69e98901c4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-release-an-image-appeal-following-burglary/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Dorset",
+          "context": "PERSON within 50 chars of quote: ...o please contact us.” Additionally please contact Dorset police if you have any information about the inci..."
         }
       ]
     },
@@ -929,6 +970,45 @@
         {
           "name": "Lawson",
           "context": "PERSON within 50 chars of quote: ... better than last season and win the treble. With Lawson also being titled: “the best rider in the league”..."
+        }
+      ]
+    },
+    {
+      "id": "f744169320dd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-sailors-win-first-sailgp-race/",
+      "verify_quoted_sources": 8,
+      "verify_evidence": [
+        {
+          "name": "Emirate",
+          "context": "PERSON within 50 chars of quote: ...r, two Grinders and a Strategist. Dylan Fletcher, Emirate GB driver, said the weather conditions were: “Abs..."
+        },
+        {
+          "name": "Fletcher",
+          "context": "PERSON within 50 chars of quote: ...e forced to start further back, due to a penalty. Fletcher said: “I was really proud today how we were diggi..."
+        },
+        {
+          "name": "GB",
+          "context": "PERSON within 50 chars of quote: ...” Despite the French crews attempts at advancing, GB stayed ahead of their rivals, and gained a consid..."
+        },
+        {
+          "name": "Hannah Mills",
+          "context": "PERSON within 50 chars of quote: ...ss the line first. Former Olympic silver medalist Hannah Mills OBE, from Poole said: “Honestly best day ever, it..."
+        },
+        {
+          "name": "Ellie Aldridge",
+          "context": "PERSON within 50 chars of quote: ...d then put it into practice when we went racing.” Ellie Aldridge, the Emirates GB’s development athlete, has joine..."
+        },
+        {
+          "name": "Said Mills",
+          "context": "PERSON within 50 chars of quote: ...ng. “It’s been brilliant getting Ellie on board,” Said Mills. Aldridge has joined the team with a dedicated tr..."
+        },
+        {
+          "name": "Stu",
+          "context": "PERSON within 50 chars of quote: ...y won Gold in the Tokyo 2020 Olympics. “We’ve had Stu come on board as wing trimmer which is a big dyna..."
+        },
+        {
+          "name": "Tom Slingsby",
+          "context": "PERSON within 50 chars of quote: ...ory to the Emirates GB team. Despite this, driver Tom Slingsby still said the day was “amazing.” “It was phenome..."
         }
       ]
     },
