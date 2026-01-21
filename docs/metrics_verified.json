@@ -185,22 +185,9 @@
         "No quoted sources in article >500 words"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Fabian Hurzeler",
-          "gender": "male"
-        },
-        {
-          "name": "Ryan",
-          "gender": "male"
-        },
-        {
-          "name": "David Brooks",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Brighton"
@@ -251,14 +238,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Marc",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": true,
@@ -295,7 +277,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2022128173931_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_Monchengladbach_-_Sven_-_1D_X_MK_II_-_2395_-_B70I8506_Oliver_Glasner_cropped-e1768573269493-800x400.webp",
             "classification": "original",
-            "credit": "Sven Müller, CC 4"
+            "credit": "Sven M\u00fcller, CC 4"
           }
         ]
       },
@@ -333,7 +315,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
@@ -350,7 +332,7 @@
         },
         {
           "name": "Old Tiffinians",
-          "full_attribution": "– Old Tiffinians",
+          "full_attribution": "\u2013 Old Tiffinians",
           "quote_snippet": "",
           "position": "standalone_dash",
           "gender": "unknown",
@@ -384,20 +366,17 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "Memorial Ground",
-          "gender": "unknown"
-        },
-        {
           "name": "Old Tiffinians",
-          "gender": "unknown"
-        },
-        {
-          "name": "Roan Fox",
-          "gender": "unknown"
+          "full_attribution": "\u2013 Old Tiffinians",
+          "quote_snippet": "",
+          "position": "standalone_dash",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
         }
       ],
       "source_evidence_possible": [],
@@ -421,7 +400,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
-      "quoted_sources": 3,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 1,
@@ -430,7 +409,7 @@
         {
           "name": "Sara Armstrong",
           "full_attribution": "blockquote cite: Sara Armstrong",
-          "quote_snippet": "\"I do support them. I’m a Cherries fan and they do",
+          "quote_snippet": "\"I do support them. I\u2019m a Cherries fan and they do",
           "position": "blockquote-inline",
           "gender": "female",
           "gender_confidence": "high",
@@ -503,16 +482,17 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Sara Armstrong",
-          "gender": "female"
-        },
-        {
-          "name": "Brent Pease",
-          "gender": "male"
+          "full_attribution": "blockquote cite: Sara Armstrong",
+          "quote_snippet": "\"I do support them. I\u2019m a Cherries fan and they do",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -538,7 +518,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/UPFs-on-a-budget/index.html",
-      "quoted_sources": 3,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 3,
@@ -630,20 +610,26 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Rebecca Brown",
-          "gender": "female"
+          "full_attribution": "Brown said. \"I want to give information to people",
+          "quote_snippet": "I don't want to make anybody feel guilty about the",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Heather Smith",
-          "gender": "female"
-        },
-        {
-          "name": "Sophia Lloyd",
-          "gender": "female"
+          "full_attribution": "Smith added.\nTypically, purchasing wholefoods and",
+          "quote_snippet": "For dinner? Back to basics. Buy raw, plain meat, v",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -723,7 +709,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/index.html",
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 3,
       "sources_female": 0,
@@ -790,22 +776,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Andrew Wilmot",
-          "gender": "male"
-        },
-        {
-          "name": "James Wilder",
-          "gender": "male"
-        },
-        {
-          "name": "Ali Jeffs",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Frosty Jacks",
@@ -830,7 +803,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/dorset-demons-spearheading-wheelchair-basketball-in-dorset/index.html",
-      "quoted_sources": 3,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 3,
       "sources_female": 0,
@@ -912,24 +885,26 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Terry Dennis",
-          "gender": "male"
+          "full_attribution": "blockquote cite: Terry Dennis",
+          "quote_snippet": "\"I came back into wheelchair basketball in 2021. U",
+          "position": "blockquote-inline",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         },
         {
           "name": "Pete Ball",
-          "gender": "male"
-        },
-        {
-          "name": "Dorset Demons",
-          "gender": "unknown"
-        },
-        {
-          "name": "Moritz Baer",
-          "gender": "male"
+          "full_attribution": "blockquote cite: Pete Ball",
+          "quote_snippet": "\"Terry's doing a brilliant job here and he's getti",
+          "position": "blockquote-inline",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -982,14 +957,9 @@
         "Unknown author"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Jamie Randell",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -999,7 +969,7 @@
     },
     {
       "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
       "author": "Benji Sampson",
       "author_confidence": "high",
@@ -1011,7 +981,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -1060,18 +1030,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Anthony Joshua",
-          "gender": "male"
-        },
-        {
-          "name": "Gabrielle",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -1183,14 +1144,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Abi Paler",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -1212,7 +1168,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -1259,18 +1215,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dominic Wong",
-          "gender": "male"
-        },
-        {
-          "name": "Kevin",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -1280,7 +1227,7 @@
     },
     {
       "id": "e48217df8ae6",
-      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "author": "Benji Sampson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan Williams",
       "author_confidence": "high",
@@ -1292,7 +1239,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/the-king-of-match-racing-ian-williams/index.html",
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -1300,7 +1247,7 @@
       "source_evidence": [
         {
           "name": "Red Sea",
-          "full_attribution": "Red Sea, so I’m really looking forward to defendin",
+          "full_attribution": "Red Sea, so I\u2019m really looking forward to defendin",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "male",
@@ -1341,22 +1288,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Richard Sydenham",
-          "gender": "male"
-        },
-        {
-          "name": "John Gunderson",
-          "gender": "male"
-        },
-        {
-          "name": "Jerry Mitchell",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Red Sea",
@@ -1381,7 +1315,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
@@ -1389,7 +1323,7 @@
       "source_evidence": [
         {
           "name": "Neil Meade",
-          "full_attribution": "Neil Meade, said:\n“Our thoughts are with Craig’s f",
+          "full_attribution": "Neil Meade, said:\n\u201cOur thoughts are with Craig\u2019s f",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "male",
@@ -1418,17 +1352,12 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Neil Meade",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
-        "Craig’s",
+        "Craig\u2019s",
         "Breton"
       ],
       "is_breaking_news": false,
@@ -1494,7 +1423,7 @@
     },
     {
       "id": "5db595468971",
-      "headline": "Poole Town’s Kitmen aiming to complete the 92",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
       "author": "Jacob Deighton",
       "author_confidence": "high",
@@ -1594,24 +1523,26 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Matt Reeds",
-          "gender": "male"
+          "full_attribution": ", Reeds said.\n\"Certainly after that season, I got",
+          "quote_snippet": "In the mid 90's I got into attending AFC Bournemou",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Dan Wilson",
-          "gender": "male"
-        },
-        {
-          "name": "Nottingham Forest",
-          "gender": "unknown"
-        },
-        {
-          "name": "Lauren Kelly",
-          "gender": "female"
+          "full_attribution": ", Wilson said.\nReeds told me about one of his most",
+          "quote_snippet": "Tottenham. That should be the blueprint for every ",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -1659,7 +1590,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
             "classification": "uncredited",
-            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
+            "credit": "(Reza Seewooruthun\u2019s results for the 2025 FREMC season)"
           }
         ]
       },
@@ -1683,7 +1614,7 @@
     },
     {
       "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "author": "Vishal Seenath",
       "author_confidence": "high",
@@ -1695,7 +1626,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 1,
@@ -1712,7 +1643,7 @@
         },
         {
           "name": "Grace Ashton",
-          "full_attribution": "Grace Ashton, struggled to stay consistent and “dr",
+          "full_attribution": "Grace Ashton, struggled to stay consistent and \u201cdr",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "female",
@@ -1768,22 +1699,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Myles Haskell",
-          "gender": "male"
-        },
-        {
-          "name": "Grace Ashton",
-          "gender": "female"
-        },
-        {
-          "name": "Jordan Lench",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -1805,7 +1723,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -1861,22 +1779,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Marcin Rogalski",
-          "gender": "male"
-        },
-        {
-          "name": "IK Hill",
-          "gender": "unknown"
-        },
-        {
-          "name": "Walton",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Yate"
@@ -1900,7 +1805,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/the-fast-fashion-disconnect/index.html",
-      "quoted_sources": 4,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 2,
@@ -2001,28 +1906,26 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 5,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Marcjanna Augustyn",
-          "gender": "unknown"
+          "full_attribution": "said Augustyn, who presented on sustainable fashi",
+          "quote_snippet": "One of our findings at the roundtable was that the",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         },
         {
           "name": "Kaouther Kooli",
-          "gender": "unknown"
-        },
-        {
-          "name": "Agatha Shepherd-Jones",
-          "gender": "female"
-        },
-        {
-          "name": "Sal",
-          "gender": "male"
-        },
-        {
-          "name": "Paige Buffham Clothes",
-          "gender": "unknown"
+          "full_attribution": "Kooli said. \"Maybe big players yes, they have the",
+          "quote_snippet": "Decision makers are doing a lot of work, but looki",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "source_evidence_possible": [],
@@ -2049,7 +1952,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
@@ -2086,14 +1989,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Becca Parker",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "COVID"
@@ -2117,7 +2015,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -2166,26 +2064,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "David Richmond-Coggan",
-          "gender": "male"
-        },
-        {
-          "name": "Alison Hulme",
-          "gender": "female"
-        },
-        {
-          "name": "Luke Hills",
-          "gender": "male"
-        },
-        {
-          "name": "Nyah",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -2207,7 +2088,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -2223,8 +2104,8 @@
           "gender_method": "name_lookup"
         },
         {
-          "name": "Premier League",
-          "full_attribution": "Premier League, this makes it a lot harder to judg",
+          "name": "Premier\u00a0League",
+          "full_attribution": "Premier\u00a0League,\u00a0this makes it a lot harder to judg",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "unknown",
@@ -2253,18 +2134,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Ewan Corbett",
-          "gender": "male"
-        },
-        {
-          "name": "Premier League",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Sarr"
@@ -2288,7 +2160,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
-      "quoted_sources": 4,
+      "quoted_sources": 3,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 3,
@@ -2389,15 +2261,30 @@
       "source_evidence_confirmed": [
         {
           "name": "Frederica Sindici",
-          "gender": "female"
+          "full_attribution": "blockquote cite: Frederica Sindici",
+          "quote_snippet": "\"I really believe in this idea and business, becau",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Chanelle Paris",
-          "gender": "female"
+          "full_attribution": "blockquote cite: Chanelle Paris",
+          "quote_snippet": "\"We've been vegan for well over 30 years and have ",
+          "position": "blockquote-inline",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         },
         {
           "name": "Cindy Lou",
-          "gender": "female"
+          "full_attribution": "hey've faced finding restaurants. Cindy Lou said:",
+          "quote_snippet": "Even when there are vegan options, they don't tend",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -2411,7 +2298,7 @@
     },
     {
       "id": "0b0c3fa2d0b3",
-      "headline": "WATCH: 2.30pm bulletin – January 16",
+      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "author": "Will Carson",
       "author_confidence": "high",
@@ -2461,7 +2348,7 @@
     },
     {
       "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin – January 16",
+      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
       "author": "Unknown",
       "author_confidence": "low",
@@ -2525,7 +2412,7 @@
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-and-poole-college-strikes-feature/index.html",
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -2599,22 +2486,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Ivan Darley",
-          "gender": "male"
-        },
-        {
-          "name": "Sam McShane",
-          "gender": "male"
-        },
-        {
-          "name": "Anne",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -2887,7 +2761,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Harvey Bertrand",
-          "gender": "male"
+          "full_attribution": "Bertrand said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -2901,7 +2780,7 @@
     },
     {
       "id": "050bcc50448e",
-      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
+      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
       "author": "Jack Hillman",
       "author_confidence": "high",
@@ -2950,16 +2829,17 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Helen Bleazard",
-          "gender": "female"
-        },
-        {
-          "name": "Striker Sophie Quirk",
-          "gender": "unknown"
+          "full_attribution": "Bleazard said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -3020,20 +2900,17 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Grant Hancox",
-          "gender": "male"
-        },
-        {
-          "name": "Head Coach",
-          "gender": "unknown"
-        },
-        {
-          "name": "Connor McCaffrey",
-          "gender": "male"
+          "full_attribution": "Hancox says:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -3059,7 +2936,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
@@ -3101,14 +2978,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Will Dennis",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3273,14 +3145,9 @@
         "No quoted sources in article >500 words"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Abbas Araghchi",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3329,18 +3196,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Thomas Frank",
-          "gender": "male"
-        },
-        {
-          "name": "Matty",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3414,7 +3272,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Martha Searle",
-          "gender": "female"
+          "full_attribution": "Searle explained",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -3465,14 +3328,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Jack",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3494,7 +3352,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
@@ -3502,7 +3360,7 @@
       "source_evidence": [
         {
           "name": "Dorset Police",
-          "full_attribution": "Dorset Police, championing the ‘HERE FOR HER SAFET",
+          "full_attribution": "Dorset Police, championing the \u2018HERE FOR HER SAFET",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "unknown",
@@ -3531,18 +3389,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dorset Police",
-          "gender": "unknown"
-        },
-        {
-          "name": "Marcus McCorkell",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3564,7 +3413,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -3610,18 +3459,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Robin",
-          "gender": "male"
-        },
-        {
-          "name": "Evelyn Eales",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Jadien Davies"
@@ -3633,7 +3473,7 @@
     },
     {
       "id": "7cb42367054e",
-      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
+      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "author": "Derin Mehmet",
       "author_confidence": "high",
@@ -3706,7 +3546,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
@@ -3753,14 +3593,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Micheal Davies",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3821,18 +3656,9 @@
         "No quoted sources in article >500 words"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Karen",
-          "gender": "female"
-        },
-        {
-          "name": "Barbara Adams",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -3901,7 +3727,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Angela Ntente",
-          "gender": "female"
+          "full_attribution": "Ntente said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -3925,7 +3756,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
@@ -3990,26 +3821,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "GB Championships",
-          "gender": "unknown"
-        },
-        {
-          "name": "Filip Nowacki",
-          "gender": "male"
-        },
-        {
-          "name": "Jacob Peters",
-          "gender": "male"
-        },
-        {
-          "name": "Club Pathway",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Hariss",
@@ -4085,11 +3899,21 @@
       "source_evidence_confirmed": [
         {
           "name": "Tonda Eckert",
-          "gender": "unknown"
+          "full_attribution": "Eckert discussed",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         },
         {
           "name": "The German",
-          "gender": "female"
+          "full_attribution": "German discussed",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "female",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
         }
       ],
       "source_evidence_possible": [],
@@ -4101,7 +3925,7 @@
     },
     {
       "id": "da7bf409819e",
-      "headline": "Students compete for cash prizes on ITV’s This Morning",
+      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
       "author": "Justina Reynolds",
       "author_confidence": "high",
@@ -4325,7 +4149,7 @@
     },
     {
       "id": "deb020fa7530",
-      "headline": "‘Unnerving’ theft committed at Arcade Jewellers",
+      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "author": "Tyler Tamou",
       "author_confidence": "high",
@@ -4345,7 +4169,7 @@
       "source_evidence": [
         {
           "name": "Arcade Jewellers",
-          "full_attribution": "Jewellers said:",
+          "full_attribution": "Jewellers\u00a0said:",
           "quote_snippet": "",
           "position": "lastname_verb",
           "gender": "male",
@@ -4379,7 +4203,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Arcade Jewellers",
-          "gender": "male"
+          "full_attribution": "Jewellers\u00a0said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -4412,7 +4241,7 @@
       "source_evidence": [
         {
           "name": "Mark McAdam",
-          "full_attribution": "— Mark McAdam",
+          "full_attribution": "\u2014 Mark McAdam",
           "quote_snippet": "",
           "position": "standalone_dash",
           "gender": "male",
@@ -4445,7 +4274,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Mark McAdam",
-          "gender": "male"
+          "full_attribution": "\u2014 Mark McAdam",
+          "quote_snippet": "",
+          "position": "standalone_dash",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -4496,14 +4330,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dorchester Town",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Weymouth"
@@ -4564,24 +4393,17 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Kieran Filmer",
-          "gender": "male"
-        },
-        {
-          "name": "Head Coach",
-          "gender": "unknown"
-        },
-        {
-          "name": "Hayden Wells",
-          "gender": "male"
-        },
-        {
-          "name": "Stoneham FC",
-          "gender": "unknown"
+          "full_attribution": "Filmer says:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -4632,14 +4454,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Jamie Randell",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -4688,14 +4505,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Paul Hind",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -4805,16 +4617,17 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Dominic Solanke",
-          "gender": "male"
-        },
-        {
-          "name": "Tottenham Hotspur",
-          "gender": "unknown"
+          "full_attribution": "Solanke said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -4826,7 +4639,7 @@
     },
     {
       "id": "dd4407355e61",
-      "headline": "Hampshire’s Dawson set for ODI return",
+      "headline": "Hampshire\u2019s Dawson set for ODI return",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -4925,26 +4738,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Bill Foley’s",
-          "gender": "male"
-        },
-        {
-          "name": "Dean Huijsen",
-          "gender": "male"
-        },
-        {
-          "name": "Ilia Zabarnyi",
-          "gender": "male"
-        },
-        {
-          "name": "Milos Kerkez",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -5003,36 +4799,17 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 7,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Dan Ford",
-          "gender": "male"
-        },
-        {
-          "name": "David",
-          "gender": "male"
-        },
-        {
-          "name": "Guy",
-          "gender": "male"
-        },
-        {
-          "name": "Tulisa Broom",
-          "gender": "unknown"
-        },
-        {
-          "name": "Nigel",
-          "gender": "male"
-        },
-        {
-          "name": "Kerr",
-          "gender": "male"
-        },
-        {
-          "name": "Lawson",
-          "gender": "male"
+          "full_attribution": "Ford said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "source_evidence_possible": [],
@@ -5047,7 +4824,7 @@
     },
     {
       "id": "975a95f9add2",
-      "headline": "Saints host Sheffield United at St Mary’s",
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
       "author": "Editor Blue",
       "author_confidence": "high",
@@ -5132,7 +4909,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
             "classification": "uncredited",
-            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
+            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men\u2019s groups in the Boscombe food bank."
           }
         ]
       },
@@ -5203,14 +4980,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Mark Leipacher",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -5271,22 +5043,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Chestnut Nursery",
-          "gender": "unknown"
-        },
-        {
-          "name": "Sandi Marshall",
-          "gender": "male"
-        },
-        {
-          "name": "Andy",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Minds"
