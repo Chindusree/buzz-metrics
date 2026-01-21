@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-20T18:03:36Z",
+  "last_updated": "2026-01-21T08:42:32Z",
   "total_articles": 57,
   "summary": {
     "avg_word_count": 603,
@@ -114,6 +114,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -124,8 +125,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "0faceff20735",
@@ -174,6 +174,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -197,8 +198,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "d0dc88d201d3",
@@ -240,6 +240,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -253,8 +254,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "f9992a6fe68f",
@@ -285,7 +285,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2022128173931_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_Monchengladbach_-_Sven_-_1D_X_MK_II_-_2395_-_B70I8506_Oliver_Glasner_cropped-e1768573269493-800x400.webp",
             "classification": "original",
-            "credit": "Sven M\u00fcller, CC 4"
+            "credit": "Sven Müller, CC 4"
           }
         ]
       },
@@ -298,6 +298,7 @@
       "warnings": [
         "Unknown author"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -306,8 +307,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "0c209a33d1b4",
@@ -340,7 +340,7 @@
         },
         {
           "name": "Old Tiffinians",
-          "full_attribution": "\u2013 Old Tiffinians",
+          "full_attribution": "– Old Tiffinians",
           "quote_snippet": "",
           "position": "standalone_dash",
           "gender": "unknown",
@@ -373,6 +373,7 @@
         ]
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -394,8 +395,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "9b5bcd7f91c2",
@@ -420,7 +420,7 @@
         {
           "name": "Sara Armstrong",
           "full_attribution": "blockquote cite: Sara Armstrong",
-          "quote_snippet": "\"I do support them. I\u2019m a Cherries fan and they do",
+          "quote_snippet": "\"I do support them. I’m a Cherries fan and they do",
           "position": "blockquote-inline",
           "gender": "female",
           "gender_confidence": "high",
@@ -492,6 +492,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -511,8 +512,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "be5e87cc8d38",
@@ -619,6 +619,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -640,8 +641,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "639284301249",
@@ -688,6 +688,7 @@
         ]
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -696,8 +697,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "cd1485975ecc",
@@ -779,6 +779,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -803,8 +804,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "Sport"
+      "category_normalised": "Features"
     },
     {
       "id": "f46adb651043",
@@ -901,6 +901,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -926,8 +927,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "4cb8a4a6c238",
@@ -971,6 +971,7 @@
       "warnings": [
         "Unknown author"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -984,12 +985,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
       "author": "Benji Sampson",
       "author_confidence": "high",
@@ -1049,6 +1049,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1066,8 +1067,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "7baae3c13fab",
@@ -1116,6 +1116,7 @@
       "warnings": [
         "Unknown author"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -1124,8 +1125,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "6ec57ade366a",
@@ -1172,6 +1172,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1185,8 +1186,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c63f93303c5a",
@@ -1248,6 +1248,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1265,12 +1266,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "e48217df8ae6",
-      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "author": "Benji Sampson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan Williams",
       "author_confidence": "high",
@@ -1290,7 +1290,7 @@
       "source_evidence": [
         {
           "name": "Red Sea",
-          "full_attribution": "Red Sea, so I\u2019m really looking forward to defendin",
+          "full_attribution": "Red Sea, so I’m really looking forward to defendin",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "male",
@@ -1330,6 +1330,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1354,8 +1355,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "2edf13de5329",
@@ -1379,7 +1379,7 @@
       "source_evidence": [
         {
           "name": "Neil Meade",
-          "full_attribution": "Neil Meade, said:\n\u201cOur thoughts are with Craig\u2019s f",
+          "full_attribution": "Neil Meade, said:\n“Our thoughts are with Craig’s f",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "male",
@@ -1407,6 +1407,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1417,14 +1418,13 @@
       ],
       "source_evidence_possible": [],
       "sources_filtered_out": [
-        "Craig\u2019s",
+        "Craig’s",
         "Breton"
       ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "bd8ce48a20b5",
@@ -1471,6 +1471,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -1479,12 +1480,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "5db595468971",
-      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "headline": "Poole Town’s Kitmen aiming to complete the 92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
       "author": "Jacob Deighton",
       "author_confidence": "high",
@@ -1583,6 +1583,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1612,8 +1613,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "d2d23997eb42",
@@ -1649,7 +1649,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
             "classification": "uncredited",
-            "credit": "(Reza Seewooruthun\u2019s results for the 2025 FREMC season)"
+            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
           }
         ]
       },
@@ -1660,6 +1660,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -1668,12 +1669,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "author": "Vishal Seenath",
       "author_confidence": "high",
@@ -1702,7 +1702,7 @@
         },
         {
           "name": "Grace Ashton",
-          "full_attribution": "Grace Ashton, struggled to stay consistent and \u201cdr",
+          "full_attribution": "Grace Ashton, struggled to stay consistent and “dr",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "female",
@@ -1757,6 +1757,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1778,8 +1779,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "37619d905b65",
@@ -1850,6 +1850,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -1873,8 +1874,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "e24467b3ddf5",
@@ -1990,6 +1990,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 5,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2022,8 +2023,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "96eed46a1e57",
@@ -2075,6 +2075,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2090,8 +2091,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "69d0caa89d60",
@@ -2155,6 +2155,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2180,8 +2181,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "4c79ed9d0c43",
@@ -2213,8 +2213,8 @@
           "gender_method": "name_lookup"
         },
         {
-          "name": "Premier\u00a0League",
-          "full_attribution": "Premier\u00a0League,\u00a0this makes it a lot harder to judg",
+          "name": "Premier League",
+          "full_attribution": "Premier League, this makes it a lot harder to judg",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "unknown",
@@ -2242,6 +2242,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2261,8 +2262,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "60218ea980f4",
@@ -2373,6 +2373,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2396,12 +2397,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Features",
-      "display_category": "Sport"
+      "category_normalised": "Features"
     },
     {
       "id": "0b0c3fa2d0b3",
-      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
+      "headline": "WATCH: 2.30pm bulletin – January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "author": "Will Carson",
       "author_confidence": "high",
@@ -2438,6 +2438,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2446,12 +2447,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
+      "headline": "WATCH: 3:45pm sports bulletin – January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
       "author": "Unknown",
       "author_confidence": "low",
@@ -2490,6 +2490,7 @@
       "warnings": [
         "Unknown author"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2498,8 +2499,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "f6a028fa8bd4",
@@ -2588,6 +2588,7 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2609,8 +2610,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "Features",
-      "display_category": "General News"
+      "category_normalised": "Features"
     },
     {
       "id": "ee8ca65989fa",
@@ -2657,6 +2657,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2665,8 +2666,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "57387ebc3115",
@@ -2708,6 +2708,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2716,8 +2717,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "88d04616a6c5",
@@ -2759,6 +2759,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2767,8 +2768,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "269a6d260911",
@@ -2810,6 +2810,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -2818,8 +2819,7 @@
       "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c773fba290e1",
@@ -2871,6 +2871,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2886,12 +2887,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "050bcc50448e",
-      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
+      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
       "author": "Jack Hillman",
       "author_confidence": "high",
@@ -2939,6 +2939,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -2956,8 +2957,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "9b454f4d9db2",
@@ -3009,6 +3009,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3032,8 +3033,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "afe1ce257901",
@@ -3090,6 +3090,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3103,8 +3104,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "5448a03abf18",
@@ -3148,6 +3148,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -3156,8 +3157,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "466fd9f7d8aa",
@@ -3199,6 +3199,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -3207,8 +3208,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "751bf1ee1b06",
@@ -3262,6 +3262,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3275,8 +3276,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "1f955f6870b9",
@@ -3318,6 +3318,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3335,8 +3336,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "55443b4c77b8",
@@ -3398,6 +3398,7 @@
         ]
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3411,8 +3412,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "dba46286581f",
@@ -3454,6 +3454,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3467,8 +3468,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "1b1ad423d795",
@@ -3492,7 +3492,7 @@
       "source_evidence": [
         {
           "name": "Dorset Police",
-          "full_attribution": "Dorset Police, championing the \u2018HERE FOR HER SAFET",
+          "full_attribution": "Dorset Police, championing the ‘HERE FOR HER SAFET",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "unknown",
@@ -3520,6 +3520,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3537,8 +3538,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "c8e150c3ac4a",
@@ -3599,6 +3599,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3618,12 +3619,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "7cb42367054e",
-      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
+      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "author": "Derin Mehmet",
       "author_confidence": "high",
@@ -3671,6 +3671,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -3679,8 +3680,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "6d9be8b6178f",
@@ -3742,6 +3742,7 @@
         ]
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3755,8 +3756,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "de466f5f7de9",
@@ -3810,6 +3810,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "General News",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3827,8 +3828,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "d4b3ea2b5fe9",
@@ -3885,6 +3885,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -3898,8 +3899,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "18e9279b8b3b",
@@ -3979,6 +3979,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -4007,8 +4008,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "2eae8e0631ec",
@@ -4069,6 +4069,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -4081,7 +4082,7 @@
           "gender": "female"
         },
         {
-          "name": "Chris Wilder\u2019s",
+          "name": "Chris Wilder’s",
           "gender": "male"
         }
       ],
@@ -4090,12 +4091,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "da7bf409819e",
-      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
+      "headline": "Students compete for cash prizes on ITV’s This Morning",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
       "author": "Justina Reynolds",
       "author_confidence": "high",
@@ -4143,6 +4143,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -4153,8 +4154,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "a86542bf9945",
@@ -4198,6 +4198,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -4210,8 +4211,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "Sport"
+      "category_normalised": "General News"
     },
     {
       "id": "d876027cfbdd",
@@ -4255,6 +4255,7 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
+      "display_category": "Sport",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -4263,8 +4264,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "Sport",
-      "display_category": "Sport"
+      "category_normalised": "Sport"
     },
     {
       "id": "21f9581ca358",
@@ -4306,6 +4306,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
@@ -4314,12 +4315,11 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     },
     {
       "id": "deb020fa7530",
-      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
+      "headline": "‘Unnerving’ theft committed at Arcade Jewellers",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "author": "Tyler Tamou",
       "author_confidence": "high",
@@ -4339,7 +4339,7 @@
       "source_evidence": [
         {
           "name": "Arcade Jewellers",
-          "full_attribution": "Jewellers\u00a0said:",
+          "full_attribution": "Jewellers said:",
           "quote_snippet": "",
           "position": "lastname_verb",
           "gender": "male",
@@ -4367,6 +4367,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "display_category": "General News",
       "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -4380,8 +4381,7 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News",
-      "display_category": "General News"
+      "category_normalised": "General News"
     }
   ]
 }
