@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-21T10:39:56Z",
+  "last_updated": "2026-01-21T11:13:19Z",
   "total_articles": 64,
   "summary": {
     "avg_word_count": 601,
@@ -12,7 +12,7 @@
     "stock_images": 3,
     "uncredited_images": 90,
     "gender_breakdown": {
-      "male": 54,
+      "male": 49,
       "female": 24,
       "unknown": 20
     },
@@ -20,12 +20,12 @@
       "Sport": {
         "count": 15,
         "words": 8417,
-        "sources": 19
+        "sources": 15
       },
       "General News": {
         "count": 43,
         "words": 20139,
-        "sources": 59
+        "sources": 58
       },
       "Features": {
         "count": 6,
@@ -37,12 +37,12 @@
       "Sport": {
         "count": 15,
         "avg_word_count": 561,
-        "avg_sources": 1.3
+        "avg_sources": 1.0
       },
       "News": {
         "count": 43,
         "avg_word_count": 468,
-        "avg_sources": 1.4
+        "avg_sources": 1.3
       },
       "Features": {
         "count": 6,
@@ -129,9 +129,7 @@
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
       "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Rayan"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -152,7 +150,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -185,26 +183,11 @@
         "No quoted sources in article >500 words"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Fabian Hurzeler",
-          "gender": "male"
-        },
-        {
-          "name": "Ryan",
-          "gender": "male"
-        },
-        {
-          "name": "David Brooks",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Brighton"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -251,14 +234,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Marc",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": true,
@@ -4080,7 +4058,7 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
@@ -4090,10 +4068,6 @@
         {
           "name": "The German",
           "gender": "female"
-        },
-        {
-          "name": "Chris Wilder’s",
-          "gender": "male"
         }
       ],
       "source_evidence_possible": [],

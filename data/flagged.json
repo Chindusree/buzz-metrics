@@ -1,64 +1,7 @@
 {
-  "generated": "2026-01-21T10:39:56Z",
-  "total_flagged": 20,
+  "generated": "2026-01-21T11:13:19Z",
+  "total_flagged": 18,
   "flagged_articles": [
-    {
-      "id": "21a723b0aed1",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
-      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
-      "scrape_count": 0,
-      "verify_count": 2,
-      "confirmed_count": 0,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Rayan",
-        "@rayann"
-      ],
-      "confirmed": [],
-      "possible": [],
-      "filtered": [
-        "Rayan"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "0faceff20735",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
-      "headline": "Andoni Iraola looks ahead to Brighton test",
-      "scrape_count": 0,
-      "verify_count": 4,
-      "confirmed_count": 3,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Fabian Hurzeler",
-        "Brighton",
-        "Ryan",
-        "David Brooks"
-      ],
-      "confirmed": [
-        {
-          "name": "Fabian Hurzeler",
-          "gender": "male"
-        },
-        {
-          "name": "Ryan",
-          "gender": "male"
-        },
-        {
-          "name": "David Brooks",
-          "gender": "male"
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Brighton"
-      ],
-      "review_status": "pending"
-    },
     {
       "id": "9b5bcd7f91c2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",

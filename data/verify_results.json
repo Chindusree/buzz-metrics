@@ -1,61 +1,34 @@
 {
-  "last_updated": "2026-01-21T10:39:54Z",
+  "last_updated": "2026-01-21T11:13:17Z",
   "total_verified": 64,
   "results": [
     {
       "id": "21a723b0aed1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Rayan",
-          "context": "PERSON within 50 chars of quote: ...ers.” View this post on InstagramA post shared by Rayan (@rayann) A post shared by Rayan (@rayann) Iraola..."
-        },
-        {
-          "name": "@rayann",
-          "context": "PERSON within 50 chars of quote: ...iew this post on InstagramA post shared by Rayan (@rayann) A post shared by Rayan (@rayann) Iraola added: “..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "0faceff20735",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
-      "verify_quoted_sources": 4,
-      "verify_evidence": [
-        {
-          "name": "Fabian Hurzeler",
-          "context": "PERSON within 50 chars of quote: ...a was quick to praise the squad available to boss Fabian Hurzeler. He said: “They play very well. “It’s a very good..."
-        },
-        {
-          "name": "Brighton",
-          "context": "PERSON within 50 chars of quote: ...ch are as good or better than the ones starting.” Brighton have only won one of their last eight games, but ..."
-        },
-        {
-          "name": "Ryan",
-          "context": "PERSON within 50 chars of quote: ... due to a knee injury. On Christie, Iraola said: “Ryan is feeling better. “I hope he can be available fo..."
-        },
-        {
-          "name": "David Brooks",
-          "context": "PERSON within 50 chars of quote: ... the Spaniard has labelled his squad “thin”, with David Brooks set to be the latest absentee due to twisting his..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "d0dc88d201d3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Marc",
-          "context": "PERSON within 50 chars of quote: ...aid: “My latest understanding is that a deal with Marc is in the final stages. I can’t confirm a club, b..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "f9992a6fe68f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "0c209a33d1b4",
@@ -717,17 +690,9 @@
     {
       "id": "2eae8e0631ec",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Eckert",
-          "context": "PERSON within 50 chars of quote: ... and we have a big, big game coming up tomorrow.” Eckert spoke about the changes coming to the squad tomor..."
-        },
-        {
-          "name": "Chris Wilder’s",
-          "context": "PERSON within 50 chars of quote: ...w” The German discussed the challenges of dancing Chris Wilder’s, Sheffield United, “They create a lot. I think to..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "da7bf409819e",
