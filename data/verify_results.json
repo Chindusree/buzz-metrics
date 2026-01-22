@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T10:18:45Z",
-  "total_verified": 87,
+  "last_updated": "2026-01-22T10:50:27Z",
+  "total_verified": 89,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1151,8 +1151,20 @@
       "verify_evidence": []
     },
     {
+      "id": "051eca102bd5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "96b7cdc59248",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "99033d694b38",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },

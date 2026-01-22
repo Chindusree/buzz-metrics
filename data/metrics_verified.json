@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-01-22T10:18:52Z",
-  "total_articles": 87,
+  "last_updated": "2026-01-22T10:50:29Z",
+  "total_articles": 89,
   "summary": {
-    "avg_word_count": 597,
-    "avg_quoted_sources": 0.9,
+    "avg_word_count": 594,
+    "avg_quoted_sources": 0.8,
     "below_minimum_count": 23,
     "long_form_count": 15,
-    "breaking_news_count": 8,
-    "total_images": 178,
+    "breaking_news_count": 9,
+    "total_images": 181,
     "original_images": 72,
     "stock_images": 3,
-    "uncredited_images": 103,
+    "uncredited_images": 106,
     "gender_breakdown": {
       "male": 41,
       "female": 16,
@@ -23,8 +23,8 @@
         "sources": 11
       },
       "General News": {
-        "count": 61,
-        "words": 29740,
+        "count": 63,
+        "words": 30673,
         "sources": 46
       },
       "Features": {
@@ -40,9 +40,9 @@
         "avg_sources": 0.6
       },
       "News": {
-        "count": 61,
-        "avg_word_count": 488,
-        "avg_sources": 0.8
+        "count": 63,
+        "avg_word_count": 487,
+        "avg_sources": 0.7
       },
       "Features": {
         "count": 8,
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 5,
+      "article_count": 7,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:52",
@@ -6395,6 +6395,57 @@
       "category_normalised": "General News"
     },
     {
+      "id": "051eca102bd5",
+      "headline": "BREAKING NEWS: Yellow rain warning issued for Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "10:05",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 206,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/4e6fda61-d89e-45fd-a9ce-aa1b8002af86-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Heavy rainfall expected between 8am and 4pm"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "96b7cdc59248",
       "headline": "Bournemouth businesses call for cuts to VAT rates",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
@@ -6466,6 +6517,64 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "99033d694b38",
+      "headline": "Could The NBA London Game Grow Bournemouth Basketball?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
+      "author": "Derin Mehmet",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "10:22",
+      "category": "Boscombe",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 727,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6038-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Basketball Being Played In Highams Park, Derin Mehmet Basketball Being Played In Highams Park, Derin Mehmet"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_2179-1-360x203.jpg",
+            "classification": "uncredited",
+            "credit": "Basketball hoop in Boscombe, Derin Mehmet  Basketball hoop in Boscombe, Derin Mehmet"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
