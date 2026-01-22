@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T11:14:27Z",
-  "total_articles": 90,
+  "last_updated": "2026-01-22T11:43:44Z",
+  "total_articles": 94,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -4816,6 +4816,48 @@
       "warnings": []
     },
     {
+      "id": "21b012314d75",
+      "headline": "BREAKING NEWS: Enabling works for Vitality Stadium expansion approved",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-expansion-approved/",
+      "author": "Jack Hillman",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:30",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 188,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/e8dc08f0-618e-11f0-b058-f1b82e7d8ae1-4-800x400.webp",
+            "classification": "original",
+            "credit": "AFC Bournemouth"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "051eca102bd5",
       "headline": "BREAKING NEWS: Yellow rain warning issued for Dorset",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
@@ -4917,6 +4959,50 @@
       ]
     },
     {
+      "id": "275f208405ec",
+      "headline": "Brazilian Journalist speaks out about AFC Bournemouth’s transfer activity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
+      "author": "Marcus Maccormack",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:26",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 699,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/marcus-photo-800x400.webp",
+            "classification": "original",
+            "credit": "afcb"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
       "id": "99033d694b38",
       "headline": "Could The NBA London Game Grow Bournemouth Basketball?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
@@ -5003,6 +5089,53 @@
         "video_count": 0,
         "audio_count": 0,
         "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "5795e4bb76e6",
+      "headline": "Live Stream BUzz New’s 12:15 Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:25",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/HHAOyNCEIx4?feature=oembed"
+          }
+        ],
         "audio_evidence": []
       },
       "warnings": []
@@ -5126,6 +5259,55 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0614-1-e1769079518205.png",
             "classification": "original",
             "credit": "Harrison Walsh)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "d91cb476403b",
+      "headline": "Wheelchair assessor creates a space for local mobility shops in Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wheelchair-assessor-creates-a-space-for-local-mobility-shops-in-dorset/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:15",
+      "category": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 670,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot2026-01-22at10.42.3-1-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9458.JPG-1-360x270.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
           }
         ]
       },

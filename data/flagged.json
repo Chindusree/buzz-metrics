@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-22T11:18:45Z",
-  "total_flagged": 45,
+  "generated": "2026-01-22T11:47:24Z",
+  "total_flagged": 47,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1604,6 +1604,29 @@
       "review_status": "pending"
     },
     {
+      "id": "275f208405ec",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
+      "headline": "Brazilian Journalist speaks out about AFC Bournemouth’s transfer activity",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Silva"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Silva",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "53831c80ea43",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/local-team-intnl-tournament/",
       "headline": "Local six-a-side team head to International Tournament",
@@ -1625,6 +1648,30 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "d91cb476403b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wheelchair-assessor-creates-a-space-for-local-mobility-shops-in-dorset/",
+      "headline": "Wheelchair assessor creates a space for local mobility shops in Dorset",
+      "scrape_count": 0,
+      "verify_count": 3,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 3,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Smith",
+        "Lifestyle",
+        "Mobility"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Smith",
+        "Lifestyle",
+        "Mobility"
+      ],
       "review_status": "pending"
     }
   ]

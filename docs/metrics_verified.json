@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-01-22T11:18:45Z",
-  "total_articles": 90,
+  "last_updated": "2026-01-22T11:47:24Z",
+  "total_articles": 94,
   "summary": {
-    "avg_word_count": 596,
+    "avg_word_count": 593,
     "avg_quoted_sources": 0.8,
-    "below_minimum_count": 23,
+    "below_minimum_count": 24,
     "long_form_count": 15,
-    "breaking_news_count": 9,
-    "total_images": 182,
-    "original_images": 73,
+    "breaking_news_count": 10,
+    "total_images": 187,
+    "original_images": 75,
     "stock_images": 3,
-    "uncredited_images": 106,
+    "uncredited_images": 109,
     "gender_breakdown": {
       "male": 41,
       "female": 16,
@@ -18,13 +18,13 @@
     },
     "by_section": {
       "Sport": {
-        "count": 18,
-        "words": 11160,
+        "count": 19,
+        "words": 11859,
         "sources": 11
       },
       "General News": {
-        "count": 63,
-        "words": 30673,
+        "count": 66,
+        "words": 31531,
         "sources": 46
       },
       "Features": {
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 18,
-        "avg_word_count": 620,
+        "count": 19,
+        "avg_word_count": 624,
         "avg_sources": 0.6
       },
       "News": {
-        "count": 63,
-        "avg_word_count": 487,
+        "count": 66,
+        "avg_word_count": 478,
         "avg_sources": 0.7
       },
       "Features": {
@@ -84,12 +84,12 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 8,
+      "article_count": 12,
       "target": 12,
-      "meets_target": false,
+      "meets_target": true,
       "first_publish_time": "08:52",
       "first_publish_on_time": true,
-      "below_minimum_count": 2,
+      "below_minimum_count": 3,
       "long_form_count": 1
     }
   ],
@@ -6395,6 +6395,57 @@
       "category_normalised": "General News"
     },
     {
+      "id": "21b012314d75",
+      "headline": "BREAKING NEWS: Enabling works for Vitality Stadium expansion approved",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-expansion-approved/",
+      "author": "Jack Hillman",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:30",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 188,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/e8dc08f0-618e-11f0-b058-f1b82e7d8ae1-4-800x400.webp",
+            "classification": "original",
+            "credit": "AFC Bournemouth"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "051eca102bd5",
       "headline": "BREAKING NEWS: Yellow rain warning issued for Dorset",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
@@ -6520,6 +6571,64 @@
       "category_normalised": "General News"
     },
     {
+      "id": "275f208405ec",
+      "headline": "Brazilian Journalist speaks out about AFC Bournemouth’s transfer activity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
+      "author": "Marcus Maccormack",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:26",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 699,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/marcus-photo-800x400.webp",
+            "classification": "original",
+            "credit": "afcb"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Silva",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "99033d694b38",
       "headline": "Could The NBA London Game Grow Bournemouth Basketball?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
@@ -6615,6 +6724,62 @@
         "video_count": 0,
         "audio_count": 0,
         "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "5795e4bb76e6",
+      "headline": "Live Stream BUzz New’s 12:15 Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:25",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/HHAOyNCEIx4?feature=oembed"
+          }
+        ],
         "audio_evidence": []
       },
       "warnings": [],
@@ -6791,6 +6956,68 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Features"
+    },
+    {
+      "id": "d91cb476403b",
+      "headline": "Wheelchair assessor creates a space for local mobility shops in Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wheelchair-assessor-creates-a-space-for-local-mobility-shops-in-dorset/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:15",
+      "category": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 670,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot2026-01-22at10.42.3-1-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9458.JPG-1-360x270.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Smith",
+        "Lifestyle",
+        "Mobility"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     }
   ]
 }

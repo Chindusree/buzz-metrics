@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T11:18:43Z",
-  "total_verified": 90,
+  "last_updated": "2026-01-22T11:47:22Z",
+  "total_verified": 94,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1151,6 +1151,12 @@
       "verify_evidence": []
     },
     {
+      "id": "21b012314d75",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-expansion-approved/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "051eca102bd5",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
       "verify_quoted_sources": 0,
@@ -1163,6 +1169,17 @@
       "verify_evidence": []
     },
     {
+      "id": "275f208405ec",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Silva",
+          "context": "PERSON within 50 chars of quote: ...s a great signing, a sure choice by Bournemouth.” Silva discusses the type of player that Bournemouth are..."
+        }
+      ]
+    },
+    {
       "id": "99033d694b38",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
       "verify_quoted_sources": 0,
@@ -1171,6 +1188,12 @@
     {
       "id": "8e2121a22f89",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "5795e4bb76e6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -1200,6 +1223,25 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ultra-mma-charity-event/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "d91cb476403b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wheelchair-assessor-creates-a-space-for-local-mobility-shops-in-dorset/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Smith",
+          "context": "PERSON within 50 chars of quote: ... I need to do. Life moved forward.” He continued. Smith feels as though his disability is something that ..."
+        },
+        {
+          "name": "Lifestyle",
+          "context": "PERSON within 50 chars of quote: ...e. We are as disabled as the customer.” He added. Lifestyle and Mobility work hard to help their customers, p..."
+        },
+        {
+          "name": "Mobility",
+          "context": "PERSON within 50 chars of quote: ...isabled as the customer.” He added. Lifestyle and Mobility work hard to help their customers, providing 24/7..."
+        }
+      ]
     }
   ]
 }
