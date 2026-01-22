@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-01-22T16:46:53Z",
-  "total_articles": 104,
+  "last_updated": "2026-01-22T17:19:23Z",
+  "total_articles": 105,
   "summary": {
-    "avg_word_count": 603,
+    "avg_word_count": 604,
     "avg_quoted_sources": 0.8,
     "below_minimum_count": 26,
     "long_form_count": 18,
     "breaking_news_count": 11,
-    "total_images": 201,
+    "total_images": 202,
     "original_images": 87,
     "stock_images": 3,
-    "uncredited_images": 111,
+    "uncredited_images": 112,
     "gender_breakdown": {
       "male": 46,
       "female": 18,
@@ -23,8 +23,8 @@
         "sources": 11
       },
       "General News": {
-        "count": 73,
-        "words": 35452,
+        "count": 74,
+        "words": 36188,
         "sources": 53
       },
       "Features": {
@@ -40,8 +40,8 @@
         "avg_sources": 0.5
       },
       "News": {
-        "count": 73,
-        "avg_word_count": 486,
+        "count": 74,
+        "avg_word_count": 489,
         "avg_sources": 0.7
       },
       "Features": {
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 22,
+      "article_count": 23,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:52",
@@ -6922,6 +6922,59 @@
           "position": "before"
         }
       ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "50c1630578e4",
+      "headline": "Hampshire’s Dawson shines on ODI return despite England defeat",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "16:42",
+      "category": "cricket",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 736,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/daws-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Liam Dawson warming up for England at Lord's, 2025."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,

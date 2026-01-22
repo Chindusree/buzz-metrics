@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T16:08:11Z",
-  "total_articles": 104,
+  "last_updated": "2026-01-22T17:14:45Z",
+  "total_articles": 105,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5240,6 +5240,50 @@
         "audio_evidence": []
       },
       "warnings": []
+    },
+    {
+      "id": "50c1630578e4",
+      "headline": "Hampshire’s Dawson shines on ODI return despite England defeat",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "16:42",
+      "category": "cricket",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 736,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/daws-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Liam Dawson warming up for England at Lord's, 2025."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
     },
     {
       "id": "8e2121a22f89",

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T16:46:52Z",
-  "total_verified": 104,
+  "last_updated": "2026-01-22T17:19:21Z",
+  "total_verified": 105,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1227,6 +1227,12 @@
           "context": "PERSON within 50 chars of quote: ...nity events such as the Bournemouth Air Festival. Cllr Millie Earl, leader of BCP Council said: “After the budget, a..."
         }
       ]
+    },
+    {
+      "id": "50c1630578e4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "8e2121a22f89",
