@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T15:44:25Z",
-  "total_verified": 103,
+  "last_updated": "2026-01-22T16:12:16Z",
+  "total_verified": 104,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1235,6 +1235,12 @@
       "verify_evidence": []
     },
     {
+      "id": "cf179fe5fbb9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "5795e4bb76e6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
       "verify_quoted_sources": 0,
@@ -1302,7 +1308,7 @@
         },
         {
           "name": "Naomi",
-          "context": "PERSON within 50 chars of quote: ...have been yet to see in their area. Group Member, Naomi said: “Bringing [Teapot Drama Club] into conversa..."
+          "context": "PERSON within 50 chars of quote: ...have been yet to see in their area. Group Member, Naomi said: “Bringing the Teapot Drama Club into conver..."
         },
         {
           "name": "David",

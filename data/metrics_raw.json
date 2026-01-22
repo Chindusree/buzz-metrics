@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T15:40:22Z",
-  "total_articles": 103,
+  "last_updated": "2026-01-22T16:08:11Z",
+  "total_articles": 104,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5279,6 +5279,53 @@
         "video_count": 0,
         "audio_count": 0,
         "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "cf179fe5fbb9",
+      "headline": "Live Stream BUzz News 16:15 Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "16:01",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/nGG3S82IEh0?feature=oembed"
+          }
+        ],
         "audio_evidence": []
       },
       "warnings": []
