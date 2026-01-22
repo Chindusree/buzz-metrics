@@ -15,14 +15,9 @@ from collections import defaultdict
 import gender_guesser.detector as gender
 import hashlib
 import os
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
 
 BASE_URL = "https://buzz.bournemouth.ac.uk"
-GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
-GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
 def normalize_quotes(text):
@@ -51,159 +46,6 @@ def normalize_quotes(text):
     for fancy, standard in quote_chars.items():
         text = text.replace(fancy, standard)
     return text
-
-
-def analyze_article_with_groq(text):
-    """
-    Use Groq LLM to identify quoted sources in article text.
-
-    Args:
-        text: Article body text
-
-    Returns:
-        list: List of source dicts with name, type, gender fields, or None if Groq fails
-    """
-    if not GROQ_API_KEY:
-        print("  Warning: GROQ_API_KEY not set - using regex fallback")
-        return None
-
-    # Normalize quotes first (convert curly quotes to straight quotes)
-    text = normalize_quotes(text)
-
-    # If no quotation marks in text, no quoted sources possible
-    if chr(34) not in text and chr(8220) not in text and chr(8221) not in text:
-        return []
-
-    PROMPT = """Identify QUOTED SOURCES in this article.
-
-A quoted source = person whose EXACT WORDS appear inside quotation marks with attribution.
-THE TEST: Can you point to their words in "quotes"? If NO → not a source.
-
-RULES:
-1. ONE ENTRY per person — consolidate "Iraola" and "Andoni Iraola" as one
-2. Resolve pronouns: "he said" near a quote → identify who from context
-3. EXCLUDE:
-   - Organizations, team names, companies
-   - People only mentioned but not quoted
-   - The journalist/author writing the article
-   - Photo credits, image attributions, photographer names
-   - Captions that credit photographers
-   - Group descriptors like "Three Poole sailors" or "Five students" (NOT individual sources)
-
-ANONYMOUS SOURCES:
-- If someone is quoted but not named (e.g., "the victim said", "she said", "he told"), use:
-  - "Anonymous victim" for crime victims
-  - "Unnamed witness" for witnesses
-  - "Anonymous source" for other unnamed speakers
-- Do NOT use generic phrases like "The victim" or "The witness" - always prefix with "Anonymous" or "Unnamed"
-
-IMPORTANT:
-- Phrases like "interview with [journalist name]" mean the journalist is INTERVIEWING someone, not being quoted
-- Photo credits like "Credit: John Smith" or "Image by Jane Doe" are NOT quoted sources
-- Group phrases (e.g., "three sailors", "five players") describe multiple people, not a single source
-- Only count people who are directly quoted speaking
-
-SPORTS ARTICLES:
-- Players who scored/transferred are NOT sources unless directly quoted
-- Only people who SPEAK IN QUOTES are sources
-
-OUTPUT FORMAT — return ONLY this JSON array, nothing else:
-[
-  {"name": "Joe Salmon", "type": "original", "gender": "male"},
-  {"name": "Anonymous victim", "type": "original", "gender": "female"},
-  {"name": "Police spokesperson", "type": "press_statement", "gender": "unknown"}
-]
-
-type: "original" | "press_statement" | "secondary" | "social_media"
-gender: "male" | "female" | "nonbinary" | "unknown"
-
-ARTICLE:
-"""
-
-    # Retry logic for rate limiting (429 errors)
-    for attempt in range(2):
-        try:
-            response = requests.post(
-                GROQ_URL,
-                headers={
-                    "Authorization": f"Bearer {GROQ_API_KEY}",
-                    "Content-Type": "application/json"
-                },
-                json={
-                    "model": "llama-3.3-70b-versatile",
-                    "messages": [{"role": "user", "content": PROMPT + text[:8000]}],
-                    "temperature": 0.1,
-                    "max_tokens": 3000
-                },
-                timeout=30
-            )
-
-            response.raise_for_status()
-            content = response.json()['choices'][0]['message']['content']
-            break
-        except requests.exceptions.HTTPError as e:
-            if e.response.status_code == 429 and attempt == 0:
-                print(f"  Rate limited (429) - waiting 60s and retrying...")
-                time.sleep(60)
-            else:
-                print(f"  Groq API error: {e}")
-                return None
-        except Exception as e:
-            print(f"  Groq error: {e}")
-            return None
-
-    # Parse JSON from response
-    try:
-        # Handle markdown code blocks if present
-        if '```' in content:
-            content = content.split('```')[1]
-            if content.startswith('json'):
-                content = content[4:]
-
-        content = content.strip()
-
-        # Repair truncated JSON array
-        if content.startswith('[') and not content.endswith(']'):
-            # Find last COMPLETE object
-            last_complete = content.rfind('},')
-            if last_complete > 0:
-                content = content[:last_complete + 1] + ']'
-            else:
-                last_brace = content.rfind('}')
-                if last_brace > 0:
-                    content = content[:last_brace + 1] + ']'
-
-        # Fix nested quotes in snippets
-        content = re.sub(r'("quote_snippet":\s*")([^"]*?)""([^"]*?")', r'\1\2\3', content)
-
-        sources = json.loads(content)
-
-        # Deduplicate sources by name (case-insensitive)
-        if isinstance(sources, list):
-            seen = set()
-            unique = []
-            for s in sources:
-                name = s.get('name', '').strip().lower()
-                if name and name not in seen:
-                    seen.add(name)
-                    unique.append(s)
-            sources = unique
-
-        return sources if isinstance(sources, list) else []
-    except json.JSONDecodeError:
-        # Fallback: extract names via regex from partial JSON
-        names = re.findall(r'"name":\s*"([^"]+)"', content)
-        if names:
-            print(f"  Partial parse: extracted {len(names)} names from broken JSON")
-            seen = set()
-            sources = []
-            for n in names:
-                if n.lower() not in seen:
-                    seen.add(n.lower())
-                    sources.append({"name": n, "type": "unknown", "gender": "unknown"})
-            return sources
-        print(f"  Failed to parse Groq response - using regex fallback")
-        return None
 
 
 def get_display_category(raw_category, headline, tags=None):
@@ -2234,27 +2076,8 @@ def extract_wordpress_content(soup):
     # Count words
     word_count = count_words(body_text)
 
-    # Extract sources using Groq LLM with regex fallback
-    groq_sources = analyze_article_with_groq(body_text)
-    if groq_sources is not None:
-        # Use Groq results - convert to existing format
-        sources = []
-        for groq_src in groq_sources:
-            sources.append({
-                'name': groq_src.get('name', 'Unknown'),
-                'gender': groq_src.get('gender', 'unknown'),
-                'gender_confidence': 'groq',
-                'gender_method': 'groq_llm',
-                'quote_snippet': groq_src.get('quote_snippet', '(extracted by Groq)'),
-                'full_attribution': groq_src.get('name', 'Unknown'),
-                'position': 'groq_detected',
-                'type': groq_src.get('type', 'unknown')
-            })
-        print(f"    Groq: {len(sources)} sources detected")
-    else:
-        # Fallback to regex extraction
-        sources = extract_sources(body_text, article_body)
-        print(f"    Regex fallback: {len(sources)} sources detected")
+    # Extract sources using unified function
+    sources = extract_sources(body_text, article_body)
 
     # Extract images
     images = extract_wordpress_images(article_body)
@@ -2377,29 +2200,10 @@ def extract_shorthand_content_new(shorthand_url):
         # Count words
         word_count = count_words(body_text)
 
-        # Extract sources using Groq LLM with regex fallback
+        # Extract sources using unified function
         # For quote extraction, join paragraphs with newline to prevent cross-paragraph quotes
         text_for_quotes = '\n'.join(text_parts)
-        groq_sources = analyze_article_with_groq(text_for_quotes)
-        if groq_sources is not None:
-            # Use Groq results - convert to existing format
-            sources = []
-            for groq_src in groq_sources:
-                sources.append({
-                    'name': groq_src.get('name', 'Unknown'),
-                    'gender': groq_src.get('gender', 'unknown'),
-                    'gender_confidence': 'groq',
-                    'gender_method': 'groq_llm',
-                    'quote_snippet': groq_src.get('quote_snippet', '(extracted by Groq)'),
-                    'full_attribution': groq_src.get('name', 'Unknown'),
-                    'position': 'groq_detected',
-                    'type': groq_src.get('type', 'unknown')
-                })
-            print(f"    Groq: {len(sources)} sources detected")
-        else:
-            # Fallback to regex extraction
-            sources = extract_sources(text_for_quotes, soup)
-            print(f"    Regex fallback: {len(sources)} sources detected")
+        sources = extract_sources(text_for_quotes, soup)
 
         # Extract images
         images = extract_shorthand_images_clean(soup)
@@ -2783,8 +2587,7 @@ def extract_article_metadata(url):
                 # Sprint 7.33: Filter sources to only include those with direct quotes
                 # Use the 'position' field that extract_sources() already provides
                 # Sprint 7.37: Added role_description and relationship_prefix
-                # Sprint 8: Added groq_detected for LLM-based detection
-                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix', 'groq_detected'}
+                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix'}
                 source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
 
                 images = shorthand_data['images']
@@ -2806,8 +2609,7 @@ def extract_article_metadata(url):
             # Sprint 7.33: Filter sources to only include those with direct quotes
             # Use the 'position' field that extract_sources() already provides
             # Sprint 7.37: Added role_description and relationship_prefix
-            # Sprint 8: Added groq_detected for LLM-based detection
-            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix', 'groq_detected'}
+            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix'}
             source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
 
             images = wordpress_data['images']
@@ -3020,11 +2822,6 @@ def main():
     output = {
         'last_updated': datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'),
         'total_articles': len(articles),
-        'gender_breakdown': {
-            'male': total_male,
-            'female': total_female,
-            'unknown': total_unknown
-        },
         'articles': articles
     }
 

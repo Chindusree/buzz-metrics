@@ -5,3 +5,4 @@ lxml
 spacy
 gender-guesser
 rapidfuzz
+python-dotenv

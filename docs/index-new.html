@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUzz Dashboard Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, serif; background: #f8f6f1; color: #1a1a1a; line-height: 1.5; }
+        a { color: #1a1a1a; text-decoration: underline; text-decoration-color: #c41230; }
+        a:hover { color: #c41230; }
+        .header { background: #1a1a1a; color: white; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid #c41230; }
+        .header-inner { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+        .header-top { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; }
+        .logo { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.5rem; color: #c41230; }
+        .header-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+        .date-select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.4rem 0.75rem; border-radius: 6px; font-size: 0.85rem; }
+        .nav { display: flex; overflow-x: auto; }
+        .nav a { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.75rem 1rem; white-space: nowrap; }
+        .nav a.active { color: white; }
+        .nav a:hover { color: white; }
+        main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+        .section { margin-bottom: 2.5rem; }
+        .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 2px solid #1a1a1a; }
+        .section-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.4rem; font-weight: 700; }
+        .section-sub { font-size: 0.85rem; color: #767676; }
+        .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .stat-card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .stat-card.featured { grid-column: span 2; background: #1a1a1a; color: white; text-align: center; padding: 1.5rem; }
+        .stat-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1; }
+        .stat-card.featured .stat-value { font-size: 4rem; }
+        .stat-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #767676; margin-top: 0.25rem; }
+        .stat-card.featured .stat-label { color: rgba(255,255,255,0.6); }
+        .stat-detail { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 0.4rem; }
+        .analysis-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        .analysis-grid .card.gender-card { grid-column: span 1; padding: 1.5rem; }
+        .analysis-grid .card.gender-card .gender-row { margin-bottom: 1rem; }
+        .analysis-grid .card.gender-card .gender-track { height: 20px; }
+        .analysis-grid .card.gender-card .gender-label { font-size: 0.85rem; width: 80px; }
+        .analysis-grid .card.gender-card .gender-value { font-size: 0.85rem; width: 70px; }
+        .card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .card-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #767676; margin-bottom: 0.75rem; }
+        .gender-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; }
+        .gender-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.75rem; font-weight: 500; width: 60px; }
+        .gender-track { flex: 1; height: 14px; background: #f0ede6; border-radius: 7px; overflow: hidden; }
+        .gender-bar { height: 100%; border-radius: 7px; }
+        .gender-bar.female { background: #7c3aed; width: 47%; }
+        .gender-bar.male { background: #0891b2; width: 53%; }
+        .gender-bar.unknown { background: #9ca3af; width: 0%; }
+        .gender-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.75rem; font-weight: 600; width: 55px; text-align: right; }
+        .gender-note { font-size: 0.6rem; font-style: italic; color: #767676; margin-top: 1.25rem; text-align: left; }
+        .section-item { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid #edeae3; }
+        .section-item:last-child { border-bottom: none; }
+        .section-name { font-weight: 500; font-size: 0.9rem; }
+        .section-meta { font-size: 0.75rem; color: #767676; }
+        .section-count { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.1rem; }
+        .heatmap { display: grid; grid-template-columns: 45px repeat(13, 1fr); gap: 3px; }
+        .hm-header { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.55rem; font-weight: 600; text-align: center; color: #767676; }
+        .hm-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 500; display: flex; align-items: center; }
+        .hm-cell { aspect-ratio: 1; border-radius: 2px; background: #f0ede6; min-height: 14px; }
+        .hm-cell.l1 { background: rgba(196,18,48,0.25); }
+        .hm-cell.l2 { background: rgba(196,18,48,0.5); }
+        .hm-cell.l3 { background: #c41230; }
+        .hm-cell.clickable { cursor: pointer; transition: all 0.2s; }
+        .hm-cell.clickable:hover { filter: brightness(0.85); box-shadow: 0 0 0 1px rgba(26,26,26,0.15); }
+        .hm-legend { display: flex; gap: 0.75rem; margin-top: 0.6rem; font-size: 0.65rem; color: #767676; }
+        .legend-item { display: flex; align-items: center; gap: 0.25rem; }
+        .legend-swatch { width: 10px; height: 10px; border-radius: 2px; }
+        .stories-table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .stories-table th { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #767676; text-align: left; padding: 0.75rem; background: #f8f6f1; border-bottom: 2px solid #edeae3; }
+        .stories-table td { padding: 0.75rem; border-bottom: 1px solid #f8f6f1; font-size: 0.85rem; }
+        .story-headline { font-family: Georgia, serif; font-weight: 500; font-size: 0.95rem; color: #1a1a1a; display: block; margin-bottom: 0.15rem; text-decoration: none; }
+        .story-headline:hover { text-decoration: underline; }
+        .story-author { font-size: 0.75rem; color: #767676; }
+        .story-time { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; }
+        .story-section { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 500; color: #c41230; }
+        .story-stat { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; }
+        .contributors-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .contrib-card { background: white; border-radius: 6px; padding: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s; }
+        .contrib-card:hover { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .contrib-name { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 0.9rem; }
+        .contrib-meta { font-size: 0.7rem; color: #767676; }
+        .contrib-count { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.5rem; font-weight: 700; color: #c41230; }
+        .toggle-btn { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; padding: 0.4rem 0.75rem; border: 1px solid #edeae3; background: white; border-radius: 6px; margin-right: 0.5rem; margin-bottom: 0.75rem; }
+        .toggle-btn.active { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+        .footer { background: #1a1a1a; color: rgba(255,255,255,0.6); padding: 1.5rem 1rem; margin-top: 2rem; }
+        .footer-inner { max-width: 900px; margin: 0 auto; }
+        .footer p { font-size: 0.75rem; margin-bottom: 0.4rem; }
+        .expect-box { background: rgba(255,255,255,0.05); border-radius: 6px; padding: 0.75rem; margin-top: 0.75rem; }
+        .expect-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); margin-bottom: 0.4rem; }
+        .expect-list { list-style: none; font-size: 0.75rem; }
+        .expect-list li { margin-bottom: 0.2rem; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; }
+        .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
+        .modal-content { background: white; border-radius: 8px; max-width: 600px; width: 90%; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 2px solid #edeae3; }
+        .modal-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.1rem; font-weight: 700; }
+        .modal-close { font-size: 1.5rem; font-weight: 300; color: #767676; cursor: pointer; background: none; border: none; padding: 0; line-height: 1; }
+        .modal-close:hover { color: #1a1a1a; }
+        .modal-body { padding: 1.5rem; overflow-y: auto; }
+        .modal-story { margin-bottom: 1.5rem; }
+        .modal-story:last-child { margin-bottom: 0; }
+        .modal-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
+        .modal-story-headline a { color: #1a1a1a; text-decoration: none; }
+        .modal-story-headline a:hover { text-decoration: underline; }
+        .modal-story-meta { font-size: 0.75rem; color: #767676; }
+        .sources-list { list-style: none; padding: 0; margin: 0; }
+        .sources-list li { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.95rem; padding: 0.5rem 0; border-bottom: 1px solid #edeae3; }
+        .sources-list li:last-child { border-bottom: none; }
+        .sources-list li:before { content: '• '; color: #c41230; font-weight: 700; margin-right: 0.5rem; }
+        .rhythm-story { margin-bottom: 1.25rem; }
+        .rhythm-story:last-child { margin-bottom: 0; }
+        .rhythm-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; line-height: 1.3; }
+        .rhythm-story-headline a { color: #1a1a1a; text-decoration: none; }
+        .rhythm-story-headline a:hover { text-decoration: underline; }
+        .rhythm-story-meta { font-size: 0.75rem; color: #767676; }
+        @media (min-width: 640px) {
+            .hero-grid { grid-template-columns: repeat(4, 1fr); }
+            .stat-card.featured { grid-column: span 4; }
+            .analysis-grid { grid-template-columns: repeat(2, 1fr); }
+            .analysis-grid .card.gender-card { grid-column: span 2; }
+            .analysis-grid .card.rhythm-card { grid-column: span 2; }
+            .contributors-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="header-top">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="cropped-Buzz-logo-white.png" alt="BUzz" style="height: 32px;">
+                <span class="header-label">Newsday Dashboard</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Showing:</span>
+                <select class="date-select">
+                    <option>Wed, 22 Jan</option>
+                </select>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#glance" class="active">At a glance</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#targets">Targets</a>
+            <a href="#stories">Stories</a>
+            <a href="#contributors">Contributors</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- AT A GLANCE -->
+    <section id="glance" class="section">
+        <div class="section-header">
+            <h2 class="section-title">At a glance</h2>
+            <span class="section-sub">Wednesday's output</span>
+        </div>
+        <div class="hero-grid">
+            <div class="stat-card featured">
+                <div class="stat-value">3,948</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Quoted Sources</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">19</div>
+                <div class="stat-label">Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Embeds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALYSIS -->
+    <section id="analysis" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Analysis</h2>
+        </div>
+        <div class="analysis-grid">
+            <!-- Gender -->
+            <div class="card">
+                <h3 class="card-title">The Inclusive Project*</h3>
+                <div class="gender-row">
+                    <span class="gender-label">Women</span>
+                    <div class="gender-track"><div class="gender-bar female"></div></div>
+                    <span class="gender-value">47% (8)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Men</span>
+                    <div class="gender-track"><div class="gender-bar male"></div></div>
+                    <span class="gender-value">53% (9)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Non-binary</span>
+                    <div class="gender-track"><div class="gender-bar unknown"></div></div>
+                    <span class="gender-value">0% (0)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Unknown</span>
+                    <div class="gender-track"><div class="gender-bar unknown"></div></div>
+                    <span class="gender-value">0% (0)</span>
+                </div>
+                <p class="gender-note">Estimated via first-name lookup and pronoun context analysis. May not reflect identity.</p>
+            </div>
+
+            <!-- Sections -->
+            <div class="card">
+                <h3 class="card-title">By Section</h3>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">News</div>
+                        <div class="section-meta">2,693 words · 12 sources</div>
+                    </div>
+                    <div class="section-count">4</div>
+                </div>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">Sport</div>
+                        <div class="section-meta">843 words · 3 sources</div>
+                    </div>
+                    <div class="section-count">2</div>
+                </div>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">Lifestyle</div>
+                        <div class="section-meta">412 words · 2 sources</div>
+                    </div>
+                    <div class="section-count">1</div>
+                </div>
+            </div>
+
+            <!-- Heatmap -->
+            <div class="card">
+                <h3 class="card-title">Publication Rhythm</h3>
+                <div class="heatmap">
+                    <div></div>
+                    <div class="hm-header">06</div><div class="hm-header">07</div><div class="hm-header">08</div><div class="hm-header">09</div><div class="hm-header">10</div><div class="hm-header">11</div><div class="hm-header">12</div><div class="hm-header">13</div><div class="hm-header">14</div><div class="hm-header">15</div><div class="hm-header">16</div><div class="hm-header">17</div><div class="hm-header">18</div>
+                    <div class="hm-label">News</div>
+                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div>
+                    <div class="hm-label">Sport</div>
+                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div>
+                </div>
+                <div class="hm-legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#f0ede6;"></div><span>None</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:rgba(196,18,48,0.25);"></div><span>1</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:rgba(196,18,48,0.5);"></div><span>2</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#c41230;"></div><span>3+</span></div>
+                </div>
+            </div>
+        </div>
+        <p class="gender-note" style="margin-top: 0.75rem;">* Whose voices do we quote? Sourcing should fit the story, but we all have biases. See BBC good practice <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>.</p>
+    </section>
+
+    <!-- TARGETS -->
+    <section id="targets" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Targets</h2>
+            <span class="section-sub">Editorial expectations</span>
+        </div>
+        <table class="stories-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Stories</th>
+                    <th>First Published</th>
+                    <th>Below 350w</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>21 Jan</td>
+                    <td>8/12</td>
+                    <td>09:15 ✓</td>
+                    <td>1</td>
+                    <td>47% W</td>
+                </tr>
+                <tr>
+                    <td>20 Jan</td>
+                    <td>12/12 ✓</td>
+                    <td>10:45</td>
+                    <td>2</td>
+                    <td>33% W</td>
+                </tr>
+                <tr>
+                    <td>19 Jan</td>
+                    <td>12/12 ✓</td>
+                    <td>08:30 ✓</td>
+                    <td>0 ✓</td>
+                    <td>53% W</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="gender-note" style="margin-top: 0.75rem;">✓ = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Stories</h2>
+            <span class="section-sub">7 stories</span>
+        </div>
+        <table class="stories-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Section</th>
+                    <th>Story</th>
+                    <th>Words</th>
+                    <th>Sources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="story-time">09:15</span></td>
+                    <td><span class="story-section">Sport</span></td>
+                    <td><span class="story-headline">AFC Bournemouth secure crucial win</span><span class="story-author">James Mitchell</span></td>
+                    <td><span class="story-stat">487</span></td>
+                    <td><span class="story-stat" style="color:#c41230;">2</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">10:30</span></td>
+                    <td><span class="story-section">News</span></td>
+                    <td><span class="story-headline">Council announces cycling infrastructure</span><span class="story-author">Sarah Chen</span></td>
+                    <td><span class="story-stat">623</span></td>
+                    <td><span class="story-stat" style="color:#c41230;">3</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">11:45</span></td>
+                    <td><span class="story-section">News</span></td>
+                    <td><span class="story-headline">Student mental health sees record demand</span><span class="story-author">Emma Thompson</span></td>
+                    <td><span class="story-stat">891</span></td>
+                    <td><span class="story-stat" style="color:#c41230;">4</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">12:20</span></td>
+                    <td><span class="story-section">Lifestyle</span></td>
+                    <td><span class="story-headline">Local café wins sustainability award</span><span class="story-author">Tom Richards</span></td>
+                    <td><span class="story-stat">412</span></td>
+                    <td><span class="story-stat" style="color:#c41230;">2</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CONTRIBUTORS -->
+    <section id="contributors" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Contributors</h2>
+        </div>
+        <div>
+            <button class="toggle-btn active">Today</button>
+            <button class="toggle-btn">This Week</button>
+        </div>
+        <div class="contributors-grid">
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">James Mitchell</div>
+                    <div class="contrib-meta">1.5 avg sources</div>
+                </div>
+                <div class="contrib-count">2</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Sarah Chen</div>
+                    <div class="contrib-meta">3.0 avg sources</div>
+                </div>
+                <div class="contrib-count">2</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Emma Thompson</div>
+                    <div class="contrib-meta">4.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Tom Richards</div>
+                    <div class="contrib-meta">2.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Lucy Adams</div>
+                    <div class="contrib-meta">2.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <p>Quoted source counts are estimates using pattern matching with NLP verification.</p>
+        <p>Gender determined from first names via gender-guesser library.</p>
+        <div class="expect-box">
+            <div class="expect-title">Editorial Expectations</div>
+            <ul class="expect-list">
+                <li>• Team target: 12 stories per day</li>
+                <li>• Sourcing: 2+ quoted sources per story</li>
+                <li>• Diversity: Gender parity (50:50 target)</li>
+                <li>• Word count: 350 minimum</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Contributor Stories Modal -->
+<div class="modal-overlay" id="contributorModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <button class="modal-close" onclick="closeContributorModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Sources Modal -->
+<div class="modal-overlay" id="sourcesModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Quoted sources</h3>
+            <button class="modal-close" onclick="closeSourcesModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="sourcesModalBody"></div>
+    </div>
+</div>
+
+<!-- Rhythm Modal -->
+<div class="modal-overlay" id="rhythmModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="rhythmModalTitle"></h3>
+            <button class="modal-close" onclick="closeRhythmModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="rhythmModalBody"></div>
+    </div>
+</div>
+
+<script>
+    // Step 2: Wire up hero stats + date selector
+    let metricsData = null;
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        try {
+            console.log('=== STEP 2: Loading data and wiring hero stats ===');
+            const response = await fetch('./metrics_verified.json');
+            metricsData = await response.json();
+
+            console.log('✓ Data loaded:', metricsData.articles.length, 'articles');
+
+            // Initialize
+            populateDateSelector();
+            setupContributorsToggle();
+
+            // Default to most recent date
+            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+            const defaultDate = dates[0];
+            console.log('Default date:', defaultDate);
+
+            document.querySelector('.date-select').value = defaultDate;
+            updateHeroStats(defaultDate);
+
+        } catch (error) {
+            console.error('❌ Error loading data:', error);
+        }
+    });
+
+    function populateDateSelector() {
+        const dateSelect = document.querySelector('.date-select');
+        const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+
+        console.log('Available dates:', dates);
+
+        dateSelect.innerHTML = '';
+        dates.forEach(date => {
+            const option = document.createElement('option');
+            option.value = date;
+            const d = new Date(date + 'T00:00:00');
+            option.textContent = d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+            dateSelect.appendChild(option);
+        });
+
+        // Add change listener
+        dateSelect.addEventListener('change', (e) => {
+            console.log('Date changed to:', e.target.value);
+            updateHeroStats(e.target.value);
+        });
+    }
+
+    function updateHeroStats(selectedDate) {
+        // Filter articles for selected date
+        const filteredArticles = metricsData.articles.filter(a => a.date === selectedDate);
+        console.log('Filtered articles for', selectedDate, ':', filteredArticles.length);
+
+        // Calculate totals
+        const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
+        const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
+        const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
+
+        // Embeds: video_count + audio_count
+        const totalEmbeds = filteredArticles.reduce((sum, a) => {
+            const embeds = a.embeds || {};
+            return sum + (embeds.video_count || 0) + (embeds.audio_count || 0);
+        }, 0);
+
+        const avgSources = filteredArticles.length > 0
+            ? (totalSources / filteredArticles.length).toFixed(1)
+            : '0.0';
+
+        console.log('Stats:', {
+            stories: filteredArticles.length,
+            words: totalWords,
+            sources: totalSources,
+            images: totalImages,
+            embeds: totalEmbeds,
+            avgSources: avgSources
+        });
+
+        // Update hero stats display
+        const heroGrid = document.querySelector('.hero-grid');
+        heroGrid.innerHTML = `
+            <div class="stat-card featured">
+                <div class="stat-value">${totalWords.toLocaleString()}</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${filteredArticles.length}</div>
+                <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalSources}</div>
+                <div class="stat-label">Quoted Sources</div>
+                <div class="stat-detail">${avgSources} avg per story</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalImages}</div>
+                <div class="stat-label">Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalEmbeds}</div>
+                <div class="stat-label">Embeds</div>
+            </div>
+        `;
+
+        // Update subtitle
+        const d = new Date(selectedDate + 'T00:00:00');
+        document.querySelector('.section-sub').textContent = d.toLocaleDateString('en-GB', { weekday: 'long' }) + "'s output";
+
+        console.log('✓ Hero stats updated');
+
+        // Step 3: Update Analysis section
+        updateAnalysisSection(filteredArticles);
+    }
+
+    function updateAnalysisSection(filteredArticles) {
+        console.log('=== STEP 3: Updating Analysis section ===');
+
+        // Gender breakdown
+        const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
+        filteredArticles.forEach(article => {
+            const sources = article.source_evidence_confirmed || [];
+            sources.forEach(source => {
+                const gender = source.gender || 'unknown';
+                if (genderCounts.hasOwnProperty(gender)) {
+                    genderCounts[gender]++;
+                } else {
+                    genderCounts.unknown++;
+                }
+            });
+        });
+
+        const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
+        const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+        const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+        const theyPercent = total > 0 ? Math.round((genderCounts.they / total) * 100) : 0;
+        const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
+
+        console.log('Gender counts:', genderCounts);
+
+        // By Section breakdown
+        const sectionData = {};
+        filteredArticles.forEach(article => {
+            const section = article.display_category || 'Unknown';
+            if (!sectionData[section]) {
+                sectionData[section] = { count: 0, sources: 0 };
+            }
+            sectionData[section].count++;
+            sectionData[section].sources += article.quoted_sources_confirmed || 0;
+        });
+
+        console.log('Section data:', sectionData);
+
+        // Publication rhythm
+        const rhythmData = {
+            'General News': Array(13).fill(0),
+            'Sport': Array(13).fill(0)
+        };
+
+        filteredArticles.forEach(article => {
+            if (!article.time) return;
+            const hour = parseInt(article.time.split(':')[0]);
+            if (hour < 6 || hour > 18) return;
+
+            const section = article.display_category;
+            if (rhythmData[section]) {
+                rhythmData[section][hour - 6]++;
+            }
+        });
+
+        console.log('Rhythm data:', rhythmData);
+
+        // Build Analysis section HTML
+        const analysisGrid = document.querySelector('.analysis-grid');
+        let html = '';
+
+        // Gender card
+        html += `
+            <div class="card gender-card">
+                <h3 class="card-title">The Inclusive Project*</h3>
+                <div class="gender-row">
+                    <span class="gender-label">Women</span>
+                    <div class="gender-track"><div class="gender-bar female" style="width: ${femalePercent}%"></div></div>
+                    <span class="gender-value">${femalePercent}% (${genderCounts.female})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Men</span>
+                    <div class="gender-track"><div class="gender-bar male" style="width: ${malePercent}%"></div></div>
+                    <span class="gender-value">${malePercent}% (${genderCounts.male})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Non-binary</span>
+                    <div class="gender-track"><div class="gender-bar unknown" style="width: ${theyPercent}%"></div></div>
+                    <span class="gender-value">${theyPercent}% (${genderCounts.they})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Unclassified</span>
+                    <div class="gender-track"><div class="gender-bar unknown" style="width: ${unknownPercent}%"></div></div>
+                    <span class="gender-value">${unknownPercent}% (${genderCounts.unknown})</span>
+                </div>
+            </div>
+        `;
+
+        // Section cards (General News, Sport only)
+        const sectionsToShow = ['General News', 'Sport'];
+        sectionsToShow.forEach(section => {
+            if (sectionData[section]) {
+                const data = sectionData[section];
+                const avgSources = data.count > 0 ? (data.sources / data.count).toFixed(1) : '0.0';
+                html += `
+                    <div class="card">
+                        <h3 class="card-title">${section}</h3>
+                        <div class="section-item">
+                            <span class="section-name">Stories</span>
+                            <span class="section-count">${data.count}</span>
+                        </div>
+                        <div class="section-item">
+                            <span class="section-name">Avg sources</span>
+                            <span class="section-count">${avgSources}</span>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+
+        // Publication Rhythm heatmap
+        let heatmapHTML = '<div class="heatmap">';
+        heatmapHTML += '<div class="hm-header"></div>';
+        for (let h = 6; h <= 18; h++) {
+            heatmapHTML += `<div class="hm-header">${h}</div>`;
+        }
+
+        Object.entries(rhythmData).forEach(([section, counts]) => {
+            heatmapHTML += `<div class="hm-label">${section}</div>`;
+            counts.forEach((count, index) => {
+                const hour = index + 6; // Hours start at 6
+                let className = 'hm-cell';
+                if (count === 1) className += ' l1';
+                else if (count === 2) className += ' l2';
+                else if (count >= 3) className += ' l3';
+
+                // Make cells clickable if count > 0
+                if (count > 0) {
+                    className += ' clickable';
+                    heatmapHTML += `<div class="${className}" data-section="${section}" data-hour="${hour}" data-count="${count}"></div>`;
+                } else {
+                    heatmapHTML += `<div class="${className}"></div>`;
+                }
+            });
+        });
+
+        heatmapHTML += '</div>';
+        heatmapHTML += `
+            <div class="hm-legend">
+                <div class="legend-item">
+                    <div class="legend-swatch" style="background: #f0ede6"></div>
+                    <span>None</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-swatch" style="background: rgba(196,18,48,0.25)"></div>
+                    <span>1 story</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-swatch" style="background: rgba(196,18,48,0.5)"></div>
+                    <span>2 stories</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-swatch" style="background: #c41230"></div>
+                    <span>3+ stories</span>
+                </div>
+            </div>
+        `;
+
+        html += `
+            <div class="card rhythm-card">
+                <h3 class="card-title">Publication Rhythm</h3>
+                ${heatmapHTML}
+            </div>
+        `;
+
+        analysisGrid.innerHTML = html;
+
+        // Add click handlers to heatmap cells
+        document.querySelectorAll('.hm-cell.clickable').forEach(cell => {
+            cell.addEventListener('click', () => {
+                const section = cell.getAttribute('data-section');
+                const hour = parseInt(cell.getAttribute('data-hour'));
+                showRhythmModal(section, hour, filteredArticles);
+            });
+        });
+
+        console.log('✓ Analysis section updated');
+
+        // Step 4: Update Targets and Stories tables
+        updateTargetsTable();
+        updateStoriesTable(filteredArticles);
+
+        // Step 5: Update Contributors
+        const selectedDate = document.querySelector('.date-select').value;
+        updateContributors(selectedDate);
+    }
+
+    function updateTargetsTable() {
+        console.log('=== STEP 4: Updating Targets table ===');
+
+        const dailyStats = metricsData.daily_stats || [];
+        const tbody = document.querySelector('#targets .stories-table tbody');
+        tbody.innerHTML = '';
+
+        // Show last 3 days
+        dailyStats.slice().reverse().slice(0, 3).forEach(day => {
+            const dayArticles = metricsData.articles.filter(a => a.date === day.date);
+            const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
+
+            dayArticles.forEach(article => {
+                (article.source_evidence_confirmed || []).forEach(source => {
+                    const gender = source.gender || 'unknown';
+                    if (genderCounts.hasOwnProperty(gender)) genderCounts[gender]++;
+                    else genderCounts.unknown++;
+                });
+            });
+
+            const totalGender = genderCounts.female + genderCounts.male + genderCounts.they;
+            const womenPercent = totalGender > 0 ? Math.round((genderCounts.female / totalGender) * 100) : 0;
+
+            const d = new Date(day.date + 'T00:00:00');
+            const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
+
+            const storiesTarget = day.article_count >= 12 ? '✓' : '';
+            const firstPubTime = day.first_publish_time || '';
+            let firstPubDisplay = firstPubTime;
+            if (firstPubTime) {
+                const [h, m] = firstPubTime.split(':').map(Number);
+                const minutes = h * 60 + m;
+                if (minutes < 600) firstPubDisplay += ' ✓';
+            }
+
+            const belowTarget = day.below_minimum_count === 0 ? '✓' : '';
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${dateStr}</td>
+                <td>${day.article_count}/12 ${storiesTarget}</td>
+                <td>${firstPubDisplay}</td>
+                <td>${day.below_minimum_count} ${belowTarget}</td>
+                <td>${womenPercent}% W</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        console.log('✓ Targets table updated');
+    }
+
+    function updateStoriesTable(filteredArticles) {
+        console.log('=== STEP 4: Updating Stories table ===');
+
+        const tbody = document.querySelector('#stories .stories-table tbody');
+        tbody.innerHTML = '';
+
+        // Sort by time
+        const sortedArticles = [...filteredArticles].sort((a, b) => {
+            const timeA = a.time || '23:59';
+            const timeB = b.time || '23:59';
+            return timeA.localeCompare(timeB);
+        });
+
+        console.log('Sorted articles:', sortedArticles.length);
+
+        sortedArticles.forEach(article => {
+            const row = document.createElement('tr');
+            const section = article.display_category || 'Unknown';
+            const author = article.author || 'Unknown';
+            const time = article.time || 'N/A';
+            const words = (article.word_count || 0).toLocaleString();
+            const sources = article.quoted_sources_confirmed || 0;
+
+            row.innerHTML = `
+                <td class="story-time">${time}</td>
+                <td><span class="story-section">${section}</span></td>
+                <td>
+                    <a href="${article.url}" target="_blank" class="story-headline">${article.headline}</a>
+                    <div class="story-author">${author}</div>
+                </td>
+                <td class="story-stat">${words}</td>
+                <td class="story-stat" style="cursor: pointer; color: ${sources > 0 ? '#c41230' : 'inherit'};">${sources}</td>
+            `;
+
+            // Add click handler to sources count if > 0
+            if (sources > 0) {
+                const sourcesCell = row.querySelector('td:last-child');
+                sourcesCell.addEventListener('click', () => {
+                    showSourcesModal(article);
+                });
+            }
+
+            tbody.appendChild(row);
+        });
+
+        // Update stories count in subtitle
+        const subtitle = document.querySelector('#stories .section-sub');
+        if (subtitle) {
+            subtitle.textContent = `${filteredArticles.length} ${filteredArticles.length === 1 ? 'story' : 'stories'}`;
+        }
+
+        console.log('✓ Stories table updated');
+    }
+
+    function updateContributors(selectedDate) {
+        console.log('=== STEP 5: Updating Contributors ===');
+
+        let articlesToUse = [];
+        const currentView = document.querySelector('.toggle-btn.active')?.textContent || 'Today';
+
+        if (currentView === 'Today') {
+            articlesToUse = metricsData.articles.filter(a => a.date === selectedDate);
+        } else {
+            // This Week: last 7 days ending on selectedDate
+            const endDate = new Date(selectedDate + 'T00:00:00');
+            const startDate = new Date(endDate);
+            startDate.setDate(startDate.getDate() - 6);
+
+            articlesToUse = metricsData.articles.filter(a => {
+                const articleDate = new Date(a.date + 'T00:00:00');
+                return articleDate >= startDate && articleDate <= endDate;
+            });
+        }
+
+        console.log('Contributors view:', currentView, 'Articles:', articlesToUse.length);
+
+        // Generic bylines to filter out
+        const genericBylines = ['Editor Blue', 'Editor Green', 'Editor Red', 'Editor', 'BUzz', 'Unknown'];
+
+        // Aggregate by author
+        const contributorData = {};
+        articlesToUse.forEach(article => {
+            const author = article.author || 'Unknown';
+
+            // Filter out generic bylines and names starting with "Editor"
+            if (genericBylines.includes(author) || author.startsWith('Editor')) {
+                return;
+            }
+
+            if (!contributorData[author]) {
+                contributorData[author] = { count: 0, totalSources: 0 };
+            }
+            contributorData[author].count++;
+            contributorData[author].totalSources += article.quoted_sources_confirmed || 0;
+        });
+
+        // Sort by story count descending - show ALL contributors
+        const sorted = Object.entries(contributorData)
+            .map(([name, data]) => {
+                const totalSources = data.totalSources;
+                const displayMeta = totalSources === 0 ? '' : `${totalSources} ${totalSources === 1 ? 'source' : 'sources'}`;
+
+                return {
+                    name,
+                    count: data.count,
+                    displayMeta
+                };
+            })
+            .sort((a, b) => b.count - a.count);
+
+        console.log('Contributors (filtered):', sorted.length);
+
+        // Update display - show ALL contributors (no limit)
+        const container = document.querySelector('.contributors-grid');
+        container.innerHTML = '';
+
+        sorted.forEach(contributor => {
+            const card = document.createElement('div');
+            card.className = 'contrib-card';
+            card.innerHTML = `
+                <div>
+                    <div class="contrib-name">${contributor.name}</div>
+                    <div class="contrib-meta">${contributor.displayMeta}</div>
+                </div>
+                <div class="contrib-count">${contributor.count}</div>
+            `;
+
+            // Add click handler to entire card
+            card.addEventListener('click', () => {
+                showContributorStories(contributor.name, articlesToUse);
+            });
+
+            container.appendChild(card);
+        });
+
+        console.log('✓ Contributors updated');
+    }
+
+    // Setup toggle button handlers on load
+    function setupContributorsToggle() {
+        const toggleButtons = document.querySelectorAll('#contributors .toggle-btn');
+        toggleButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Update active state
+                toggleButtons.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Update contributors with current selected date
+                const selectedDate = document.querySelector('.date-select').value;
+                updateContributors(selectedDate);
+            });
+        });
+    }
+
+    // Contributor stories modal functions
+    function showContributorStories(authorName, articlesPool) {
+        console.log('Showing stories for:', authorName);
+
+        // Filter articles by author
+        const authorArticles = articlesPool.filter(a => a.author === authorName);
+
+        // Sort by time (earliest first)
+        authorArticles.sort((a, b) => {
+            const timeA = a.time || '23:59';
+            const timeB = b.time || '23:59';
+            return timeA.localeCompare(timeB);
+        });
+
+        // Update modal content
+        document.getElementById('modalTitle').textContent = `${authorName}'s stories`;
+
+        const modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '';
+
+        authorArticles.forEach(article => {
+            const date = new Date(article.date + 'T00:00:00');
+            const dateStr = date.getDate() + ' ' + date.toLocaleDateString('en-GB', { month: 'short' });
+            const time = article.time || 'N/A';
+            const words = article.word_count || 0;
+            const sources = article.quoted_sources_confirmed || 0;
+
+            const storyDiv = document.createElement('div');
+            storyDiv.className = 'modal-story';
+            storyDiv.innerHTML = `
+                <div class="modal-story-headline">
+                    <a href="${article.url}" target="_blank">${article.headline}</a>
+                </div>
+                <div class="modal-story-meta">
+                    ${dateStr}, ${time} · ${words} words · ${sources} ${sources === 1 ? 'source' : 'sources'}
+                </div>
+            `;
+            modalBody.appendChild(storyDiv);
+        });
+
+        // Show modal
+        document.getElementById('contributorModal').classList.add('active');
+    }
+
+    function closeContributorModal() {
+        document.getElementById('contributorModal').classList.remove('active');
+    }
+
+    // Close modal on overlay click
+    document.getElementById('contributorModal').addEventListener('click', (e) => {
+        if (e.target.id === 'contributorModal') {
+            closeContributorModal();
+        }
+    });
+
+    // Sources modal functions
+    function showSourcesModal(article) {
+        const sources = article.source_evidence_confirmed || [];
+
+        if (sources.length === 0) return;
+
+        const modalBody = document.getElementById('sourcesModalBody');
+        modalBody.innerHTML = '';
+
+        const ul = document.createElement('ul');
+        ul.className = 'sources-list';
+
+        sources.forEach(source => {
+            const li = document.createElement('li');
+            li.textContent = source.name;
+            ul.appendChild(li);
+        });
+
+        modalBody.appendChild(ul);
+        document.getElementById('sourcesModal').classList.add('active');
+    }
+
+    function closeSourcesModal() {
+        document.getElementById('sourcesModal').classList.remove('active');
+    }
+
+    // Close sources modal on overlay click
+    document.getElementById('sourcesModal').addEventListener('click', (e) => {
+        if (e.target.id === 'sourcesModal') {
+            closeSourcesModal();
+        }
+    });
+
+    // Rhythm modal functions
+    function showRhythmModal(section, hour, articlesPool) {
+        // Filter articles by section and hour
+        const hourArticles = articlesPool.filter(article => {
+            if (!article.time) return false;
+            const articleHour = parseInt(article.time.split(':')[0]);
+            return article.display_category === section && articleHour === hour;
+        });
+
+        if (hourArticles.length === 0) return;
+
+        // Format hour range for title
+        const hourEnd = (hour + 1).toString().padStart(2, '0');
+        const hourStart = hour.toString().padStart(2, '0');
+        const title = `${section} · ${hourStart}:00–${hourEnd}:59`;
+
+        document.getElementById('rhythmModalTitle').textContent = title;
+
+        const modalBody = document.getElementById('rhythmModalBody');
+        modalBody.innerHTML = '';
+
+        hourArticles.forEach(article => {
+            const author = article.author || 'Unknown';
+            const words = article.word_count || 0;
+
+            const storyDiv = document.createElement('div');
+            storyDiv.className = 'rhythm-story';
+            storyDiv.innerHTML = `
+                <div class="rhythm-story-headline">
+                    <a href="${article.url}" target="_blank">${article.headline}</a>
+                </div>
+                <div class="rhythm-story-meta">
+                    ${author} · ${words} words
+                </div>
+            `;
+            modalBody.appendChild(storyDiv);
+        });
+
+        document.getElementById('rhythmModal').classList.add('active');
+    }
+
+    function closeRhythmModal() {
+        document.getElementById('rhythmModal').classList.remove('active');
+    }
+
+    // Close rhythm modal on overlay click
+    document.getElementById('rhythmModal').addEventListener('click', (e) => {
+        if (e.target.id === 'rhythmModal') {
+            closeRhythmModal();
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1596 @@
+{
+  "last_updated": "2026-01-22T10:18:52Z",
+  "summary": {
+    "total_articles": 87,
+    "regex_total": 74,
+    "groq_total": 89,
+    "matches": 48,
+    "groq_higher": 24,
+    "regex_higher": 15
+  },
+  "articles": [
+    {
+      "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Andoni Iraola"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Andoni Iraola looks ahead to Brighton test",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Andoni Iraola"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Andoni Iraola",
+          "quote_snippet": "They play very well",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "BREAKING: Oliver Glasner confirms Marc Guehi departure",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Oliver Glasner"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Oliver Glasner",
+          "quote_snippet": "My latest understanding is that a deal with Marc is in the final stages",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "BREAKING: Oliver Glasner set to leave Crystal Palace in June",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/oliver-glasner-set-to-leave-crystal-palace-in-june/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Oliver Glasner",
+          "quote_snippet": "for a new challenge",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Bournemouth Rugby Club head to Old Tiffinians",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-rugby-club-head-to-old-tiffinians/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Old Tiffinians"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Grant Hancox",
+          "quote_snippet": "For me, it\u2019s to play as much as physically possible",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Sara Armstrong",
+        "Brent Pease"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Vitality Stadium Spokesperson",
+          "quote_snippet": "This approach is common across professional football and is a necessary part of modern pitch management We appreciate that this may be noticeable to some residents and apologise in advance for any inconvenience it may cause The use of the sheets will be strictly time limited and removed as soon as pitch conditions allow We would like to thank residents for their understanding and ongoing support",
+          "type": "press_statement",
+          "gender": "unknown",
+          "uncertain": true
+        },
+        {
+          "name": "Sara Armstrong",
+          "quote_snippet": "I do support them I\u2019m a Cherries fan and they do so much in the community",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Can UPFs be avoided on a budget?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Rebecca Brown",
+        "Heather Smith",
+        "Sophia Lloyd"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Sophia Lloyd",
+          "quote_snippet": "I believe UPF's can be avoided even on the strictest of budgets",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Rebecca Brown",
+          "quote_snippet": "The easiest way to understand if you're eating something ultra processed is compare it if you were to make it yourself",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": -1
+    },
+    {
+      "headline": "Council ramp up action on online sales of age-restricted products",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Andrew Wilmot",
+        "James Wilder",
+        "Ali Jeffs"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Andrew Wilmot",
+          "quote_snippet": "I know that we're split between Dorset Council and BCP, but we've got over 2500 signatures in Dorset alone",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "James Wilder",
+          "quote_snippet": "A smartphone for a year 7, that's as prohibited as a vape or a cigarette or a bottle of alcohol",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Ali Jeffs",
+          "quote_snippet": "I think it's absolutely ludicrous that schools are saying students can't take phones because the majority of the people want to track their children to make sure they're safe",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Terry Dennis",
+        "Pete Ball",
+        "Dorset Demons"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -3
+    },
+    {
+      "headline": "Dorset police are appealing for dashcam footage of A356 accident",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-are-appealing-for-dashcam-footage-of-a356-accident/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Police Constable Jamie Randell"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Jamie Randell",
+          "quote_snippet": "We have been carrying out detailed enquiries into this incident and are keen to hear from any witnesses to the incident, or the manner of the vehicles involved prior to the collision, to please make contact with us",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Anthony Joshua"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Gabrielle Reid",
+          "quote_snippet": "That's when it stopped being just a hobby",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Homelessness: the psychological toll",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Riley Wallace"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Hotel staff take the plunge for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Abi Paler"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Abi Paler",
+          "quote_snippet": "looking at how much we raised I am proud of what we\u2019ve done",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Kevin Bales tells us how the dementia workshops came to be",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kevin-bales-tells-us-how-the-dementia-workshops-came-to-be/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Kevin"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Ian Williams",
+          "quote_snippet": "It's incredible for us to get to nine Match Racing World Championship titles",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Man charged after human remains found",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-charged-after-human-remains-found/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Wiltshire Police"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Detective Chief Inspector Neil Meade",
+          "quote_snippet": "Our thoughts are with Craigs family during this incredibly difficult time",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Military microphone business in Upton hit by tariffs",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/military-microphone-business-in-upton-hit-by-tariffs/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Ben Woodland"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Matt Reeds",
+        "Dan Wilson"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Matt Reeds",
+          "quote_snippet": "In the mid 90's I got into attending AFC Bournemouth games, and in the 98/99 season, me and a friend attended every game home and away, which resulted me in visiting 23 new grounds",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Dan Wilson",
+          "quote_snippet": "It makes it a really good day out going with Reedsy, it's good fun ground hopping and seeing new grounds",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Myles Haskell",
+        "Grace Ashton"
+      ],
+      "groq_count": 4,
+      "groq_sources": [
+        {
+          "name": "Andrew Mace",
+          "quote_snippet": "people actually talked to each other, and it was good vibes and a good time",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Jordan Lench",
+          "quote_snippet": "Ive felt that myselfIt is easy to feel isolated",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Jordan Lench and Myles Haskell",
+          "quote_snippet": "We hoped the club would become a place where people feel encouraged, motivated and welcome",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Grace Ashton",
+          "quote_snippet": "dropped off the face of a cliff",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 2
+    },
+    {
+      "headline": "Southern League Premier South preview",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
+      "regex_count": 1,
+      "regex_sources": [
+        "IK Hill"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "IK Hill",
+          "quote_snippet": "We've got to be winning now, we want to get as close to first place as we can",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "The fast fashion disconnect",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Marcjanna Augustyn",
+        "Kaouther Kooli"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Marcjanna Augustyn",
+          "quote_snippet": "One of our findings at the roundtable was that there is an urgent need for educating the consumer",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Kaouther Kooli",
+          "quote_snippet": "Decision makers are doing a lot of work, but looking at other actors in the textile and clothing ecosystem, are they keeping pace with these regulatory changes",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Sal",
+          "quote_snippet": "Vintage pieces are just so well made, there was thought put into them",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Tonight stitch and movie night",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Becca Parker"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Unknown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "regex_count": 1,
+      "regex_sources": [
+        "David Richmond-Coggan"
+      ],
+      "groq_count": 4,
+      "groq_sources": [
+        {
+          "name": "David Richmond-Coggan",
+          "quote_snippet": "I have a very full life supporting the RNLI, I am trying\u2026to pay back the debt that I owe them",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Alison Hulme",
+          "quote_snippet": "hope that local visitors will come and reflect on the people that lived on the streets that they regularly walk",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Sharon Gale",
+          "quote_snippet": "I'm hoping I can tell people who come to the exhibition a little bit about it",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Nyah Boston-Shears",
+          "quote_snippet": "This is about reflecting but also looking forward, what I loved about this exhibition is that they [the RNLI] were already thinking about engaging with the people here and now\u2026looking at the hyperlocal",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 3
+    },
+    {
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Ewan Corbett",
+          "quote_snippet": "With all the recent rule changes, it becomes increasingly more difficult to define which laws follow which definition, and with the referees becoming more scarce as the years go on and officiating over different competitions with different thresholds for what is a stoppage in a game",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Frederica Sindici",
+        "Chanelle Paris",
+        "Cindy Lou"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Frederica Sindici",
+          "quote_snippet": "I really believe in this idea and business, because I think it's the future. There is not enough resources for the world to just keep going on slaughtering animals.",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Cindy Lou",
+          "quote_snippet": "Even when there are vegan options, they don't tend to have a lot of effort put in to it. Its normally just a falafel or hummus. When there is so much you can do with vegetables.",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Chanelle Paris",
+          "quote_snippet": "We've been vegan for well over 30 years and have never had any health problems. In fact I only see benefits, there are so many foods with protein that are nutrient dense.",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "When education takes a stand",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Ivan Darley"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Young Cherries fall to disappointing defeat",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "AFC Bournemouth announce Alex Toth signing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-announce-alex-toth-signing/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "BREAKING NEWS: Missing Poole woman has been found",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-find-missing-woman/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "BREAKING NEWS: Previously wanted Christchurch man arrested.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-previously-wanted-christchurch-man-arrested/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Bashley take on Sporting Wessex in Quarter Final Clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-take-on-sporting-wessex-in-quarter-final-clash/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Harvey Bertrand"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Harvey Bertrand",
+          "quote_snippet": "I feel like the cup is extremely important not only for the players but for the fans and the club as well",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Helen Bleazard"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Helen Bleazard",
+          "quote_snippet": "We know the levels Man City are at and they\u2019re in the form of their life at the minute",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Sophie Quirk",
+          "quote_snippet": "I\u2019m just so proud of our performance",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Bournemouth Lions Set Themselves Up For Greatness",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Grant Hancox",
+        "Head Coach"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Grant Hancox",
+          "quote_snippet": "Credit to Old Tiffs, they are a great team who tested us in every area, and the scoreline shows that",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Will Croker",
+          "quote_snippet": "Saturday's performance was not perfect; it was one of grit and determination",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Cherries closing in on deal for Mandas",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Cherries denied three points late on by Brighton equaliser",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Cherries player ratings: Jimenez and Tavernier star in away performance",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "A protester",
+          "quote_snippet": "We are trying to express to the entire world, support us, we are fighting",
+          "type": "original",
+          "gender": "unknown",
+          "uncertain": true
+        },
+        {
+          "name": "Donald Trump",
+          "quote_snippet": "will come to their rescue",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Abbas Araghchi",
+          "quote_snippet": "turned violent and bloody",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 3
+    },
+    {
+      "headline": "Ex-Cherries Star Solanke returns to Spurs UCL Squad",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ex-cherries-star-solanke-returns-to-spurs-ucl-squad/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Thomas Frank"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Thomas Frank",
+          "quote_snippet": "Ive made the decision, it was not a nice decision to make, thats football so you have to make a decision",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Habitat management takes place at Talbot Woodland",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Martha Searle"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Hamworthy Recreation Play off push continues",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hamworthy-recreation-play-off-push-continues/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Chris Senior"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Chris Senior",
+          "quote_snippet": "In terms of what we need it is just about being consistent, if we can be consistent until the end of the season who knows where we will go",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "High risk offenders unit bolsters victim protection measures",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/high-risk-offenders-unit-bolsters-victim-protection-measures/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Detective Inspector McCorkell"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Detective Inspector Marcus McCorkell",
+          "quote_snippet": "evidence shows that women and girls are disproportionately impacted by violent and harassing behaviour",
+          "type": "press_statement",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Jadien Davies",
+          "quote_snippet": "If these governments can strip away the rights they already have what stops them from stripping away more",
+          "type": "original",
+          "gender": "nonbinary",
+          "uncertain": false
+        },
+        {
+          "name": "Evelyn Eales",
+          "quote_snippet": "It is really concerning for me and the people I care about most",
+          "type": "original",
+          "gender": "nonbinary",
+          "uncertain": false
+        },
+        {
+          "name": "Robin",
+          "quote_snippet": "no quote available in the text, but since the instruction is to provide the quote snippet without quotation marks, the actual quote is not present, however the name is mentioned with a story",
+          "type": "original",
+          "gender": "female",
+          "uncertain": true
+        }
+      ],
+      "difference": 3
+    },
+    {
+      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "The Bournemouth Oaks owner",
+          "quote_snippet": "yes, there\u2019s been a rise in interest in Bournemouth. We\u2019re here to push the boundaries and grow the sport.",
+          "type": "original",
+          "gender": "unknown",
+          "uncertain": true
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Its national cheese lovers day: Brie-lieve it or not",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brie-lieve-it-or-not-its-national-cheese-lovers-day/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Local care home combats loneliness on Blue Monday",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Jess"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Jess",
+          "quote_snippet": "It\u2019s sad but it\u2019s the truth And that\u2019s the joy of my role I try and help to stop that from happening",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Karen",
+          "quote_snippet": "It can be very lonely caring for someone at home",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Barbara Adams",
+          "quote_snippet": "It\u2019s good You can join in if you\u2019re that brave I sing and clap along I think it\u2019s good fun",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 2
+    },
+    {
+      "headline": "New Greek restaurant set to open in Wallisdown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/new-greek-restaurant-set-to-open-in-wallisdown/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Angela Ntente"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Poole swimmers set for national spotlight after Commonwealth Games trials qualification",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-swimmers-set-for-national-spotlight-after-commonwealth-games-trials-qualification/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Halle Hariss",
+        "Chris Neilson"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Freddie Beasley",
+          "quote_snippet": "It's my first one, it means I can see what I can do",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Halle Hariss",
+          "quote_snippet": "I'm excited, there will be allot more senior swimmers there, I will be able to see them competing in all the finals, it feels like a goal I can reach",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Chris Neilson",
+          "quote_snippet": "They started here day one, doing the training following the pathway",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Southampton look to end winless streak against Sheffield United",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Jake Quickenden"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Jake Quickenden",
+          "quote_snippet": "I think the students will enjoy this today, and obviously with a lot of media students here since this is the industry that they really want to get into",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Kit",
+          "quote_snippet": "I was terrified before the show, and I was texting my mum and dad",
+          "type": "original",
+          "gender": "unknown",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Sweet receives first professional contract",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Adam Carty"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Adam Carty",
+          "quote_snippet": "Having seen Francesca perform across the 3 tiers we were really pleased to trial her in November and December",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Francesca Sweet",
+          "quote_snippet": "I\u2019m really excited to join Hampshire, everyone at the club has been very welcoming while I\u2019ve been trialling",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Wimborne trip to Plymouth postponed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Witnesses appeal following burglary in Weymouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/witness-appeal-following-burglary-in-weymouth/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Police Constable Billy Taylor"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Billy Taylor",
+          "quote_snippet": "An investigation is underway and an examination of the scene has been carried out I am appealing to anyone who has seen or heard suspicious activity in the area between the relevant time period to please come forward",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Arcade Jewellers"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Kane",
+          "quote_snippet": "They have padlocks on their gate but about a week ago the same thing happened where they were able to bend the gates",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Shahn",
+          "quote_snippet": "If there were more cameras outside of the shops, these things would be easier to solve",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Matthew Sim",
+          "quote_snippet": "I have never experienced something like yesterday",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 2
+    },
+    {
+      "headline": "20 year-old man on trial for manslaughter following stabbing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "BREAKING NEWS: Cherries agree deal in principle for Rayan",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Mark McAdam"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Daniel Walker",
+          "quote_snippet": "we are continuing to investigate this matter, and I would urge anyone who attended the game and witnessed the assault or has information of what happened to please contact us if you haven\u2019t done so already",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Daniel Walker",
+          "quote_snippet": "we are continuing to investigate this matter, and I would urge anyone who attended the game and witnessed the assault or has information of what happened to please contact us if you haven\u2019t done so already",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Bashley through to semi-finals",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Head Coach",
+        "Kieran Filmer"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Kieran Filmer",
+          "quote_snippet": "Really pleased, I think the coaching team are pleased considering the conditions and the rotated side",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": -1
+    },
+    {
+      "headline": "Boscombe community wears their visibility cloaks and gets poetical",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boscombe-community-wears-their-visibility-cloaks-and-gets-poetical/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Ri Baroche",
+        "Claire Hillier"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -2
+    },
+    {
+      "headline": "Diverse Abilities launch new adult soft play fundraiser",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Fran"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Fran Potton",
+          "quote_snippet": "Adults can still have fun, we want to install that in everyone and let that big kid energy out",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Dorset Devils, litter picking group, incorporate youth volunteering",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-devils-litter-picking-group-incorporate-youth-volunteering/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Dorset Police appealing for witnesses for Sherborne Burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Police Constable Jamie Randell"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Jamie Randell",
+          "quote_snippet": "We are carrying out a number of enquiries into this burglary and I am keen to hear from any witnesses with information that might assist our investigation",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Dorset Police issuing witness appeal following robbery in Poole",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-issuing-witness-appeal-following-robbery-in-poole/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Detective Constable Niki Edwards"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Niki Edwards",
+          "quote_snippet": "We are continuing to investigate what happened and from our enquiries, we understand there were a number of people in the area of the store around the relevant time. I would urge any witnesses who have not already spoken to police to please contact us.",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Dorset Police release an image appeal following burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-release-an-image-appeal-following-burglary/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Dorset Police"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -1
+    },
+    {
+      "headline": "Driver dies after sustained injuries from three-car crash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driver-dies-after-sustained-injuries-from-three-car-crash/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Paul Hind",
+          "quote_snippet": "owe it to them to conduct a thorough investigation",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Flood Warning for Poole and Christchurch Harbour",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "BCP Council",
+          "quote_snippet": "High tides, strong winds and large waves are expected to cause flooding tomorrow morning at Poole and Christchurch Harbours",
+          "type": "press_statement",
+          "gender": "unknown",
+          "uncertain": true
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Former Cherries favourite Solanke scores on UCL return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-cherries-favourite-solanke-scores-on-ucl-return/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Dominic Solanke"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Dominic Solanke",
+          "quote_snippet": "Incredible Even just starting the game was immense I think that was my first start since last season",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Hampshire\u2019s Dawson set for ODI return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Local Councillor voices concern over Lidl redevelopment",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-councillor-voices-concern-over-lidl-redevelopment/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Joe Salmon",
+          "quote_snippet": "We are watching town centre\u2019s die up and down the country, and I think this is how they are killed through applications like this",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Mark McAdam speaks Cherries transfers",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mark-mcadam-speaks-cherries-transfers/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Mark McAdam"
+      ],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Mark McAdam",
+          "quote_snippet": "We love the chaos of the window",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Dan Ford"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Dan Ford",
+          "quote_snippet": "David and Guy are true speedway people and brilliant backers off riders at all levels",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Tulisa Broom",
+          "quote_snippet": "Yes, now Nigel can still say please welcome our Poole Wessex marine pirates",
+          "type": "social_media",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "chateaulabriance",
+          "quote_snippet": "Thank goodness for David and Guy at Wessex being such great supporters of the club",
+          "type": "social_media",
+          "gender": "unknown",
+          "uncertain": true
+        }
+      ],
+      "difference": 2
+    },
+    {
+      "headline": "Poole Sailors win first SailGP Race",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-sailors-win-first-sailgp-race/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Dylan Fletcher",
+        "Three Poole",
+        "Hannah Mills"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Dylan Fletcher",
+          "quote_snippet": "Absolutely incredible. This is why we came to Perth.",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Hannah Mills",
+          "quote_snippet": "Honestly best day ever, it\u2019s insane, it doesn\u2019t get much better than this.",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Tom Slingsby",
+          "quote_snippet": "amazing. It was phenomenal racing.",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "The Pantry Boscombe provides education amidst cost of living crisis.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-pantry-boscombe-provides-education-amidst-cost-of-living-crisis/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Daryl",
+        "George"
+      ],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": -2
+    },
+    {
+      "headline": "The Talented Mr. Ripley is debuting at Poole Lighthouse",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-talented-mr-ripley-is-debuting-at-poole-lighthouse/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 1,
+      "groq_sources": [
+        {
+          "name": "Mark Leipacher",
+          "quote_snippet": "What we\u2019re doing is honouring the origins of the character, which will please people who know and love the book",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "The rise of walking football in Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-walking-football-in-bournemouth/",
+      "regex_count": 2,
+      "regex_sources": [
+        "Matt Stooleworthy",
+        "Dylan Brown"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Alan Sparks",
+          "quote_snippet": "We started with around 30 members, now there\u2019s something like 250 with about 50 to 60 being the women\u2019s teams",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Matt Stooleworthy",
+          "quote_snippet": "I cant speak highly enough of Bournemouth Walking Football Club or the game itself",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Dylan Brown",
+          "quote_snippet": "I wanted to get a bit fitter, get a bit more active",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "Wonderkid Mayes hits record breaking 191",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Younger Men should embrace gardening, say Bournemouth nursery",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/younger-men-should-embrace-gardening-say-bournemouth-nursery/",
+      "regex_count": 3,
+      "regex_sources": [
+        "Marc Rosenberg",
+        "Andy",
+        "Sandi Marshall"
+      ],
+      "groq_count": 3,
+      "groq_sources": [
+        {
+          "name": "Marc Rosenberg",
+          "quote_snippet": "There was a time when the horticulture industry was seen as quite a flowery profession that is not a serious career, when in fact if you have the right qualifications, you can have a very good career",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Sandi Marshall",
+          "quote_snippet": "There was one volunteer who would be in tears when she got out of the car because of the anxiety, but then she started coming once or twice a week, and now she has started her own business",
+          "type": "original",
+          "gender": "female",
+          "uncertain": false
+        },
+        {
+          "name": "Andy",
+          "quote_snippet": "No matter how tough life might feel right now, it\u2019s never too late to ask for support",
+          "type": "press_statement",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 0
+    },
+    {
+      "headline": "Audi F1 announce arrival to grid and reveal livery",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/audi-f1-announce-arrival-to-grid-and-reveal-livery/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Bournemouth businesses call for cuts to VAT rates",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
+      "regex_count": 1,
+      "regex_sources": [
+        "Adam"
+      ],
+      "groq_count": 2,
+      "groq_sources": [
+        {
+          "name": "Adam Lowe",
+          "quote_snippet": "It is early days and we are not sure whether people really know we are here yet, but we hope the footfall will increase, and really all this about business rates is a big learning curve for all of us as we start out and learn lessons from the people who came before us",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        },
+        {
+          "name": "Paitin Du Plooy",
+          "quote_snippet": "Businesses did really well during COVID when that relief was given",
+          "type": "original",
+          "gender": "male",
+          "uncertain": false
+        }
+      ],
+      "difference": 1
+    },
+    {
+      "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Local six-a-side team head to International Tournament",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-team-intnl-tournament/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    },
+    {
+      "headline": "Southampton end winless run with victory over Sheffield United",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+      "regex_count": 0,
+      "regex_sources": [],
+      "groq_count": 0,
+      "groq_sources": [],
+      "difference": 0
+    }
+  ]
+}

@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUzz Article Metrics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --buzz-red: #c41230;
+            --ink: #1a1a1a;
+            --ink-muted: #767676;
+            --paper: #f8f6f1;
+            --paper-dark: #edeae3;
+            --white: #ffffff;
+            --female: #7c3aed;
+            --male: #0891b2;
+            --unknown: #9ca3af;
+            --success: #1a7f4b;
+            --warning: #b45309;
+            --danger: #c41230;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        /* HEADER - Dark with sticky nav */
+        .header {
+            background: var(--ink);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 3px solid var(--buzz-red);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            height: 32px;
+        }
+
+        .header-label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .date-selector-area {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .date-selector-area label {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .date-selector-area select {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .date-selector-area select option {
+            background: var(--ink);
+            color: var(--white);
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            overflow-x: auto;
+            gap: 0.5rem;
+        }
+
+        .nav::-webkit-scrollbar {
+            height: 0;
+        }
+
+        .nav a {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .nav a:hover {
+            color: var(--white);
+        }
+
+        .nav a.active {
+            color: var(--white);
+            border-bottom-color: var(--buzz-red);
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* Section headers */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--ink);
+        }
+
+        .section-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .section-sub {
+            font-size: 0.9rem;
+            color: var(--ink-muted);
+        }
+
+        /* Hero stats grid */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-card.featured {
+            grid-column: span 4;
+            background: var(--ink);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--ink);
+        }
+
+        .stat-card.featured .stat-value {
+            font-size: 5rem;
+            color: var(--white);
+        }
+
+        .stat-label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-muted);
+            margin-top: 0.5rem;
+        }
+
+        .stat-card.featured .stat-label {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.75rem;
+        }
+
+        /* Analysis grid */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .card-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* Gender bars */
+        .gender-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .gender-label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            width: 70px;
+            color: var(--ink);
+        }
+
+        .gender-track {
+            flex: 1;
+            height: 18px;
+            background: var(--paper);
+            border-radius: 9px;
+            overflow: hidden;
+        }
+
+        .gender-bar {
+            height: 100%;
+            border-radius: 9px;
+            transition: width 0.3s;
+        }
+
+        .gender-bar.female {
+            background: var(--female);
+        }
+
+        .gender-bar.male {
+            background: var(--male);
+        }
+
+        .gender-bar.unknown {
+            background: var(--unknown);
+        }
+
+        .gender-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            width: 75px;
+            text-align: right;
+            color: var(--ink);
+        }
+
+        .gender-note {
+            font-size: 0.7rem;
+            font-style: italic;
+            color: var(--ink-muted);
+            margin-top: 0.75rem;
+        }
+
+        /* Section breakdown */
+        .section-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--paper-dark);
+        }
+
+        .section-item:last-child {
+            border-bottom: none;
+        }
+
+        .section-name {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .section-meta {
+            font-size: 0.75rem;
+            color: var(--ink-muted);
+            margin-top: 0.15rem;
+        }
+
+        .section-count {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--ink);
+        }
+
+        /* Heatmap */
+        .heatmap {
+            display: grid;
+            grid-template-columns: 60px repeat(13, 1fr);
+            gap: 4px;
+            overflow-x: auto;
+        }
+
+        .hm-header {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-align: center;
+            color: var(--ink-muted);
+            padding: 0.25rem 0;
+        }
+
+        .hm-label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            color: var(--ink);
+        }
+
+        .hm-cell {
+            aspect-ratio: 1;
+            border-radius: 3px;
+            background: var(--paper-dark);
+            min-height: 18px;
+        }
+
+        .hm-cell.l1 {
+            background: rgba(196,18,48,0.3);
+        }
+
+        .hm-cell.l2 {
+            background: rgba(196,18,48,0.6);
+        }
+
+        .hm-cell.l3 {
+            background: var(--buzz-red);
+        }
+
+        .hm-legend {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.75rem;
+            font-size: 0.7rem;
+            color: var(--ink-muted);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .legend-swatch {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        /* Targets table */
+        .targets-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .targets-table th {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            text-align: left;
+            padding: 1rem;
+            background: var(--paper);
+            border-bottom: 2px solid var(--paper-dark);
+        }
+
+        .targets-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--paper);
+            font-size: 0.9rem;
+            color: var(--ink);
+        }
+
+        .targets-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Stories table */
+        .table-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .table-control {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .table-control label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--ink-muted);
+        }
+
+        .table-control select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--paper-dark);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            background: var(--white);
+        }
+
+        .stories-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .stories-table th {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            text-align: left;
+            padding: 1rem;
+            background: var(--paper);
+            border-bottom: 2px solid var(--paper-dark);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .stories-table th:hover {
+            background: var(--paper-dark);
+        }
+
+        .stories-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--paper);
+            font-size: 0.9rem;
+            color: var(--ink);
+        }
+
+        .stories-table tr:hover {
+            background: rgba(196,18,48,0.02);
+        }
+
+        .story-headline {
+            font-weight: 500;
+            color: var(--ink);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.15rem;
+        }
+
+        .story-headline:hover {
+            color: var(--buzz-red);
+            text-decoration: underline;
+        }
+
+        .story-time {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 500;
+        }
+
+        .story-section {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--buzz-red);
+        }
+
+        .time-good {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .time-warning {
+            color: var(--warning);
+            font-weight: 600;
+        }
+
+        .time-late {
+            color: var(--danger);
+            font-weight: 600;
+        }
+
+        .sources-clickable {
+            color: var(--buzz-red);
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .sources-clickable:hover {
+            color: var(--ink);
+        }
+
+        /* Contributors */
+        .contributors-controls {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .toggle-btn {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--paper-dark);
+            background: var(--white);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            border-color: var(--ink);
+        }
+
+        .toggle-btn.active {
+            background: var(--ink);
+            color: var(--white);
+            border-color: var(--ink);
+        }
+
+        .contributors-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .contributors-table th {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-muted);
+            text-align: left;
+            padding: 1rem;
+            background: var(--paper);
+            border-bottom: 2px solid var(--paper-dark);
+        }
+
+        .contributors-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--paper);
+            font-size: 0.9rem;
+            color: var(--ink);
+        }
+
+        .contributor-name-link {
+            color: var(--buzz-red);
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contributor-name-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .modal-content {
+            background: var(--white);
+            margin: 50px auto;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--paper);
+        }
+
+        .modal-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .modal-close {
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--ink-muted);
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--ink);
+        }
+
+        .source-item {
+            margin-bottom: 1.25rem;
+            padding: 1rem;
+            background: var(--paper);
+            border-radius: 6px;
+        }
+
+        .source-name {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 0.35rem;
+        }
+
+        .source-gender {
+            font-size: 0.8rem;
+            color: var(--ink-muted);
+        }
+
+        .contributor-story-item {
+            margin-bottom: 1rem;
+            padding: 0.85rem;
+            background: var(--paper);
+            border-radius: 6px;
+        }
+
+        .contributor-story-link {
+            color: var(--buzz-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contributor-story-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--ink);
+            color: rgba(255,255,255,0.6);
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer p {
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .expect-box {
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .expect-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: rgba(255,255,255,0.4);
+            margin-bottom: 0.5rem;
+        }
+
+        .expect-list {
+            list-style: none;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .expect-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .footnote {
+            font-size: 0.75rem;
+            color: var(--ink-muted);
+            font-style: italic;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .analysis-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                flex-wrap: wrap;
+            }
+
+            .date-selector-area {
+                order: 3;
+                width: 100%;
+                margin-top: 0.5rem;
+            }
+
+            .nav {
+                overflow-x: auto;
+            }
+
+            .section-title {
+                font-size: 1.35rem;
+            }
+
+            .hero-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+
+            .stat-card.featured {
+                grid-column: span 2;
+            }
+
+            .stat-value {
+                font-size: 2.25rem;
+            }
+
+            .stat-card.featured .stat-value {
+                font-size: 3.5rem;
+            }
+
+            .stat-card {
+                padding: 1rem;
+            }
+
+            .heatmap {
+                overflow-x: auto;
+            }
+
+            .stories-table {
+                font-size: 0.8rem;
+            }
+
+            .stories-table th,
+            .stories-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            .section-title {
+                font-size: 1.15rem;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .stat-card.featured .stat-value {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="header-top">
+            <div class="logo-area">
+                <img src="cropped-Buzz-logo-white.png" alt="BUzz" class="logo">
+                <span class="header-label">Article Metrics</span>
+            </div>
+            <div class="date-selector-area">
+                <label>Showing:</label>
+                <select id="dateSelect">
+                    <option value="all">Select dates</option>
+                </select>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#glance" class="active">At a glance</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#targets">Targets</a>
+            <a href="#stories">Stories</a>
+            <a href="#contributors">Contributors</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- AT A GLANCE -->
+    <section id="glance" class="section">
+        <div class="section-header">
+            <h2 class="section-title">At a glance</h2>
+            <span class="section-sub" id="glanceSub">Today's output</span>
+        </div>
+        <div class="hero-grid">
+            <div class="stat-card featured">
+                <div class="stat-value" id="wordsCount">0</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="storiesCount">0</div>
+                <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="sourcesCount">0</div>
+                <div class="stat-label">Sources</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="imagesCount">0</div>
+                <div class="stat-label">Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="embedsCount">0</div>
+                <div class="stat-label">Embeds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALYSIS -->
+    <section id="analysis" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Analysis</h2>
+        </div>
+        <div class="analysis-grid">
+            <!-- Gender -->
+            <div class="card">
+                <h3 class="card-title">The Inclusive Project</h3>
+                <div id="genderBars"></div>
+                <p class="gender-note">Based on first-name analysis. May not reflect individuals' stated gender identity.</p>
+            </div>
+
+            <!-- Sections -->
+            <div class="card">
+                <h3 class="card-title">By Section</h3>
+                <div id="sectionBreakdown"></div>
+            </div>
+
+            <!-- Heatmap -->
+            <div class="card">
+                <h3 class="card-title">Publication Rhythm</h3>
+                <div class="heatmap" id="heatmapGrid"></div>
+                <div class="hm-legend">
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background:var(--paper-dark);"></div>
+                        <span>None</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background:rgba(196,18,48,0.3);"></div>
+                        <span>1</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background:rgba(196,18,48,0.6);"></div>
+                        <span>2</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background:var(--buzz-red);"></div>
+                        <span>3+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGETS -->
+    <section id="targets" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Targets</h2>
+            <span class="section-sub">Editorial expectations</span>
+        </div>
+        <table class="targets-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Stories</th>
+                    <th>First Published</th>
+                    <th>Below 350w</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody id="targetsBody"></tbody>
+        </table>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Stories</h2>
+            <span class="section-sub" id="storiesSub">All stories</span>
+        </div>
+        <div class="table-controls">
+            <div class="table-control">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="time">Time</option>
+                    <option value="section">Section</option>
+                    <option value="words">Word Count</option>
+                    <option value="sources">Sources</option>
+                </select>
+            </div>
+            <div class="table-control">
+                <select id="sectionFilter">
+                    <option value="all">All Sections</option>
+                </select>
+            </div>
+        </div>
+        <div style="overflow-x: auto;">
+            <table class="stories-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortStoriesTable('time')">Time</th>
+                        <th onclick="sortStoriesTable('section')">Section</th>
+                        <th onclick="sortStoriesTable('headline')">Headline</th>
+                        <th onclick="sortStoriesTable('author')">Author</th>
+                        <th onclick="sortStoriesTable('words')">Words</th>
+                        <th onclick="sortStoriesTable('sources')">Sources</th>
+                        <th onclick="sortStoriesTable('images')">Images</th>
+                    </tr>
+                </thead>
+                <tbody id="storiesBody"></tbody>
+            </table>
+        </div>
+        <p class="footnote">Click source count to view evidence. Headlines link to articles.</p>
+    </section>
+
+    <!-- CONTRIBUTORS -->
+    <section id="contributors" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Contributors</h2>
+        </div>
+        <div class="contributors-controls">
+            <button class="toggle-btn active" onclick="setContributorsPeriod('today')">Today</button>
+            <button class="toggle-btn" onclick="setContributorsPeriod('week')">This Week</button>
+        </div>
+        <table class="contributors-table">
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Stories</th>
+                    <th>Avg Sources</th>
+                    <th>Source Diversity</th>
+                    <th>Met 350w</th>
+                </tr>
+            </thead>
+            <tbody id="contributorsBody"></tbody>
+        </table>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+        <p>Quoted source counts are estimates using pattern matching with NLP verification.</p>
+        <p>Gender determined from first names via gender-guesser library.</p>
+        <div class="expect-box">
+            <div class="expect-title">Editorial Expectations</div>
+            <ul class="expect-list">
+                <li>• Team target: 12 stories per day</li>
+                <li>• Sourcing: 2+ quoted sources per story</li>
+                <li>• Diversity: Gender parity (50:50 target)</li>
+                <li>• Word count: 350 minimum</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- Sources Modal -->
+<div id="sourcesModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Quoted Sources</h3>
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+        </div>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Contributor Modal -->
+<div id="contributorModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="contributorModalTitle"></h3>
+            <span class="modal-close" onclick="closeContributorModal()">&times;</span>
+        </div>
+        <div id="contributorModalBody"></div>
+    </div>
+</div>
+
+<script>
+    // Global data
+    let metricsData = null;
+    let filteredArticles = [];
+    let currentSort = 'time';
+    let sortAscending = false;
+    let contributorsPeriod = 'today';
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+        loadData();
+        setupSmoothScroll();
+        setupScrollSpy();
+    });
+
+    // Smooth scroll
+    function setupSmoothScroll() {
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    }
+
+    // Scroll spy
+    function setupScrollSpy() {
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const headerHeight = document.querySelector('.header').offsetHeight;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    }
+
+    async function loadData() {
+        try {
+            const response = await fetch('./metrics_verified.json');
+            metricsData = await response.json();
+            initializeDashboard();
+        } catch (error) {
+            console.error('Error loading data:', error);
+            alert('Failed to load metrics data. Please check the console for details.');
+        }
+    }
+
+    function initializeDashboard() {
+        populateDateSelector();
+
+        const today = new Date().toISOString().split('T')[0];
+        const availableDates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+        const defaultDate = availableDates.includes(today) ? today : availableDates[0];
+
+        document.getElementById('dateSelect').value = defaultDate;
+        updateDashboard(defaultDate);
+    }
+
+    function populateDateSelector() {
+        const dateSelect = document.getElementById('dateSelect');
+        const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+
+        dates.forEach(date => {
+            const option = document.createElement('option');
+            option.value = date;
+            const d = new Date(date);
+            option.textContent = d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+            dateSelect.appendChild(option);
+        });
+
+        dateSelect.addEventListener('change', (e) => {
+            updateDashboard(e.target.value);
+        });
+    }
+
+    function updateDashboard(selectedDate) {
+        if (selectedDate === 'all') {
+            filteredArticles = metricsData.articles;
+        } else {
+            filteredArticles = metricsData.articles.filter(a => a.date === selectedDate);
+        }
+
+        updateAtGlance();
+        updateAnalysis();
+        updateTargets();
+        updateStories();
+        updateContributors();
+    }
+
+    function updateAtGlance() {
+        const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
+        const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
+        const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
+        const totalEmbeds = filteredArticles.reduce((sum, a) => sum + ((a.video_embeds || 0) + (a.audio_embeds || 0)), 0);
+        const avgSources = filteredArticles.length > 0 ? (totalSources / filteredArticles.length).toFixed(1) : '0.0';
+
+        document.getElementById('wordsCount').textContent = totalWords.toLocaleString();
+        document.getElementById('storiesCount').textContent = filteredArticles.length;
+        document.getElementById('sourcesCount').textContent = totalSources;
+        document.getElementById('imagesCount').textContent = totalImages;
+        document.getElementById('embedsCount').textContent = totalEmbeds;
+        document.getElementById('avgSources').textContent = `${avgSources} avg per story`;
+    }
+
+    function updateAnalysis() {
+        // Gender bars
+        const genderCounts = { male: 0, female: 0, they: 0, unknown: 0 };
+
+        filteredArticles.forEach(article => {
+            const sources = article.source_evidence_confirmed || [];
+            sources.forEach(source => {
+                const gender = source.gender || 'unknown';
+                if (genderCounts.hasOwnProperty(gender)) {
+                    genderCounts[gender]++;
+                } else {
+                    genderCounts.unknown++;
+                }
+            });
+        });
+
+        const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
+
+        const genderBarsHTML = `
+            <div class="gender-row">
+                <span class="gender-label">Women</span>
+                <div class="gender-track">
+                    <div class="gender-bar female" style="width: ${total > 0 ? (genderCounts.female / total * 100) : 0}%"></div>
+                </div>
+                <span class="gender-value">${total > 0 ? Math.round(genderCounts.female / total * 100) : 0}% (${genderCounts.female})</span>
+            </div>
+            <div class="gender-row">
+                <span class="gender-label">Men</span>
+                <div class="gender-track">
+                    <div class="gender-bar male" style="width: ${total > 0 ? (genderCounts.male / total * 100) : 0}%"></div>
+                </div>
+                <span class="gender-value">${total > 0 ? Math.round(genderCounts.male / total * 100) : 0}% (${genderCounts.male})</span>
+            </div>
+            <div class="gender-row">
+                <span class="gender-label">They/Them</span>
+                <div class="gender-track">
+                    <div class="gender-bar unknown" style="width: ${total > 0 ? (genderCounts.they / total * 100) : 0}%"></div>
+                </div>
+                <span class="gender-value">${total > 0 ? Math.round(genderCounts.they / total * 100) : 0}% (${genderCounts.they})</span>
+            </div>
+            <div class="gender-row">
+                <span class="gender-label">Unknown</span>
+                <div class="gender-track">
+                    <div class="gender-bar unknown" style="width: ${total > 0 ? (genderCounts.unknown / total * 100) : 0}%"></div>
+                </div>
+                <span class="gender-value">${total > 0 ? Math.round(genderCounts.unknown / total * 100) : 0}% (${genderCounts.unknown})</span>
+            </div>
+        `;
+        document.getElementById('genderBars').innerHTML = genderBarsHTML;
+
+        // Section breakdown
+        const sectionData = {};
+        filteredArticles.forEach(article => {
+            const section = article.display_category || article.category_normalised || 'Unknown';
+            if (!sectionData[section]) {
+                sectionData[section] = { count: 0, words: 0, sources: 0 };
+            }
+            sectionData[section].count++;
+            sectionData[section].words += article.word_count || 0;
+            sectionData[section].sources += article.quoted_sources_confirmed || 0;
+        });
+
+        let sectionHTML = '';
+        Object.entries(sectionData).sort((a, b) => b[1].count - a[1].count).forEach(([section, data]) => {
+            const sourcesLabel = data.sources === 1 ? 'source' : 'sources';
+            sectionHTML += `
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">${section}</div>
+                        <div class="section-meta">${data.words.toLocaleString()} words · ${data.sources} ${sourcesLabel}</div>
+                    </div>
+                    <div class="section-count">${data.count}</div>
+                </div>
+            `;
+        });
+        document.getElementById('sectionBreakdown').innerHTML = sectionHTML;
+
+        // Heatmap
+        const rhythmData = {};
+        const sections = ['General News', 'Sport'];
+        sections.forEach(s => rhythmData[s] = Array(13).fill(0));
+
+        filteredArticles.forEach(article => {
+            if (!article.time) return;
+            const hour = parseInt(article.time.split(':')[0]);
+            if (hour < 6 || hour > 18) return;
+
+            const section = article.display_category || article.category_normalised;
+            if (rhythmData[section]) {
+                rhythmData[section][hour - 6]++;
+            }
+        });
+
+        let heatmapHTML = '<div></div>';
+        for (let i = 6; i <= 18; i++) {
+            heatmapHTML += `<div class="hm-header">${String(i).padStart(2, '0')}</div>`;
+        }
+
+        Object.entries(rhythmData).forEach(([section, counts]) => {
+            heatmapHTML += `<div class="hm-label">${section}</div>`;
+            counts.forEach(count => {
+                let levelClass = '';
+                if (count === 1) levelClass = 'l1';
+                else if (count === 2) levelClass = 'l2';
+                else if (count >= 3) levelClass = 'l3';
+                heatmapHTML += `<div class="hm-cell ${levelClass}"></div>`;
+            });
+        });
+        document.getElementById('heatmapGrid').innerHTML = heatmapHTML;
+    }
+
+    function getTrafficLight(time) {
+        if (!time) return '';
+        const hour = parseInt(time.split(':')[0]);
+        const minute = parseInt(time.split(':')[1]);
+        const totalMinutes = hour * 60 + minute;
+
+        if (totalMinutes < 600) return 'time-good'; // Before 10:00
+        if (totalMinutes < 720) return 'time-warning'; // 10:00-12:00
+        return 'time-late'; // After 12:00
+    }
+
+    function updateTargets() {
+        const tbody = document.getElementById('targetsBody');
+        tbody.innerHTML = '';
+
+        const dailyStats = metricsData.daily_stats || [];
+        dailyStats.slice().reverse().forEach(day => {
+            const dayArticles = metricsData.articles.filter(a => a.date === day.date);
+            const genderCounts = { male: 0, female: 0 };
+
+            dayArticles.forEach(article => {
+                const sources = article.source_evidence_confirmed || [];
+                sources.forEach(source => {
+                    if (source.gender === 'male') genderCounts.male++;
+                    if (source.gender === 'female') genderCounts.female++;
+                });
+            });
+
+            const total = genderCounts.male + genderCounts.female;
+            const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+            const meets5050 = femalePercent >= 50;
+
+            const row = document.createElement('tr');
+            const date = new Date(day.date);
+            const dateStr = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+            const trafficLightClass = getTrafficLight(day.first_publish_time);
+            const timeStr = day.first_publish_time
+                ? `<span class="${trafficLightClass}">${day.first_publish_time}</span>`
+                : 'N/A';
+
+            row.innerHTML = `
+                <td>${dateStr}</td>
+                <td>${day.article_count}/12 ${day.meets_target ? '✓' : ''}</td>
+                <td>${timeStr}</td>
+                <td>${day.below_minimum_count || 0}</td>
+                <td>${femalePercent}% F ${meets5050 ? '✓' : ''}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    function updateStories() {
+        const sectionFilter = document.getElementById('sectionFilter');
+        const currentFilter = sectionFilter.value;
+        sectionFilter.innerHTML = '<option value="all">All Sections</option>';
+
+        const sections = [...new Set(filteredArticles.map(a => a.category_normalised))];
+        sections.forEach(section => {
+            const option = document.createElement('option');
+            option.value = section;
+            option.textContent = section;
+            sectionFilter.appendChild(option);
+        });
+        sectionFilter.value = currentFilter;
+
+        renderStoriesTable();
+    }
+
+    function renderStoriesTable() {
+        const sectionFilter = document.getElementById('sectionFilter').value;
+        let articles = filteredArticles;
+
+        if (sectionFilter !== 'all') {
+            articles = articles.filter(a => a.category_normalised === sectionFilter);
+        }
+
+        articles = sortArticles(articles, currentSort, sortAscending);
+
+        const tbody = document.getElementById('storiesBody');
+        tbody.innerHTML = '';
+
+        articles.forEach(article => {
+            const row = document.createElement('tr');
+            const sourceCount = article.quoted_sources_confirmed || 0;
+            const sourcesCell = sourceCount > 0
+                ? `<span class="sources-clickable" onclick="showSources('${article.id}')">${sourceCount}</span>`
+                : sourceCount;
+
+            row.innerHTML = `
+                <td class="story-time">${article.time || 'N/A'}</td>
+                <td><span class="story-section">${article.category_normalised || 'Unknown'}</span></td>
+                <td><a href="${article.url}" target="_blank" class="story-headline">${article.headline}</a></td>
+                <td>${article.author || 'Unknown'}</td>
+                <td>${article.word_count || 0}</td>
+                <td>${sourcesCell}</td>
+                <td>${article.images?.total || 0}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        document.getElementById('storiesSub').textContent = `${articles.length} ${articles.length === 1 ? 'story' : 'stories'}`;
+    }
+
+    function sortArticles(articles, field, ascending) {
+        const sorted = [...articles].sort((a, b) => {
+            let aVal, bVal;
+
+            switch (field) {
+                case 'time':
+                    aVal = a.time || '99:99';
+                    bVal = b.time || '99:99';
+                    break;
+                case 'section':
+                    aVal = a.category_normalised || '';
+                    bVal = b.category_normalised || '';
+                    break;
+                case 'headline':
+                    aVal = a.headline || '';
+                    bVal = b.headline || '';
+                    break;
+                case 'author':
+                    aVal = a.author || '';
+                    bVal = b.author || '';
+                    break;
+                case 'words':
+                    aVal = a.word_count || 0;
+                    bVal = b.word_count || 0;
+                    break;
+                case 'sources':
+                    aVal = a.quoted_sources_confirmed || 0;
+                    bVal = b.quoted_sources_confirmed || 0;
+                    break;
+                case 'images':
+                    aVal = a.images?.total || 0;
+                    bVal = b.images?.total || 0;
+                    break;
+                default:
+                    return 0;
+            }
+
+            if (aVal < bVal) return ascending ? -1 : 1;
+            if (aVal > bVal) return ascending ? 1 : -1;
+            return 0;
+        });
+
+        return sorted;
+    }
+
+    function sortStoriesTable(field) {
+        if (currentSort === field) {
+            sortAscending = !sortAscending;
+        } else {
+            currentSort = field;
+            sortAscending = true;
+        }
+        renderStoriesTable();
+    }
+
+    document.getElementById('sortSelect').addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        sortAscending = true;
+        renderStoriesTable();
+    });
+
+    document.getElementById('sectionFilter').addEventListener('change', () => {
+        renderStoriesTable();
+    });
+
+    function showSources(articleId) {
+        const article = metricsData.articles.find(a => a.id === articleId);
+        if (!article) return;
+
+        const modal = document.getElementById('sourcesModal');
+        const modalBody = document.getElementById('modalBody');
+
+        modalBody.innerHTML = '';
+        const sources = article.source_evidence_confirmed || [];
+
+        if (sources.length === 0) {
+            modalBody.innerHTML = '<p>No quoted sources found.</p>';
+        } else {
+            sources.forEach(source => {
+                const sourceDiv = document.createElement('div');
+                sourceDiv.className = 'source-item';
+                sourceDiv.innerHTML = `
+                    <div class="source-name">${source.name}</div>
+                    <div class="source-gender">Gender: ${source.gender}</div>
+                `;
+                modalBody.appendChild(sourceDiv);
+            });
+        }
+
+        modal.style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('sourcesModal').style.display = 'none';
+    }
+
+    function updateContributors() {
+        const tbody = document.getElementById('contributorsBody');
+        tbody.innerHTML = '';
+
+        let articles = filteredArticles;
+        if (contributorsPeriod === 'today') {
+            const selectedDate = document.getElementById('dateSelect').value;
+            if (selectedDate !== 'all') {
+                articles = metricsData.articles.filter(a => a.date === selectedDate);
+            } else {
+                const latestDate = metricsData.daily_stats[metricsData.daily_stats.length - 1]?.date;
+                articles = metricsData.articles.filter(a => a.date === latestDate);
+            }
+        }
+
+        const authorStats = {};
+
+        articles.forEach(article => {
+            const author = article.author || 'Unknown';
+            if (!authorStats[author]) {
+                authorStats[author] = {
+                    stories: 0,
+                    totalSources: 0,
+                    femaleSources: 0,
+                    maleSources: 0,
+                    met350: 0
+                };
+            }
+
+            authorStats[author].stories++;
+            authorStats[author].totalSources += article.quoted_sources_confirmed || 0;
+
+            const sources = article.source_evidence_confirmed || [];
+            sources.forEach(source => {
+                if (source.gender === 'female') authorStats[author].femaleSources++;
+                if (source.gender === 'male') authorStats[author].maleSources++;
+            });
+
+            if (article.word_count && article.word_count >= 350) {
+                authorStats[author].met350++;
+            }
+        });
+
+        const sorted = Object.entries(authorStats).sort((a, b) => b[1].stories - a[1].stories);
+
+        sorted.slice(0, 25).forEach(([author, stats]) => {
+            const avgSources = stats.stories > 0 ? (stats.totalSources / stats.stories).toFixed(1) : '0.0';
+            const genderDisplay = `${stats.femaleSources} F, ${stats.maleSources} M`;
+            const met350Ratio = `${stats.met350}/${stats.stories}`;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${author}</td>
+                <td><a href="#" class="contributor-name-link" onclick="event.preventDefault(); showContributorStories('${author.replace(/'/g, "\\'")}');">${stats.stories}</a></td>
+                <td>${avgSources}</td>
+                <td>${genderDisplay}</td>
+                <td>${met350Ratio}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    function setContributorsPeriod(period) {
+        contributorsPeriod = period;
+
+        const buttons = document.querySelectorAll('.contributors-controls button');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        updateContributors();
+    }
+
+    function showContributorStories(authorName) {
+        const modal = document.getElementById('contributorModal');
+        const modalTitle = document.getElementById('contributorModalTitle');
+        const modalBody = document.getElementById('contributorModalBody');
+
+        let articles = filteredArticles;
+        if (contributorsPeriod === 'today') {
+            const selectedDate = document.getElementById('dateSelect').value;
+            if (selectedDate !== 'all') {
+                articles = metricsData.articles.filter(a => a.date === selectedDate);
+            } else {
+                const latestDate = metricsData.daily_stats[metricsData.daily_stats.length - 1]?.date;
+                articles = metricsData.articles.filter(a => a.date === latestDate);
+            }
+        }
+
+        const authorArticles = articles.filter(a => a.author === authorName);
+
+        modalTitle.textContent = authorName;
+        modalBody.innerHTML = '';
+
+        if (authorArticles.length === 0) {
+            modalBody.innerHTML = '<p>No stories found.</p>';
+        } else {
+            const ul = document.createElement('ul');
+            ul.style.listStyle = 'none';
+            ul.style.padding = '0';
+
+            authorArticles.forEach(article => {
+                const li = document.createElement('li');
+                li.className = 'contributor-story-item';
+
+                const link = document.createElement('a');
+                link.href = article.url;
+                link.target = '_blank';
+                link.className = 'contributor-story-link';
+                link.textContent = article.headline;
+
+                li.appendChild(link);
+                ul.appendChild(li);
+            });
+
+            modalBody.appendChild(ul);
+        }
+
+        modal.style.display = 'block';
+    }
+
+    function closeContributorModal() {
+        document.getElementById('contributorModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        const sourcesModal = document.getElementById('sourcesModal');
+        const contributorModal = document.getElementById('contributorModal');
+        if (event.target === sourcesModal) {
+            closeModal();
+        } else if (event.target === contributorModal) {
+            closeContributorModal();
+        }
+    }
+</script>
+
+</body>
+</html>
