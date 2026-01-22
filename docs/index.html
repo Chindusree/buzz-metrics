@@ -50,12 +50,13 @@
         .gender-bar.unknown { background: #9ca3af; width: 0%; }
         .gender-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.75rem; font-weight: 600; width: 55px; text-align: right; }
         .gender-note { font-size: 0.6rem; font-style: italic; color: #767676; margin-top: 1.25rem; text-align: left; }
+        .gender-footnote { font-size: 0.6rem; font-style: italic; color: #767676; margin-top: 0.5rem; text-align: left; line-height: 1.4; }
         .section-item { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid #edeae3; }
         .section-item:last-child { border-bottom: none; }
         .section-name { font-weight: 500; font-size: 0.9rem; }
         .section-meta { font-size: 0.75rem; color: #767676; }
         .section-count { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.1rem; }
-        .heatmap { display: grid; grid-template-columns: 45px repeat(13, 1fr); gap: 3px; }
+        .heatmap { display: grid; grid-template-columns: 45px repeat(10, 1fr); gap: 3px; }
         .hm-header { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.55rem; font-weight: 600; text-align: center; color: #767676; }
         .hm-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 500; display: flex; align-items: center; }
         .hm-cell { aspect-ratio: 1; border-radius: 2px; background: #f0ede6; min-height: 14px; }
@@ -115,6 +116,12 @@
         .rhythm-story-headline a { color: #1a1a1a; text-decoration: none; }
         .rhythm-story-headline a:hover { text-decoration: underline; }
         .rhythm-story-meta { font-size: 0.75rem; color: #767676; }
+        @media (max-width: 480px) {
+            .heatmap { grid-template-columns: 38px repeat(10, 1fr); gap: 2px; }
+            .hm-cell { min-height: 20px; }
+            .hm-header { font-size: 0.5rem; }
+            .hm-label { font-size: 0.6rem; }
+        }
         @media (min-width: 640px) {
             .hero-grid { grid-template-columns: repeat(4, 1fr); }
             .stat-card.featured { grid-column: span 4; }
@@ -211,7 +218,7 @@
                     <div class="gender-track"><div class="gender-bar unknown"></div></div>
                     <span class="gender-value">0% (0)</span>
                 </div>
-                <p class="gender-note">Estimated via first-name lookup and pronoun context analysis. May not reflect identity.</p>
+                <p class="gender-note"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
             </div>
 
             <!-- Sections -->
@@ -245,11 +252,11 @@
                 <h3 class="card-title">Publication Rhythm</h3>
                 <div class="heatmap">
                     <div></div>
-                    <div class="hm-header">06</div><div class="hm-header">07</div><div class="hm-header">08</div><div class="hm-header">09</div><div class="hm-header">10</div><div class="hm-header">11</div><div class="hm-header">12</div><div class="hm-header">13</div><div class="hm-header">14</div><div class="hm-header">15</div><div class="hm-header">16</div><div class="hm-header">17</div><div class="hm-header">18</div>
+                    <div class="hm-header">08</div><div class="hm-header">09</div><div class="hm-header">10</div><div class="hm-header">11</div><div class="hm-header">12</div><div class="hm-header">13</div><div class="hm-header">14</div><div class="hm-header">15</div><div class="hm-header">16</div><div class="hm-header">17</div>
                     <div class="hm-label">News</div>
-                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div>
+                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div>
                     <div class="hm-label">Sport</div>
-                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div>
+                    <div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div>
                 </div>
                 <div class="hm-legend">
                     <div class="legend-item"><div class="legend-swatch" style="background:#f0ede6;"></div><span>None</span></div>
@@ -259,7 +266,6 @@
                 </div>
             </div>
         </div>
-        <p class="gender-note" style="margin-top: 0.75rem;"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>.</p>
     </section>
 
     <!-- TARGETS -->
@@ -268,41 +274,43 @@
             <h2 class="section-title">Targets</h2>
             <span class="section-sub">Editorial expectations</span>
         </div>
-        <table class="stories-table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Stories</th>
-                    <th>First Published</th>
-                    <th>Below 350w</th>
-                    <th>Gender</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>21 Jan</td>
-                    <td>8/12</td>
-                    <td>09:15 ✓</td>
-                    <td>1</td>
-                    <td>47% W</td>
-                </tr>
-                <tr>
-                    <td>20 Jan</td>
-                    <td>12/12 ✓</td>
-                    <td>10:45</td>
-                    <td>2</td>
-                    <td>33% W</td>
-                </tr>
-                <tr>
-                    <td>19 Jan</td>
-                    <td>12/12 ✓</td>
-                    <td>08:30 ✓</td>
-                    <td>0 ✓</td>
-                    <td>53% W</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="gender-note" style="margin-top: 0.75rem;">✓ = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+        <div class="card">
+            <table class="stories-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stories</th>
+                        <th>First Published</th>
+                        <th>Below 350w</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21 Jan</td>
+                        <td>8/12</td>
+                        <td>09:15 ✓</td>
+                        <td>1</td>
+                        <td>47% W</td>
+                    </tr>
+                    <tr>
+                        <td>20 Jan</td>
+                        <td>12/12 ✓</td>
+                        <td>10:45</td>
+                        <td>2</td>
+                        <td>33% W</td>
+                    </tr>
+                    <tr>
+                        <td>19 Jan</td>
+                        <td>12/12 ✓</td>
+                        <td>08:30 ✓</td>
+                        <td>0 ✓</td>
+                        <td>53% W</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="gender-note" style="margin-top: 0.75rem;">✓ = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+        </div>
     </section>
 
     <!-- STORIES -->
@@ -608,18 +616,18 @@
 
         // Publication rhythm
         const rhythmData = {
-            'General News': Array(13).fill(0),
-            'Sport': Array(13).fill(0)
+            'General News': Array(10).fill(0),
+            'Sport': Array(10).fill(0)
         };
 
         filteredArticles.forEach(article => {
             if (!article.time) return;
             const hour = parseInt(article.time.split(':')[0]);
-            if (hour < 6 || hour > 18) return;
+            if (hour < 8 || hour > 17) return;
 
             const section = article.display_category;
             if (rhythmData[section]) {
-                rhythmData[section][hour - 6]++;
+                rhythmData[section][hour - 8]++;
             }
         });
 
@@ -653,6 +661,7 @@
                     <div class="gender-track"><div class="gender-bar unknown" style="width: ${unknownPercent}%"></div></div>
                     <span class="gender-value">${unknownPercent}% (${genderCounts.unknown})</span>
                 </div>
+                <p class="gender-note"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
             </div>
         `;
 
@@ -681,14 +690,14 @@
         // Publication Rhythm heatmap
         let heatmapHTML = '<div class="heatmap">';
         heatmapHTML += '<div class="hm-header"></div>';
-        for (let h = 6; h <= 18; h++) {
+        for (let h = 8; h <= 17; h++) {
             heatmapHTML += `<div class="hm-header">${h}</div>`;
         }
 
         Object.entries(rhythmData).forEach(([section, counts]) => {
             heatmapHTML += `<div class="hm-label">${section}</div>`;
             counts.forEach((count, index) => {
-                const hour = index + 6; // Hours start at 6
+                const hour = index + 8; // Hours start at 8
                 let className = 'hm-cell';
                 if (count === 1) className += ' l1';
                 else if (count === 2) className += ' l2';
@@ -758,15 +767,47 @@
     function updateTargetsTable() {
         console.log('=== STEP 4: Updating Targets table ===');
 
-        const dailyStats = metricsData.daily_stats || [];
         const tbody = document.querySelector('#targets .stories-table tbody');
         tbody.innerHTML = '';
 
-        // Show last 3 days
-        dailyStats.slice().reverse().slice(0, 3).forEach(day => {
-            const dayArticles = metricsData.articles.filter(a => a.date === day.date);
-            const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
+        // Calculate daily stats from articles
+        const dateMap = {};
+        metricsData.articles.forEach(article => {
+            const date = article.date;
+            if (!dateMap[date]) {
+                dateMap[date] = {
+                    date: date,
+                    articles: [],
+                    article_count: 0,
+                    below_minimum_count: 0,
+                    first_publish_time: null
+                };
+            }
+            dateMap[date].articles.push(article);
+            dateMap[date].article_count++;
 
+            // Count below 350 words
+            if (article.word_count < 350) {
+                dateMap[date].below_minimum_count++;
+            }
+
+            // Track first publish time
+            if (article.time) {
+                if (!dateMap[date].first_publish_time || article.time < dateMap[date].first_publish_time) {
+                    dateMap[date].first_publish_time = article.time;
+                }
+            }
+        });
+
+        // Sort dates descending and take last 3 days
+        const sortedDates = Object.keys(dateMap).sort().reverse().slice(0, 3);
+
+        sortedDates.forEach(date => {
+            const dayData = dateMap[date];
+            const dayArticles = dayData.articles;
+
+            // Calculate gender breakdown
+            const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
             dayArticles.forEach(article => {
                 (article.source_evidence || []).forEach(source => {
                     const gender = source.gender || 'unknown';
@@ -778,26 +819,26 @@
             const totalGender = genderCounts.female + genderCounts.male + genderCounts.they;
             const womenPercent = totalGender > 0 ? Math.round((genderCounts.female / totalGender) * 100) : 0;
 
-            const d = new Date(day.date + 'T00:00:00');
+            const d = new Date(date + 'T00:00:00');
             const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
 
-            const storiesTarget = day.article_count >= 12 ? '✓' : '';
-            const firstPubTime = day.first_publish_time || '';
-            let firstPubDisplay = firstPubTime;
-            if (firstPubTime) {
-                const [h, m] = firstPubTime.split(':').map(Number);
+            const storiesTarget = dayData.article_count >= 12 ? '✓' : '';
+
+            let firstPubDisplay = dayData.first_publish_time || '';
+            if (dayData.first_publish_time) {
+                const [h, m] = dayData.first_publish_time.split(':').map(Number);
                 const minutes = h * 60 + m;
                 if (minutes < 600) firstPubDisplay += ' ✓';
             }
 
-            const belowTarget = day.below_minimum_count === 0 ? '✓' : '';
+            const belowTarget = dayData.below_minimum_count === 0 ? '✓' : '';
 
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${dateStr}</td>
-                <td>${day.article_count} ${storiesTarget}</td>
+                <td>${dayData.article_count}/12 ${storiesTarget}</td>
                 <td>${firstPubDisplay}</td>
-                <td>${day.below_minimum_count} ${belowTarget}</td>
+                <td>${dayData.below_minimum_count} ${belowTarget}</td>
                 <td>${womenPercent}% W</td>
             `;
             tbody.appendChild(row);
