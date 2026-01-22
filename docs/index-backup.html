@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUzz Article Metrics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Sprint 7.19: Chart.js for donut chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Sprint 9.2: Refined Apple Design System */
+        :root {
+            /* Fonts */
+            --font-headline: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Source Serif Pro', Georgia, serif;
+
+            /* Colors - refined */
+            --text-primary: #1d1d1f;
+            --text-body: #3d3d3f;
+            --text-secondary: #6e6e73;
+            --text-tertiary: #aeaeb2;
+            --border: #e5e5e7;
+            --border-subtle: rgba(0, 0, 0, 0.04);
+            --bg-page: #f5f5f7;
+            --bg-card: #ffffff;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+            /* Status colors */
+            --green: #34c759;
+            --orange: #ff9500;
+            --red: #ff3b30;
+
+            /* Gender gradients */
+            --female-start: #ff6b9d;
+            --female-end: #c44569;
+            --male-start: #4a90d9;
+            --male-end: #2c5aa0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-page);
+            color: var(--text-body);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sprint 9.2: Contained content with breathing room */
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        /* Sprint 9.2.1: Unified header with navigation on same line */
+        .header-wrapper {
+            position: sticky;
+            top: 0;
+            background: var(--bg-page);
+            width: 100%;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .header-bar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 80px;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .header-bar img {
+            height: 36px;
+            background: var(--bg-page);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        /* Navigation on same line as logo */
+        .sticky-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .nav-item {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .nav-item.active {
+            color: var(--text-primary);
+            font-weight: 400;
+        }
+
+        .nav-dot {
+            color: var(--text-tertiary);
+            font-size: 14px;
+        }
+
+        /* Header date selector - right aligned */
+        .header-date-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .header-date-selector label {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--text-secondary);
+        }
+
+        .header-date-selector select {
+            font-family: var(--font-headline);
+            font-size: 13px;
+            font-weight: 400;
+            padding: 6px 12px;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            background: var(--bg-card);
+            color: var(--text-body);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .header-date-selector select:hover {
+            border-color: var(--text-secondary);
+        }
+
+        .header-date-selector select:focus {
+            outline: none;
+            border-color: var(--text-primary);
+        }
+
+        /* Remove separate nav wrapper styles */
+        .nav-wrapper {
+            display: none;
+        }
+
+        /* Sprint 9.2: Typography Hierarchy - lighter, tighter */
+        .h1-title {
+            font-family: var(--font-headline);
+            font-size: 60px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin-bottom: 48px;
+        }
+
+        /* Sprint 9.2.2: Hero section title */
+        .hero-title {
+            font-family: var(--font-headline);
+            font-size: 60px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin: 0 auto 64px auto;
+            max-width: 1200px;
+            padding: 0 80px;
+        }
+
+        .h2-title {
+            font-family: var(--font-headline);
+            font-size: 30px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 28px;
+        }
+
+        /* Section header on gray background (like "Analysis") */
+        .section-header {
+            padding: 80px 0 64px 0;
+        }
+
+        .section-header-title {
+            font-family: var(--font-headline);
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.025em;
+            line-height: 1.05;
+            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 80px;
+            text-align: left;
+        }
+
+        /* Override font size for "At a Glance" section */
+        #overview .section-header-title {
+            font-size: 60px;
+            font-weight: 500;
+        }
+
+        .h3-title {
+            font-family: var(--font-headline);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            display: none; /* Logo replaces title */
+        }
+
+        /* Date Selector */
+        .date-selector-container {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .date-selector {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .date-selector label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .date-selector select {
+            padding: 8px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            background: white;
+        }
+
+        .date-selector select:hover {
+            border-color: #06c;
+        }
+
+        /* Sprint 9.2: Section Spacing - more generous */
+        .section {
+            padding: 80px 0;
+            min-height: 80vh;
+        }
+
+        /* Content area for sections */
+        .section-content {
+            padding: 80px 0;
+        }
+
+        /* Sprint 9.2.2: Hero section - Apple Store style */
+        #overview {
+            min-height: auto;
+            padding: 0;
+        }
+
+        /* Hero header on gray background */
+        .hero-header {
+            padding: 64px 0 48px 0;
+            text-align: center;
+        }
+
+        /* Hero content - white cards section */
+        .hero-content {
+            background: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+            padding: 0;
+        }
+
+        /* Analysis section follows hero pattern */
+        #analysis {
+            min-height: auto;
+            padding: 0 0 24px 0;
+            margin-top: 80px;
+        }
+
+        #analysis .container {
+            padding-bottom: 24px;
+        }
+
+        /* Targets section follows same pattern as Analysis */
+        #targets {
+            min-height: auto;
+            padding: 0 0 24px 0;
+            margin-top: 80px;
+        }
+
+        #targets .container {
+            padding-bottom: 24px;
+        }
+
+        /* Stories section follows same pattern as Analysis and Targets */
+        #stories {
+            min-height: auto;
+            padding: 0 0 24px 0;
+            margin-top: 80px;
+        }
+
+        #stories .container {
+            padding-bottom: 24px;
+        }
+
+        /* Stats Cards - 30% larger */
+        .stats-grid,
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 31px;
+            margin: 0;
+        }
+
+        .card,
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 26px;
+            padding: 52px 42px;
+            text-align: center;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-subtle);
+            min-height: 234px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover,
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-value {
+            font-family: var(--font-headline);
+            font-size: 73px;
+            font-weight: 500;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .card-label {
+            font-family: var(--font-headline);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        .card-sublabel {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        .uncredited-note {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        /* Sprint 9: Content Sections */
+        .section {
+            background: var(--bg-card);
+            padding: 32px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: 0;
+            text-transform: none;
+            margin-bottom: 20px;
+        }
+
+        /* Sprint 9: Gender Bars - Chunky with gravitas */
+        .diversity-bar {
+            margin-bottom: 20px;
+        }
+
+        .diversity-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-body);
+        }
+
+        .bar-container {
+            width: 100%;
+            height: 16px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            transition: width 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .bar-fill.female {
+            background: linear-gradient(90deg, var(--female-start), var(--female-end));
+        }
+
+        .bar-fill.male {
+            background: linear-gradient(90deg, var(--male-start), var(--male-end));
+        }
+
+        .diversity-divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 15px 0;
+        }
+
+        .diversity-unknown {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Sprint 9.1: Coverage by Section - elevated cards */
+        .section-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 32px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .section-card-count {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        .section-card-stat {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .section-card-time {
+            margin-top: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Sprint 9: Time status colors (no dots) */
+        .time-good {
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .time-warning {
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+        .time-late {
+            color: var(--red);
+            font-weight: 500;
+        }
+
+        .legend {
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        /* Publication rhythm */
+        .rhythm-grid {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .rhythm-table {
+            min-width: 600px;
+            border-collapse: collapse;
+        }
+
+        .rhythm-table th {
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .rhythm-table td {
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 14px;
+        }
+
+        .rhythm-table .category-label {
+            text-align: left;
+            font-weight: 600;
+            padding-right: 15px;
+        }
+
+        .rhythm-target {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Editorial Targets Table */
+        .targets-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .targets-table th,
+        .targets-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .targets-table th {
+            background: transparent;
+            font-weight: 500;
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .targets-table td {
+            font-size: 14px;
+        }
+
+        /* All stories Table */
+        .table-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .table-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .table-control label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .table-control select {
+            padding: 6px 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Sprint 9.2: Table Typography */
+        .stories-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .stories-table th {
+            font-family: var(--font-headline);
+            background: transparent;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stories-table th:hover {
+            background: var(--bg-page);
+        }
+
+        .stories-table td {
+            font-family: var(--font-body);
+            padding: 16px;
+            font-size: 15px;
+            color: var(--text-body);
+            line-height: 1.5;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stories-table tr:hover {
+            background: var(--bg-page);
+        }
+
+        .headline-link {
+            font-family: var(--font-body);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .headline-link:hover {
+            color: #06c;
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        .badge-below {
+            background: #ff4444;
+            color: white;
+        }
+
+        .badge-breaking {
+            background: #ff9800;
+            color: white;
+        }
+
+        .badge-longform {
+            background: #4caf50;
+            color: white;
+        }
+
+        .badge-uncredited {
+            background: #ff9800;
+            color: white;
+        }
+
+        .sources-clickable {
+            color: #06c;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .sources-clickable:hover {
+            color: #1d1d1f;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .modal-close:hover {
+            color: #333;
+        }
+
+        .source-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .source-name {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 5px;
+        }
+
+        .source-gender {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .source-quote {
+            font-size: 14px;
+            color: #333;
+            font-style: italic;
+        }
+
+        /* Sprint 7.29: Contributor modal styles */
+        .contributor-name-link {
+            color: #0066CC;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contributor-name-link:hover {
+            text-decoration: underline;
+        }
+
+        .contributor-story-item {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .contributor-story-link {
+            color: #0066CC;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contributor-story-link:hover {
+            text-decoration: underline;
+        }
+
+        .contributor-story-count {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Contributors Section */
+        .contributors-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .contributors-header:hover {
+            opacity: 0.8;
+        }
+
+        .contributors-toggle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contributors-controls {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .contributors-controls button {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .contributors-controls button.active {
+            background: #1d1d1f;
+            color: white;
+            border-color: #1d1d1f;
+        }
+
+        .contributors-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .contributors-table th,
+        .contributors-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .contributors-table th {
+            background: transparent;
+            font-weight: 500;
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .expectations-box {
+            background: #f0f8ff;
+            border: 1px solid #06c;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .expectations-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #06c;
+        }
+
+        .expectations-box ul {
+            margin-left: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .expectations-box li {
+            margin-bottom: 5px;
+        }
+
+        /* Sprint 7.24: Gender disclaimer styling */
+        .gender-note {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        /* Sprint 7.32: Consistent footnote styling */
+        .footnote {
+            font-size: 0.75rem;
+            color: #6B7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive */
+                @media (max-width: 768px) {
+            /* Fix header padding - was 80px! */
+            .header-bar {
+                padding: 12px 16px;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            
+            .sticky-nav {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .nav-dot {
+                display: none;
+            }
+            
+            .nav-item {
+                font-size: 13px;
+                padding: 6px 10px;
+            }
+            
+            .header-date-selector {
+                order: 2;
+            }
+            
+            /* Hero cards 2x2 */
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            
+            .card-value {
+                font-size: 2.5rem;
+            }
+            
+            .card-label {
+                font-size: 10px;
+            }
+            
+            /* Section cards stack */
+            .section-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Heatmap scroll */
+            .rhythm-grid {
+                overflow-x: auto;
+            }
+            
+            .rhythm-table {
+                min-width: 500px;
+            }
+            
+            /* Stories table scroll */
+            .stories-table {
+                font-size: 11px;
+            }
+            
+            .stories-table th,
+            .stories-table td {
+                padding: 6px 4px;
+            }
+            
+            /* Section padding */
+            .section {
+                padding: 40px 16px;
+            }
+            
+            .h2-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-value {
+                font-size: 2rem;
+            }
+            
+            .sticky-nav {
+                gap: 4px;
+            }
+            
+            .nav-item {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+            
+            .section-header-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sprint 9.2.1: Unified header with navigation and date selector -->
+    <div class="header-wrapper">
+        <header class="header-bar">
+            <img src="buzz-logo-dash-nowhite.png" alt="BUzz" height="36">
+            <nav class="sticky-nav">
+                <a href="#overview" class="nav-item active">At a glance</a>
+                <span class="nav-dot">·</span>
+                <a href="#analysis" class="nav-item">Analysis</a>
+                <span class="nav-dot">·</span>
+                <a href="#targets" class="nav-item">Targets</a>
+                <span class="nav-dot">·</span>
+                <a href="#stories" class="nav-item">Stories & contributors</a>
+            </nav>
+            <div class="header-date-selector">
+                <select id="dateSelect">
+                    <option value="all">Select dates</option>
+                </select>
+            </div>
+        </header>
+    </div>
+
+    <main class="dashboard">
+        <!-- OVERVIEW SECTION -->
+        <section id="overview" class="section">
+            <!-- Hero header on gray background (like Analysis section) -->
+            <div class="section-header">
+                <h1 class="section-header-title">At a Glance</h1>
+            </div>
+
+            <!-- Hero content - white cards section -->
+            <div class="hero-content">
+                <div class="dashboard">
+                    <div class="cards-grid" id="todayCards">
+            <div class="card">
+                <div class="card-value" id="storiesCount">0</div>
+                <div class="card-label">STORIES</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="wordsCount">0</div>
+                <div class="card-label">WORDS</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="sourcesCount">0</div>
+                <div class="card-label">SOURCES</div>
+            </div>
+            <div class="card">
+                <div class="card-value" id="imagesCount">0</div>
+                <div class="card-label">IMAGES</div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANALYSIS SECTION -->
+        <section id="analysis" class="section">
+            <!-- Analysis header on gray background -->
+            <div class="section-header">
+                <h2 class="section-header-title">Analysis</h2>
+            </div>
+
+            <!-- Analysis content -->
+            <div class="container">
+                <h2 class="h2-title">Gender equity</h2>
+                <div style="max-width: 400px; margin: 0 auto;">
+                    <canvas id="genderChart"></canvas>
+                    <!-- Sprint 7.24: Inclusive gender disclaimer -->
+                    <!-- Sprint 7.32: Changed to .footnote for consistency -->
+                    <p class="footnote" style="text-align: center;">Based on name analysis. May not reflect individuals' stated gender identity.</p>
+                </div>
+
+            <h2 class="h2-title" style="margin-top: 60px;">Section breakdown</h2>
+            <div class="section-cards" id="sectionCards"></div>
+
+            <h2 class="h2-title" style="margin-top: 60px;">Publication rhythm</h2>
+            <div class="rhythm-grid">
+                <table class="rhythm-table" id="rhythmTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>06</th><th>07</th><th>08</th><th>09</th><th>10</th><th>11</th>
+                            <th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rhythmBody"></tbody>
+                </table>
+            </div>
+            <!-- Sprint 7.32: Changed to .footnote for consistency -->
+            <div class="footnote">
+                <span style="background-color: #E91E8C; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 3+ stories &nbsp;&nbsp;
+                <span style="background-color: #F06292; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 2 stories &nbsp;&nbsp;
+                <span style="background-color: #F8BBD9; color: #fff; padding: 2px 6px; font-weight: bold;">■</span> = 1 story &nbsp;&nbsp;
+                <span style="color: #999;">·</span> = none<br>
+                Target: First story before 10:00
+            </div>
+            </div>
+        </section>
+
+        <!-- TARGETS SECTION -->
+        <section id="targets" class="section">
+            <!-- Targets header on gray background -->
+            <div class="section-header">
+                <h2 class="section-header-title">Targets</h2>
+            </div>
+
+            <!-- Targets content -->
+            <div class="container">
+                <h2 class="h2-title">Editorial expectations</h2>
+                <table class="targets-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stories</th>
+                        <th>First Published</th>
+                        <th>Below 350</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody id="targetsBody"></tbody>
+            </table>
+            </div>
+        </section>
+
+        <!-- STORIES & CONTRIBUTORS SECTION -->
+        <section id="stories" class="section">
+            <!-- Stories header on gray background -->
+            <div class="section-header">
+                <h2 class="section-header-title">Stories & contributors</h2>
+            </div>
+
+            <!-- Stories content -->
+            <div class="container">
+                <h2 class="h2-title">All stories</h2>
+                <div class="table-controls">
+                <div class="table-control">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="time">Time</option>
+                        <option value="section">Section</option>
+                        <option value="words">Word Count</option>
+                        <option value="sources">Sources</option>
+                    </select>
+                </div>
+                <div class="table-control">
+                    <select id="sectionFilter">
+                        <option value="all">Sort by Sections</option>
+                    </select>
+                </div>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="stories-table">
+                    <thead>
+                        <tr>
+                            <th onclick="sortStoriesTable('time')">Time</th>
+                            <th onclick="sortStoriesTable('section')">Section</th>
+                            <th onclick="sortStoriesTable('headline')">Headline</th>
+                            <th onclick="sortStoriesTable('author')">Author</th>
+                            <th onclick="sortStoriesTable('words')">Words</th>
+                            <th onclick="sortStoriesTable('sources')">Quoted sources</th>
+                            <th onclick="sortStoriesTable('images')">Images</th>
+                        </tr>
+                    </thead>
+                    <tbody id="storiesBody"></tbody>
+                </table>
+            </div>
+
+            <!-- Sprint 7.32: Stories table footnote -->
+            <p class="footnote">
+                <strong>Colour key</strong><br>
+                Green: on target or above | Orange: close (or exempt) | Red: below target
+            </p>
+
+            <h2 class="h2-title" style="margin-top: 60px;">Contributors</h2>
+            <div id="contributorsContent">
+                <div class="contributors-controls">
+                    <button class="active" onclick="setContributorsPeriod('today')">Today</button>
+                    <button onclick="setContributorsPeriod('week')">This Week</button>
+                </div>
+                <table class="contributors-table">
+                    <thead>
+                        <tr>
+                            <th>Author</th>
+                            <th>Stories</th>
+                            <th>Avg Sources</th>
+                            <th>Source Diversity (50:50)</th>
+                            <th>Met 350w</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contributorsBody"></tbody>
+                </table>
+                <div class="expectations-box">
+                    <div class="expectations-title">EXPECTATIONS (reference)</div>
+                    <ul>
+                        <li>Team target: 12 stories per day</li>
+                        <li>Sourcing: 2+ quoted sources per story</li>
+                        <li>Diversity: Gender parity — industry target is 50:50</li>
+                        <li>Word count: 350 minimum, 800+ for features</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Quoted source counts are estimates using pattern matching with NLP verification.</p>
+        <p>Gender determined from first names. Report issues to [lecturer email].</p>
+    </footer>
+
+    <!-- Modal for Quoted sources -->
+    <div id="sourcesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Quoted sources</h3>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Sprint 7.29: Contributor stories modal -->
+    <div id="contributorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="contributorModalTitle"></h3>
+                <span class="modal-close" onclick="closeContributorModal()">&times;</span>
+            </div>
+            <div id="contributorModalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // Global data
+        let metricsData = null;
+        let filteredArticles = [];
+        let currentSort = 'time';
+        let sortAscending = false;  // Show latest articles first
+        let contributorsPeriod = 'today';
+
+        // Sprint 9.1: Navigation scroll detection
+        document.addEventListener('DOMContentLoaded', () => {
+            loadData();
+            setupSmoothScroll();
+            setupScrollSpy();
+        });
+
+        // Sprint 9.2.1: Smooth scroll with unified header
+        function setupSmoothScroll() {
+            document.querySelectorAll('.nav-item').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const headerHeight = document.querySelector('.header-wrapper').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Sprint 9.2.1: Update active nav item on scroll
+        function setupScrollSpy() {
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const headerHeight = document.querySelector('.header-wrapper').offsetHeight;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 100;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === '#' + current) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('./metrics_verified.json');
+                metricsData = await response.json();
+                initializeDashboard();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Failed to load metrics data. Please check the console for details.');
+            }
+        }
+
+        function initializeDashboard() {
+            // Populate date selector
+            populateDateSelector();
+
+            // Sprint 7.21: Default to today's date (or most recent if no articles today)
+            const today = new Date().toISOString().split('T')[0];
+            const availableDates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+            const defaultDate = availableDates.includes(today) ? today : availableDates[0];
+
+            // Set date selector and update dashboard
+            document.getElementById('dateSelect').value = defaultDate;
+            updateDashboard(defaultDate);
+        }
+
+        function populateDateSelector() {
+            const dateSelect = document.getElementById('dateSelect');
+            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                const d = new Date(date);
+                option.textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+                dateSelect.appendChild(option);
+            });
+
+            dateSelect.addEventListener('change', (e) => {
+                updateDashboard(e.target.value);
+            });
+        }
+
+        function updateDashboard(selectedDate) {
+            // Filter articles
+            if (selectedDate === 'all') {
+                filteredArticles = metricsData.articles;
+            } else {
+                filteredArticles = metricsData.articles.filter(a => a.date === selectedDate);
+            }
+
+            // Update all sections
+            updateTodayCards();
+            updateSourceDiversity();
+            updateCoverageBySection();
+            updatePublicationRhythm();
+            updateEditorialTargets();
+            updateAllStories();
+            updateContributors();
+        }
+
+        function updateTodayCards() {
+            const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
+            const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
+            const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
+
+            document.getElementById('storiesCount').textContent = filteredArticles.length;
+            document.getElementById('wordsCount').textContent = totalWords.toLocaleString();
+            document.getElementById('sourcesCount').textContent = totalSources;
+            document.getElementById('imagesCount').textContent = totalImages;
+        }
+
+        // Sprint 7.19: Gender donut chart
+        let genderChart = null;
+
+        function updateSourceDiversity() {
+            // Sprint 7.31: Extended to support they/them as separate category
+            const genderCounts = { male: 0, female: 0, they: 0, unknown: 0 };
+
+            filteredArticles.forEach(article => {
+                const sources = article.source_evidence_confirmed || [];
+                sources.forEach(source => {
+                    const gender = source.gender || 'unknown';
+                    if (genderCounts.hasOwnProperty(gender)) {
+                        genderCounts[gender]++;
+                    } else {
+                        // Fallback for any unexpected gender values
+                        genderCounts.unknown++;
+                    }
+                });
+            });
+
+            const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
+            const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+            const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+            const theyPercent = total > 0 ? Math.round((genderCounts.they / total) * 100) : 0;
+            const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
+
+            // Destroy existing chart if it exists
+            if (genderChart) {
+                genderChart.destroy();
+            }
+
+            // Create donut chart
+            const ctx = document.getElementById('genderChart').getContext('2d');
+            genderChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    // Sprint 7.31: Four-segment donut with they/them separated
+                    labels: ['She/Her', 'He/Him', 'They/Them', 'Unknown'],
+                    datasets: [{
+                        data: [genderCounts.female, genderCounts.male, genderCounts.they, genderCounts.unknown],
+                        // Sprint 7.31: BUzz pink, blue, purple, grey
+                        backgroundColor: ['#E91E8C', '#3B82F6', '#8B5CF6', '#9CA3AF'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    cutout: '60%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 20,
+                                font: {
+                                    family: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+                                    size: 14
+                                },
+                                generateLabels: function(chart) {
+                                    const data = chart.data;
+                                    return data.labels.map((label, i) => {
+                                        const count = data.datasets[0].data[i];
+                                        const percent = total > 0 ? Math.round((count / total) * 100) : 0;
+                                        return {
+                                            text: `${label}: ${count} (${percent}%)`,
+                                            fillStyle: data.datasets[0].backgroundColor[i],
+                                            hidden: false,
+                                            index: i
+                                        };
+                                    });
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed;
+                                    const percent = total > 0 ? Math.round((value / total) * 100) : 0;
+                                    return `${label}: ${value} (${percent}%)`;
+                                }
+                            }
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true
+                }
+            });
+        }
+
+        function updateCoverageBySection() {
+            const sectionData = {};
+
+            // Aggregate data by section
+            // Sprint 7.28: Use display_category instead of category_normalised
+            filteredArticles.forEach(article => {
+                const section = article.display_category || 'Unknown';
+                if (!sectionData[section]) {
+                    sectionData[section] = {
+                        count: 0,
+                        words: 0,
+                        sources: 0,
+                        firstPublish: null
+                    };
+                }
+                sectionData[section].count++;
+                sectionData[section].words += article.word_count || 0;
+                sectionData[section].sources += article.quoted_sources_confirmed || 0;
+
+                if (article.time) {
+                    if (!sectionData[section].firstPublish || article.time < sectionData[section].firstPublish) {
+                        sectionData[section].firstPublish = article.time;
+                    }
+                }
+            });
+
+            // Render section cards
+            const container = document.getElementById('sectionCards');
+            container.innerHTML = '';
+
+            // Filter to only show General News and Sport
+            const sectionsToShow = ['General News', 'Sport'];
+
+            Object.entries(sectionData).forEach(([section, data]) => {
+                // Skip sections not in the filter list
+                if (!sectionsToShow.includes(section)) return;
+                const card = document.createElement('div');
+                card.className = 'section-card';
+
+                const trafficLightClass = getTrafficLight(data.firstPublish);
+                const sourcesLabel = data.sources === 1 ? 'quoted source' : 'quoted sources';
+                const timeDisplay = data.firstPublish
+                    ? `<span class="${trafficLightClass}">${data.firstPublish}</span>`
+                    : 'N/A';
+
+                card.innerHTML = `
+                    <div class="section-card-header">
+                        <div class="section-card-title">${section}</div>
+                        <div class="section-card-count">${data.count}</div>
+                    </div>
+                    <div class="section-card-stat">${data.words.toLocaleString()} words</div>
+                    <div class="section-card-stat">${data.sources} ${sourcesLabel}</div>
+                    <div class="section-card-time">
+                        First published: ${timeDisplay}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Sprint 9: Return CSS class name instead of emoji
+        function getTrafficLight(time) {
+            if (!time) return '';
+            const hour = parseInt(time.split(':')[0]);
+            const minute = parseInt(time.split(':')[1]);
+            const totalMinutes = hour * 60 + minute;
+
+            if (totalMinutes < 600) return 'time-good'; // Before 10:00
+            if (totalMinutes < 720) return 'time-warning'; // 10:00-12:00
+            return 'time-late'; // After 12:00
+        }
+
+        // Sprint 7.29: BUzz brand color gradient for heatmap
+        function getHeatmapColor(count) {
+            if (count === 0) return '#E5E5E5';  // Light grey
+            if (count === 1) return '#F8BBD9';  // Light pink
+            if (count === 2) return '#F06292';  // Medium pink
+            return '#E91E8C';                    // Full BUzz pink (3+)
+        }
+
+        function updatePublicationRhythm() {
+            const rhythmData = {
+                'General News': Array(13).fill(0),
+                'Sport': Array(13).fill(0)
+            };
+
+            // Sprint 7.28: Use display_category instead of category_normalised
+            filteredArticles.forEach(article => {
+                if (!article.time) return;
+                const hour = parseInt(article.time.split(':')[0]);
+                if (hour < 6 || hour > 18) return;
+
+                const section = article.display_category;
+                if (rhythmData[section]) {
+                    const index = hour - 6;
+                    rhythmData[section][index]++;
+                }
+            });
+
+            const tbody = document.getElementById('rhythmBody');
+            tbody.innerHTML = '';
+
+            Object.entries(rhythmData).forEach(([section, counts]) => {
+                const row = document.createElement('tr');
+                const labelCell = document.createElement('td');
+                labelCell.className = 'category-label';
+                labelCell.textContent = section;
+                row.appendChild(labelCell);
+
+                counts.forEach(count => {
+                    const cell = document.createElement('td');
+                    // Sprint 7.29: Use colored squares with BUzz brand gradient
+                    const color = getHeatmapColor(count);
+                    cell.style.backgroundColor = color;
+                    cell.style.color = count === 0 ? '#999' : '#fff';
+                    cell.style.fontWeight = count === 0 ? 'normal' : 'bold';
+                    cell.textContent = count === 0 ? '·' : '■';
+                    row.appendChild(cell);
+                });
+
+                tbody.appendChild(row);
+            });
+        }
+
+        function updateEditorialTargets() {
+            const tbody = document.getElementById('targetsBody');
+            tbody.innerHTML = '';
+
+            const dailyStats = metricsData.daily_stats || [];
+
+            dailyStats.slice().reverse().forEach(day => {
+                // Calculate gender stats for this day
+                const dayArticles = metricsData.articles.filter(a => a.date === day.date);
+                const genderCounts = { male: 0, female: 0 };
+
+                dayArticles.forEach(article => {
+                    const sources = article.source_evidence_confirmed || [];
+                    sources.forEach(source => {
+                        const gender = source.gender;
+                        if (gender === 'male') genderCounts.male++;
+                        if (gender === 'female') genderCounts.female++;
+                    });
+                });
+
+                const total = genderCounts.male + genderCounts.female;
+                const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+                const meets5050 = femalePercent >= 50;
+
+                const row = document.createElement('tr');
+                const date = new Date(day.date);
+                const dateStr = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+                const storiesStr = `${day.article_count}/12 ${day.meets_target ? '✓' : ''}`;
+
+                // Sprint 9: Apply time color class to the time itself
+                const trafficLightClass = getTrafficLight(day.first_publish_time);
+                const timeStr = day.first_publish_time
+                    ? `<span class="${trafficLightClass}">${day.first_publish_time}</span>`
+                    : 'N/A';
+
+                const genderStr = `${femalePercent}% F ${meets5050 ? '✓' : ''}`;
+
+                row.innerHTML = `
+                    <td>${dateStr}</td>
+                    <td>${storiesStr}</td>
+                    <td>${timeStr}</td>
+                    <td>${day.below_minimum_count || 0}</td>
+                    <td>${genderStr}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function updateAllStories() {
+            // Populate section filter
+            const sectionFilter = document.getElementById('sectionFilter');
+            const currentFilter = sectionFilter.value;
+            sectionFilter.innerHTML = '<option value="all">Sort by Sections</option>';
+
+            const sections = [...new Set(filteredArticles.map(a => a.category_normalised))];
+            sections.forEach(section => {
+                const option = document.createElement('option');
+                option.value = section;
+                option.textContent = section;
+                sectionFilter.appendChild(option);
+            });
+            sectionFilter.value = currentFilter;
+
+            // Filter and sort articles
+            renderStoriesTable();
+        }
+
+        // Sprint 7.32: Inline color coding functions
+        function getWordCountColor(count) {
+            if (count < 250) return '#EF4444';  // Red
+            if (count <= 350) return '#F59E0B'; // Orange
+            return '#22C55E';                    // Green
+        }
+
+        function getSourceCountColor(count) {
+            if (count === 0) return '#EF4444';  // Red
+            if (count === 1) return '#F59E0B';  // Orange
+            return '#22C55E';                    // Green
+        }
+
+        function renderStoriesTable() {
+            const sectionFilter = document.getElementById('sectionFilter').value;
+            let articles = filteredArticles;
+
+            if (sectionFilter !== 'all') {
+                articles = articles.filter(a => a.category_normalised === sectionFilter);
+            }
+
+            // Sort articles
+            articles = sortArticles(articles, currentSort, sortAscending);
+
+            const tbody = document.getElementById('storiesBody');
+            tbody.innerHTML = '';
+
+            articles.forEach(article => {
+                const row = document.createElement('tr');
+
+                const wordBadge = getWordBadge(article);
+                const imageBadge = getImageBadge(article);
+
+                // Sprint 7.32: Color-coded sources with clickable behavior preserved
+                const sourceCount = article.quoted_sources_confirmed || 0;
+                const sourceColor = getSourceCountColor(sourceCount);
+                const sourcesCell = sourceCount > 0
+                    ? `<span class="sources-clickable" onclick="showSources('${article.id}')" style="color: ${sourceColor}; font-weight: 600;">${sourceCount}</span>`
+                    : `<span style="color: ${sourceColor}; font-weight: 600;">${sourceCount}</span>`;
+
+                // Sprint 7.32: Color-coded word count
+                const wordCount = article.word_count || 0;
+                const wordColor = getWordCountColor(wordCount);
+
+                row.innerHTML = `
+                    <td>${article.time || 'N/A'}</td>
+                    <td>${article.category_normalised || 'Unknown'}</td>
+                    <td>
+                        <a href="${article.url}" target="_blank" class="headline-link">
+                            ${article.headline}
+                        </a>
+                        ${wordBadge}
+                    </td>
+                    <td>${article.author || 'Unknown'}</td>
+                    <td style="color: ${wordColor}; font-weight: 600;">${wordCount}</td>
+                    <td>${sourcesCell}</td>
+                    <td>${article.images?.total || 0}${imageBadge}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function getWordBadge(article) {
+            // Sprint 7.32: Removed badges - color coding in table columns replaces them
+            return '';
+        }
+
+        // Sprint 7.18.1: Remove uncredited text from article table
+        function getImageBadge(article) {
+            return '';
+        }
+
+        function sortArticles(articles, field, ascending) {
+            const sorted = [...articles].sort((a, b) => {
+                let aVal, bVal;
+
+                switch (field) {
+                    case 'time':
+                        aVal = a.time || '99:99';
+                        bVal = b.time || '99:99';
+                        break;
+                    case 'section':
+                        aVal = a.category_normalised || '';
+                        bVal = b.category_normalised || '';
+                        break;
+                    case 'headline':
+                        aVal = a.headline || '';
+                        bVal = b.headline || '';
+                        break;
+                    case 'author':
+                        aVal = a.author || '';
+                        bVal = b.author || '';
+                        break;
+                    case 'words':
+                        aVal = a.word_count || 0;
+                        bVal = b.word_count || 0;
+                        break;
+                    case 'sources':
+                        aVal = a.quoted_sources_confirmed || 0;
+                        bVal = b.quoted_sources_confirmed || 0;
+                        break;
+                    case 'images':
+                        aVal = a.images?.total || 0;
+                        bVal = b.images?.total || 0;
+                        break;
+                    default:
+                        return 0;
+                }
+
+                if (aVal < bVal) return ascending ? -1 : 1;
+                if (aVal > bVal) return ascending ? 1 : -1;
+                return 0;
+            });
+
+            return sorted;
+        }
+
+        function sortStoriesTable(field) {
+            if (currentSort === field) {
+                sortAscending = !sortAscending;
+            } else {
+                currentSort = field;
+                sortAscending = true;
+            }
+            renderStoriesTable();
+        }
+
+        // Update sort select when user changes it
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            sortAscending = true;
+            renderStoriesTable();
+        });
+
+        // Update section filter
+        document.getElementById('sectionFilter').addEventListener('change', () => {
+            renderStoriesTable();
+        });
+
+        function showSources(articleId) {
+            const article = metricsData.articles.find(a => a.id === articleId);
+            if (!article) return;
+
+            const modal = document.getElementById('sourcesModal');
+            const modalBody = document.getElementById('modalBody');
+
+            modalBody.innerHTML = '';
+            const sources = article.source_evidence_confirmed || [];
+
+            if (sources.length === 0) {
+                modalBody.innerHTML = '<p>No quoted sources found.</p>';
+            } else {
+                sources.forEach(source => {
+                    const sourceDiv = document.createElement('div');
+                    sourceDiv.className = 'source-item';
+                    sourceDiv.innerHTML = `
+                        <div class="source-name">${source.name}</div>
+                        <div class="source-gender">Gender: ${source.gender}</div>
+                    `;
+                    modalBody.appendChild(sourceDiv);
+                });
+            }
+
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('sourcesModal').style.display = 'none';
+        }
+
+        // Sprint 7.29: Show contributor stories modal
+        function showContributorStories(authorName) {
+            const modal = document.getElementById('contributorModal');
+            const modalTitle = document.getElementById('contributorModalTitle');
+            const modalBody = document.getElementById('contributorModalBody');
+
+            // Get articles for the selected period (matching contributors table logic)
+            let articles = filteredArticles;
+            if (contributorsPeriod === 'today') {
+                const selectedDate = document.getElementById('dateSelect').value;
+                if (selectedDate !== 'all') {
+                    articles = metricsData.articles.filter(a => a.date === selectedDate);
+                } else {
+                    const latestDate = metricsData.daily_stats[metricsData.daily_stats.length - 1]?.date;
+                    articles = metricsData.articles.filter(a => a.date === latestDate);
+                }
+            }
+
+            // Filter articles by author
+            const authorArticles = articles.filter(a => a.author === authorName);
+
+            // Set modal title
+            modalTitle.textContent = authorName;
+
+            // Build modal content
+            modalBody.innerHTML = '';
+
+            if (authorArticles.length === 0) {
+                modalBody.innerHTML = '<p>No stories found.</p>';
+            } else {
+                const countP = document.createElement('p');
+                countP.className = 'contributor-story-count';
+                countP.textContent = `${authorArticles.length} ${authorArticles.length === 1 ? 'story' : 'stories'}`;
+                modalBody.appendChild(countP);
+
+                const ul = document.createElement('ul');
+                ul.style.listStyle = 'none';
+                ul.style.padding = '0';
+
+                authorArticles.forEach(article => {
+                    const li = document.createElement('li');
+                    li.className = 'contributor-story-item';
+
+                    const link = document.createElement('a');
+                    link.href = article.url;
+                    link.target = '_blank';
+                    link.className = 'contributor-story-link';
+                    link.textContent = article.headline;
+
+                    li.appendChild(link);
+                    ul.appendChild(li);
+                });
+
+                modalBody.appendChild(ul);
+            }
+
+            modal.style.display = 'block';
+        }
+
+        function closeContributorModal() {
+            document.getElementById('contributorModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const sourcesModal = document.getElementById('sourcesModal');
+            const contributorModal = document.getElementById('contributorModal');
+            if (event.target === sourcesModal) {
+                closeModal();
+            } else if (event.target === contributorModal) {
+                closeContributorModal();
+            }
+        }
+
+        function toggleContributors() {
+            const content = document.getElementById('contributorsContent');
+            const toggle = document.getElementById('contributorsToggle');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                toggle.textContent = '▼ Hide contributor breakdown';
+            } else {
+                content.classList.add('hidden');
+                toggle.textContent = '▶ View contributor breakdown';
+            }
+        }
+
+        function setContributorsPeriod(period) {
+            contributorsPeriod = period;
+
+            // Update button states
+            const buttons = document.querySelectorAll('.contributors-controls button');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            updateContributors();
+        }
+
+        function updateContributors() {
+            const tbody = document.getElementById('contributorsBody');
+            tbody.innerHTML = '';
+
+            // Get articles for the selected period
+            let articles = filteredArticles;
+            if (contributorsPeriod === 'today') {
+                const selectedDate = document.getElementById('dateSelect').value;
+                if (selectedDate !== 'all') {
+                    articles = metricsData.articles.filter(a => a.date === selectedDate);
+                } else {
+                    // If "all" is selected, use the most recent date
+                    const latestDate = metricsData.daily_stats[metricsData.daily_stats.length - 1]?.date;
+                    articles = metricsData.articles.filter(a => a.date === latestDate);
+                }
+            }
+
+            // Aggregate by author
+            const authorStats = {};
+
+            articles.forEach(article => {
+                const author = article.author || 'Unknown';
+                if (!authorStats[author]) {
+                    authorStats[author] = {
+                        stories: 0,
+                        totalSources: 0,
+                        femaleSources: 0,
+                        maleSources: 0,
+                        totalGenderSources: 0,
+                        met350: 0
+                    };
+                }
+
+                authorStats[author].stories++;
+                authorStats[author].totalSources += article.quoted_sources_confirmed || 0;
+
+                // Gender counts
+                const sources = article.source_evidence_confirmed || [];
+                sources.forEach(source => {
+                    if (source.gender === 'female') {
+                        authorStats[author].femaleSources++;
+                        authorStats[author].totalGenderSources++;
+                    } else if (source.gender === 'male') {
+                        authorStats[author].maleSources++;
+                        authorStats[author].totalGenderSources++;
+                    }
+                });
+
+                // Word count
+                if (article.word_count && article.word_count >= 350) {
+                    authorStats[author].met350++;
+                }
+            });
+
+            // Sort by story count
+            const sorted = Object.entries(authorStats).sort((a, b) => b[1].stories - a[1].stories);
+
+            sorted.slice(0, 25).forEach(([author, stats]) => {
+                const avgSources = stats.stories > 0 ? (stats.totalSources / stats.stories).toFixed(1) : '0.0';
+                const genderDisplay = `${stats.femaleSources} F, ${stats.maleSources} M`;
+                const met350Ratio = `${stats.met350}/${stats.stories}`;
+
+                const row = document.createElement('tr');
+                // Sprint 7.29: Make story count clickable to show stories
+                row.innerHTML = `
+                    <td>${author}</td>
+                    <td><a href="#" class="contributor-name-link" onclick="event.preventDefault(); showContributorStories('${author.replace(/'/g, "\\'")}');">${stats.stories}</a></td>
+                    <td>${avgSources}</td>
+                    <td>${genderDisplay}</td>
+                    <td>${met350Ratio}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            // Update toggle text with count
+            // Sprint 7.23: Added null guard to prevent error when element doesn't exist
+            const toggle = document.getElementById('contributorsToggle');
+            if (toggle) {
+                const totalContributors = Object.keys(authorStats).length;
+                if (!toggle.textContent.includes('Hide')) {
+                    toggle.textContent = `▶ View contributor breakdown (${totalContributors} contributors)`;
+                } else {
+                    toggle.textContent = `▼ Hide contributor breakdown (${totalContributors} contributors)`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
