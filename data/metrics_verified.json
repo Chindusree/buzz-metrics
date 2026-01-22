@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-01-21T12:57:27Z",
-  "total_articles": 75,
+  "last_updated": "2026-01-22T08:43:11Z",
+  "total_articles": 82,
   "summary": {
-    "avg_word_count": 599,
-    "avg_quoted_sources": 1.6,
-    "below_minimum_count": 19,
-    "long_form_count": 13,
-    "breaking_news_count": 7,
-    "total_images": 158,
-    "original_images": 61,
+    "avg_word_count": 601,
+    "avg_quoted_sources": 1.5,
+    "below_minimum_count": 21,
+    "long_form_count": 14,
+    "breaking_news_count": 8,
+    "total_images": 172,
+    "original_images": 70,
     "stock_images": 3,
-    "uncredited_images": 94,
+    "uncredited_images": 99,
     "gender_breakdown": {
-      "male": 65,
-      "female": 28,
+      "male": 69,
+      "female": 29,
       "unknown": 27
     },
     "by_section": {
@@ -23,9 +23,9 @@
         "sources": 23
       },
       "General News": {
-        "count": 51,
-        "words": 24176,
-        "sources": 69
+        "count": 58,
+        "words": 28469,
+        "sources": 74
       },
       "Features": {
         "count": 8,
@@ -40,9 +40,9 @@
         "avg_sources": 1.4
       },
       "News": {
-        "count": 51,
-        "avg_word_count": 474,
-        "avg_sources": 1.4
+        "count": 58,
+        "avg_word_count": 491,
+        "avg_sources": 1.3
       },
       "Features": {
         "count": 8,
@@ -74,13 +74,13 @@
     },
     {
       "date": "2026-01-21",
-      "article_count": 18,
+      "article_count": 25,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "09:14",
       "first_publish_on_time": true,
-      "below_minimum_count": 4,
-      "long_form_count": 2
+      "below_minimum_count": 6,
+      "long_form_count": 3
     }
   ],
   "articles": [
@@ -4390,6 +4390,57 @@
       "category_normalised": "General News"
     },
     {
+      "id": "7f003a86a874",
+      "headline": "20 year-old man on trial for manslaughter following stabbing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "author": "Oliver Kent",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "15:43",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 218,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.30.50-796x400.png",
+            "classification": "original",
+            "credit": "Dorset Police"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
       "id": "70e178a99b5d",
       "headline": "BREAKING NEWS: Cherries agree deal in principle for Rayan",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
@@ -4725,6 +4776,139 @@
       "category_normalised": "General News"
     },
     {
+      "id": "84c52e93684c",
+      "headline": "Diverse Abilities launch new adult soft play fundraiser",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "13:53",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 597,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_105052-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "A look at the huge soft play area The Treehouse's huge soft play area\n(photo credit- Ben Woodland)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_105819-1-360x270.jpg",
+            "classification": "uncredited",
+            "credit": "A close up look of the colourful soft play area at The Treehouse A closer look at the soft play at The Treehouse(photo credit- Ben Woodland)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_110558-1-360x269.jpg",
+            "classification": "uncredited",
+            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for ‘Big Kid Energy’(photo credit- Ben Woodland)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Fran",
+          "gender": "female"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "715af117910b",
+      "headline": "Dorset Devils, litter picking group, incorporate youth volunteering",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-devils-litter-picking-group-incorporate-youth-volunteering/",
+      "author": "Tyler Tamou",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "15:37",
+      "category": "Dorset",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 741,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-9F03B9BE-ED6E-4C76-BC86-1A3070A5C330-scaled-e1769009382469-800x400.jpeg",
+            "classification": "original",
+            "credit": "Grace Kehoe"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/processed-9F03B9BE-ED6E-4C76-BC86-1A3070A5C330-scaled-e1769009382469-360x268.jpeg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Peter Ryan",
+          "gender": "male"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Eastcliffe"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "773a7ef6193c",
       "headline": "Dorset Police appealing for witnesses for Sherborne Burglary",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
@@ -4773,6 +4957,62 @@
           "gender": "female"
         }
       ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "87c0f21d320c",
+      "headline": "Dorset Police issuing witness appeal following robbery in Poole",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-issuing-witness-appeal-following-robbery-in-poole/",
+      "author": "Anna Bodiam",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "13:13",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 347,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_8576-800x400.jpg",
+            "classification": "original",
+            "credit": "Sam Morris"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_8576-360x256.jpg",
+            "classification": "original",
+            "credit": "Sam Morris"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -5076,6 +5316,66 @@
       "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "f6d23216bf1b",
+      "headline": "Local Councillor voices concern over Lidl redevelopment",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-councillor-voices-concern-over-lidl-redevelopment/",
+      "author": "Sam Morris",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "15:48",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 612,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.55.29-800x400.png",
+            "classification": "original",
+            "credit": "Credit : Sam Morris"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.34.43-303x300.png",
+            "classification": "original",
+            "credit": "Image of Lidl logo – taken by Sam Morris"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Lidl"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -5525,6 +5825,137 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "8675056bedc4",
+      "headline": "The rise of walking football in Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-walking-football-in-bournemouth/",
+      "author": "Tom Priestley",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "14:58",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 1099,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.52.43-1-800x400.png",
+            "classification": "original",
+            "credit": "Evan Morris"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.48.11-1-720x641.png",
+            "classification": "original",
+            "credit": "Evan Morris"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0218-1-248x300.jpg",
+            "classification": "original",
+            "credit": "Moritz Baer"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Alan Spark",
+          "gender": "male"
+        },
+        {
+          "name": "Matt Stooleworthy",
+          "gender": "male"
+        },
+        {
+          "name": "Dylan Brown",
+          "gender": "male"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Sparks"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "9d9c82d655f7",
+      "headline": "Wonderkid Mayes hits record breaking 191",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-21",
+      "time": "14:13",
+      "category": "cricket",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 679,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/d748811b-cb87-403c-affe-179ee04a422b-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "The Utilita Bowl, home of Hampshire Cricket"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"

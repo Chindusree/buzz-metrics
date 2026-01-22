@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-21T12:57:25Z",
-  "total_verified": 75,
+  "last_updated": "2026-01-22T08:43:09Z",
+  "total_verified": 82,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -770,6 +770,12 @@
       "verify_evidence": []
     },
     {
+      "id": "7f003a86a874",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "70e178a99b5d",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
       "verify_quoted_sources": 0,
@@ -782,7 +788,7 @@
       "verify_evidence": [
         {
           "name": "Weymouth",
-          "context": "PERSON within 50 chars of quote: ... and have not yet been contacted by the police..” Weymouth then went on to say: “We are backing the police i..."
+          "context": "PERSON within 50 chars of quote: ...w and have not yet been contacted by the police.” Weymouth then went on to say: “We are backing the police i..."
         },
         {
           "name": "Dorchester Town",
@@ -797,7 +803,7 @@
       "verify_evidence": [
         {
           "name": "Weymouth",
-          "context": "PERSON within 50 chars of quote: ... and have not yet been contacted by the police..” Weymouth then went on to say: “We are backing the police i..."
+          "context": "PERSON within 50 chars of quote: ...w and have not yet been contacted by the police.” Weymouth then went on to say: “We are backing the police i..."
         },
         {
           "name": "Dorchester Town",
@@ -848,6 +854,32 @@
       ]
     },
     {
+      "id": "84c52e93684c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Fran",
+          "context": "PERSON within 50 chars of quote: ... and the first time he used a slide was with us.” Fran said. “We really want to put this (opportunity) a..."
+        }
+      ]
+    },
+    {
+      "id": "715af117910b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-devils-litter-picking-group-incorporate-youth-volunteering/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Peter Ryan",
+          "context": "PERSON within 50 chars of quote: ...ea they live in. The Dorset Devils were set up by Peter Ryan in 2013 with hopes to “engage with the local comm..."
+        },
+        {
+          "name": "Eastcliffe",
+          "context": "PERSON within 50 chars of quote: ... meet with him, most popularly in “Bournemouth or Eastcliffe,” This indirectly has supported Ryans initial int..."
+        }
+      ]
+    },
+    {
       "id": "773a7ef6193c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appealing-for-witnesses-for-sherborne-burglary/",
       "verify_quoted_sources": 1,
@@ -857,6 +889,12 @@
           "context": "PERSON within 50 chars of quote: ...including documents were stolen. Police Constable Jamie Randell, of Dorset Police, said: “We are carrying out a n..."
         }
       ]
+    },
+    {
+      "id": "87c0f21d320c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-issuing-witness-appeal-following-robbery-in-poole/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "db69e98901c4",
@@ -906,6 +944,17 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "f6d23216bf1b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-councillor-voices-concern-over-lidl-redevelopment/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Lidl",
+          "context": "PERSON within 50 chars of quote: ... don’t fix it.” Instead of going forward with the Lidl redevelopments, he argued that this site has the ..."
+        }
+      ]
     },
     {
       "id": "9fc5b169ab48",
@@ -1034,6 +1083,43 @@
           "context": "PERSON within 50 chars of quote: ... four-star reviews across major theatre networks. Mark Leipacher noted that the performance is “very much the nove..."
         }
       ]
+    },
+    {
+      "id": "8675056bedc4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-walking-football-in-bournemouth/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "Alan Spark",
+          "context": "PERSON within 50 chars of quote: ...er 50s and over 60s twice. In this time, Chairman Alan Spark has seen a real rise in the growth of the club. “..."
+        },
+        {
+          "name": "Sparks",
+          "context": "PERSON within 50 chars of quote: ...e club. “We started with around 30 members,” says Sparks, ” now there’s something like 250 with about 50 t..."
+        },
+        {
+          "name": "Matt Stooleworthy",
+          "context": "PERSON within 50 chars of quote: ... physical and mental benefits that come with it.” Matt Stooleworthy has been at Bournemouth Walking Football Club for..."
+        },
+        {
+          "name": "Stooleworthy",
+          "context": "PERSON within 50 chars of quote: ...h Walking Football Club or the game itself,” says Stooleworthy, “it gets people together and helps you meet new ..."
+        },
+        {
+          "name": "Dylan Brown",
+          "context": "PERSON within 50 chars of quote: ...leworthy. From an experienced player to a novice, Dylan Brown joined the club last week for the over 50s team. ..."
+        },
+        {
+          "name": "Brown",
+          "context": "PERSON within 50 chars of quote: ...ore Christmas and thought lets give it a go” says Brown. He is still currently playing five-a-side but si..."
+        }
+      ]
+    },
+    {
+      "id": "9d9c82d655f7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "8a49bc59dabd",

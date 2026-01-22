@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-21T12:57:27Z",
-  "total_flagged": 23,
+  "generated": "2026-01-22T08:43:11Z",
+  "total_flagged": 26,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -685,6 +685,52 @@
       "review_status": "pending"
     },
     {
+      "id": "715af117910b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-devils-litter-picking-group-incorporate-youth-volunteering/",
+      "headline": "Dorset Devils, litter picking group, incorporate youth volunteering",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Peter Ryan",
+        "Eastcliffe"
+      ],
+      "confirmed": [
+        {
+          "name": "Peter Ryan",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Eastcliffe"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f6d23216bf1b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-councillor-voices-concern-over-lidl-redevelopment/",
+      "headline": "Local Councillor voices concern over Lidl redevelopment",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Lidl"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Lidl"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "f0a84d7a7b2b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
       "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
@@ -801,6 +847,44 @@
       "filtered": [
         "Emirate",
         "GB"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "8675056bedc4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-walking-football-in-bournemouth/",
+      "headline": "The rise of walking football in Bournemouth",
+      "scrape_count": 0,
+      "verify_count": 6,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Alan Spark",
+        "Sparks",
+        "Matt Stooleworthy",
+        "Stooleworthy",
+        "Dylan Brown",
+        "Brown"
+      ],
+      "confirmed": [
+        {
+          "name": "Alan Spark",
+          "gender": "male"
+        },
+        {
+          "name": "Matt Stooleworthy",
+          "gender": "male"
+        },
+        {
+          "name": "Dylan Brown",
+          "gender": "male"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Sparks"
       ],
       "review_status": "pending"
     },
