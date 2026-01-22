@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-22T11:47:24Z",
-  "total_flagged": 47,
+  "generated": "2026-01-22T12:55:19Z",
+  "total_flagged": 48,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1601,6 +1601,29 @@
       "filtered": [
         "Minds"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "21b012314d75",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-expansion-approved/",
+      "headline": "BREAKING NEWS: Enabling works for Vitality Stadium expansion approved",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Bill Foley"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Bill Foley",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T11:43:44Z",
-  "total_articles": 94,
+  "last_updated": "2026-01-22T12:51:05Z",
+  "total_articles": 98,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5052,6 +5052,48 @@
       ]
     },
     {
+      "id": "46549948af98",
+      "headline": "Dorset Council announces plan to lower energy bills",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announces-plan-to-lower-energy-bills/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:53",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 232,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/solarpanel-copy-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Kieron Ford)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "8e2121a22f89",
       "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
@@ -5215,6 +5257,174 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/f6b32118-b9a5-43d5-8e5c-81018783904a-800x400.jpeg",
             "classification": "uncredited",
             "credit": "Southampton flag waved in front of crowd Credit- Ben Thonholtz"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "cca23c5193c5",
+      "headline": "Teapot Drama Club hold free sessions for SEND adults",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/teapot-drama-club-hold-free-sessions-for-send-adults/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "12:27",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 1070,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Naomi",
+          "full_attribution": "et to see in their area.Group Member, Naomi said:",
+          "quote_snippet": "Bringing [Teapot Drama Club] into conversation is ",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "David",
+          "full_attribution": "id's search for a group like this one.David said:",
+          "quote_snippet": "I think it helps to have drama or some kind of art",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Charlie Rose",
+          "full_attribution": "cused on those most often overlooked.\nRose added:",
+          "quote_snippet": "It's really a group for adults who perhaps don't g",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-11.45.02-800x400.png",
+            "classification": "original",
+            "credit": "Martha White"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-11.44.44-720x526.png",
+            "classification": "original",
+            "credit": "Martha White"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-11.45.02-720x570.png",
+            "classification": "original",
+            "credit": "Martha White"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "5cb6b4acb899",
+      "headline": "The history of the Vitality Stadium",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/history-of-the-vitality-stadium/",
+      "author": "Tom Priestley",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "12:17",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 823,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-10-800x400.jpg",
+            "classification": "original",
+            "credit": "Nico Theodorou)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "5921c9d26a69",
+      "headline": "UFC returns after six-week break",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ufc-returns-after-six-week-break/",
+      "author": "Ben Thonholtz",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "12:05",
+      "category": "Boxing",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 827,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/fa522ff4-369d-43f3-b653-81869e146807-800x400.jpeg",
+            "classification": "original",
+            "credit": "Ben Thonholtz)"
           }
         ]
       },

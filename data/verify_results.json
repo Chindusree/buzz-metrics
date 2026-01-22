@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T11:47:22Z",
-  "total_verified": 94,
+  "last_updated": "2026-01-22T12:55:17Z",
+  "total_verified": 98,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1153,8 +1153,13 @@
     {
       "id": "21b012314d75",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-expansion-approved/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Bill Foley",
+          "context": "PERSON within 50 chars of quote: ...adcasting compound. Speaking to afcb.co.uk, Owner Bill Foley has said: “This is an exciting and important mome..."
+        }
+      ]
     },
     {
       "id": "051eca102bd5",
@@ -1182,6 +1187,12 @@
     {
       "id": "99033d694b38",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/nba-london-growth/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "46549948af98",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announces-plan-to-lower-energy-bills/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -1215,6 +1226,45 @@
     {
       "id": "ebebd1898a12",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "cca23c5193c5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/teapot-drama-club-hold-free-sessions-for-send-adults/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Charlie Rose",
+          "context": "PERSON within 50 chars of quote: ... to do this sort of thing elsewhere” says founder Charlie Rose. The importance of groups like this one to Bourne..."
+        },
+        {
+          "name": "Naomi",
+          "context": "PERSON within 50 chars of quote: ...have been yet to see in their area. Group Member, Naomi said: “Bringing [Teapot Drama Club] into conversa..."
+        },
+        {
+          "name": "David",
+          "context": "PERSON within 50 chars of quote: ...to conversation is interesting and I am glad that David, Shane and I started it with Charlies help.” “We ..."
+        },
+        {
+          "name": "David’s",
+          "context": "PERSON within 50 chars of quote: ...sessions came about through now members Naomi and David’s search for a group like this one. David said: “I ..."
+        },
+        {
+          "name": "Rose",
+          "context": "PERSON within 50 chars of quote: ...into a “safe haven” that members look forward to. Rose said: “Teapot Drama was an idea that David and Na..."
+        }
+      ]
+    },
+    {
+      "id": "5cb6b4acb899",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/history-of-the-vitality-stadium/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "5921c9d26a69",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ufc-returns-after-six-week-break/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
