@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T15:08:31Z",
-  "total_verified": 101,
+  "last_updated": "2026-01-22T15:44:25Z",
+  "total_verified": 103,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1168,6 +1168,12 @@
       "verify_evidence": []
     },
     {
+      "id": "ca5751c2a5d0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "96b7cdc59248",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
       "verify_quoted_sources": 0,
@@ -1181,6 +1187,21 @@
         {
           "name": "Silva",
           "context": "PERSON within 50 chars of quote: ...s a great signing, a sure choice by Bournemouth.” Silva discusses the type of player that Bournemouth are..."
+        }
+      ]
+    },
+    {
+      "id": "715413449c1c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bringing-back-the-fun-in-football/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Ellis",
+          "context": "PERSON within 50 chars of quote: ... the pressure of being in a professional academy. Ellis said: “All it is is giving people the opportunity..."
+        },
+        {
+          "name": "James",
+          "context": "PERSON within 50 chars of quote: ...laying football rather than intense competition.” James himself has a wealth of experience in the game wi..."
         }
       ]
     },

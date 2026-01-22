@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T15:04:11Z",
-  "total_articles": 101,
+  "last_updated": "2026-01-22T15:40:22Z",
+  "total_articles": 103,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -4900,6 +4900,50 @@
       "warnings": []
     },
     {
+      "id": "ca5751c2a5d0",
+      "headline": "Bournemouth U21’s take top spot in PL Cup group",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "15:37",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 698,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_1607-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Jack Hillman"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
       "id": "96b7cdc59248",
       "headline": "Bournemouth businesses call for cuts to VAT rates",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
@@ -5001,6 +5045,58 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "715413449c1c",
+      "headline": "Bringing back the fun in football",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bringing-back-the-fun-in-football/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "15:25",
+      "category": "News",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 744,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "James Ellis",
+          "full_attribution": "re of being in a professional academy.Ellis said:",
+          "quote_snippet": "All it is is giving people the opportunity to play",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/James-Ellis-800x400.jpeg",
+            "classification": "original",
+            "credit": "Calum Mccarron"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "99033d694b38",

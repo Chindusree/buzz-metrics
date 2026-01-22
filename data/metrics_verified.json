@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-22T15:08:33Z",
-  "total_articles": 101,
+  "last_updated": "2026-01-22T15:44:26Z",
+  "total_articles": 103,
   "summary": {
-    "avg_word_count": 600,
+    "avg_word_count": 603,
     "avg_quoted_sources": 0.8,
     "below_minimum_count": 25,
     "long_form_count": 18,
     "breaking_news_count": 11,
-    "total_images": 198,
-    "original_images": 85,
+    "total_images": 200,
+    "original_images": 87,
     "stock_images": 3,
     "uncredited_images": 110,
     "gender_breakdown": {
-      "male": 45,
+      "male": 46,
       "female": 18,
       "unknown": 17
     },
     "by_section": {
       "Sport": {
-        "count": 21,
-        "words": 13509,
+        "count": 22,
+        "words": 14207,
         "sources": 11
       },
       "General News": {
-        "count": 71,
-        "words": 34708,
-        "sources": 52
+        "count": 72,
+        "words": 35452,
+        "sources": 53
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 21,
-        "avg_word_count": 643,
+        "count": 22,
+        "avg_word_count": 646,
         "avg_sources": 0.5
       },
       "News": {
-        "count": 71,
-        "avg_word_count": 489,
+        "count": 72,
+        "avg_word_count": 492,
         "avg_sources": 0.7
       },
       "Features": {
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 19,
+      "article_count": 21,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:52",
@@ -6502,6 +6502,59 @@
       "category_normalised": "General News"
     },
     {
+      "id": "ca5751c2a5d0",
+      "headline": "Bournemouth U21’s take top spot in PL Cup group",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "15:37",
+      "category": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 698,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_1607-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Jack Hillman"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "96b7cdc59248",
       "headline": "Bournemouth businesses call for cuts to VAT rates",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
@@ -6632,6 +6685,73 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "715413449c1c",
+      "headline": "Bringing back the fun in football",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bringing-back-the-fun-in-football/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "15:25",
+      "category": "News",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 744,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "James Ellis",
+          "full_attribution": "re of being in a professional academy.Ellis said:",
+          "quote_snippet": "All it is is giving people the opportunity to play",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/James-Ellis-800x400.jpeg",
+            "classification": "original",
+            "credit": "Calum Mccarron"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "James Ellis",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "99033d694b38",
