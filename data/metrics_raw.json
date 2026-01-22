@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T12:51:05Z",
-  "total_articles": 98,
+  "last_updated": "2026-01-22T14:21:40Z",
+  "total_articles": 100,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5094,6 +5094,58 @@
       "warnings": []
     },
     {
+      "id": "67b08e3dc29e",
+      "headline": "Frustrations rise as BCP Council propose tax increase",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/frustrations-rise-as-bcp-council-propose-tax-increase/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:01",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 468,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Cllr Millie Earl",
+          "full_attribution": "r council tax flexibility.Cllr Millie Earl added:",
+          "quote_snippet": " We will carefully consider the impact any rise mi",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-14.11.22-800x400.png",
+            "classification": "uncredited",
+            "credit": "Credit - claudiodivizia"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "8e2121a22f89",
       "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
@@ -5225,6 +5277,68 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "0ec9e8580501",
+      "headline": "Samee Charity aims to open new location for their SEN interns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/samee-charity-aims-to-open-new-location-for-their-sen-interns/",
+      "author": "Naomi Kativu",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:19",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 858,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Tyler Burt",
+          "full_attribution": "said Burt.The mentors encourage them to focus in",
+          "quote_snippet": "We've been studying a bit more about businesses, c",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6854-scaled-e1769091535590-800x400.jpeg",
+            "classification": "original",
+            "credit": "NAomi Kativu"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6823-360x203.jpeg",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6865-1-328x300.jpeg",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "ebebd1898a12",

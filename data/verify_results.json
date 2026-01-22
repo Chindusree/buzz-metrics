@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T13:52:05Z",
-  "total_verified": 98,
+  "last_updated": "2026-01-22T14:26:06Z",
+  "total_verified": 100,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1197,6 +1197,17 @@
       "verify_evidence": []
     },
     {
+      "id": "67b08e3dc29e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/frustrations-rise-as-bcp-council-propose-tax-increase/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Cllr Millie Earl",
+          "context": "PERSON within 50 chars of quote: ...nity events such as the Bournemouth Air Festival. Cllr Millie Earl, leader of BCP Council said: “After the budget, a..."
+        }
+      ]
+    },
+    {
       "id": "8e2121a22f89",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
       "verify_quoted_sources": 0,
@@ -1220,6 +1231,25 @@
         {
           "name": "Dragoș",
           "context": "PERSON within 50 chars of quote: ...main goal is to play in the final”. Nevertheless, Dragoș knows that it will be no easy task with a lot of ..."
+        }
+      ]
+    },
+    {
+      "id": "0ec9e8580501",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/samee-charity-aims-to-open-new-location-for-their-sen-interns/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Burt",
+          "context": "PERSON within 50 chars of quote: ...bout businesses, copyrights and trademarks.” said Burt. The mentors encourage them to focus in on their ..."
+        },
+        {
+          "name": "Adrien Cuthbert",
+          "context": "PERSON within 50 chars of quote: ...ost boring stuff is actually the most important.” Adrien Cuthbert is a mentor at Samee Charity who has been there s..."
+        },
+        {
+          "name": "Said Cuthbert",
+          "context": "PERSON within 50 chars of quote: ...ne who is a ventriloquist and does his own gigs.” Said Cuthbert. The space is very heavily catered to the comfoet..."
         }
       ]
     },

@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-01-22T13:52:07Z",
-  "total_articles": 98,
+  "last_updated": "2026-01-22T14:26:08Z",
+  "total_articles": 100,
   "summary": {
-    "avg_word_count": 599,
+    "avg_word_count": 601,
     "avg_quoted_sources": 0.8,
     "below_minimum_count": 25,
-    "long_form_count": 17,
+    "long_form_count": 18,
     "breaking_news_count": 11,
-    "total_images": 193,
-    "original_images": 81,
+    "total_images": 197,
+    "original_images": 84,
     "stock_images": 3,
-    "uncredited_images": 109,
+    "uncredited_images": 110,
     "gender_breakdown": {
-      "male": 43,
-      "female": 17,
+      "male": 44,
+      "female": 18,
       "unknown": 17
     },
     "by_section": {
@@ -23,9 +23,9 @@
         "sources": 11
       },
       "General News": {
-        "count": 68,
-        "words": 32833,
-        "sources": 49
+        "count": 70,
+        "words": 34159,
+        "sources": 51
       },
       "Features": {
         "count": 9,
@@ -40,8 +40,8 @@
         "avg_sources": 0.5
       },
       "News": {
-        "count": 68,
-        "avg_word_count": 483,
+        "count": 70,
+        "avg_word_count": 488,
         "avg_sources": 0.7
       },
       "Features": {
@@ -84,13 +84,13 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 16,
+      "article_count": 18,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:52",
       "first_publish_on_time": true,
       "below_minimum_count": 4,
-      "long_form_count": 3
+      "long_form_count": 4
     }
   ],
   "articles": [
@@ -6743,6 +6743,73 @@
       "category_normalised": "General News"
     },
     {
+      "id": "67b08e3dc29e",
+      "headline": "Frustrations rise as BCP Council propose tax increase",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/frustrations-rise-as-bcp-council-propose-tax-increase/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:01",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 468,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Cllr Millie Earl",
+          "full_attribution": "r council tax flexibility.Cllr Millie Earl added:",
+          "quote_snippet": " We will carefully consider the impact any rise mi",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-14.11.22-800x400.png",
+            "classification": "uncredited",
+            "credit": "Credit - claudiodivizia"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Millie Earl",
+          "gender": "female",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "8e2121a22f89",
       "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
@@ -6906,6 +6973,92 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "0ec9e8580501",
+      "headline": "Samee Charity aims to open new location for their SEN interns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/samee-charity-aims-to-open-new-location-for-their-sen-interns/",
+      "author": "Naomi Kativu",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:19",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 858,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Tyler Burt",
+          "full_attribution": "said Burt.The mentors encourage them to focus in",
+          "quote_snippet": "We've been studying a bit more about businesses, c",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6854-scaled-e1769091535590-800x400.jpeg",
+            "classification": "original",
+            "credit": "NAomi Kativu"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6823-360x203.jpeg",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6865-1-328x300.jpeg",
+            "classification": "original",
+            "credit": "Naomi Kativu"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Tyler Burt",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Adrien Cuthbert",
+          "gender": "male"
+        },
+        {
+          "name": "Said Cuthbert",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "ebebd1898a12",
