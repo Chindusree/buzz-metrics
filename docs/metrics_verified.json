@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-01-22T10:50:29Z",
-  "total_articles": 89,
+  "last_updated": "2026-01-22T11:18:45Z",
+  "total_articles": 90,
   "summary": {
-    "avg_word_count": 594,
+    "avg_word_count": 596,
     "avg_quoted_sources": 0.8,
     "below_minimum_count": 23,
     "long_form_count": 15,
     "breaking_news_count": 9,
-    "total_images": 181,
-    "original_images": 72,
+    "total_images": 182,
+    "original_images": 73,
     "stock_images": 3,
     "uncredited_images": 106,
     "gender_breakdown": {
@@ -28,8 +28,8 @@
         "sources": 46
       },
       "Features": {
-        "count": 8,
-        "words": 8058,
+        "count": 9,
+        "words": 8811,
         "sources": 17
       }
     },
@@ -45,9 +45,9 @@
         "avg_sources": 0.7
       },
       "Features": {
-        "count": 8,
-        "avg_word_count": 1007,
-        "avg_sources": 2.1
+        "count": 9,
+        "avg_word_count": 979,
+        "avg_sources": 1.9
       }
     }
   },
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 7,
+      "article_count": 8,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:52",
@@ -6738,6 +6738,59 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "455e12b1b8f8",
+      "headline": "ULTRA MMA charity event calls for final sign up",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ultra-mma-charity-event/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:05",
+      "category": "Health",
+      "category_primary": "Features",
+      "display_category": "General News",
+      "word_count": 753,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0614-1-e1769079518205.png",
+            "classification": "original",
+            "credit": "Harrison Walsh)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Features"
     }
   ]
 }

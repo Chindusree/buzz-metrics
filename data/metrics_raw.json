@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T10:46:35Z",
-  "total_articles": 89,
+  "last_updated": "2026-01-22T11:14:27Z",
+  "total_articles": 90,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5082,6 +5082,50 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/f6b32118-b9a5-43d5-8e5c-81018783904a-800x400.jpeg",
             "classification": "uncredited",
             "credit": "Southampton flag waved in front of crowd Credit- Ben Thonholtz"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "455e12b1b8f8",
+      "headline": "ULTRA MMA charity event calls for final sign up",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ultra-mma-charity-event/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "11:05",
+      "category": "Health",
+      "category_primary": "Features",
+      "display_category": "General News",
+      "word_count": 753,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0614-1-e1769079518205.png",
+            "classification": "original",
+            "credit": "Harrison Walsh)"
           }
         ]
       },

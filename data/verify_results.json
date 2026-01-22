@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T10:50:27Z",
-  "total_verified": 89,
+  "last_updated": "2026-01-22T11:18:43Z",
+  "total_verified": 90,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1192,6 +1192,12 @@
     {
       "id": "ebebd1898a12",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "455e12b1b8f8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ultra-mma-charity-event/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     }
