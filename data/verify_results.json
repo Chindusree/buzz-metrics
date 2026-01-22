@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T08:43:09Z",
-  "total_verified": 82,
+  "last_updated": "2026-01-22T09:15:10Z",
+  "total_verified": 84,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1143,6 +1143,18 @@
           "context": "PERSON within 50 chars of quote: ...he nurseries. In a press release for Blue Monday, Andy, one of the volunteers, added: “No matter how tou..."
         }
       ]
+    },
+    {
+      "id": "96b7cdc59248",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "ebebd1898a12",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     }
   ]
 }

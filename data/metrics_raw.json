@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T08:39:39Z",
-  "total_articles": 82,
+  "last_updated": "2026-01-22T09:11:27Z",
+  "total_articles": 84,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -4587,6 +4587,99 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_1412126041-360x271.jpg",
             "classification": "uncredited",
             "credit": "Some of the plants in the garden centre polytunnel.  Just one of the many polytunnels where volunteers are encouraged to plant and garden"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "96b7cdc59248",
+      "headline": "Bournemouth businesses call for cuts to VAT rates",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "08:55",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 876,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_110129811-1-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "A woman in a coffee shop Paitin Du Plooy, one of the employees at Big Wigs Bakery in Westbourne"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_102158994-1.jpg",
+            "classification": "uncredited",
+            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo’s Coffee Shop."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "ebebd1898a12",
+      "headline": "Southampton end winless run with victory over Sheffield United",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+      "author": "Ben Thonholtz",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "08:52",
+      "category": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 693,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/f6b32118-b9a5-43d5-8e5c-81018783904a-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "Southampton flag waved in front of crowd Credit- Ben Thonholtz"
           }
         ]
       },
