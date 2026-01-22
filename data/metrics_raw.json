@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T09:11:27Z",
-  "total_articles": 84,
+  "last_updated": "2026-01-22T09:45:30Z",
+  "total_articles": 85,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -4636,6 +4636,50 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_102158994-1.jpg",
             "classification": "uncredited",
             "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo’s Coffee Shop."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "53831c80ea43",
+      "headline": "Local six-a-side team head to International Tournament",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-team-intnl-tournament/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "09:38",
+      "category": "Local Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 743,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Gladiators-photo-800x400.jpeg",
+            "classification": "original",
+            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Dragoș Crăciun)"
           }
         ]
       },

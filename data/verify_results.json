@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T09:15:10Z",
-  "total_verified": 84,
+  "last_updated": "2026-01-22T09:49:03Z",
+  "total_verified": 85,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1149,6 +1149,21 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "53831c80ea43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-team-intnl-tournament/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Dragoș Crăciun",
+          "context": "PERSON within 50 chars of quote: ...diators are unwilling to stop there, with manager Dragoș Crăciun saying: “For this tournament our main goal is to ..."
+        },
+        {
+          "name": "Dragoș",
+          "context": "PERSON within 50 chars of quote: ...main goal is to play in the final”. Nevertheless, Dragoș knows that it will be no easy task with a lot of ..."
+        }
+      ]
     },
     {
       "id": "ebebd1898a12",
