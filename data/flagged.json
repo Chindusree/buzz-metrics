@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-22T14:26:08Z",
-  "total_flagged": 49,
+  "generated": "2026-01-22T15:08:33Z",
+  "total_flagged": 50,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1671,6 +1671,34 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "d8bc8a4e3dde",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "headline": "Rapist sentenced following assault in Bournemouth home",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Judge Fuller KC"
+      ],
+      "verify_evidence": [
+        "Callender"
+      ],
+      "confirmed": [
+        {
+          "name": "Judge Fuller KC",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Callender"
+      ],
       "review_status": "pending"
     },
     {

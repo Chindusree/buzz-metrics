@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T14:26:06Z",
-  "total_verified": 100,
+  "last_updated": "2026-01-22T15:08:31Z",
+  "total_verified": 101,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1231,6 +1231,17 @@
         {
           "name": "Dragoș",
           "context": "PERSON within 50 chars of quote: ...main goal is to play in the final”. Nevertheless, Dragoș knows that it will be no easy task with a lot of ..."
+        }
+      ]
+    },
+    {
+      "id": "d8bc8a4e3dde",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Callender",
+          "context": "PERSON within 50 chars of quote: ...tim said: “I have said no, please stop,” to which Callender replied, “Have some respect for me.” During the s..."
         }
       ]
     },

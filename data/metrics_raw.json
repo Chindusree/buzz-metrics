@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T14:21:40Z",
-  "total_articles": 100,
+  "last_updated": "2026-01-22T15:04:11Z",
+  "total_articles": 101,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5277,6 +5277,58 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "d8bc8a4e3dde",
+      "headline": "Rapist sentenced following assault in Bournemouth home",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:22",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 549,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Judge Fuller KC",
+          "full_attribution": "me.\"\nDuring the sentencing, Judge Fuller KC said:",
+          "quote_snippet": "You behaved in an animalistic way, ignoring her cr",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/117c29ca-8ef7-f011-9d8c-6045bdd24049.jpeg",
+            "classification": "original",
+            "credit": "Dorset Police)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "0ec9e8580501",

@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-01-22T14:26:08Z",
-  "total_articles": 100,
+  "last_updated": "2026-01-22T15:08:33Z",
+  "total_articles": 101,
   "summary": {
-    "avg_word_count": 601,
+    "avg_word_count": 600,
     "avg_quoted_sources": 0.8,
     "below_minimum_count": 25,
     "long_form_count": 18,
     "breaking_news_count": 11,
-    "total_images": 197,
-    "original_images": 84,
+    "total_images": 198,
+    "original_images": 85,
     "stock_images": 3,
     "uncredited_images": 110,
     "gender_breakdown": {
-      "male": 44,
+      "male": 45,
       "female": 18,
       "unknown": 17
     },
@@ -23,9 +23,9 @@
         "sources": 11
       },
       "General News": {
-        "count": 70,
-        "words": 34159,
-        "sources": 51
+        "count": 71,
+        "words": 34708,
+        "sources": 52
       },
       "Features": {
         "count": 9,
@@ -40,8 +40,8 @@
         "avg_sources": 0.5
       },
       "News": {
-        "count": 70,
-        "avg_word_count": 488,
+        "count": 71,
+        "avg_word_count": 489,
         "avg_sources": 0.7
       },
       "Features": {
@@ -84,7 +84,7 @@
     },
     {
       "date": "2026-01-22",
-      "article_count": 18,
+      "article_count": 19,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:52",
@@ -6973,6 +6973,75 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "d8bc8a4e3dde",
+      "headline": "Rapist sentenced following assault in Bournemouth home",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "14:22",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 549,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Judge Fuller KC",
+          "full_attribution": "me.\"\nDuring the sentencing, Judge Fuller KC said:",
+          "quote_snippet": "You behaved in an animalistic way, ignoring her cr",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/117c29ca-8ef7-f011-9d8c-6045bdd24049.jpeg",
+            "classification": "original",
+            "credit": "Dorset Police)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Judge Fuller KC",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Callender"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "0ec9e8580501",
