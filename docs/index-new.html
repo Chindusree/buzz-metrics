@@ -190,7 +190,7 @@
         <div class="analysis-grid">
             <!-- Gender -->
             <div class="card">
-                <h3 class="card-title">The Inclusive Project*</h3>
+                <h3 class="card-title">Who else<span style="color: #c41230;">?</span></h3>
                 <div class="gender-row">
                     <span class="gender-label">Women</span>
                     <div class="gender-track"><div class="gender-bar female"></div></div>
@@ -259,7 +259,7 @@
                 </div>
             </div>
         </div>
-        <p class="gender-note" style="margin-top: 0.75rem;">* Whose voices do we quote? Sourcing should fit the story, but we all have biases. See BBC good practice <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>.</p>
+        <p class="gender-note" style="margin-top: 0.75rem;"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>.</p>
     </section>
 
     <!-- TARGETS -->
@@ -510,7 +510,7 @@
 
         // Calculate totals
         const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
-        const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources_confirmed || 0), 0);
+        const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources || 0), 0);
         const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
 
         // Embeds: video_count + audio_count
@@ -574,7 +574,7 @@
         // Gender breakdown
         const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
         filteredArticles.forEach(article => {
-            const sources = article.source_evidence_confirmed || [];
+            const sources = article.source_evidence || [];
             sources.forEach(source => {
                 const gender = source.gender || 'unknown';
                 if (genderCounts.hasOwnProperty(gender)) {
@@ -601,7 +601,7 @@
                 sectionData[section] = { count: 0, sources: 0 };
             }
             sectionData[section].count++;
-            sectionData[section].sources += article.quoted_sources_confirmed || 0;
+            sectionData[section].sources += article.quoted_sources || 0;
         });
 
         console.log('Section data:', sectionData);
@@ -632,7 +632,7 @@
         // Gender card
         html += `
             <div class="card gender-card">
-                <h3 class="card-title">The Inclusive Project*</h3>
+                <h3 class="card-title">Who else<span style="color: #c41230;">?</span></h3>
                 <div class="gender-row">
                     <span class="gender-label">Women</span>
                     <div class="gender-track"><div class="gender-bar female" style="width: ${femalePercent}%"></div></div>
@@ -768,7 +768,7 @@
             const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
 
             dayArticles.forEach(article => {
-                (article.source_evidence_confirmed || []).forEach(source => {
+                (article.source_evidence || []).forEach(source => {
                     const gender = source.gender || 'unknown';
                     if (genderCounts.hasOwnProperty(gender)) genderCounts[gender]++;
                     else genderCounts.unknown++;
@@ -795,7 +795,7 @@
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${dateStr}</td>
-                <td>${day.article_count}/12 ${storiesTarget}</td>
+                <td>${day.article_count} ${storiesTarget}</td>
                 <td>${firstPubDisplay}</td>
                 <td>${day.below_minimum_count} ${belowTarget}</td>
                 <td>${womenPercent}% W</td>
@@ -812,11 +812,11 @@
         const tbody = document.querySelector('#stories .stories-table tbody');
         tbody.innerHTML = '';
 
-        // Sort by time
+        // Sort by time (latest first)
         const sortedArticles = [...filteredArticles].sort((a, b) => {
-            const timeA = a.time || '23:59';
-            const timeB = b.time || '23:59';
-            return timeA.localeCompare(timeB);
+            const timeA = a.time || '00:00';
+            const timeB = b.time || '00:00';
+            return timeB.localeCompare(timeA);
         });
 
         console.log('Sorted articles:', sortedArticles.length);
@@ -827,7 +827,7 @@
             const author = article.author || 'Unknown';
             const time = article.time || 'N/A';
             const words = (article.word_count || 0).toLocaleString();
-            const sources = article.quoted_sources_confirmed || 0;
+            const sources = article.quoted_sources || 0;
 
             row.innerHTML = `
                 <td class="story-time">${time}</td>
@@ -899,7 +899,7 @@
                 contributorData[author] = { count: 0, totalSources: 0 };
             }
             contributorData[author].count++;
-            contributorData[author].totalSources += article.quoted_sources_confirmed || 0;
+            contributorData[author].totalSources += article.quoted_sources || 0;
         });
 
         // Sort by story count descending - show ALL contributors
@@ -985,7 +985,7 @@
             const dateStr = date.getDate() + ' ' + date.toLocaleDateString('en-GB', { month: 'short' });
             const time = article.time || 'N/A';
             const words = article.word_count || 0;
-            const sources = article.quoted_sources_confirmed || 0;
+            const sources = article.quoted_sources || 0;
 
             const storyDiv = document.createElement('div');
             storyDiv.className = 'modal-story';
@@ -1017,7 +1017,7 @@
 
     // Sources modal functions
     function showSourcesModal(article) {
-        const sources = article.source_evidence_confirmed || [];
+        const sources = article.source_evidence || [];
 
         if (sources.length === 0) return;
 

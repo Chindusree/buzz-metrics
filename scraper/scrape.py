@@ -79,6 +79,16 @@ def analyze_article_with_groq(text):
 A quoted source = person whose EXACT WORDS appear inside quotation marks with attribution.
 THE TEST: Can you point to their words in "quotes"? If NO → not a source.
 
+CRITICAL EXCLUSION - EVIDENCE RECORDINGS:
+If words appear in quotation marks BUT come from recordings/audio/video played as evidence:
+→ NOT A SOURCE (it's evidence, not a journalistic quote)
+
+Pattern: "In the recording, X said... Y replied..." → Y is NOT a source
+Phrases: "recording showed" / "captured on phone" / "video evidence" → NOT sources
+
+Only count as sources if they made DIRECT STATEMENTS:
+- "told the court" / "testified" / "gave statement to police/media" → YES, count as source
+
 RULES:
 1. ONE ENTRY per person — consolidate "Iraola" and "Andoni Iraola" as one
 2. Resolve pronouns: "he said" near a quote → identify who from context
@@ -89,6 +99,7 @@ RULES:
    - Photo credits, image attributions, photographer names
    - Captions that credit photographers
    - Group descriptors like "Three Poole sailors" or "Five students" (NOT individual sources)
+   - Words from evidence recordings (see CRITICAL EXCLUSION above)
 
 ANONYMOUS SOURCES:
 - If someone is quoted but not named (e.g., "the victim said", "she said", "he told"), use:
