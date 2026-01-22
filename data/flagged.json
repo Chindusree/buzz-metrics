@@ -1,22 +1,30 @@
 {
-  "generated": "2026-01-22T09:49:05Z",
-  "total_flagged": 26,
+  "generated": "2026-01-22T10:18:52Z",
+  "total_flagged": 45,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
       "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 2,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Andoni Iraola"
+      ],
       "verify_evidence": [
         "Rayan",
         "@rayann"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
       "possible": [],
       "filtered": [
         "Rayan"
@@ -27,12 +35,14 @@
       "id": "0faceff20735",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-looks-ahead-to-brighton-test/",
       "headline": "Andoni Iraola looks ahead to Brighton test",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 4,
-      "confirmed_count": 3,
-      "possible_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 3,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Andoni Iraola"
+      ],
       "verify_evidence": [
         "Fabian Hurzeler",
         "Brighton",
@@ -40,6 +50,13 @@
         "David Brooks"
       ],
       "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
         {
           "name": "Fabian Hurzeler",
           "gender": "male"
@@ -53,10 +70,71 @@
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Brighton"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d0dc88d201d3",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-oliver-glasner-confirms-marc-guehi-departure/",
+      "headline": "BREAKING: Oliver Glasner confirms Marc Guehi departure",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Oliver Glasner"
+      ],
+      "verify_evidence": [
+        "Marc"
+      ],
+      "confirmed": [
+        {
+          "name": "Oliver Glasner",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Marc",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "0c209a33d1b4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-rugby-club-head-to-old-tiffinians/",
+      "headline": "Bournemouth Rugby Club head to Old Tiffinians",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Old Tiffinians"
+      ],
+      "verify_evidence": [
+        "Roan Fox"
+      ],
+      "confirmed": [
+        {
+          "name": "Old Tiffinians",
+          "gender": "unknown",
+          "position": "standalone_dash"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Roan Fox",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -80,11 +158,13 @@
       "confirmed": [
         {
           "name": "Sara Armstrong",
-          "gender": "female"
+          "gender": "female",
+          "position": "blockquote-inline"
         },
         {
           "name": "Brent Pease",
-          "gender": "male"
+          "gender": "male",
+          "position": "role_description"
         }
       ],
       "possible": [],
@@ -117,15 +197,18 @@
       "confirmed": [
         {
           "name": "Andrew Wilmot",
-          "gender": "male"
+          "gender": "male",
+          "position": "role_description"
         },
         {
           "name": "James Wilder",
-          "gender": "male"
+          "gender": "male",
+          "position": "role_description"
         },
         {
           "name": "Ali Jeffs",
-          "gender": "male"
+          "gender": "male",
+          "position": "role_description"
         }
       ],
       "possible": [],
@@ -136,13 +219,91 @@
       "review_status": "pending"
     },
     {
+      "id": "f46adb651043",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "scrape_count": 3,
+      "verify_count": 5,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Terry Dennis",
+        "Pete Ball",
+        "Dorset Demons"
+      ],
+      "verify_evidence": [
+        "Dennis",
+        "Moritz Baer",
+        "Terry",
+        "Ball",
+        "Pete"
+      ],
+      "confirmed": [
+        {
+          "name": "Terry Dennis",
+          "gender": "male",
+          "position": "blockquote-inline"
+        },
+        {
+          "name": "Pete Ball",
+          "gender": "male",
+          "position": "blockquote-inline"
+        },
+        {
+          "name": "Dorset Demons",
+          "gender": "unknown",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Moritz Baer",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "eeadb60f952e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Anthony Joshua"
+      ],
+      "verify_evidence": [
+        "Gabrielle"
+      ],
+      "confirmed": [
+        {
+          "name": "Anthony Joshua",
+          "gender": "male",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Gabrielle",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "e48217df8ae6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
       "scrape_count": 1,
       "verify_count": 6,
-      "confirmed_count": 3,
-      "possible_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 3,
       "filtered_count": 2,
       "scrape_evidence": [
         "Red Sea"
@@ -155,7 +316,8 @@
         "Richard",
         "John"
       ],
-      "confirmed": [
+      "confirmed": [],
+      "possible": [
         {
           "name": "Richard Sydenham",
           "gender": "male"
@@ -169,7 +331,6 @@
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Red Sea",
         "Williams"
@@ -183,10 +344,10 @@
       "scrape_count": 1,
       "verify_count": 3,
       "confirmed_count": 1,
-      "possible_count": 0,
+      "possible_count": 1,
       "filtered_count": 2,
       "scrape_evidence": [
-        "Neil Meade"
+        "Wiltshire Police"
       ],
       "verify_evidence": [
         "Neil Meade",
@@ -195,11 +356,17 @@
       ],
       "confirmed": [
         {
+          "name": "Wiltshire Police",
+          "gender": "unknown",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
+        {
           "name": "Neil Meade",
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Craig’s",
         "Breton"
@@ -212,8 +379,8 @@
       "headline": "Poole Town’s Kitmen aiming to complete the 92",
       "scrape_count": 2,
       "verify_count": 10,
-      "confirmed_count": 4,
-      "possible_count": 0,
+      "confirmed_count": 2,
+      "possible_count": 2,
       "filtered_count": 3,
       "scrape_evidence": [
         "Matt Reeds",
@@ -234,12 +401,16 @@
       "confirmed": [
         {
           "name": "Matt Reeds",
-          "gender": "male"
+          "gender": "male",
+          "position": "after"
         },
         {
           "name": "Dan Wilson",
-          "gender": "male"
-        },
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
         {
           "name": "Nottingham Forest",
           "gender": "unknown"
@@ -249,7 +420,6 @@
           "gender": "female"
         }
       ],
-      "possible": [],
       "filtered": [
         "Wembley",
         "Brentford",
@@ -258,16 +428,53 @@
       "review_status": "pending"
     },
     {
+      "id": "d0eceb2acc05",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Myles Haskell",
+        "Grace Ashton"
+      ],
+      "verify_evidence": [
+        "Jordan Lench",
+        "Grace Ashton"
+      ],
+      "confirmed": [
+        {
+          "name": "Myles Haskell",
+          "gender": "male",
+          "position": "role_description"
+        },
+        {
+          "name": "Grace Ashton",
+          "gender": "female",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jordan Lench",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "37619d905b65",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
       "headline": "Southern League Premier South preview",
-      "scrape_count": 2,
+      "scrape_count": 1,
       "verify_count": 3,
-      "confirmed_count": 3,
-      "possible_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [
-        "Marcin Rogalski",
         "IK Hill"
       ],
       "verify_evidence": [
@@ -277,19 +484,17 @@
       ],
       "confirmed": [
         {
-          "name": "Marcin Rogalski",
-          "gender": "male"
-        },
-        {
           "name": "IK Hill",
-          "gender": "unknown"
-        },
+          "gender": "unknown",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
         {
           "name": "Walton",
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Yate"
       ],
@@ -301,8 +506,8 @@
       "headline": "The fast fashion disconnect",
       "scrape_count": 4,
       "verify_count": 6,
-      "confirmed_count": 5,
-      "possible_count": 0,
+      "confirmed_count": 2,
+      "possible_count": 3,
       "filtered_count": 2,
       "scrape_evidence": [
         "Marcjanna Augustyn",
@@ -321,12 +526,16 @@
       "confirmed": [
         {
           "name": "Marcjanna Augustyn",
-          "gender": "unknown"
+          "gender": "unknown",
+          "position": "after"
         },
         {
           "name": "Kaouther Kooli",
-          "gender": "unknown"
-        },
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "possible": [
         {
           "name": "Agatha Shepherd-Jones",
           "gender": "female"
@@ -340,7 +549,6 @@
           "gender": "unknown"
         }
       ],
-      "possible": [],
       "filtered": [
         "Ralph Lauren",
         "Big Give"
@@ -367,7 +575,8 @@
       "confirmed": [
         {
           "name": "Becca Parker",
-          "gender": "female"
+          "gender": "female",
+          "position": "before"
         }
       ],
       "possible": [],
@@ -377,31 +586,62 @@
       "review_status": "pending"
     },
     {
-      "id": "4c79ed9d0c43",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
-      "headline": "VAR errors have AFC Bournemouth in the forefront",
-      "scrape_count": 2,
-      "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
+      "id": "69d0caa89d60",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "headline": "Unknown",
+      "scrape_count": 1,
+      "verify_count": 5,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 0,
       "scrape_evidence": [
-        "Ewan Corbett",
-        "Premier League"
+        "David Richmond-Coggan"
       ],
       "verify_evidence": [
-        "Sarr"
+        "David",
+        "David Richmond-Coggan",
+        "Alison Hulme",
+        "Luke Hills",
+        "Nyah"
       ],
       "confirmed": [
         {
-          "name": "Ewan Corbett",
+          "name": "David Richmond-Coggan",
+          "gender": "male",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Alison Hulme",
+          "gender": "female"
+        },
+        {
+          "name": "Luke Hills",
           "gender": "male"
         },
         {
-          "name": "Premier League",
-          "gender": "unknown"
+          "name": "Nyah",
+          "gender": "female"
         }
       ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "4c79ed9d0c43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
+      "headline": "VAR errors have AFC Bournemouth in the forefront",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Sarr"
+      ],
+      "confirmed": [],
       "possible": [],
       "filtered": [
         "Sarr"
@@ -429,21 +669,61 @@
       "confirmed": [
         {
           "name": "Frederica Sindici",
-          "gender": "female"
+          "gender": "female",
+          "position": "blockquote-inline"
         },
         {
           "name": "Chanelle Paris",
-          "gender": "female"
+          "gender": "female",
+          "position": "blockquote-inline"
         },
         {
           "name": "Cindy Lou",
-          "gender": "female"
+          "gender": "female",
+          "position": "before"
         }
       ],
       "possible": [],
       "filtered": [
         "Economic Forum"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f6a028fa8bd4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "headline": "When education takes a stand",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Ivan Darley"
+      ],
+      "verify_evidence": [
+        "Ivan",
+        "Sam McShane",
+        "Anne"
+      ],
+      "confirmed": [
+        {
+          "name": "Ivan Darley",
+          "gender": "male",
+          "position": "role_description"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Sam McShane",
+          "gender": "male"
+        },
+        {
+          "name": "Anne",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -465,7 +745,8 @@
       "confirmed": [
         {
           "name": "Harvey Bertrand",
-          "gender": "male"
+          "gender": "male",
+          "position": "before"
         }
       ],
       "possible": [],
@@ -475,16 +756,50 @@
       "review_status": "pending"
     },
     {
+      "id": "050bcc50448e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
+      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Helen Bleazard"
+      ],
+      "verify_evidence": [
+        "Bleazard",
+        "Striker Sophie Quirk",
+        "Quirk"
+      ],
+      "confirmed": [
+        {
+          "name": "Helen Bleazard",
+          "gender": "female",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Striker Sophie Quirk",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "9b454f4d9db2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-lions-set-themselves-up-for-greatness/",
       "headline": "Bournemouth Lions Set Themselves Up For Greatness",
-      "scrape_count": 1,
+      "scrape_count": 2,
       "verify_count": 4,
-      "confirmed_count": 3,
-      "possible_count": 0,
+      "confirmed_count": 2,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [
-        "Grant Hancox"
+        "Grant Hancox",
+        "Head Coach"
       ],
       "verify_evidence": [
         "Grant Hancox",
@@ -495,68 +810,215 @@
       "confirmed": [
         {
           "name": "Grant Hancox",
-          "gender": "male"
+          "gender": "male",
+          "position": "before"
         },
         {
           "name": "Head Coach",
-          "gender": "unknown"
-        },
+          "gender": "unknown",
+          "position": "before"
+        }
+      ],
+      "possible": [
         {
           "name": "Connor McCaffrey",
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Will Croker"
       ],
       "review_status": "pending"
     },
     {
-      "id": "c8e150c3ac4a",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
-      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
-      "scrape_count": 2,
+      "id": "751bf1ee1b06",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "scrape_count": 0,
       "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Abbas Araghchi"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Abbas Araghchi",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "1f955f6870b9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ex-cherries-star-solanke-returns-to-spurs-ucl-squad/",
+      "headline": "Ex-Cherries Star Solanke returns to Spurs UCL Squad",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
       "scrape_evidence": [
-        "Jadien Davies",
-        "Robin"
+        "Thomas Frank"
       ],
       "verify_evidence": [
-        "Evelyn Eales"
+        "Thomas Frank",
+        "Matty"
       ],
       "confirmed": [
         {
-          "name": "Robin",
+          "name": "Thomas Frank",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Matty",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "dba46286581f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hamworthy-recreation-play-off-push-continues/",
+      "headline": "Hamworthy Recreation Play off push continues",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Chris Senior"
+      ],
+      "verify_evidence": [
+        "Jack"
+      ],
+      "confirmed": [
+        {
+          "name": "Chris Senior",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jack",
           "gender": "male"
-        },
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "1b1ad423d795",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/high-risk-offenders-unit-bolsters-victim-protection-measures/",
+      "headline": "High risk offenders unit bolsters victim protection measures",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Detective Inspector McCorkell"
+      ],
+      "verify_evidence": [
+        "Marcus McCorkell",
+        "McCorkell"
+      ],
+      "confirmed": [
+        {
+          "name": "Detective Inspector McCorkell",
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Marcus McCorkell",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "c8e150c3ac4a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "headline": "Intersectional Uprising protest empowers Bournemouth residents",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Evelyn Eales"
+      ],
+      "confirmed": [],
+      "possible": [
         {
           "name": "Evelyn Eales",
           "gender": "female"
         }
       ],
-      "possible": [],
-      "filtered": [
-        "Jadien Davies"
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "de466f5f7de9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "headline": "Local care home combats loneliness on Blue Monday",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Jess"
       ],
+      "verify_evidence": [
+        "Karen",
+        "Barbara Adams"
+      ],
+      "confirmed": [
+        {
+          "name": "Jess",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Karen",
+          "gender": "female"
+        },
+        {
+          "name": "Barbara Adams",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
       "id": "18e9279b8b3b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-swimmers-set-for-national-spotlight-after-commonwealth-games-trials-qualification/",
       "headline": "Poole swimmers set for national spotlight after Commonwealth Games trials qualification",
-      "scrape_count": 3,
+      "scrape_count": 2,
       "verify_count": 3,
-      "confirmed_count": 4,
-      "possible_count": 0,
-      "filtered_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
       "scrape_evidence": [
-        "GB Championships",
-        "Filip Nowacki",
-        "Jacob Peters"
+        "Halle Hariss",
+        "Chris Neilson"
       ],
       "verify_evidence": [
         "Hariss",
@@ -565,46 +1027,24 @@
       ],
       "confirmed": [
         {
-          "name": "GB Championships",
-          "gender": "unknown"
+          "name": "Halle Hariss",
+          "gender": "female",
+          "position": "after"
         },
         {
-          "name": "Filip Nowacki",
-          "gender": "male"
-        },
-        {
-          "name": "Jacob Peters",
-          "gender": "male"
-        },
+          "name": "Chris Neilson",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
         {
           "name": "Club Pathway",
           "gender": "unknown"
         }
       ],
-      "possible": [],
       "filtered": [
-        "Hariss",
         "Beasley"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "da7bf409819e",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
-      "headline": "Students compete for cash prizes on ITV’s This Morning",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Quickenden"
-      ],
-      "confirmed": [],
-      "possible": [],
-      "filtered": [
-        "Quickenden"
       ],
       "review_status": "pending"
     },
@@ -612,21 +1052,28 @@
       "id": "a86542bf9945",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sweet-receives-new-contract/",
       "headline": "Sweet receives first professional contract",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 3,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 0,
-      "filtered_count": 3,
-      "scrape_evidence": [],
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Adam Carty"
+      ],
       "verify_evidence": [
         "Carty",
         "Sweet",
         "Hampshire"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Adam Carty",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
       "possible": [],
       "filtered": [
-        "Carty",
         "Sweet",
         "Hampshire"
       ],
@@ -638,21 +1085,21 @@
       "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
       "scrape_count": 0,
       "verify_count": 2,
-      "confirmed_count": 1,
-      "possible_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [],
       "verify_evidence": [
         "Weymouth",
         "Dorchester Town"
       ],
-      "confirmed": [
+      "confirmed": [],
+      "possible": [
         {
           "name": "Dorchester Town",
           "gender": "unknown"
         }
       ],
-      "possible": [],
       "filtered": [
         "Weymouth"
       ],
@@ -664,24 +1111,107 @@
       "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
       "scrape_count": 0,
       "verify_count": 2,
-      "confirmed_count": 1,
-      "possible_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [],
       "verify_evidence": [
         "Weymouth",
         "Dorchester Town"
       ],
-      "confirmed": [
+      "confirmed": [],
+      "possible": [
         {
           "name": "Dorchester Town",
           "gender": "unknown"
         }
       ],
-      "possible": [],
       "filtered": [
         "Weymouth"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d8ca9935fd92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-through-to-semi-finals/",
+      "headline": "Bashley through to semi-finals",
+      "scrape_count": 2,
+      "verify_count": 5,
+      "confirmed_count": 2,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Head Coach",
+        "Kieran Filmer"
+      ],
+      "verify_evidence": [
+        "Head Coach",
+        "Kieran Filmer",
+        "Hayden Wells",
+        "Stoneham FC",
+        "Filmer"
+      ],
+      "confirmed": [
+        {
+          "name": "Head Coach",
+          "gender": "unknown",
+          "position": "before"
+        },
+        {
+          "name": "Kieran Filmer",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Hayden Wells",
+          "gender": "male"
+        },
+        {
+          "name": "Stoneham FC",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "417a0e30a759",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boscombe-community-wears-their-visibility-cloaks-and-gets-poetical/",
+      "headline": "Boscombe community wears their visibility cloaks and gets poetical",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Ri Baroche",
+        "Claire Hillier"
+      ],
+      "verify_evidence": [
+        "Benjamin Zephaniah",
+        "Hillier"
+      ],
+      "confirmed": [
+        {
+          "name": "Ri Baroche",
+          "gender": "unknown",
+          "position": "after"
+        },
+        {
+          "name": "Claire Hillier",
+          "gender": "female",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Benjamin Zephaniah",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -690,24 +1220,79 @@
       "headline": "Dorset Devils, litter picking group, incorporate youth volunteering",
       "scrape_count": 0,
       "verify_count": 2,
-      "confirmed_count": 1,
-      "possible_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [],
       "verify_evidence": [
         "Peter Ryan",
         "Eastcliffe"
       ],
-      "confirmed": [
+      "confirmed": [],
+      "possible": [
         {
           "name": "Peter Ryan",
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Eastcliffe"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "b7229ac5ec0d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driver-dies-after-sustained-injuries-from-three-car-crash/",
+      "headline": "Driver dies after sustained injuries from three-car crash",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Paul Hind"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Paul Hind",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "c2ee008d4395",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-cherries-favourite-solanke-scores-on-ucl-return/",
+      "headline": "Former Cherries favourite Solanke scores on UCL return",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Dominic Solanke"
+      ],
+      "verify_evidence": [
+        "Tottenham Hotspur",
+        "Solanke"
+      ],
+      "confirmed": [
+        {
+          "name": "Dominic Solanke",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Tottenham Hotspur",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -731,13 +1316,59 @@
       "review_status": "pending"
     },
     {
+      "id": "9fc5b169ab48",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mark-mcadam-speaks-cherries-transfers/",
+      "headline": "Mark McAdam speaks Cherries transfers",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 4,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Mark McAdam"
+      ],
+      "verify_evidence": [
+        "Bill Foley’s",
+        "Dean Huijsen",
+        "Ilia Zabarnyi",
+        "Milos Kerkez"
+      ],
+      "confirmed": [
+        {
+          "name": "Mark McAdam",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Bill Foley’s",
+          "gender": "male"
+        },
+        {
+          "name": "Dean Huijsen",
+          "gender": "male"
+        },
+        {
+          "name": "Ilia Zabarnyi",
+          "gender": "male"
+        },
+        {
+          "name": "Milos Kerkez",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "f0a84d7a7b2b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-pirates-announce-wessex-marine-as-title-sponsor-for-2026/",
       "headline": "Poole Pirates announce Wessex Marine as title sponsor for 2026",
       "scrape_count": 1,
       "verify_count": 9,
-      "confirmed_count": 7,
-      "possible_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 6,
       "filtered_count": 2,
       "scrape_evidence": [
         "Dan Ford"
@@ -756,8 +1387,11 @@
       "confirmed": [
         {
           "name": "Dan Ford",
-          "gender": "male"
-        },
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
         {
           "name": "David",
           "gender": "male"
@@ -783,7 +1417,6 @@
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Wessex",
         "Cook"
@@ -794,14 +1427,15 @@
       "id": "f744169320dd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-sailors-win-first-sailgp-race/",
       "headline": "Poole Sailors win first SailGP Race",
-      "scrape_count": 2,
+      "scrape_count": 3,
       "verify_count": 8,
-      "confirmed_count": 7,
-      "possible_count": 0,
+      "confirmed_count": 3,
+      "possible_count": 4,
       "filtered_count": 2,
       "scrape_evidence": [
         "Dylan Fletcher",
-        "Three Poole"
+        "Three Poole",
+        "Hannah Mills"
       ],
       "verify_evidence": [
         "Emirate",
@@ -816,16 +1450,21 @@
       "confirmed": [
         {
           "name": "Dylan Fletcher",
-          "gender": "male"
+          "gender": "male",
+          "position": "before"
         },
         {
           "name": "Three Poole",
-          "gender": "unknown"
+          "gender": "unknown",
+          "position": "before"
         },
         {
           "name": "Hannah Mills",
-          "gender": "female"
-        },
+          "gender": "female",
+          "position": "after"
+        }
+      ],
+      "possible": [
         {
           "name": "Ellie Aldridge",
           "gender": "female"
@@ -843,7 +1482,6 @@
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Emirate",
         "GB"
@@ -851,15 +1489,41 @@
       "review_status": "pending"
     },
     {
+      "id": "df1649c0e0e4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-talented-mr-ripley-is-debuting-at-poole-lighthouse/",
+      "headline": "The Talented Mr. Ripley is debuting at Poole Lighthouse",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Mark Leipacher"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Mark Leipacher",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "8675056bedc4",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-walking-football-in-bournemouth/",
       "headline": "The rise of walking football in Bournemouth",
-      "scrape_count": 0,
+      "scrape_count": 2,
       "verify_count": 6,
-      "confirmed_count": 3,
-      "possible_count": 0,
+      "confirmed_count": 2,
+      "possible_count": 1,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Matt Stooleworthy",
+        "Dylan Brown"
+      ],
       "verify_evidence": [
         "Alan Spark",
         "Sparks",
@@ -870,19 +1534,22 @@
       ],
       "confirmed": [
         {
-          "name": "Alan Spark",
-          "gender": "male"
-        },
-        {
           "name": "Matt Stooleworthy",
-          "gender": "male"
+          "gender": "male",
+          "position": "after"
         },
         {
           "name": "Dylan Brown",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Alan Spark",
           "gender": "male"
         }
       ],
-      "possible": [],
       "filtered": [
         "Sparks"
       ],
@@ -892,12 +1559,16 @@
       "id": "8a49bc59dabd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/younger-men-should-embrace-gardening-say-bournemouth-nursery/",
       "headline": "Younger Men should embrace gardening, say Bournemouth nursery",
-      "scrape_count": 0,
+      "scrape_count": 3,
       "verify_count": 4,
       "confirmed_count": 3,
-      "possible_count": 0,
+      "possible_count": 1,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Marc Rosenberg",
+        "Andy",
+        "Sandi Marshall"
+      ],
       "verify_evidence": [
         "Minds",
         "Chestnut Nursery",
@@ -906,22 +1577,54 @@
       ],
       "confirmed": [
         {
-          "name": "Chestnut Nursery",
-          "gender": "unknown"
-        },
-        {
-          "name": "Sandi Marshall",
-          "gender": "male"
+          "name": "Marc Rosenberg",
+          "gender": "male",
+          "position": "before"
         },
         {
           "name": "Andy",
-          "gender": "male"
+          "gender": "male",
+          "position": "before"
+        },
+        {
+          "name": "Sandi Marshall",
+          "gender": "male",
+          "position": "role_description"
         }
       ],
-      "possible": [],
+      "possible": [
+        {
+          "name": "Chestnut Nursery",
+          "gender": "unknown"
+        }
+      ],
       "filtered": [
         "Minds"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "53831c80ea43",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-team-intnl-tournament/",
+      "headline": "Local six-a-side team head to International Tournament",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Dragoș Crăciun",
+        "Dragoș"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Dragoș Crăciun",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     }
   ]

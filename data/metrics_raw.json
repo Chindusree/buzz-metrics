@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T09:45:30Z",
-  "total_articles": 85,
+  "last_updated": "2026-01-22T09:56:45Z",
+  "total_articles": 87,
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -16,12 +16,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "full_attribution": "gramA post shared by Rayan (@rayann)Iraola added:",
+          "quote_snippet": "It's true that the club is working on trying to si",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -58,12 +68,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "full_attribution": "Iraola said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -107,12 +127,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Oliver Glasner",
+          "full_attribution": "nd will be unavailable this weekend.Glasner said:",
+          "quote_snippet": "My latest understanding is that a deal with Marc i",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -164,7 +194,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2022128173931_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_Monchengladbach_-_Sven_-_1D_X_MK_II_-_2395_-_B70I8506_Oliver_Glasner_cropped-e1768573269493-800x400.webp",
             "classification": "original",
-            "credit": "Sven Müller, CC 4"
+            "credit": "Sven M\u00fcller, CC 4"
           }
         ]
       },
@@ -193,29 +223,20 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 2,
       "source_evidence": [
         {
-          "name": "Memorial Ground",
-          "full_attribution": "Memorial Ground, with Bournemouth looking for a re",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
-        },
-        {
           "name": "Old Tiffinians",
-          "full_attribution": "– Old Tiffinians",
+          "full_attribution": "\u2013 Old Tiffinians",
           "quote_snippet": "",
           "position": "standalone_dash",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "images": {
@@ -268,7 +289,7 @@
         {
           "name": "Sara Armstrong",
           "full_attribution": "blockquote cite: Sara Armstrong",
-          "quote_snippet": "\"I do support them. I’m a Cherries fan and they do",
+          "quote_snippet": "\"I do support them. I\u2019m a Cherries fan and they do",
           "position": "blockquote-inline",
           "gender": "female",
           "gender_confidence": "high",
@@ -689,12 +710,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Police Constable Jamie Randell",
+          "full_attribution": "Constable Jamie Randell, of Dorset Police, said:",
+          "quote_snippet": "We have been carrying out detailed enquiries into ",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -721,7 +752,7 @@
     },
     {
       "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
       "author": "Benji Sampson",
       "author_confidence": "high",
@@ -797,12 +828,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Riley Wallace",
+          "full_attribution": "Wallace discussed,",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -846,12 +887,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Abi Paler",
+          "full_attribution": "access to services across Dorset.Abi Paler said,",
+          "quote_snippet": "looking at how much we raised I am proud of what w",
+          "position": "before",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 2,
@@ -900,10 +951,10 @@
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Dominic Wong",
-          "full_attribution": "Dominic Wong, founder of The Writing Festival abou",
-          "quote_snippet": "",
-          "position": "role_description",
+          "name": "Kevin",
+          "full_attribution": ".Clearly passionate about the project, Kevin said",
+          "quote_snippet": "it was really successful. It kind of did what I wa",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -943,7 +994,7 @@
     },
     {
       "id": "e48217df8ae6",
-      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "author": "Benji Sampson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan Williams",
       "author_confidence": "high",
@@ -963,7 +1014,7 @@
       "source_evidence": [
         {
           "name": "Red Sea",
-          "full_attribution": "Red Sea, so I’m really looking forward to defendin",
+          "full_attribution": "Red Sea, so I\u2019m really looking forward to defendin",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "male",
@@ -1026,13 +1077,13 @@
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Neil Meade",
-          "full_attribution": "Neil Meade, said:\n“Our thoughts are with Craig’s f",
+          "name": "Wiltshire Police",
+          "full_attribution": "Police said",
           "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
+          "position": "lastname_verb",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "images": {
@@ -1071,12 +1122,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Ben Woodland",
+          "full_attribution": "Woodland spoke",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -1106,7 +1167,7 @@
     },
     {
       "id": "5db595468971",
-      "headline": "Poole Town’s Kitmen aiming to complete the 92",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
       "author": "Jacob Deighton",
       "author_confidence": "high",
@@ -1241,7 +1302,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
             "classification": "uncredited",
-            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
+            "credit": "(Reza Seewooruthun\u2019s results for the 2025 FREMC season)"
           }
         ]
       },
@@ -1256,7 +1317,7 @@
     },
     {
       "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "author": "Vishal Seenath",
       "author_confidence": "high",
@@ -1285,7 +1346,7 @@
         },
         {
           "name": "Grace Ashton",
-          "full_attribution": "Grace Ashton, struggled to stay consistent and “dr",
+          "full_attribution": "Grace Ashton, struggled to stay consistent and \u201cdr",
           "quote_snippet": "",
           "position": "role_description",
           "gender": "female",
@@ -1356,21 +1417,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
       "source_evidence": [
-        {
-          "name": "Marcin Rogalski",
-          "full_attribution": "Marcin Rogalski, with the league leaders looking f",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        },
         {
           "name": "IK Hill",
           "full_attribution": "IK Hill, signed from Winchester City in the summer",
@@ -1551,9 +1603,9 @@
       "source_evidence": [
         {
           "name": "Becca Parker",
-          "full_attribution": "Becca Parker, the events organiser,",
-          "quote_snippet": "",
-          "position": "role_description",
+          "full_attribution": "l space.Becca Parker, the events organiser, said:",
+          "quote_snippet": "The idea is that you have a comfortable place to w",
+          "position": "before",
           "gender": "female",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -1659,31 +1711,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Ewan Corbett",
-          "full_attribution": "Ewan Corbett, a level 4 qualified referee,",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        },
-        {
-          "name": "Premier League",
-          "full_attribution": "Premier League, this makes it a lot harder to judg",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -1819,7 +1852,7 @@
     },
     {
       "id": "0b0c3fa2d0b3",
-      "headline": "WATCH: 2.30pm bulletin – January 16",
+      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "author": "Will Carson",
       "author_confidence": "high",
@@ -1860,7 +1893,7 @@
     },
     {
       "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin – January 16",
+      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
       "author": "Unknown",
       "author_confidence": "low",
@@ -2185,9 +2218,9 @@
       "source_evidence": [
         {
           "name": "Harvey Bertrand",
-          "full_attribution": "Bertrand said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "o turning around their league form.Bertrand said:",
+          "quote_snippet": "Yeah we have a good group who are all fighting for",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -2217,7 +2250,7 @@
     },
     {
       "id": "050bcc50448e",
-      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
+      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
       "author": "Jack Hillman",
       "author_confidence": "high",
@@ -2237,9 +2270,9 @@
       "source_evidence": [
         {
           "name": "Helen Bleazard",
-          "full_attribution": "Bleazard said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "h opposition.Reacting to the game, Bleazard said:",
+          "quote_snippet": "We know the levels Man City are at and they're in ",
+          "position": "before",
           "gender": "female",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -2281,7 +2314,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -2289,12 +2322,21 @@
       "source_evidence": [
         {
           "name": "Grant Hancox",
-          "full_attribution": "Hancox says:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "the dying embers of the match.Grant Hancox says:",
+          "quote_snippet": "Credit to Old Tiffs, they are a great team who tes",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
+        },
+        {
+          "name": "Head Coach",
+          "full_attribution": "enge for the squad.Head Coach, Will Croker, says:",
+          "quote_snippet": "Saturday's performance was not perfect; it was one",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
         }
       ],
       "images": {
@@ -2333,22 +2375,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Will Dennis",
-          "full_attribution": "Will Dennis, who is yet to make his league debut.\n",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "low",
-          "gender_method": "statistical"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -2530,12 +2562,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Thomas Frank",
+          "full_attribution": "ss conference on the decision, Thomas Frank said:",
+          "quote_snippet": "I've made the decision, it was not a nice decision",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -2634,12 +2676,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Chris Senior",
+          "full_attribution": "y-off\u00a0run for the rest of the season.Senior said:",
+          "quote_snippet": "In terms of what we need it is just about being co",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -2683,13 +2735,13 @@
       "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "Dorset Police",
-          "full_attribution": "Dorset Police, championing the ‘HERE FOR HER SAFET",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
+          "name": "Detective Inspector McCorkell",
+          "full_attribution": ", said Detective Inspector McCorkell.\"The High Har",
+          "quote_snippet": "We want all members of our community to be safe an",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "images": {
@@ -2728,31 +2780,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Jadien Davies",
-          "full_attribution": "Jadien Davies, who ran the event, said",
-          "quote_snippet": "",
-          "position": "who_clause",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
-        },
-        {
-          "name": "Robin",
-          "full_attribution": "speaker, Robin, shared",
-          "quote_snippet": "",
-          "position": "introducer",
-          "gender": "male",
-          "gender_confidence": "low",
-          "gender_method": "statistical"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -2777,7 +2810,7 @@
     },
     {
       "id": "7cb42367054e",
-      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
+      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "author": "Derin Mehmet",
       "author_confidence": "high",
@@ -2841,22 +2874,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Micheal Davies",
-          "full_attribution": "Micheal Davies, a farmer from Woodbridge Farm.\nDor",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -2903,12 +2926,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Jess",
+          "full_attribution": "activities supporters at Branksome Heights, said:",
+          "quote_snippet": "It's sad [the loneliness], but it's the truth. And",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 2,
@@ -2965,9 +2998,9 @@
       "source_evidence": [
         {
           "name": "Angela Ntente",
-          "full_attribution": "Ntente said",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "s, it felt like the right move.Angela Ntente said",
+          "quote_snippet": "I came from a family that are all chefs; my dad is",
+          "position": "before",
           "gender": "female",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -3014,38 +3047,29 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "GB Championships",
-          "full_attribution": "GB Championships, placing them on the pathway to t",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
-        },
-        {
-          "name": "Filip Nowacki",
-          "full_attribution": "Filip Nowacki, a multiple world and European junio",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
+          "name": "Halle Hariss",
+          "full_attribution": "Hariss said. \"It has taken one hundred percent of",
+          "quote_snippet": "I have had to sacrifice allot of my social life an",
+          "position": "after",
+          "gender": "female",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
         },
         {
-          "name": "Jacob Peters",
-          "full_attribution": "Jacob Peters, a Tokyo 2020 Olympian and multiple C",
-          "quote_snippet": "",
-          "position": "role_description",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
+          "name": "Chris Neilson",
+          "full_attribution": "Neilson explained that preparation for the champio",
+          "quote_snippet": "They started here day one, doing the training foll",
+          "position": "after",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "images": {
@@ -3094,31 +3118,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 1,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Tonda Eckert",
-          "full_attribution": "Eckert discussed",
-          "quote_snippet": "",
-          "position": "lastname_verb",
-          "gender": "male",
-          "gender_confidence": "medium",
-          "gender_method": "pronoun_context"
-        },
-        {
-          "name": "The German",
-          "full_attribution": "German discussed",
-          "quote_snippet": "",
-          "position": "lastname_verb",
-          "gender": "female",
-          "gender_confidence": "low",
-          "gender_method": "statistical"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -3143,7 +3148,7 @@
     },
     {
       "id": "da7bf409819e",
-      "headline": "Students compete for cash prizes on ITV’s This Morning",
+      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
       "author": "Justina Reynolds",
       "author_confidence": "high",
@@ -3155,12 +3160,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Jake Quickenden",
+          "full_attribution": "ready to present the competition.Quickenden said:",
+          "quote_snippet": "I think the students will enjoy this today, and ob",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 0,
@@ -3207,12 +3222,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Adam Carty",
+          "full_attribution": "said Carty.\"In Francesca we feel we have unearthe",
+          "quote_snippet": "To see how quickly she grew over that short period",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -3295,12 +3320,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Police Constable Billy Taylor",
+          "full_attribution": "ly Taylor, of Weymouth and Portland police, said:",
+          "quote_snippet": "An investigation is underway and an examination of",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -3325,7 +3360,7 @@
     },
     {
       "id": "deb020fa7530",
-      "headline": "‘Unnerving’ theft committed at Arcade Jewellers",
+      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "author": "Tyler Tamou",
       "author_confidence": "high",
@@ -3345,9 +3380,9 @@
       "source_evidence": [
         {
           "name": "Arcade Jewellers",
-          "full_attribution": "Jewellers said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "rove,\u00a0which is\u00a0adjacent\u00a0to\u00a0Arcade Jewellers\u00a0said:",
+          "quote_snippet": "This is quite rare and definitely concerning.",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -3440,7 +3475,7 @@
       "source_evidence": [
         {
           "name": "Mark McAdam",
-          "full_attribution": "— Mark McAdam",
+          "full_attribution": "\u2014 Mark McAdam",
           "quote_snippet": "",
           "position": "standalone_dash",
           "gender": "male",
@@ -3568,17 +3603,26 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [
         {
+          "name": "Head Coach",
+          "full_attribution": "es in the league.Head Coach, Kieran Filmer, says:",
+          "quote_snippet": "Really pleased, I think the coaching team are plea",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        },
+        {
           "name": "Kieran Filmer",
-          "full_attribution": "Filmer says:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "ey need to build on this performance.Filmer says:",
+          "quote_snippet": "I think we take this in our stride and build momen",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -3620,17 +3664,26 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
       "source_evidence": [
         {
+          "name": "Ri Baroche",
+          "full_attribution": "said Baroche. It was poets like Benjamin Zephania",
+          "quote_snippet": "Poetry in school wasn't necessarily something I gr",
+          "position": "after",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        },
+        {
           "name": "Claire Hillier",
-          "full_attribution": "Hillier said",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "the Poet also reiterated this point.Hillier said",
+          "quote_snippet": "there's the drive and desire for that connection, ",
+          "position": "before",
           "gender": "female",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -3677,12 +3730,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Fran",
+          "full_attribution": "Fran said.\"We really want to put this (opportunit",
+          "quote_snippet": "We have one guy who we support in his 50s and the ",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 0,
@@ -3702,7 +3765,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_110558-1-360x269.jpg",
             "classification": "uncredited",
-            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for ‘Big Kid Energy’(photo credit- Ben Woodland)"
+            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for \u2018Big Kid Energy\u2019(photo credit- Ben Woodland)"
           }
         ]
       },
@@ -3780,12 +3843,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Police Constable Jamie Randell",
+          "full_attribution": "Constable Jamie Randell, of Dorset Police, said:",
+          "quote_snippet": "We are carrying out a number of enquiries into thi",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 1,
@@ -3822,12 +3895,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Detective Constable Niki Edwards",
+          "full_attribution": "s.BCP CID Detective Constable Niki Edwards stated:",
+          "quote_snippet": "We are continuing to investigate what happened and",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 2,
@@ -4018,9 +4101,9 @@
       "source_evidence": [
         {
           "name": "Dominic Solanke",
-          "full_attribution": "Solanke said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "ch interviewwith Tottenham Hotspur, Solanke said:",
+          "quote_snippet": "Incredible. Even just starting the game was immens",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -4049,7 +4132,7 @@
     },
     {
       "id": "dd4407355e61",
-      "headline": "Hampshire’s Dawson set for ODI return",
+      "headline": "Hampshire\u2019s Dawson set for ODI return",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -4126,7 +4209,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.34.43-303x300.png",
             "classification": "original",
-            "credit": "Image of Lidl logo – taken by Sam Morris"
+            "credit": "Image of Lidl logo \u2013 taken by Sam Morris"
           }
         ]
       },
@@ -4155,12 +4238,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Mark McAdam",
+          "full_attribution": "more on the club's transfer strategy.McAdam said:",
+          "quote_snippet": "The strategy is simple. Buy low and sell high.",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 1,
@@ -4212,9 +4305,9 @@
       "source_evidence": [
         {
           "name": "Dan Ford",
-          "full_attribution": "Ford said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "arding the sponsorship co-promoter Dan Ford said:",
+          "quote_snippet": "David and Guy are true speedway people and brillia",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "high",
           "gender_method": "name_lookup"
@@ -4256,7 +4349,7 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 3,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
@@ -4264,21 +4357,30 @@
       "source_evidence": [
         {
           "name": "Dylan Fletcher",
-          "full_attribution": "Fletcher said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "art further back, due to a penalty.Fletcher said:",
+          "quote_snippet": "I was really proud today how we were digging throu",
+          "position": "before",
           "gender": "male",
           "gender_confidence": "low",
           "gender_method": "statistical"
         },
         {
           "name": "Three Poole",
-          "full_attribution": "Poole said:",
-          "quote_snippet": "",
-          "position": "lastname_verb",
+          "full_attribution": "ilver medalist Hannah Mills OBE, from\u00a0Poole\u00a0said:",
+          "quote_snippet": "Honestly best day ever, it's insane, it doesn't ge",
+          "position": "before",
           "gender": "they",
           "gender_confidence": "medium",
           "gender_method": "pronoun_context"
+        },
+        {
+          "name": "Hannah Mills",
+          "full_attribution": "said Mills.Home side Bonds Flying\u00a0Roos, Co-owned",
+          "quote_snippet": "We've had Stu come on board as wing trimmer which ",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
         }
       ],
       "images": {
@@ -4309,7 +4411,7 @@
     },
     {
       "id": "975a95f9add2",
-      "headline": "Saints host Sheffield United at St Mary’s",
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
       "author": "Editor Blue",
       "author_confidence": "high",
@@ -4360,12 +4462,31 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Daryl",
+          "full_attribution": "t of the conversation.\"His colleague Daryl added:",
+          "quote_snippet": "Our volunteers are very passionate about spending ",
+          "position": "before",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        },
+        {
+          "name": "George",
+          "full_attribution": "George said that groups like Gather and Grow also",
+          "quote_snippet": "We talk about everything. The men's groups are ver",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 0,
@@ -4385,7 +4506,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
             "classification": "uncredited",
-            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
+            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men\u2019s groups in the Boscombe food bank."
           }
         ]
       },
@@ -4463,12 +4584,31 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Matt Stooleworthy",
+          "full_attribution": "says Stooleworthy, \"it gets people together and h",
+          "quote_snippet": "I can't speak highly enough of Bournemouth Walking",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Dylan Brown",
+          "full_attribution": "says Brown.He is still currently playing five-a-s",
+          "quote_snippet": "I wanted to get a bit fitter, get a bit more activ",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 3,
@@ -4561,12 +4701,40 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 3,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Marc Rosenberg",
+          "full_attribution": "ommunications manager for Plants and Minds, said:",
+          "quote_snippet": "There was a time when the horticulture industry wa",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Andy",
+          "full_attribution": "Blue Monday, Andy, one of the volunteers, added:",
+          "quote_snippet": "No matter how tough life might feel right now, it'",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Sandi Marshall",
+          "full_attribution": "Sandi Marshall, Cherry Tree Nursery manager,",
+          "quote_snippet": "",
+          "position": "role_description",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 3,
         "original": 1,
@@ -4601,6 +4769,53 @@
       ]
     },
     {
+      "id": "0d4cca7112fd",
+      "headline": "Audi F1 announce arrival to grid and reveal livery",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/audi-f1-announce-arrival-to-grid-and-reveal-livery/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "09:55",
+      "category": "News Top",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 208,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-22-at-09.51.13-606x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2251466945&show_artwork=true&maxheight=750&maxwidth=500"
+          }
+        ]
+      },
+      "warnings": []
+    },
+    {
       "id": "96b7cdc59248",
       "headline": "Bournemouth businesses call for cuts to VAT rates",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
@@ -4615,12 +4830,22 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Adam",
+          "full_attribution": "e business also makes its own clothing.Adam said:",
+          "quote_snippet": "It is early days and we are not sure whether peopl",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 0,
@@ -4635,7 +4860,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_102158994-1.jpg",
             "classification": "uncredited",
-            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo’s Coffee Shop."
+            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo\u2019s Coffee Shop."
           }
         ]
       },
@@ -4648,6 +4873,48 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "8e2121a22f89",
+      "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-22",
+      "time": "09:55",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 187,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Untitled-design-1-800x400.jpg",
+            "classification": "original",
+            "credit": "AFC Bournemouth"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "53831c80ea43",
@@ -4679,7 +4946,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Gladiators-photo-800x400.jpeg",
             "classification": "original",
-            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Dragoș Crăciun)"
+            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Drago\u0219 Cr\u0103ciun)"
           }
         ]
       },

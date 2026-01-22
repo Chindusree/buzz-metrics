@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-22T09:49:03Z",
-  "total_verified": 85,
+  "last_updated": "2026-01-22T10:18:45Z",
+  "total_verified": 87,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1145,8 +1145,20 @@
       ]
     },
     {
+      "id": "0d4cca7112fd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/audi-f1-announce-arrival-to-grid-and-reveal-livery/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "96b7cdc59248",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-businesses-call-for-cuts-to-vat-rates/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "8e2121a22f89",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },

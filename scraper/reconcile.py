@@ -330,7 +330,11 @@ def reconcile_sources(scrape_evidence, verify_evidence):
     for source in scrape_evidence:
         name = clean_name(source.get('name', ''))
         if name and name.lower() not in seen_names:
-            all_sources.append({'name': name, 'source': 'scrape'})
+            all_sources.append({
+                'name': name,
+                'source': 'scrape',
+                'position': source.get('position', '')
+            })
             seen_names.add(name.lower())
 
     # From verify.py (NER)
@@ -355,15 +359,27 @@ def reconcile_sources(scrape_evidence, verify_evidence):
             if name not in result['filtered']:
                 result['filtered'].append(name)
         else:
-            # Valid person - CONFIRM it (regardless of which method found it)
-            # Check not already in confirmed (fuzzy match)
-            confirmed_names = [s['name'] for s in result['confirmed']]
-            match = find_match_in_list(name, confirmed_names)
-            if not match:
-                result['confirmed'].append({
-                    'name': name,
-                    'gender': get_gender(name)  # May be 'unknown', that's OK
-                })
+            # Valid person - separate scrape vs NER sources
+            # Sprint 7.36: Only scrape sources go to confirmed, NER-only to possible
+            if source.get('source') == 'scrape':
+                # Scrape source with direct quote - CONFIRM it
+                confirmed_names = [s['name'] for s in result['confirmed']]
+                match = find_match_in_list(name, confirmed_names)
+                if not match:
+                    result['confirmed'].append({
+                        'name': name,
+                        'gender': get_gender(name),
+                        'position': source.get('position', '')
+                    })
+            else:
+                # NER-only source - add to possible, not confirmed
+                possible_names = [s['name'] for s in result['possible']]
+                match = find_match_in_list(name, possible_names)
+                if not match:
+                    result['possible'].append({
+                        'name': name,
+                        'gender': get_gender(name)
+                    })
 
     return result
 

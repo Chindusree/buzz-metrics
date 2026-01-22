@@ -32,16 +32,16 @@ def normalize_quotes(text):
         str: Text with normalized straight quotes
     """
     quote_chars = {
-        '"': '"',  # left double quotation mark
-        '"': '"',  # right double quotation mark
-        '„': '"',  # double low-9 quotation mark
-        '«': '"',  # left-pointing double angle quotation mark
-        '»': '"',  # right-pointing double angle quotation mark
-        ''': "'",  # left single quotation mark
-        ''': "'",  # right single quotation mark
-        '‚': "'",  # single low-9 quotation mark
-        '‹': "'",  # single left-pointing angle quotation mark
-        '›': "'",  # single right-pointing angle quotation mark
+        '\u201c': '"',  # left double quotation mark (")
+        '\u201d': '"',  # right double quotation mark (")
+        '\u201e': '"',  # double low-9 quotation mark („)
+        '\u00ab': '"',  # left-pointing double angle quotation mark («)
+        '\u00bb': '"',  # right-pointing double angle quotation mark (»)
+        '\u2018': "'",  # left single quotation mark (')
+        '\u2019': "'",  # right single quotation mark (')
+        '\u201a': "'",  # single low-9 quotation mark (‚)
+        '\u2039': "'",  # single left-pointing angle quotation mark (‹)
+        '\u203a': "'",  # single right-pointing angle quotation mark (›)
     }
     for fancy, standard in quote_chars.items():
         text = text.replace(fancy, standard)
@@ -1495,7 +1495,7 @@ def extract_quoted_sources(text):
     # Sprint 7.9.3: Updated to accept optional "a", "the", "an" before role description
     # Made the ending clause optional to handle "Name, manager of Company" patterns
     # Sprint 7.12: Enhanced to capture and validate role description text
-    role_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+((?:a|the|an)?\s*[a-z][^,]{2,})(?:who|which|that|,|$)'
+    role_pattern = r'([A-Z][A-Za-z\'\-]+\s+[A-Z][A-Za-z\'\-]+),\s+((?:a|the|an)?\s*[A-Za-z][^,]{2,})(?:who|which|that|,|$)'
     for match in re.finditer(role_pattern, text):
         name = match.group(1).strip()
         role_text = match.group(2).strip()
@@ -1508,6 +1508,19 @@ def extract_quoted_sources(text):
                 'full_attribution': match.group(0)[:50],
                 'quote_snippet': '',
                 'position': 'role_description'
+            })
+
+    # Sprint 7.37: Relationship prefix pattern
+    # Pattern: "His colleague Daryl added:", "Her friend Sarah said:"
+    relationship_pattern = r'(?:His|Her|Their)\s+colleague\s+([A-Z][a-z]+)\s+(?:said|added|explained):'
+    for match in re.finditer(relationship_pattern, text):
+        name = match.group(1).strip()
+        if not is_false_positive(name):
+            sources.append({
+                'name': name,
+                'full_attribution': match.group(0)[:50],
+                'quote_snippet': '',
+                'position': 'relationship_prefix'
             })
 
     # Step 5c: Look for last name + action verbs (journalism style)
@@ -1638,7 +1651,8 @@ def extract_quoted_sources(text):
             # Check for patterns like "Name said:", "Name explained:", etc.
             lastname = name.split()[-1] if ' ' in name else name
             quote_attribution_pattern = r'"[^"]+"\s*[,\s]*' + re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed)'
-            reverse_pattern = re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed)[:\s,]+"[^"]+'
+            # Sprint 7.37.1: Allow optional role description between lastname and verb
+            reverse_pattern = re.escape(lastname) + r'(?:,\s+[^,]+?,)?\s+(?:said|told|explained|added|discussed)[:\s,]+"[^"]+'
 
             has_quotes = bool(re.search(quote_attribution_pattern, text, re.IGNORECASE)) or \
                         bool(re.search(reverse_pattern, text, re.IGNORECASE))
@@ -2572,7 +2586,8 @@ def extract_article_metadata(url):
 
                 # Sprint 7.33: Filter sources to only include those with direct quotes
                 # Use the 'position' field that extract_sources() already provides
-                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
+                # Sprint 7.37: Added role_description and relationship_prefix
+                DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix'}
                 source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
 
                 images = shorthand_data['images']
@@ -2593,7 +2608,8 @@ def extract_article_metadata(url):
 
             # Sprint 7.33: Filter sources to only include those with direct quotes
             # Use the 'position' field that extract_sources() already provides
-            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash'}
+            # Sprint 7.37: Added role_description and relationship_prefix
+            DIRECT_QUOTE_POSITIONS = {'after', 'before', 'blockquote-inline', 'lastname_verb', 'standalone_dash', 'role_description', 'relationship_prefix'}
             source_evidence = [s for s in source_evidence if s.get('position') in DIRECT_QUOTE_POSITIONS]
 
             images = wordpress_data['images']
