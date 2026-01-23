@@ -1,7 +1,288 @@
 {
-  "last_updated": "2026-01-23T16:29:00Z",
-  "total_verified": 136,
+  "last_updated": "2026-01-23T17:01:44Z",
+  "total_verified": 159,
   "results": [
+    {
+      "id": "bcp-council-vote-on-tax-base-proposal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-vote-on-tax-base-proposal/",
+      "verify_quoted_sources": 7,
+      "verify_evidence": [
+        {
+          "name": "Millie Earl",
+          "context": "PERSON within 50 chars of quote: ...nts for Mudeford beach hut owners. Council Leader Millie Earl said: “Information has come out particularly from..."
+        },
+        {
+          "name": "Darren Pidwell",
+          "context": "PERSON within 50 chars of quote: ...the Mudeford and Sandbanks Beach hut Association, Darren Pidwell, said: “We are frustrated that BCP council are ag..."
+        },
+        {
+          "name": "Councillor Mike Cox",
+          "context": "PERSON within 50 chars of quote: ...ncil tax base has increased by 0.6%. Christchurch Councillor Mike Cox said: “Part of this increase is from the fact tha..."
+        },
+        {
+          "name": "David Brown",
+          "context": "PERSON within 50 chars of quote: ... expensive asset.” Bearwood and Merley Councillor David Brown said: “We haven’t pulled the Local Council Suppor..."
+        },
+        {
+          "name": "Winton West Councillor",
+          "context": "PERSON within 50 chars of quote: ...rectly to protect that coastline.” Wallisdown and Winton West Councillor Richard Harrett, who meets with the beach hut ass..."
+        },
+        {
+          "name": "Richard Harrett",
+          "context": "PERSON within 50 chars of quote: ...coastline.” Wallisdown and Winton West Councillor Richard Harrett, who meets with the beach hut association, said: ..."
+        },
+        {
+          "name": "Councillor Andy Martin",
+          "context": "PERSON within 50 chars of quote: ... hard funding situation.” Highcliffe and Walkford Councillor Andy Martin said: “It is quite obvious how much investment go..."
+        }
+      ]
+    },
+    {
+      "id": "bournemouth-boxer-set-for-return-after-year-away",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-boxer-set-for-return-after-year-away/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Frank Warren",
+          "context": "PERSON within 50 chars of quote: ...he Coast” card, promoted by Hall of Fame promoter Frank Warren and Queensbury Promotions. Despite a strong perfo..."
+        }
+      ]
+    },
+    {
+      "id": "grant-hancox-acl-feature-2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "bournemouth-sea-dippers-helping-to-create-community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-sea-dippers-helping-to-create-community/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Mary Richards",
+          "context": "PERSON within 50 chars of quote: ...said, “we all support each other.” Another member Mary Richards, 69, described how the Sea Dippers helped her whe..."
+        },
+        {
+          "name": "Ed",
+          "context": "PERSON within 50 chars of quote: ...and reduced inflammation. One of the Sea Dippers, Ed, has multiple sclerosis. He explains, “The cold s..."
+        }
+      ]
+    },
+    {
+      "id": "dorset-police-launch-helicopter-search-for-missing-jamie",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-helicopter-search-for-missing-jamie/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Arteta",
+          "context": "PERSON within 50 chars of quote: ...Newcastle United. In a pre-match news conference, Arteta said: “Hopefully we’ll learn from last year becau..."
+        }
+      ]
+    },
+    {
+      "id": "crane-collapses-into-train-in-thailand-killing-32-people",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/crane-collapses-into-train-in-thailand-killing-32-people/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Anutin Charnvirakul",
+          "context": "PERSON within 50 chars of quote: ...the tracks” they said. Thailand’s Prime Minister, Anutin Charnvirakul, who will visit the scene of the wreckage later o..."
+        },
+        {
+          "name": "Suriya Juangroongruangkit",
+          "context": "PERSON within 50 chars of quote: ... to negligence…” The Thai Minister for transport, Suriya Juangroongruangkit, who was at the scene, expressed his support for ..."
+        }
+      ]
+    },
+    {
+      "id": "dorchester-town-in-search-of-away-win-at-havant",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-in-search-of-away-win-at-havant/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "dorset-council-back-phone-ban-for-schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-back-phone-ban-for-schools/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Councilor Simon Bull",
+          "context": "PERSON within 50 chars of quote: ...ressed that they want to create a similar change. Councilor Simon Bull has said, “This topic is certainly something that..."
+        },
+        {
+          "name": "Simon Bull",
+          "context": "PERSON within 50 chars of quote: ... able to get the discounted fayre for bus passes. Simon Bull added, “I would definitely like to encourage it, ..."
+        },
+        {
+          "name": "Schools",
+          "context": "PERSON within 50 chars of quote: ...tainly not having them during the day at school.” Schools implementing this ban are being asked to also adj..."
+        }
+      ]
+    },
+    {
+      "id": "dorset-women-tuktuk-trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "dorsets-holocaust-memorial-day-2026",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorsets-holocaust-memorial-day-2026/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "gb-tennis-star-misses-out-on-deaf-olympics",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gb-tennis-star-misses-out-on-deaf-olympics/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "jenna-markham-eyes-goal-against-wsl-leaders-manchester-city",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jenna-markham-eyes-goal-against-wsl-leaders-manchester-city/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Markham",
+          "context": "PERSON within 50 chars of quote: ... get 25 that would be a huge achievement for me.” Markham has six goals so far this season, five behind sum..."
+        },
+        {
+          "name": "Markham’s",
+          "context": "PERSON within 50 chars of quote: ...t such a great project here would be incredible.” Markham’s teammate, Cherries midfielder Elena Cole, is also..."
+        },
+        {
+          "name": "Elena Cole",
+          "context": "PERSON within 50 chars of quote: ...redible.” Markham’s teammate, Cherries midfielder Elena Cole, is also looking forward to the challenge of the ..."
+        },
+        {
+          "name": "Ben Jones",
+          "context": "PERSON within 50 chars of quote: ... to be honest.” You can listen BUzz News reporter Ben Jones’ podcast with Elena below: Sunday’s fixture again..."
+        }
+      ]
+    },
+    {
+      "id": "police-chief-admits-to-ai-use-in-aston-villa-tie",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-chief-admits-to-ai-use-in-aston-villa-tie/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "poole-town-ladies-manager-raises-concerns-over-funding",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-ladies-manager-raises-concerns-over-funding/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Lovelass",
+          "context": "PERSON within 50 chars of quote: ...They don’t come down to grassroots.” According to Lovelass, even support from the County FAs can only go so ..."
+        }
+      ]
+    },
+    {
+      "id": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Smith",
+          "context": "PERSON within 50 chars of quote: ...al on Feb.15. “I’m very excited going into this.” Smith told BUzz news. “It will be such a great opportun..."
+        },
+        {
+          "name": "BUzz",
+          "context": "PERSON within 50 chars of quote: ...5. “I’m very excited going into this.” Smith told BUzz news. “It will be such a great opportunity for me..."
+        },
+        {
+          "name": "Team GB",
+          "context": "PERSON within 50 chars of quote: ... age group spots, something that his teammate and Team GB athlete Ryan Brown has said is within his grasp. ..."
+        },
+        {
+          "name": "Ryan Brown",
+          "context": "PERSON within 50 chars of quote: ..., something that his teammate and Team GB athlete Ryan Brown has said is within his grasp. “[he] has been trai..."
+        },
+        {
+          "name": "Brown",
+          "context": "PERSON within 50 chars of quote: ...ly strong and in a good place with his routines,” Brown said. “I think he is in a good position to secure..."
+        }
+      ]
+    },
+    {
+      "id": "radacanu-completes-her-first-win-of-the-season-after-rain-delay",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/radacanu-completes-her-first-win-of-the-season-after-rain-delay/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Antoine Semenyo",
+          "context": "PERSON within 50 chars of quote: ...ns continued about the disallowed second goal for Antoine Semenyo. On this, City midfielder Bernardo Silva said: “I..."
+        },
+        {
+          "name": "Bernardo Silva",
+          "context": "PERSON within 50 chars of quote: ...oal for Antoine Semenyo. On this, City midfielder Bernardo Silva said: “I saw it, it looked really close to me but..."
+        },
+        {
+          "name": "Semenyo",
+          "context": "PERSON within 50 chars of quote: ...me here we had lots of decisions against us too.” Semenyo himself also expressed some frustrations and said..."
+        },
+        {
+          "name": "Dan Burn",
+          "context": "PERSON within 50 chars of quote: ...s incorrect as Newcastle United’s injured skipper Dan Burn said: “I do think it is the right decision, I jus..."
+        },
+        {
+          "name": "Howe",
+          "context": "PERSON within 50 chars of quote: ...cond round against Brentford. Ahead of the match, Howe had said: “I have to say that’s one rule change I..."
+        }
+      ]
+    },
+    {
+      "id": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Liz Kendall",
+          "context": "PERSON within 50 chars of quote: ...nsual. Almost all of these videos featured women. Liz Kendall said in the house of commons “no woman or child s..."
+        },
+        {
+          "name": "Grok",
+          "context": "PERSON within 50 chars of quote: ...eir image manipulated by technology”. The AI tool Grok found on social media platform X is being used by..."
+        },
+        {
+          "name": "Elon Musk",
+          "context": "PERSON within 50 chars of quote: ...ng why other AI platforms aren’t being looked at, Elon Musk has said, “any excuse for censorship.” By Lois Wa..."
+        },
+        {
+          "name": "Lois Watts",
+          "context": "PERSON within 50 chars of quote: ...on Musk has said, “any excuse for censorship.” By Lois Watts, Tiana Hynes and Julia Apte. Category:News,News T..."
+        },
+        {
+          "name": "Julia Apte",
+          "context": "PERSON within 50 chars of quote: ...e for censorship.” By Lois Watts, Tiana Hynes and Julia Apte. Category:News,News TopTag:AI,education,Grok,News..."
+        }
+      ]
+    },
+    {
+      "id": "re-defined-tackling-mens-mental-health-through-january",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/re-defined-tackling-mens-mental-health-through-january/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
     {
       "id": "21a723b0aed1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
@@ -1773,6 +2054,76 @@
         {
           "name": "Darren Stratman",
           "context": "PERSON within 50 chars of quote: ...ple that they probably wouldn't have had before.“ Darren Stratman continued this by saying: “Nothing's too difficul..."
+        }
+      ]
+    },
+    {
+      "id": "dc90ae812d3c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "White",
+          "context": "PERSON within 50 chars of quote: ...es with huge financial and mental pressure,” says White, “There’s a good chance you can be on the road fo..."
+        },
+        {
+          "name": "Jack Burford\nPhotograph",
+          "context": "PERSON within 50 chars of quote: ...ly impossible task.” Image captions Photograph by Jack Burford Photograph by Jack Burford Photograph by Jack Burford As a r..."
+        },
+        {
+          "name": "Jack Burford",
+          "context": "PERSON within 50 chars of quote: ...e game.” Photograph by Jack Burford Photograph by Jack Burford For last summer’s tournament that Joshua competed..."
+        },
+        {
+          "name": "Joshua",
+          "context": "PERSON within 50 chars of quote: ...by Jack Burford For last summer’s tournament that Joshua competed in, it cost him “a couple thousand pound..."
+        },
+        {
+          "name": "Harry James",
+          "context": "PERSON within 50 chars of quote: ...TA tennis academy and former British Tour player, Harry James. “There’s a real difference when playing as a jun..."
+        },
+        {
+          "name": "James",
+          "context": "PERSON within 50 chars of quote: ...n playing as a junior for fun and as a job,” says James, “I found the pressures within that changed a lot..."
+        }
+      ]
+    },
+    {
+      "id": "2838086ca30b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "verify_quoted_sources": 8,
+      "verify_evidence": [
+        {
+          "name": "George Dean",
+          "context": "PERSON within 50 chars of quote: ... Rob’s story to a country that needed to hear it. George Dean who runs Sands United Salisbury said: “Ultimately..."
+        },
+        {
+          "name": "Allen",
+          "context": "PERSON within 50 chars of quote: ...you can.” One example of the teams that grew from Allen’s idea was Sands United Salisbury which was forme..."
+        },
+        {
+          "name": "Dean",
+          "context": "PERSON within 50 chars of quote: ...024 but still has a lot of contact with the club. Dean said: “it wouldn’t exist without him; his energy ..."
+        },
+        {
+          "name": "Kick",
+          "context": "PERSON within 50 chars of quote: ...other charities such as the mental health charity Kick out the stigma. “They’re really important because..."
+        },
+        {
+          "name": "George",
+          "context": "PERSON within 50 chars of quote: ...wife Katie’s conversation about their experience. George said: “It was really speaking to Chris who was a ..."
+        },
+        {
+          "name": "Chris",
+          "context": "PERSON within 50 chars of quote: ...perience. George said: “It was really speaking to Chris who was a member of Sands United Salisbury that g..."
+        },
+        {
+          "name": "Sands United",
+          "context": "PERSON within 50 chars of quote: ...tely the loss of your baby that takes you there.” Sands United shirt: Photo Credit to: George Dean Sands United ..."
+        },
+        {
+          "name": "Photo Credit",
+          "context": "PERSON within 50 chars of quote: ...r baby that takes you there.” Sands United shirt: Photo Credit to: George Dean Sands United shirt: Photo Credit ..."
         }
       ]
     },
