@@ -1,6 +1,98 @@
 {
-  "last_updated": "2026-01-22T17:14:45Z",
+  "last_updated": "2026-01-23T08:42:18Z",
   "total_articles": 105,
+  "summary": {
+    "avg_word_count": 604,
+    "avg_quoted_sources": 1.0,
+    "below_minimum_count": 26,
+    "long_form_count": 18,
+    "breaking_news_count": 11,
+    "total_images": 202,
+    "original_images": 87,
+    "stock_images": 3,
+    "uncredited_images": 112,
+    "gender_breakdown": {
+      "male": 67,
+      "female": 29,
+      "unknown": 12
+    },
+    "by_section": {
+      "Sport": {
+        "count": 22,
+        "words": 14207,
+        "sources": 15
+      },
+      "General News": {
+        "count": 74,
+        "words": 36188,
+        "sources": 71
+      },
+      "Features": {
+        "count": 9,
+        "words": 8811,
+        "sources": 22
+      }
+    },
+    "by_category": {
+      "Sport": {
+        "count": 22,
+        "avg_word_count": 646,
+        "avg_sources": 0.7
+      },
+      "News": {
+        "count": 74,
+        "avg_word_count": 489,
+        "avg_sources": 1.0
+      },
+      "Features": {
+        "count": 9,
+        "avg_word_count": 979,
+        "avg_sources": 2.4
+      }
+    }
+  },
+  "daily_stats": [
+    {
+      "date": "2026-01-16",
+      "article_count": 31,
+      "target": 12,
+      "meets_target": true,
+      "first_publish_time": "08:00",
+      "first_publish_on_time": true,
+      "below_minimum_count": 10,
+      "long_form_count": 10
+    },
+    {
+      "date": "2026-01-20",
+      "article_count": 26,
+      "target": 12,
+      "meets_target": true,
+      "first_publish_time": "08:48",
+      "first_publish_on_time": true,
+      "below_minimum_count": 5,
+      "long_form_count": 1
+    },
+    {
+      "date": "2026-01-21",
+      "article_count": 25,
+      "target": 12,
+      "meets_target": true,
+      "first_publish_time": "09:14",
+      "first_publish_on_time": true,
+      "below_minimum_count": 6,
+      "long_form_count": 3
+    },
+    {
+      "date": "2026-01-22",
+      "article_count": 23,
+      "target": 12,
+      "meets_target": true,
+      "first_publish_time": "08:52",
+      "first_publish_on_time": true,
+      "below_minimum_count": 5,
+      "long_form_count": 4
+    }
+  ],
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -17,7 +109,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -48,7 +140,24 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Rayan"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "0faceff20735",
@@ -65,7 +174,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -103,7 +212,37 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Fabian Hurzeler",
+          "gender": "male"
+        },
+        {
+          "name": "Ryan",
+          "gender": "male"
+        },
+        {
+          "name": "David Brooks",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Brighton"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "d0dc88d201d3",
@@ -151,7 +290,27 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Oliver Glasner",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Marc",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "f9992a6fe68f",
@@ -168,7 +327,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -201,7 +360,22 @@
       "warnings": [
         "Unknown author"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Oliver Glasner",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "0c209a33d1b4",
@@ -218,7 +392,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 2,
@@ -254,7 +428,27 @@
         ]
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Roan Fox",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "9b5bcd7f91c2",
@@ -271,7 +465,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 1,
       "sources_unknown": 1,
@@ -334,7 +528,24 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Sara Armstrong",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "AFC Bournemouth"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "be5e87cc8d38",
@@ -429,7 +640,32 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Sophia Lloyd",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Rebecca Brown",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Heather Smith",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "639284301249",
@@ -476,7 +712,16 @@
         ]
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "cd1485975ecc",
@@ -546,7 +791,35 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andrew Wilmot",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "James Wilder",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Ali Jeffs",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Frosty Jacks",
+        "Lambrini"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "f46adb651043",
@@ -626,7 +899,32 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Terry Dennis",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Pete Ball",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Moritz Baer",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "4cb8a4a6c238",
@@ -676,7 +974,22 @@
       "warnings": [
         "Unknown author"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jamie Randell",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "eeadb60f952e",
@@ -693,7 +1006,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -736,7 +1049,22 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Gabrielle Reid",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "7baae3c13fab",
@@ -785,7 +1113,16 @@
       "warnings": [
         "Unknown author"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "6ec57ade366a",
@@ -838,7 +1175,22 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Abi Paler",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "c63f93303c5a",
@@ -855,7 +1207,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -896,7 +1248,22 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kevin Bales",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "e48217df8ae6",
@@ -913,7 +1280,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/the-king-of-match-racing-ian-williams/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -956,7 +1323,35 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ian Williams",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Richard Sydenham",
+          "gender": "male"
+        },
+        {
+          "name": "John Gunderson",
+          "gender": "male"
+        },
+        {
+          "name": "Jerry Mitchell",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "2edf13de5329",
@@ -973,7 +1368,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1004,7 +1399,25 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Detective Chief Inspector Neil Meade",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Craig’s",
+        "Breton"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "bd8ce48a20b5",
@@ -1021,7 +1434,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1051,7 +1464,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "5db595468971",
@@ -1146,7 +1568,40 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Matt Reeds",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Dan Wilson",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Nottingham Forest",
+          "gender": "unknown"
+        },
+        {
+          "name": "Lauren Kelly",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [
+        "Wembley",
+        "Brentford",
+        "Harrogate"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "d2d23997eb42",
@@ -1163,7 +1618,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1193,7 +1648,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "d0eceb2acc05",
@@ -1283,7 +1747,37 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 4,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andrew Mace",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Jordan Lench",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Myles Haskell",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Grace Ashton",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "37619d905b65",
@@ -1300,7 +1794,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -1341,7 +1835,29 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "IK Hill",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Walton",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Yate"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "e24467b3ddf5",
@@ -1436,7 +1952,41 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Marcjanna Augustyn",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Kaouther Kooli",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Sal",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Agatha Shepherd-Jones",
+          "gender": "female"
+        },
+        {
+          "name": "Paige Buffham Clothes",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "96eed46a1e57",
@@ -1453,7 +2003,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -1484,7 +2034,24 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Becca Parker",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "COVID"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "69d0caa89d60",
@@ -1559,7 +2126,39 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "David Richmond-Coggan",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Alison Hulme",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Sharon Gale",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Luke Hills",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Nyah Boston-Shears"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "4c79ed9d0c43",
@@ -1576,7 +2175,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -1607,7 +2206,24 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Sarr"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "60218ea980f4",
@@ -1697,7 +2313,32 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Frederica Sindici",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Cindy Lou",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Chanelle Paris",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Features"
     },
     {
       "id": "0b0c3fa2d0b3",
@@ -1714,7 +2355,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1738,7 +2379,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "6f4ce223a9fc",
@@ -1755,7 +2405,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1781,7 +2431,16 @@
       "warnings": [
         "Unknown author"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "f6a028fa8bd4",
@@ -1798,7 +2457,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-and-poole-college-strikes-feature/index.html",
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1871,7 +2530,29 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ivan Darley",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Sam McShane",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Anne Marie Moriarty"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "ee8ca65989fa",
@@ -1888,7 +2569,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -1918,7 +2599,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "57387ebc3115",
@@ -1960,7 +2650,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "88d04616a6c5",
@@ -2002,7 +2701,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "269a6d260911",
@@ -2044,7 +2752,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "c773fba290e1",
@@ -2061,7 +2778,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2092,7 +2809,24 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Harvey Bertrand",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Defender"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "050bcc50448e",
@@ -2145,7 +2879,27 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Helen Bleazard",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Sophie Quirk",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "9b454f4d9db2",
@@ -2162,7 +2916,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2198,7 +2952,33 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Head Coach",
+          "gender": "unknown"
+        },
+        {
+          "name": "Connor McCaffrey",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Will Croker"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "afe1ce257901",
@@ -2215,7 +2995,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2245,7 +3025,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "5448a03abf18",
@@ -2262,7 +3051,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2289,7 +3078,16 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "466fd9f7d8aa",
@@ -2306,7 +3104,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2331,7 +3129,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "751bf1ee1b06",
@@ -2348,7 +3155,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2401,7 +3208,32 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "A protester",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Abbas Araghchi",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "1f955f6870b9",
@@ -2418,7 +3250,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2449,7 +3281,27 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Thomas Frank",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Matty",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "55443b4c77b8",
@@ -2466,7 +3318,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -2507,7 +3359,22 @@
         ]
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Martha Searle",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "dba46286581f",
@@ -2524,7 +3391,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2555,7 +3422,27 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Chris Senior",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Jack",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "1b1ad423d795",
@@ -2572,7 +3459,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -2603,7 +3490,22 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Detective Inspector Marcus McCorkell",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "c8e150c3ac4a",
@@ -2661,7 +3563,29 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Evelyn Eales",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Robin",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Jadien Davies"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "7cb42367054e",
@@ -2678,7 +3602,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2719,7 +3643,18 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Bournemouth Oaks owner"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "6d9be8b6178f",
@@ -2736,7 +3671,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2771,7 +3706,16 @@
         ]
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "de466f5f7de9",
@@ -2788,7 +3732,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -2841,7 +3785,32 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jess",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Karen",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Barbara Adams",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "d4b3ea2b5fe9",
@@ -2858,7 +3827,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -2894,7 +3863,22 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Angela Ntente",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "18e9279b8b3b",
@@ -2962,7 +3946,34 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Halle Hariss",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Chris Neilson",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Club Pathway",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Freddie Beasley"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "2eae8e0631ec",
@@ -2979,7 +3990,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -3004,7 +4015,16 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "da7bf409819e",
@@ -3021,7 +4041,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3067,7 +4087,27 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jake Quickenden",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Kit",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "a86542bf9945",
@@ -3084,7 +4124,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3122,7 +4162,29 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Adam Carty",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Francesca Sweet",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Hampshire"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "d876027cfbdd",
@@ -3139,7 +4201,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3166,7 +4228,16 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "display_category": "Sport"
+      "display_category": "Sport",
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "21f9581ca358",
@@ -3214,7 +4285,22 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Billy Taylor",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "deb020fa7530",
@@ -3272,7 +4358,29 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "display_category": "General News"
+      "display_category": "General News",
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kane",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Matthew Sim",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Shahn"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "7f003a86a874",
@@ -3314,7 +4422,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "70e178a99b5d",
@@ -3332,7 +4449,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3356,7 +4473,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "57f209a96481",
@@ -3404,7 +4530,24 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Dorchester Town",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Police Constable Daniel Walker",
+        "Weymouth"
+      ],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "2d58c002b3d1",
@@ -3452,7 +4595,24 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Dorchester Town",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Police Constable Daniel Walker",
+        "Weymouth"
+      ],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "d8ca9935fd92",
@@ -3470,7 +4630,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3500,7 +4660,35 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kieran Filmer",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Head Coach",
+          "gender": "unknown"
+        },
+        {
+          "name": "Hayden Wells",
+          "gender": "male"
+        },
+        {
+          "name": "Stoneham FC",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "417a0e30a759",
@@ -3558,7 +4746,32 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ri Baroche",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Claire Hillier",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Benjamin Zephaniah",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "84c52e93684c",
@@ -3576,7 +4789,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3618,7 +4831,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Fran Potton",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "715af117910b",
@@ -3636,7 +4864,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3673,7 +4901,24 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Peter Ryan",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Eastcliffe"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "773a7ef6193c",
@@ -3691,7 +4936,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3721,7 +4966,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jamie Randell",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "87c0f21d320c",
@@ -3739,7 +4999,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3774,7 +5034,18 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Niki Edwards"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "db69e98901c4",
@@ -3792,7 +5063,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 1,
@@ -3827,7 +5098,24 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Sarah Donnelly",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Dorset"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "b7229ac5ec0d",
@@ -3875,7 +5163,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Paul Hind",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Features"
     },
     {
       "id": "3c6478494fe3",
@@ -3917,7 +5220,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "c2ee008d4395",
@@ -3935,7 +5247,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -3965,7 +5277,27 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dominic Solanke",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Tottenham Hotspur",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "dd4407355e61",
@@ -3983,7 +5315,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4009,7 +5341,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "f6d23216bf1b",
@@ -4027,7 +5368,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4064,7 +5405,24 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Joe Salmon",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Lidl"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "9fc5b169ab48",
@@ -4082,7 +5440,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4124,7 +5482,44 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 4,
+      "source_evidence_confirmed": [
+        {
+          "name": "Mark McAdam",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Bill Foley’s",
+          "gender": "male"
+        },
+        {
+          "name": "Dean Huijsen",
+          "gender": "male"
+        },
+        {
+          "name": "Ilia Zabarnyi",
+          "gender": "male"
+        },
+        {
+          "name": "Milos Kerkez",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "f0a84d7a7b2b",
@@ -4182,7 +5577,52 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 5,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dan Ford",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Tulisa Broom",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "David",
+          "gender": "male"
+        },
+        {
+          "name": "Guy",
+          "gender": "male"
+        },
+        {
+          "name": "Nigel",
+          "gender": "male"
+        },
+        {
+          "name": "Kerr",
+          "gender": "male"
+        },
+        {
+          "name": "Lawson",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "chateaulabriance",
+        "Wessex",
+        "Cook"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "f744169320dd",
@@ -4245,7 +5685,48 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dylan Fletcher",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Hannah Mills",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Tom Slingsby",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Ellie Aldridge",
+          "gender": "female"
+        },
+        {
+          "name": "Said Mills",
+          "gender": "male"
+        },
+        {
+          "name": "Stu",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Emirate",
+        "GB"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Features"
     },
     {
       "id": "975a95f9add2",
@@ -4263,7 +5744,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4283,7 +5764,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "d1bd9b463503",
@@ -4301,7 +5791,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4353,7 +5843,32 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "George Godfrey",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Steven",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Daryl",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "df1649c0e0e4",
@@ -4371,7 +5886,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4408,7 +5923,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Mark Leipacher",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "8675056bedc4",
@@ -4426,7 +5956,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4478,7 +6008,32 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Alan Sparks",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Matt Stooleworthy",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Dylan Brown",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "9d9c82d655f7",
@@ -4496,7 +6051,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4522,7 +6077,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "8a49bc59dabd",
@@ -4540,7 +6104,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4587,7 +6151,38 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Marc Rosenberg",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Sandi Marshall",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Chestnut Nursery",
+          "gender": "unknown"
+        },
+        {
+          "name": "Andy",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Minds"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "0d4cca7112fd",
@@ -4634,7 +6229,16 @@
           }
         ]
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "21b012314d75",
@@ -4682,7 +6286,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Bill Foley",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "051eca102bd5",
@@ -4724,7 +6343,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "ca5751c2a5d0",
@@ -4742,7 +6370,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4768,7 +6396,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "96b7cdc59248",
@@ -4786,7 +6423,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4828,7 +6465,27 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Adam Lowe",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Paitin Du Plooy",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "275f208405ec",
@@ -4846,7 +6503,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4878,7 +6535,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Joel Silva",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "715413449c1c",
@@ -4896,7 +6568,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4926,7 +6598,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "James Ellis",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "99033d694b38",
@@ -4944,7 +6631,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -4981,7 +6668,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Adam Silver",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "46549948af98",
@@ -5023,7 +6725,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "67b08e3dc29e",
@@ -5041,7 +6752,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -5071,7 +6782,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Millie Earl",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "50c1630578e4",
@@ -5089,7 +6815,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5115,7 +6841,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "8e2121a22f89",
@@ -5157,7 +6892,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "cf179fe5fbb9",
@@ -5175,7 +6919,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5204,7 +6948,16 @@
         ],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "5795e4bb76e6",
@@ -5222,7 +6975,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5251,7 +7004,16 @@
         ],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "53831c80ea43",
@@ -5269,7 +7031,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5301,7 +7063,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dragoș Crăciun",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "d8bc8a4e3dde",
@@ -5354,7 +7131,29 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Anonymous victim",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Judge Fuller KC",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Callender"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "0ec9e8580501",
@@ -5417,7 +7216,32 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Tyler Burt",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Adrien Cuthbert",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Said Cuthbert",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "ebebd1898a12",
@@ -5435,7 +7259,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5461,7 +7285,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "cca23c5193c5",
@@ -5529,7 +7362,32 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Charlie Rose",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Naomi",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "David",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "5cb6b4acb899",
@@ -5547,7 +7405,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5573,7 +7431,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "5921c9d26a69",
@@ -5591,7 +7458,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5617,7 +7484,16 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": true,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "455e12b1b8f8",
@@ -5635,7 +7511,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5667,7 +7543,22 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Oscar Pulsford",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Features"
     },
     {
       "id": "d91cb476403b",
@@ -5685,7 +7576,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5722,12 +7613,25 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kevin Smith",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Lifestyle",
+        "Mobility"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     }
-  ],
-  "gender_breakdown": {
-    "male": 71,
-    "female": 41,
-    "unknown": 7
-  }
+  ]
 }
