@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-23T17:01:44Z",
+  "last_updated": "2026-01-23T17:52:47Z",
   "total_verified": 159,
   "results": [
     {
@@ -51,8 +51,17 @@
     {
       "id": "grant-hancox-acl-feature-2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Roan Fox - Grant Hancox",
+          "context": "PERSON within 50 chars of quote: ...tentially it could be career-ending.” Photograph: Roan Fox - Grant Hancox watches from the sidelines Eleven months later, G..."
+        },
+        {
+          "name": "Roan Fox - Bournemouth Lions",
+          "context": "PERSON within 50 chars of quote: ...ck playing less than 9 months later.” Photograph: Roan Fox - Bournemouth Lions team huddle Despite being out for such a long tim..."
+        }
+      ]
     },
     {
       "id": "bournemouth-sea-dippers-helping-to-create-community",
@@ -129,8 +138,17 @@
     {
       "id": "dorset-women-tuktuk-trip",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Jo O'Connell",
+          "context": "PERSON within 50 chars of quote: ...nything like this before” - Jo Image submitted by Jo O'Connell (Sisterhood TukTuk challenge) Image submitted by ..."
+        },
+        {
+          "name": "Jo",
+          "context": "PERSON within 50 chars of quote: ...he “fell in love with the country and its people” Jo will be driving coast to coast with her sister. A..."
+        }
+      ]
     },
     {
       "id": "dorsets-holocaust-memorial-day-2026",
