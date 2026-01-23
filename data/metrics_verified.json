@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-23T11:07:18Z",
-  "total_articles": 110,
+  "last_updated": "2026-01-23T12:01:57Z",
+  "total_articles": 116,
   "summary": {
-    "avg_word_count": 605,
+    "avg_word_count": 606,
     "avg_quoted_sources": 1.0,
-    "below_minimum_count": 28,
-    "long_form_count": 20,
-    "breaking_news_count": 11,
-    "total_images": 217,
-    "original_images": 87,
-    "stock_images": 5,
-    "uncredited_images": 125,
+    "below_minimum_count": 29,
+    "long_form_count": 22,
+    "breaking_news_count": 12,
+    "total_images": 227,
+    "original_images": 88,
+    "stock_images": 7,
+    "uncredited_images": 132,
     "gender_breakdown": {
-      "male": 69,
-      "female": 32,
-      "unknown": 12
+      "male": 72,
+      "female": 33,
+      "unknown": 14
     },
     "by_section": {
       "Sport": {
-        "count": 22,
-        "words": 14207,
-        "sources": 15
+        "count": 25,
+        "words": 16519,
+        "sources": 18
       },
       "General News": {
-        "count": 79,
-        "words": 39276,
-        "sources": 76
+        "count": 82,
+        "words": 40739,
+        "sources": 79
       },
       "Features": {
         "count": 9,
@@ -35,12 +35,12 @@
     },
     "by_category": {
       "Sport": {
-        "count": 22,
-        "avg_word_count": 646,
+        "count": 25,
+        "avg_word_count": 661,
         "avg_sources": 0.7
       },
       "News": {
-        "count": 79,
+        "count": 82,
         "avg_word_count": 497,
         "avg_sources": 1.0
       },
@@ -94,13 +94,13 @@
     },
     {
       "date": "2026-01-23",
-      "article_count": 5,
+      "article_count": 11,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:59",
       "first_publish_on_time": true,
-      "below_minimum_count": 2,
-      "long_form_count": 2
+      "below_minimum_count": 3,
+      "long_form_count": 4
     }
   ],
   "articles": [
@@ -357,7 +357,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2022128173931_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_Monchengladbach_-_Sven_-_1D_X_MK_II_-_2395_-_B70I8506_Oliver_Glasner_cropped-e1768573269493-800x400.webp",
             "classification": "original",
-            "credit": "Sven M\u00fcller, CC 4"
+            "credit": "Sven Müller, CC 4"
           }
         ]
       },
@@ -1003,7 +1003,7 @@
     },
     {
       "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
       "author": "Benji Sampson",
       "author_confidence": "high",
@@ -1277,7 +1277,7 @@
     },
     {
       "id": "e48217df8ae6",
-      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "author": "Benji Sampson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan Williams",
       "author_confidence": "high",
@@ -1421,7 +1421,7 @@
       ],
       "source_evidence_possible": [],
       "sources_filtered_out": [
-        "Craig\u2019s",
+        "Craig’s",
         "Breton"
       ],
       "is_breaking_news": false,
@@ -1487,7 +1487,7 @@
     },
     {
       "id": "5db595468971",
-      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "headline": "Poole Town’s Kitmen aiming to complete the 92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
       "author": "Jacob Deighton",
       "author_confidence": "high",
@@ -1647,7 +1647,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
             "classification": "uncredited",
-            "credit": "(Reza Seewooruthun\u2019s results for the 2025 FREMC season)"
+            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
           }
         ]
       },
@@ -1671,7 +1671,7 @@
     },
     {
       "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "author": "Vishal Seenath",
       "author_confidence": "high",
@@ -2352,7 +2352,7 @@
     },
     {
       "id": "0b0c3fa2d0b3",
-      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
+      "headline": "WATCH: 2.30pm bulletin – January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "author": "Will Carson",
       "author_confidence": "high",
@@ -2402,7 +2402,7 @@
     },
     {
       "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
+      "headline": "WATCH: 3:45pm sports bulletin – January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
       "author": "Unknown",
       "author_confidence": "low",
@@ -2840,7 +2840,7 @@
     },
     {
       "id": "050bcc50448e",
-      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
+      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
       "author": "Jack Hillman",
       "author_confidence": "high",
@@ -3599,7 +3599,7 @@
     },
     {
       "id": "7cb42367054e",
-      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
+      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "author": "Derin Mehmet",
       "author_confidence": "high",
@@ -4038,7 +4038,7 @@
     },
     {
       "id": "da7bf409819e",
-      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
+      "headline": "Students compete for cash prizes on ITV’s This Morning",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
       "author": "Justina Reynolds",
       "author_confidence": "high",
@@ -4314,7 +4314,7 @@
     },
     {
       "id": "deb020fa7530",
-      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
+      "headline": "‘Unnerving’ theft committed at Arcade Jewellers",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "author": "Tyler Tamou",
       "author_confidence": "high",
@@ -4829,7 +4829,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_110558-1-360x269.jpg",
             "classification": "uncredited",
-            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for \u2018Big Kid Energy\u2019(photo credit- Ben Woodland)"
+            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for ‘Big Kid Energy’(photo credit- Ben Woodland)"
           }
         ]
       },
@@ -5311,7 +5311,7 @@
     },
     {
       "id": "dd4407355e61",
-      "headline": "Hampshire\u2019s Dawson set for ODI return",
+      "headline": "Hampshire’s Dawson set for ODI return",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -5403,7 +5403,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.34.43-303x300.png",
             "classification": "original",
-            "credit": "Image of Lidl logo \u2013 taken by Sam Morris"
+            "credit": "Image of Lidl logo – taken by Sam Morris"
           }
         ]
       },
@@ -5509,7 +5509,7 @@
       ],
       "source_evidence_possible": [
         {
-          "name": "Bill Foley\u2019s",
+          "name": "Bill Foley’s",
           "gender": "male"
         },
         {
@@ -5740,7 +5740,7 @@
     },
     {
       "id": "975a95f9add2",
-      "headline": "Saints host Sheffield United at St Mary\u2019s",
+      "headline": "Saints host Sheffield United at St Mary’s",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
       "author": "Editor Blue",
       "author_confidence": "high",
@@ -5841,7 +5841,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
             "classification": "uncredited",
-            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men\u2019s groups in the Boscombe food bank."
+            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
           }
         ]
       },
@@ -6366,7 +6366,7 @@
     },
     {
       "id": "ca5751c2a5d0",
-      "headline": "Bournemouth U21\u2019s take top spot in PL Cup group",
+      "headline": "Bournemouth U21’s take top spot in PL Cup group",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
       "author": "Harrison Walsh",
       "author_confidence": "high",
@@ -6463,7 +6463,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_102158994-1.jpg",
             "classification": "uncredited",
-            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo\u2019s Coffee Shop."
+            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo’s Coffee Shop."
           }
         ]
       },
@@ -6499,7 +6499,7 @@
     },
     {
       "id": "275f208405ec",
-      "headline": "Brazilian Journalist speaks out about AFC Bournemouth\u2019s transfer activity",
+      "headline": "Brazilian Journalist speaks out about AFC Bournemouth’s transfer activity",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
       "author": "Marcus Maccormack",
       "author_confidence": "high",
@@ -6811,7 +6811,7 @@
     },
     {
       "id": "50c1630578e4",
-      "headline": "Hampshire\u2019s Dawson shines on ODI return despite England defeat",
+      "headline": "Hampshire’s Dawson shines on ODI return despite England defeat",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -6971,7 +6971,7 @@
     },
     {
       "id": "5795e4bb76e6",
-      "headline": "Live Stream BUzz New\u2019s 12:15 Bulletin",
+      "headline": "Live Stream BUzz New’s 12:15 Bulletin",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
       "author": "Dulcie Barham",
       "author_confidence": "high",
@@ -7047,7 +7047,7 @@
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Drago\u0219 Cr\u0103ciun",
+          "name": "Dragoș Crăciun",
           "type": "original",
           "gender": "male"
         }
@@ -7061,7 +7061,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Gladiators-photo-800x400.jpeg",
             "classification": "original",
-            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Drago\u0219 Cr\u0103ciun)"
+            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Dragoș Crăciun)"
           }
         ]
       },
@@ -7078,7 +7078,7 @@
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "Drago\u0219 Cr\u0103ciun",
+          "name": "Dragoș Crăciun",
           "gender": "unknown",
           "position": ""
         }
@@ -7651,7 +7651,8 @@
       "author_confidence": "high",
       "date": "2026-01-23",
       "time": "10:00",
-      "category": "1st News",
+      "category": "News",
+      "category_detail": "1st News",
       "category_primary": "News",
       "display_category": "General News",
       "word_count": 965,
@@ -7798,17 +7799,194 @@
       "category_normalised": "General News"
     },
     {
-      "id": "f8287de194de",
-      "headline": "Camp Bestival 2026 lineup announced",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/camp-bestival-2026-lineup-announced/",
-      "author": "Naomi Kativu",
+      "id": "c453275d2eb2",
+      "headline": "BREAKING NEWS: Dorset Fire Stations announce stations at risk of closure",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
+      "author": "Ben Woodland",
       "author_confidence": "high",
       "date": "2026-01-23",
-      "time": "10:43",
-      "category": "Art",
+      "time": "11:35",
+      "category": "News",
+      "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 308,
+      "word_count": 398,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andy Cole",
+          "full_attribution": "posed closures.Chief Fire Officer, Andy Cole said:",
+          "quote_snippet": "My focus now is on supporting staff through the un",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/jean-papillon-aNJAZv2bFwk-unsplash-1-800x400.jpg",
+            "classification": "stock",
+            "credit": "Fire Stations at risk of closures\n(photo credit-Jean Papillon- Unsplash)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andy Cole",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Fire Officer",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "70f6e8d4a3fa",
+      "headline": "Bournemouth University rebuilds the television that started it all",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "author": "Eve Mc",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "11:30",
+      "category": "News",
+      "category_detail": "Features",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 840,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-university-rebuilds-the-television-that-started-it-all/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Iain",
+          "full_attribution": "Iain says. \"My grandfather's contribution was to",
+          "quote_snippet": "Most scientists had not had success getting anythi",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 5,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/DTreQ2HwpP/5f070776-7e00-4e15-a5b8-e795897e89ac-1920x945.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/OD4tOH3PSt/87914ee0-5803-49ee-98ea-fab4ac4295b9-1920x1070.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/QdbEG3lGg8/73390ea8-8887-4505-9be7-3f81cd001928-750x837.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ZtJrorcI6A/john-logie-baird-and-mechanical-television-8f7538-750x584.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Iain",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Gary",
+          "gender": "male"
+        },
+        {
+          "name": "Baird",
+          "gender": "male"
+        },
+        {
+          "name": "John Logie",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "0a06581eaaa0",
+      "headline": "Bournemouth vs Liverpool preview and predictions.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vs-liverpool-preview-and-predictions/",
+      "author": "Ben Thonholtz",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "11:48",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 777,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7818,6 +7996,71 @@
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/bcbdd88b-8e82-492d-882c-afa3d119fb6b-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "The vitality stadium from an ariel view Credit; AFC Bournemouth"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "f8287de194de",
+      "headline": "Camp Bestival 2026 lineup announced",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/camp-bestival-2026-lineup-announced/",
+      "author": "Naomi Kativu",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "10:43",
+      "category": "News",
+      "category_detail": "Art",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 308,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "DJ Rob Da Bank",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "DJ Rob Da Bank",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -7838,9 +8081,15 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "DJ Rob Da Bank",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -7856,7 +8105,8 @@
       "author_confidence": "high",
       "date": "2026-01-23",
       "time": "10:38",
-      "category": "Bournemouth",
+      "category": "News",
+      "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
       "word_count": 214,
@@ -7883,7 +8133,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/619296241_1344457597726366_149117092940749427_n-300x300.jpg",
             "classification": "uncredited",
-            "credit": "Use this QR code to access Dorset Police\u2019s survey"
+            "credit": "Use this QR code to access Dorset Police’s survey"
           }
         ]
       },
@@ -7913,6 +8163,7 @@
       "date": "2026-01-23",
       "time": "08:59",
       "category": "Sport",
+      "category_detail": "Rugby Union",
       "category_primary": "Sport",
       "display_category": "Sport",
       "word_count": 843,
@@ -7966,6 +8217,7 @@
         "audio_evidence": []
       },
       "warnings": [],
+      "category_normalised": "Sport",
       "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
@@ -7988,9 +8240,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "Sport",
-      "category_detail": "Rugby Union"
+      "word_count_status": "long_form"
     },
     {
       "id": "e8534a4406ac",
@@ -8000,19 +8250,31 @@
       "author_confidence": "high",
       "date": "2026-01-23",
       "time": "10:57",
-      "category": "Local",
+      "category": "News",
+      "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
       "word_count": 758,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 0,
+      "sources_female": 1,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Erica Johnson",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Erica Johnson",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -8032,23 +8294,212 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
         {
           "name": "Erica Johnson",
-          "gender": "female"
+          "gender": "female",
+          "position": "groq_detected"
         }
       ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"
+    },
+    {
+      "id": "f8f85bd3e34a",
+      "headline": "Nine arrests made in Dorset over organised crime ring",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "11:18",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 222,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Detective Superintendent Emma Sweetzer",
+          "full_attribution": "ice, Detective Superintendent Emma Sweetzer said:",
+          "quote_snippet": "We know the significant impact that drugs can have",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/dorset-police-logo-blue-sitelogo-217px.png",
+            "classification": "original",
+            "credit": "Dorset Police)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Detective Superintendent Emma Sweetzer",
+          "gender": "unknown",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "270066b87722",
+      "headline": "SEND schools bill passes 130,000 signatures",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/send-schools-bill-passes-130000-signatures/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "11:27",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 846,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-23-095324-800x400.png",
+            "classification": "stock",
+            "credit": "People sitting in Parliament The White Paper will be published next month (Stock Image: Getty Images, Unsplash)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "2466d28f5386",
+      "headline": "’16 cup finals left’: Bashley’s fight for survival",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/16-cup-finals-left-bashleys-fight-for-survival/",
+      "author": "Will Russell",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "11:54",
+      "category": "Sport",
+      "category_detail": "Local Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 692,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jack Williamson",
+          "full_attribution": "Williamson said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/5365bb2f-61ef-40a3-81c4-8d74623c13e7-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "Bashley player warming up on pitch Bashley players warming up midweek against Sporting Wessex in the Southampton Senior Cup, credit Will Russell"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jack Williamson",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     }
   ]
 }

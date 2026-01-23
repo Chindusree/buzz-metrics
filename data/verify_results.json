@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T11:07:17Z",
-  "total_verified": 110,
+  "last_updated": "2026-01-23T12:01:55Z",
+  "total_verified": 116,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1399,6 +1399,46 @@
       ]
     },
     {
+      "id": "c453275d2eb2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Fire Officer",
+          "context": "PERSON within 50 chars of quote: ...thority will discuss the proposed closures. Chief Fire Officer, Andy Cole said:“My focus now is on supporting st..."
+        },
+        {
+          "name": "Andy Cole",
+          "context": "PERSON within 50 chars of quote: ...iscuss the proposed closures. Chief Fire Officer, Andy Cole said:“My focus now is on supporting staff through..."
+        }
+      ]
+    },
+    {
+      "id": "70f6e8d4a3fa",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Gary",
+          "context": "PERSON within 50 chars of quote: ... then this wasn’t taken for granted at all.” Says Gary. Gary believes early audiences appreciated televi..."
+        },
+        {
+          "name": "Baird",
+          "context": "PERSON within 50 chars of quote: ...ave a lot of money. He was down to his last £200” Baird began his main experiments in 1923, working large..."
+        },
+        {
+          "name": "John Logie",
+          "context": "PERSON within 50 chars of quote: ...itself. “He loved working in the lab,” Iain says. John Logie Baird and his mechanical TV (Image from picryl) J..."
+        }
+      ]
+    },
+    {
+      "id": "0a06581eaaa0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vs-liverpool-preview-and-predictions/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "f8287de194de",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/camp-bestival-2026-lineup-announced/",
       "verify_quoted_sources": 0,
@@ -1451,6 +1491,24 @@
           "context": "PERSON within 50 chars of quote: ...unity services. The Mothers in Mind project lead, Erica Johnson, said: “Many people don’t realise how common mate..."
         }
       ]
+    },
+    {
+      "id": "f8f85bd3e34a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "270066b87722",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/send-schools-bill-passes-130000-signatures/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "2466d28f5386",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/16-cup-finals-left-bashleys-fight-for-survival/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     }
   ]
 }
