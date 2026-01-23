@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T12:01:55Z",
-  "total_verified": 116,
+  "last_updated": "2026-01-23T12:30:09Z",
+  "total_verified": 118,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1480,6 +1480,27 @@
           "context": "PERSON within 50 chars of quote: ...ir opposition being called an “unknown entity” by Higgins. Petersfield currently sit comfortably in sixth 3..."
         }
       ]
+    },
+    {
+      "id": "07acbc846781",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Paranjpe",
+          "context": "PERSON within 50 chars of quote: ...the multitude of outlets available to the public. Paranjpe said: “This kind of service is acting so selfless..."
+        },
+        {
+          "name": "Robinson",
+          "context": "PERSON within 50 chars of quote: ...ournemouth, Christchurch and Castlepoint library. Robinson called the stations, “a great point of contact” f..."
+        }
+      ]
+    },
+    {
+      "id": "614081e9e3da",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-andoni-iraola-previews-liverpool-clash/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "e8534a4406ac",

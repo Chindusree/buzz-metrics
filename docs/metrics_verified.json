@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-01-23T12:01:57Z",
-  "total_articles": 116,
+  "last_updated": "2026-01-23T12:30:11Z",
+  "total_articles": 118,
   "summary": {
-    "avg_word_count": 606,
+    "avg_word_count": 601,
     "avg_quoted_sources": 1.0,
-    "below_minimum_count": 29,
+    "below_minimum_count": 30,
     "long_form_count": 22,
     "breaking_news_count": 12,
-    "total_images": 227,
-    "original_images": 88,
+    "total_images": 229,
+    "original_images": 89,
     "stock_images": 7,
-    "uncredited_images": 132,
+    "uncredited_images": 133,
     "gender_breakdown": {
       "male": 72,
       "female": 33,
@@ -18,13 +18,13 @@
     },
     "by_section": {
       "Sport": {
-        "count": 25,
-        "words": 16519,
+        "count": 26,
+        "words": 16629,
         "sources": 18
       },
       "General News": {
-        "count": 82,
-        "words": 40739,
+        "count": 83,
+        "words": 41326,
         "sources": 79
       },
       "Features": {
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 25,
-        "avg_word_count": 661,
+        "count": 26,
+        "avg_word_count": 640,
         "avg_sources": 0.7
       },
       "News": {
-        "count": 82,
-        "avg_word_count": 497,
+        "count": 83,
+        "avg_word_count": 498,
         "avg_sources": 1.0
       },
       "Features": {
@@ -94,12 +94,12 @@
     },
     {
       "date": "2026-01-23",
-      "article_count": 11,
+      "article_count": 13,
       "target": 12,
-      "meets_target": false,
+      "meets_target": true,
       "first_publish_time": "08:59",
       "first_publish_on_time": true,
-      "below_minimum_count": 3,
+      "below_minimum_count": 4,
       "long_form_count": 4
     }
   ],
@@ -8241,6 +8241,120 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form"
+    },
+    {
+      "id": "07acbc846781",
+      "headline": "How CAN are using leaflets to support the community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
+      "author": "Oliver Kent",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "12:14",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 587,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/484ff926-4636-4e96-83a6-37ac6b399e40.JPG.heic",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2252261837&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          }
+        ]
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Paranjpe",
+        "Robinson"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "614081e9e3da",
+      "headline": "LIVE BLOG: Andoni Iraola previews Liverpool clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-andoni-iraola-previews-liverpool-clash/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "09:39",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 110,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Credit-AFC-Bournemouth-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Jack Hillman"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Sport"
     },
     {
       "id": "e8534a4406ac",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T12:01:57Z",
-  "total_flagged": 45,
+  "generated": "2026-01-23T12:30:11Z",
+  "total_flagged": 46,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1680,6 +1680,28 @@
         "Smith",
         "Frost",
         "Petersfield"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "07acbc846781",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
+      "headline": "How CAN are using leaflets to support the community",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Paranjpe",
+        "Robinson"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Paranjpe",
+        "Robinson"
       ],
       "review_status": "pending"
     }
