@@ -16,7 +16,7 @@
         .logo { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.5rem; color: #c41230; }
         .header-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
         .date-select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.4rem 0.75rem; border-radius: 6px; font-size: 0.85rem; }
-        .nav { display: flex; overflow-x: auto; }
+        .nav { display: flex; overflow-x: auto; max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
         .nav a { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.75rem 1rem; white-space: nowrap; }
         .nav a.active { color: white; }
         .nav a:hover { color: white; }
@@ -575,7 +575,7 @@
 
         // Update subtitle
         const d = new Date(selectedDate + 'T00:00:00');
-        document.querySelector('.section-sub').textContent = d.toLocaleDateString('en-GB', { weekday: 'long' }) + "'s output";
+        document.querySelector('.section-sub').textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 
         console.log('✓ Hero stats updated');
 

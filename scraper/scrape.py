@@ -3139,9 +3139,9 @@ def main():
             if article['source_evidence']:
                 print(f"   Evidence:")
                 for j, source in enumerate(article['source_evidence'][:3], 1):
-                    print(f"     {j}. {source['name']} ({source['gender']})")
-                    print(f"        Quote: \"{source['quote_snippet']}...\"")
-                    print(f"        Attribution: {source['full_attribution']}")
+                    print(f"     {j}. {source.get('name', 'N/A')} ({source.get('gender', 'N/A')})")
+                    print(f"        Quote: \"{source.get('quote_snippet', 'N/A')}...\"")
+                    print(f"        Attribution: {source.get('full_attribution', 'N/A')}")
 
     # Articles with 0 sources
     articles_no_sources = [a for a in articles if a['quoted_sources'] == 0]
