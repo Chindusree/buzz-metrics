@@ -1,12 +1,1041 @@
 {
-  "last_updated": "2026-01-23T17:05:57Z",
-  "total_articles": 157,
+  "last_updated": "2026-01-23T17:22:51Z",
+  "total_articles": 159,
   "gender_breakdown": {
-    "male": 53,
-    "female": 25,
-    "unknown": 11
+    "male": 82,
+    "female": 31,
+    "unknown": 12
   },
   "articles": [
+    {
+      "id": "bcp-council-vote-on-tax-base-proposal",
+      "headline": "BCP Council Vote on Tax Base Proposal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-vote-on-tax-base-proposal/",
+      "author": "Julia Apte",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:18",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 423,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 6,
+      "quoted_sources_confidence": "high",
+      "sources_male": 5,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Millie Earl",
+          "type": "original",
+          "gender": "female"
+        },
+        {
+          "name": "Darren Pidwell",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Mike Cox",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "David Brown",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Richard Harrett",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Andy Martin",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "bournemouth-boxer-set-for-return-after-year-away",
+      "headline": "Bournemouth Boxer Set for Return After Year Away",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-boxer-set-for-return-after-year-away/",
+      "author": "Benji Sampson",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "15:31",
+      "category": "Sport",
+      "category_detail": "Boxing",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 415,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "grant-hancox-acl-feature-2",
+      "headline": "Bournemouth Lions captain on lengthy injury spell",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "author": "Roan Fox",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:57",
+      "category": "Sport",
+      "category_detail": "Rugby Union",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 765,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/back-with-a-bang/index.html",
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Grant Hancox",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Andy Curtis",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andy Curtis",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 7,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 7,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/XRWP8bYURT/img_5936-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/z7GNjzlyJC/img_5945-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/NaYndHBJ1k/img_5921-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/SGUHNHKPBK/img_5930-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/e9s3WnVGHw/img_5922-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/HR1ZBduCly/img_5940-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "bournemouth-sea-dippers-helping-to-create-community",
+      "headline": "Bournemouth Sea Dippers helping to create community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-sea-dippers-helping-to-create-community/",
+      "author": "Lois Watts",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "11:08",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 391,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Stump",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Mary Richards",
+          "type": "original",
+          "gender": "female"
+        },
+        {
+          "name": "Ed",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "dorset-police-launch-helicopter-search-for-missing-jamie",
+      "headline": "Breaking: Dorset Police launch helicopter search for missing 49 year-old man",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-helicopter-search-for-missing-jamie/",
+      "author": "Tiana Hynes",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "09:00",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 218,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea",
+      "headline": "Chelsea vs. Arsenal: Arteta on ‘mission’ to oust Chelsea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea/",
+      "author": "Olivia Pagden",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "10:16",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 682,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Mikel Arteta",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Liam Rosenior",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "crane-collapses-into-train-in-thailand-killing-32-people",
+      "headline": "Crane collapses into train in Thailand killing 32 people",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/crane-collapses-into-train-in-thailand-killing-32-people/",
+      "author": "Luke Hills",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:49",
+      "category": "News",
+      "category_detail": null,
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 365,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Anutin Charnvirakul",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Suriya Juangroongruangkit",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Anonymous witness",
+          "type": "original",
+          "gender": "unknown"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "dorchester-town-in-search-of-away-win-at-havant",
+      "headline": "Dorchester Town in search of away win at Havant",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-in-search-of-away-win-at-havant/",
+      "author": "Harry Castle",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "12:31",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 425,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "dorset-council-back-phone-ban-for-schools",
+      "headline": "Dorset Council back phone ban for schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-back-phone-ban-for-schools/",
+      "author": "Lois Watts",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "11:44",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 263,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Simon Bull",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "dorset-women-tuktuk-trip",
+      "headline": "Dorset driver gives up her car for TukTuk trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
+      "author": "Grace Kehoe",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "15:00",
+      "category": "News",
+      "category_detail": "Features",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 400,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tuk-tuk-dorset-entrepreneur/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jo O'Connell",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jo O'Connell",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 4,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/xc3uwgNzBE/photo-2026-01-14-09-27-53.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/3cNOGHDGiX/2a9828b4-3f14-4763-99ad-15ba2fe2c952-1536x1147.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/FWkaFOuNR8/photo-2026-01-14-09-27-52.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "dorsets-holocaust-memorial-day-2026",
+      "headline": "Dorset’s Holocaust Memorial Day 2026",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorsets-holocaust-memorial-day-2026/",
+      "author": "Vishal Seenath",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:43",
+      "category": "News",
+      "category_detail": "Ethics",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 277,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "gb-tennis-star-misses-out-on-deaf-olympics",
+      "headline": "GB Tennis star misses out on deaf Olympics",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gb-tennis-star-misses-out-on-deaf-olympics/",
+      "author": "Editor Green",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "08:04",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 432,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ethan Carter",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
+      "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "author": "Editor Green",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:09",
+      "category": "Sport",
+      "category_detail": "Local Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 425,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "jenna-markham-eyes-goal-against-wsl-leaders-manchester-city",
+      "headline": "Jenna Markham eyes goal against WSL Leaders Manchester City",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jenna-markham-eyes-goal-against-wsl-leaders-manchester-city/",
+      "author": "Finn Payne",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "10:40",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 564,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 2,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jenna Markham",
+          "type": "original",
+          "gender": "female"
+        },
+        {
+          "name": "Elena Cole",
+          "type": "original",
+          "gender": "female"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "police-chief-admits-to-ai-use-in-aston-villa-tie",
+      "headline": "Police Chief admits to AI use in Aston Villa tie",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-chief-admits-to-ai-use-in-aston-villa-tie/",
+      "author": "Zack Walker",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "13:47",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 390,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Craig Guildford",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "poole-town-ladies-manager-raises-concerns-over-funding",
+      "headline": "Poole Town Ladies manager raises concerns over funding",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-ladies-manager-raises-concerns-over-funding/",
+      "author": "Ruby Jarrett",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:23",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 405,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Nobby Lovelass",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
+      "headline": "Poole trampoline athlete Jared Smith sets sights on European glory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "author": "Olivia Pagden",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "14:11",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 612,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jared Smith",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Ryan Brown",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "radacanu-completes-her-first-win-of-the-season-after-rain-delay",
+      "headline": "Radacanu completes her first win of the season after Rain delay",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/radacanu-completes-her-first-win-of-the-season-after-rain-delay/",
+      "author": "Editor Green",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "10:27",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 407,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg",
+      "headline": "Semenyo helps Manchester City past Newcastle in cup first leg",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg/",
+      "author": "Moritz Baer",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "07:30",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 465,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 4,
+      "quoted_sources_confidence": "high",
+      "sources_male": 4,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Bernardo Silva",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Antoine Semenyo",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Dan Burn",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Eddie Howe",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
+      "headline": "Update: Investigation into Elon Musk’s X following Grok AI sexual deepfakes",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "author": "Lois Watts",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "12:07",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 499,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Sir Kier Starmer",
+          "type": "original",
+          "gender": "male"
+        },
+        {
+          "name": "Liz Kendall",
+          "type": "original",
+          "gender": "female"
+        },
+        {
+          "name": "Elon Musk",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "re-defined-tackling-mens-mental-health-through-january",
+      "headline": "re.Defined tackling men’s mental health through January",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/re-defined-tackling-mens-mental-health-through-january/",
+      "author": "Tiana Hynes",
+      "author_confidence": "medium",
+      "date": "2026-01-14",
+      "time": "12:38",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "News",
+      "word_count": 338,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Will Tarbard",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
     {
       "id": "21a723b0aed1",
       "headline": "AFC Bournemouth submit bid for highly rated Brazilian teenager",
@@ -7626,6 +8655,215 @@
       ]
     },
     {
+      "id": "dc90ae812d3c",
+      "headline": "The financial struggle of tennis",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "author": "Tom Priestley",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "16:29",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 911,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/financialstrugglesoftennis/index.html",
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "James White",
+          "full_attribution": "says White,\n\"There's a good chance you can be on",
+          "quote_snippet": "The journey to becoming a professional tennis play",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Harry James",
+          "full_attribution": "says James,\n\"I found the pressures within that ch",
+          "quote_snippet": "There's a real difference when playing as a junior",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 11,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 8,
+        "details": [
+          {
+            "src": "./assets/WYwkMrgEvc/cd9325f0-31c4-4ef1-abb3-136a1c5b3a5f-thumbnail.jpeg",
+            "credit": "Jack Burford",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/NwpyTEEY5O/770f2d10-8d3b-4869-9c77-43f6dff3d282-thumbnail.jpeg",
+            "credit": "Jack Burford",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/P9E09fnzOZ/65d94d9f-7620-41ff-aa61-b8d01994be49-thumbnail.jpeg",
+            "credit": "Jack Burford",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/WYwkMrgEvc/cd9325f0-31c4-4ef1-abb3-136a1c5b3a5f-1200x1600.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/fNr37h2xIi/KcPK1wnRjS/krzysztof-dubiel-hqbijsbtybw-unsplash-01-4096x2087.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/NwpyTEEY5O/770f2d10-8d3b-4869-9c77-43f6dff3d282-1024x683.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/fNr37h2xIi/2RiYmoaGEM/victoria-prymak-cce_xt5seda-unsplash-01-4096x2075.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/IUtfC2qRRc/c065a316-5cd7-4677-815e-b2ac27b02d81-1023x681.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/P9E09fnzOZ/65d94d9f-7620-41ff-aa61-b8d01994be49-1024x683.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/fNr37h2xIi/FCJEqTaWqQ/valentin-b-kremer-spcluqtajea-unsplash-4096x2304.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "2838086ca30b",
+      "headline": "The football team that isn’t about football",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "author": "Cameron Dennison\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "16:30",
+      "category": "Sport",
+      "category_detail": "Local Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1328,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-team-nobody-wants-to-play-for/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "George Dean",
+          "full_attribution": "Dean said.\n\"We also support other charities who d",
+          "quote_snippet": "They're really important because again it's gettin",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 9,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 9,
+        "details": [
+          {
+            "src": "./assets/cmoxDZCvDj/sands-united-ball-thumbnail.jpeg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/wGfhY2WCj7/3-peaks-challenge-thumbnail.jpeg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/84xBLzulP9/sands.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/cmoxDZCvDj/sands-united-ball.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/wuuPhZOv5p/3-peaks-2.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/wGfhY2WCj7/3-peaks-challenge.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/aGDGoFUP6V/shirt.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/RNAwUBLB1L/join-our-team.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
       "id": "68171a537e36",
       "headline": "Welcome to the lions den",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
@@ -7749,1035 +8987,6 @@
             "credit": "Bashley player warming up on pitch Bashley players warming up midweek against Sporting Wessex in the Southampton Senior Cup, credit Will Russell"
           }
         ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "bcp-council-vote-on-tax-base-proposal",
-      "headline": "BCP Council Vote on Tax Base Proposal",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-vote-on-tax-base-proposal/",
-      "author": "Julia Apte",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:18",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 423,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 6,
-      "quoted_sources_confidence": "high",
-      "sources_male": 5,
-      "sources_female": 1,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Millie Earl",
-          "type": "original",
-          "gender": "female"
-        },
-        {
-          "name": "Darren Pidwell",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Mike Cox",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "David Brown",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Richard Harrett",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Andy Martin",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "bournemouth-boxer-set-for-return-after-year-away",
-      "headline": "Bournemouth Boxer Set for Return After Year Away",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-boxer-set-for-return-after-year-away/",
-      "author": "Benji Sampson",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "15:31",
-      "category": "Sport",
-      "category_detail": "Boxing",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 415,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "crane-collapses-into-train-in-thailand-killing-32-people",
-      "headline": "Crane collapses into train in Thailand killing 32 people",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/crane-collapses-into-train-in-thailand-killing-32-people/",
-      "author": "Luke Hills",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:49",
-      "category": "News",
-      "category_detail": null,
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 365,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Anutin Charnvirakul",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Suriya Juangroongruangkit",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Anonymous witness",
-          "type": "original",
-          "gender": "unknown"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "dorset-women-tuktuk-trip",
-      "headline": "Dorset driver gives up her car for TukTuk trip",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
-      "author": "Grace Kehoe",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "15:00",
-      "category": "News",
-      "category_detail": "Features",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 400,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/tuk-tuk-dorset-entrepreneur/index.html",
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 1,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Jo O'Connell",
-          "gender": "female",
-          "gender_confidence": "groq",
-          "gender_method": "groq_llm",
-          "quote_snippet": "(extracted by Groq)",
-          "full_attribution": "Jo O'Connell",
-          "position": "groq_detected",
-          "type": "original"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 4,
-        "details": [
-          {
-            "src": "./assets/logo-black-no-text.svg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/xc3uwgNzBE/photo-2026-01-14-09-27-53.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/3cNOGHDGiX/2a9828b4-3f14-4763-99ad-15ba2fe2c952-1536x1147.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/FWkaFOuNR8/photo-2026-01-14-09-27-52.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "dorsets-holocaust-memorial-day-2026",
-      "headline": "Dorset’s Holocaust Memorial Day 2026",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorsets-holocaust-memorial-day-2026/",
-      "author": "Vishal Seenath",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:43",
-      "category": "News",
-      "category_detail": "Ethics",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 277,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "grant-hancox-acl-feature-2",
-      "headline": "Bournemouth Lions captain on lengthy injury spell",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
-      "author": "Roan Fox",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:57",
-      "category": "Sport",
-      "category_detail": "Rugby Union",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 765,
-      "word_count_confidence": "medium",
-      "content_type": "shorthand",
-      "shorthand_url": "https://buzznews.shorthandstories.com/back-with-a-bang/index.html",
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Grant Hancox",
-          "gender": "male",
-          "gender_confidence": "groq",
-          "gender_method": "groq_llm",
-          "quote_snippet": "(extracted by Groq)",
-          "full_attribution": "Grant Hancox",
-          "position": "groq_detected",
-          "type": "original"
-        },
-        {
-          "name": "Andy Curtis",
-          "gender": "male",
-          "gender_confidence": "groq",
-          "gender_method": "groq_llm",
-          "quote_snippet": "(extracted by Groq)",
-          "full_attribution": "Andy Curtis",
-          "position": "groq_detected",
-          "type": "original"
-        }
-      ],
-      "images": {
-        "total": 7,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 7,
-        "details": [
-          {
-            "src": "./assets/logo-black-no-text.svg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/XRWP8bYURT/img_5936-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/z7GNjzlyJC/img_5945-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/NaYndHBJ1k/img_5921-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/SGUHNHKPBK/img_5930-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/e9s3WnVGHw/img_5922-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          },
-          {
-            "src": "./assets/HR1ZBduCly/img_5940-4032x3024.jpg",
-            "credit": "No credit found",
-            "classification": "uncredited"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "poole-town-ladies-manager-raises-concerns-over-funding",
-      "headline": "Poole Town Ladies manager raises concerns over funding",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-ladies-manager-raises-concerns-over-funding/",
-      "author": "Ruby Jarrett",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:23",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 405,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Nobby Lovelass",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 6,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "bournemouth-sea-dippers-helping-to-create-community",
-      "headline": "Bournemouth Sea Dippers helping to create community",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-sea-dippers-helping-to-create-community/",
-      "author": "Lois Watts",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "11:08",
-      "category": "News",
-      "category_detail": "Local",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 391,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 1,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Stump",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Mary Richards",
-          "type": "original",
-          "gender": "female"
-        },
-        {
-          "name": "Ed",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "dorchester-town-in-search-of-away-win-at-havant",
-      "headline": "Dorchester Town in search of away win at Havant",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-in-search-of-away-win-at-havant/",
-      "author": "Harry Castle",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "12:31",
-      "category": "Sport",
-      "category_detail": "Men's Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 425,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "dorset-council-back-phone-ban-for-schools",
-      "headline": "Dorset Council back phone ban for schools",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-back-phone-ban-for-schools/",
-      "author": "Lois Watts",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "11:44",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 263,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Simon Bull",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
-      "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
-      "author": "Editor Green",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:09",
-      "category": "Sport",
-      "category_detail": "Local Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 425,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
-      "headline": "Update: Investigation into Elon Musk’s X following Grok AI sexual deepfakes",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
-      "author": "Lois Watts",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "12:07",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 499,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 1,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Sir Kier Starmer",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Liz Kendall",
-          "type": "original",
-          "gender": "female"
-        },
-        {
-          "name": "Elon Musk",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "police-chief-admits-to-ai-use-in-aston-villa-tie",
-      "headline": "Police Chief admits to AI use in Aston Villa tie",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-chief-admits-to-ai-use-in-aston-villa-tie/",
-      "author": "Zack Walker",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "13:47",
-      "category": "Sport",
-      "category_detail": "Men's Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 390,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Craig Guildford",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
-      "headline": "Poole trampoline athlete Jared Smith sets sights on European glory",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
-      "author": "Olivia Pagden",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "14:11",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 612,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Jared Smith",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Ryan Brown",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "re-defined-tackling-mens-mental-health-through-january",
-      "headline": "re.Defined tackling men’s mental health through January",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/re-defined-tackling-mens-mental-health-through-january/",
-      "author": "Tiana Hynes",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "12:38",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 338,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Will Tarbard",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea",
-      "headline": "Chelsea vs. Arsenal: Arteta on ‘mission’ to oust Chelsea",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea/",
-      "author": "Olivia Pagden",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "10:16",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 682,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 2,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Mikel Arteta",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Liam Rosenior",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 6,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "dorset-police-launch-helicopter-search-for-missing-jamie",
-      "headline": "Breaking: Dorset Police launch helicopter search for missing 49 year-old man",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-helicopter-search-for-missing-jamie/",
-      "author": "Tiana Hynes",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "09:00",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "News",
-      "word_count": 218,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "gb-tennis-star-misses-out-on-deaf-olympics",
-      "headline": "GB Tennis star misses out on deaf Olympics",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/gb-tennis-star-misses-out-on-deaf-olympics/",
-      "author": "Editor Green",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "08:04",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 432,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Ethan Carter",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "jenna-markham-eyes-goal-against-wsl-leaders-manchester-city",
-      "headline": "Jenna Markham eyes goal against WSL Leaders Manchester City",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/jenna-markham-eyes-goal-against-wsl-leaders-manchester-city/",
-      "author": "Finn Payne",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "10:40",
-      "category": "Sport",
-      "category_detail": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 564,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
-      "sources_male": 0,
-      "sources_female": 2,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Jenna Markham",
-          "type": "original",
-          "gender": "female"
-        },
-        {
-          "name": "Elena Cole",
-          "type": "original",
-          "gender": "female"
-        }
-      ],
-      "images": {
-        "total": 4,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "radacanu-completes-her-first-win-of-the-season-after-rain-delay",
-      "headline": "Radacanu completes her first win of the season after Rain delay",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/radacanu-completes-her-first-win-of-the-season-after-rain-delay/",
-      "author": "Editor Green",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "10:27",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 407,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": []
-    },
-    {
-      "id": "semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg",
-      "headline": "Semenyo helps Manchester City past Newcastle in cup first leg",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg/",
-      "author": "Moritz Baer",
-      "author_confidence": "medium",
-      "date": "2026-01-14",
-      "time": "07:30",
-      "category": "Sport",
-      "category_detail": "Men's Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 465,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 4,
-      "quoted_sources_confidence": "high",
-      "sources_male": 4,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Bernardo Silva",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Antoine Semenyo",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Dan Burn",
-          "type": "original",
-          "gender": "male"
-        },
-        {
-          "name": "Eddie Howe",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 5,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
       },
       "embeds": {
         "video_count": 0,

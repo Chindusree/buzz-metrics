@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T17:01:46Z",
-  "total_flagged": 66,
+  "generated": "2026-01-23T17:28:43Z",
+  "total_flagged": 67,
   "flagged_articles": [
     {
       "id": "bcp-council-vote-on-tax-base-proposal",
@@ -87,6 +87,44 @@
         {
           "name": "Frank Warren",
           "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "grant-hancox-acl-feature-2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "headline": "Bournemouth Lions captain on lengthy injury spell",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Grant Hancox",
+        "Andy Curtis"
+      ],
+      "verify_evidence": [
+        "Roan Fox - Grant Hancox",
+        "Roan Fox - Bournemouth Lions"
+      ],
+      "confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Andy Curtis",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Roan Fox - Bournemouth Lions",
+          "gender": "unknown"
         }
       ],
       "filtered": [],
