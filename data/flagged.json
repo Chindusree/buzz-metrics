@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T11:07:18Z",
-  "total_flagged": 44,
+  "generated": "2026-01-23T12:01:57Z",
+  "total_flagged": 45,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1570,6 +1570,79 @@
       "review_status": "pending"
     },
     {
+      "id": "c453275d2eb2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
+      "headline": "BREAKING NEWS: Dorset Fire Stations announce stations at risk of closure",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Andy Cole"
+      ],
+      "verify_evidence": [
+        "Fire Officer",
+        "Andy Cole"
+      ],
+      "confirmed": [
+        {
+          "name": "Andy Cole",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Fire Officer",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "70f6e8d4a3fa",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "headline": "Bournemouth University rebuilds the television that started it all",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Iain"
+      ],
+      "verify_evidence": [
+        "Gary",
+        "Baird",
+        "John Logie"
+      ],
+      "confirmed": [
+        {
+          "name": "Iain",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Gary",
+          "gender": "male"
+        },
+        {
+          "name": "Baird",
+          "gender": "male"
+        },
+        {
+          "name": "John Logie",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "5b0da2143621",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
       "headline": "Ellingham and Ringwood vs Petersfield preview",
@@ -1608,29 +1681,6 @@
         "Frost",
         "Petersfield"
       ],
-      "review_status": "pending"
-    },
-    {
-      "id": "e8534a4406ac",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
-      "headline": "Mothers in Mind hopes for more maternal mental health support",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Erica Johnson"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Erica Johnson",
-          "gender": "female"
-        }
-      ],
-      "filtered": [],
       "review_status": "pending"
     }
   ]
