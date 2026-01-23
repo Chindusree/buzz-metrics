@@ -119,26 +119,88 @@ def process_article(url, target_date):
         if author_elem:
             author = author_elem.get_text(strip=True)
 
-        # Check if Shorthand
-        is_shorthand = 'shorthand' in url
+        # Extract time from JSON-LD or meta tags
+        article_time = None
+
+        # Try JSON-LD schema first (most reliable)
+        scripts = soup.find_all('script', type='application/ld+json')
+        for script in scripts:
+            try:
+                data = json.loads(script.string)
+                date_published = None
+
+                # Handle @graph structure (WordPress schema.org)
+                if isinstance(data, dict) and '@graph' in data:
+                    for item in data['@graph']:
+                        if isinstance(item, dict) and 'datePublished' in item:
+                            date_published = item['datePublished']
+                            break
+                elif isinstance(data, dict):
+                    date_published = data.get('datePublished')
+                elif isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict) and 'datePublished' in item:
+                            date_published = item['datePublished']
+                            break
+
+                if date_published:
+                    # Parse ISO 8601 format: "2026-01-16T14:30:00+00:00"
+                    if 'T' in date_published:
+                        date_part, time_part = date_published.split('T')
+                        # Extract HH:MM from time_part (e.g., "14:30:00+00:00" -> "14:30")
+                        article_time = time_part[:5]
+                        break
+            except:
+                continue
+
+        # Fallback: Try to find time in <time> tag
+        if not article_time:
+            date_elem = soup.find('time')
+            if date_elem:
+                datetime_str = date_elem.get('datetime')
+                if datetime_str:
+                    try:
+                        dt = datetime.fromisoformat(datetime_str.replace('Z', '+00:00'))
+                        article_time = dt.strftime('%H:%M')
+                    except:
+                        pass
+
+        # Default to 00:00 if not found
+        if not article_time:
+            article_time = "00:00"
+
+        # Detect Shorthand embed
         shorthand_url = None
         content_type = "standard"
 
-        if is_shorthand:
-            # Extract Shorthand content
-            print(f"  Shorthand detected, extracting...")
-            shorthand_data = extract_shorthand_content_new(url)
-
-            if not shorthand_data:
-                print(f"  Failed to extract Shorthand content")
-                return None
-
-            shorthand_url = url
+        iframe = soup.find('iframe', src=re.compile(r'shorthandstories\.com'))
+        if iframe:
             content_type = "shorthand"
-            word_count = shorthand_data.get('word_count', 0)
-            source_evidence = shorthand_data.get('sources', [])
-            images = shorthand_data.get('images', {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []})
-            author = shorthand_data.get('author', author)
+            # Extract Shorthand URL and fetch content
+            shorthand_url = iframe.get('src')
+            if shorthand_url:
+                # Ensure it's a full URL
+                if not shorthand_url.startswith('http'):
+                    shorthand_url = 'https:' + shorthand_url if shorthand_url.startswith('//') else shorthand_url
+
+                # Use new clean extraction function
+                print(f"  Shorthand detected, extracting...")
+                shorthand_data = extract_shorthand_content_new(shorthand_url)
+
+                if not shorthand_data:
+                    print(f"  Failed to extract Shorthand content")
+                    return None
+
+                word_count = shorthand_data.get('word_count', 0)
+                source_evidence = shorthand_data.get('sources', [])
+                images = shorthand_data.get('images', {'total': 0, 'original': 0, 'stock': 0, 'uncredited': 0, 'details': []})
+
+                # Override author with Shorthand byline if found
+                if shorthand_data.get('author'):
+                    author = shorthand_data['author']
+            else:
+                print(f"  Warning: Shorthand iframe found but no src URL")
+                return None
 
         else:
             # WordPress article
@@ -215,6 +277,11 @@ def process_article(url, target_date):
         # Generate article ID
         article_id = url.split('/')[-2] if url.endswith('/') else url.split('/')[-1]
 
+        # Build warnings
+        warnings = []
+        if article_time == "00:00":
+            warnings.append('Historical import - time unknown')
+
         # Build article dict
         article = {
             'id': article_id,
@@ -223,13 +290,13 @@ def process_article(url, target_date):
             'author': author,
             'author_confidence': 'medium',
             'date': target_date,
-            'time': '00:00',  # Unknown time for historical
+            'time': article_time,
             'category': category,
             'category_detail': category_detail,
             'category_primary': category,
             'display_category': category,
             'word_count': word_count,
-            'word_count_confidence': 'high' if not is_shorthand else 'medium',
+            'word_count_confidence': 'high' if content_type == "standard" else 'medium',
             'content_type': content_type,
             'shorthand_url': shorthand_url,
             'quoted_sources': len(source_evidence),
@@ -240,7 +307,7 @@ def process_article(url, target_date):
             'source_evidence': source_evidence,
             'images': images,
             'embeds': {'video_count': 0, 'audio_count': 0, 'video_evidence': [], 'audio_evidence': []},
-            'warnings': ['Historical import - time unknown']
+            'warnings': warnings
         }
 
         return article
