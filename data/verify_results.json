@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T10:02:46Z",
-  "total_verified": 106,
+  "last_updated": "2026-01-23T10:44:52Z",
+  "total_verified": 108,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1366,6 +1366,43 @@
           "context": "PERSON within 50 chars of quote: ...isabled as the customer.” He added. Lifestyle and Mobility work hard to help their customers, providing 24/7..."
         }
       ]
+    },
+    {
+      "id": "c779381e8cf1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "Taylor",
+          "context": "PERSON within 50 chars of quote: ...d make sure you turn up”. Infographic by Isabelle Taylor Infographic by Isabelle Taylor Screenings, formal..."
+        },
+        {
+          "name": "Jenny",
+          "context": "PERSON within 50 chars of quote: ... people do need to attend their screenings,” said Jenny. “A lot of people don’t come because they have ma..."
+        },
+        {
+          "name": "Greenfield",
+          "context": "PERSON within 50 chars of quote: ...omfortable of they feel it's not necessary.”Jenny Greenfield Whilst it may be scary or uncomfortable, or life ..."
+        },
+        {
+          "name": "Virginia Quiney",
+          "context": "PERSON within 50 chars of quote: ...about the difficulty of getting appointments. Dr. Virginia Quiney Dr. Virginia Quiney “I acknowledge that access to..."
+        },
+        {
+          "name": "DR Quiney",
+          "context": "PERSON within 50 chars of quote: ...ging people to try and access the help they need. DR Quiney said to “not be scared of the consequences as it'..."
+        },
+        {
+          "name": "Cancer Wessex",
+          "context": "PERSON within 50 chars of quote: ...t what's going on than just sit on your worries.” Cancer Wessex matters are working hard to prevent cervical canc..."
+        }
+      ]
+    },
+    {
+      "id": "287d04272fd1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "5b0da2143621",

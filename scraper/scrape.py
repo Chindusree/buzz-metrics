@@ -126,7 +126,14 @@ OUTPUT FORMAT — return ONLY this JSON array, nothing else:
 ]
 
 type: "original" | "press_statement" | "secondary" | "social_media"
-gender: "male" | "female" | "nonbinary" | "unknown"
+
+gender values (use EXACTLY these strings):
+- "male": article uses he/him pronouns for this person
+- "female": article uses she/her pronouns for this person
+- "nonbinary": article explicitly uses they/them pronouns for this INDIVIDUAL person
+- "unknown": no pronouns found or cannot determine
+
+IMPORTANT: NEVER return "they" as a gender value. Use "nonbinary" or "unknown".
 
 ARTICLE:
 """
@@ -188,6 +195,25 @@ ARTICLE:
         content = re.sub(r'("quote_snippet":\s*")([^"]*?)""([^"]*?")', r'\1\2\3', content)
 
         sources = json.loads(content)
+
+        # Clean up source names and gender values
+        if isinstance(sources, list):
+            # Attribution verbs that might appear at start of names
+            attribution_verbs = ['says', 'said', 'told', 'added', 'explained',
+                                'confirmed', 'stated', 'noted', 'revealed', 'claimed']
+
+            for source in sources:
+                # Fix 1: Strip leading attribution verbs from names
+                name = source.get('name', '').strip()
+                name_words = name.split()
+                if name_words and name_words[0].lower() in attribution_verbs:
+                    name = ' '.join(name_words[1:]).strip()
+                    source['name'] = name
+
+                # Fix 2: Convert "they" gender to "unknown"
+                gender = source.get('gender', 'unknown')
+                if gender == 'they':
+                    source['gender'] = 'unknown'
 
         # Deduplicate sources by name (case-insensitive)
         if isinstance(sources, list):

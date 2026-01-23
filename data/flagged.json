@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T10:02:48Z",
-  "total_flagged": 42,
+  "generated": "2026-01-23T10:44:56Z",
+  "total_flagged": 43,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1518,6 +1518,58 @@
       "review_status": "pending"
     },
     {
+      "id": "c779381e8cf1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "scrape_count": 3,
+      "verify_count": 6,
+      "confirmed_count": 3,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Jenny Greenfield",
+        "Eleanor Davis",
+        "DR Virginia Quiney"
+      ],
+      "verify_evidence": [
+        "Taylor",
+        "Jenny",
+        "Greenfield",
+        "Virginia Quiney",
+        "DR Quiney",
+        "Cancer Wessex"
+      ],
+      "confirmed": [
+        {
+          "name": "Jenny Greenfield",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Eleanor Davis",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Virginia Quiney",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Taylor",
+          "gender": "male"
+        },
+        {
+          "name": "Cancer Wessex",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "5b0da2143621",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
       "headline": "Ellingham and Ringwood vs Petersfield preview",
@@ -1527,8 +1579,8 @@
       "possible_count": 0,
       "filtered_count": 3,
       "scrape_evidence": [
-        "Adam Higgins",
-        "Says Matt"
+        "Matt",
+        "Adam Higgins"
       ],
       "verify_evidence": [
         "Matt",
@@ -1540,14 +1592,14 @@
       ],
       "confirmed": [
         {
-          "name": "Adam Higgins",
+          "name": "Matt",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         },
         {
-          "name": "Says Matt",
-          "gender": "unknown",
-          "position": "after"
+          "name": "Adam Higgins",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [],

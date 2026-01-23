@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-23T09:58:03Z",
-  "total_articles": 106,
+  "last_updated": "2026-01-23T10:40:53Z",
+  "total_articles": 108,
   "gender_breakdown": {
-    "male": 39,
-    "female": 18,
+    "male": 40,
+    "female": 21,
     "unknown": 11
   },
   "articles": [
@@ -193,7 +193,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2022128173931_2022-05-08_Fussball_Eintracht_Frankfurt_vs_Borussia_Monchengladbach_-_Sven_-_1D_X_MK_II_-_2395_-_B70I8506_Oliver_Glasner_cropped-e1768573269493-800x400.webp",
             "classification": "original",
-            "credit": "Sven Müller, CC 4"
+            "credit": "Sven M\u00fcller, CC 4"
           }
         ]
       },
@@ -685,7 +685,7 @@
     },
     {
       "id": "eeadb60f952e",
-      "headline": "Finding strength through boxing: a Bournemouth fighter’s story",
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
       "author": "Benji Sampson",
       "author_confidence": "high",
@@ -905,7 +905,7 @@
     },
     {
       "id": "e48217df8ae6",
-      "headline": "Lymington’s sailor extends record championship reign in Shenzhen",
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
       "author": "Benji Sampson\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIan Williams",
       "author_confidence": "high",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": "5db595468971",
-      "headline": "Poole Town’s Kitmen aiming to complete the 92",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
       "author": "Jacob Deighton",
       "author_confidence": "high",
@@ -1187,7 +1187,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DNF-1-360x203.png",
             "classification": "uncredited",
-            "credit": "(Reza Seewooruthun’s results for the 2025 FREMC season)"
+            "credit": "(Reza Seewooruthun\u2019s results for the 2025 FREMC season)"
           }
         ]
       },
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "d0eceb2acc05",
-      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "author": "Vishal Seenath",
       "author_confidence": "high",
@@ -1706,7 +1706,7 @@
     },
     {
       "id": "0b0c3fa2d0b3",
-      "headline": "WATCH: 2.30pm bulletin – January 16",
+      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "author": "Will Carson",
       "author_confidence": "high",
@@ -1747,7 +1747,7 @@
     },
     {
       "id": "6f4ce223a9fc",
-      "headline": "WATCH: 3:45pm sports bulletin – January 16",
+      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
       "author": "Unknown",
       "author_confidence": "low",
@@ -2101,7 +2101,7 @@
     },
     {
       "id": "050bcc50448e",
-      "headline": "Bleazard and Quirk praise performance in women’s FA Cup exit",
+      "headline": "Bleazard and Quirk praise performance in women\u2019s FA Cup exit",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bleazard-and-quirk-praise-performance-in-womens-fa-cup-exit/",
       "author": "Jack Hillman",
       "author_confidence": "high",
@@ -2670,7 +2670,7 @@
     },
     {
       "id": "7cb42367054e",
-      "headline": "Is the NBA’s return growing basketball in Bournemouth?",
+      "headline": "Is the NBA\u2019s return growing basketball in Bournemouth?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/is-the-nbas-return-growing-basketball-in-bournemouth/",
       "author": "Derin Mehmet",
       "author_confidence": "high",
@@ -3013,7 +3013,7 @@
     },
     {
       "id": "da7bf409819e",
-      "headline": "Students compete for cash prizes on ITV’s This Morning",
+      "headline": "Students compete for cash prizes on ITV\u2019s This Morning",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
       "author": "Justina Reynolds",
       "author_confidence": "high",
@@ -3223,7 +3223,7 @@
     },
     {
       "id": "deb020fa7530",
-      "headline": "‘Unnerving’ theft committed at Arcade Jewellers",
+      "headline": "\u2018Unnerving\u2019 theft committed at Arcade Jewellers",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/unnerving-theft-committed-at-arcade-jewellers/",
       "author": "Tyler Tamou",
       "author_confidence": "high",
@@ -3611,7 +3611,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/20260121_110558-1-360x269.jpg",
             "classification": "uncredited",
-            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for ‘Big Kid Energy’(photo credit- Ben Woodland)"
+            "credit": "outside of The Treehouse, a alarge wooden building The Treehouse prepares to open its doors for \u2018Big Kid Energy\u2019(photo credit- Ben Woodland)"
           }
         ]
       },
@@ -3974,7 +3974,7 @@
     },
     {
       "id": "dd4407355e61",
-      "headline": "Hampshire’s Dawson set for ODI return",
+      "headline": "Hampshire\u2019s Dawson set for ODI return",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -4057,7 +4057,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.34.43-303x300.png",
             "classification": "original",
-            "credit": "Image of Lidl logo – taken by Sam Morris"
+            "credit": "Image of Lidl logo \u2013 taken by Sam Morris"
           }
         ]
       },
@@ -4254,7 +4254,7 @@
     },
     {
       "id": "975a95f9add2",
-      "headline": "Saints host Sheffield United at St Mary’s",
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
       "author": "Editor Blue",
       "author_confidence": "high",
@@ -4346,7 +4346,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260120_111155635-1-360x271.jpg",
             "classification": "uncredited",
-            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men’s groups in the Boscombe food bank."
+            "credit": "Volunteers gather around the table at the food bank in Boscombe Some of the volunteers who help out with the men\u2019s groups in the Boscombe food bank."
           }
         ]
       },
@@ -4733,7 +4733,7 @@
     },
     {
       "id": "ca5751c2a5d0",
-      "headline": "Bournemouth U21’s take top spot in PL Cup group",
+      "headline": "Bournemouth U21\u2019s take top spot in PL Cup group",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
       "author": "Harrison Walsh",
       "author_confidence": "high",
@@ -4821,7 +4821,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/PXL_20260121_102158994-1.jpg",
             "classification": "uncredited",
-            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo’s Coffee Shop."
+            "credit": "A man serving coffee Adam Lowe, one of the workers at Pastuzo\u2019s Coffee Shop."
           }
         ]
       },
@@ -4837,7 +4837,7 @@
     },
     {
       "id": "275f208405ec",
-      "headline": "Brazilian Journalist speaks out about AFC Bournemouth’s transfer activity",
+      "headline": "Brazilian Journalist speaks out about AFC Bournemouth\u2019s transfer activity",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/brazilian-journo-afcb-transfers/",
       "author": "Marcus Maccormack",
       "author_confidence": "high",
@@ -5080,7 +5080,7 @@
     },
     {
       "id": "50c1630578e4",
-      "headline": "Hampshire’s Dawson shines on ODI return despite England defeat",
+      "headline": "Hampshire\u2019s Dawson shines on ODI return despite England defeat",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
       "author": "Rian Mullaley",
       "author_confidence": "high",
@@ -5213,7 +5213,7 @@
     },
     {
       "id": "5795e4bb76e6",
-      "headline": "Live Stream BUzz New’s 12:15 Bulletin",
+      "headline": "Live Stream BUzz New\u2019s 12:15 Bulletin",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
       "author": "Dulcie Barham",
       "author_confidence": "high",
@@ -5280,7 +5280,7 @@
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Dragoș Crăciun",
+          "name": "Drago\u0219 Cr\u0103ciun",
           "type": "original",
           "gender": "male"
         }
@@ -5294,7 +5294,7 @@
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Gladiators-photo-800x400.jpeg",
             "classification": "original",
-            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Dragoș Crăciun)"
+            "credit": "Gladiators team photo Gladiators Team Photo (Credit for photograph: Drago\u0219 Cr\u0103ciun)"
           }
         ]
       },
@@ -5730,6 +5730,173 @@
       ]
     },
     {
+      "id": "c779381e8cf1",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "author": "Isabelle Taylor",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "10:00",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 965,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/CervicalCancerPreventionWeek-IsabelleTaylor/index.html",
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 3,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jenny Greenfield",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jenny Greenfield",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Eleanor Davis",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Eleanor Davis",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "DR Virginia Quiney",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "DR Virginia Quiney",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 10,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 10,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/DbHfBxintT/screenshot-2026-01-22-220541-464x461.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/p7C2dNQK6s/fM6yw0pV6e/artboard-1-copy-3-2x-80-3840x2161.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/soupoDlfJ5/cervical-cancer-awareness-800x2000.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/p7C2dNQK6s/BDX4DgQzK2/artboard-1-2x-80-3840x2160.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/FzQUoUV8Qh/screenshot-2026-01-22-214329-628x326.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/Ivtl8GUYp5/screenshot-2026-01-22-220842-1048x523.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/zdJYg0PsF9/img_1253-4096x5461.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/page-templates/p7C2dNQK6s/RVyiUFlVQL/artboard-1-2x-80-3840x2160.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/d3UtLS2NnR/original-1dbc9892-f3c6-4022-876a-647cfe26de5f-1179x654.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "287d04272fd1",
+      "headline": "Dorset Police launch survey for sexual offence victims",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
+      "author": "Ben Woodland",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "10:38",
+      "category": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 214,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/priscilla-du-preez-F9DFuJoS9EU-unsplash-1-800x400.jpg",
+            "classification": "stock",
+            "credit": "woman sits in therapy session"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/619296241_1344457597726366_149117092940749427_n-300x300.jpg",
+            "classification": "uncredited",
+            "credit": "Use this QR code to access Dorset Police\u2019s survey"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "5b0da2143621",
       "headline": "Ellingham and Ringwood vs Petersfield preview",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
@@ -5746,27 +5913,29 @@
       "shorthand_url": null,
       "quoted_sources": 2,
       "quoted_sources_confidence": "high",
-      "sources_male": 1,
+      "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Adam Higgins",
-          "full_attribution": "said Adam Higgins, \"Extend the game by 10 minutes",
-          "quote_snippet": "It was a hard fought second half I think we had a ",
-          "position": "after",
+          "name": "Matt",
           "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Matt",
+          "position": "groq_detected",
+          "type": "original"
         },
         {
-          "name": "Says Matt",
-          "full_attribution": "said Matt,\"We've not played them yet it's a first",
-          "quote_snippet": "I felt tonight we had a good training session the ",
-          "position": "after",
-          "gender": "they",
-          "gender_confidence": "medium",
-          "gender_method": "pronoun_context"
+          "name": "Adam Higgins",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Adam Higgins",
+          "position": "groq_detected",
+          "type": "original"
         }
       ],
       "images": {
