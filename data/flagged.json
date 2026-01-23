@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T10:44:56Z",
-  "total_flagged": 43,
+  "generated": "2026-01-23T11:07:18Z",
+  "total_flagged": 44,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1608,6 +1608,29 @@
         "Frost",
         "Petersfield"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "e8534a4406ac",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+      "headline": "Mothers in Mind hopes for more maternal mental health support",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Erica Johnson"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Erica Johnson",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     }
   ]

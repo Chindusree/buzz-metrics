@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-01-23T10:44:56Z",
-  "total_articles": 108,
+  "last_updated": "2026-01-23T11:07:18Z",
+  "total_articles": 110,
   "summary": {
-    "avg_word_count": 606,
+    "avg_word_count": 605,
     "avg_quoted_sources": 1.0,
-    "below_minimum_count": 27,
+    "below_minimum_count": 28,
     "long_form_count": 20,
     "breaking_news_count": 11,
-    "total_images": 215,
+    "total_images": 217,
     "original_images": 87,
-    "stock_images": 4,
-    "uncredited_images": 124,
+    "stock_images": 5,
+    "uncredited_images": 125,
     "gender_breakdown": {
       "male": 69,
       "female": 32,
@@ -23,8 +23,8 @@
         "sources": 15
       },
       "General News": {
-        "count": 77,
-        "words": 38210,
+        "count": 79,
+        "words": 39276,
         "sources": 76
       },
       "Features": {
@@ -40,8 +40,8 @@
         "avg_sources": 0.7
       },
       "News": {
-        "count": 77,
-        "avg_word_count": 496,
+        "count": 79,
+        "avg_word_count": 497,
         "avg_sources": 1.0
       },
       "Features": {
@@ -94,12 +94,12 @@
     },
     {
       "date": "2026-01-23",
-      "article_count": 3,
+      "article_count": 5,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:59",
       "first_publish_on_time": true,
-      "below_minimum_count": 1,
+      "below_minimum_count": 2,
       "long_form_count": 2
     }
   ],
@@ -7798,6 +7798,57 @@
       "category_normalised": "General News"
     },
     {
+      "id": "f8287de194de",
+      "headline": "Camp Bestival 2026 lineup announced",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/camp-bestival-2026-lineup-announced/",
+      "author": "Naomi Kativu",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "10:43",
+      "category": "Art",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 308,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/music-light-sunset-sunlight-crowd-concert-145352-pxhere.com-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Copyright @ pxhere.com"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
       "id": "287d04272fd1",
       "headline": "Dorset Police launch survey for sexual offence victims",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
@@ -7938,6 +7989,64 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "e8534a4406ac",
+      "headline": "Mothers in Mind hopes for more maternal mental health support",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "10:57",
+      "category": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 758,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/hand-person-girl-woman-photography-trunk-38771-pxhere.com_-800x400.jpg",
+            "classification": "stock",
+            "credit": "Stock photo from PxHere"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Erica Johnson",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T10:44:52Z",
-  "total_verified": 108,
+  "last_updated": "2026-01-23T11:07:17Z",
+  "total_verified": 110,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1399,6 +1399,12 @@
       ]
     },
     {
+      "id": "f8287de194de",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/camp-bestival-2026-lineup-announced/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "287d04272fd1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
       "verify_quoted_sources": 0,
@@ -1432,6 +1438,17 @@
         {
           "name": "Higgins",
           "context": "PERSON within 50 chars of quote: ...ir opposition being called an “unknown entity” by Higgins. Petersfield currently sit comfortably in sixth 3..."
+        }
+      ]
+    },
+    {
+      "id": "e8534a4406ac",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Erica Johnson",
+          "context": "PERSON within 50 chars of quote: ...unity services. The Mothers in Mind project lead, Erica Johnson, said: “Many people don’t realise how common mate..."
         }
       ]
     }
