@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-23T15:30:22Z",
-  "total_articles": 130,
+  "last_updated": "2026-01-23T15:51:41Z",
+  "total_articles": 132,
   "gender_breakdown": {
-    "male": 51,
-    "female": 23,
+    "male": 52,
+    "female": 24,
     "unknown": 11
   },
   "articles": [
@@ -6678,6 +6678,80 @@
       ]
     },
     {
+      "id": "1699874fc561",
+      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "15:36",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 942,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jessica Toale",
+          "full_attribution": "ng access to GPs and dentists\nJessica Toale said:",
+          "quote_snippet": "I stood for election here because I think Bournemo",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Dean Johnstone",
+          "full_attribution": "o be the most important priority, Johnstone said:",
+          "quote_snippet": "For me, revitalising the town centre is very impor",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/VgNzfTulLi/img_0388-2-2048x1365.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/gDTvGfN0HO/screenshot-2026-01-23-at-14.52.27-1100x680.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
       "id": "614081e9e3da",
       "headline": "LIVE BLOG: Andoni Iraola previews Liverpool clash",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-andoni-iraola-previews-liverpool-clash/",
@@ -6762,6 +6836,54 @@
           {
             "platform": "youtube",
             "url": "https://www.youtube.com/embed/kwm9wYDXTYY?feature=oembed"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "fbc8133e85c8",
+      "headline": "Live Stream BUzz News 16:00 Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1600-bulletin/",
+      "author": "Dulcie Barham",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "15:46",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/JueCK_Ru8Ro?feature=oembed"
           }
         ],
         "audio_evidence": []
