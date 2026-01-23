@@ -121,6 +121,8 @@
         .rhythm-story-headline a:hover { text-decoration: underline; }
         .rhythm-story-meta { font-size: 0.75rem; color: #767676; }
         @media (max-width: 480px) {
+            .header-label { display: none; }
+            .nav a { font-size: 0.7rem; padding: 0.75rem 0.5rem; }
             .heatmap { grid-template-columns: 38px repeat(10, 1fr); gap: 2px; }
             .hm-cell { min-height: 20px; }
             .hm-header { font-size: 0.5rem; }
@@ -426,7 +428,8 @@
     <div class="footer-about">
         <h3>About this dashboard</h3>
         <p>BUzz Metrics is an automated tool for journalism education, being developed at Bournemouth University. This prototype provides real-time quality metrics to support evidence-based editorial feedback for student journalists.</p>
-        <p>Newsrooms typically measure traffic. We want to encourage the next generation of journalists to think beyond clicks — to reflect on whose voices they amplify, how they source their stories, and how better they can serve their audience. Our approach is informed by journalism research at Bournemouth University and industry best practice, including the <a href="https://www.bbc.co.uk/5050" target="_blank">BBC 50:50 Project</a>. We estimate source counts using automated pattern matching and natural language processing. Gender is inferred from first names using the gender-guesser library. All data is drawn from publicly published articles on buzz.bournemouth.ac.uk.</p>
+        <p>Newsrooms typically measure traffic. We want to encourage the next generation of journalists to think beyond clicks — to reflect on whose voices they amplify, how they source their stories, and how better they can serve their audience. Our approach is informed by journalism research at Bournemouth University and industry best practice, including the <a href="https://www.bbc.co.uk/5050" target="_blank">BBC 50:50 Project</a>.</p>
+        <p>We estimate source counts using automated pattern matching and natural language processing. Gender is inferred from first names using the gender-guesser library. All data is drawn from publicly published articles on buzz.bournemouth.ac.uk.</p>
         <p>The metrics have known limitations. Context matters: a match report might not need quotes; an investigation needs many. Use this data as guidance, to reflect on practice, not as a scorecard.</p>
     </div>
 </footer>
@@ -842,7 +845,7 @@
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${dateStr}</td>
-                <td>${dayData.article_count}/12 ${storiesTarget}</td>
+                <td>${dayData.article_count} ${storiesTarget}</td>
                 <td>${firstPubDisplay}</td>
                 <td>${dayData.below_minimum_count} ${belowTarget}</td>
                 <td>${womenPercent}% W</td>
