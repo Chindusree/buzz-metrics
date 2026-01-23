@@ -292,43 +292,17 @@ VALID_NEWSDAY_RANGES = [
     ("2026-01-26", "2026-01-30"),  # Week 3
 ]
 
-# Category normalization map
-CATEGORY_MAP = {
-    # Sport
-    "AFC Bournemouth": "Sport",
-    "Men's Football": "Sport",
-    "Local Football": "Sport",
-    "Tennis": "Sport",
-    "Boxing": "Sport",
-    "Rugby Union": "Sport",
-    "Rugby League": "Sport",
-    "Cricket": "Sport",
-    "Formula 1": "Sport",
-    "Golf": "Sport",
-    "Sport": "Sport",
-    "Opinion & Analysis": "Sport",
-
-    # News
-    "News Top": "News",
-    "Local": "News",
-    "National": "News",
-    "World": "News",
-    "Bournemouth": "News",
-    "Dorset": "News",
-    "Poole": "News",
-    "Campus": "News",
-
-    # Features
-    "New Features": "Features",
-    "Lifestyle": "Features",
-    "Health": "Features",
-    "Entertainment": "Features",
-    "Technology": "Features",
-    "Sustainability": "Features",
-    "Features": "Features",
-    "Fashion": "Features",
-    "1st News": "News",
+# Sport subcategories - map to "Sport"
+SPORT_CATEGORIES = {
+    "AFC Bournemouth", "Boxing", "Cricket", "Formula 1", "Golf",
+    "Local Football", "Men's Football", "Women's Football",
+    "Opinion & Analysis", "Rugby League", "Rugby Union", "Tennis",
+    "Sport", "Basketball", "Speedway"
 }
+
+# Everything else maps to "News"
+# (Campus, Local, National, World, Entertainment, Lifestyle, Technology,
+#  Sustainability, Environment, Features, Health, Fashion, etc.)
 
 # Stock photo indicators for Sprint 6.7 + Sprint 7.10 (Uncle Bob three-layer detection)
 STOCK_PHOTO_INDICATORS = {
@@ -2771,23 +2745,78 @@ def extract_article_metadata(url):
                     except:
                         continue
 
-        # Extract category from "Category:" line
-        category = "Unknown"
-        category_elem = soup.find(string=re.compile(r'Category:', re.IGNORECASE))
-        if category_elem:
-            # Find the next link after "Category:"
-            parent = category_elem.find_parent()
-            if parent:
-                cat_link = parent.find_next('a')
-                if cat_link:
-                    category = cat_link.get_text(strip=True)
+        # Extract category with simplified News/Sport logic
+        category_detail = None  # Store original subcategory
+        placement_tags = ["1st News", "2nd News", "3rd News", "Dorset", "News Top"]
+
+        # Try JSON-LD schema first (most reliable)
+        candidate_categories = []
+        scripts = soup.find_all('script', type='application/ld+json')
+        for script in scripts:
+            try:
+                data = json.loads(script.string)
+                # Handle @graph structure
+                if isinstance(data, dict) and '@graph' in data:
+                    for item in data['@graph']:
+                        if isinstance(item, dict) and 'articleSection' in item:
+                            sections = item['articleSection']
+                            if isinstance(sections, list):
+                                candidate_categories.extend(sections)
+                            elif isinstance(sections, str):
+                                candidate_categories.append(sections)
+                # Direct articleSection
+                elif isinstance(data, dict) and 'articleSection' in data:
+                    sections = data['articleSection']
+                    if isinstance(sections, list):
+                        candidate_categories.extend(sections)
+                    elif isinstance(sections, str):
+                        candidate_categories.append(sections)
+            except:
+                continue
+
+        # Filter out placement tags
+        filtered_categories = [c for c in candidate_categories if c not in placement_tags]
+
+        # Determine if Sport or News
+        category = "News"  # Default
+        if filtered_categories:
+            # Check if any category is a sport category
+            for cat in filtered_categories:
+                if cat in SPORT_CATEGORIES:
+                    category = "Sport"
+                    category_detail = cat  # Store subcategory
+                    break
+            # If not sport, it's news - store first non-placement category as detail
+            if category == "News" and filtered_categories:
+                category_detail = filtered_categories[0]
+
+        # Fallback: Extract from "Category:" line in page
+        if not filtered_categories:
+            category_elem = soup.find(string=re.compile(r'Category:', re.IGNORECASE))
+            if category_elem:
+                parent = category_elem.find_parent()
+                if parent:
+                    cat_link = parent.find_next('a')
+                    if cat_link:
+                        found_cat = cat_link.get_text(strip=True)
+                        category_detail = found_cat
+                        category = "Sport" if found_cat in SPORT_CATEGORIES else "News"
 
         # Fallback: look for category in URL
-        if category == "Unknown":
+        if not category_detail:
             if '/category/' in url:
                 cat_match = re.search(r'/category/([^/]+)/', url)
                 if cat_match:
-                    category = cat_match.group(1).replace('-', ' ').title()
+                    found_cat = cat_match.group(1).replace('-', ' ').title()
+                    category_detail = found_cat
+                    category = "Sport" if found_cat in SPORT_CATEGORIES else "News"
+
+        # Final fallback: infer from headline
+        if not category_detail:
+            headline_lower = headline.lower()
+            if any(word in headline_lower for word in ['vs', 'match', 'preview', 'rugby', 'football', 'cricket']):
+                category = "Sport"
+                category_detail = "Sport"
 
         # ==========================================================
         # SPRINT 7.8: CLEAN ARCHITECTURE CONTENT EXTRACTION
@@ -2850,8 +2879,9 @@ def extract_article_metadata(url):
             images = wordpress_data['images']
             embeds = wordpress_data['embeds']
 
-        # Map category to primary category
-        category_primary = CATEGORY_MAP.get(category, "News")  # Default to "News"
+        # Category is already "Sport" or "News" from above logic
+        # category_detail contains the subcategory (e.g., "Rugby Union")
+        category_primary = category
 
         # Count sources by gender
         sources_male = sum(1 for s in source_evidence if s['gender'] == 'male')
@@ -2895,6 +2925,7 @@ def extract_article_metadata(url):
             'date': article_date,
             'time': article_time,
             'category': category,
+            'category_detail': category_detail,
             'category_primary': category_primary,
             'display_category': display_category,
             'word_count': word_count,
