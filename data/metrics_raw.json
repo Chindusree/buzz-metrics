@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-23T16:41:56Z",
+  "last_updated": "2026-01-23T17:05:57Z",
   "total_articles": 157,
   "gender_breakdown": {
     "male": 53,
@@ -7765,7 +7765,7 @@
       "author": "Julia Apte",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:18",
       "category": "News",
       "category_detail": "News",
       "category_primary": "News",
@@ -7824,9 +7824,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "bournemouth-boxer-set-for-return-after-year-away",
@@ -7835,7 +7833,7 @@
       "author": "Benji Sampson",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "15:31",
       "category": "Sport",
       "category_detail": "Boxing",
       "category_primary": "Sport",
@@ -7863,9 +7861,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "crane-collapses-into-train-in-thailand-killing-32-people",
@@ -7874,7 +7870,7 @@
       "author": "Luke Hills",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:49",
       "category": "News",
       "category_detail": null,
       "category_primary": "News",
@@ -7918,9 +7914,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "dorset-women-tuktuk-trip",
@@ -7929,27 +7923,59 @@
       "author": "Grace Kehoe",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "15:00",
       "category": "News",
       "category_detail": "Features",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 54,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "word_count": 400,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tuk-tuk-dorset-entrepreneur/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
-      "sources_female": 0,
+      "sources_female": 1,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Jo O'Connell",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jo O'Connell",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
       "images": {
         "total": 4,
         "original": 0,
         "stock": 0,
-        "uncredited": 0,
-        "details": []
+        "uncredited": 4,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/xc3uwgNzBE/photo-2026-01-14-09-27-53.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/3cNOGHDGiX/2a9828b4-3f14-4763-99ad-15ba2fe2c952-1536x1147.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/FWkaFOuNR8/photo-2026-01-14-09-27-52.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -7957,9 +7983,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "dorsets-holocaust-memorial-day-2026",
@@ -7968,7 +7992,7 @@
       "author": "Vishal Seenath",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:43",
       "category": "News",
       "category_detail": "Ethics",
       "category_primary": "News",
@@ -7996,38 +8020,93 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "grant-hancox-acl-feature-2",
       "headline": "Bournemouth Lions captain on lengthy injury spell",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
-      "author": "Editor Green",
+      "author": "Roan Fox",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:57",
       "category": "Sport",
       "category_detail": "Rugby Union",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 49,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
+      "word_count": 765,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/back-with-a-bang/index.html",
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Grant Hancox",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Andy Curtis",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andy Curtis",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
       "images": {
-        "total": 4,
+        "total": 7,
         "original": 0,
         "stock": 0,
-        "uncredited": 0,
-        "details": []
+        "uncredited": 7,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/XRWP8bYURT/img_5936-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/z7GNjzlyJC/img_5945-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/NaYndHBJ1k/img_5921-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/SGUHNHKPBK/img_5930-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/e9s3WnVGHw/img_5922-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/HR1ZBduCly/img_5940-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -8035,9 +8114,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "poole-town-ladies-manager-raises-concerns-over-funding",
@@ -8046,7 +8123,7 @@
       "author": "Ruby Jarrett",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:23",
       "category": "Sport",
       "category_detail": "Sport",
       "category_primary": "Sport",
@@ -8080,9 +8157,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "bournemouth-sea-dippers-helping-to-create-community",
@@ -8091,7 +8166,7 @@
       "author": "Lois Watts",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "11:08",
       "category": "News",
       "category_detail": "Local",
       "category_primary": "News",
@@ -8135,9 +8210,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "dorchester-town-in-search-of-away-win-at-havant",
@@ -8146,7 +8219,7 @@
       "author": "Harry Castle",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "12:31",
       "category": "Sport",
       "category_detail": "Men's Football",
       "category_primary": "Sport",
@@ -8174,9 +8247,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "dorset-council-back-phone-ban-for-schools",
@@ -8185,7 +8256,7 @@
       "author": "Lois Watts",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "11:44",
       "category": "News",
       "category_detail": "News",
       "category_primary": "News",
@@ -8219,9 +8290,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
@@ -8230,7 +8299,7 @@
       "author": "Editor Green",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:09",
       "category": "Sport",
       "category_detail": "Local Football",
       "category_primary": "Sport",
@@ -8258,9 +8327,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
@@ -8269,7 +8336,7 @@
       "author": "Lois Watts",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "12:07",
       "category": "News",
       "category_detail": "News",
       "category_primary": "News",
@@ -8313,9 +8380,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "police-chief-admits-to-ai-use-in-aston-villa-tie",
@@ -8324,7 +8389,7 @@
       "author": "Zack Walker",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "13:47",
       "category": "Sport",
       "category_detail": "Men's Football",
       "category_primary": "Sport",
@@ -8358,9 +8423,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
@@ -8369,7 +8432,7 @@
       "author": "Olivia Pagden",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "14:11",
       "category": "Sport",
       "category_detail": "Sport",
       "category_primary": "Sport",
@@ -8408,9 +8471,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "re-defined-tackling-mens-mental-health-through-january",
@@ -8419,7 +8480,7 @@
       "author": "Tiana Hynes",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "12:38",
       "category": "News",
       "category_detail": "News",
       "category_primary": "News",
@@ -8453,9 +8514,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "chelsea-vs-arsenal-arteta-on-mission-to-oust-chelsea",
@@ -8464,7 +8523,7 @@
       "author": "Olivia Pagden",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "10:16",
       "category": "Sport",
       "category_detail": "Sport",
       "category_primary": "Sport",
@@ -8503,9 +8562,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "dorset-police-launch-helicopter-search-for-missing-jamie",
@@ -8514,7 +8571,7 @@
       "author": "Tiana Hynes",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "09:00",
       "category": "News",
       "category_detail": "News",
       "category_primary": "News",
@@ -8542,9 +8599,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "gb-tennis-star-misses-out-on-deaf-olympics",
@@ -8553,7 +8608,7 @@
       "author": "Editor Green",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "08:04",
       "category": "Sport",
       "category_detail": "Sport",
       "category_primary": "Sport",
@@ -8587,9 +8642,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "jenna-markham-eyes-goal-against-wsl-leaders-manchester-city",
@@ -8598,7 +8651,7 @@
       "author": "Finn Payne",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "10:40",
       "category": "Sport",
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
@@ -8637,9 +8690,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "radacanu-completes-her-first-win-of-the-season-after-rain-delay",
@@ -8648,7 +8699,7 @@
       "author": "Editor Green",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "10:27",
       "category": "Sport",
       "category_detail": "Sport",
       "category_primary": "Sport",
@@ -8676,9 +8727,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     },
     {
       "id": "semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg",
@@ -8687,7 +8736,7 @@
       "author": "Moritz Baer",
       "author_confidence": "medium",
       "date": "2026-01-14",
-      "time": "00:00",
+      "time": "07:30",
       "category": "Sport",
       "category_detail": "Men's Football",
       "category_primary": "Sport",
@@ -8736,9 +8785,7 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": [
-        "Historical import - time unknown"
-      ]
+      "warnings": []
     }
   ]
 }
