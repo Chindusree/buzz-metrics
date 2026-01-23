@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T14:31:29Z",
-  "total_articles": 125,
+  "last_updated": "2026-01-23T14:58:54Z",
+  "total_articles": 126,
   "gender_breakdown": {
     "male": 49,
     "female": 23,
@@ -6584,6 +6584,51 @@
         "audio_evidence": []
       },
       "warnings": []
+    },
+    {
+      "id": "5e750d751846",
+      "headline": "Musgrave set for fifth Winter Olympic Games",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/musgrave-winter-olympics/",
+      "author": "Rian Mullaley",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:56",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 608,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_7998-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "Male skiier takes flight"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
     },
     {
       "id": "f8f85bd3e34a",
