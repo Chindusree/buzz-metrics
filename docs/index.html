@@ -612,7 +612,9 @@
         // By Section breakdown
         const sectionData = {};
         filteredArticles.forEach(article => {
-            const section = article.display_category || 'Unknown';
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            const section = normalizedCategory || 'Unknown';
             if (!sectionData[section]) {
                 sectionData[section] = { count: 0, sources: 0 };
             }
@@ -633,9 +635,10 @@
             const hour = parseInt(article.time.split(':')[0]);
             if (hour < 8 || hour > 17) return;
 
-            const section = article.display_category;
-            if (rhythmData[section]) {
-                rhythmData[section][hour - 8]++;
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            if (rhythmData[normalizedCategory]) {
+                rhythmData[normalizedCategory][hour - 8]++;
             }
         });
 
@@ -1105,7 +1108,9 @@
         const hourArticles = articlesPool.filter(article => {
             if (!article.time) return false;
             const articleHour = parseInt(article.time.split(':')[0]);
-            return article.display_category === section && articleHour === hour;
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            return normalizedCategory === section && articleHour === hour;
         });
 
         if (hourArticles.length === 0) return;
