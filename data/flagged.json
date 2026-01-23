@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T12:30:11Z",
-  "total_flagged": 46,
+  "generated": "2026-01-23T13:35:45Z",
+  "total_flagged": 48,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1643,6 +1643,50 @@
       "review_status": "pending"
     },
     {
+      "id": "8aef66c9151c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
+      "headline": "Charlie Stevens: Living the dream",
+      "scrape_count": 2,
+      "verify_count": 6,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Charlie Stevens on his development whilst on loan at Poole Town.",
+        "Charlie Stevens on Alex Scott"
+      ],
+      "verify_evidence": [
+        "Stevens",
+        "Charlie Stevens",
+        "HNK Rijeka",
+        "Poole",
+        "Alex Scott",
+        "Photo Credit"
+      ],
+      "confirmed": [
+        {
+          "name": "Charlie Stevens on his development whilst on loan at Poole Town.",
+          "gender": "male",
+          "position": "blockquote-inline"
+        },
+        {
+          "name": "Charlie Stevens on Alex Scott",
+          "gender": "male",
+          "position": "blockquote-inline"
+        }
+      ],
+      "possible": [
+        {
+          "name": "HNK Rijeka",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Photo Credit"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "5b0da2143621",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
       "headline": "Ellingham and Ringwood vs Petersfield preview",
@@ -1702,6 +1746,44 @@
       "filtered": [
         "Paranjpe",
         "Robinson"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "739dc125d167",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
+      "headline": "Tamburello: The fast-rising racket sport you’ve never heard of",
+      "scrape_count": 2,
+      "verify_count": 5,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jason Littlefield",
+        "Jasmine Bosenick"
+      ],
+      "verify_evidence": [
+        "Jason",
+        "Jasmine Bosenick",
+        "Jason Littlefield",
+        "Jasmine",
+        "Diving"
+      ],
+      "confirmed": [
+        {
+          "name": "Jason Littlefield",
+          "gender": "male",
+          "position": "blockquote-inline"
+        },
+        {
+          "name": "Jasmine Bosenick",
+          "gender": "female",
+          "position": "blockquote-inline"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Diving"
       ],
       "review_status": "pending"
     }

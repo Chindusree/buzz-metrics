@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T12:30:09Z",
-  "total_verified": 118,
+  "last_updated": "2026-01-23T13:35:43Z",
+  "total_verified": 120,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1445,6 +1445,37 @@
       "verify_evidence": []
     },
     {
+      "id": "8aef66c9151c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "Stevens",
+          "context": "PERSON within 50 chars of quote: ...erience in an exclusive interview with Buzz News, Stevens said: \"It was a surreal experience. \"Obviously I'..."
+        },
+        {
+          "name": "Charlie Stevens",
+          "context": "PERSON within 50 chars of quote: ...portunity came about.\" (Photo Credit: afcb.co.uk) Charlie Stevens in action on loan at Poole Town last season. (Pho..."
+        },
+        {
+          "name": "HNK Rijeka",
+          "context": "PERSON within 50 chars of quote: ...HNL and UEFA Conference League with Croatian side HNK Rijeka. “I think Poole helped me a lot to develop physic..."
+        },
+        {
+          "name": "Poole",
+          "context": "PERSON within 50 chars of quote: ...ce League with Croatian side HNK Rijeka. “I think Poole helped me a lot to develop physically, learn the ..."
+        },
+        {
+          "name": "Alex Scott",
+          "context": "PERSON within 50 chars of quote: ...g Eli Junior Kroupi, who he was quick to praise. \"Alex Scott and Junior Kroupi, probably two of my favourite p..."
+        },
+        {
+          "name": "Photo Credit",
+          "context": "PERSON within 50 chars of quote: ...: afc.co.uk) AFC Bournemouth's Vitality Stadium. (Photo Credit: afc.co.uk) “The ultimate aim is to make my debut..."
+        }
+      ]
+    },
+    {
       "id": "287d04272fd1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
       "verify_quoted_sources": 0,
@@ -1524,6 +1555,33 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/send-schools-bill-passes-130000-signatures/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "739dc125d167",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Jason",
+          "context": "PERSON within 50 chars of quote: ...get more people involved in our local area,” said Jason. The sport originally from France and Italy, play..."
+        },
+        {
+          "name": "Jasmine Bosenick",
+          "context": "PERSON within 50 chars of quote: ...ck to the other team in Tamburello [Photo Credit: Jasmine Bosenick] \"It's super super addictive and once you start y..."
+        },
+        {
+          "name": "Jason Littlefield",
+          "context": "PERSON within 50 chars of quote: ...such a fast paced sport there is nothing like it\" Jason Littlefield Tamburello derives from real tennis in France and..."
+        },
+        {
+          "name": "Jasmine",
+          "context": "PERSON within 50 chars of quote: ...re still hoping to get even more people involved. Jasmine said, “I was introduced to it through a friend of..."
+        },
+        {
+          "name": "Diving",
+          "context": "PERSON within 50 chars of quote: ...ponents will be hitting it straight back at you.” Diving is one of those skills that won’t come naturally ..."
+        }
+      ]
     },
     {
       "id": "2466d28f5386",
