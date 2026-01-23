@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T08:42:18Z",
-  "total_flagged": 41,
+  "generated": "2026-01-23T10:02:48Z",
+  "total_flagged": 42,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1514,6 +1514,47 @@
       "filtered": [
         "Lifestyle",
         "Mobility"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "5b0da2143621",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
+      "headline": "Ellingham and Ringwood vs Petersfield preview",
+      "scrape_count": 2,
+      "verify_count": 6,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 3,
+      "scrape_evidence": [
+        "Adam Higgins",
+        "Says Matt"
+      ],
+      "verify_evidence": [
+        "Matt",
+        "Smith",
+        "Frost",
+        "Adam Higgins",
+        "Petersfield",
+        "Higgins"
+      ],
+      "confirmed": [
+        {
+          "name": "Adam Higgins",
+          "gender": "male",
+          "position": "after"
+        },
+        {
+          "name": "Says Matt",
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Smith",
+        "Frost",
+        "Petersfield"
       ],
       "review_status": "pending"
     }

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T08:42:16Z",
-  "total_verified": 105,
+  "last_updated": "2026-01-23T10:02:46Z",
+  "total_verified": 106,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1364,6 +1364,37 @@
         {
           "name": "Mobility",
           "context": "PERSON within 50 chars of quote: ...isabled as the customer.” He added. Lifestyle and Mobility work hard to help their customers, providing 24/7..."
+        }
+      ]
+    },
+    {
+      "id": "5b0da2143621",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "Matt",
+          "context": "PERSON within 50 chars of quote: ...ty I think they were there for the beating,” Says Matt, a coach at the club Ellingham started well scori..."
+        },
+        {
+          "name": "Smith",
+          "context": "PERSON within 50 chars of quote: ...s in the last 20 minutes with tries from Higgins, Smith and Frost enough to secure the bonus point. “It w..."
+        },
+        {
+          "name": "Frost",
+          "context": "PERSON within 50 chars of quote: ...ast 20 minutes with tries from Higgins, Smith and Frost enough to secure the bonus point. “It was a hard ..."
+        },
+        {
+          "name": "Adam Higgins",
+          "context": "PERSON within 50 chars of quote: ...d we really pushed hard to get that 4thtry,” said Adam Higgins, “Extend the game by 10 minutes who knows what wo..."
+        },
+        {
+          "name": "Petersfield",
+          "context": "PERSON within 50 chars of quote: ...will be looking to utilise that confidence in the Petersfield game with their opposition being called an “unkno..."
+        },
+        {
+          "name": "Higgins",
+          "context": "PERSON within 50 chars of quote: ...ir opposition being called an “unknown entity” by Higgins. Petersfield currently sit comfortably in sixth 3..."
         }
       ]
     }

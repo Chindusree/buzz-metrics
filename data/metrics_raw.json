@@ -1,6 +1,11 @@
 {
-  "last_updated": "2026-01-22T17:14:45Z",
-  "total_articles": 105,
+  "last_updated": "2026-01-23T09:58:03Z",
+  "total_articles": 106,
+  "gender_breakdown": {
+    "male": 39,
+    "female": 18,
+    "unknown": 11
+  },
   "articles": [
     {
       "id": "21a723b0aed1",
@@ -5723,11 +5728,67 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "5b0da2143621",
+      "headline": "Ellingham and Ringwood vs Petersfield preview",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "08:59",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 843,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Adam Higgins",
+          "full_attribution": "said Adam Higgins, \"Extend the game by 10 minutes",
+          "quote_snippet": "It was a hard fought second half I think we had a ",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Says Matt",
+          "full_attribution": "said Matt,\"We've not played them yet it's a first",
+          "quote_snippet": "I felt tonight we had a good training session the ",
+          "position": "after",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-23-082248-800x400.png",
+            "classification": "uncredited",
+            "credit": "Ringwood RFC Ringwood: Photo credit Cameron Dennison"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     }
-  ],
-  "gender_breakdown": {
-    "male": 71,
-    "female": 41,
-    "unknown": 7
-  }
+  ]
 }

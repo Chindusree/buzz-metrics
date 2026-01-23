@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-01-23T08:42:18Z",
-  "total_articles": 105,
+  "last_updated": "2026-01-23T10:02:48Z",
+  "total_articles": 106,
   "summary": {
-    "avg_word_count": 604,
+    "avg_word_count": 607,
     "avg_quoted_sources": 1.0,
     "below_minimum_count": 26,
-    "long_form_count": 18,
+    "long_form_count": 19,
     "breaking_news_count": 11,
-    "total_images": 202,
+    "total_images": 203,
     "original_images": 87,
     "stock_images": 3,
-    "uncredited_images": 112,
+    "uncredited_images": 113,
     "gender_breakdown": {
-      "male": 67,
+      "male": 68,
       "female": 29,
-      "unknown": 12
+      "unknown": 13
     },
     "by_section": {
       "Sport": {
@@ -23,9 +23,9 @@
         "sources": 15
       },
       "General News": {
-        "count": 74,
-        "words": 36188,
-        "sources": 71
+        "count": 75,
+        "words": 37031,
+        "sources": 73
       },
       "Features": {
         "count": 9,
@@ -40,8 +40,8 @@
         "avg_sources": 0.7
       },
       "News": {
-        "count": 74,
-        "avg_word_count": 489,
+        "count": 75,
+        "avg_word_count": 494,
         "avg_sources": 1.0
       },
       "Features": {
@@ -91,6 +91,16 @@
       "first_publish_on_time": true,
       "below_minimum_count": 5,
       "long_form_count": 4
+    },
+    {
+      "date": "2026-01-23",
+      "article_count": 1,
+      "target": 12,
+      "meets_target": false,
+      "first_publish_time": "08:59",
+      "first_publish_on_time": true,
+      "below_minimum_count": 0,
+      "long_form_count": 1
     }
   ],
   "articles": [
@@ -7631,6 +7641,91 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "5b0da2143621",
+      "headline": "Ellingham and Ringwood vs Petersfield preview",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-vs-petersfield-preview/",
+      "author": "Cameron Dennison",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "08:59",
+      "category": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 843,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Adam Higgins",
+          "full_attribution": "said Adam Higgins, \"Extend the game by 10 minutes",
+          "quote_snippet": "It was a hard fought second half I think we had a ",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Says Matt",
+          "full_attribution": "said Matt,\"We've not played them yet it's a first",
+          "quote_snippet": "I felt tonight we had a good training session the ",
+          "position": "after",
+          "gender": "they",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-23-082248-800x400.png",
+            "classification": "uncredited",
+            "credit": "Ringwood RFC Ringwood: Photo credit Cameron Dennison"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Adam Higgins",
+          "gender": "male",
+          "position": "after"
+        },
+        {
+          "name": "Says Matt",
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Smith",
+        "Frost",
+        "Petersfield"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
       "category_normalised": "General News"
     }
   ]
