@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-23T13:30:27Z",
-  "total_articles": 120,
+  "last_updated": "2026-01-23T14:31:29Z",
+  "total_articles": 125,
   "gender_breakdown": {
-    "male": 48,
+    "male": 49,
     "female": 23,
     "unknown": 11
   },
@@ -5904,6 +5904,49 @@
       "warnings": []
     },
     {
+      "id": "81ee6db9b552",
+      "headline": "BREAKING NEWS: Drunk driver who hit Bashley star jailed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-drunk-driver-who-hit-bashley-star-jailed/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:17",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 145,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9889-800x400.jpeg",
+            "classification": "original",
+            "credit": "Will Russell"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "70f6e8d4a3fa",
       "headline": "Bournemouth University rebuilds the television that started it all",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
@@ -6398,6 +6441,97 @@
       "warnings": []
     },
     {
+      "id": "1dfc8195a0eb",
+      "headline": "Live Stream BUzz News 14:30 bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1430-bulletin/",
+      "author": "Editor Blue",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:17",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/kwm9wYDXTYY?feature=oembed"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "2063683a978e",
+      "headline": "Man sentenced for people smuggling and class A drug supply",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
+      "author": "Justina Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:03",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 448,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/045f14f9-57f8-f011-9d8c-6045bdd24049.jpeg",
+            "classification": "uncredited",
+            "credit": "Image from Dorset Police"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "e8534a4406ac",
       "headline": "Mothers in Mind hopes for more maternal mental health support",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
@@ -6503,6 +6637,87 @@
         "audio_evidence": []
       },
       "warnings": []
+    },
+    {
+      "id": "42f28f9c2129",
+      "headline": "Out with the old, in with the new: UFC 324",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
+      "author": "Ben  Thonholtz",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:20",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1198,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Out-with-the-old-in-with-the-new-UFC-324/index.html",
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 8,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 8,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ETAXoLDXmT/sh-unsplash_3vxtnz3seke-4096x2731.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/9kethWs4YF/1c355e9e-2023-4d27-acd7-d2303ea69cf6-1170x1560.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ZkJgwOWhzT/sh-unsplash_fmjk3d3l5q4-4096x2727.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/GFXJH7YZYz/b93e4c34-52b8-4f84-b755-544e6a1f9f86-1560x984.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/OQKpyHquv2/screenshot-2026-01-23-140154-2458x1378.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/x79M6aB3ed/screenshot-2026-01-23-135546-2828x1642.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/1PE0miW7X5/bd1d87bd-6236-4f6c-a2c1-db73a20271f5-1170x1560.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation",
+        "No quoted sources in article >500 words"
+      ]
     },
     {
       "id": "270066b87722",
@@ -6700,6 +6915,86 @@
             "url": "embedded"
           }
         ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
+      "id": "68171a537e36",
+      "headline": "Welcome to the lions den",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "author": "Harrison Walsh",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "14:06",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 780,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/LIONSDEN/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Grant Hancox",
+          "full_attribution": "last fixture against Old Tiffinians.\nHancox says:",
+          "quote_snippet": "Staying calm in those moments. Coming on and kicki",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 6,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/GfyGZP4fpq/dsc09712-2592x3872.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/OUuR5GyLLp/dsc09725-3872x2592.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/UlrRr6sdCj/dsc09732-2592x3872.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/x2kSDG0vOW/dsc09748-3872x2592.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/CPCyrplxpn/dsc09698-2592x3872.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
         "audio_evidence": []
       },
       "warnings": [

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T14:04:08Z",
-  "total_flagged": 48,
+  "generated": "2026-01-23T14:36:28Z",
+  "total_flagged": 50,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1750,6 +1750,29 @@
       "review_status": "pending"
     },
     {
+      "id": "2063683a978e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
+      "headline": "Man sentenced for people smuggling and class A drug supply",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Adam Smith"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Adam Smith",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "739dc125d167",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
       "headline": "Tamburello: The fast-rising racket sport you’ve never heard of",
@@ -1785,6 +1808,43 @@
       "filtered": [
         "Diving"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "68171a537e36",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "headline": "Welcome to the lions den",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Grant Hancox"
+      ],
+      "verify_evidence": [
+        "Hancox",
+        "Drew Mellor",
+        "Matthew"
+      ],
+      "confirmed": [
+        {
+          "name": "Grant Hancox",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Drew Mellor",
+          "gender": "male"
+        },
+        {
+          "name": "Matthew",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     }
   ]

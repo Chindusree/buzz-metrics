@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T14:04:05Z",
-  "total_verified": 120,
+  "last_updated": "2026-01-23T14:36:26Z",
+  "total_verified": 125,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1414,6 +1414,12 @@
       ]
     },
     {
+      "id": "81ee6db9b552",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-drunk-driver-who-hit-bashley-star-jailed/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "70f6e8d4a3fa",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
       "verify_quoted_sources": 3,
@@ -1534,6 +1540,23 @@
       "verify_evidence": []
     },
     {
+      "id": "1dfc8195a0eb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1430-bulletin/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "2063683a978e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Adam Smith",
+          "context": "PERSON within 50 chars of quote: ...o years and six months for the drug offences. DCI Adam Smith from SWROCU said: “Sollaku is clearly a well-conn..."
+        }
+      ]
+    },
+    {
       "id": "e8534a4406ac",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
       "verify_quoted_sources": 1,
@@ -1547,6 +1570,12 @@
     {
       "id": "f8f85bd3e34a",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "42f28f9c2129",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -1580,6 +1609,25 @@
         {
           "name": "Diving",
           "context": "PERSON within 50 chars of quote: ...ponents will be hitting it straight back at you.” Diving is one of those skills that won’t come naturally ..."
+        }
+      ]
+    },
+    {
+      "id": "68171a537e36",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Hancox",
+          "context": "PERSON within 50 chars of quote: ...lty in their last fixture against Old Tiffinians. Hancox says: “Staying calm in those moments. Coming on a..."
+        },
+        {
+          "name": "Drew Mellor",
+          "context": "PERSON within 50 chars of quote: ...he third step of the British rugby ladder. Owners Drew Mellor and Matthew barker say: “Our vision has been to b..."
+        },
+        {
+          "name": "Matthew",
+          "context": "PERSON within 50 chars of quote: ... the British rugby ladder. Owners Drew Mellor and Matthew barker say: “Our vision has been to build a brigh..."
         }
       ]
     },
