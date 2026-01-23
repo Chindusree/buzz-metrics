@@ -21,6 +21,109 @@ from scrape import (
 
 BASE_URL = "https://buzz.bournemouth.ac.uk"
 
+def get_article_date(url):
+    """
+    Fetch an article and extract its publication date.
+    Returns date string in YYYY-MM-DD format, or None if failed.
+    """
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.content, 'lxml')
+
+        # Try JSON-LD first
+        scripts = soup.find_all('script', type='application/ld+json')
+        for script in scripts:
+            try:
+                data = json.loads(script.string)
+                date_published = None
+
+                if isinstance(data, dict) and '@graph' in data:
+                    for item in data['@graph']:
+                        if isinstance(item, dict) and 'datePublished' in item:
+                            date_published = item['datePublished']
+                            break
+                elif isinstance(data, dict):
+                    date_published = data.get('datePublished')
+
+                if date_published and 'T' in date_published:
+                    return date_published.split('T')[0]  # Return YYYY-MM-DD
+            except:
+                continue
+
+        # Fallback to <time> tag
+        time_elem = soup.find('time')
+        if time_elem:
+            datetime_str = time_elem.get('datetime')
+            if datetime_str:
+                try:
+                    dt = datetime.fromisoformat(datetime_str.replace('Z', '+00:00'))
+                    return dt.strftime('%Y-%m-%d')
+                except:
+                    pass
+
+        return None
+    except:
+        return None
+
+def get_archive_urls(date_str):
+    """
+    Get all article URLs from monthly archive that match the target date.
+    BUzz URLs don't include the day, so we need to fetch each article
+    and check its actual publication date.
+    """
+    year, month, day = date_str.split('-')
+    base_url = f"https://buzz.bournemouth.ac.uk/{year}/{month}/"
+
+    all_candidate_urls = []
+    page = 1
+
+    # First, collect all URLs from the monthly archive
+    print(f"  Collecting URLs from monthly archive...")
+    while True:
+        url = base_url if page == 1 else f"{base_url}page/{page}/"
+
+        try:
+            resp = requests.get(url, timeout=10)
+            if resp.status_code != 200:
+                break
+
+            soup = BeautifulSoup(resp.content, 'lxml')
+            links = soup.select('h2.entry-title a')
+
+            if not links:
+                break
+
+            for link in links:
+                href = link.get('href')
+                if href and href not in all_candidate_urls:
+                    all_candidate_urls.append(href)
+
+            page += 1
+            time.sleep(0.3)
+
+            # Stop after reasonable number of pages
+            if page > 15:
+                break
+
+        except Exception as e:
+            print(f"  Error fetching archive page {page}: {e}")
+            break
+
+    print(f"  Found {len(all_candidate_urls)} total articles in {year}/{month}")
+    print(f"  Filtering by date {date_str}...")
+
+    # Now filter by checking actual publication dates
+    matched_urls = []
+    for url in all_candidate_urls:
+        article_date = get_article_date(url)
+        if article_date == date_str:
+            matched_urls.append(url)
+            print(f"    ✓ {url}")
+        time.sleep(0.3)
+
+    return matched_urls
+
 def search_buzz_for_headline(headline, target_date):
     """
     Search BUzz site for article matching headline.
@@ -358,31 +461,79 @@ def add_to_datasets(articles):
 
 def main():
     parser = argparse.ArgumentParser(description='Add historical articles to BUzz Metrics dataset')
-    parser.add_argument('--date', required=True, help='Date for articles: YYYY-MM-DD')
+    parser.add_argument('--date', help='Date for articles: YYYY-MM-DD (required with --headlines or --urls)')
     parser.add_argument('--headlines', help='File with headlines, one per line')
     parser.add_argument('--urls', help='File with URLs, one per line (skips search)')
+    parser.add_argument('--scrape-date', help='Scrape all articles from this date (YYYY-MM-DD)')
     args = parser.parse_args()
+
+    # Determine target date
+    if args.scrape_date:
+        target_date = args.scrape_date
+    elif args.date:
+        target_date = args.date
+    else:
+        print("Error: Must provide either --date or --scrape-date")
+        return
 
     # Validate date format
     try:
-        datetime.strptime(args.date, '%Y-%m-%d')
+        datetime.strptime(target_date, '%Y-%m-%d')
     except ValueError:
         print("Error: Date must be in YYYY-MM-DD format")
         return
 
-    if not args.headlines and not args.urls:
-        print("Error: Must provide either --headlines or --urls")
-        return
+    # Check mode
+    if args.scrape_date:
+        if args.headlines or args.urls:
+            print("Error: --scrape-date cannot be used with --headlines or --urls")
+            return
+    else:
+        if not args.headlines and not args.urls:
+            print("Error: Must provide either --headlines or --urls")
+            return
 
     print("=" * 80)
     print("BUzz Metrics - Historical Article Import")
     print("=" * 80)
-    print(f"Target date: {args.date}\n")
+    print(f"Target date: {target_date}\n")
 
     articles = []
     not_found = []
 
-    if args.urls:
+    if args.scrape_date:
+        # Scrape all articles from daily archive
+        print(f"Scraping archive for {target_date}...\n")
+        urls = get_archive_urls(target_date)
+
+        if not urls:
+            print("No articles found in archive")
+            return
+
+        print(f"\nFound {len(urls)} articles")
+        print("=" * 80)
+        confirm = input(f"\nProcess {len(urls)} articles? (y/n): ")
+
+        if confirm.lower() != 'y':
+            print("Cancelled")
+            return
+
+        print("\nProcessing articles...\n")
+
+        for url in urls:
+            print(f"\nProcessing: {url}")
+            article = process_article(url, target_date)
+
+            if article:
+                articles.append(article)
+                print(f"  ✓ {article['headline'][:50]}")
+                print(f"  Sources: {article.get('quoted_sources', 0)}")
+            else:
+                print(f"  ✗ Failed to process")
+
+            time.sleep(1)  # Rate limit
+
+    elif args.urls:
         # Direct URL input
         with open(args.urls, encoding='utf-8') as f:
             urls = [line.strip() for line in f if line.strip()]
@@ -391,7 +542,7 @@ def main():
 
         for url in urls:
             print(f"\nProcessing: {url}")
-            article = process_article(url, args.date)
+            article = process_article(url, target_date)
 
             if article:
                 articles.append(article)
@@ -412,10 +563,10 @@ def main():
         for headline in headlines:
             print(f"\nSearching: {headline[:60]}...")
 
-            url = search_buzz_for_headline(headline, args.date)
+            url = search_buzz_for_headline(headline, target_date)
 
             if url:
-                article = process_article(url, args.date)
+                article = process_article(url, target_date)
                 if article:
                     articles.append(article)
                     print(f"  ✓ Found and processed")
