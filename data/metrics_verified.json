@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-23T15:56:56Z",
-  "total_articles": 132,
+  "last_updated": "2026-01-23T16:29:02Z",
+  "total_articles": 136,
   "summary": {
-    "avg_word_count": 625,
+    "avg_word_count": 629,
     "avg_quoted_sources": 1.0,
     "below_minimum_count": 33,
-    "long_form_count": 28,
+    "long_form_count": 30,
     "breaking_news_count": 13,
-    "total_images": 293,
-    "original_images": 102,
+    "total_images": 309,
+    "original_images": 103,
     "stock_images": 7,
-    "uncredited_images": 184,
+    "uncredited_images": 199,
     "gender_breakdown": {
-      "male": 80,
-      "female": 36,
+      "male": 81,
+      "female": 37,
       "unknown": 14
     },
     "by_section": {
       "Sport": {
-        "count": 33,
-        "words": 22332,
+        "count": 34,
+        "words": 23385,
         "sources": 25
       },
       "General News": {
-        "count": 90,
-        "words": 45784,
-        "sources": 83
+        "count": 93,
+        "words": 47640,
+        "sources": 85
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 33,
-        "avg_word_count": 677,
-        "avg_sources": 0.8
+        "count": 34,
+        "avg_word_count": 688,
+        "avg_sources": 0.7
       },
       "News": {
-        "count": 90,
-        "avg_word_count": 509,
+        "count": 93,
+        "avg_word_count": 512,
         "avg_sources": 0.9
       },
       "Features": {
@@ -94,13 +94,13 @@
     },
     {
       "date": "2026-01-23",
-      "article_count": 27,
+      "article_count": 31,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:59",
       "first_publish_on_time": true,
       "below_minimum_count": 7,
-      "long_form_count": 10
+      "long_form_count": 12
     }
   ],
   "articles": [
@@ -7912,6 +7912,126 @@
       "category_normalised": "General News"
     },
     {
+      "id": "8b5ef3784984",
+      "headline": "Art against odds: the shifting art scene in Boscombe",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "author": "Anna Bodiam",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "16:01",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 1089,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/art-against-odds/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Amanda",
+          "full_attribution": "Amanda shared a belief that advantage of these sp",
+          "quote_snippet": "I think perhaps that art or galleries are one way ",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 7,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 7,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/yXkuy9izBb/f57d56aa-3952-4e1e-a817-36abc0fe6a4f-2-1536x2048.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/CTim0H5Dh7/d3a04beb-43d1-4f63-95f1-a7e8394a45f5-2-1536x2048.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/QavORvHcwh/bd23d232-1ba7-4050-8f6b-0228cc5528c4-2-1619x1214.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/pNwieCbWWA/e21607a0-942d-454d-a6a6-0f9eb321d66f-1536x2048.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/UOShoIMDhz/1b5c9503-8292-43e2-bdc6-8849e2c138d5-3-750x1088.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/BB0ry3SxPQ/img_8586-1179x1763.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 4,
+      "source_evidence_confirmed": [
+        {
+          "name": "Amanda",
+          "gender": "female",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Tom",
+          "gender": "male"
+        },
+        {
+          "name": "Ellen Gillett",
+          "gender": "female"
+        },
+        {
+          "name": "Generative AI",
+          "gender": "unknown"
+        },
+        {
+          "name": "Dorset Mind",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Boscombe",
+        "Auger"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
+    },
+    {
       "id": "c453275d2eb2",
       "headline": "BREAKING NEWS: Dorset Fire Stations announce stations at risk of closure",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
@@ -8796,6 +8916,74 @@
       "word_count_status": "long_form"
     },
     {
+      "id": "c2e814eb7131",
+      "headline": "Gold prices soar to record highs",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gold-prices-soar-to-record-highs/",
+      "author": "Lewis Eyre",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "15:53",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 363,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Fraser McDonald",
+          "full_attribution": "owner of the Cash Creators in Bournemouth, said:",
+          "quote_snippet": "There are people that walk in that are expecting a",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-23-153244-800x400.png",
+            "classification": "original",
+            "credit": "George Nall)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Fraser McDonald",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "07acbc846781",
       "headline": "How CAN are using leaflets to support the community",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
@@ -9463,6 +9651,63 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "c05f8cf99ad1",
+      "headline": "Profile pictures turn purple in support of South African Women",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
+      "author": "Tyler Tamou",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "16:17",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 404,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/27118-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Illustration of South Africa flag - Freepik"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Patricia",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "270066b87722",
       "headline": "SEND schools bill passes 130,000 signatures",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/send-schools-bill-passes-130000-signatures/",
@@ -9701,6 +9946,104 @@
       "sources_filtered_out": [
         "Diving"
       ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "442442e51cf0",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "author": "Marcus Mac",
+      "author_confidence": "high",
+      "date": "2026-01-23",
+      "time": "16:08",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1053,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Bowra-Foundation/",
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 7,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 7,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/eXjBeNnX73/a205b23e-8075-4764-b1c4-e7c1b4c16b76-1600x1200.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/Ez4VXmAfwz/20260123_102049-3000x4000.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/AHBK6ZUskM/bowra-activities-img4.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/kuBKaMkvDk/bowra-activities-img6.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/JpszhZXY3X/stronger-together-img1-1200x1200.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/usDAkJMcAK/20260123_102037-3000x4000.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation",
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Megan",
+          "gender": "female"
+        },
+        {
+          "name": "Mark",
+          "gender": "male"
+        },
+        {
+          "name": "Darren Stratman",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T15:56:56Z",
-  "total_flagged": 54,
+  "generated": "2026-01-23T16:29:02Z",
+  "total_flagged": 57,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -1661,6 +1661,59 @@
       "review_status": "pending"
     },
     {
+      "id": "8b5ef3784984",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "headline": "Art against odds: the shifting art scene in Boscombe",
+      "scrape_count": 1,
+      "verify_count": 8,
+      "confirmed_count": 1,
+      "possible_count": 4,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Amanda"
+      ],
+      "verify_evidence": [
+        "Tom",
+        "Amanda Williams",
+        "Ellen Gillett",
+        "Generative AI",
+        "Ellen",
+        "Boscombe",
+        "Auger",
+        "Dorset Mind"
+      ],
+      "confirmed": [
+        {
+          "name": "Amanda",
+          "gender": "female",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Tom",
+          "gender": "male"
+        },
+        {
+          "name": "Ellen Gillett",
+          "gender": "female"
+        },
+        {
+          "name": "Generative AI",
+          "gender": "unknown"
+        },
+        {
+          "name": "Dorset Mind",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Boscombe",
+        "Auger"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "c453275d2eb2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
       "headline": "BREAKING NEWS: Dorset Fire Stations announce stations at risk of closure",
@@ -1948,6 +2001,29 @@
       "review_status": "pending"
     },
     {
+      "id": "c05f8cf99ad1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
+      "headline": "Profile pictures turn purple in support of South African Women",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Patricia"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Patricia",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "739dc125d167",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
       "headline": "Tamburello: The fast-rising racket sport you’ve never heard of",
@@ -1983,6 +2059,39 @@
       "filtered": [
         "Diving"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "442442e51cf0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "scrape_count": 0,
+      "verify_count": 3,
+      "confirmed_count": 0,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Megan",
+        "Mark",
+        "Darren Stratman"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Megan",
+          "gender": "female"
+        },
+        {
+          "name": "Mark",
+          "gender": "male"
+        },
+        {
+          "name": "Darren Stratman",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {

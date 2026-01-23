@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T15:56:54Z",
-  "total_verified": 132,
+  "last_updated": "2026-01-23T16:29:00Z",
+  "total_verified": 136,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -1426,6 +1426,45 @@
       ]
     },
     {
+      "id": "8b5ef3784984",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "verify_quoted_sources": 8,
+      "verify_evidence": [
+        {
+          "name": "Tom",
+          "context": "PERSON within 50 chars of quote: ... from the journey to get to this point we’re in.” Tom spoke on to note how him and co-founder Amanda Wi..."
+        },
+        {
+          "name": "Amanda Williams",
+          "context": "PERSON within 50 chars of quote: ... in.” Tom spoke on to note how him and co-founder Amanda Williams had once worked for another gallery, before it cl..."
+        },
+        {
+          "name": "Ellen Gillett",
+          "context": "PERSON within 50 chars of quote: ...o make things happen, especially being creative.” Ellen Gillett, 29, is an artist from Southampton. Ellen’s part ..."
+        },
+        {
+          "name": "Generative AI",
+          "context": "PERSON within 50 chars of quote: ...rtists are able to make these robust sculptures.” Generative AI is quite widely known by the creative community t..."
+        },
+        {
+          "name": "Ellen",
+          "context": "PERSON within 50 chars of quote: ...eative community to take away integrity from art. Ellen had her own takes on the rise: “It obviously thre..."
+        },
+        {
+          "name": "Boscombe",
+          "context": "PERSON within 50 chars of quote: ... bad cards. Tom said; “Especially in an area like Boscombe, which is known as a deprived area, it’s really i..."
+        },
+        {
+          "name": "Auger",
+          "context": "PERSON within 50 chars of quote: ...iatives. The fact that they’re willing to support Auger having a unit there is really positive.” She also..."
+        },
+        {
+          "name": "Dorset Mind",
+          "context": "PERSON within 50 chars of quote: ...s the mood.” Tom also added that they had invited Dorset Mind to the opening reception of the exhibition. “Comi..."
+        }
+      ]
+    },
+    {
       "id": "c453275d2eb2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
       "verify_quoted_sources": 2,
@@ -1573,6 +1612,12 @@
       ]
     },
     {
+      "id": "c2e814eb7131",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gold-prices-soar-to-record-highs/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "07acbc846781",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
       "verify_quoted_sources": 2,
@@ -1669,6 +1714,17 @@
       "verify_evidence": []
     },
     {
+      "id": "c05f8cf99ad1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Patricia",
+          "context": "PERSON within 50 chars of quote: ... has to play into what people are interested in.” Patricia supports this by saying regardless of the 2,600 j..."
+        }
+      ]
+    },
+    {
       "id": "270066b87722",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/send-schools-bill-passes-130000-signatures/",
       "verify_quoted_sources": 0,
@@ -1698,6 +1754,25 @@
         {
           "name": "Diving",
           "context": "PERSON within 50 chars of quote: ...ponents will be hitting it straight back at you.” Diving is one of those skills that won’t come naturally ..."
+        }
+      ]
+    },
+    {
+      "id": "442442e51cf0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Megan",
+          "context": "PERSON within 50 chars of quote: ...rk on their physio and things like that as well.” Megan spoke about the impact that Mark has on the benef..."
+        },
+        {
+          "name": "Mark",
+          "context": "PERSON within 50 chars of quote: ... that as well.” Megan spoke about the impact that Mark has on the beneficiaries: “Mark is just the most ..."
+        },
+        {
+          "name": "Darren Stratman",
+          "context": "PERSON within 50 chars of quote: ...ple that they probably wouldn't have had before.“ Darren Stratman continued this by saying: “Nothing's too difficul..."
         }
       ]
     },
