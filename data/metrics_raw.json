@@ -6014,7 +6014,8 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "category_normalised": "Sport"
     },
     {
       "id": "e8534a4406ac",

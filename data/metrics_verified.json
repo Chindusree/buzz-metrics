@@ -7914,7 +7914,7 @@
       "time": "08:59",
       "category": "Sport",
       "category_primary": "Sport",
-      "display_category": "General News",
+      "display_category": "Sport",
       "word_count": 843,
       "word_count_confidence": "high",
       "content_type": "standard",
@@ -7989,7 +7989,7 @@
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
-      "category_normalised": "General News",
+      "category_normalised": "Sport",
       "category_detail": "Rugby Union"
     },
     {
