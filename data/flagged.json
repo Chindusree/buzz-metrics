@@ -1,7 +1,301 @@
 {
-  "generated": "2026-01-23T16:29:02Z",
-  "total_flagged": 57,
+  "generated": "2026-01-23T17:01:46Z",
+  "total_flagged": 66,
   "flagged_articles": [
+    {
+      "id": "bcp-council-vote-on-tax-base-proposal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-vote-on-tax-base-proposal/",
+      "headline": "BCP Council Vote on Tax Base Proposal",
+      "scrape_count": 6,
+      "verify_count": 7,
+      "confirmed_count": 6,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Millie Earl",
+        "Darren Pidwell",
+        "Mike Cox",
+        "David Brown",
+        "Richard Harrett",
+        "Andy Martin"
+      ],
+      "verify_evidence": [
+        "Millie Earl",
+        "Darren Pidwell",
+        "Councillor Mike Cox",
+        "David Brown",
+        "Winton West Councillor",
+        "Richard Harrett",
+        "Councillor Andy Martin"
+      ],
+      "confirmed": [
+        {
+          "name": "Millie Earl",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Darren Pidwell",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Mike Cox",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "David Brown",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Richard Harrett",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Andy Martin",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Winton West",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "bournemouth-boxer-set-for-return-after-year-away",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-boxer-set-for-return-after-year-away/",
+      "headline": "Bournemouth Boxer Set for Return After Year Away",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Frank Warren"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Frank Warren",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "bournemouth-sea-dippers-helping-to-create-community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-sea-dippers-helping-to-create-community/",
+      "headline": "Bournemouth Sea Dippers helping to create community",
+      "scrape_count": 3,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Stump",
+        "Mary Richards",
+        "Ed"
+      ],
+      "verify_evidence": [
+        "Mary Richards",
+        "Ed"
+      ],
+      "confirmed": [
+        {
+          "name": "Mary Richards",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Ed",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Stump"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "dorset-council-back-phone-ban-for-schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-back-phone-ban-for-schools/",
+      "headline": "Dorset Council back phone ban for schools",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Simon Bull"
+      ],
+      "verify_evidence": [
+        "Councilor Simon Bull",
+        "Simon Bull",
+        "Schools"
+      ],
+      "confirmed": [
+        {
+          "name": "Simon Bull",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Schools"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "jenna-markham-eyes-goal-against-wsl-leaders-manchester-city",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jenna-markham-eyes-goal-against-wsl-leaders-manchester-city/",
+      "headline": "Jenna Markham eyes goal against WSL Leaders Manchester City",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jenna Markham",
+        "Elena Cole"
+      ],
+      "verify_evidence": [
+        "Markham",
+        "Markham’s",
+        "Elena Cole",
+        "Ben Jones"
+      ],
+      "confirmed": [
+        {
+          "name": "Jenna Markham",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Elena Cole",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Ben Jones",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Markham’s"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "headline": "Poole trampoline athlete Jared Smith sets sights on European glory",
+      "scrape_count": 2,
+      "verify_count": 5,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jared Smith",
+        "Ryan Brown"
+      ],
+      "verify_evidence": [
+        "Smith",
+        "BUzz",
+        "Team GB",
+        "Ryan Brown",
+        "Brown"
+      ],
+      "confirmed": [
+        {
+          "name": "Jared Smith",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Ryan Brown",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Team GB",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "BUzz"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "headline": "Update: Investigation into Elon Musk’s X following Grok AI sexual deepfakes",
+      "scrape_count": 3,
+      "verify_count": 5,
+      "confirmed_count": 3,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Sir Kier Starmer",
+        "Liz Kendall",
+        "Elon Musk"
+      ],
+      "verify_evidence": [
+        "Liz Kendall",
+        "Grok",
+        "Elon Musk",
+        "Lois Watts",
+        "Julia Apte"
+      ],
+      "confirmed": [
+        {
+          "name": "Kier Starmer",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Liz Kendall",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Elon Musk",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Lois Watts",
+          "gender": "female"
+        },
+        {
+          "name": "Julia Apte",
+          "gender": "female"
+        }
+      ],
+      "filtered": [
+        "Grok"
+      ],
+      "review_status": "pending"
+    },
     {
       "id": "21a723b0aed1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-submit-bid-for-highly-rated-brazilian-teenager/",
@@ -2092,6 +2386,104 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "dc90ae812d3c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "headline": "The financial struggle of tennis",
+      "scrape_count": 2,
+      "verify_count": 6,
+      "confirmed_count": 2,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "James White",
+        "Harry James"
+      ],
+      "verify_evidence": [
+        "White",
+        "Jack Burford\nPhotograph",
+        "Jack Burford",
+        "Joshua",
+        "Harry James",
+        "James"
+      ],
+      "confirmed": [
+        {
+          "name": "James White",
+          "gender": "male",
+          "position": "after"
+        },
+        {
+          "name": "Harry James",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jack Burford Photograph",
+          "gender": "male"
+        },
+        {
+          "name": "Joshua",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "2838086ca30b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "headline": "The football team that isn’t about football",
+      "scrape_count": 1,
+      "verify_count": 8,
+      "confirmed_count": 1,
+      "possible_count": 4,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "George Dean"
+      ],
+      "verify_evidence": [
+        "George Dean",
+        "Allen",
+        "Dean",
+        "Kick",
+        "George",
+        "Chris",
+        "Sands United",
+        "Photo Credit"
+      ],
+      "confirmed": [
+        {
+          "name": "George Dean",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Allen",
+          "gender": "male"
+        },
+        {
+          "name": "Kick",
+          "gender": "male"
+        },
+        {
+          "name": "Chris",
+          "gender": "male"
+        },
+        {
+          "name": "Sands United",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Photo Credit"
+      ],
       "review_status": "pending"
     },
     {
