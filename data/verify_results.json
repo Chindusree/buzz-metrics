@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T15:04:25Z",
-  "total_verified": 126,
+  "last_updated": "2026-01-23T15:35:41Z",
+  "total_verified": 130,
   "results": [
     {
       "id": "21a723b0aed1",
@@ -324,15 +324,23 @@
     {
       "id": "d0eceb2acc05",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "verify_quoted_sources": 2,
+      "verify_quoted_sources": 4,
       "verify_evidence": [
         {
-          "name": "Jordan Lench",
-          "context": "PERSON within 50 chars of quote: ...that myself…It is easy to feel isolated,” recalls Jordan Lench. “Having something to look forward to each week” ..."
+          "name": "Bournemouth",
+          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
         },
         {
-          "name": "Grace Ashton",
-          "context": "PERSON within 50 chars of quote: ... has been built on a close-knit community. Member Grace Ashton, struggled to stay consistent and “dropped off th..."
+          "name": "Dean Johnstone",
+          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
+        },
+        {
+          "name": "Johnstone",
+          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
+        },
+        {
+          "name": "Chris Downer",
+          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
         }
       ]
     },
@@ -1368,6 +1376,25 @@
       ]
     },
     {
+      "id": "24dd1996f853",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-family-story-of-survival/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Melvyn",
+          "context": "PERSON within 50 chars of quote: ...eality behind a history often reduced to numbers. Melvyn said: “I always knew Willy was born in France in ..."
+        },
+        {
+          "name": "Willy",
+          "context": "PERSON within 50 chars of quote: ...n reduced to numbers. Melvyn said: “I always knew Willy was born in France in 1933. But I knew nothing ab..."
+        },
+        {
+          "name": "Akiba Halpert",
+          "context": "PERSON within 50 chars of quote: ...e one Willy had been born with. “His real name is Akiba Halpert,” Melvyn says. “I had never known that.” After Wi..."
+        }
+      ]
+    },
+    {
       "id": "c779381e8cf1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
       "verify_quoted_sources": 6,
@@ -1439,8 +1466,20 @@
       ]
     },
     {
+      "id": "b136b88494f1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-service-offers-support-to-help-neurodiverse-independence/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "0a06581eaaa0",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vs-liverpool-preview-and-predictions/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "35bfdfee7123",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-podcast-week-2-roundup/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -1478,6 +1517,21 @@
         {
           "name": "Photo Credit",
           "context": "PERSON within 50 chars of quote: ...: afc.co.uk) AFC Bournemouth's Vitality Stadium. (Photo Credit: afc.co.uk) “The ultimate aim is to make my debut..."
+        }
+      ]
+    },
+    {
+      "id": "68f63e09592f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Mohamed Salah",
+          "context": "PERSON within 50 chars of quote: ...n the league.” “Theyre a difficult team to face.” Mohamed Salah has 12 goals in 12 games against the Cherries and..."
+        },
+        {
+          "name": "Federico Chiesa",
+          "context": "PERSON within 50 chars of quote: ...reer.” On his team’s availability, Slot said that Federico Chiesa will be a 50/50 decision and will see how he is a..."
         }
       ]
     },

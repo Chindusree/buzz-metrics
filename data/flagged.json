@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T15:04:28Z",
-  "total_flagged": 50,
+  "generated": "2026-01-23T15:35:44Z",
+  "total_flagged": 53,
   "flagged_articles": [
     {
       "id": "21a723b0aed1",
@@ -379,6 +379,64 @@
         "Wembley",
         "Brentford",
         "Harrogate"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d0eceb2acc05",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "scrape_count": 4,
+      "verify_count": 4,
+      "confirmed_count": 4,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Andrew Mace",
+        "Jordan Lench",
+        "Myles Haskell",
+        "Grace Ashton"
+      ],
+      "verify_evidence": [
+        "Bournemouth",
+        "Dean Johnstone",
+        "Johnstone",
+        "Chris Downer"
+      ],
+      "confirmed": [
+        {
+          "name": "Andrew Mace",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Jordan Lench",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Myles Haskell",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Grace Ashton",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Dean Johnstone",
+          "gender": "male"
+        },
+        {
+          "name": "Chris Downer",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Bournemouth"
       ],
       "review_status": "pending"
     },
@@ -1518,6 +1576,39 @@
       "review_status": "pending"
     },
     {
+      "id": "24dd1996f853",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-family-story-of-survival/",
+      "headline": "A Family Story of Survival",
+      "scrape_count": 0,
+      "verify_count": 3,
+      "confirmed_count": 0,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Melvyn",
+        "Willy",
+        "Akiba Halpert"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Melvyn",
+          "gender": "male"
+        },
+        {
+          "name": "Willy",
+          "gender": "male"
+        },
+        {
+          "name": "Akiba Halpert",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "c779381e8cf1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
       "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
@@ -1684,6 +1775,48 @@
       "filtered": [
         "Photo Credit"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "68f63e09592f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
+      "headline": "Cherries host Liverpool in Saturday evening clash",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Andoni Iraola",
+        "Arne Slot"
+      ],
+      "verify_evidence": [
+        "Mohamed Salah",
+        "Federico Chiesa"
+      ],
+      "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "lastname_verb"
+        },
+        {
+          "name": "Arne Slot",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Mohamed Salah",
+          "gender": "male"
+        },
+        {
+          "name": "Federico Chiesa",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
