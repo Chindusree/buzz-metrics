@@ -52,6 +52,27 @@ USER_PROMPT_TEMPLATE = """ARTICLE METADATA:
 - Word count: {word_count}
 - Category: {category}
 
+## Step 0: Exemption Check
+
+Before scoring, determine if this article is EXEMPT from SEI analysis.
+
+EXEMPT categories:
+
+1. MATCH REPORT: Observational play-by-play of a sporting event. Characterised by minute-by-minute action ("23rd minute", "second half"), scores, substitutions, tactical observations. The reporter is describing what they witnessed — no interview opportunity exists.
+
+2. COURT REPORT: Coverage of court proceedings. Reporter is legally constrained to what was said in court. Cannot freely seek additional sources.
+
+3. EMBED ONLY: Article is primarily a podcast, video, or live stream embed with minimal original text (<100 words of original reporting).
+
+If article is EXEMPT, respond ONLY with:
+{{"sei_exempt": "match_report|court_report|embed_only", "sei_score": null, "sei_components": null}}
+
+Do not proceed to Step 1.
+
+If NOT exempt, proceed to Step 1.
+
+---
+
 Analyze this article for SEI:
 
 {article_text}
@@ -187,8 +208,24 @@ Before returning, verify:
 """
 
 
+def prescreen_exempt(article):
+    """Layer 1: Regex prescreen for obvious exemptions (before Groq call)"""
+    headline = article.get('headline', '').strip().lower()
+
+    if headline.startswith('breaking'):
+        return 'breaking_news'
+    if 'live blog' in headline:
+        return 'live_blog'
+    if headline.startswith('blog:'):
+        return 'blog'
+    if headline.startswith('live stream'):
+        return 'live_stream'
+
+    return None
+
+
 def is_exempt(article):
-    """Check if article is exempt from SEI analysis"""
+    """Legacy function - kept for compatibility but no longer used"""
     category = article.get('category', '').lower()
 
     for exempt_cat in EXEMPT_CATEGORIES:
@@ -270,6 +307,10 @@ def analyze_with_groq(article_text, content_type, word_count, category):
         content = content.split('\n', 1)[1].rsplit('```', 1)[0]
 
     parsed = json.loads(content)
+
+    # Check if article was marked exempt by Groq (Step 0)
+    if parsed.get('sei_exempt'):
+        return parsed  # Short-circuit: return exempt response immediately
 
     # Post-process: Calculate ghost count
     stakeholders = parsed.get('stakeholder_mapping', {}).get('stakeholders', [])
@@ -375,15 +416,13 @@ def main():
     for i, article in enumerate(articles, 1):
         print(f"\n[{i}/{len(articles)}] {article['headline'][:60]}...")
 
-        # Check exemption
-        is_exempt_bool, exempt_reason = is_exempt(article)
-
-        if is_exempt_bool:
-            print(f"  EXEMPT: {exempt_reason}")
+        # Layer 1: Regex prescreen (no API call)
+        prescreen_result = prescreen_exempt(article)
+        if prescreen_result:
+            print(f"  EXEMPT (prescreen): {prescreen_result}")
             results.append({
                 **article,
-                'sei_exempt': True,
-                'sei_exempt_reason': exempt_reason,
+                'sei_exempt': prescreen_result,
                 'sei_score': None,
                 'sei_components': None
             })
@@ -409,7 +448,7 @@ def main():
         content_type = 'shorthand' if is_shorthand else 'standard'
 
         try:
-            # Analyze
+            # Layer 2: Analyze with Groq (includes Step 0 exemption check)
             groq_response = analyze_with_groq(
                 body,
                 content_type,
@@ -417,21 +456,32 @@ def main():
                 article.get('category', 'Unknown')
             )
 
-            # Calculate score
-            sei_score = calculate_sei_score(groq_response)
+            # Check if Groq marked it exempt (Step 0)
+            if groq_response.get('sei_exempt'):
+                print(f"  EXEMPT (Groq): {groq_response['sei_exempt']}")
+                results.append({
+                    **article,
+                    'sei_exempt': groq_response['sei_exempt'],
+                    'sei_score': None,
+                    'sei_components': None
+                })
+                exempt_count += 1
+            else:
+                # Calculate score
+                sei_score = calculate_sei_score(groq_response)
 
-            results.append({
-                **article,
-                'sei_exempt': False,
-                'sei_score': sei_score['score'],
-                'sei_components': sei_score['components'],
-                'sei_weights': sei_score['weights'],
-                'sei_modifiers': sei_score['modifiers'],
-                'groq_response': groq_response
-            })
+                results.append({
+                    **article,
+                    'sei_exempt': False,
+                    'sei_score': sei_score['score'],
+                    'sei_components': sei_score['components'],
+                    'sei_weights': sei_score['weights'],
+                    'sei_modifiers': sei_score['modifiers'],
+                    'groq_response': groq_response
+                })
 
-            analyzed_count += 1
-            print(f"  SEI: {sei_score['score']:.1f}")
+                analyzed_count += 1
+                print(f"  SEI: {sei_score['score']:.1f}")
 
             # Rate limiting
             time.sleep(0.5)

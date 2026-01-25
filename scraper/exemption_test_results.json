@@ -1,0 +1,30 @@
+[
+  {
+    "headline": "Southampton end winless run with victory over Sheffield United",
+    "expected": "match_report",
+    "actual": "match_report",
+    "layer": "groq",
+    "match": true
+  },
+  {
+    "headline": "Wonderkid Mayes hits record breaking 191",
+    "expected": null,
+    "actual": "not_exempt",
+    "layer": "groq",
+    "match": true
+  },
+  {
+    "headline": "BREAKING: Carrick agrees to Manchester United job",
+    "expected": "breaking_news",
+    "actual": "breaking_news",
+    "layer": "regex",
+    "match": true
+  },
+  {
+    "headline": "LIVE BLOG: Andoni Iraola previews Liverpool clash",
+    "expected": "live_blog",
+    "actual": "live_blog",
+    "layer": "regex",
+    "match": true
+  }
+]
