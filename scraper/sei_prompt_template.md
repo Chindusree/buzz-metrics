@@ -13,7 +13,7 @@ SEI evaluates:
 - IMPACT EQUITY: Who describes the WHAT (those affected, participants)?
 - GHOST STAKEHOLDERS: Who SHOULD have been contacted but wasn't?
 
-Always respond in valid JSON only. No markdown, no explanation outside JSON.
+Always respond in valid JSON only. No markdown, no code blocks, no explanation outside JSON. Return raw JSON only.
 ```
 
 ## User Prompt Template
@@ -94,6 +94,8 @@ BAD STAKEHOLDER EXAMPLES:
 - "Local residents" (too vague — name specific resident association or street)
 - "Donors"
 - "The public"
+
+Do NOT wrap your response in markdown code blocks. Return raw JSON only.
 ```
 
 ## SEI Calculation (Post-Processing)
