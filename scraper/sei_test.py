@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SEI Groq Test v2 - Revised prompt with metadata and improved ghost logic
+SEI Groq Test v4 - Added story-specific stakeholder guidance and SEI calculation
 """
 
 import requests
@@ -14,9 +14,9 @@ GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 MODEL = "llama-3.3-70b-versatile"
 
 TEST_URLS = [
+    "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
     "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
-    "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
-    "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/"
+    "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/"
 ]
 
 SYSTEM_PROMPT = """You analyze news articles for the Source Equity Index (SEI), which measures journalistic sourcing integrity.
@@ -63,9 +63,8 @@ Respond with this exact JSON structure:
     "stakeholders": [
       {{
         "group": "specific group name",
-        "examples_in_story": ["named person or org"],
-        "was_quoted": true/false,
-        "is_ghost": true/false
+        "examples": ["named person or org if any"],
+        "was_quoted": true/false
       }}
     ]
   }},
@@ -77,7 +76,6 @@ Respond with this exact JSON structure:
     "structural_non_male": 0,
     "impact_sources": 0,
     "impact_non_male": 0,
-    "ghost_stakeholder_count": 0,
     "total_stakeholder_groups": 4
   }}
 }}
@@ -106,33 +104,58 @@ A beat is GENDERED only if the TOPIC is inherently about one gender:
 If topic is not inherently gendered → expected_gender: neutral
 
 ROLE CLASSIFICATION:
-- STRUCTURAL: Experts, academics, officials, spokespersons, executives, anyone explaining WHY or providing overview/analysis
-- IMPACT: Participants, witnesses, those directly affected, anyone describing WHAT happened to them
 
-GHOST STAKEHOLDER RULES:
-- A stakeholder is GHOST if relevant to story but NOT directly quoted
-- Being MENTIONED is not enough — they must have SPOKEN in the article
-- CRITICAL: If was_quoted is false AND group is relevant → is_ghost MUST be true. These fields must be logically consistent.
-- Identify exactly 4 stakeholder groups
+STRUCTURAL: Experts, academics, officials, spokespersons, executives — BUT only if the article CLEARLY establishes their authority (title, role, or expertise stated).
+
+IMPACT: Participants, witnesses, those directly affected — AND anyone whose role/authority is NOT clearly established in the article.
+
+DEFAULT RULE: If uncertain, classify as IMPACT. A source must EARN structural status through clear attribution.
+
+Examples:
+- "Martha Searle, from the trust, said..." → IMPACT (role unclear)
+- "Martha Searle, conservation manager at the trust, said..." → STRUCTURAL (role clear)
+- "Dr Virginia Quiney, a GP at Wessex Cancer Trust, said..." → STRUCTURAL (role clear)
+- "A spokesperson said..." → STRUCTURAL (role is spokesperson)
+- "John said..." → IMPACT (no role given)
+
+STAKEHOLDER MAPPING:
+
+Identify 4 stakeholder groups for THIS SPECIFIC STORY, not for the broader topic the story covers.
+
+Ask: "Who has skin in the game for WHAT IS BEING REPORTED?"
+
+Example distinction:
+- Story about a survey launch → stakeholders are those affected by THE SURVEY (residents, council, community groups)
+- NOT stakeholders for the survey's topics (businesses, environment groups)
+- Story about a charity event → stakeholders are those involved in THE EVENT
+- NOT stakeholders for the charity's general mission
+
+CRITICAL: Do NOT limit yourself to people/organisations mentioned in the article.
+Ask yourself: "If I were assigning this story to a reporter, who SHOULD they contact?"
+
+Include:
+- Stakeholders who ARE quoted (was_quoted: true)
+- Stakeholders who are MENTIONED but not quoted (was_quoted: false)
+- Stakeholders who are NOT MENTIONED but SHOULD have been approached (was_quoted: false, examples may be empty or generic role descriptions)
+
+For health/social issues: ALWAYS include those with LIVED EXPERIENCE
+For charity stories: ALWAYS include BENEFICIARIES
+For institutional stories: ALWAYS include those AFFECTED by decisions
+
+Stakeholder constraints:
 - Must be REACHABLE by student journalist in one working day
-- Must be LOCAL/REGIONAL unless story is of national significance
+- Must be LOCAL/REGIONAL unless national significance
 - Must be SPECIFIC: named organisations, defined roles, identifiable groups
+- FORBIDDEN: "community", "public", "society", "donors", "readers"
 
 EXCLUSIONS:
-- Do NOT include the article author/journalist as a stakeholder
-- FORBIDDEN stakeholder terms: "community", "public", "society", "donors", "readers", "local media"
-
-REQUIRED STAKEHOLDER TYPES:
-- For health/social issues: ALWAYS include those with LIVED EXPERIENCE as a stakeholder group (e.g., patients, survivors, affected families)
-- For institutional stories: include those AFFECTED by decisions
-- For charity stories: include BENEFICIARIES of the charity's work
+- Do NOT include the article author/journalist
 
 VALIDATION:
 Before returning, verify:
-1. ghost_stakeholder_count matches number of stakeholders where is_ghost: true
-2. total_sources matches length of quoted_sources array
-3. structural_sources + impact_sources = total_sources
-4. No stakeholder has was_quoted: false AND is_ghost: false (unless truly irrelevant)
+1. total_sources matches length of quoted_sources array
+2. structural_sources + impact_sources = total_sources
+3. Exactly 4 stakeholder groups identified
 """
 
 
@@ -196,6 +219,68 @@ def fetch_article(url):
     }
 
 
+def calculate_sei_score(groq_response):
+    """Calculate SEI score from analysis results"""
+    sei_inputs = groq_response['sei_inputs']
+    story_type = groq_response['story_classification']['type']
+    is_gendered = groq_response['beat_context']['is_gendered_beat']
+
+    total = sei_inputs['total_sources']
+    non_male = sei_inputs['non_male_sources']
+    structural = sei_inputs['structural_sources']
+    structural_non_male = sei_inputs['structural_non_male']
+    ghost_count = sei_inputs['ghost_stakeholder_count']
+
+    # Inclusion (% non-male sources)
+    inclusion = (non_male / total * 100) if total > 0 else 0
+
+    # Apply SDC to Inclusion component only (before weighting)
+    sdc_applied = total < 2
+    if sdc_applied:
+        inclusion = inclusion * 0.5
+
+    # Structural Agency (% non-male structural sources)
+    structural_agency = (structural_non_male / structural * 100) if structural > 0 else 0
+
+    # Impact Equity (gender-neutral stakeholder coverage)
+    ghost_ratio = ghost_count / 4
+    impact_equity = (1 - ghost_ratio) * 100
+
+    # Determine weight (w)
+    if story_type == "STANDARD":
+        w = 0.4
+    elif story_type == "EXPERIENTIAL" and structural > 0:
+        w = 0.2
+    else:
+        w = 0
+
+    # Calculate base SEI (SDC already applied to inclusion)
+    sei = (inclusion * 0.30) + (structural_agency * w) + (impact_equity * (0.70 - w))
+
+    # Apply Contextual Baseline (gendered beat floor)
+    if is_gendered:
+        sei = max(sei, 50)
+
+    return {
+        'score': round(sei, 1),
+        'components': {
+            'inclusion': round(inclusion, 1),  # Already has SDC applied if applicable
+            'structural_agency': round(structural_agency, 1),
+            'impact_equity': round(impact_equity, 1),
+            'ghost_ratio': round(ghost_ratio, 2)
+        },
+        'weights': {
+            'inclusion_weight': 0.30,
+            'structural_weight': w,
+            'impact_weight': 0.70 - w
+        },
+        'modifiers': {
+            'sdc_applied': sdc_applied,
+            'contextual_baseline_applied': is_gendered
+        }
+    }
+
+
 def analyze_with_groq(article_data):
     """Send article to Groq for SEI analysis"""
     user_prompt = USER_PROMPT_TEMPLATE.format(
@@ -230,21 +315,54 @@ def analyze_with_groq(article_data):
     if content.startswith('```'):
         content = content.split('\n', 1)[1].rsplit('```', 1)[0]
 
-    return json.loads(content)
+    parsed = json.loads(content)
+
+    # Post-processing: Calculate ghost_stakeholder_count
+    stakeholders = parsed.get('stakeholder_mapping', {}).get('stakeholders', [])
+    ghost_count = sum(1 for s in stakeholders if not s.get('was_quoted', True))
+    parsed['sei_inputs']['ghost_stakeholder_count'] = ghost_count
+
+    # Post-processing: Recalculate non_male counts (Unknown does NOT count as non-male)
+    quoted_sources = parsed.get('quoted_sources', [])
+
+    # Count non-male sources (F or NB only, NOT Unknown)
+    non_male_count = sum(1 for s in quoted_sources if s.get('gender') in ['F', 'NB'])
+    male_count = sum(1 for s in quoted_sources if s.get('gender') == 'M')
+
+    # Recalculate structural/impact breakdowns
+    structural_non_male = sum(1 for s in quoted_sources
+                              if s.get('role') == 'STRUCTURAL' and s.get('gender') in ['F', 'NB'])
+    impact_non_male = sum(1 for s in quoted_sources
+                          if s.get('role') == 'IMPACT' and s.get('gender') in ['F', 'NB'])
+
+    # Update sei_inputs with corrected counts
+    parsed['sei_inputs']['non_male_sources'] = non_male_count
+    parsed['sei_inputs']['male_sources'] = male_count
+    parsed['sei_inputs']['structural_non_male'] = structural_non_male
+    parsed['sei_inputs']['impact_non_male'] = impact_non_male
+
+    return parsed
 
 
 def main():
     results = {
         "test_date": datetime.now().isoformat(),
-        "test_version": "v2",
+        "test_version": "v6_fixed",
         "model": MODEL,
-        "prompt_changes": [
+        "prompt_changes_v4": [
+            "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
+            "Added SEI score calculation with full formula implementation"
+        ],
+        "prompt_changes_cumulative": [
             "Added article metadata (format, word count, category)",
             "Refined gendered beat definition - topic must be inherently gendered",
             "Strengthened ghost logic consistency requirement",
             "Excluded journalist/author from stakeholders",
             "Required lived experience stakeholders for health/social stories",
-            "Added validation checklist"
+            "Removed is_ghost field - calculated from was_quoted instead",
+            "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned",
+            "Added story-specific stakeholder guidance",
+            "Added SEI score calculation"
         ],
         "articles": []
     }
@@ -260,6 +378,7 @@ def main():
             print(f"  Category: {article_data['category']}")
 
             groq_response = analyze_with_groq(article_data)
+            sei_score = calculate_sei_score(groq_response)
 
             results["articles"].append({
                 "url": url,
@@ -269,7 +388,8 @@ def main():
                     "word_count": article_data['word_count'],
                     "category": article_data['category']
                 },
-                "groq_response": groq_response
+                "groq_response": groq_response,
+                "sei_score": sei_score
             })
 
             print(f"  ✓ Analysis complete")
@@ -277,16 +397,19 @@ def main():
             print(f"    Beat: {groq_response['beat_context']['expected_gender']}")
             print(f"    Sources: {groq_response['sei_inputs']['total_sources']}")
             print(f"    Ghosts: {groq_response['sei_inputs']['ghost_stakeholder_count']}")
+            print(f"    SEI Score: {sei_score['score']}")
 
         except Exception as e:
             print(f"  ✗ Error: {e}")
+            import traceback
+            traceback.print_exc()
             results["articles"].append({
                 "url": url,
                 "error": str(e)
             })
 
     # Save results
-    output_path = "scraper/sei_test_results_v2.json"
+    output_path = "scraper/sei_test_results_v6_fixed.json"
     with open(output_path, 'w') as f:
         json.dump(results, f, indent=2)
 

@@ -1,0 +1,385 @@
+{
+  "test_date": "2026-01-25T13:42:08.874108",
+  "test_version": "v4",
+  "model": "llama-3.3-70b-versatile",
+  "prompt_changes_v4": [
+    "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
+    "Added SEI score calculation with full formula implementation"
+  ],
+  "prompt_changes_cumulative": [
+    "Added article metadata (format, word count, category)",
+    "Refined gendered beat definition - topic must be inherently gendered",
+    "Strengthened ghost logic consistency requirement",
+    "Excluded journalist/author from stakeholders",
+    "Required lived experience stakeholders for health/social stories",
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned",
+    "Added story-specific stakeholder guidance",
+    "Added SEI score calculation"
+  ],
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1012,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal and community experience, featuring interviews with individuals affected by cervical cancer and focusing on raising awareness and promoting prevention."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "female",
+          "reasoning": "The topic of cervical cancer is inherently related to women's health, making it a gendered beat."
+        },
+        "quoted_sources": [
+          {
+            "name": "Jenny Greenfield",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Jenny Greenfield is a volunteer and trustee of a cervical cancer charity, and her quotes describe her personal experience and perspective on the importance of screenings."
+          },
+          {
+            "name": "Eleanor Davis",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Eleanor Davis is an ovarian cancer survivor, and her quotes describe her personal experience and perspective on women's healthcare."
+          },
+          {
+            "name": "Dr. Virginia Quiney",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Dr. Virginia Quiney is a GP who works with Cancer Matters Wessex, and her quotes provide expert analysis and explanation of the importance of accessing healthcare services."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Cervical cancer prevention and awareness",
+          "stakeholders": [
+            {
+              "group": "Cervical cancer survivors",
+              "examples": [
+                "Eleanor Davis"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Healthcare professionals",
+              "examples": [
+                "Dr. Virginia Quiney"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Cervical cancer charities",
+              "examples": [
+                "UK Cervical Cancer Charity"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Women's health advocates",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 3,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 2,
+          "impact_non_male": 2,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 100.0,
+        "components": {
+          "inclusion": 100.0,
+          "structural_agency": 100.0,
+          "impact_equity": 100.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.2,
+          "impact_weight": 0.49999999999999994
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": true
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/musgrave-winter-olympics/",
+      "headline": "Musgrave set for fifth Winter Olympic Games",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 352,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it discusses Team GB's Winter Olympics squad and their past performances."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of Winter Olympics and cross-country skiing is not inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "Team GB announces its 20-strong Snowsport squad for the upcoming Winter Olympics in Italy",
+          "stakeholders": [
+            {
+              "group": "Team GB athletes",
+              "examples": [
+                "Andrew Musgrave",
+                "Zoe Atkin",
+                "Gus Kenworthy"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Team GB coaches and staff",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Winter Olympics organizers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "British Ski and Snowboard governing body",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      },
+      "sei_score": {
+        "score": 0.0,
+        "components": {
+          "inclusion": 0,
+          "structural_agency": 0,
+          "impact_equity": 0,
+          "ghost_ratio": 1.0
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announces-plan-to-lower-energy-bills/",
+      "headline": "Dorset Council announces plan to lower energy bills",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 119,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves a council's plan to cut energy bills and carbon emissions."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of energy efficiency and council plans is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "None",
+            "gender": "Unknown",
+            "role": "None",
+            "role_reasoning": "There are no quoted sources in the article."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Dorset Council considers a plan to cut energy bills and carbon emissions by replacing streetlights with LED units and introducing solar panels.",
+          "stakeholders": [
+            {
+              "group": "Dorset Council",
+              "examples": [
+                "Dorset Council cabinet"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "BCP Council",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Residents of Dorset",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Environmental groups",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      },
+      "sei_score": {
+        "score": 0.0,
+        "components": {
+          "inclusion": 0,
+          "structural_agency": 0,
+          "impact_equity": 0,
+          "ghost_ratio": 1.0
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 294,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, covering protests in Iran and the response from various governments and organizations."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of protests in Iran is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "A protester",
+            "gender": "Unknown",
+            "role": "IMPACT",
+            "role_reasoning": "The protester is describing their experience and what they are fighting for."
+          },
+          {
+            "name": "Donald Trump",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Donald Trump is providing an overview of the US's stance on the protests in Iran."
+          },
+          {
+            "name": "Abbas Araghchi",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Abbas Araghchi is explaining the Iranian government's perspective on the protests."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Protests in Iran and the response from various governments and organizations",
+          "stakeholders": [
+            {
+              "group": "Iranian protesters",
+              "examples": [
+                "A protester"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Iranian government officials",
+              "examples": [
+                "Abbas Araghchi"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "US government officials",
+              "examples": [
+                "Donald Trump"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Families of Iranian protesters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 40.0,
+        "components": {
+          "inclusion": 33.3,
+          "structural_agency": 0.0,
+          "impact_equity": 100.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    }
+  ]
+}

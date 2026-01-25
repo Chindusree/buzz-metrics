@@ -1,0 +1,292 @@
+{
+  "test_date": "2026-01-25T17:37:19.759422",
+  "test_version": "v6_fixed",
+  "model": "llama-3.3-70b-versatile",
+  "prompt_changes_v4": [
+    "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
+    "Added SEI score calculation with full formula implementation"
+  ],
+  "prompt_changes_cumulative": [
+    "Added article metadata (format, word count, category)",
+    "Refined gendered beat definition - topic must be inherently gendered",
+    "Strengthened ghost logic consistency requirement",
+    "Excluded journalist/author from stakeholders",
+    "Required lived experience stakeholders for health/social stories",
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned",
+    "Added story-specific stakeholder guidance",
+    "Added SEI score calculation"
+  ],
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
+      "headline": "Tree removals take place at Talbot Woodland",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 364,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves the Talbot Village Trust's habitat management and tree thinning process."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of tree thinning and habitat management is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Martha Searle",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Martha Searle is quoted as the Community and Engagement lead at Talbot Village Trust, establishing her authority and expertise on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The Talbot Village Trust is removing selective trees to provide essential habitat management in a 20-acre woodland.",
+          "stakeholders": [
+            {
+              "group": "Talbot Village Trust",
+              "examples": [
+                "Martha Searle"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local wildlife",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Visitors to the woodland",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local conservation groups",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 62.5,
+        "components": {
+          "inclusion": 50.0,
+          "structural_agency": 100.0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "headline": "Hotel staff take the plunge for charity",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 104,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and a community event, a charity dip in a hotel pool, rather than requiring institutional explanation."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of charity work is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Abi Paler",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Abi Paler's role is not clearly established as an expert or authority, but rather as a participant in the charity event."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Three hotel employees take a charitable dip in a pool to support a local mental health charity.",
+          "stakeholders": [
+            {
+              "group": "Hotel employees",
+              "examples": [
+                "Abi Paler",
+                "Lauren Sullivan",
+                "Ed Pickering"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Dorset Mind charity",
+              "examples": [
+                "Dorset Mind"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Beneficiaries of Dorset Mind charity",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Cumberland Hotel management",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 32.5,
+        "components": {
+          "inclusion": 50.0,
+          "structural_agency": 0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0,
+          "impact_weight": 0.7
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1105,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and observation, featuring Mark Bowra's journey and the impact of the Bowra Foundation, which is typical of experiential coverage."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of brain injury and charity work is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Mark Bowra",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Mark Bowra is a key figure in the story, but his role is more as a participant and beneficiary of the charity, rather than an expert or authority."
+          },
+          {
+            "name": "Darren Stratman",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Darren Stratman is quoted as a former professional golfer who has worked with the Bowra Foundation, but his role is not clearly established as an expert or authority."
+          },
+          {
+            "name": "Megan Hill",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Megan Hill is quoted as the BOWRA Bag Project Manager, but her role is more as a participant and representative of the charity, rather than an expert or authority."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The Bowra Foundation's work with brain injury survivors and their families",
+          "stakeholders": [
+            {
+              "group": "Brain injury survivors",
+              "examples": [
+                "Mark Bowra"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "The Bowra Foundation staff and volunteers",
+              "examples": [
+                "Megan Hill"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Families of brain injury survivors",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Healthcare professionals and rehabilitation specialists",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 3,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      },
+      "sei_score": {
+        "score": 45.0,
+        "components": {
+          "inclusion": 33.3,
+          "structural_agency": 0,
+          "impact_equity": 50.0,
+          "ghost_ratio": 0.5
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0,
+          "impact_weight": 0.7
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    }
+  ]
+}

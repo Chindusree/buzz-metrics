@@ -1,0 +1,501 @@
+{
+  "test_date": "2026-01-25T17:07:59.809216",
+  "test_version": "v5_sanity",
+  "model": "llama-3.3-70b-versatile",
+  "prompt_changes_v4": [
+    "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
+    "Added SEI score calculation with full formula implementation"
+  ],
+  "prompt_changes_cumulative": [
+    "Added article metadata (format, word count, category)",
+    "Refined gendered beat definition - topic must be inherently gendered",
+    "Strengthened ghost logic consistency requirement",
+    "Excluded journalist/author from stakeholders",
+    "Required lived experience stakeholders for health/social stories",
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned",
+    "Added story-specific stakeholder guidance",
+    "Added SEI score calculation"
+  ],
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
+      "headline": "Tree removals take place at Talbot Woodland",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 364,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves habitat management and the role of the Talbot Village Trust."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of woodland management and conservation is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Martha Searle",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Martha Searle is explaining the importance of tree thinning and the goals of the Talbot Village Trust, providing an overview and analysis of the situation."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The Talbot Village Trust is removing selective trees to provide essential habitat management in a 20-acre woodland.",
+          "stakeholders": [
+            {
+              "group": "Talbot Village Trust",
+              "examples": [
+                "Martha Searle"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local wildlife",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Visitors to the woodland",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local organisations partnering with the trust",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 38.8,
+        "components": {
+          "inclusion": 100.0,
+          "structural_agency": 100.0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/pooles-counter-terrorism-team-test-their-emergency-responses/",
+      "headline": "Poole\u2019s counter terrorism team test their emergency responses",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 533,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves a large-scale counter-terrorism exercise and quotes from officials."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of counter-terrorism is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Andy Hill",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "He is a Regional Assistant Chief Constable and provides an overview of the exercise."
+          },
+          {
+            "name": "Steve Lyne",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "He is an Assistant Chief Constable and explains the importance of the exercise."
+          },
+          {
+            "name": "Brian Murphy",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "He is the Chief Executive Officer of Poole Harbour Commissioners and discusses the exercise's logistics."
+          },
+          {
+            "name": "Jo Bussell",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "She is the Director UK Ports for Brittany Ferries and comments on the company's involvement in the exercise."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "A large-scale counter-terrorism exercise took place on a Brittany Ferries cross-channel ferry.",
+          "stakeholders": [
+            {
+              "group": "Counter Terrorism Policing",
+              "examples": [
+                "Andy Hill",
+                "Steve Lyne"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Port of Poole authorities",
+              "examples": [
+                "Brian Murphy"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Brittany Ferries staff and passengers",
+              "examples": [
+                "Jo Bussell"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local emergency services",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 4,
+          "non_male_sources": 1,
+          "male_sources": 3,
+          "structural_sources": 4,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 40.0,
+        "components": {
+          "inclusion": 25.0,
+          "structural_agency": 25.0,
+          "impact_equity": 75.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "headline": "Local care home combats loneliness on Blue Monday",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 359,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal and community experience, focusing on a specific event at a care home to combat loneliness."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of combating loneliness in a care home is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Jess",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Jess is an activities supporter at Branksome Heights, describing her role in helping to stop loneliness among residents."
+          },
+          {
+            "name": "Karen",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Karen, the receptionist and family liaison, explains the importance of events like this for care homes and the impact on residents and their family members."
+          },
+          {
+            "name": "Barbara Adams",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Barbara Adams is a resident who describes her experience and enjoyment of the event."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Branksome Heights Care Home hosts a 'Not-So-Blue' Monday event to combat loneliness.",
+          "stakeholders": [
+            {
+              "group": "Care home residents",
+              "examples": [
+                "Barbara Adams"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Care home staff",
+              "examples": [
+                "Jess",
+                "Karen"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Family members of residents",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local healthcare professionals",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 3,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 2,
+          "impact_non_male": 2,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      },
+      "sei_score": {
+        "score": 75.0,
+        "components": {
+          "inclusion": 100.0,
+          "structural_agency": 100.0,
+          "impact_equity": 50.0,
+          "ghost_ratio": 0.5
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.2,
+          "impact_weight": 0.49999999999999994
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1458,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal and community experiences, with a focus on the impact of smartphone bans in schools on students, parents, and educators."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of smartphone bans in schools is not inherently gendered, and the story features a mix of male and female sources."
+        },
+        "quoted_sources": [
+          {
+            "name": "Andrew Wilmot",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Andrew Wilmot is a member of the Smartphone Free Childhood movement and provides expert opinion on the topic."
+          },
+          {
+            "name": "James Wilder",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "James Wilder is the deputy head teacher at St. Peters and provides insight into the school's smartphone ban policy."
+          },
+          {
+            "name": "Ali Jeffs",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Ali Jeffs is a parent who shares her personal experience and concerns about the smartphone ban and its impact on her child's safety."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Dorset schools ban smartphones, and parents and educators weigh in on the decision.",
+          "stakeholders": [
+            {
+              "group": "Parents of students at St. Peters school",
+              "examples": [
+                "Ali Jeffs"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Educators at St. Peters school",
+              "examples": [
+                "James Wilder"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Members of the Smartphone Free Childhood movement",
+              "examples": [
+                "Andrew Wilmot"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local authorities and policymakers",
+              "examples": [
+                "Dorset Council",
+                "BCP council"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 47.5,
+        "components": {
+          "inclusion": 33.3,
+          "structural_agency": 0.0,
+          "impact_equity": 75.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.2,
+          "impact_weight": 0.49999999999999994
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 869,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and observation, featuring a first-person account of a young woman's journey with boxing and cerebral palsy."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of boxing and cerebral palsy is not inherently gendered, and the story features a female protagonist but does not focus on gender-specific issues."
+        },
+        "quoted_sources": [
+          {
+            "name": "Gabrielle Reid",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Gabrielle Reid is a participant and a person directly affected by the story, describing her experiences and feelings about boxing and cerebral palsy."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "A young woman with cerebral palsy finds strength and identity through boxing.",
+          "stakeholders": [
+            {
+              "group": "People with cerebral palsy",
+              "examples": [
+                "Gabrielle Reid"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Boxing coaches and trainers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Disability support organizations",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Family members of people with cerebral palsy",
+              "examples": [
+                "Gabrielle Reid's brother"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 23.8,
+        "components": {
+          "inclusion": 100.0,
+          "structural_agency": 0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0,
+          "impact_weight": 0.7
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    }
+  ]
+}

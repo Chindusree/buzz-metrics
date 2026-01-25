@@ -1,0 +1,239 @@
+{
+  "test_date": "2026-01-25T13:02:18.208420",
+  "test_version": "v3",
+  "model": "llama-3.3-70b-versatile",
+  "prompt_changes_v3": [
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned"
+  ],
+  "prompt_changes_cumulative": [
+    "Added article metadata (format, word count, category)",
+    "Refined gendered beat definition - topic must be inherently gendered",
+    "Strengthened ghost logic consistency requirement",
+    "Excluded journalist/author from stakeholders",
+    "Required lived experience stakeholders for health/social stories",
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned"
+  ],
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
+      "headline": "Hotel staff take the plunge for charity",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 104,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and a human-interest feature, focusing on a charity event."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of charity work is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Abi Paler",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Abi Paler is a participant in the charity event and describes the outcome."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Three hotel employees take a charitable dip in an outdoor swimming pool to support a local mental health charity.",
+          "stakeholders": [
+            {
+              "group": "Hotel employees",
+              "examples": [
+                "Abi Paler",
+                "Lauren Sullivan",
+                "Ed Pickering"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Dorset Mind charity",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Beneficiaries of Dorset Mind charity",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local mental health support services",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1105,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and observation, featuring Mark Bowra's journey and the work of the Bowra Foundation, which is typical of experiential coverage."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of brain injury and charity work is not inherently gendered."
+        },
+        "quoted_sources": [
+          {
+            "name": "Mark Bowra",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Mark Bowra is a participant and beneficiary of the Bowra Foundation, describing his personal experience and the impact of the foundation's work."
+          },
+          {
+            "name": "Darren Stratman",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Darren Stratman is an expert and professional golfer who provides analysis and explanation of the foundation's activities and their impact."
+          },
+          {
+            "name": "Megan Hill",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Megan Hill is a project manager and expert on the Bowra Bag scheme, providing explanation and analysis of the foundation's work."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Mark Bowra's journey and the work of the Bowra Foundation",
+          "stakeholders": [
+            {
+              "group": "Beneficiaries of the Bowra Foundation",
+              "examples": [
+                "Mark Bowra"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Medical professionals",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Charity workers and volunteers",
+              "examples": [
+                "Megan Hill"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "People with lived experience of brain injury",
+              "examples": [
+                "Mark Bowra"
+              ],
+              "was_quoted": true
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 1,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+      "headline": "Mothers in Mind hopes for more maternal mental health support",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 386,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, discussing National Maternal Health Awareness Day and the work of local charities and the NHS."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "female",
+          "reasoning": "The topic of motherhood is inherently about women, making this a gendered beat."
+        },
+        "quoted_sources": [
+          {
+            "name": "Erica Johnson",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Erica Johnson is the project lead of Mothers in Mind and provides analysis on maternal mental health difficulties."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "National Maternal Health Awareness Day and the work of local charities to support mothers with mental health issues",
+          "stakeholders": [
+            {
+              "group": "Mothers with mental health issues",
+              "examples": [
+                "attendees of Mothers in Mind sessions"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Local charities",
+              "examples": [
+                "Dorset Mind",
+                "Mothers in Mind"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "NHS representatives",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Maternal Mental Health Alliance",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    }
+  ]
+}
