@@ -26,17 +26,6 @@
         .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 2px solid #1a1a1a; }
         .section-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.4rem; font-weight: 700; }
         .section-sub { font-size: 0.85rem; color: #767676; }
-        #stories-toggle, #targets-toggle {
-            display: block;
-            text-align: right;
-            padding: 0.4rem 0;
-            font-size: 0.8em;
-            color: #333;
-            cursor: pointer;
-            user-select: none;
-            transition: color 0.2s;
-        }
-        #stories-toggle:hover, #targets-toggle:hover { color: #1a1a1a; }
         .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
         .stat-card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
         .stat-card.featured { grid-column: span 2; background: #1a1a1a; color: white; text-align: center; padding: 1.5rem; }
@@ -344,11 +333,6 @@
             <h2 class="section-title">Stories</h2>
             <span class="section-sub">7 stories</span>
         </div>
-        <div>
-            <button class="toggle-btn active" data-filter="all">All</button>
-            <button class="toggle-btn" data-filter="news">News</button>
-            <button class="toggle-btn" data-filter="sport">Sport</button>
-        </div>
         <table class="stories-table">
             <thead>
                 <tr>
@@ -499,7 +483,6 @@
             // Initialize
             populateDateSelector();
             setupContributorsToggle();
-            setupStoriesFilter();
 
             // Default to most recent date
             const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
@@ -515,55 +498,43 @@
     });
 
     function populateDateSelector() {
-        try {
-            const dateSelect = document.querySelector('.date-select');
-            if (!dateSelect) {
-                console.error('Date selector not found!');
-                return;
-            }
+        const dateSelect = document.querySelector('.date-select');
+        const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
 
-            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+        console.log('Available dates:', dates);
 
-            console.log('Available dates:', dates);
-            console.log('Date selector element:', dateSelect);
+        // Remove existing change listener if any by cloning the element
+        const newDateSelect = dateSelect.cloneNode(false);
+        dateSelect.parentNode.replaceChild(newDateSelect, dateSelect);
 
-            // Clear existing options
-            while (dateSelect.firstChild) {
-                dateSelect.removeChild(dateSelect.firstChild);
-            }
+        // Clear and repopulate
+        newDateSelect.innerHTML = '';
 
-            // Add "All Dates" as first option
-            const allOption = document.createElement('option');
-            allOption.value = 'all';
-            allOption.textContent = 'All Dates';
-            dateSelect.appendChild(allOption);
-            console.log('Added "All Dates" option');
+        // Add "All Dates" as first option
+        const allDatesOption = document.createElement('option');
+        allDatesOption.value = 'all';
+        allDatesOption.textContent = 'All Dates';
+        newDateSelect.appendChild(allDatesOption);
 
-            // Add individual dates
-            dates.forEach(date => {
-                const option = document.createElement('option');
-                option.value = date;
-                const d = new Date(date + 'T00:00:00');
-                option.textContent = d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
-                dateSelect.appendChild(option);
-            });
+        dates.forEach(date => {
+            const option = document.createElement('option');
+            option.value = date;
+            const d = new Date(date + 'T00:00:00');
+            option.textContent = d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+            newDateSelect.appendChild(option);
+        });
 
-            console.log('Total options in dropdown:', dateSelect.options.length);
+        // Add change listener
+        newDateSelect.addEventListener('change', (e) => {
+            console.log('Date changed to:', e.target.value);
+            updateHeroStats(e.target.value);
+        });
 
-            // Add change listener
-            dateSelect.addEventListener('change', (e) => {
-                console.log('Date changed to:', e.target.value);
-                // Reset stories display count when changing dates
-                storiesDisplayCount = storiesInitialLimit;
-                updateHeroStats(e.target.value);
-            });
-        } catch (error) {
-            console.error('Error in populateDateSelector:', error);
-        }
+        console.log('Date selector populated with', newDateSelect.options.length, 'options');
     }
 
     function updateHeroStats(selectedDate) {
-        // Filter articles for selected date or show all
+        // Filter articles for selected date or all dates
         const filteredArticles = selectedDate === 'all'
             ? metricsData.articles
             : metricsData.articles.filter(a => a.date === selectedDate);
@@ -630,10 +601,10 @@
         console.log('✓ Hero stats updated');
 
         // Step 3: Update Analysis section
-        updateAnalysisSection(filteredArticles, selectedDate);
+        updateAnalysisSection(filteredArticles);
     }
 
-    function updateAnalysisSection(filteredArticles, selectedDate) {
+    function updateAnalysisSection(filteredArticles) {
         console.log('=== STEP 3: Updating Analysis section ===');
 
         // Gender breakdown
@@ -818,14 +789,15 @@
         console.log('✓ Analysis section updated');
 
         // Step 4: Update Targets and Stories tables
-        updateTargetsTable(selectedDate);
-        updateStoriesTable(filteredArticles, selectedDate);
+        updateTargetsTable();
+        updateStoriesTable(filteredArticles);
 
         // Step 5: Update Contributors
+        const selectedDate = document.querySelector('.date-select').value;
         updateContributors(selectedDate);
     }
 
-    function updateTargetsTable(selectedDate) {
+    function updateTargetsTable() {
         console.log('=== STEP 4: Updating Targets table ===');
 
         const tbody = document.querySelector('#targets .stories-table tbody');
@@ -860,58 +832,10 @@
             }
         });
 
-        // If "All Dates" is selected, add totals row at the top
-        if (selectedDate === 'all') {
-            // Calculate overall totals
-            const totalArticles = metricsData.articles.length;
-            const totalBelow350 = metricsData.articles.filter(a => (a.word_count || 0) < 350).length;
+        // Sort dates descending and take last 3 days
+        const sortedDates = Object.keys(dateMap).sort().reverse().slice(0, 3);
 
-            // Find earliest publish time across all articles
-            let earliestTime = null;
-            metricsData.articles.forEach(article => {
-                if (article.time) {
-                    if (!earliestTime || article.time < earliestTime) {
-                        earliestTime = article.time;
-                    }
-                }
-            });
-
-            // Calculate overall gender breakdown
-            const overallGenderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
-            metricsData.articles.forEach(article => {
-                (article.source_evidence || []).forEach(source => {
-                    const gender = source.gender || 'unknown';
-                    if (overallGenderCounts.hasOwnProperty(gender)) overallGenderCounts[gender]++;
-                    else overallGenderCounts.unknown++;
-                });
-            });
-
-            const totalGender = overallGenderCounts.female + overallGenderCounts.male + overallGenderCounts.they;
-            const womenPercent = totalGender > 0 ? Math.round((overallGenderCounts.female / totalGender) * 100) : 0;
-
-            // Create totals row with bold styling
-            const totalsRow = document.createElement('tr');
-            totalsRow.style.fontWeight = 'bold';
-            totalsRow.style.borderBottom = '2px solid #1a1a1a';
-            totalsRow.innerHTML = `
-                <td>ALL DATES</td>
-                <td>${totalArticles}</td>
-                <td>${earliestTime || 'N/A'}</td>
-                <td>${totalBelow350}</td>
-                <td>${womenPercent}% W</td>
-            `;
-            tbody.appendChild(totalsRow);
-        }
-
-        // Sort dates descending (newest first)
-        const allDates = Object.keys(dateMap).sort().reverse();
-
-        // Show latest 5 dates or all if expanded
-        const datesToShow = targetsExpanded
-            ? allDates
-            : allDates.slice(0, targetsCollapsedLimit);
-
-        datesToShow.forEach(date => {
+        sortedDates.forEach(date => {
             const dayData = dateMap[date];
             const dayArticles = dayData.articles;
 
@@ -953,118 +877,34 @@
             tbody.appendChild(row);
         });
 
-        // Add/update toggle
-        updateTargetsToggle(allDates.length);
-
         console.log('✓ Targets table updated');
     }
 
-    function updateTargetsToggle(totalCount) {
-        // Remove existing toggle if present
-        const existingToggle = document.querySelector('#targets-toggle');
-        if (existingToggle) {
-            existingToggle.remove();
-        }
-
-        // Only show toggle if there are more than 5 dates
-        if (totalCount <= targetsCollapsedLimit) return;
-
-        // Create toggle at bottom of targets section
-        const targetsSection = document.querySelector('#targets');
-        const toggle = document.createElement('div');
-        toggle.id = 'targets-toggle';
-        toggle.textContent = targetsExpanded ? '▲ less' : '▼ more';
-
-        // Add click handler
-        toggle.addEventListener('click', () => {
-            targetsExpanded = !targetsExpanded;
-            const selectedDate = document.querySelector('.date-select').value;
-            updateHeroStats(selectedDate);
-        });
-
-        targetsSection.appendChild(toggle);
-    }
-
-    // Global state for stories filtering and incremental loading
-    let currentStoriesFilter = 'all';
-    let storiesDisplayCount = 10; // Start with 10
-    const storiesInitialLimit = 10;
-    const storiesIncrementSize = 25;
-
-    // Global state for targets table expand/collapse
-    let targetsExpanded = false;
-    const targetsCollapsedLimit = 5;
-
-    function updateStoriesTable(filteredArticles, selectedDate) {
+    function updateStoriesTable(filteredArticles) {
         console.log('=== STEP 4: Updating Stories table ===');
-        console.log('Input articles:', filteredArticles.length);
-        console.log('Current filter:', currentStoriesFilter);
-        console.log('Selected date:', selectedDate);
 
-        // Apply section filter
-        let articlesToShow = filteredArticles;
-        if (currentStoriesFilter !== 'all') {
-            articlesToShow = filteredArticles.filter(article => {
-                const category = article.display_category || 'Unknown';
-                // Normalize both "News" and "General News" to match "news" filter
-                const normalizedCategory = (category === 'General News' || category === 'News') ? 'news' : category.toLowerCase();
-                return normalizedCategory === currentStoriesFilter.toLowerCase();
-            });
-        }
+        const tbody = document.querySelector('#stories .stories-table tbody');
+        tbody.innerHTML = '';
 
-        console.log('After filter:', articlesToShow.length);
-
-        // Sort by date (newest first) when "All Dates", otherwise by time
-        const sortedArticles = [...articlesToShow].sort((a, b) => {
-            if (selectedDate === 'all') {
-                // Sort by date, then time
-                const dateCompare = (b.date || '').localeCompare(a.date || '');
-                if (dateCompare !== 0) return dateCompare;
-                return (b.time || '00:00').localeCompare(a.time || '00:00');
-            } else {
-                // Sort by time only
-                const timeA = a.time || '00:00';
-                const timeB = b.time || '00:00';
-                return timeB.localeCompare(timeA);
-            }
+        // Sort by time (latest first)
+        const sortedArticles = [...filteredArticles].sort((a, b) => {
+            const timeA = a.time || '00:00';
+            const timeB = b.time || '00:00';
+            return timeB.localeCompare(timeA);
         });
 
         console.log('Sorted articles:', sortedArticles.length);
 
-        // Update table header (TIME vs DATE)
-        const timeHeader = document.querySelector('#stories .stories-table thead th:first-child');
-        if (timeHeader) {
-            timeHeader.textContent = selectedDate === 'all' ? 'Date' : 'Time';
-        }
-
-        // Determine how many to show based on current display count
-        const articlesToDisplay = sortedArticles.slice(0, storiesDisplayCount);
-
-        // Update table body
-        const tbody = document.querySelector('#stories .stories-table tbody');
-        tbody.innerHTML = '';
-
-        articlesToDisplay.forEach(article => {
+        sortedArticles.forEach(article => {
             const row = document.createElement('tr');
             const section = (article.display_category === 'General News' ? 'News' : article.display_category) || 'Unknown';
             const author = article.author || 'Unknown';
-
-            // Show date or time based on selectedDate
-            let timeOrDateDisplay;
-            if (selectedDate === 'all') {
-                // Show date in "DD Mon" format (e.g., "13 Jan")
-                const d = new Date(article.date + 'T00:00:00');
-                timeOrDateDisplay = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
-            } else {
-                // Show time
-                timeOrDateDisplay = article.time || 'N/A';
-            }
-
+            const time = article.time || 'N/A';
             const words = (article.word_count || 0).toLocaleString();
             const sources = article.quoted_sources || 0;
 
             row.innerHTML = `
-                <td class="story-time">${timeOrDateDisplay}</td>
+                <td class="story-time">${time}</td>
                 <td><span class="story-section">${section}</span></td>
                 <td>
                     <a href="${article.url}" target="_blank" class="story-headline">${article.headline}</a>
@@ -1088,49 +928,10 @@
         // Update stories count in subtitle
         const subtitle = document.querySelector('#stories .section-sub');
         if (subtitle) {
-            subtitle.textContent = `${sortedArticles.length} ${sortedArticles.length === 1 ? 'story' : 'stories'}`;
+            subtitle.textContent = `${filteredArticles.length} ${filteredArticles.length === 1 ? 'story' : 'stories'}`;
         }
-
-        // Update toggle text in header
-        updateStoriesToggle(sortedArticles.length);
 
         console.log('✓ Stories table updated');
-    }
-
-    function updateStoriesToggle(totalCount) {
-        // Remove existing toggle if present
-        const existingToggle = document.querySelector('#stories-toggle');
-        if (existingToggle) {
-            existingToggle.remove();
-        }
-
-        // Only show toggle if there are more than initial limit (10 stories)
-        if (totalCount <= storiesInitialLimit) return;
-
-        // Create toggle at bottom of stories section
-        const storiesSection = document.querySelector('#stories');
-        const toggle = document.createElement('div');
-        toggle.id = 'stories-toggle';
-
-        // Determine if we're showing all or if there's more to show
-        const isShowingAll = storiesDisplayCount >= totalCount;
-        toggle.textContent = isShowingAll ? '▲ less' : '▼ more';
-
-        // Add click handler
-        toggle.addEventListener('click', () => {
-            if (isShowingAll) {
-                // Collapse back to initial 10
-                storiesDisplayCount = storiesInitialLimit;
-            } else {
-                // Increment by 25 (but not beyond total)
-                storiesDisplayCount = Math.min(storiesDisplayCount + storiesIncrementSize, totalCount);
-            }
-
-            const selectedDate = document.querySelector('.date-select').value;
-            updateHeroStats(selectedDate);
-        });
-
-        storiesSection.appendChild(toggle);
     }
 
     function updateContributors(selectedDate) {
@@ -1232,26 +1033,6 @@
                 // Update contributors with current selected date
                 const selectedDate = document.querySelector('.date-select').value;
                 updateContributors(selectedDate);
-            });
-        });
-    }
-
-    // Setup stories filter toggle buttons
-    function setupStoriesFilter() {
-        const filterButtons = document.querySelectorAll('#stories .toggle-btn');
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // Update active state
-                filterButtons.forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-
-                // Update filter and reset to initial 10 stories
-                currentStoriesFilter = e.target.getAttribute('data-filter');
-                storiesDisplayCount = storiesInitialLimit;
-
-                // Refresh stories table
-                const selectedDate = document.querySelector('.date-select').value;
-                updateHeroStats(selectedDate);
             });
         });
     }

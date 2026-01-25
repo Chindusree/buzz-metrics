@@ -1,0 +1,493 @@
+{
+  "test_date": "2026-01-25T19:57:05.827999",
+  "test_version": "v7_structural",
+  "model": "llama-3.3-70b-versatile",
+  "prompt_changes_v4": [
+    "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
+    "Added SEI score calculation with full formula implementation"
+  ],
+  "prompt_changes_cumulative": [
+    "Added article metadata (format, word count, category)",
+    "Refined gendered beat definition - topic must be inherently gendered",
+    "Strengthened ghost logic consistency requirement",
+    "Excluded journalist/author from stakeholders",
+    "Required lived experience stakeholders for health/social stories",
+    "Removed is_ghost field - calculated from was_quoted instead",
+    "Strengthened stakeholder mapping to include ideal stakeholders, not just mentioned",
+    "Added story-specific stakeholder guidance",
+    "Added SEI score calculation"
+  ],
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
+      "headline": "Tree removals take place at Talbot Woodland",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 364,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves the work of the Talbot Village Trust and its impact on the woodland ecosystem."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of woodland management and conservation is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Martha Searle",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Martha Searle is the Community and Engagement lead at Talbot Village Trust, and her specific role and experience matter to the story, as she is explaining the trust's work."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The Talbot Village Trust is removing selective trees to provide essential habitat management in the 20-acre woodland.",
+          "stakeholders": [
+            {
+              "group": "Talbot Village Trust staff",
+              "examples": [
+                "Martha Searle"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local wildlife",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Visitors to the woodland",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local conservation groups",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 22.5,
+        "components": {
+          "inclusion": 50.0,
+          "structural_agency": 0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1105,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and observation, featuring Mark Bowra's journey and the work of the Bowra Foundation, which is typical of experiential reportage."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of brain injury and charity work is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Mark Bowra",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Mark Bowra is the founder of the Bowra Foundation and his specific experience and involvement matter to the story."
+          },
+          {
+            "name": "Darren Stratman",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Darren Stratman is a former professional golfer who works with the Bowra Foundation, and his specific experience and involvement matter to the story."
+          },
+          {
+            "name": "Megan Hill",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Megan Hill is the BOWRA Bag Project Manager, and her specific role and experience with the Bowra Foundation matter to the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The Bowra Foundation's work with brain injury survivors and their families",
+          "stakeholders": [
+            {
+              "group": "Brain injury survivors",
+              "examples": [
+                "Mark Bowra",
+                "beneficiaries of the Bowra Foundation"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Bowra Foundation staff",
+              "examples": [
+                "Megan Hill"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Family members of brain injury survivors",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Healthcare professionals",
+              "examples": [
+                "doctors",
+                "physicians"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 3,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      },
+      "sei_score": {
+        "score": 45.0,
+        "components": {
+          "inclusion": 33.3,
+          "structural_agency": 0,
+          "impact_equity": 50.0,
+          "ghost_ratio": 0.5
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0,
+          "impact_weight": 0.7
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 1012,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The story is driven by personal experience and observation, featuring interviews with individuals affected by cervical cancer, and is written in a shorthand format typically used for feature-length articles."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "female",
+          "reasoning": "The topic of cervical cancer is inherently related to women's health, making it a gendered beat."
+        },
+        "quoted_sources": [
+          {
+            "name": "Jenny Greenfield",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Jenny Greenfield is a volunteer and trustee of a cervical cancer charity, and her specific experience and involvement with the charity make her an internal stakeholder."
+          },
+          {
+            "name": "Eleanor Davis",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Eleanor Davis is an ovarian cancer survivor, and her personal experience with women's health issues makes her an internal stakeholder."
+          },
+          {
+            "name": "Dr. Virginia Quiney",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Dr. Virginia Quiney is a GP who works with Cancer Matters Wessex, and her external medical expertise makes her a structural source."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Cervical cancer prevention and awareness",
+          "stakeholders": [
+            {
+              "group": "Cervical cancer patients and survivors",
+              "examples": [
+                "Eleanor Davis"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Healthcare professionals",
+              "examples": [
+                "Dr. Virginia Quiney"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Cervical cancer charities and organizations",
+              "examples": [
+                "Jenny Greenfield",
+                "UK Cervical Cancer Charity"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Women's health advocates and supporters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 3,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 2,
+          "impact_non_male": 2,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 87.5,
+        "components": {
+          "inclusion": 100.0,
+          "structural_agency": 100.0,
+          "impact_equity": 75.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.2,
+          "impact_weight": 0.49999999999999994
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+      "headline": "Mothers in Mind hopes for more maternal mental health support",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 386,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, discussing National Maternal Health Awareness Day and the work of local charities and the NHS."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "female",
+          "reasoning": "The topic of motherhood is inherently about one gender, specifically women."
+        },
+        "quoted_sources": [
+          {
+            "name": "Erica Johnson",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Erica Johnson is the project lead of Mothers in Mind, and her specific experience and involvement with the project matter to the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "National Maternal Health Awareness Day and the work of local charities to support mothers' mental health",
+          "stakeholders": [
+            {
+              "group": "Mothers in Mind charity",
+              "examples": [
+                "Erica Johnson"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "NHS",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Mothers with lived experience of mental health issues",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local health and community services",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      },
+      "sei_score": {
+        "score": 22.5,
+        "components": {
+          "inclusion": 50.0,
+          "structural_agency": 0,
+          "impact_equity": 25.0,
+          "ghost_ratio": 0.75
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": true,
+          "contextual_baseline_applied": false
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "metadata": {
+        "content_type": "standard",
+        "word_count": 294,
+        "category": "Unknown"
+      },
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, covering protests in Iran and the response from various governments and organizations."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of protests in Iran is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "A protester",
+            "gender": "Unknown",
+            "role": "IMPACT",
+            "role_reasoning": "The protester is directly affected by the situation and is sharing their personal experience."
+          },
+          {
+            "name": "Donald Trump",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As the US President, Donald Trump has external authority on the topic and is commenting on the situation in Iran."
+          },
+          {
+            "name": "Abbas Araghchi",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As Iran's foreign minister, Abbas Araghchi has external authority on the topic and is representing the Iranian government."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Protests in Iran and the response from various governments and organizations",
+          "stakeholders": [
+            {
+              "group": "Iranian protesters",
+              "examples": [
+                "A protester"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Iranian government",
+              "examples": [
+                "Abbas Araghchi"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "US government",
+              "examples": [
+                "Donald Trump"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Families of Iranian protesters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      },
+      "sei_score": {
+        "score": 22.5,
+        "components": {
+          "inclusion": 0.0,
+          "structural_agency": 0.0,
+          "impact_equity": 75.0,
+          "ghost_ratio": 0.25
+        },
+        "weights": {
+          "inclusion_weight": 0.3,
+          "structural_weight": 0.4,
+          "impact_weight": 0.29999999999999993
+        },
+        "modifiers": {
+          "sdc_applied": false,
+          "contextual_baseline_applied": false
+        }
+      }
+    }
+  ]
+}

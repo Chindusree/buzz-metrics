@@ -15,8 +15,10 @@ MODEL = "llama-3.3-70b-versatile"
 
 TEST_URLS = [
     "https://buzz.bournemouth.ac.uk/2026/01/habitat-management-takes-place-at-talbot-woodland/",
-    "https://buzz.bournemouth.ac.uk/2026/01/hotel-staff-take-the-plunge-for-charity/",
-    "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/"
+    "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+    "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+    "https://buzz.bournemouth.ac.uk/2026/01/mothers-in-mind-hopes-for-more-maternal-mental-health-support/",
+    "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/"
 ]
 
 SYSTEM_PROMPT = """You analyze news articles for the Source Equity Index (SEI), which measures journalistic sourcing integrity.
@@ -26,6 +28,19 @@ SEI evaluates:
 - STRUCTURAL AGENCY: Who explains the WHY (experts, officials, authorities)?
 - IMPACT EQUITY: Who describes the WHAT (those affected, participants)?
 - GHOST STAKEHOLDERS: Who SHOULD have been contacted but wasn't?
+
+ANALYSIS SCOPE:
+Analyze ONLY the article body text written by the reporter.
+
+EXCLUDE from analysis:
+- Image captions and photo credits
+- Author bios ("About the author")
+- Related stories / "See also" sections
+- Footer content and navigation
+- Social sharing text
+- Category/tag metadata
+
+CRITICAL: If a source's title/role appears ONLY in a caption but NOT in the article body text, treat their role as UNCLEAR and classify as IMPACT. We are measuring the reporter's attribution in their written work, not editorial additions.
 
 Always respond in valid JSON only. No markdown, no code blocks, no explanation outside JSON. Return raw JSON only."""
 
@@ -105,18 +120,28 @@ If topic is not inherently gendered → expected_gender: neutral
 
 ROLE CLASSIFICATION:
 
-STRUCTURAL: Experts, academics, officials, spokespersons, executives — BUT only if the article CLEARLY establishes their authority (title, role, or expertise stated).
+STRUCTURAL: Sources with EXTERNAL authority on the topic:
+- Experts commenting on a field they don't personally run
+- Officials representing institutions LARGER than the story's subject
+- Academics with credentials in the field
+- Spokespersons for organisations NOT the focus of the story
 
-IMPACT: Participants, witnesses, those directly affected — AND anyone whose role/authority is NOT clearly established in the article.
+IMPACT: Sources with INTERNAL or PERSONAL stake:
+- Participants, witnesses, those directly affected
+- Founders/leads of the project being covered (they ARE the story)
+- Staff explaining their OWN organisation's work
+- Anyone whose specific experience/involvement matters
 
-DEFAULT RULE: If uncertain, classify as IMPACT. A source must EARN structural status through clear attribution.
+KEY TEST: Could this source be replaced by another expert with similar credentials?
+- Yes → STRUCTURAL (external authority)
+- No (their specific role/experience matters) → IMPACT (internal authority)
 
 Examples:
-- "Martha Searle, from the trust, said..." → IMPACT (role unclear)
-- "Martha Searle, conservation manager at the trust, said..." → STRUCTURAL (role clear)
-- "Dr Virginia Quiney, a GP at Wessex Cancer Trust, said..." → STRUCTURAL (role clear)
-- "A spokesperson said..." → STRUCTURAL (role is spokesperson)
-- "John said..." → IMPACT (no role given)
+- "Dr Quiney, a GP, explaining cervical cancer screening" → STRUCTURAL (external medical expertise)
+- "Megan Hill, Project Manager, explaining BOWRA Bag scheme" → IMPACT (internal to story's subject)
+- "Martha Searle, Trust lead, explaining Trust's tree work" → IMPACT (internal to story's subject)
+- "Council spokesperson on town-wide policy" → STRUCTURAL (institution larger than story)
+- "Charity founder describing their charity's work" → IMPACT (they are the story)
 
 STAKEHOLDER MAPPING:
 
@@ -257,8 +282,11 @@ def calculate_sei_score(groq_response):
     # Calculate base SEI (SDC already applied to inclusion)
     sei = (inclusion * 0.30) + (structural_agency * w) + (impact_equity * (0.70 - w))
 
-    # Apply Contextual Baseline (gendered beat floor)
-    if is_gendered:
+    # Apply Contextual Baseline (male gendered beat floor only)
+    # Prevents penalizing male-heavy sourcing on men's topics
+    expected_gender = groq_response['beat_context']['expected_gender']
+    contextual_baseline_applied = (is_gendered and expected_gender == 'male')
+    if contextual_baseline_applied:
         sei = max(sei, 50)
 
     return {
@@ -276,7 +304,7 @@ def calculate_sei_score(groq_response):
         },
         'modifiers': {
             'sdc_applied': sdc_applied,
-            'contextual_baseline_applied': is_gendered
+            'contextual_baseline_applied': contextual_baseline_applied
         }
     }
 
@@ -347,7 +375,7 @@ def analyze_with_groq(article_data):
 def main():
     results = {
         "test_date": datetime.now().isoformat(),
-        "test_version": "v6_fixed",
+        "test_version": "v7_structural",
         "model": MODEL,
         "prompt_changes_v4": [
             "Added story-specific stakeholder guidance (focus on what is being reported, not broader topic)",
@@ -409,7 +437,7 @@ def main():
             })
 
     # Save results
-    output_path = "scraper/sei_test_results_v6_fixed.json"
+    output_path = "scraper/sei_test_results_v7_structural.json"
     with open(output_path, 'w') as f:
         json.dump(results, f, indent=2)
 
