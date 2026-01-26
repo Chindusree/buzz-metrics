@@ -156,19 +156,21 @@
             .contributors-grid { grid-template-columns: repeat(3, 1fr); }
         }
 
-        /* SEI Bar */
-        .sei-bar-container {
+        /* SEI Unified Box */
+        .sei-unified-box {
             background: white;
             border-radius: 6px;
-            padding: 1rem;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .sei-top-section {
+            padding: 1.25rem 1rem 1rem;
         }
         .sei-bar-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
         .sei-bar-title {
             font-family: 'Bricolage Grotesque', sans-serif;
@@ -180,21 +182,66 @@
         }
         .sei-bar-value {
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #1a1a1a;
         }
         .sei-bar-track {
-            height: 14px;
-            background: #f0ede6;
-            border-radius: 7px;
+            height: 18px;
+            background: #e5e0dc;
+            border-radius: 9px;
             overflow: hidden;
         }
         .sei-bar-fill {
             height: 100%;
-            background: #333;
-            border-radius: 7px;
+            background: #c41230;
+            border-radius: 9px;
             transition: width 0.3s ease;
+        }
+        .sei-divider {
+            height: 1px;
+            background: #edeae3;
+            margin: 0;
+        }
+        .sei-bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .sei-column {
+            padding: 1rem;
+        }
+        .sei-column:first-child {
+            border-right: 1px solid #edeae3;
+        }
+        .sei-column-title {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #767676;
+            margin-bottom: 0.75rem;
+        }
+        .sei-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #edeae3;
+        }
+        .sei-row:last-child {
+            border-bottom: none;
+        }
+        .sei-row-label {
+            font-family: Georgia, serif;
+            font-size: 0.85rem;
+            color: #1a1a1a;
+        }
+        .sei-row-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
         }
     </style>
 </head>
@@ -792,49 +839,47 @@
             </div>
         `;
 
-        // SEI full-width bar
-        html += `
-            <div class="sei-bar-container" style="grid-column: span 2;">
-                <div class="sei-bar-header">
-                    <span class="sei-bar-title">Source Equity Index</span>
-                    <span class="sei-bar-value">${overallSEI}</span>
-                </div>
-                <div class="sei-bar-track">
-                    <div class="sei-bar-fill" style="width: ${overallSEI}%"></div>
-                </div>
-            </div>
-        `;
-
-        // News card with SEI
+        // SEI unified box
         const newsData = sectionData['General News'];
         const newsCount = newsData ? newsData.count : 0;
-        html += `
-            <div class="card">
-                <h3 class="card-title">News</h3>
-                <div class="section-item">
-                    <span class="section-name">Source Equity</span>
-                    <span class="section-count">${newsSEI}</span>
-                </div>
-                <div class="section-item">
-                    <span class="section-name">Stories</span>
-                    <span class="section-count">${newsCount}</span>
-                </div>
-            </div>
-        `;
-
-        // Sport card with SEI
         const sportData = sectionData['Sport'];
         const sportCount = sportData ? sportData.count : 0;
+
         html += `
-            <div class="card">
-                <h3 class="card-title">Sport</h3>
-                <div class="section-item">
-                    <span class="section-name">Source Equity</span>
-                    <span class="section-count">${sportSEI}</span>
+            <div class="sei-unified-box" style="grid-column: span 2;">
+                <div class="sei-top-section">
+                    <div class="sei-bar-header">
+                        <span class="sei-bar-title">Source Equity Index</span>
+                        <span class="sei-bar-value">${overallSEI}</span>
+                    </div>
+                    <div class="sei-bar-track">
+                        <div class="sei-bar-fill" style="width: ${overallSEI}%"></div>
+                    </div>
                 </div>
-                <div class="section-item">
-                    <span class="section-name">Stories</span>
-                    <span class="section-count">${sportCount}</span>
+                <div class="sei-divider"></div>
+                <div class="sei-bottom-section">
+                    <div class="sei-column">
+                        <h3 class="sei-column-title">News</h3>
+                        <div class="sei-row">
+                            <span class="sei-row-label">Source Equity</span>
+                            <span class="sei-row-value">${newsSEI}</span>
+                        </div>
+                        <div class="sei-row">
+                            <span class="sei-row-label">Stories</span>
+                            <span class="sei-row-value">${newsCount}</span>
+                        </div>
+                    </div>
+                    <div class="sei-column">
+                        <h3 class="sei-column-title">Sport</h3>
+                        <div class="sei-row">
+                            <span class="sei-row-label">Source Equity</span>
+                            <span class="sei-row-value">${sportSEI}</span>
+                        </div>
+                        <div class="sei-row">
+                            <span class="sei-row-label">Stories</span>
+                            <span class="sei-row-value">${sportCount}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
