@@ -181,12 +181,17 @@
             color: #1a1a1a;
             margin-bottom: 0.75rem;
         }
+        .sei-hero-value .sei-total {
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: #767676;
+        }
         .sei-bar-track {
             height: 22px;
             background: #e5e0dc;
             border-radius: 11px;
             overflow: hidden;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0;
         }
         .sei-bar-fill {
             height: 100%;
@@ -194,35 +199,40 @@
             border-radius: 11px;
             transition: width 0.3s ease;
         }
-        .sei-mini-cards {
-            display: flex;
-            justify-content: center;
-            gap: 4.5rem;
+        .sei-divider {
+            height: 1px;
+            background: #edeae3;
+            margin: 1.5rem 0 0 0;
         }
-        .sei-mini-card {
+        .sei-bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 1rem;
+        }
+        .sei-compartment {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 0.75rem 1rem;
         }
-        .sei-mini-value {
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            line-height: 1;
-            color: #1a1a1a;
-            margin-bottom: 0.25rem;
+        .sei-compartment:first-child {
+            border-right: 1px solid #edeae3;
         }
-        .sei-mini-label {
+        .sei-compartment-label {
             font-family: 'Bricolage Grotesque', sans-serif;
             font-size: 0.65rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: #767676;
+            margin-bottom: 0.5rem;
+        }
+        .sei-compartment-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #1a1a1a;
         }
     </style>
 </head>
@@ -824,18 +834,19 @@
         html += `
             <div class="sei-unified-box" style="grid-column: span 2;">
                 <h3 class="sei-header">Source Equity Index</h3>
-                <div class="sei-hero-value">${overallSEI}</div>
+                <div class="sei-hero-value">${overallSEI}<span class="sei-total">/100</span></div>
                 <div class="sei-bar-track">
                     <div class="sei-bar-fill" style="width: ${overallSEI}%"></div>
                 </div>
-                <div class="sei-mini-cards">
-                    <div class="sei-mini-card">
-                        <div class="sei-mini-value">${newsSEI}</div>
-                        <div class="sei-mini-label">News</div>
+                <div class="sei-divider"></div>
+                <div class="sei-bottom-section">
+                    <div class="sei-compartment">
+                        <div class="sei-compartment-label">News</div>
+                        <div class="sei-compartment-value">${newsSEI}</div>
                     </div>
-                    <div class="sei-mini-card">
-                        <div class="sei-mini-value">${sportSEI}</div>
-                        <div class="sei-mini-label">Sport</div>
+                    <div class="sei-compartment">
+                        <div class="sei-compartment-label">Sport</div>
+                        <div class="sei-compartment-value">${sportSEI}</div>
                     </div>
                 </div>
             </div>
