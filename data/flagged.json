@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-26T12:45:33Z",
-  "total_flagged": 91,
+  "generated": "2026-01-26T13:41:36Z",
+  "total_flagged": 90,
   "flagged_articles": [
     {
       "id": "bcp-council-vote-on-tax-base-proposal",
@@ -1804,40 +1804,6 @@
       "review_status": "pending"
     },
     {
-      "id": "d8bc8a4e3dde",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
-      "headline": "Rapist sentenced following assault in Bournemouth home",
-      "scrape_count": 2,
-      "verify_count": 1,
-      "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Anonymous victim",
-        "Judge Fuller KC"
-      ],
-      "verify_evidence": [
-        "Callender"
-      ],
-      "confirmed": [
-        {
-          "name": "Anonymous victim",
-          "gender": "unknown",
-          "position": ""
-        },
-        {
-          "name": "Judge Fuller KC",
-          "gender": "male",
-          "position": ""
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Callender"
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "0ec9e8580501",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/samee-charity-aims-to-open-new-location-for-their-sen-interns/",
       "headline": "Samee Charity aims to open new location for their SEN interns",
@@ -1911,23 +1877,28 @@
       "id": "24dd1996f853",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/a-family-story-of-survival/",
       "headline": "A Family Story of Survival",
-      "scrape_count": 0,
+      "scrape_count": 2,
       "verify_count": 3,
-      "confirmed_count": 0,
-      "possible_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 2,
       "filtered_count": 0,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Melvyn Leach",
+        "Melvyn Leach"
+      ],
       "verify_evidence": [
         "Melvyn",
         "Willy",
         "Akiba Halpert"
       ],
-      "confirmed": [],
-      "possible": [
+      "confirmed": [
         {
-          "name": "Melvyn",
-          "gender": "male"
-        },
+          "name": "Melvyn Leach",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
         {
           "name": "Willy",
           "gender": "male"
