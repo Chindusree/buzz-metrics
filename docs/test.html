@@ -156,30 +156,45 @@
             .contributors-grid { grid-template-columns: repeat(3, 1fr); }
         }
 
-        /* SEI Cards */
-        .sei-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-        }
-        .sei-card {
+        /* SEI Bar */
+        .sei-bar-container {
             background: white;
             border-radius: 6px;
             padding: 1rem;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            text-align: center;
+            margin-bottom: 1rem;
         }
-        .sei-card-value {
+        .sei-bar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        .sei-bar-title {
             font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #767676;
         }
-        .sei-card-label {
-            font-family: Georgia, serif;
-            font-size: 0.85rem;
+        .sei-bar-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
             color: #1a1a1a;
-            margin-top: 0.25rem;
+        }
+        .sei-bar-track {
+            height: 14px;
+            background: #f0ede6;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        .sei-bar-fill {
+            height: 100%;
+            background: #333;
+            border-radius: 7px;
+            transition: width 0.3s ease;
         }
     </style>
 </head>
@@ -668,6 +683,10 @@
             a.sei_score !== null && a.sei_score !== undefined && !a.sei_exempt
         );
 
+        const overallSEI = validArticles.length > 0
+            ? Math.round(validArticles.reduce((sum, a) => sum + a.sei_score, 0) / validArticles.length)
+            : 0;
+
         const newsArticles = validArticles.filter(a =>
             (a.display_category || '').toLowerCase().includes('news')
         );
@@ -682,7 +701,7 @@
             ? Math.round(sportArticles.reduce((sum, a) => sum + a.sei_score, 0) / sportArticles.length)
             : '—';
 
-        console.log('SEI scores:', { news: newsSEI, sport: sportSEI });
+        console.log('SEI scores:', { overall: overallSEI, news: newsSEI, sport: sportSEI });
 
         // Gender breakdown
         const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
@@ -773,45 +792,52 @@
             </div>
         `;
 
-        // SEI card
+        // SEI full-width bar
         html += `
-            <div class="card" style="grid-column: span 2;">
-                <h3 class="card-title">Source Equity Index</h3>
-                <div class="sei-grid">
-                    <div class="sei-card">
-                        <div class="sei-card-value">${newsSEI}</div>
-                        <div class="sei-card-label">News</div>
-                    </div>
-                    <div class="sei-card">
-                        <div class="sei-card-value">${sportSEI}</div>
-                        <div class="sei-card-label">Sport</div>
-                    </div>
+            <div class="sei-bar-container" style="grid-column: span 2;">
+                <div class="sei-bar-header">
+                    <span class="sei-bar-title">Source Equity Index</span>
+                    <span class="sei-bar-value">${overallSEI}</span>
+                </div>
+                <div class="sei-bar-track">
+                    <div class="sei-bar-fill" style="width: ${overallSEI}%"></div>
                 </div>
             </div>
         `;
 
-        // Section cards (General News, Sport only)
-        const sectionsToShow = ['General News', 'Sport'];
-        sectionsToShow.forEach(section => {
-            if (sectionData[section]) {
-                const data = sectionData[section];
-                const avgSources = data.count > 0 ? (data.sources / data.count).toFixed(1) : '0.0';
-                const displaySection = section === 'General News' ? 'News' : section;
-                html += `
-                    <div class="card">
-                        <h3 class="card-title">${displaySection}</h3>
-                        <div class="section-item">
-                            <span class="section-name">Stories</span>
-                            <span class="section-count">${data.count}</span>
-                        </div>
-                        <div class="section-item">
-                            <span class="section-name">Avg sources</span>
-                            <span class="section-count">${avgSources}</span>
-                        </div>
-                    </div>
-                `;
-            }
-        });
+        // News card with SEI
+        const newsData = sectionData['General News'];
+        const newsCount = newsData ? newsData.count : 0;
+        html += `
+            <div class="card">
+                <h3 class="card-title">News</h3>
+                <div class="section-item">
+                    <span class="section-name">Source Equity</span>
+                    <span class="section-count">${newsSEI}</span>
+                </div>
+                <div class="section-item">
+                    <span class="section-name">Stories</span>
+                    <span class="section-count">${newsCount}</span>
+                </div>
+            </div>
+        `;
+
+        // Sport card with SEI
+        const sportData = sectionData['Sport'];
+        const sportCount = sportData ? sportData.count : 0;
+        html += `
+            <div class="card">
+                <h3 class="card-title">Sport</h3>
+                <div class="section-item">
+                    <span class="section-name">Source Equity</span>
+                    <span class="section-count">${sportSEI}</span>
+                </div>
+                <div class="section-item">
+                    <span class="section-name">Stories</span>
+                    <span class="section-count">${sportCount}</span>
+                </div>
+            </div>
+        `;
 
         // Publication Rhythm heatmap
         let heatmapHTML = '<div class="heatmap">';
