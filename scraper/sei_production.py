@@ -52,32 +52,27 @@ USER_PROMPT_TEMPLATE = """ARTICLE METADATA:
 - Word count: {word_count}
 - Category: {category}
 
-## Step 0: Exemption Check
-
-Before scoring, determine if this article is EXEMPT from SEI analysis.
-
-EXEMPT categories:
-
-1. MATCH REPORT: Observational play-by-play of a sporting event. Characterised by minute-by-minute action ("23rd minute", "second half"), scores, substitutions, tactical observations. The reporter is describing what they witnessed — no interview opportunity exists.
-
-2. COURT REPORT: Coverage of court proceedings. Reporter is legally constrained to what was said in court. Cannot freely seek additional sources.
-
-3. EMBED ONLY: Article is primarily a podcast, video, or live stream embed with minimal original text (<100 words of original reporting).
-
-If article is EXEMPT, respond ONLY with:
-{{"sei_exempt": "match_report|court_report|embed_only", "sei_score": null, "sei_components": null}}
-
-Do not proceed to Step 1.
-
-If NOT exempt, proceed to Step 1.
-
----
-
 Analyze this article for SEI:
 
 {article_text}
 
-Respond with this exact JSON structure:
+---
+
+BEFORE RESPONDING: Check if this article is EXEMPT.
+
+EXEMPTION RULES (check in order):
+
+1. MATCH REPORT? Does the article contain TWO OR MORE minute timestamps?
+   Look for patterns: "7th minute", "25th minute", "89th minute", "91st minute", "66th minute"
+   If YES → respond with ONLY: {{"sei_exempt": "match_report", "sei_score": null, "sei_components": null}}
+
+2. COURT REPORT? Is this coverage of court proceedings where reporter cannot seek other sources?
+   If YES → respond with ONLY: {{"sei_exempt": "court_report", "sei_score": null, "sei_components": null}}
+
+3. EMBED ONLY? Is word count < 100 and article is mainly a podcast/video player?
+   If YES → respond with ONLY: {{"sei_exempt": "embed_only", "sei_score": null, "sei_components": null}}
+
+If NONE of the above apply, respond with full JSON structure:
 
 {{
   "story_classification": {{
