@@ -1,0 +1,48 @@
+name: Daily SEI Scoring
+
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'  # 1pm UK
+    - cron: '0 16 * * 1-5'  # 4pm UK
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sei-scoring:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          cd scraper
+          pip install --prefer-binary -r requirements.txt
+
+      - name: Run SEI production scoring
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          cd scraper
+          python3 sei_production.py
+
+      - name: Copy to docs
+        run: |
+          cp data/metrics_sei.json docs/metrics_sei.json
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/metrics_sei.json docs/metrics_sei.json
+          git diff --staged --quiet || git commit -m "SEI update [$(date +'%Y-%m-%d %H:%M UTC')]"
+          git pull origin main --strategy-option theirs || true
+          git push
