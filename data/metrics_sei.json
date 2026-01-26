@@ -4,8 +4,8 @@
     "model": "llama-3.3-70b-versatile",
     "total_articles": 215,
     "analyzed": 187,
-    "exempt": 26,
-    "errors": 2
+    "exempt": 28,
+    "errors": 0
   },
   "articles": [
     {
@@ -474,12 +474,12 @@
       "word_count_status": "standard",
       "category_normalised": "Sport",
       "sei_exempt": false,
-      "sei_score": 17.5,
+      "sei_score": 35.0,
       "sei_components": {
         "inclusion": 0.0,
         "structural_agency": 0,
-        "impact_equity": 25.0,
-        "ghost_ratio": 0.75
+        "impact_equity": 50.0,
+        "ghost_ratio": 0.5
       },
       "sei_weights": {
         "inclusion_weight": 0.3,
@@ -493,29 +493,29 @@
       "groq_response": {
         "story_classification": {
           "type": "EXPERIENTIAL",
-          "reasoning": "The story is driven by personal experience and observation, featuring a first-person account of Grant Hancox's injury and recovery."
+          "reasoning": "The article is written in a shorthand format and has a word count of 780, which suggests it is a feature-length piece driven by personal experience and observation."
         },
         "beat_context": {
           "is_gendered_beat": false,
           "expected_gender": "neutral",
-          "reasoning": "The topic of sports injury and recovery is not inherently gendered."
+          "reasoning": "The topic of the article is about a rugby player's injury and recovery, which is not inherently about one gender."
         },
         "quoted_sources": [
           {
             "name": "Grant Hancox",
             "gender": "M",
             "role": "IMPACT",
-            "role_reasoning": "Grant Hancox is a participant and the main subject of the story, sharing his personal experience and emotions."
+            "role_reasoning": "Grant Hancox is a participant and the main subject of the story, and his specific experience and involvement matter to the narrative."
           },
           {
             "name": "Andy Curtis",
             "gender": "M",
             "role": "IMPACT",
-            "role_reasoning": "Andy Curtis is the physio who worked with Grant Hancox and is sharing his observations and insights about Grant's recovery."
+            "role_reasoning": "Andy Curtis is the physio who worked with Grant Hancox and is quoted about his experience with Grant's recovery, which is internal to the story's subject."
           }
         ],
         "stakeholder_mapping": {
-          "core_event": "Grant Hancox's recovery from a sports injury and his return to playing rugby.",
+          "core_event": "Grant Hancox's return to rugby after an injury",
           "stakeholders": [
             {
               "group": "Bournemouth Lions team",
@@ -526,20 +526,22 @@
               "was_quoted": true
             },
             {
-              "group": "Medical professionals",
+              "group": "Rugby players with similar injuries",
               "examples": [],
               "was_quoted": false
             },
             {
-              "group": "Grant Hancox's family",
+              "group": "Sports physiotherapists",
+              "examples": [
+                "Andy Curtis"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Grant Hancox's family and support network",
               "examples": [
                 "Grant Hancox's wife"
               ],
-              "was_quoted": false
-            },
-            {
-              "group": "Rugby fans and supporters",
-              "examples": [],
               "was_quoted": false
             }
           ]
@@ -553,8 +555,13 @@
           "impact_sources": 2,
           "impact_non_male": 0,
           "total_stakeholder_groups": 4,
-          "ghost_stakeholder_count": 3
+          "ghost_stakeholder_count": 2
         }
+      },
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 780,
+        "category": "Unknown"
       }
     },
     {
@@ -5291,12 +5298,12 @@
       "word_count_status": "long_form",
       "category_normalised": "General News",
       "sei_exempt": false,
-      "sei_score": 17.5,
+      "sei_score": 35.0,
       "sei_components": {
         "inclusion": 0.0,
         "structural_agency": 0,
-        "impact_equity": 25.0,
-        "ghost_ratio": 0.75
+        "impact_equity": 50.0,
+        "ghost_ratio": 0.5
       },
       "sei_weights": {
         "inclusion_weight": 0.3,
@@ -5310,50 +5317,46 @@
       "groq_response": {
         "story_classification": {
           "type": "EXPERIENTIAL",
-          "reasoning": "The article is written in a shorthand format, has a word count of 853, and is categorized as News Top, indicating a feature-length story driven by personal experience and observation."
+          "reasoning": "The article is written in a shorthand format and has a word count of 879, indicating a feature-length piece driven by observation and lived experience."
         },
         "beat_context": {
           "is_gendered_beat": false,
           "expected_gender": "neutral",
-          "reasoning": "The topic of sailing and match racing is not inherently about one gender, making it a neutral beat."
+          "reasoning": "The topic of match racing is not inherently about one gender."
         },
         "quoted_sources": [
           {
             "name": "Ian Williams",
             "gender": "M",
             "role": "IMPACT",
-            "role_reasoning": "Ian Williams is a participant and the main subject of the story, making his experience and involvement internal to the story's subject."
+            "role_reasoning": "Ian Williams is a participant and the main subject of the story, making his role internal to the story's subject."
           }
         ],
         "stakeholder_mapping": {
           "core_event": "Ian Williams winning the World Match Racing Tour final in Shenzhen",
           "stakeholders": [
             {
-              "group": "Sailors and racing teams",
+              "group": "Match Racing Competitors",
               "examples": [
-                "Ian Williams",
-                "Richard Sydenham",
-                "John Gunderson",
-                "Jerry Mitchell"
+                "Ian Williams"
               ],
               "was_quoted": true
             },
             {
-              "group": "World Match Racing Tour organizers",
+              "group": "World Match Racing Tour Organizers",
               "examples": [],
               "was_quoted": false
             },
             {
-              "group": "Sailing fans and spectators",
-              "examples": [],
-              "was_quoted": false
-            },
-            {
-              "group": "Sailing coaches and trainers",
+              "group": "Sailing Coaches and Trainers",
               "examples": [
-                "Canadian SailGP team",
-                "British America's Cup campaign"
+                "Ian Williams as a coach"
               ],
+              "was_quoted": true
+            },
+            {
+              "group": "Sailing Fans and Enthusiasts",
+              "examples": [],
               "was_quoted": false
             }
           ]
@@ -5367,8 +5370,13 @@
           "impact_sources": 1,
           "impact_non_male": 0,
           "total_stakeholder_groups": 4,
-          "ghost_stakeholder_count": 3
+          "ghost_stakeholder_count": 2
         }
+      },
+      "metadata": {
+        "content_type": "shorthand",
+        "word_count": 879,
+        "category": "Unknown"
       }
     },
     {
@@ -7320,8 +7328,7 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News",
-      "sei_exempt": false,
-      "sei_error": "fetch_failed",
+      "sei_exempt": "video_bulletin",
       "sei_score": null,
       "sei_components": null
     },
@@ -7376,8 +7383,7 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News",
-      "sei_exempt": false,
-      "sei_error": "fetch_failed",
+      "sei_exempt": "video_bulletin",
       "sei_score": null,
       "sei_components": null
     },
