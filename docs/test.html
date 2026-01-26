@@ -157,55 +157,29 @@
         }
 
         /* SEI Cards */
-        .sei-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
+        .sei-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
         }
         .sei-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-            border-radius: 8px;
+            background: white;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            text-align: center;
         }
-        .sei-card.sei-hero {
-            background: #1a1a1a;
-            color: white;
-            padding: 2rem 3rem;
-        }
-        .sei-card.sei-small {
-            background: #f8f8f8;
-            color: #1a1a1a;
-            padding: 1.25rem 2rem;
-        }
-        .sei-value {
+        .sei-card-value {
             font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 2.5rem;
             font-weight: 700;
             line-height: 1;
-            margin-bottom: 0.5rem;
         }
-        .sei-hero .sei-value {
-            font-size: 4rem;
-        }
-        .sei-small .sei-value {
-            font-size: 2.5rem;
-        }
-        .sei-label {
-            font-family: 'Bricolage Grotesque', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-        .sei-hero .sei-label {
-            color: rgba(255,255,255,0.7);
-        }
-        .sei-small .sei-label {
-            color: rgba(26,26,26,0.6);
+        .sei-card-label {
+            font-family: Georgia, serif;
+            font-size: 0.85rem;
+            color: #1a1a1a;
+            margin-top: 0.25rem;
         }
     </style>
 </head>
@@ -272,22 +246,6 @@
             <h2 class="section-title">Analysis</h2>
         </div>
 
-        <!-- SEI Cards -->
-        <div class="sei-container">
-            <div class="sei-card sei-small">
-                <span class="sei-value" id="sei-news">—</span>
-                <span class="sei-label">NEWS</span>
-            </div>
-            <div class="sei-card sei-hero">
-                <span class="sei-value" id="sei-overall">—</span>
-                <span class="sei-label">SOURCE EQUITY INDEX</span>
-            </div>
-            <div class="sei-card sei-small">
-                <span class="sei-value" id="sei-sport">—</span>
-                <span class="sei-label">SPORT</span>
-            </div>
-        </div>
-
         <div class="analysis-grid">
             <!-- Gender -->
             <div class="card">
@@ -313,6 +271,21 @@
                     <span class="gender-value">0% (0)</span>
                 </div>
                 <p class="gender-note"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+            </div>
+
+            <!-- SEI -->
+            <div class="card" style="grid-column: span 2;">
+                <h3 class="card-title">Source Equity Index</h3>
+                <div class="sei-grid">
+                    <div class="sei-card">
+                        <div class="sei-card-value" id="sei-news">—</div>
+                        <div class="sei-card-label">News</div>
+                    </div>
+                    <div class="sei-card">
+                        <div class="sei-card-value" id="sei-sport">—</div>
+                        <div class="sei-card-label">Sport</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Sections -->
@@ -710,10 +683,6 @@
             a.sei_score !== null && a.sei_score !== undefined && !a.sei_exempt
         );
 
-        const overall = validArticles.length > 0
-            ? Math.round(validArticles.reduce((sum, a) => sum + a.sei_score, 0) / validArticles.length)
-            : 0;
-
         const newsArticles = validArticles.filter(a =>
             (a.display_category || '').toLowerCase().includes('news')
         );
@@ -729,11 +698,10 @@
             : '—';
 
         // Update SEI display
-        document.getElementById('sei-overall').textContent = overall;
         document.getElementById('sei-news').textContent = newsSEI;
         document.getElementById('sei-sport').textContent = sportSEI;
 
-        console.log('SEI scores:', { overall, news: newsSEI, sport: sportSEI });
+        console.log('SEI scores:', { news: newsSEI, sport: sportSEI });
 
         // Gender breakdown
         const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
