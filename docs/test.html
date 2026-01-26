@@ -234,6 +234,23 @@
             line-height: 1;
             color: #1a1a1a;
         }
+        .sei-footnote {
+            font-size: 0.6rem;
+            font-style: italic;
+            color: #767676;
+            margin-top: 1rem;
+            text-align: left;
+            line-height: 1.4;
+            padding: 0 1rem;
+        }
+        .sei-footnote a {
+            color: #767676;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sei-footnote a:hover {
+            color: #1a1a1a;
+        }
     </style>
 </head>
 <body>
@@ -849,6 +866,7 @@
                         <div class="sei-compartment-value">${sportSEI}</div>
                     </div>
                 </div>
+                <p class="sei-footnote">Measures journalistic effort and sourcing integrity: who you quoted, who has agency, who you missed. <a href="#" onclick="showSEIMethodology(event)">See methodology</a>.</p>
             </div>
         `;
 
@@ -1465,6 +1483,12 @@
             closeRhythmModal();
         }
     });
+
+    // SEI Methodology modal (placeholder)
+    function showSEIMethodology(event) {
+        event.preventDefault();
+        alert('SEI Methodology\n\nThe Source Equity Index measures journalistic effort and sourcing integrity across three dimensions:\n\n1. Inclusion: Who you quoted\n2. Structural Agency: Who has decision-making power\n3. Impact Equity: Who is affected by the story\n\nFull methodology documentation coming soon.');
+    }
 </script>
 
 </body>
