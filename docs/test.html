@@ -118,6 +118,11 @@
         .modal-body { padding: 1.5rem; overflow-y: auto; }
         .modal-body p { margin-bottom: 1rem; line-height: 1.6; }
         .modal-body p:last-child { margin-bottom: 0; }
+        .modal-body ol { margin: 1rem 0; padding-left: 1.5rem; }
+        .modal-body ol li { margin-bottom: 0.75rem; line-height: 1.6; }
+        .modal-body em { font-style: italic; }
+        .modal-body strong { font-weight: 700; }
+        #seiModal .modal-content { background: #f5f2ed; max-width: 500px; }
         .modal-story { margin-bottom: 1.5rem; }
         .modal-story:last-child { margin-bottom: 0; }
         .modal-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
@@ -591,19 +596,23 @@
             <button class="modal-close" onclick="closeSEIModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>The Source Equity Index is grounded in equity scholarship and the principle of reparative sourcing. Journalism has historically over-relied on male voices; the SEI rewards deliberate effort to amplify women and non-binary sources, not as a quota, but as a corrective.</p>
+            <p>SEI measures sourcing integrity across three components:</p>
 
-            <p>The index measures sourcing integrity across three criteria: Inclusion, Structural Agency, and Impact Equity.</p>
+            <ol>
+                <li><em>Inclusion</em> — proportion of non-male sources quoted, with a penalty for single-source stories</li>
+                <li><em>Structural Agency</em> — whether non-male sources explain 'why' (experts, decision-makers) not just 'what happened'</li>
+                <li><em>Impact Equity</em> — coverage of key stakeholders, penalising 'ghost sources' who should have been contacted</li>
+            </ol>
 
-            <p><strong>Inclusion</strong> measures the proportion of non-male sources (women and non-binary) quoted in the story, with a penalty for single-source stories. <strong>Structural Agency</strong> tracks whether non-male sources are positioned as experts and decision-makers — those who explain 'why' — not just witnesses describing 'what happened'. <strong>Impact Equity</strong> maps the 'ideal universe' of stakeholders for a story, calibrated for student journalism, and rewards coverage of key voices. It penalises 'ghost sources' — voices who should have been contacted but weren't.</p>
+            <p>Components are weighted by story type:</p>
 
-            <p>Each story is measured against its own context, not a universal benchmark. A community feature and a policy story have different sourcing needs, so the component weights adapt. Stakeholders expected are specifically mapped to what each story demands: who is affected by this particular event, decision, or issue.</p>
+            <p><strong>SEI = (Inclusion × 0.3) + (Structural Agency × w) + (Impact Equity × (0.7 − w))</strong></p>
 
-            <p>Unlike simple gender-counting approaches, SEI assesses equity of sourcing in context. A men's football match or a prostate cancer story will appropriately feature male voices — we don't penalise that. But we reward the reporter who finds the non-obvious perspective: the female physio, the partner, the consultant. Professional work is validated; reparative effort is rewarded.</p>
+            <p>Each story is scored against its own context. Match reports, breaking news, and court reports are exempt.</p>
 
-            <p>Scores range from 0–100. Gender is inferred from first names; source roles are classified using AI language analysis. Match reports, breaking news, and court reports are exempt. All methods have known limitations.</p>
+            <p>Scores: 0–100. Gender inferred from first names; roles classified via AI. All methods have limitations.</p>
 
-            <p>The SEI is designed as guidance, not grading — a tool to build awareness of sourcing habits and encourage deliberate editorial choices.</p>
+            <p><em>Full methodology paper forthcoming.</em></p>
         </div>
     </div>
 </div>
