@@ -2312,10 +2312,11 @@ def extract_shorthand_content_new(shorthand_url):
 
         # Extract author from Shorthand byline
         author = None
+        # Limit to max 4 words, stop at common article words
         byline_patterns = [
-            r'By\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
-            r'Words\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
-            r'Written\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)',
+            r'By\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})(?=\s+(?:The|A|An|This|That|For|In|On|At|To|From|With)\b|\s*</|\s*$)',
+            r'Words\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})(?=\s+(?:The|A|An|This|That|For|In|On|At|To|From|With)\b|\s*</|\s*$)',
+            r'Written\s+by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})(?=\s+(?:The|A|An|This|That|For|In|On|At|To|From|With)\b|\s*</|\s*$)',
         ]
 
         # Look for byline in elements with relevant classes
@@ -2425,6 +2426,10 @@ def extract_shorthand_content_new(shorthand_url):
             print(f"    Shorthand images found: {images['total']}")
         if embeds['video_count'] > 0 or embeds['audio_count'] > 0:
             print(f"    Shorthand embeds found: {embeds['video_count']} video, {embeds['audio_count']} audio")
+
+        # Sanitize author name: strip whitespace, normalize spaces, limit length
+        if author:
+            author = re.sub(r'\s+', ' ', author).strip()[:100]
 
         return {
             'body_text': body_text,
@@ -2556,8 +2561,12 @@ def extract_shorthand_content(shorthand_url):
         image_count = len(shorthand_images)
 
         print(f"    Shorthand word count: {word_count}")
+
+        # Sanitize author name: strip whitespace, normalize spaces, limit length
         if author:
+            author = re.sub(r'\s+', ' ', author).strip()[:100]
             print(f"    Shorthand author: {author}")
+
         if image_count > 0:
             print(f"    Shorthand images found: {image_count}")
         return (text_for_quotes, word_count, author, shorthand_images)
@@ -2672,6 +2681,10 @@ def extract_article_metadata(url):
                     match = re.search(r'by\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)', byline_text)
                     if match:
                         author = match.group(1).strip()
+
+        # Sanitize author name: strip whitespace, normalize spaces, limit length
+        if author != "Unknown":
+            author = re.sub(r'\s+', ' ', author).strip()[:100]
 
         # Check if generic author
         generic_authors = ['editor green', 'editor', 'buzz', 'staff']
