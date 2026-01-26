@@ -6341,7 +6341,7 @@
       "id": "d8bc8a4e3dde",
       "headline": "Rapist sentenced following assault in Bournemouth home",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
-      "author": "Lewis Eyre",
+      "author": "Connor Hannon",
       "author_confidence": "high",
       "date": "2026-01-22",
       "time": "14:22",
@@ -6352,21 +6352,31 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 4,
       "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "Anonymous victim",
-          "type": "original",
-          "gender": "female"
+          "name": "The victim",
+          "quote_snippet": "What he did that night",
+          "role": "Victim"
+        },
+        {
+          "name": "The victim",
+          "quote_snippet": "I have said no",
+          "role": "Victim"
+        },
+        {
+          "name": "Chret Callender",
+          "quote_snippet": "Have some respect",
+          "role": "Defendant"
         },
         {
           "name": "Judge Fuller KC",
-          "type": "original",
-          "gender": "unknown"
+          "quote_snippet": "You behaved in an",
+          "role": "Judge"
         }
       ],
       "images": {
@@ -6762,7 +6772,7 @@
       "id": "24dd1996f853",
       "headline": "A Family Story of Survival",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/a-family-story-of-survival/",
-      "author": "Lewis Eyre",
+      "author": "Sub Editor",
       "author_confidence": "high",
       "date": "2026-01-23",
       "time": "14:59",
@@ -6774,12 +6784,23 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Melvyn Leach",
+          "quote_snippet": "I always knew Willy was born",
+          "role": "speaker"
+        },
+        {
+          "name": "Melvyn Leach",
+          "quote_snippet": "His real name is Akiba Halpert",
+          "role": "speaker"
+        }
+      ],
       "images": {
         "total": 8,
         "original": 8,
@@ -8772,7 +8793,7 @@
       "id": "2838086ca30b",
       "headline": "The football team that isn’t about football",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
-      "author": "Cameron Dennison\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe",
+      "author": "Cameron Dennison",
       "author_confidence": "high",
       "date": "2026-01-23",
       "time": "16:30",
