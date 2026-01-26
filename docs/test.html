@@ -582,6 +582,30 @@
     </div>
 </div>
 
+<div class="modal-overlay" id="seiModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">How We Calculate SEI</h3>
+            <button class="modal-close" onclick="closeSEIModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>The Source Equity Index is grounded in equity scholarship and the principle of reparative sourcing. Journalism has historically over-relied on male voices; the SEI rewards deliberate effort to amplify women and non-binary sources, not as a quota, but as a corrective.</p>
+
+            <p>The index measures sourcing integrity across three criteria: Inclusion, Structural Agency, and Impact Equity.</p>
+
+            <p><strong>Inclusion</strong> measures the proportion of non-male sources (women and non-binary) quoted in the story, with a penalty for single-source stories. <strong>Structural Agency</strong> tracks whether non-male sources are positioned as experts and decision-makers — those who explain 'why' — not just witnesses describing 'what happened'. <strong>Impact Equity</strong> maps the 'ideal universe' of stakeholders for a story, calibrated for student journalism, and rewards coverage of key voices. It penalises 'ghost sources' — voices who should have been contacted but weren't.</p>
+
+            <p>Each story is measured against its own context, not a universal benchmark. A community feature and a policy story have different sourcing needs, so the component weights adapt. Stakeholders expected are specifically mapped to what each story demands: who is affected by this particular event, decision, or issue.</p>
+
+            <p>Unlike simple gender-counting approaches, SEI assesses equity of sourcing in context. A men's football match or a prostate cancer story will appropriately feature male voices — we don't penalise that. But we reward the reporter who finds the non-obvious perspective: the female physio, the partner, the consultant. Professional work is validated; reparative effort is rewarded.</p>
+
+            <p>Scores range from 0–100. Gender is inferred from first names; source roles are classified using AI language analysis. Match reports, breaking news, and court reports are exempt. All methods have known limitations.</p>
+
+            <p>The SEI is designed as guidance, not grading — a tool to build awareness of sourcing habits and encourage deliberate editorial choices.</p>
+        </div>
+    </div>
+</div>
+
 <script>
     // Step 2: Wire up hero stats + date selector
     let metricsData = null;
@@ -1485,11 +1509,22 @@
         }
     });
 
-    // SEI Methodology modal (placeholder)
+    // SEI Methodology modal
     function showSEIMethodology(event) {
         event.preventDefault();
-        alert('SEI Methodology\n\nThe Source Equity Index measures journalistic effort and sourcing integrity across three dimensions:\n\n1. Inclusion: Who you quoted\n2. Structural Agency: Who has decision-making power\n3. Impact Equity: Who is affected by the story\n\nFull methodology documentation coming soon.');
+        document.getElementById('seiModal').classList.add('active');
     }
+
+    function closeSEIModal() {
+        document.getElementById('seiModal').classList.remove('active');
+    }
+
+    // Close SEI modal on overlay click
+    document.getElementById('seiModal').addEventListener('click', (e) => {
+        if (e.target.id === 'seiModal') {
+            closeSEIModal();
+        }
+    });
 </script>
 
 </body>
