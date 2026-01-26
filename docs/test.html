@@ -161,8 +161,7 @@
             background: white;
             border-radius: 6px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            padding: 1.5rem 1rem;
-            text-align: center;
+            padding: 1rem;
         }
         .sei-header {
             font-family: 'Bricolage Grotesque', sans-serif;
@@ -171,7 +170,8 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
             color: #767676;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            text-align: left;
         }
         .sei-hero-value {
             font-family: 'Bricolage Grotesque', sans-serif;
@@ -180,6 +180,7 @@
             line-height: 1;
             color: #1a1a1a;
             margin-bottom: 0.75rem;
+            text-align: center;
         }
         .sei-hero-value .sei-total {
             font-size: 1.75rem;
@@ -850,7 +851,7 @@
         // SEI unified box
         html += `
             <div class="sei-unified-box" style="grid-column: span 2;">
-                <h3 class="sei-header">Source Equity Index</h3>
+                <h3 class="sei-header">Source Equity Inde<span style="color: #c41230;">x</span></h3>
                 <div class="sei-hero-value">${overallSEI}<span class="sei-total">/100</span></div>
                 <div class="sei-bar-track">
                     <div class="sei-bar-fill" style="width: ${overallSEI}%"></div>
@@ -866,7 +867,7 @@
                         <div class="sei-compartment-value">${sportSEI}</div>
                     </div>
                 </div>
-                <p class="sei-footnote">Measures journalistic effort and sourcing integrity: who you quoted, who has agency, who you missed. <a href="#" onclick="showSEIMethodology(event)">See methodology</a>.</p>
+                <p class="sei-footnote"><span style="color: #c41230; font-weight: 600;">x</span> Measures journalistic effort and sourcing integrity: who you quoted, who has agency, who you missed. <a href="#" onclick="showSEIMethodology(event)">See methodology</a>.</p>
             </div>
         `;
 
