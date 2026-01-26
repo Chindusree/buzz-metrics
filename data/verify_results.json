@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-23T17:52:47Z",
-  "total_verified": 159,
+  "last_updated": "2026-01-26T08:34:02Z",
+  "total_verified": 215,
   "results": [
     {
       "id": "bcp-council-vote-on-tax-base-proposal",
@@ -2169,6 +2169,728 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/16-cup-finals-left-bashleys-fight-for-survival/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "bcp-disabled-parking-poole-quay",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Small",
+          "context": "PERSON within 50 chars of quote: ...“Disabled people are excluded from these events,” Small said. “The event may not start until 7pm but they..."
+        },
+        {
+          "name": "Simon Bull",
+          "context": "PERSON within 50 chars of quote: ...ability groups, is needed. Green Party Councillor Simon Bull said: “This isn’t just about parking, it’s about ..."
+        },
+        {
+          "name": "Maisie Edwin",
+          "context": "PERSON within 50 chars of quote: ...suspended, accessibility shouldn’t be either.” By Maisie Edwin Category:Bournemouth,Ethics,Local,News,News Top,P..."
+        }
+      ]
+    },
+    {
+      "id": "breaking-manchester-united-appoint-michael-carrick-as-head-coach",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-manchester-united-appoint-michael-carrick-as-head-coach/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "buzz-bits-episode-1-deepfakes-and-a-i-being-used-malicously",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-bits-episode-1-deepfakes-and-a-i-being-used-malicously/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "contract-extension-for-hampshire-hawks-james-vince",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/contract-extension-for-hampshire-hawks-james-vince/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Matt Perry-Lewis",
+          "context": "PERSON within 50 chars of quote: ...having played for the club since 2009. His agent, Matt Perry-Lewis, said: “It means a great deal, obviously, because..."
+        },
+        {
+          "name": "Vince",
+          "context": "PERSON within 50 chars of quote: ...e, so it’s something he’s very passionate about.” Vince is the all-time run-scoring leader of the T20 Vit..."
+        },
+        {
+          "name": "Perry-Lewis",
+          "context": "PERSON within 50 chars of quote: ...eaking on the decision to extend his contract, Mr Perry-Lewis added: “What’s driving him is his continued succe..."
+        },
+        {
+          "name": "Hampshire",
+          "context": "PERSON within 50 chars of quote: ...“What’s driving him is his continued success with Hampshire. “So no, there was no one else that we were enter..."
+        }
+      ]
+    },
+    {
+      "id": "eyewitness-account-of-boscombe-sovereign-centre-fire",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/eyewitness-account-of-boscombe-sovereign-centre-fire/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Dorset Fire and Rescue",
+          "context": "PERSON within 50 chars of quote: ... following reports of an internal panelling fire. Dorset Fire and Rescue said: “Rescue teams from Westbourne, Springbourne..."
+        },
+        {
+          "name": "Westbourne",
+          "context": "PERSON within 50 chars of quote: .... Dorset Fire and Rescue said: “Rescue teams from Westbourne, Springbourne and Christchurch responded.” The te..."
+        },
+        {
+          "name": "Springbourne",
+          "context": "PERSON within 50 chars of quote: ...e and Rescue said: “Rescue teams from Westbourne, Springbourne and Christchurch responded.” The team was able to..."
+        },
+        {
+          "name": "Boscombe",
+          "context": "PERSON within 50 chars of quote: ...c at 12 O’clock for  business as usual.” Category:Boscombe,Dorset,Local,News,News TopTag:Boscombe,Dorset,Dor..."
+        }
+      ]
+    },
+    {
+      "id": "man-dies-in-bournemouth-after-electric-scooter-collision",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-dies-in-bournemouth-after-electric-scooter-collision/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "ringwood-town-vs-newport-iow-wessex-league-clash-postponed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ringwood-town-vs-newport-iow-wessex-league-clash-postponed/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Fran Mathers",
+          "context": "PERSON within 50 chars of quote: ...ue to a frozen goalmouth. After the game, manager Fran Mathers said: “Due to the game postponement we now face a..."
+        }
+      ]
+    },
+    {
+      "id": "semenyo-in-focus-as-newcastle-host-manchester-city-in-efl-cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-in-focus-as-newcastle-host-manchester-city-in-efl-cup/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "womens-fa-cup-trophy-visits-bournemouth-ahead-of-tough-tie",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/womens-fa-cup-trophy-visits-bournemouth-ahead-of-tough-tie/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Helen Bleazard",
+          "context": "PERSON within 50 chars of quote: ...ring rain on what was a gloomy afternoon. Manager Helen Bleazard said: “I literally told them about 20 minutes bef..."
+        },
+        {
+          "name": "Bleazard",
+          "context": "PERSON within 50 chars of quote: ...elve games and are unbeaten in the league so far. Bleazard said: “Our game got called off at the weekend, so..."
+        }
+      ]
+    },
+    {
+      "id": "afc-bournemouth-linked-with-next-szoboszlai",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-linked-with-next-szoboszlai/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Bevan",
+          "context": "PERSON within 50 chars of quote: ...r the top of the table, was extremely important”. Bevan was thrilled with continuing the side’s good form..."
+        },
+        {
+          "name": "Remy Rees-Dottin",
+          "context": "PERSON within 50 chars of quote: ... but also to put on such a dominant performance.” Remy Rees-Dottin, who grabbed an assist, was also happy with the w..."
+        },
+        {
+          "name": "Rees-Dottin’s",
+          "context": "PERSON within 50 chars of quote: ...elopment squad matches and training really well”. Rees-Dottin’s appearance at St James’ Park was his second, havi..."
+        }
+      ]
+    },
+    {
+      "id": "bcpissuedyellowweatherwarning",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcpissuedyellowweatherwarning/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "bournemouth-women-to-play-manchester-city-at-snows-stadium",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-women-to-play-manchester-city-at-snows-stadium/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "college-staff-to-strike-this-week",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/college-staff-to-strike-this-week/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "council-owned-leisure-centre-set-for-expansion",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "national-sticker-day-saving-bournemouth-stationary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/national-sticker-day-saving-bournemouth-stationary/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "rain-hinders-raducanus-austrailian-open-preperation",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "the-upton-country-park-closure",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-upton-country-park-closure/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "bournemouth-u-21s-beat-charlton",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u-21s-beat-charlton/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "breaking-carrick-close-to-manchester-united-job",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-carrick-close-to-manchester-united-job/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "fire-in-boscombe",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/fire-in-boscombe/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "southamptonfacup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southamptonfacup/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "we-were-given-a-2-chance-poole-towns-campbells-baller-league-miricale",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/we-were-given-a-2-chance-poole-towns-campbells-baller-league-miricale/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Ross Cable",
+          "context": "PERSON within 50 chars of quote: ...raining session my coach mentioned it. “My coach, Ross Cable, asked me if I wanted to be involved as a wildcar..."
+        },
+        {
+          "name": "Pat Suraci",
+          "context": "PERSON within 50 chars of quote: ... of football that I can. “I have to say thanks to Pat Suraci, Joe Lea and others at Poole for allowing me to p..."
+        },
+        {
+          "name": "Joe Lea",
+          "context": "PERSON within 50 chars of quote: ... that I can. “I have to say thanks to Pat Suraci, Joe Lea and others at Poole for allowing me to play in it..."
+        },
+        {
+          "name": "Jacob Deighton",
+          "context": "PERSON within 50 chars of quote: ...y’s final. (Kris Campbell warming up. Photograph: Jacob Deighton.) Campbell said: “The whole of Saturday night I h..."
+        }
+      ]
+    },
+    {
+      "id": "why-you-should-eat-a-frog-before-9am",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-you-should-eat-a-frog-before-9am/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "advantage-padel-set-to-open-ambitious-venue-in-christchurch",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/advantage-padel-set-to-open-ambitious-venue-in-christchurch/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "chris-billam-smith-reveals-ideal-timeline-for-return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/chris-billam-smith-reveals-ideal-timeline-for-return/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Chris",
+          "context": "PERSON within 50 chars of quote: .../  byZack Walker Bournemouth born and bred boxer, Chris “The Gentleman” Billam-Smith, spoke to BUZZ News ..."
+        },
+        {
+          "name": "Billam-Smith",
+          "context": "PERSON within 50 chars of quote: ...emouth born and bred boxer, Chris “The Gentleman” Billam-Smith, spoke to BUZZ News with an exclusive revealing w..."
+        },
+        {
+          "name": "Connor Hannon",
+          "context": "PERSON within 50 chars of quote: ...nk Jr vs Benn undercard. Buzz News correspondent, Connor Hannon, spoke to Billam-Smith about his return “Next ste..."
+        }
+      ]
+    },
+    {
+      "id": "christchurch-chef-reveals-excitement-over-new-locally-produced-menus",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Quentin",
+          "context": "PERSON within 50 chars of quote: ...cal produce runs through all the menus,” he said. Quentin also described using the produce as “a local comm..."
+        },
+        {
+          "name": "Simon",
+          "context": "PERSON within 50 chars of quote: ...ing businesses closed down in 2025. On the topic, Simon said that he felt “proud” of the restaurant’s new..."
+        }
+      ]
+    },
+    {
+      "id": "f-you-the-goalkeeping-gloves-for-charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Shaw",
+          "context": "PERSON within 50 chars of quote: ...e gloves Sandy Overshot Shaw during the interview Shaw during the interview The F You Range. \"Affordable..."
+        },
+        {
+          "name": "Ben",
+          "context": "PERSON within 50 chars of quote: ... local Bournemouth brand as their chosen partner. Ben was an \"incredible\" footballer, who's career was ..."
+        },
+        {
+          "name": "Dorset Mind",
+          "context": "PERSON within 50 chars of quote: ...golf brand, Shaw Golf Coaching are partnered with Dorset Mind, which Shaw says is \"massive\" for him. He said: \"..."
+        },
+        {
+          "name": "Katie Scadding",
+          "context": "PERSON within 50 chars of quote: ...e for more charity work.\" AFCB Women's goalkeeper Katie Scadding is sponsored by Shaw, and although she hasn't had..."
+        }
+      ]
+    },
+    {
+      "id": "further-tickets-released-for-afcb-womens-fa-cup-clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/further-tickets-released-for-afcb-womens-fa-cup-clash/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "hennessy-excited-by-chance-to-test-herself-against-city",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hennessy-excited-by-chance-to-test-herself-against-city/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Defender Jessica Hennessy",
+          "context": "PERSON within 50 chars of quote: ...nday’s match, a rare experience for the Cherries. Defender Jessica Hennessy said: “Naturally you’re going to be nervous, you’..."
+        },
+        {
+          "name": "Hennessy",
+          "context": "PERSON within 50 chars of quote: ... probably one of the biggest games of my career.” Hennessy said: “If I’m starting, I am excited about playin..."
+        },
+        {
+          "name": "Bunny Shaw",
+          "context": "PERSON within 50 chars of quote: ...yself but she might score five goals off me now.” Bunny Shaw leads the WSL scoring charts with twelve goals in..."
+        },
+        {
+          "name": "Macclesfield",
+          "context": "PERSON within 50 chars of quote: ... their own on Sunday. Hennessy said: “I think the Macclesfield game puts the cherry on top for us because we kno..."
+        }
+      ]
+    },
+    {
+      "id": "john-keating-fundraiser-blows-the-target-out-of-the-park",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/john-keating-fundraiser-blows-the-target-out-of-the-park/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Sam",
+          "context": "PERSON within 50 chars of quote: ...le presentations and tournament nights for stars, Sam stated that he would always help out as he was “j..."
+        },
+        {
+          "name": "Keating",
+          "context": "PERSON within 50 chars of quote: ...draiser has been so successful. Bayston described Keating as “the most selfless man ever”, and that “there ..."
+        },
+        {
+          "name": "John",
+          "context": "PERSON within 50 chars of quote: ... ever”, and that “there was no task too small for John to go to”, and that he didn’t care if there was m..."
+        }
+      ]
+    },
+    {
+      "id": "pooles-counter-terrorism-team-test-their-emergency-responses",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/pooles-counter-terrorism-team-test-their-emergency-responses/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Constable Steve Lyne",
+          "context": "PERSON within 50 chars of quote: ...he worst happen.” Dorset Police’s Assistant Chief Constable Steve Lyne said: “We were delighted to host the exercise her..."
+        },
+        {
+          "name": "Brian Murphy",
+          "context": "PERSON within 50 chars of quote: ...e to a major incident with our partners.” Captain Brian Murphy, Chief Executive Officer of Poole Harbour Commiss..."
+        },
+        {
+          "name": "Jo Bussell",
+          "context": "PERSON within 50 chars of quote: ...d in the planning and delivery of this exercise.” Jo Bussell, Brittany Ferries’ Director UK Ports said: “Takin..."
+        },
+        {
+          "name": "UK Ports",
+          "context": "PERSON within 50 chars of quote: ...exercise.” Jo Bussell, Brittany Ferries’ Director UK Ports said: “Taking part in training exercises supports..."
+        }
+      ]
+    },
+    {
+      "id": "two-people-jailed-following-deliberate-collisions-in-bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-people-jailed-following-deliberate-collisions-in-bournemouth/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Zoe Treadwell",
+          "context": "PERSON within 50 chars of quote: ...Team, said: “The violent and senseless actions of Zoe Treadwell and Jonjay Harrison resulted in the tragic death ..."
+        },
+        {
+          "name": "Treadwell",
+          "context": "PERSON within 50 chars of quote: ...ccurred the following month. “We are pleased that Treadwell and Harrison are now behind bars and facing justi..."
+        },
+        {
+          "name": "Harrison",
+          "context": "PERSON within 50 chars of quote: ...llowing month. “We are pleased that Treadwell and Harrison are now behind bars and facing justice for their ..."
+        },
+        {
+          "name": "Joey Johnstone’s",
+          "context": "PERSON within 50 chars of quote: ...r despicable offending. “Our thoughts remain with Joey Johnstone’s partner, children and the rest of his family and ..."
+        },
+        {
+          "name": "Kate Lewis",
+          "context": "PERSON within 50 chars of quote: ...children and the rest of his family and friends.” Kate Lewis, Senior District Crown Prosecutor, of the Crown P..."
+        }
+      ]
+    },
+    {
+      "id": "andoniiraolablog",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoniiraolablog/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Brighton",
+          "context": "PERSON within 50 chars of quote: ...vel” says Iraola, speaking on Jimenez. 1.18pm- On Brighton playing out from the back: “It’s not just Van Hec..."
+        },
+        {
+          "name": "Van Hecke",
+          "context": "PERSON within 50 chars of quote: ...righton playing out from the back: “It’s not just Van Hecke, all of their defenders and midfielders are very ..."
+        }
+      ]
+    },
+    {
+      "id": "blandford-mens-hockey-team-searching-for-back-to-back-promotions",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/blandford-mens-hockey-team-searching-for-back-to-back-promotions/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Lewis",
+          "context": "PERSON within 50 chars of quote: ...a new team, we had to start right at the bottom”, Lewis told Buzz News. Blandford then achieved a double ..."
+        }
+      ]
+    },
+    {
+      "id": "bournemouth-and-poole-college-staff-strike-update",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-and-poole-college-staff-strike-update/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Peter Cooper",
+          "context": "PERSON within 50 chars of quote: ..., and this is not reflected by the unions,” added Peter Cooper, a labour councillor in Hamworthy. “This resistan..."
+        }
+      ]
+    },
+    {
+      "id": "bournemouth-bagel-shop-on-national-bagel-day",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-bagel-shop-on-national-bagel-day/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Cam Sing",
+          "context": "PERSON within 50 chars of quote: ... Lansdowne Holdenhurst road. Bagels by Soho chef, Cam Sing said: “I love bagels, I eat and make them everyda..."
+        },
+        {
+          "name": "Sing",
+          "context": "PERSON within 50 chars of quote: ...t in the oven with an egg wash and any seeds. Mr. Sing said: “He (the owner) saw a gap in the market. Wh..."
+        },
+        {
+          "name": "Maria Balinska",
+          "context": "PERSON within 50 chars of quote: ...and he brought over some jalapeño flavored ones.” Maria Balinska wrote the book “The Bagel: The Surprising History..."
+        }
+      ]
+    },
+    {
+      "id": "breaking-romain-faivre-joins-auxerre-on-loan",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-romain-faivre-joins-auxerre-on-loan/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "dorset-basketball-on-the-rise-ahead-of-london-nba-game",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-basketball-on-the-rise-ahead-of-london-nba-game/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Skiotys",
+          "context": "PERSON within 50 chars of quote: ...cal basketball community in Bournemouth. On this, Skiotys said: “I started it as a community project with f..."
+        },
+        {
+          "name": "Dan Middleton",
+          "context": "PERSON within 50 chars of quote: ... big selling point for players joining the club.” Dan Middleton is also a player for the Bournemouth Oaks whose s..."
+        },
+        {
+          "name": "Dorset",
+          "context": "PERSON within 50 chars of quote: ...ene playing for the Solent Kestrels. He says: “If Dorset can contribute that much to basketball in the loc..."
+        },
+        {
+          "name": "Middleton",
+          "context": "PERSON within 50 chars of quote: ...ing part with 100 players overall. On this event, Middleton said: “There’s hundreds of people, there’s a grea..."
+        }
+      ]
+    },
+    {
+      "id": "museum-of-east-dorset-calls-for-unwanted-christmas-presents",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/museum-of-east-dorset-calls-for-unwanted-christmas-presents/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Andy Putt",
+          "context": "PERSON within 50 chars of quote: ...ays looking for ways of raising money and funds,” Andy Putt, the museum manager said. “So people giving it to..."
+        },
+        {
+          "name": "Francesca Hollow",
+          "context": "PERSON within 50 chars of quote: ...oney and raising money for the charity.” Director Francesca Hollow said: “We always need good-quality raffle and tom..."
+        },
+        {
+          "name": "Putt",
+          "context": "PERSON within 50 chars of quote: ... relocate gifts that otherwise would go to waste. Putt said: “We tried it last year [2024] and it was a ..."
+        }
+      ]
+    },
+    {
+      "id": "pga-tour-returning-player-offer-issued-to-four-stars",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/pga-tour-returning-player-offer-issued-to-four-stars/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Harry Shaw",
+          "context": "PERSON within 50 chars of quote: ...same amount of weight as it would do in the PGA.” Harry Shaw, a golf coach, also commented as to why he believ..."
+        },
+        {
+          "name": "John Rahm",
+          "context": "PERSON within 50 chars of quote: ...acy, and the PGA is the only place to gain that.” John Rahm, Bryson DeChambeau and Cam Smith have since rejec..."
+        },
+        {
+          "name": "Bryson DeChambeau",
+          "context": "PERSON within 50 chars of quote: ...e PGA is the only place to gain that.” John Rahm, Bryson DeChambeau and Cam Smith have since rejected the returning p..."
+        },
+        {
+          "name": "Cam Smith",
+          "context": "PERSON within 50 chars of quote: ...e to gain that.” John Rahm, Bryson DeChambeau and Cam Smith have since rejected the returning player offer, s..."
+        }
+      ]
+    },
+    {
+      "id": "winter-flower-hunt-at-local-park",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/winter-flower-hunt-at-local-park/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "bashley-face-tavistock-in-fight-for-safety",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-face-tavistock-in-fight-for-safety/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Williamson",
+          "context": "PERSON within 50 chars of quote: ...an has been extended until the end of the season. Williamson said: “Oscar has already put in a number of good ..."
+        },
+        {
+          "name": "Oscar",
+          "context": "PERSON within 50 chars of quote: ...ed until the end of the season. Williamson said: “Oscar has already put in a number of good performances,..."
+        }
+      ]
+    },
+    {
+      "id": "cherries-in-talks-for-brazilian-wonderkid-rayan",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-in-talks-for-brazilian-wonderkid-rayan/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "dorset-solicitor-is-running-the-london-marathon-for-local-ymca",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-solicitor-is-running-the-london-marathon-for-local-ymca/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Mark",
+          "context": "PERSON within 50 chars of quote: ...ike a good time to take on a new challenge,” said Mark. “I’ve always enjoyed watching it on TV, and I’ve..."
+        },
+        {
+          "name": "Lester Aldridge",
+          "context": "PERSON within 50 chars of quote: ...ith how it’s gone so far,” he said. Both Mark and Lester Aldridge have been long-time supporters of YMCA Bournemout..."
+        },
+        {
+          "name": "Lesley Fereti",
+          "context": "PERSON within 50 chars of quote: ...ant role in our local community,” Mark explained. Lesley Fereti, a colleague of Mark’s at Lester Aldridge solicit..."
+        },
+        {
+          "name": "Mark’s",
+          "context": "PERSON within 50 chars of quote: ...y,” Mark explained. Lesley Fereti, a colleague of Mark’s at Lester Aldridge solicitors said:“We’re incredi..."
+        },
+        {
+          "name": "YMCA Bournemouth",
+          "context": "PERSON within 50 chars of quote: ... nationally. “At Lester Aldridge, we’ve supported YMCA Bournemouth for many years, including taking part in the Big ..."
+        }
+      ]
+    },
+    {
+      "id": "how-do-bournemouth-live-without-antoine-semenyo",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/how-do-bournemouth-live-without-antoine-semenyo/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Semenyo",
+          "context": "PERSON within 50 chars of quote: ...t cheaper than I think what he’s probably worth.” Semenyo signed a new contract with the club in the summer..."
+        },
+        {
+          "name": "Andoni Iraola",
+          "context": "PERSON within 50 chars of quote: ...hts of Semenyo, something acknowledged by manager Andoni Iraola. After the move was confirmed, he said: “He is a ..."
+        },
+        {
+          "name": "Ben Phillips",
+          "context": "PERSON within 50 chars of quote: ...d no one wants to lose a good player in January.” Ben Phillips, from the ‘Back of the Net’ Podcast, says he hope..."
+        },
+        {
+          "name": "Bill Foley’s",
+          "context": "PERSON within 50 chars of quote: ... summer transfer window was probably our worst in Bill Foley’s (the owner) history. “But we have signed a lot of..."
+        },
+        {
+          "name": "Horsley",
+          "context": "PERSON within 50 chars of quote: ...lents when clubs triple your size put offers in.” Horsley is confident that the recruitment team will be ab..."
+        }
+      ]
+    },
+    {
+      "id": "mp-urges-tighter-regulation-after-leaving-x",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mp-urges-tighter-regulation-after-leaving-x/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "X.\nDr",
+          "context": "PERSON within 50 chars of quote: ...mpared to the comments she described as “vile” on X. Dr Amy Tatum, communication and media lecturer at Bo..."
+        },
+        {
+          "name": "Amy Tatum",
+          "context": "PERSON within 50 chars of quote: ... to the comments she described as “vile” on X. Dr Amy Tatum, communication and media lecturer at Bournemouth ..."
+        },
+        {
+          "name": "Grok",
+          "context": "PERSON within 50 chars of quote: ... she said. Dr Tatum said the inappropriate use of Grok “speaks to the environment that we as women live ..."
+        },
+        {
+          "name": "Vikki Slade",
+          "context": "PERSON within 50 chars of quote: ...It raises the discussion on increased regulation. Vikki Slade said, “the more of us that make a stand now, the ..."
+        }
+      ]
+    },
+    {
+      "id": "olivier-award-winning-dear-england-tour-kicks-off-in-southampton",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/olivier-award-winning-dear-england-tour-kicks-off-in-southampton/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "rnli-stories-of-courage-exhibition-to-be-launched",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rnli-stories-of-courage-exhibition-to-be-launched/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Alison Hulme",
+          "context": "PERSON within 50 chars of quote: ...for everyone,” she said. The project’s organiser, Alison Hulme, said that the RNLI’s aim is to ensure that the w..."
+        },
+        {
+          "name": "Ms Hulme",
+          "context": "PERSON within 50 chars of quote: ... we want to inspire visitors with these stories.” Ms Hulme explained that she hopes that the stories of the ..."
+        }
+      ]
+    },
+    {
+      "id": "weymouth-advance-to-dorset-senior-cup-final-local-football-round-up",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/weymouth-advance-to-dorset-senior-cup-final-local-football-round-up/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "woman-to-appear-in-court-over-serious-collision",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/woman-to-appear-in-court-over-serious-collision/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "bournemouth-run-club-celebrates-four-years-of-community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "William Vaughan",
+          "context": "PERSON within 50 chars of quote: ...t local coffee shops. “It fills me with joy” says William Vaughan, a member of Sole Clinic, who spoke about how he ..."
+        }
+      ]
+    },
+    {
+      "id": "ellingham-and-ringwood-rugby-club-celebrate-anniversary-with-funding-boost",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ellingham-and-ringwood-rugby-club-celebrate-anniversary-with-funding-boost/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Mark Johnson",
+          "context": "PERSON within 50 chars of quote: ...o celebrate this. Director of rugby for the club, Mark Johnson said: “We knew there was a grant available due to..."
+        },
+        {
+          "name": "Johnson",
+          "context": "PERSON within 50 chars of quote: ...ween the Rugby Football Union (RFU) and the club, Johnson said: “It has definitely improved local rugby and..."
+        }
+      ]
+    },
+    {
+      "id": "formercherrykepahelpsarsenalbeatchelsea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/formercherrykepahelpsarsenalbeatchelsea/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "over-110-drink-driving-arrest-made-during-campaign",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/over-110-drink-driving-arrest-made-during-campaign/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Joe Wheable",
+          "context": "PERSON within 50 chars of quote: ...been driving while under the influence. Inspector Joe Wheable, of the Roads Policing Team said: “These figures ..."
+        },
+        {
+          "name": "David Sidwick",
+          "context": "PERSON within 50 chars of quote: ... action to protect all road users across Dorset.” David Sidwick, the Dorset Police and Crime Commissioner, praise..."
+        },
+        {
+          "name": "Sidwick",
+          "context": "PERSON within 50 chars of quote: ...ies during one of the busiest times of the year,” Sidwick said. “The operation led to 118 arrests, sending ..."
+        }
+      ]
+    },
+    {
+      "id": "we-are-human-are-providing-life-saving-sleep-pods-for-homeless",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/we-are-human-are-providing-life-saving-sleep-pods-for-homeless/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Andrew",
+          "context": "PERSON within 50 chars of quote: ...n, helping people less fortunate than ourselves.” Andrew founded We Are Human over 20 years ago, but only ..."
+        }
+      ]
     }
   ]
 }

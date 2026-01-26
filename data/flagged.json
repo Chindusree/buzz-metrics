@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-23T17:52:49Z",
-  "total_flagged": 67,
+  "generated": "2026-01-26T08:34:04Z",
+  "total_flagged": 91,
   "flagged_articles": [
     {
       "id": "bcp-council-vote-on-tax-base-proposal",
@@ -2559,6 +2559,948 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "bcp-disabled-parking-poole-quay",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+      "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Sharon Small",
+        "Simon Bull"
+      ],
+      "verify_evidence": [
+        "Small",
+        "Simon Bull",
+        "Maisie Edwin"
+      ],
+      "confirmed": [
+        {
+          "name": "Sharon Small",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Simon Bull",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Maisie Edwin",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "contract-extension-for-hampshire-hawks-james-vince",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/contract-extension-for-hampshire-hawks-james-vince/",
+      "headline": "Contract Extension for Hampshire Hawks’ James Vince",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Matt Perry-Lewis"
+      ],
+      "verify_evidence": [
+        "Matt Perry-Lewis",
+        "Vince",
+        "Perry-Lewis",
+        "Hampshire"
+      ],
+      "confirmed": [
+        {
+          "name": "Matt Perry-Lewis",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Vince",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Hampshire"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "eyewitness-account-of-boscombe-sovereign-centre-fire",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/eyewitness-account-of-boscombe-sovereign-centre-fire/",
+      "headline": "Eyewitness account of Boscombe Sovereign Centre fire",
+      "scrape_count": 3,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 4,
+      "scrape_evidence": [
+        "Mr. B",
+        "Sovereign Centre spokesperson",
+        "Dorset Fire and Rescue"
+      ],
+      "verify_evidence": [
+        "Dorset Fire and Rescue",
+        "Westbourne",
+        "Springbourne",
+        "Boscombe"
+      ],
+      "confirmed": [
+        {
+          "name": "Mr. B",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Sovereign Centre spokesperson",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Dorset Fire and Rescue",
+        "Westbourne",
+        "Springbourne",
+        "Boscombe"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "ringwood-town-vs-newport-iow-wessex-league-clash-postponed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ringwood-town-vs-newport-iow-wessex-league-clash-postponed/",
+      "headline": "Ringwood Town vs Newport (IOW) Wessex League clash postponed",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Fran Mathers"
+      ],
+      "verify_evidence": [
+        "Fran Mathers"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Fran Mathers"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
+      "headline": "AFC Bournemouth Under-21’s reflect on Charlton victory",
+      "scrape_count": 3,
+      "verify_count": 3,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Ethan Sills",
+        "Owen Bevan",
+        "Remy Rees-Dottin"
+      ],
+      "verify_evidence": [
+        "Bevan",
+        "Remy Rees-Dottin",
+        "Rees-Dottin’s"
+      ],
+      "confirmed": [
+        {
+          "name": "Ethan Sills",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Owen Bevan",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Remy Rees-Dottin",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Rees-Dottin’s"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "college-staff-to-strike-this-week",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/college-staff-to-strike-this-week/",
+      "headline": "Bournemouth and Poole College staff to strike this week",
+      "scrape_count": 2,
+      "verify_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jo Grady",
+        "Bournemouth and Poole college spokesperson"
+      ],
+      "verify_evidence": [],
+      "confirmed": [
+        {
+          "name": "Jo Grady",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Bournemouth and Poole college spokesperson"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "fire-in-boscombe",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/fire-in-boscombe/",
+      "headline": "Sovereign shopping centre in Boscombe reopens after fire",
+      "scrape_count": 1,
+      "verify_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Dorset Fire and Rescue"
+      ],
+      "verify_evidence": [],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Dorset Fire and Rescue"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "we-were-given-a-2-chance-poole-towns-campbells-baller-league-miricale",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/we-were-given-a-2-chance-poole-towns-campbells-baller-league-miricale/",
+      "headline": "‘We were given a 2% chance’: Poole Town’s Campbell’s Baller League Miricale",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Kristian Campbell"
+      ],
+      "verify_evidence": [
+        "Ross Cable",
+        "Pat Suraci",
+        "Joe Lea",
+        "Jacob Deighton"
+      ],
+      "confirmed": [
+        {
+          "name": "Kristian Campbell",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Pat Suraci",
+          "gender": "unknown"
+        },
+        {
+          "name": "Joe Lea",
+          "gender": "male"
+        },
+        {
+          "name": "Jacob Deighton",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Ross Cable"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "chris-billam-smith-reveals-ideal-timeline-for-return",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/chris-billam-smith-reveals-ideal-timeline-for-return/",
+      "headline": "Boxer Chris Billam-Smith reveals ideal timeline for return",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Chris Billam-Smith"
+      ],
+      "verify_evidence": [
+        "Chris",
+        "Billam-Smith",
+        "Connor Hannon"
+      ],
+      "confirmed": [
+        {
+          "name": "Chris Billam-Smith",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Connor Hannon",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "f-you-the-goalkeeping-gloves-for-charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
+      "headline": "F You: the goalkeeping gloves for charity",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Harry Shaw"
+      ],
+      "verify_evidence": [
+        "Shaw",
+        "Ben",
+        "Dorset Mind",
+        "Katie Scadding"
+      ],
+      "confirmed": [
+        {
+          "name": "Harry Shaw",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Ben",
+          "gender": "male"
+        },
+        {
+          "name": "Dorset Mind",
+          "gender": "unknown"
+        },
+        {
+          "name": "Katie Scadding",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "hennessy-excited-by-chance-to-test-herself-against-city",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/hennessy-excited-by-chance-to-test-herself-against-city/",
+      "headline": "Hennessy excited by chance to test herself against City",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jessica Hennessy"
+      ],
+      "verify_evidence": [
+        "Defender Jessica Hennessy",
+        "Hennessy",
+        "Bunny Shaw",
+        "Macclesfield"
+      ],
+      "confirmed": [
+        {
+          "name": "Jessica Hennessy",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Bunny Shaw",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Macclesfield"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "john-keating-fundraiser-blows-the-target-out-of-the-park",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/john-keating-fundraiser-blows-the-target-out-of-the-park/",
+      "headline": "John Keating Fundraiser blows the target out of the Park",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Sam Bayston"
+      ],
+      "verify_evidence": [
+        "Sam",
+        "Keating",
+        "John"
+      ],
+      "confirmed": [
+        {
+          "name": "Sam Bayston",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "John",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Keating"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "pooles-counter-terrorism-team-test-their-emergency-responses",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/pooles-counter-terrorism-team-test-their-emergency-responses/",
+      "headline": "Poole’s counter terrorism team test their emergency responses",
+      "scrape_count": 4,
+      "verify_count": 4,
+      "confirmed_count": 4,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Andy Hill",
+        "Steve Lyne",
+        "Brian Murphy",
+        "Jo Bussell"
+      ],
+      "verify_evidence": [
+        "Constable Steve Lyne",
+        "Brian Murphy",
+        "Jo Bussell",
+        "UK Ports"
+      ],
+      "confirmed": [
+        {
+          "name": "Andy Hill",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Steve Lyne",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Brian Murphy",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Jo Bussell",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "UK Ports"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "two-people-jailed-following-deliberate-collisions-in-bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-people-jailed-following-deliberate-collisions-in-bournemouth/",
+      "headline": "Two people jailed following e-bike murder in Bournemouth",
+      "scrape_count": 8,
+      "verify_count": 5,
+      "confirmed_count": 8,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Sophie Quinn",
+        "Michelle Rush",
+        "Mr Justice Linden",
+        "Alisdair Williamson KC",
+        "Nicholas Hagan KC",
+        "Sarah Jones KC",
+        "Detective Inspector Mark Jenkins",
+        "Kate Lewis"
+      ],
+      "verify_evidence": [
+        "Zoe Treadwell",
+        "Treadwell",
+        "Harrison",
+        "Joey Johnstone’s",
+        "Kate Lewis"
+      ],
+      "confirmed": [
+        {
+          "name": "Sophie Quinn",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Michelle Rush",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Justice Linden",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Alisdair Williamson KC",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Nicholas Hagan KC",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Sarah Jones KC",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Detective Inspector Mark Jenkins",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Kate Lewis",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Zoe Treadwell",
+          "gender": "female"
+        },
+        {
+          "name": "Harrison",
+          "gender": "male"
+        },
+        {
+          "name": "Joey Johnstone’s",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "andoniiraolablog",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoniiraolablog/",
+      "headline": "BLOG: The latest from Bournemouth boss Andoni Iraola",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Andoni Iraola"
+      ],
+      "verify_evidence": [
+        "Brighton",
+        "Van Hecke"
+      ],
+      "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Van Hecke",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Brighton"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "bournemouth-and-poole-college-staff-strike-update",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-and-poole-college-staff-strike-update/",
+      "headline": "Bournemouth and Poole College staff strike update",
+      "scrape_count": 4,
+      "verify_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "A spokesperson from the college",
+        "Anne Marie Moriarty",
+        "Darren Tozer",
+        "Peter Cooper"
+      ],
+      "verify_evidence": [
+        "Peter Cooper"
+      ],
+      "confirmed": [
+        {
+          "name": "A spokesperson from the college",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Peter Cooper",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Anne Marie Moriarty",
+        "Darren Tozer"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "bournemouth-bagel-shop-on-national-bagel-day",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-bagel-shop-on-national-bagel-day/",
+      "headline": "National Bagel Day",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Cam Sing"
+      ],
+      "verify_evidence": [
+        "Cam Sing",
+        "Sing",
+        "Maria Balinska"
+      ],
+      "confirmed": [
+        {
+          "name": "Cam Sing",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Maria Balinska",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "dorset-basketball-on-the-rise-ahead-of-london-nba-game",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-basketball-on-the-rise-ahead-of-london-nba-game/",
+      "headline": "Dorset Basketball on the rise ahead of London NBA game",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Tomas Skiotys",
+        "Dan Middleton"
+      ],
+      "verify_evidence": [
+        "Skiotys",
+        "Dan Middleton",
+        "Dorset",
+        "Middleton"
+      ],
+      "confirmed": [
+        {
+          "name": "Tomas Skiotys",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Dan Middleton",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Dorset"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "pga-tour-returning-player-offer-issued-to-four-stars",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/pga-tour-returning-player-offer-issued-to-four-stars/",
+      "headline": "PGA Tour returning player offer issued to FOUR STARS",
+      "scrape_count": 3,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Isaac Rowsell",
+        "Harry Shaw",
+        "Brooks Koepka"
+      ],
+      "verify_evidence": [
+        "Harry Shaw",
+        "John Rahm",
+        "Bryson DeChambeau",
+        "Cam Smith"
+      ],
+      "confirmed": [
+        {
+          "name": "Isaac Rowsell",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Harry Shaw",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Brooks Koepka",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "John Rahm",
+          "gender": "male"
+        },
+        {
+          "name": "Bryson DeChambeau",
+          "gender": "male"
+        },
+        {
+          "name": "Cam Smith",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "bashley-face-tavistock-in-fight-for-safety",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bashley-face-tavistock-in-fight-for-safety/",
+      "headline": "Bashley Face Tavistock in Fight for Safety",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Jack Williamson"
+      ],
+      "verify_evidence": [
+        "Williamson",
+        "Oscar"
+      ],
+      "confirmed": [
+        {
+          "name": "Jack Williamson",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Oscar",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "dorset-solicitor-is-running-the-london-marathon-for-local-ymca",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-solicitor-is-running-the-london-marathon-for-local-ymca/",
+      "headline": "Dorset solicitor is running the London Marathon for local YMCA",
+      "scrape_count": 2,
+      "verify_count": 5,
+      "confirmed_count": 2,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Mark Benham",
+        "Lesley Fereti"
+      ],
+      "verify_evidence": [
+        "Mark",
+        "Lester Aldridge",
+        "Lesley Fereti",
+        "Mark’s",
+        "YMCA Bournemouth"
+      ],
+      "confirmed": [
+        {
+          "name": "Mark Benham",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Lesley Fereti",
+          "gender": "unknown",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Lester Aldridge",
+          "gender": "male"
+        },
+        {
+          "name": "YMCA Bournemouth",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Mark’s"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "how-do-bournemouth-live-without-antoine-semenyo",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/how-do-bournemouth-live-without-antoine-semenyo/",
+      "headline": "How do Bournemouth live without Antoine Semenyo?",
+      "scrape_count": 3,
+      "verify_count": 5,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Alex Horsley",
+        "Andoni Iraola",
+        "Ben Phillips"
+      ],
+      "verify_evidence": [
+        "Semenyo",
+        "Andoni Iraola",
+        "Ben Phillips",
+        "Bill Foley’s",
+        "Horsley"
+      ],
+      "confirmed": [
+        {
+          "name": "Alex Horsley",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": ""
+        },
+        {
+          "name": "Ben Phillips",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Bill Foley’s",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Semenyo"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "mp-urges-tighter-regulation-after-leaving-x",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mp-urges-tighter-regulation-after-leaving-x/",
+      "headline": "MP urges tighter regulation after leaving X",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Vikki Slade",
+        "Dr Amy Tatum"
+      ],
+      "verify_evidence": [
+        "X.\nDr",
+        "Amy Tatum",
+        "Grok",
+        "Vikki Slade"
+      ],
+      "confirmed": [
+        {
+          "name": "Vikki Slade",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Amy Tatum",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "X.",
+        "Grok"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "rnli-stories-of-courage-exhibition-to-be-launched",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rnli-stories-of-courage-exhibition-to-be-launched/",
+      "headline": "RNLI Stories of Courage exhibition to be launched",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Hayley Whiting",
+        "Alison Hulme"
+      ],
+      "verify_evidence": [
+        "Alison Hulme",
+        "Ms Hulme"
+      ],
+      "confirmed": [
+        {
+          "name": "Alison Hulme",
+          "gender": "female",
+          "position": ""
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Hayley Whiting"
+      ],
       "review_status": "pending"
     }
   ]
