@@ -273,21 +273,6 @@
                 <p class="gender-note"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
             </div>
 
-            <!-- SEI -->
-            <div class="card" style="grid-column: span 2;">
-                <h3 class="card-title">Source Equity Index</h3>
-                <div class="sei-grid">
-                    <div class="sei-card">
-                        <div class="sei-card-value" id="sei-news">—</div>
-                        <div class="sei-card-label">News</div>
-                    </div>
-                    <div class="sei-card">
-                        <div class="sei-card-value" id="sei-sport">—</div>
-                        <div class="sei-card-label">Sport</div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Sections -->
             <div class="card">
                 <h3 class="card-title">By Section</h3>
@@ -697,10 +682,6 @@
             ? Math.round(sportArticles.reduce((sum, a) => sum + a.sei_score, 0) / sportArticles.length)
             : '—';
 
-        // Update SEI display
-        document.getElementById('sei-news').textContent = newsSEI;
-        document.getElementById('sei-sport').textContent = sportSEI;
-
         console.log('SEI scores:', { news: newsSEI, sport: sportSEI });
 
         // Gender breakdown
@@ -789,6 +770,23 @@
                     <span class="gender-value">${unknownPercent}% (${genderCounts.unknown})</span>
                 </div>
                 <p class="gender-note"><span style="color: #c41230; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+            </div>
+        `;
+
+        // SEI card
+        html += `
+            <div class="card" style="grid-column: span 2;">
+                <h3 class="card-title">Source Equity Index</h3>
+                <div class="sei-grid">
+                    <div class="sei-card">
+                        <div class="sei-card-value">${newsSEI}</div>
+                        <div class="sei-card-label">News</div>
+                    </div>
+                    <div class="sei-card">
+                        <div class="sei-card-value">${sportSEI}</div>
+                        <div class="sei-card-label">Sport</div>
+                    </div>
+                </div>
             </div>
         `;
 
