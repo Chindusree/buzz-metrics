@@ -303,7 +303,7 @@
             <table class="stories-table">
                 <thead>
                     <tr>
-                        <th>Date</th>
+                        <th>DATE</th>
                         <th>Stories</th>
                         <th>First Published</th>
                         <th>Below 350w</th>
@@ -860,47 +860,10 @@
             }
         });
 
-        // If "All Dates" is selected, add totals row at the top
-        if (selectedDate === 'all') {
-            // Calculate overall totals
-            const totalArticles = metricsData.articles.length;
-            const totalBelow350 = metricsData.articles.filter(a => (a.word_count || 0) < 350).length;
-
-            // Find earliest publish time across all articles
-            let earliestTime = null;
-            metricsData.articles.forEach(article => {
-                if (article.time) {
-                    if (!earliestTime || article.time < earliestTime) {
-                        earliestTime = article.time;
-                    }
-                }
-            });
-
-            // Calculate overall gender breakdown
-            const overallGenderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
-            metricsData.articles.forEach(article => {
-                (article.source_evidence || []).forEach(source => {
-                    const gender = source.gender || 'unknown';
-                    if (overallGenderCounts.hasOwnProperty(gender)) overallGenderCounts[gender]++;
-                    else overallGenderCounts.unknown++;
-                });
-            });
-
-            const totalGender = overallGenderCounts.female + overallGenderCounts.male + overallGenderCounts.they;
-            const womenPercent = totalGender > 0 ? Math.round((overallGenderCounts.female / totalGender) * 100) : 0;
-
-            // Create totals row with bold styling
-            const totalsRow = document.createElement('tr');
-            totalsRow.style.fontWeight = 'bold';
-            totalsRow.style.borderBottom = '2px solid #1a1a1a';
-            totalsRow.innerHTML = `
-                <td>ALL</td>
-                <td>${totalArticles}</td>
-                <td>${earliestTime || 'N/A'}</td>
-                <td>${totalBelow350}</td>
-                <td>${womenPercent}% W</td>
-            `;
-            tbody.appendChild(totalsRow);
+        // Update table header based on selected date
+        const targetsDateHeader = document.querySelector('#targets .stories-table thead th:first-child');
+        if (targetsDateHeader) {
+            targetsDateHeader.textContent = selectedDate === 'all' ? 'ALL DATES' : 'DATE';
         }
 
         // Sort dates descending (newest first)
