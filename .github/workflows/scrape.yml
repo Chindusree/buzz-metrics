@@ -1,0 +1,66 @@
+name: Scrape BUzz Articles
+
+on:
+  schedule:
+    - cron: '*/15 8-17 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scraper/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Cache spaCy model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/spacy
+          key: ${{ runner.os }}-spacy-en_core_web_sm
+
+      - name: Install dependencies
+        run: |
+          cd scraper
+          pip install --prefer-binary -r requirements.txt
+          python -m spacy download en_core_web_sm
+
+      - name: Run scraper (incremental)
+        run: |
+          cd scraper
+          python3 scrape.py
+
+      - name: Run verification
+        run: |
+          cd scraper
+          python3 verify.py
+
+      - name: Run comparison/reconciliation
+        run: |
+          cd scraper
+          python3 compare.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/*.json docs/metrics_verified.json
+          git diff --staged --quiet || git commit -m "Auto-update metrics data [$(date +'%Y-%m-%d %H:%M UTC')]"
+          git pull origin main --strategy-option theirs || true
+          git push || echo "Push failed, will retry next run"
