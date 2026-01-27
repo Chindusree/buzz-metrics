@@ -1511,7 +1511,7 @@ def extract_quoted_sources(text):
         attribution_words = ['said', 'says', 'explained', 'explains', 'added', 'adds',
                            'told', 'tells', 'noted', 'argued', 'claimed', 'commented',
                            'stated', 'remarked', 'announced', 'confirmed', 'revealed',
-                           'shared', 'shares']
+                           'shared', 'shares', 'described', 'describes']
         quote_lower = quote_text.lower().strip()
         # If the quote is mostly just "Name said." or similar, skip it
         word_count_quote = len(quote_text.split())
@@ -1529,14 +1529,14 @@ def extract_quoted_sources(text):
         name_pattern = r'([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})'
 
         after_match = re.search(
-            r'^[,.\s]*(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)\s+' + name_pattern,
+            r'^[,.\s]*(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares|described|describes)\s+' + name_pattern,
             context_after
         )
 
         if not after_match:
             # Try reversed pattern: , [Name] said
             after_match = re.search(
-                r'^[,.\s]*' + name_pattern + r'\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)',
+                r'^[,.\s]*' + name_pattern + r'\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares|described|describes)',
                 context_after
             )
 
@@ -1546,7 +1546,7 @@ def extract_quoted_sources(text):
         # Also handles: Name, title/role, said: "quote"
         # Sprint 7.9.3: Made punctuation optional to handle "Name said that..." patterns
         before_match = re.search(
-            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)[,:.]?\s*$',
+            name_pattern + r'(?:,\s+[^,]+?,)?\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares|described|describes)[,:.]?\s*$',
             context_before
         )
 
@@ -1556,11 +1556,20 @@ def extract_quoted_sources(text):
             context_before
         )
 
+        # Sprint 8.3: Check for "Name described it/this/that as" pattern
+        # Handles: "Iraola described it as", "Smith described this as", etc.
+        described_as_match = None
+        if not before_match and not according_match:
+            described_as_match = re.search(
+                name_pattern + r'\s+(?:described|describes)\s+(?:it|this|that)\s+as\s*$',
+                context_before
+            )
+
         # Sprint 8.1: Enhanced dash attribution pattern
         # Handles en-dash (–), em-dash (—), and hyphen (-) attribution
         # Pattern: "quote text. – Name, role/description"
         dash_match = None
-        if not after_match and not before_match and not according_match:
+        if not after_match and not before_match and not according_match and not described_as_match:
             # Sprint 8.1: Support all dash types, not just en/em dash
             dash_pattern = r'^[,.\s]*[–—\-]\s*' + name_pattern + r'(?:,\s+[^,]+)?'
             dash_match = re.search(dash_pattern, context_after)
@@ -1595,6 +1604,17 @@ def extract_quoted_sources(text):
             # Sprint 7.9.1: Resolve partial names to full names
             name = resolve_full_name(name, text)
             # Sprint 7.9.1: Filter out false positives (pronouns, etc.)
+            if not is_false_positive(name):
+                sources.append({
+                    'name': name,
+                    'full_attribution': context_before[-50:].strip(),
+                    'quote_snippet': quote_text[:50],
+                    'position': 'before'
+                })
+        elif described_as_match:
+            # Sprint 8.3: Handle "Name described it/this/that as" pattern
+            name = described_as_match.group(1).strip()
+            name = resolve_full_name(name, text)
             if not is_false_positive(name):
                 sources.append({
                     'name': name,
@@ -1646,7 +1666,8 @@ def extract_quoted_sources(text):
     # Pattern: "Senior said:", "Davies told BUzz:", "Brown discussed"
     # After full name introduction (e.g., "Chris Senior spoke about..."),
     # subsequent references use lastname only
-    lastname_verb_pattern = r'\b([A-Z][a-z]+)\s+(?:said|says|told|tells|added|adds|explained|explains|discussed|talked|spoke)[\s:,]'
+    # Sprint 8.3: Added "described/describes" to attribution verbs
+    lastname_verb_pattern = r'\b([A-Z][a-z]+)\s+(?:said|says|told|tells|added|adds|explained|explains|described|describes|discussed|talked|spoke)[\s:,]'
     for match in re.finditer(lastname_verb_pattern, text):
         lastname = match.group(1).strip()
         # Resolve to full name if introduced earlier in article
@@ -1808,20 +1829,21 @@ def extract_quoted_sources(text):
     # Sprint 7.25: Filter out historical/descriptive mentions without quotes
     # For role_description sources, verify they have actual quoted material
     # This prevents capturing historical figures mentioned for context only
+    # Sprint 8.3: Extended to include lastname_verb sources (requires quotes)
     filtered_sources = []
     for source in sources:
         position = source.get('position', '')
         name = source.get('name', '')
 
-        # If it's a role_description source without a quote, check if there's
+        # If it's a role_description or lastname_verb source without a quote, check if there's
         # any quoted material from this person in the article
-        if position == 'role_description' and not source.get('quote_snippet'):
+        if position in ('role_description', 'lastname_verb') and not source.get('quote_snippet'):
             # Look for any quote attribution with this person's name
             # Check for patterns like "Name said:", "Name explained:", etc.
             lastname = name.split()[-1] if ' ' in name else name
-            quote_attribution_pattern = r'"[^"]+"\s*[,\s]*' + re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed)'
+            quote_attribution_pattern = r'"[^"]+"\s*[,\s]*' + re.escape(lastname) + r'\s+(?:said|told|explained|added|discussed|described)'
             # Sprint 7.37.1: Allow optional role description between lastname and verb
-            reverse_pattern = re.escape(lastname) + r'(?:,\s+[^,]+?,)?\s+(?:said|told|explained|added|discussed)[:\s,]+"[^"]+'
+            reverse_pattern = re.escape(lastname) + r'(?:,\s+[^,]+?,)?\s+(?:said|told|explained|added|discussed|described)[:\s,]+"[^"]+'
 
             has_quotes = bool(re.search(quote_attribution_pattern, text, re.IGNORECASE)) or \
                         bool(re.search(reverse_pattern, text, re.IGNORECASE))
