@@ -16331,12 +16331,28 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 3,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 0,
+      "sources_female": 3,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Christel Lindner",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Toni Jones",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -16364,9 +16380,25 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Christel Lindner",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Toni Jones",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
