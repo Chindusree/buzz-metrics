@@ -28,13 +28,14 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 def normalize_quotes(text):
     """
     Sprint 8.1: Convert all quote variants to standard straight quotes.
+    Sprint 8.4: Convert single quotes to double quotes for consistency.
     This prevents hardcoding of quote types in regex patterns.
 
     Args:
         text: Text containing various quote characters
 
     Returns:
-        str: Text with normalized straight quotes
+        str: Text with normalized straight double quotes
     """
     quote_chars = {
         '\u201c': '"',  # left double quotation mark (")
@@ -42,11 +43,12 @@ def normalize_quotes(text):
         '\u201e': '"',  # double low-9 quotation mark („)
         '\u00ab': '"',  # left-pointing double angle quotation mark («)
         '\u00bb': '"',  # right-pointing double angle quotation mark (»)
-        '\u2018': "'",  # left single quotation mark (')
-        '\u2019': "'",  # right single quotation mark (')
-        '\u201a': "'",  # single low-9 quotation mark (‚)
-        '\u2039': "'",  # single left-pointing angle quotation mark (‹)
-        '\u203a': "'",  # single right-pointing angle quotation mark (›)
+        '\u2018': '"',  # left single quotation mark (') → convert to double
+        '\u2019': '"',  # right single quotation mark (') → convert to double
+        '\u201a': '"',  # single low-9 quotation mark (‚) → convert to double
+        '\u2039': '"',  # single left-pointing angle quotation mark (‹) → convert to double
+        '\u203a': '"',  # single right-pointing angle quotation mark (›) → convert to double
+        "'": '"',       # straight single quote → convert to double (for student articles)
     }
     for fancy, standard in quote_chars.items():
         text = text.replace(fancy, standard)
@@ -386,19 +388,38 @@ def is_caption_text(text):
 def clean_source_name(name):
     """
     Remove titles and prefixes from source names.
+    Sprint 8.4: Enhanced to strip job titles/descriptors from names.
 
     Args:
-        name: Full name string
+        name: Full name string (may include job title like "Area Manager Ant Bholah")
 
     Returns:
-        str: Cleaned name
+        str: Cleaned name (just the person's name)
     """
     if not name:
         return name
 
-    # Titles to remove
+    # Job title patterns to remove (appear BEFORE name)
+    # Pattern: "Job Title Name" → "Name"
+    job_titles = [
+        'area manager', 'manager', 'director', 'officer', 'chief', 'head',
+        'coordinator', 'supervisor', 'president', 'vice president',
+        'secretary', 'treasurer', 'chairman', 'chair', 'spokesperson',
+        'representative', 'agent', 'consultant'
+    ]
+
+    # Check if name starts with a job title
+    name_lower = name.lower()
+    for title in sorted(job_titles, key=len, reverse=True):  # longest first
+        if name_lower.startswith(title + ' '):
+            # Remove the title and return the rest
+            name = name[len(title):].strip()
+            name_lower = name.lower()
+            break
+
+    # Personal titles to remove (appear before or in name)
     titles = [
-        'councillor', 'cllr', 'dr', 'detective', 'chief', 'inspector',
+        'councillor', 'cllr', 'dr', 'detective', 'inspector',
         'sergeant', 'professor', 'mr', 'mrs', 'ms', 'miss', 'sir', 'dame',
         'rev', 'reverend', 'father', 'sister', 'brother'
     ]
@@ -448,6 +469,7 @@ ROLE_INDICATORS = [
 def is_false_positive(name):
     """
     Filter out false positive source names.
+    Sprint 8.4: Allow anonymous/generic sources (a witness, a resident, etc.)
 
     Args:
         name: Name string to check
@@ -459,6 +481,17 @@ def is_false_positive(name):
         return True
 
     name_lower = name.lower().strip()
+
+    # Sprint 8.4: Allow anonymous/generic sources
+    # These are valid sources even if not named individuals
+    anonymous_sources = [
+        'a witness', 'a resident', 'a local', 'a source', 'a spokesperson',
+        'an official', 'an eyewitness', 'a bystander', 'a neighbor', 'a neighbour',
+        'witnesses', 'residents', 'locals', 'sources', 'officials', 'eyewitnesses'
+    ]
+    if name_lower in anonymous_sources or name_lower.startswith('a ') or name_lower.startswith('an '):
+        # These are valid sources, not false positives
+        return False
 
     # Common false positives
     false_positives = [
@@ -1410,11 +1443,28 @@ def deduplicate_sources(sources):
     """
     Deduplicate sources by name.
     Prefer longer/more complete names. Merge names where one is a subset of another.
+    Sprint 8.4: Clean names (strip job titles) and normalize trailing descriptors.
     """
     unique = []
 
     for source in sources:
-        name = source['name']
+        # Sprint 8.4: Clean the name (strip job titles, normalize)
+        raw_name = source['name']
+        name = clean_source_name(raw_name)
+
+        # Sprint 8.4: Remove trailing descriptors (e.g., "Gabriel Dela Cruz Local" → "Gabriel Dela Cruz")
+        # Common trailing descriptors that students add
+        trailing_descriptors = [
+            'local', 'resident', 'locals', 'residents', 'official', 'officials',
+            'spokesperson', 'representative', 'member', 'members', 'source', 'sources'
+        ]
+        words = name.split()
+        if len(words) > 2 and words[-1].lower() in trailing_descriptors:
+            # Remove the last word
+            name = ' '.join(words[:-1])
+
+        # Update the source with cleaned name
+        source['name'] = name
         name_lower = name.lower().strip()
 
         # Check if this name is a duplicate or substring of an existing name
@@ -1565,11 +1615,24 @@ def extract_quoted_sources(text):
                 context_before
             )
 
+        # Sprint 8.4: Check for anonymous sources (a witness, a resident, etc.)
+        # These don't follow standard capitalization pattern
+        anonymous_match = None
+        if not before_match and not according_match and not described_as_match:
+            # Pattern 1: "A witness said" (verb directly after source)
+            anonymous_pattern = r'([Aa]n?\s+(?:witness|resident|local|source|spokesperson|official|eyewitness|bystander|neighbor|neighbour)(?:es)?)\s+(?:said|says|explained|explains|added|adds|told|tells|noted|argued|claimed|commented|stated|remarked|announced|confirmed|revealed|shared|shares)[,:.]?\s*$'
+            anonymous_match = re.search(anonymous_pattern, context_before)
+
+            # Pattern 2: "A witness described [it/this/that/the scene] as"
+            if not anonymous_match:
+                anonymous_described_pattern = r'([Aa]n?\s+(?:witness|resident|local|source|spokesperson|official|eyewitness|bystander|neighbor|neighbour)(?:es)?)\s+(?:described|describes)\s+(?:it|this|that|the\s+\w+)\s+as\s*$'
+                anonymous_match = re.search(anonymous_described_pattern, context_before)
+
         # Sprint 8.1: Enhanced dash attribution pattern
         # Handles en-dash (–), em-dash (—), and hyphen (-) attribution
         # Pattern: "quote text. – Name, role/description"
         dash_match = None
-        if not after_match and not before_match and not according_match and not described_as_match:
+        if not after_match and not before_match and not according_match and not described_as_match and not anonymous_match:
             # Sprint 8.1: Support all dash types, not just en/em dash
             dash_pattern = r'^[,.\s]*[–—\-]\s*' + name_pattern + r'(?:,\s+[^,]+)?'
             dash_match = re.search(dash_pattern, context_after)
@@ -1622,6 +1685,18 @@ def extract_quoted_sources(text):
                     'quote_snippet': quote_text[:50],
                     'position': 'before'
                 })
+        elif anonymous_match:
+            # Sprint 8.4: Handle anonymous sources (a witness, a resident, etc.)
+            name = anonymous_match.group(1).strip()
+            # Capitalize properly: "a witness" -> "A witness"
+            name = name[0].upper() + name[1:]
+            # No need to resolve full name or check false positive for anonymous sources
+            sources.append({
+                'name': name,
+                'full_attribution': context_before[-50:].strip(),
+                'quote_snippet': quote_text[:50],
+                'position': 'before'
+            })
         elif dash_match:
             # Sprint 7.9.3: Handle en-dash attribution
             name = dash_match.group(1).strip()
