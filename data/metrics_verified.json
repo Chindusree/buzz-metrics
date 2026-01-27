@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-27T14:15:22Z",
-  "total_articles": 227,
+  "last_updated": "2026-01-27T16:34:03Z",
+  "total_articles": 233,
   "summary": {
-    "avg_word_count": 569,
-    "avg_quoted_sources": 1.1,
-    "below_minimum_count": 48,
-    "long_form_count": 38,
+    "avg_word_count": 574,
+    "avg_quoted_sources": 1.0,
+    "below_minimum_count": 49,
+    "long_form_count": 40,
     "breaking_news_count": 18,
-    "total_images": 697,
-    "original_images": 112,
-    "stock_images": 8,
-    "uncredited_images": 243,
+    "total_images": 703,
+    "original_images": 113,
+    "stock_images": 9,
+    "uncredited_images": 247,
     "gender_breakdown": {
-      "male": 147,
+      "male": 150,
       "female": 60,
-      "unknown": 33
+      "unknown": 34
     },
     "by_section": {
       "Sport": {
-        "count": 83,
-        "words": 49547,
-        "sources": 72
+        "count": 87,
+        "words": 52214,
+        "sources": 75
       },
       "General News": {
-        "count": 135,
-        "words": 65715,
-        "sources": 146
+        "count": 137,
+        "words": 66887,
+        "sources": 147
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 83,
-        "avg_word_count": 597,
+        "count": 87,
+        "avg_word_count": 600,
         "avg_sources": 0.9
       },
       "News": {
-        "count": 135,
-        "avg_word_count": 487,
+        "count": 137,
+        "avg_word_count": 488,
         "avg_sources": 1.1
       },
       "Features": {
@@ -104,7 +104,7 @@
     },
     {
       "date": "2026-01-21",
-      "article_count": 25,
+      "article_count": 24,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "09:14",
@@ -134,13 +134,13 @@
     },
     {
       "date": "2026-01-27",
-      "article_count": 12,
+      "article_count": 19,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:49",
       "first_publish_on_time": true,
-      "below_minimum_count": 2,
-      "long_form_count": 1
+      "below_minimum_count": 3,
+      "long_form_count": 3
     }
   ],
   "articles": [
@@ -9531,71 +9531,6 @@
       "category_normalised": "General News"
     },
     {
-      "id": "57f209a96481",
-      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
-      "author": "Editor Blue",
-      "author_confidence": "high",
-      "date": "2026-01-21",
-      "time": "11:56",
-      "category": "1st News",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 477,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Police Constable Daniel Walker",
-          "type": "original",
-          "gender": "male"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Dort-800x400.jpeg",
-            "classification": "original",
-            "credit": "Jacob Deighton"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [
-        {
-          "name": "Dorchester Town",
-          "gender": "unknown"
-        }
-      ],
-      "sources_filtered_out": [
-        "Police Constable Daniel Walker",
-        "Weymouth"
-      ],
-      "is_breaking_news": true,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
       "id": "2d58c002b3d1",
       "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
@@ -15602,6 +15537,79 @@
       "category_normalised": "General News"
     },
     {
+      "id": "df24719eccb1",
+      "headline": "BREAKING NEWS: AFC Bournemouth confirm Rayan signing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-confirm-rayan-signing/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "14:12",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 476,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "full_attribution": "Iraola said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Rayan-360x240.jpeg",
+            "classification": "uncredited",
+            "credit": "Rayan signs for AFCB (Credit AFCB)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "David Brooks",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "7506dc1c0a52",
       "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
@@ -15687,6 +15695,204 @@
         "Provedel"
       ],
       "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "d759e6aedafd",
+      "headline": "Ben Edgell praises Poole Town FC partnership with SEN",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "author": "Duarte Fialho",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "15:30",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 712,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ben Edgell",
+          "full_attribution": "Edgell said:",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "pronoun_attribution"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/sen-Poole-Town-800x400.jpg",
+            "classification": "original",
+            "credit": "Connor Hannon)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ben Edgell",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "6e5dee8c4f6a",
+      "headline": "Bournemouth Man to Complete Five Marathons in Five Days on Cross Trainer",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-to-complete-five-marathons-in-five-days-on-cross-trainer/",
+      "author": "Ben Jones",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "16:00",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 802,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Said Rowson",
+          "full_attribution": "inline attribution - Said Rowson",
+          "quote_snippet": "m feeling.",
+          "position": "blockquote-inline",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/3c49cdc1-8c82-4b68-88d9-ec2f8d84d499-e1769525696342-800x400.jpg",
+            "classification": "original",
+            "credit": "Patrick Rowson"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Said Rowson",
+          "gender": "male",
+          "position": "blockquote-inline"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "ad32e4400b08",
+      "headline": "Bournemouth Oaks head coach aiming to ‘push boundaries’ in Dorset Basketball league",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-oaks-head-coach-aiming-to-push-boundaries-in-dorset-basketball-league/",
+      "author": "Nico Theodorou",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "15:04",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 677,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-2-2-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Thomas Skiotys",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Archie Boka",
+        "Dorset"
+      ],
+      "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
@@ -15798,6 +16004,128 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "51132d80481a",
+      "headline": "Dorset Police appeal for dashcam footage",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-dashcam-footage/",
+      "author": "Tori Turner",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "14:53",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 557,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Police Constable Calum Maton",
+          "full_attribution": "ble Calum Maton, of the Roads Policing Team, said",
+          "quote_snippet": "We are carrying out further enquiries to establish",
+          "position": "before",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/xingye-jiang-INUcL7Ktjzc-unsplash-1-800x400.jpg",
+            "classification": "stock",
+            "credit": "Police are seeking dashcam footage from witnesses (Credit: Xingye Jiang on Unsplash)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Police Constable Calum Maton",
+          "gender": "unknown",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "5060438e2622",
+      "headline": "Dorset Senior Cup: Dorchester Town v Portland United",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-senior-cup-dorchester-town-v-portland-united/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "14:34",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "Sport",
+      "word_count": 702,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Untitled-design-800x400.jpg",
+            "classification": "original",
+            "credit": "Connor Hannon"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "a4e023a812c6",
@@ -15934,60 +16262,6 @@
       "category_normalised": "General News"
     },
     {
-      "id": "337ec7b1d975",
-      "headline": "Huge crime raid: Drugs, designer gear, and over £100k seized",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
-      "author": "Editor Red",
-      "author_confidence": "high",
-      "date": "2026-01-27",
-      "time": "10:45",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 633,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/dorset-police-logo-blue-sitelogo-217px.png",
-            "classification": "original",
-            "credit": "Dorset Police)"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
       "id": "6d26861ada49",
       "headline": "Huge crime raid: Drugs, designer gear, and over £100k seized",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
@@ -16039,6 +16313,63 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "591afa6d3490",
+      "headline": "Live Stream BUzz News 16:15 Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin-2/",
+      "author": "Conner Haddow",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "16:00",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-614x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/nffZG1dK26k?feature=oembed"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -16185,6 +16516,60 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "87c3c905e60d",
+      "headline": "Residents call for safer, more inclusive Bournemouth town centre",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/residents-call-for-safer-more-inclusive-bournemouth-town-centre/",
+      "author": "Martha White",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "14:48",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 1023,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-800x400.png",
+            "classification": "uncredited",
+            "credit": "Image of the panel. From the left=Millie Earl- leader of council, MP Jessica Toale, Richard Eastham- town planner and 2 selected residents. Photo credit- Saeed Rashid."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
       "category_normalised": "General News"
     },
     {

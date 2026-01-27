@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T14:15:19Z",
-  "total_verified": 227,
+  "last_updated": "2026-01-27T16:34:01Z",
+  "total_verified": 233,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -1811,21 +1811,6 @@
       "verify_evidence": []
     },
     {
-      "id": "57f209a96481",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
-      "verify_quoted_sources": 2,
-      "verify_evidence": [
-        {
-          "name": "Weymouth",
-          "context": "PERSON within 50 chars of quote: ...w and have not yet been contacted by the police.” Weymouth then went on to say: “We are backing the police i..."
-        },
-        {
-          "name": "Dorchester Town",
-          "context": "PERSON within 50 chars of quote: ...ation please contact Dorset police.” We contacted Dorchester Town and are awaiting a reply. If you have any details..."
-        }
-      ]
-    },
-    {
       "id": "2d58c002b3d1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
       "verify_quoted_sources": 2,
@@ -2351,7 +2336,7 @@
         },
         {
           "name": "David",
-          "context": "PERSON within 50 chars of quote: ...to conversation is interesting and I am glad that David, Shane and I started it with Charlies help.” “We ..."
+          "context": "PERSON within 50 chars of quote: ...to conversation is interesting and I am glad that David, Shaine and I started it with Charlies help.” “We..."
         },
         {
           "name": "David’s",
@@ -2903,6 +2888,17 @@
       "verify_evidence": []
     },
     {
+      "id": "df24719eccb1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-confirm-rayan-signing/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "David Brooks",
+          "context": "PERSON within 50 chars of quote: ...s a muscle injury, he will be out for some time.” David Brooks is also out injured after picking up an ankle inj..."
+        }
+      ]
+    },
+    {
       "id": "7506dc1c0a52",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
       "verify_quoted_sources": 6,
@@ -2934,6 +2930,55 @@
       ]
     },
     {
+      "id": "d759e6aedafd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Ben Edgell",
+          "context": "PERSON within 50 chars of quote: ...or the next couple of seasons. Commercial manager Ben Edgell said: “I don’t think as a community we do enough ..."
+        }
+      ]
+    },
+    {
+      "id": "6e5dee8c4f6a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-to-complete-five-marathons-in-five-days-on-cross-trainer/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Rowson",
+          "context": "PERSON within 50 chars of quote: ...ey go onto further things, like a career or Uni.” Rowson lost both of his parents during his youth, and be..."
+        },
+        {
+          "name": "Said Rowson",
+          "context": "PERSON within 50 chars of quote: ...w it down or not will depend on how I’m feeling.” Said Rowson The mammoth challenge will certainly take time, a..."
+        }
+      ]
+    },
+    {
+      "id": "ad32e4400b08",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-oaks-head-coach-aiming-to-push-boundaries-in-dorset-basketball-league/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Thomas Skiotys",
+          "context": "PERSON within 50 chars of quote: ...sketball League. The Bournemouth Oaks head coach, Thomas Skiotys says, “We’re trying to push the boundaries, with ..."
+        },
+        {
+          "name": "Archie Boka",
+          "context": "PERSON within 50 chars of quote: ... good players, they appreciate it, they come in.” Archie Boka is a co-founder of the BG Suns. The Suns, who are..."
+        },
+        {
+          "name": "Boka",
+          "context": "PERSON within 50 chars of quote: ...uns haven’t seen the same impact from investment. Boka says, “Unfortunately, with the success that the U..."
+        },
+        {
+          "name": "Dorset",
+          "context": "PERSON within 50 chars of quote: ...s getting tougher and tougher.“So, I’d say within Dorset, there isn’t much that has been done for us. That..."
+        }
+      ]
+    },
+    {
       "id": "04b6161046c3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
       "verify_quoted_sources": 0,
@@ -2942,6 +2987,18 @@
     {
       "id": "82d9847bb953",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/brook-and-root-both-hit-centuries-in-final-odi/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "51132d80481a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-dashcam-footage/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "5060438e2622",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-senior-cup-dorchester-town-v-portland-united/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -2967,14 +3024,14 @@
       ]
     },
     {
-      "id": "337ec7b1d975",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
+      "id": "6d26861ada49",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
     {
-      "id": "6d26861ada49",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
+      "id": "591afa6d3490",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin-2/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -3007,6 +3064,12 @@
           "context": "PERSON within 50 chars of quote: ... last ten years, but it felt so good to be back.” Whisken added: “When Shaq [Gwengwe, striker] and I came o..."
         }
       ]
+    },
+    {
+      "id": "87c3c905e60d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/residents-call-for-safer-more-inclusive-bournemouth-town-centre/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "1ec3474189b7",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-27T14:15:22Z",
-  "total_flagged": 96,
+  "generated": "2026-01-27T16:34:03Z",
+  "total_flagged": 97,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2245,35 +2245,6 @@
       "review_status": "pending"
     },
     {
-      "id": "57f209a96481",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-more-details-on-attack-at-dorchester-town/",
-      "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
-      "scrape_count": 1,
-      "verify_count": 2,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 2,
-      "scrape_evidence": [
-        "Police Constable Daniel Walker"
-      ],
-      "verify_evidence": [
-        "Weymouth",
-        "Dorchester Town"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Dorchester Town",
-          "gender": "unknown"
-        }
-      ],
-      "filtered": [
-        "Police Constable Daniel Walker",
-        "Weymouth"
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "2d58c002b3d1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack/",
       "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
@@ -3520,6 +3491,37 @@
       "review_status": "pending"
     },
     {
+      "id": "df24719eccb1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-confirm-rayan-signing/",
+      "headline": "BREAKING NEWS: AFC Bournemouth confirm Rayan signing",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Andoni Iraola"
+      ],
+      "verify_evidence": [
+        "David Brooks"
+      ],
+      "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
+        {
+          "name": "David Brooks",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "7506dc1c0a52",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
       "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
@@ -3561,6 +3563,35 @@
       "filtered": [
         "Mandas",
         "Provedel"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "ad32e4400b08",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-oaks-head-coach-aiming-to-push-boundaries-in-dorset-basketball-league/",
+      "headline": "Bournemouth Oaks head coach aiming to ‘push boundaries’ in Dorset Basketball league",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 2,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Thomas Skiotys",
+        "Archie Boka",
+        "Boka",
+        "Dorset"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Thomas Skiotys",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Archie Boka",
+        "Dorset"
       ],
       "review_status": "pending"
     },
