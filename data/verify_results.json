@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-26T18:06:01Z",
+  "last_updated": "2026-01-27T08:34:22Z",
   "total_verified": 215,
   "results": [
     {
@@ -1577,11 +1577,15 @@
     {
       "id": "d8bc8a4e3dde",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
-      "verify_quoted_sources": 1,
+      "verify_quoted_sources": 2,
       "verify_evidence": [
         {
           "name": "Callender",
-          "context": "PERSON within 50 chars of quote: ...tim said: “I have said no, please stop,” to which Callender replied, “Have some respect for me.” During the s..."
+          "context": "PERSON within 50 chars of quote: ...m saying, “I have said no, please stop,” to which Callender replied, “Have some respect for me,” and telling ..."
+        },
+        {
+          "name": "Mary Aspinall-Miles",
+          "context": "PERSON within 50 chars of quote: ...You showed not a shred of remorse,” he continued. Mary Aspinall-Miles, defending, told the judge that Callender wishes ..."
         }
       ]
     },

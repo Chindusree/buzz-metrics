@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-26T18:06:04Z",
+  "last_updated": "2026-01-27T08:34:25Z",
   "total_articles": 215,
   "summary": {
     "avg_word_count": 566,
@@ -8631,7 +8631,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "The victim",
@@ -8649,7 +8649,12 @@
           "position": ""
         }
       ],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "Mary Aspinall-Miles",
+          "gender": "female"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,

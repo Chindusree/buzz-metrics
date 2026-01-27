@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-26T18:06:04Z",
-  "total_flagged": 90,
+  "generated": "2026-01-27T08:34:25Z",
+  "total_flagged": 91,
   "flagged_articles": [
     {
       "id": "bcp-council-vote-on-tax-base-proposal",
@@ -1801,6 +1801,51 @@
       "filtered": [
         "Minds"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d8bc8a4e3dde",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "headline": "Rapist sentenced following assault in Bournemouth home",
+      "scrape_count": 4,
+      "verify_count": 2,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "The victim",
+        "The victim",
+        "Chret Callender",
+        "Judge Fuller KC"
+      ],
+      "verify_evidence": [
+        "Callender",
+        "Mary Aspinall-Miles"
+      ],
+      "confirmed": [
+        {
+          "name": "The victim",
+          "gender": "female",
+          "position": ""
+        },
+        {
+          "name": "Chret Callender",
+          "gender": "unknown",
+          "position": ""
+        },
+        {
+          "name": "Judge Fuller KC",
+          "gender": "male",
+          "position": ""
+        }
+      ],
+      "possible": [
+        {
+          "name": "Mary Aspinall-Miles",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
