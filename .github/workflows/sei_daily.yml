@@ -24,15 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd scraper
-          pip install --prefer-binary -r requirements.txt
+          pip install --prefer-binary -r scraper/requirements.txt
 
       - name: Run SEI production scoring
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          cd scraper
-          python3 sei_production.py
+          python3 scraper/sei_production.py
 
       - name: Copy to docs
         run: |
