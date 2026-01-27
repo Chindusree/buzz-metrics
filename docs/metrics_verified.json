@@ -16214,18 +16214,14 @@
       "shorthand_url": null,
       "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
-      "sources_unknown": 0,
+      "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "Dorset Police",
-          "full_attribution": "Police said",
-          "quote_snippet": "",
-          "position": "lastname_verb",
-          "gender": "male",
-          "gender_confidence": "medium",
-          "gender_method": "pronoun_context"
+          "name": "A witness",
+          "gender": "unknown",
+          "position": "groq_detected"
         }
       ],
       "images": {
@@ -16252,9 +16248,9 @@
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
-          "name": "Dorset Police",
+          "name": "A witness",
           "gender": "unknown",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [

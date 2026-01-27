@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/emergency-services-respond-to-serious-crash-in-christchurch/",
+    "headline": "Emergency services respond to serious crash in Christchurch",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Dorset Police",
+        "gender": "unknown",
+        "position": "lastname_verb"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "A witness",
+        "gender": "unknown",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  }
+]
