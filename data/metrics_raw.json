@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T16:24:34Z",
-  "total_articles": 233,
+  "last_updated": "2026-01-27T17:25:49Z",
+  "total_articles": 234,
   "gender_breakdown": {
     "male": 137,
     "female": 51,
@@ -12149,6 +12149,56 @@
         "audio_count": 0,
         "video_evidence": [],
         "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "82ebca91b140",
+      "headline": "International Holocaust Remembrance",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/international-holocaust-remembrance/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "16:31",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 731,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/08a9a340-92ac-40e6-8084-7712f1572b0c-230x300.jpeg",
+            "classification": "uncredited",
+            "credit": "Building inside the Auschwitz Camp Photo Credits: Sam Morris"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 1,
+        "video_evidence": [],
+        "audio_evidence": [
+          {
+            "platform": "soundcloud",
+            "url": "https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F2255132030&show_artwork=true&maxheight=750&maxwidth=500"
+          }
+        ]
       },
       "warnings": [
         "No quoted sources in article >500 words"
