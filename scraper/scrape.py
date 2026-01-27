@@ -3126,26 +3126,46 @@ def main():
     # Sprint 7.20: Combine with existing data
     articles = existing_data['articles'] + new_articles
 
-    # Sprint 8.4: Deduplicate articles by URL (keep most recent/complete version)
-    seen_urls = {}
+    # Sprint 8.4: Deduplicate articles by headline + date (prefer named authors)
+    # Generic bylines to filter out when choosing between duplicates
+    generic_bylines = ['Editor Red', 'Editor Blue', 'Editor Green', 'Editor', 'BUzz', 'Unknown', 'Sub Editor']
+
+    seen_articles = {}
     for article in articles:
-        url = article.get('url')
-        if url:
-            # If URL already seen, keep the one with more data (prefer new over old)
-            if url in seen_urls:
-                # Keep newer article (assumes new_articles are more recent/complete)
-                # Or keep whichever has more complete data
-                existing = seen_urls[url]
-                current = article
-                # Prefer article with more sources or more complete data
-                if (current.get('quoted_sources', 0) >= existing.get('quoted_sources', 0)):
-                    seen_urls[url] = current
+        headline = article.get('headline', '')
+        date = article.get('date', '')
+
+        # Create unique key from headline + date
+        article_key = (headline, date)
+
+        if article_key in seen_articles:
+            # Duplicate found - decide which to keep
+            existing = seen_articles[article_key]
+            current = article
+
+            existing_author = existing.get('author', 'Unknown')
+            current_author = current.get('author', 'Unknown')
+
+            # Priority: named author > generic byline
+            existing_is_generic = existing_author in generic_bylines or existing_author.startswith('Editor')
+            current_is_generic = current_author in generic_bylines or current_author.startswith('Editor')
+
+            # If current has named author and existing has generic, replace
+            if current_is_generic and not existing_is_generic:
+                # Keep existing (named author)
+                continue
+            elif not current_is_generic and existing_is_generic:
+                # Replace with current (named author)
+                seen_articles[article_key] = current
             else:
-                seen_urls[url] = article
+                # Both named or both generic - keep first one (existing)
+                continue
+        else:
+            seen_articles[article_key] = article
 
     # Replace articles list with deduplicated version
     articles_before_dedup = len(articles)
-    articles = list(seen_urls.values())
+    articles = list(seen_articles.values())
     duplicates_removed = articles_before_dedup - len(articles)
 
     print(f"\n{'-' * 80}")
