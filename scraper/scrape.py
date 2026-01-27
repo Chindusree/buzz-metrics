@@ -28,30 +28,48 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 def normalize_quotes(text):
     """
     Sprint 8.1: Convert all quote variants to standard straight quotes.
-    Sprint 8.4: Convert single quotes to double quotes for consistency.
-    This prevents hardcoding of quote types in regex patterns.
+    Sprint 8.4 FIX: Properly handle fancy apostrophes vs quotation marks.
+
+    CRITICAL: U+2019 (') is used for BOTH apostrophes AND right single quotes.
+    We must convert it to apostrophe (') to preserve words like "college's",
+    then separately handle single-quoted passages.
 
     Args:
         text: Text containing various quote characters
 
     Returns:
-        str: Text with normalized straight double quotes
+        str: Text with normalized quotes and apostrophes
     """
-    quote_chars = {
+    # First: Convert fancy DOUBLE quotes to straight double quotes
+    double_quote_chars = {
         '\u201c': '"',  # left double quotation mark (")
         '\u201d': '"',  # right double quotation mark (")
         '\u201e': '"',  # double low-9 quotation mark („)
         '\u00ab': '"',  # left-pointing double angle quotation mark («)
         '\u00bb': '"',  # right-pointing double angle quotation mark (»)
-        '\u2018': '"',  # left single quotation mark (') → convert to double
-        '\u2019': '"',  # right single quotation mark (') → convert to double
-        '\u201a': '"',  # single low-9 quotation mark (‚) → convert to double
-        '\u2039': '"',  # single left-pointing angle quotation mark (‹) → convert to double
-        '\u203a': '"',  # single right-pointing angle quotation mark (›) → convert to double
-        "'": '"',       # straight single quote → convert to double (for student articles)
     }
-    for fancy, standard in quote_chars.items():
+    for fancy, standard in double_quote_chars.items():
         text = text.replace(fancy, standard)
+
+    # Second: Convert fancy SINGLE quotes to APOSTROPHES (not double quotes!)
+    # U+2018 (') and U+2019 (') are used for apostrophes in words like "it's", "college's"
+    apostrophe_chars = {
+        '\u2018': "'",  # left single quotation mark → apostrophe
+        '\u2019': "'",  # right single quotation mark → apostrophe (CRITICAL FIX)
+        '\u201a': "'",  # single low-9 quotation mark
+        '\u2039': "'",  # single left-pointing angle quotation mark
+        '\u203a': "'",  # single right-pointing angle quotation mark
+    }
+    for fancy, standard in apostrophe_chars.items():
+        text = text.replace(fancy, standard)
+
+    # Third: Convert straight single quotes around words to double quotes (for student articles)
+    # Pattern: ' at word boundary → " (but not mid-word apostrophes)
+    import re
+    # Match: word boundary, single quote, text, single quote, word boundary
+    # This catches: 'pretty bad' but not: it's, college's
+    text = re.sub(r"\b'([^']+?)'\b", r'"\1"', text)
+
     return text
 
 
@@ -80,6 +98,13 @@ def analyze_article_with_groq(text):
 
 A quoted source = person whose EXACT WORDS appear inside quotation marks with attribution.
 THE TEST: Can you point to their words in "quotes"? If NO → not a source.
+
+CRITICAL: QUOTATION MARKS REQUIRED
+- ONLY count sources whose words appear inside quotation marks (", ", ', ')
+- "A spokesperson said officers attended" = NO quotation marks → NOT a source
+- "A witness described the scene as 'pretty bad'" = quotation marks → YES, source
+- Paraphrased speech (X said Y happened) = NO quotation marks → NOT a source
+- Indirect speech (X confirmed that...) = NO quotation marks → NOT a source
 
 CRITICAL EXCLUSION - EVIDENCE RECORDINGS:
 If words appear in quotation marks BUT come from recordings/audio/video played as evidence:
@@ -1888,10 +1913,16 @@ def extract_quoted_sources(text):
     # Pattern 2: Blockquote with name on same line (inline attribution)
     # Format: "Quote" - Name  OR  "Quote" Name
     # Sprint 8.1: Updated to use straight quotes after normalization
+    # Sprint 8.4: Filter out "By [Name]" pattern (author bylines, not sources)
     blockquote_inline = r'"([^\n"]+?)"\s*[-–—]?\s*([A-Z][A-Za-z\'\-]+(?:\s+[A-Z][A-Za-z\'\-]+){0,3})(?=\s*$|[\n\r])'
     for match in re.finditer(blockquote_inline, text, re.MULTILINE):
         quote_text = match.group(1).strip()
         name = match.group(2).strip()
+
+        # Sprint 8.4: Filter out "By [Name]" - this is author credit, not a source
+        if name.startswith('By '):
+            continue
+
         # Filter out common false positives
         if len(quote_text) >= 10 and name not in ['The', 'This', 'That', 'They', 'There']:
             sources.append({
