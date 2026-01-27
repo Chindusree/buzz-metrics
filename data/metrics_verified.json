@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-27T12:03:18Z",
+  "last_updated": "2026-01-27T12:46:29Z",
   "total_articles": 225,
   "summary": {
     "avg_word_count": 570,
@@ -15611,7 +15611,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Lazio Correspondent",
@@ -15624,8 +15624,14 @@
           "position": "before"
         }
       ],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "Fraser Forster",
+          "gender": "male"
+        }
+      ],
       "sources_filtered_out": [
+        "Mandas",
         "Provedel"
       ],
       "is_breaking_news": true,

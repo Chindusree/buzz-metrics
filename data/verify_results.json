@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-27T12:03:16Z",
+  "last_updated": "2026-01-27T12:46:26Z",
   "total_verified": 225,
   "results": [
     {
@@ -2899,8 +2899,16 @@
     {
       "id": "7506dc1c0a52",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
-      "verify_quoted_sources": 4,
+      "verify_quoted_sources": 6,
       "verify_evidence": [
+        {
+          "name": "Mandas",
+          "context": "PERSON within 50 chars of quote: ...the club on loan for the remainder of the season. Mandas said to AFCBTV: “It feels like a magical atmosphe..."
+        },
+        {
+          "name": "Fraser Forster",
+          "context": "PERSON within 50 chars of quote: ...e interested, I knew that I wanted to come here.” Fraser Forster joined the club as a free agent at the start of J..."
+        },
         {
           "name": "Lazio Correspondent",
           "context": "PERSON within 50 chars of quote: ...nd the end of the season. Lebanese journalist and Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of ..."

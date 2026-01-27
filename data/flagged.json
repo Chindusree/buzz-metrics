@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-27T12:03:18Z",
+  "generated": "2026-01-27T12:46:29Z",
   "total_flagged": 96,
   "flagged_articles": [
     {
@@ -3524,15 +3524,17 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
       "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
       "scrape_count": 2,
-      "verify_count": 4,
+      "verify_count": 6,
       "confirmed_count": 2,
-      "possible_count": 0,
-      "filtered_count": 1,
+      "possible_count": 1,
+      "filtered_count": 2,
       "scrape_evidence": [
         "Lazio Correspondent",
         "Michel Sakr"
       ],
       "verify_evidence": [
+        "Mandas",
+        "Fraser Forster",
         "Lazio Correspondent",
         "Michel Sakr",
         "Provedel",
@@ -3550,8 +3552,14 @@
           "position": "before"
         }
       ],
-      "possible": [],
+      "possible": [
+        {
+          "name": "Fraser Forster",
+          "gender": "male"
+        }
+      ],
       "filtered": [
+        "Mandas",
         "Provedel"
       ],
       "review_status": "pending"
