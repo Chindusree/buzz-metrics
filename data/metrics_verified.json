@@ -3230,24 +3230,24 @@
       "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "A spokesperson from the college",
-          "type": "press_statement",
-          "gender": "unknown"
+          "name": "Bournemouth and Poole College spokesperson",
+          "gender": "unknown",
+          "position": "groq_detected"
         },
         {
           "name": "Anne Marie Moriarty",
-          "type": "original",
-          "gender": "female"
+          "gender": "female",
+          "position": "groq_detected"
         },
         {
           "name": "Darren Tozer",
-          "type": "original",
-          "gender": "male"
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Peter Cooper",
-          "type": "original",
-          "gender": "male"
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "images": {
@@ -3264,18 +3264,28 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "A spokesperson from the college",
+          "name": "Bournemouth and Poole College spokesperson",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Darren Tozer",
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Peter Cooper",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [],

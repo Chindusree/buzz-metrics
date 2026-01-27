@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-and-poole-college-staff-strike-update/",
+    "headline": "Bournemouth and Poole College staff strike update",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 4,
+    "old_source_evidence": [
+      {
+        "name": "A spokesperson from the college",
+        "gender": "unknown",
+        "position": ""
+      },
+      {
+        "name": "Peter Cooper",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Bournemouth and Poole College spokesperson",
+        "gender": "unknown",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Anne Marie Moriarty",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Darren Tozer",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Peter Cooper",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]
