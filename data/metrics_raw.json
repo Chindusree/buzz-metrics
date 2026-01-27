@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-27T10:34:52Z",
-  "total_articles": 219,
+  "last_updated": "2026-01-27T11:00:48Z",
+  "total_articles": 221,
   "gender_breakdown": {
-    "male": 130,
+    "male": 132,
     "female": 50,
     "unknown": 18
   },
@@ -11558,6 +11558,68 @@
       "warnings": []
     },
     {
+      "id": "7506dc1c0a52",
+      "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "10:48",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 444,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Lazio Correspondent",
+          "full_attribution": "he season.Lazio Correspondent, Michel Sakr, said:",
+          "quote_snippet": "I would say he's capable of playing right now, he'",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        },
+        {
+          "name": "Michel Sakr",
+          "full_attribution": "of talent to bring to the south coast.Sakr said:",
+          "quote_snippet": "His reaction saves, he has made some exceptional s",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/mandas-1-800x400.jpeg",
+            "classification": "original",
+            "credit": "AFCB on X"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "04b6161046c3",
       "headline": "Bournemouth shock Liverpool as the Premier League delivers drama",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
@@ -11639,6 +11701,51 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3693-243x300.jpeg",
             "classification": "uncredited",
             "credit": "Train tracks in Auschwitz. Photo credit – Sam Morris"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "337ec7b1d975",
+      "headline": "Huge crime raid: Drugs, designer gear, and over £100k seized",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
+      "author": "Editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "10:45",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 633,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/dorset-police-logo-blue-sitelogo-217px.png",
+            "classification": "original",
+            "credit": "Dorset Police)"
           }
         ]
       },

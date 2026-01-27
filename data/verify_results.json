@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T10:44:15Z",
-  "total_verified": 219,
+  "last_updated": "2026-01-27T11:10:23Z",
+  "total_verified": 221,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2897,6 +2897,29 @@
       "verify_evidence": []
     },
     {
+      "id": "7506dc1c0a52",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Lazio Correspondent",
+          "context": "PERSON within 50 chars of quote: ...ppearances between now and the end of the season. Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of ..."
+        },
+        {
+          "name": "Michel Sakr",
+          "context": "PERSON within 50 chars of quote: ...w and the end of the season. Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of playing right..."
+        },
+        {
+          "name": "Provedel",
+          "context": "PERSON within 50 chars of quote: ...ready proved himself last season when he replaced Provedel (Lazio keeper) and became first choice.” The Gree..."
+        },
+        {
+          "name": "Lazio",
+          "context": "PERSON within 50 chars of quote: ...ed himself last season when he replaced Provedel (Lazio keeper) and became first choice.” The Greek inter..."
+        }
+      ]
+    },
+    {
       "id": "04b6161046c3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
       "verify_quoted_sources": 0,
@@ -2905,6 +2928,12 @@
     {
       "id": "a4e023a812c6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-comes-together-on-holocaust-memorial-day-2026/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "337ec7b1d975",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },

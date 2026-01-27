@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-27T10:44:18Z",
-  "total_flagged": 92,
+  "generated": "2026-01-27T11:10:26Z",
+  "total_flagged": 93,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3517,6 +3517,43 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "7506dc1c0a52",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
+      "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Lazio Correspondent",
+        "Michel Sakr"
+      ],
+      "verify_evidence": [
+        "Lazio Correspondent",
+        "Michel Sakr",
+        "Provedel",
+        "Lazio"
+      ],
+      "confirmed": [
+        {
+          "name": "Lazio Correspondent",
+          "gender": "unknown",
+          "position": "before"
+        },
+        {
+          "name": "Michel Sakr",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Provedel"
+      ],
       "review_status": "pending"
     },
     {
