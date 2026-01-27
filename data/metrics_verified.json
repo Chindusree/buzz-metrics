@@ -16212,21 +16212,20 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
-      "sources_unknown": 2,
+      "sources_unknown": 0,
       "source_evidence": [
         {
-          "name": "A witness",
-          "gender": "unknown",
-          "position": "groq_detected"
-        },
-        {
-          "name": "A spokesperson for Dorset Police",
-          "gender": "unknown",
-          "position": "groq_detected"
+          "name": "Dorset Police",
+          "full_attribution": "Police said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
         }
       ],
       "images": {
@@ -16249,18 +16248,13 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
-          "name": "A witness",
+          "name": "Dorset Police",
           "gender": "unknown",
-          "position": "groq_detected"
-        },
-        {
-          "name": "A spokesperson for Dorset Police",
-          "gender": "unknown",
-          "position": "groq_detected"
+          "position": "lastname_verb"
         }
       ],
       "source_evidence_possible": [
