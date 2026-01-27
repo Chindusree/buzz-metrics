@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-27T09:41:07Z",
-  "total_flagged": 91,
+  "generated": "2026-01-27T10:08:17Z",
+  "total_flagged": 92,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3514,6 +3514,38 @@
         {
           "name": "Matthew",
           "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "20d0c0b488b6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
+      "headline": "Poole Town Legend Returns to Action",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Jamie Whisken"
+      ],
+      "verify_evidence": [
+        "Pat Suraci’s",
+        "Whisken"
+      ],
+      "confirmed": [
+        {
+          "name": "Jamie Whisken",
+          "gender": "female",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Pat Suraci’s",
+          "gender": "unknown"
         }
       ],
       "filtered": [],

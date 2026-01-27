@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T09:41:05Z",
-  "total_verified": 216,
+  "last_updated": "2026-01-27T10:08:14Z",
+  "total_verified": 218,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2899,6 +2899,27 @@
     {
       "id": "04b6161046c3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "20d0c0b488b6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Pat Suraci’s",
+          "context": "PERSON within 50 chars of quote: ...t also marked his 511thappearance for Joe Lea and Pat Suraci’s side. On his return back to the side, he said: “I..."
+        },
+        {
+          "name": "Whisken",
+          "context": "PERSON within 50 chars of quote: ... last ten years, but it felt so good to be back.” Whisken added: “When Shaq [Gwengwe, striker] and I came o..."
+        }
+      ]
+    },
+    {
+      "id": "26b451659ac1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     }

@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-01-27T09:41:07Z",
-  "total_articles": 216,
+  "last_updated": "2026-01-27T10:08:17Z",
+  "total_articles": 218,
   "summary": {
-    "avg_word_count": 567,
+    "avg_word_count": 568,
     "avg_quoted_sources": 1.1,
     "below_minimum_count": 46,
     "long_form_count": 37,
     "breaking_news_count": 17,
-    "total_images": 684,
-    "original_images": 107,
+    "total_images": 686,
+    "original_images": 108,
     "stock_images": 7,
-    "uncredited_images": 236,
+    "uncredited_images": 237,
     "gender_breakdown": {
       "male": 146,
-      "female": 58,
+      "female": 59,
       "unknown": 30
     },
     "by_section": {
@@ -23,9 +23,9 @@
         "sources": 68
       },
       "General News": {
-        "count": 128,
-        "words": 61774,
-        "sources": 144
+        "count": 130,
+        "words": 63057,
+        "sources": 145
       },
       "Features": {
         "count": 9,
@@ -40,8 +40,8 @@
         "avg_sources": 0.9
       },
       "News": {
-        "count": 128,
-        "avg_word_count": 483,
+        "count": 130,
+        "avg_word_count": 485,
         "avg_sources": 1.1
       },
       "Features": {
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-01-27",
-      "article_count": 1,
+      "article_count": 3,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:49",
@@ -15581,6 +15581,133 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/99453926-BB37-439D-B8AE-0D0D206F23AC-640x400.jpg",
             "classification": "original",
             "credit": "Ailani Verrall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "20d0c0b488b6",
+      "headline": "Poole Town Legend Returns to Action",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
+      "author": "Connor Hannon",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "09:51",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 690,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jamie Whisken",
+          "full_attribution": "Whisken added: \"When Shaq and I came on at half ti",
+          "quote_snippet": "It's been a long time coming, it has been a very l",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/52446911674_44e6393655_o.jpg-800x400.webp",
+            "classification": "uncredited",
+            "credit": "Jamie Whisken has played for the Dolphins since the 2013/14 campaign."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jamie Whisken",
+          "gender": "female",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Pat Suraci’s",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "26b451659ac1",
+      "headline": "Storm Chandra batters BCP, heavy rain triggers flooding and travel disruption",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "09:44",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 593,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Unknown-800x400.png",
+            "classification": "original",
+            "credit": "Areas impacted by Storm Chandra. Photo Credit - The Met Office."
           }
         ]
       },

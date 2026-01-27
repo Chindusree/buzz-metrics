@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-27T08:57:25Z",
-  "total_articles": 216,
+  "last_updated": "2026-01-27T09:59:41Z",
+  "total_articles": 218,
   "gender_breakdown": {
     "male": 130,
-    "female": 49,
+    "female": 50,
     "unknown": 18
   },
   "articles": [
@@ -11589,6 +11589,104 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/99453926-BB37-439D-B8AE-0D0D206F23AC-640x400.jpg",
             "classification": "original",
             "credit": "Ailani Verrall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "20d0c0b488b6",
+      "headline": "Poole Town Legend Returns to Action",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
+      "author": "Connor Hannon",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "09:51",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 690,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jamie Whisken",
+          "full_attribution": "Whisken added: \"When Shaq and I came on at half ti",
+          "quote_snippet": "It's been a long time coming, it has been a very l",
+          "position": "after",
+          "gender": "female",
+          "gender_confidence": "low",
+          "gender_method": "statistical"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/52446911674_44e6393655_o.jpg-800x400.webp",
+            "classification": "uncredited",
+            "credit": "Jamie Whisken has played for the Dolphins since the 2013/14 campaign."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "26b451659ac1",
+      "headline": "Storm Chandra batters BCP, heavy rain triggers flooding and travel disruption",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "09:44",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 593,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Unknown-800x400.png",
+            "classification": "original",
+            "credit": "Areas impacted by Storm Chandra. Photo Credit - The Met Office."
           }
         ]
       },
