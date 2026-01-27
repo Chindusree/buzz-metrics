@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-27T11:35:17Z",
-  "total_articles": 223,
+  "last_updated": "2026-01-27T11:54:43Z",
+  "total_articles": 225,
   "gender_breakdown": {
-    "male": 133,
-    "female": 50,
+    "male": 134,
+    "female": 51,
     "unknown": 18
   },
   "articles": [
@@ -11715,6 +11715,59 @@
       ]
     },
     {
+      "id": "c16262bf4afb",
+      "headline": "Emergency services respond to serious crash in Christchurch",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/emergency-services-respond-to-serious-crash-in-christchurch/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "11:44",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 344,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Dorset Police",
+          "full_attribution": "Police said",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2023/01/Screenshot-2023-01-25-at-12.26.33-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Police car on Madeira Road Dorset Police car. Photo credit : Catherine Clarke"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "337ec7b1d975",
       "headline": "Huge crime raid: Drugs, designer gear, and over £100k seized",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
@@ -11803,6 +11856,59 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "fef8f85c0b24",
+      "headline": "Local Jiu-Jitsu coach sees his sport as a form of therapy",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-jiu-jitsu-coach-sees-his-sport-as-a-form-of-therapy/",
+      "author": "Theo Otesanya-Salvo",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "11:36",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 698,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Kerry Isom",
+          "full_attribution": "an exclusive interview with Buzz News, Isom said:",
+          "quote_snippet": "The stresses in my life totally disappear when I'm",
+          "position": "before",
+          "gender": "female",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3708-2-800x400.jpg",
+            "classification": "original",
+            "credit": "Theo Otesanya-Salvo"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "20d0c0b488b6",

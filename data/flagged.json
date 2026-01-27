@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-27T11:45:06Z",
-  "total_flagged": 94,
+  "generated": "2026-01-27T12:03:18Z",
+  "total_flagged": 96,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3554,6 +3554,72 @@
       "filtered": [
         "Provedel"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "c16262bf4afb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/emergency-services-respond-to-serious-crash-in-christchurch/",
+      "headline": "Emergency services respond to serious crash in Christchurch",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Dorset Police"
+      ],
+      "verify_evidence": [
+        "NewsTag",
+        "Matchams Lane"
+      ],
+      "confirmed": [
+        {
+          "name": "Dorset Police",
+          "gender": "unknown",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Matchams Lane",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "NewsTag"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "fef8f85c0b24",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-jiu-jitsu-coach-sees-his-sport-as-a-form-of-therapy/",
+      "headline": "Local Jiu-Jitsu coach sees his sport as a form of therapy",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Kerry Isom"
+      ],
+      "verify_evidence": [
+        "Kerry",
+        "Jiu Jitsu"
+      ],
+      "confirmed": [
+        {
+          "name": "Kerry Isom",
+          "gender": "female",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jiu Jitsu",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {

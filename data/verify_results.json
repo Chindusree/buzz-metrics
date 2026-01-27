@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T11:45:03Z",
-  "total_verified": 223,
+  "last_updated": "2026-01-27T12:03:16Z",
+  "total_verified": 225,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2932,6 +2932,21 @@
       "verify_evidence": []
     },
     {
+      "id": "c16262bf4afb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/emergency-services-respond-to-serious-crash-in-christchurch/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "NewsTag",
+          "context": "PERSON within 50 chars of quote: ...ess described the scene as “pretty bad”. Category:NewsTag:Christchurch,Matchams Lane..."
+        },
+        {
+          "name": "Matchams Lane",
+          "context": "PERSON within 50 chars of quote: ...ne as “pretty bad”. Category:NewsTag:Christchurch,Matchams Lane..."
+        }
+      ]
+    },
+    {
       "id": "337ec7b1d975",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid-drugs-designer-gear-and-over-100k-seized/",
       "verify_quoted_sources": 0,
@@ -2942,6 +2957,21 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "fef8f85c0b24",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-jiu-jitsu-coach-sees-his-sport-as-a-form-of-therapy/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Kerry",
+          "context": "PERSON within 50 chars of quote: ... to me.” In addition to his competitive pursuits, Kerry is dedicated to coaching Jiu-Jitsu at Odyssey Com..."
+        },
+        {
+          "name": "Jiu Jitsu",
+          "context": "PERSON within 50 chars of quote: ...on.” Category:Local,News Top,SportTag:bournemouth,Jiu Jitsu..."
+        }
+      ]
     },
     {
       "id": "20d0c0b488b6",
