@@ -3126,9 +3126,33 @@ def main():
     # Sprint 7.20: Combine with existing data
     articles = existing_data['articles'] + new_articles
 
+    # Sprint 8.4: Deduplicate articles by URL (keep most recent/complete version)
+    seen_urls = {}
+    for article in articles:
+        url = article.get('url')
+        if url:
+            # If URL already seen, keep the one with more data (prefer new over old)
+            if url in seen_urls:
+                # Keep newer article (assumes new_articles are more recent/complete)
+                # Or keep whichever has more complete data
+                existing = seen_urls[url]
+                current = article
+                # Prefer article with more sources or more complete data
+                if (current.get('quoted_sources', 0) >= existing.get('quoted_sources', 0)):
+                    seen_urls[url] = current
+            else:
+                seen_urls[url] = article
+
+    # Replace articles list with deduplicated version
+    articles_before_dedup = len(articles)
+    articles = list(seen_urls.values())
+    duplicates_removed = articles_before_dedup - len(articles)
+
     print(f"\n{'-' * 80}")
     print(f"Successfully extracted {len(new_articles)} new articles")
     print(f"Total articles in dataset: {len(articles)}")
+    if duplicates_removed > 0:
+        print(f"Removed {duplicates_removed} duplicate(s)")
     print(f"{'-' * 80}\n")
 
     # Sort articles by date
