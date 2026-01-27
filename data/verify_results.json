@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T10:08:14Z",
-  "total_verified": 218,
+  "last_updated": "2026-01-27T10:44:15Z",
+  "total_verified": 219,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2899,6 +2899,12 @@
     {
       "id": "04b6161046c3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "a4e023a812c6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-comes-together-on-holocaust-memorial-day-2026/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },

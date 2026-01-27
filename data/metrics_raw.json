@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T09:59:41Z",
-  "total_articles": 218,
+  "last_updated": "2026-01-27T10:34:52Z",
+  "total_articles": 219,
   "gender_breakdown": {
     "male": 130,
     "female": 50,
@@ -11589,6 +11589,56 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/99453926-BB37-439D-B8AE-0D0D206F23AC-640x400.jpg",
             "classification": "original",
             "credit": "Ailani Verrall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "a4e023a812c6",
+      "headline": "Dorset comes together on Holocaust Memorial Day 2026",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-comes-together-on-holocaust-memorial-day-2026/",
+      "author": "Editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "10:28",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 735,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3692-323x300.jpeg",
+            "classification": "uncredited",
+            "credit": "The gates of Auschwitz. Photo credit – Sam Morris"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3693-243x300.jpeg",
+            "classification": "uncredited",
+            "credit": "Train tracks in Auschwitz. Photo credit – Sam Morris"
           }
         ]
       },
