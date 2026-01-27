@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T11:54:43Z",
-  "total_articles": 225,
+  "last_updated": "2026-01-27T14:06:43Z",
+  "total_articles": 227,
   "gender_breakdown": {
     "male": 134,
     "female": 51,
@@ -11558,6 +11558,49 @@
       "warnings": []
     },
     {
+      "id": "395586dc760a",
+      "headline": "Another Weather Warning Issued for Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/another-weather-warning-issued-for-dorset/",
+      "author": "Max Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "13:59",
+      "category": "News",
+      "category_detail": "News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 313,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/a4730fbb-675b-4de3-ba81-34b6d77d3d56-scaled.png",
+            "classification": "uncredited",
+            "credit": "A predicted forecast for Thursday- Photo from Met Office"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "7506dc1c0a52",
       "headline": "BREAKING NEWS: AFC Bournemouth confirms Christos Mandas signing",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
@@ -11651,6 +11694,51 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/99453926-BB37-439D-B8AE-0D0D206F23AC-640x400.jpg",
             "classification": "original",
             "credit": "Ailani Verrall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "82d9847bb953",
+      "headline": "Brook and Root both hit centuries in final ODI",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brook-and-root-both-hit-centuries-in-final-odi/",
+      "author": "Ben Wheeler",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "14:00",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 703,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/alessandro-bogliari-oDs_AxeR5g4-unsplash-360x241.jpg",
+            "classification": "stock",
+            "credit": "Cricket ball lying on the pitch Cricket ball lying on the pitch (Credit: Photo by Alessandro Bogliari)"
           }
         ]
       },

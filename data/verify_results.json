@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T12:46:26Z",
-  "total_verified": 225,
+  "last_updated": "2026-01-27T14:15:19Z",
+  "total_verified": 227,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2897,6 +2897,12 @@
       "verify_evidence": []
     },
     {
+      "id": "395586dc760a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/another-weather-warning-issued-for-dorset/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "7506dc1c0a52",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-afc-bournemouth-announce-mandas-signing/",
       "verify_quoted_sources": 6,
@@ -2930,6 +2936,12 @@
     {
       "id": "04b6161046c3",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "82d9847bb953",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/brook-and-root-both-hit-centuries-in-final-odi/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
