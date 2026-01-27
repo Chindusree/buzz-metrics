@@ -297,7 +297,7 @@
     <section id="targets" class="section">
         <div class="section-header">
             <h2 class="section-title">Targets</h2>
-            <span class="section-sub">Editorial expectations</span>
+            <span class="section-sub">Editorial expectations <span style="color: #c41230; font-size: 0.6rem;">✓</span></span>
         </div>
         <div class="card">
             <table class="stories-table">
@@ -334,7 +334,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="gender-note" style="margin-top: 0.75rem;">✓ = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+            <p class="gender-note" style="margin-top: 0.75rem;"><span style="color: #c41230;">✓</span> = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
         </div>
     </section>
 
@@ -894,16 +894,16 @@
             const d = new Date(date + 'T00:00:00');
             const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
 
-            const storiesTarget = dayData.article_count >= 12 ? '✓' : '';
+            const storiesTarget = dayData.article_count >= 12 ? '<span style="color: #c41230;">✓</span>' : '';
 
             let firstPubDisplay = dayData.first_publish_time || '';
             if (dayData.first_publish_time) {
                 const [h, m] = dayData.first_publish_time.split(':').map(Number);
                 const minutes = h * 60 + m;
-                if (minutes < 600) firstPubDisplay += ' ✓';
+                if (minutes < 600) firstPubDisplay += ' <span style="color: #c41230;">✓</span>';
             }
 
-            const belowTarget = dayData.below_minimum_count === 0 ? '✓' : '';
+            const belowTarget = dayData.below_minimum_count === 0 ? '<span style="color: #c41230;">✓</span>' : '';
 
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -1100,7 +1100,7 @@
         console.log('=== STEP 5: Updating Contributors ===');
 
         let articlesToUse = [];
-        const currentView = document.querySelector('.toggle-btn.active')?.textContent || 'Today';
+        const currentView = document.querySelector('#contributors .toggle-btn.active')?.textContent || 'Today';
 
         // When "All Dates" is selected, show all contributors
         if (selectedDate === 'all') {

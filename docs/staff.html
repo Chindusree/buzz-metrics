@@ -108,7 +108,7 @@
         .expect-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); margin-bottom: 0.4rem; }
         .expect-list { list-style: none; font-size: 0.75rem; }
         .expect-list li { margin-bottom: 0.2rem; }
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.15); z-index: 1000; }
         .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
         .modal-content { background: white; border-radius: 8px; max-width: 600px; width: 90%; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
         .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 2px solid #edeae3; }
@@ -401,7 +401,7 @@
     <section id="targets" class="section">
         <div class="section-header">
             <h2 class="section-title">Targets</h2>
-            <span class="section-sub">Editorial expectations</span>
+            <span class="section-sub">Editorial expectations <span style="color: #c41230; font-size: 0.6rem;">✓</span></span>
         </div>
         <div class="card">
             <table class="stories-table">
@@ -438,7 +438,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="gender-note" style="margin-top: 0.75rem;">✓ = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+            <p class="gender-note" style="margin-top: 0.75rem;"><span style="color: #c41230;">✓</span> = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
         </div>
     </section>
 
@@ -901,76 +901,80 @@
                         <div class="sei-compartment-value">${sportSEI}</div>
                     </div>
                 </div>
-                <p class="sei-footnote"><span style="color: #c41230; font-weight: 600;">x</span> Measures journalistic effort and sourcing integrity: who you quoted, who has agency, who you missed. <a href="#" onclick="showSEIMethodology(event)">See methodology</a>.</p>
+                <p class="sei-footnote"><span style="color: #c41230; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Measures sourcing integrity: who you quoted, who has agency, who you missed. <a href="#" onclick="showSEIMethodology(event)">See methodology</a>.</p>
             </div>
         `;
 
-        // Publication Rhythm heatmap
-        let heatmapHTML = '<div class="heatmap">';
-        heatmapHTML += '<div class="hm-header"></div>';
-        for (let h = 8; h <= 17; h++) {
-            heatmapHTML += `<div class="hm-header">${h}</div>`;
-        }
+        // Publication Rhythm heatmap (only show for single-date views)
+        if (selectedDate !== 'all') {
+            let heatmapHTML = '<div class="heatmap">';
+            heatmapHTML += '<div class="hm-header"></div>';
+            for (let h = 8; h <= 17; h++) {
+                heatmapHTML += `<div class="hm-header">${h}</div>`;
+            }
 
-        Object.entries(rhythmData).forEach(([section, counts]) => {
-            const displaySection = section === 'General News' ? 'News' : section;
-            heatmapHTML += `<div class="hm-label">${displaySection}</div>`;
-            counts.forEach((count, index) => {
-                const hour = index + 8; // Hours start at 8
-                let className = 'hm-cell';
-                if (count === 1) className += ' l1';
-                else if (count === 2) className += ' l2';
-                else if (count >= 3) className += ' l3';
+            Object.entries(rhythmData).forEach(([section, counts]) => {
+                const displaySection = section === 'General News' ? 'News' : section;
+                heatmapHTML += `<div class="hm-label">${displaySection}</div>`;
+                counts.forEach((count, index) => {
+                    const hour = index + 8; // Hours start at 8
+                    let className = 'hm-cell';
+                    if (count === 1) className += ' l1';
+                    else if (count === 2) className += ' l2';
+                    else if (count >= 3) className += ' l3';
 
-                // Make cells clickable if count > 0
-                if (count > 0) {
-                    className += ' clickable';
-                    heatmapHTML += `<div class="${className}" data-section="${section}" data-hour="${hour}" data-count="${count}"></div>`;
-                } else {
-                    heatmapHTML += `<div class="${className}"></div>`;
-                }
+                    // Make cells clickable if count > 0
+                    if (count > 0) {
+                        className += ' clickable';
+                        heatmapHTML += `<div class="${className}" data-section="${section}" data-hour="${hour}" data-count="${count}"></div>`;
+                    } else {
+                        heatmapHTML += `<div class="${className}"></div>`;
+                    }
+                });
             });
-        });
 
-        heatmapHTML += '</div>';
-        heatmapHTML += `
-            <div class="hm-legend">
-                <div class="legend-item">
-                    <div class="legend-swatch" style="background: #f0ede6"></div>
-                    <span>None</span>
+            heatmapHTML += '</div>';
+            heatmapHTML += `
+                <div class="hm-legend">
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: #f0ede6"></div>
+                        <span>None</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: rgba(196,18,48,0.25)"></div>
+                        <span>1 story</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: rgba(196,18,48,0.5)"></div>
+                        <span>2 stories</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: #c41230"></div>
+                        <span>3+ stories</span>
+                    </div>
                 </div>
-                <div class="legend-item">
-                    <div class="legend-swatch" style="background: rgba(196,18,48,0.25)"></div>
-                    <span>1 story</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-swatch" style="background: rgba(196,18,48,0.5)"></div>
-                    <span>2 stories</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-swatch" style="background: #c41230"></div>
-                    <span>3+ stories</span>
-                </div>
-            </div>
-        `;
+            `;
 
-        html += `
-            <div class="card rhythm-card">
-                <h3 class="card-title">Publication Rhythm</h3>
-                ${heatmapHTML}
-            </div>
-        `;
+            html += `
+                <div class="card rhythm-card">
+                    <h3 class="card-title">Publication Rhythm</h3>
+                    ${heatmapHTML}
+                </div>
+            `;
+        }
 
         analysisGrid.innerHTML = html;
 
-        // Add click handlers to heatmap cells
-        document.querySelectorAll('.hm-cell.clickable').forEach(cell => {
-            cell.addEventListener('click', () => {
-                const section = cell.getAttribute('data-section');
-                const hour = parseInt(cell.getAttribute('data-hour'));
-                showRhythmModal(section, hour, filteredArticles);
+        // Add click handlers to heatmap cells (only for single-date views)
+        if (selectedDate !== 'all') {
+            document.querySelectorAll('.hm-cell.clickable').forEach(cell => {
+                cell.addEventListener('click', () => {
+                    const section = cell.getAttribute('data-section');
+                    const hour = parseInt(cell.getAttribute('data-hour'));
+                    showRhythmModal(section, hour, filteredArticles);
+                });
             });
-        });
+        }
 
         console.log('✓ Analysis section updated');
 
@@ -1051,16 +1055,16 @@
             const d = new Date(date + 'T00:00:00');
             const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
 
-            const storiesTarget = dayData.article_count >= 12 ? '✓' : '';
+            const storiesTarget = dayData.article_count >= 12 ? '<span style="color: #c41230;">✓</span>' : '';
 
             let firstPubDisplay = dayData.first_publish_time || '';
             if (dayData.first_publish_time) {
                 const [h, m] = dayData.first_publish_time.split(':').map(Number);
                 const minutes = h * 60 + m;
-                if (minutes < 600) firstPubDisplay += ' ✓';
+                if (minutes < 600) firstPubDisplay += ' <span style="color: #c41230;">✓</span>';
             }
 
-            const belowTarget = dayData.below_minimum_count === 0 ? '✓' : '';
+            const belowTarget = dayData.below_minimum_count === 0 ? '<span style="color: #c41230;">✓</span>' : '';
 
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -1257,7 +1261,7 @@
         console.log('=== STEP 5: Updating Contributors ===');
 
         let articlesToUse = [];
-        const currentView = document.querySelector('.toggle-btn.active')?.textContent || 'Today';
+        const currentView = document.querySelector('#contributors .toggle-btn.active')?.textContent || 'Today';
 
         // When "All Dates" is selected, show all contributors
         if (selectedDate === 'all') {
