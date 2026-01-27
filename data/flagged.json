@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-27T11:10:26Z",
-  "total_flagged": 93,
+  "generated": "2026-01-27T11:45:06Z",
+  "total_flagged": 94,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3582,6 +3582,42 @@
       "possible": [
         {
           "name": "Pat Suraci’s",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "1ec3474189b7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/smashing-barriers-pooles-para-badminton-star-takes-his-talent-international/",
+      "headline": "Smashing Barriers – Poole’s para badminton star takes his talent international",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Cairo Phillips"
+      ],
+      "verify_evidence": [
+        "Buzz",
+        "para badminton"
+      ],
+      "confirmed": [
+        {
+          "name": "Cairo Phillips",
+          "gender": "unknown",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Buzz",
+          "gender": "male"
+        },
+        {
+          "name": "para badminton",
           "gender": "unknown"
         }
       ],

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T11:10:23Z",
-  "total_verified": 221,
+  "last_updated": "2026-01-27T11:45:03Z",
+  "total_verified": 223,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -2903,11 +2903,11 @@
       "verify_evidence": [
         {
           "name": "Lazio Correspondent",
-          "context": "PERSON within 50 chars of quote: ...ppearances between now and the end of the season. Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of ..."
+          "context": "PERSON within 50 chars of quote: ...nd the end of the season. Lebanese journalist and Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of ..."
         },
         {
           "name": "Michel Sakr",
-          "context": "PERSON within 50 chars of quote: ...w and the end of the season. Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of playing right..."
+          "context": "PERSON within 50 chars of quote: ...son. Lebanese journalist and Lazio Correspondent, Michel Sakr, said: “I would say he’s capable of playing right..."
         },
         {
           "name": "Provedel",
@@ -2938,6 +2938,12 @@
       "verify_evidence": []
     },
     {
+      "id": "6d26861ada49",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "20d0c0b488b6",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
       "verify_quoted_sources": 2,
@@ -2949,6 +2955,21 @@
         {
           "name": "Whisken",
           "context": "PERSON within 50 chars of quote: ... last ten years, but it felt so good to be back.” Whisken added: “When Shaq [Gwengwe, striker] and I came o..."
+        }
+      ]
+    },
+    {
+      "id": "1ec3474189b7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/smashing-barriers-pooles-para-badminton-star-takes-his-talent-international/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Buzz",
+          "context": "PERSON within 50 chars of quote: ...est doubles pairing in the world. When talking to Buzz about his time in Cairo Phillips said “ As much a..."
+        },
+        {
+          "name": "para badminton",
+          "context": "PERSON within 50 chars of quote: ...s still a big level difference between high level para badminton and county level able bodied.” He’s been playing ..."
         }
       ]
     },

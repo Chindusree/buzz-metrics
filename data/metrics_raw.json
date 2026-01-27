@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-27T11:00:48Z",
-  "total_articles": 221,
+  "last_updated": "2026-01-27T11:35:17Z",
+  "total_articles": 223,
   "gender_breakdown": {
-    "male": 132,
+    "male": 133,
     "female": 50,
     "unknown": 18
   },
@@ -11760,6 +11760,51 @@
       ]
     },
     {
+      "id": "6d26861ada49",
+      "headline": "Huge crime raid: Drugs, designer gear, and over £100k seized",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "10:45",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 633,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/2560px-Police_Line_Crime_Scene_2498847226-800x400.jpg",
+            "classification": "original",
+            "credit": "Tony Webster"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
       "id": "20d0c0b488b6",
       "headline": "Poole Town Legend Returns to Action",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-town-legend-returns-to-action/",
@@ -11801,6 +11846,64 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/52446911674_44e6393655_o.jpg-800x400.webp",
             "classification": "uncredited",
             "credit": "Jamie Whisken has played for the Dolphins since the 2013/14 campaign."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "1ec3474189b7",
+      "headline": "Smashing Barriers – Poole’s para badminton star takes his talent international",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/smashing-barriers-pooles-para-badminton-star-takes-his-talent-international/",
+      "author": "Ben Wheeler",
+      "author_confidence": "high",
+      "date": "2026-01-27",
+      "time": "11:17",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 953,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Cairo Phillips",
+          "full_attribution": "ing to Buzz about his time in Cairo Phillips said",
+          "quote_snippet": " As much as the results didn't go my way, the perf",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "pronoun_attribution"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3717-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "England para badminton player, Dan Phillips stood with BUzz reporter Ben Wheeler after their game of badminton. England para badminton star, Dan Phillips with BUzz reporter Ben Wheeler."
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3717-1-225x300.jpg",
+            "classification": "uncredited",
+            "credit": "England para badminton player, Dan Phillips stood with BUzz reporter Ben Wheeler after their game of badminton. England para badminton star, Dan Phillips with BUzz reporter Ben Wheeler."
           }
         ]
       },
