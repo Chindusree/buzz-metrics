@@ -15780,12 +15780,18 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "A witness",
+          "gender": "unknown",
+          "position": "described"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -15806,9 +15812,15 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "A witness",
+          "gender": "unknown",
+          "position": "described"
+        }
+      ],
       "source_evidence_possible": [
         {
           "name": "Matchams Lane",
@@ -16175,24 +16187,19 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 2,
       "quoted_sources_confidence": "medium",
-      "sources_male": 2,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "Area Manager Ant Bholah",
+          "name": "Ant Bholah",
           "gender": "unknown",
           "position": "before"
         },
         {
-          "name": "Gabriel Dela Cruz Local",
-          "gender": "male",
-          "position": "standalone_dash"
-        },
-        {
-          "name": "Gabriel Dela Cruz Residents",
+          "name": "Gabriel Dela Cruz",
           "gender": "male",
           "position": "standalone_dash"
         }
@@ -16219,21 +16226,16 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "Area Manager Ant Bholah",
+          "name": "Ant Bholah",
           "gender": "unknown",
           "position": "before"
         },
         {
-          "name": "Gabriel Dela Cruz Local",
-          "gender": "male",
-          "position": "standalone_dash"
-        },
-        {
-          "name": "Gabriel Dela Cruz Residents",
+          "name": "Gabriel Dela Cruz",
           "gender": "male",
           "position": "standalone_dash"
         }
