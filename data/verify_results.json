@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T10:06:29Z",
-  "total_verified": 238,
+  "last_updated": "2026-01-28T11:17:04Z",
+  "total_verified": 245,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3100,6 +3100,29 @@
       "verify_evidence": []
     },
     {
+      "id": "73471ed129f2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Rachel Smith",
+          "context": "PERSON within 50 chars of quote: ...e real.” She worked alongside fellow AUB students Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks..."
+        },
+        {
+          "name": "Emma Mackenzie",
+          "context": "PERSON within 50 chars of quote: ...orked alongside fellow AUB students Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks on the film. “T..."
+        },
+        {
+          "name": "Karyn Brooks",
+          "context": "PERSON within 50 chars of quote: ...Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks on the film. “The things that were happening in t..."
+        },
+        {
+          "name": "Hussain",
+          "context": "PERSON within 50 chars of quote: ... of this film, which is a really nice thing.” For Hussain and her crew, winning the student prize filled th..."
+        }
+      ]
+    },
+    {
       "id": "ba4f900fc5c7",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
       "verify_quoted_sources": 2,
@@ -3121,17 +3144,91 @@
       "verify_evidence": []
     },
     {
-      "id": "0750c45c5b51",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "id": "24522cafe78d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-through-to-dorset-senior-cup-final-despite-manager-frustration/",
       "verify_quoted_sources": 2,
       "verify_evidence": [
         {
-          "name": "Robin Morgan",
-          "context": "PERSON within 50 chars of quote: ...ast seen wearing a dark blue long coat. Inspector Robin Morgan of Dorset Police said, “David’s disappearance is ..."
+          "name": "Dorchester",
+          "context": "PERSON within 50 chars of quote: ...itive out of it all, as well as getting through.” Dorchester will now face Weymouth in the Dorset Senior Cup f..."
         },
         {
-          "name": "David",
-          "context": "PERSON within 50 chars of quote: ...t. Inspector Robin Morgan of Dorset Police said, “David’s disappearance is out of character and we need t..."
+          "name": "Weymouth",
+          "context": "PERSON within 50 chars of quote: ...ell as getting through.” Dorchester will now face Weymouth in the Dorset Senior Cup final, setting up anothe..."
+        }
+      ]
+    },
+    {
+      "id": "f5a5c5b18b42",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Madeleine Duncanson",
+          "context": "PERSON within 50 chars of quote: ... appealing for more information. Police Constable Madeleine Duncanson, of Dorset Police, said: “This was an unprovoked ..."
+        }
+      ]
+    },
+    {
+      "id": "c1df7c5deebd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/england-victorious-in-odi-series-against-sri-lanka/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Harry Brook",
+          "context": "PERSON within 50 chars of quote: ...rtsabout the bowling performance, England captain Harry Brook said “I am very happy with how the spinners have ..."
+        }
+      ]
+    },
+    {
+      "id": "0750c45c5b51",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
+    },
+    {
+      "id": "b6a42b36134f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Rayan",
+          "context": "PERSON within 50 chars of quote: ...play for the side and play in the Premier League. Rayan said to AFCBTV: “I am very happy to play amongst ..."
+        },
+        {
+          "name": "Valkmar",
+          "context": "PERSON within 50 chars of quote: ...osals but Bournemouth was different.” His father, Valkmar, also played for Vasco back in the late 90’s, so ..."
+        },
+        {
+          "name": "Bruno Murito",
+          "context": "PERSON within 50 chars of quote: ...has some big boots to fill. Brazilian journalist, Bruno Murito, said: “He’s one of the best youth attackers in B..."
+        },
+        {
+          "name": "Murito",
+          "context": "PERSON within 50 chars of quote: ...levels, scoring 10 goals and getting two assists. Murito said: “For the next World Cup in 2030, Rayan has ..."
+        }
+      ]
+    },
+    {
+      "id": "bb6f6fe1370a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/stars-football-academy-providing-pathway-for-next-generation/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Canford",
+          "context": "PERSON within 50 chars of quote: ... extra-curricular activities, he said: “Moving to Canford allows us to have everyone together, which is the..."
+        }
+      ]
+    },
+    {
+      "id": "25a5de87280d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Tomlinson",
+          "context": "PERSON within 50 chars of quote: ...“cornerstone of so many communities” according to Tomlinson. He stressed the importance of supporting them ev..."
         }
       ]
     },

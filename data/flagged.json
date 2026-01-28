@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T10:06:32Z",
-  "total_flagged": 100,
+  "generated": "2026-01-28T11:17:06Z",
+  "total_flagged": 105,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3570,25 +3570,29 @@
       "id": "ad32e4400b08",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-oaks-head-coach-aiming-to-push-boundaries-in-dorset-basketball-league/",
       "headline": "Bournemouth Oaks head coach aiming to ‘push boundaries’ in Dorset Basketball league",
-      "scrape_count": 0,
+      "scrape_count": 2,
       "verify_count": 4,
-      "confirmed_count": 0,
-      "possible_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 0,
       "filtered_count": 2,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Thomas Skiotys",
+        "Archie Boka"
+      ],
       "verify_evidence": [
         "Thomas Skiotys",
         "Archie Boka",
         "Boka",
         "Dorset"
       ],
-      "confirmed": [],
-      "possible": [
+      "confirmed": [
         {
           "name": "Thomas Skiotys",
-          "gender": "male"
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
+      "possible": [],
       "filtered": [
         "Archie Boka",
         "Dorset"
@@ -3730,6 +3734,44 @@
       "review_status": "pending"
     },
     {
+      "id": "73471ed129f2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
+      "headline": "AUB graduate wins Purbeck Film Festival short film competition",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 0,
+      "possible_count": 4,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Rachel Smith",
+        "Emma Mackenzie",
+        "Karyn Brooks",
+        "Hussain"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Rachel Smith",
+          "gender": "female"
+        },
+        {
+          "name": "Emma Mackenzie",
+          "gender": "female"
+        },
+        {
+          "name": "Karyn Brooks",
+          "gender": "female"
+        },
+        {
+          "name": "Hussain",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "ba4f900fc5c7",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
       "headline": "BCP Council to protect 99% of subsidised bus journeys",
@@ -3762,39 +3804,128 @@
       "review_status": "pending"
     },
     {
-      "id": "0750c45c5b51",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
-      "headline": "Police Appeal: Have You Seen David?",
-      "scrape_count": 1,
+      "id": "24522cafe78d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-through-to-dorset-senior-cup-final-despite-manager-frustration/",
+      "headline": "Dorchester through to Dorset Senior Cup final despite manager frustration",
+      "scrape_count": 0,
       "verify_count": 2,
-      "confirmed_count": 1,
-      "possible_count": 2,
-      "filtered_count": 0,
-      "scrape_evidence": [
-        "Dorset Police"
-      ],
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [],
       "verify_evidence": [
-        "Robin Morgan",
-        "David"
+        "Dorchester",
+        "Weymouth"
       ],
-      "confirmed": [
-        {
-          "name": "Dorset Police",
-          "gender": "unknown",
-          "position": "lastname_verb"
-        }
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Dorchester",
+        "Weymouth"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "f5a5c5b18b42",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
+      "headline": "Dorset Police appeal for a man after assault in Bournemouth",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Madeleine Duncanson"
+      ],
+      "confirmed": [],
       "possible": [
         {
-          "name": "Robin Morgan",
-          "gender": "male"
-        },
-        {
-          "name": "David",
-          "gender": "male"
+          "name": "Madeleine Duncanson",
+          "gender": "female"
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "b6a42b36134f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "headline": "Rayan excited to start Premier League challenge",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Bruno Murito"
+      ],
+      "verify_evidence": [
+        "Rayan",
+        "Valkmar",
+        "Bruno Murito",
+        "Murito"
+      ],
+      "confirmed": [
+        {
+          "name": "Bruno Murito",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Rayan",
+        "Valkmar"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "bb6f6fe1370a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/stars-football-academy-providing-pathway-for-next-generation/",
+      "headline": "Stars Football academy providing pathway for ‘next generation’",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Sam Bayston"
+      ],
+      "verify_evidence": [
+        "Canford"
+      ],
+      "confirmed": [
+        {
+          "name": "Sam Bayston",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Canford"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "25a5de87280d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
+      "headline": "Support package granted for pubs and venues",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Tomlinson"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Tomlinson"
+      ],
       "review_status": "pending"
     },
     {
