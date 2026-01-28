@@ -1115,18 +1115,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Eddie Howe",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 5,
         "original": 0,
@@ -1141,15 +1135,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Eddie Howe",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -7743,18 +7731,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Joe Turner",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -7776,15 +7758,9 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Joe Turner",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": true,
@@ -8076,7 +8052,7 @@
       "shorthand_url": null,
       "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
@@ -8752,7 +8728,7 @@
       "shorthand_url": null,
       "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
@@ -9530,7 +9506,7 @@
       "shorthand_url": null,
       "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
       "source_evidence": [],
@@ -11882,28 +11858,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 2,
-      "sources_female": 1,
+      "sources_male": 0,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Councillor Williams",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Councillor Brown",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Jim Frevola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -11924,25 +11884,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Councillor Williams",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Councillor Brown",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Jim Frevola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -13177,18 +13121,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "DC Joy Jarvis",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -13209,15 +13147,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "DC Joy Jarvis",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": true,
@@ -13344,23 +13276,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 2,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Joe Phillips",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "David Lowe",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -13393,20 +13314,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Joe Phillips",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "David Lowe",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -14090,23 +14000,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 1,
+      "sources_male": 0,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Poonam Paranjpe",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Martin Robinson",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -14134,20 +14033,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Poonam Paranjpe",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Martin Robinson",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Paranjpe",
@@ -14275,18 +14163,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Andoni Iraola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -14307,15 +14189,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Andoni Iraola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -14453,18 +14329,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "DCI Adam Smith",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -14485,15 +14355,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "DCI Adam Smith",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Adam Smith",
@@ -14803,28 +14667,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
-      "sources_female": 3,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Madison Love",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Helena Fremantle",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Patricia Leon Elias",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -14845,25 +14693,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Madison Love",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Helena Fremantle",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Patricia Leon Elias",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Patricia",
@@ -15678,18 +15510,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Doug Turner",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -15710,15 +15536,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Doug Turner",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -16115,18 +15935,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Andoni Iraola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -16149,15 +15963,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Andoni Iraola",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -16545,28 +16353,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 3,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Lisa",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Christel Lindner",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Toni Jones",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -16594,25 +16386,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Lisa",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Christel Lindner",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Toni Jones",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -17122,18 +16898,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Aaliyah Hussain",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -17161,15 +16931,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 2,
-      "source_evidence_confirmed": [
-        {
-          "name": "Aaliyah Hussain",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Hussain",
@@ -17332,18 +17096,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Thames Valley Police spokesman",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -17364,15 +17122,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Thames Valley Police spokesman",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -17502,18 +17254,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Tom Killick",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -17536,15 +17282,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Tom Killick",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Dorchester",
@@ -17571,18 +17311,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Madeleine Duncanson",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -17603,15 +17337,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Madeleine Duncanson",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Madeleine Duncanson",
@@ -17713,18 +17441,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Anonymous homeowner",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 4,
         "original": 3,
@@ -17762,15 +17484,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Anonymous homeowner",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -17840,18 +17556,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Andy Hadley",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -17874,15 +17584,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Andy Hadley",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -17982,18 +17686,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Dragos",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -18021,15 +17719,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dragos",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Dragos"
@@ -18142,18 +17834,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "AK Cunningham",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -18181,15 +17867,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "AK Cunningham",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "theLittle Brick Clubto",
@@ -18534,18 +18214,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Trish Martin",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 1,
@@ -18566,15 +18240,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Trish Martin",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Trish Martin",
@@ -18603,28 +18271,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 3,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "low",
-      "sources_male": 1,
-      "sources_female": 2,
+      "sources_male": 0,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Sir Keir Starmer",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Laura Bicker",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Dr Yu Jie",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -18647,25 +18299,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 3,
-      "source_evidence_confirmed": [
-        {
-          "name": "Sir Keir Starmer",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Laura Bicker",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Dr Yu Jie",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Laura Bicker",
@@ -18779,33 +18415,12 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 4,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
-      "sources_male": 2,
-      "sources_female": 2,
+      "sources_male": 0,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Dan Tomlinson",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Mel Stride",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Daisy Cooper",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Emma McClarkin",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 2,
         "original": 2,
@@ -18833,30 +18448,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dan Tomlinson",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Mel Stride",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Daisy Cooper",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Emma McClarkin",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Tomlinson"

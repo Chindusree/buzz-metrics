@@ -1,0 +1,1036 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-linked-with-next-szoboszlai/",
+    "headline": "AFC Bournemouth linked with \u2018next Szoboszlai\u2019",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-carrick-close-to-manchester-united-job/",
+    "headline": "BREAKING: Carrick agrees to Manchester United job",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-manchester-united-appoint-michael-carrick-as-head-coach/",
+    "headline": "BREAKING: Manchester United appoint Michael Carrick as head coach",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u-21s-beat-charlton/",
+    "headline": "Bournemouth U-21s thrash Charlton in Professional Development League",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-women-to-play-manchester-city-at-snows-stadium/",
+    "headline": "Bournemouth Women to play Manchester City at Snows Stadium",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
+    "headline": "Council owned leisure centre set for expansion",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bcpissuedyellowweatherwarning/",
+    "headline": "Met Office issues yellow weather warning for Dorset",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-bits-episode-1-deepfakes-and-a-i-being-used-malicously/",
+    "headline": "Minipod: Deepfakes and A.I. being used malicously",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+    "headline": "Rain hinders Emma Raducanu\u2019s Australian Open preparation",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-in-focus-as-newcastle-host-manchester-city-in-efl-cup/",
+    "headline": "Semenyo in focus as Newcastle host Manchester City in EFL Cup",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Eddie Howe",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/southamptonfacup/",
+    "headline": "Southampton to play Leicester in FA Cup Fourth Round",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/why-you-should-eat-a-frog-before-9am/",
+    "headline": "Why you should eat a frog before 9am",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-boxer-set-for-return-after-year-away/",
+    "headline": "Bournemouth Boxer Set for Return After Year Away",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-helicopter-search-for-missing-jamie/",
+    "headline": "Breaking: Dorset Police launch helicopter search for missing 49 year-old man",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-in-search-of-away-win-at-havant/",
+    "headline": "Dorchester Town in search of away win at Havant",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorsets-holocaust-memorial-day-2026/",
+    "headline": "Dorset\u2019s Holocaust Memorial Day 2026",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+    "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/radacanu-completes-her-first-win-of-the-season-after-rain-delay/",
+    "headline": "Radacanu completes her first win of the season after Rain delay",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-romain-faivre-joins-auxerre-on-loan/",
+    "headline": "BREAKING: Romain Faivre joins Auxerre on loan",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-in-talks-for-brazilian-wonderkid-rayan/",
+    "headline": "Cherries in talks for Brazilian wonderkid Rayan",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/formercherrykepahelpsarsenalbeatchelsea/",
+    "headline": "Former Cherries\u2019 goalkeeper Kepa helps Arsenal beat Chelsea",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/further-tickets-released-for-afcb-womens-fa-cup-clash/",
+    "headline": "Further tickets released for AFCB Women\u2019s FA Cup clash",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/olivier-award-winning-dear-england-tour-kicks-off-in-southampton/",
+    "headline": "Olivier Award winning \u2018Dear England\u2019 tour kicks off in Southampton",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/weymouth-advance-to-dorset-senior-cup-final-local-football-round-up/",
+    "headline": "Weymouth Advance to Dorset Senior Cup Final: Local Football round-up",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/winter-flower-hunt-at-local-park/",
+    "headline": "Winter flower hunt at local park",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/woman-to-appear-in-court-over-serious-collision/",
+    "headline": "Woman to appear in court over serious collision",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
+    "headline": "Council ramp up action on online sales of age-restricted products",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
+    "headline": "Homelessness: the psychological toll",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/military-microphone-business-in-upton-hit-by-tariffs/",
+    "headline": "Military microphone business in Upton hit by tariffs",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
+    "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
+    "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
+    "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+    "headline": "Young Cherries fall to disappointing defeat",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-announce-alex-toth-signing/",
+    "headline": "AFC Bournemouth announce Alex Toth signing",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/police-find-missing-woman/",
+    "headline": "BREAKING NEWS: Missing Poole woman has been found",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Joe Turner",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-previously-wanted-christchurch-man-arrested/",
+    "headline": "BREAKING NEWS: Previously wanted Christchurch man arrested.",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+    "headline": "Cherries closing in on deal for Mandas",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-denied-three-points-late-on-at-brighton/",
+    "headline": "Cherries denied three points late on by Brighton equaliser",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+    "headline": "Cherries player ratings: Jimenez and Tavernier star in away performance",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/brie-lieve-it-or-not-its-national-cheese-lovers-day/",
+    "headline": "Its national cheese lovers day: Brie-lieve it or not",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
+    "headline": "Southampton look to end winless streak against Sheffield United",
+    "status": "error",
+    "error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/"
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+    "headline": "Wimborne trip to Plymouth postponed",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+    "headline": "20 year-old man on trial for manslaughter following stabbing",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-cherries-agree-deal-in-principle-for-rayan/",
+    "headline": "BREAKING NEWS: Cherries agree deal in principle for Rayan",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warning-for-poole-and-christchurch-harbour/",
+    "headline": "Flood Warning for Poole and Christchurch Harbour",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/hampshires-dawson-set-for-odi-return/",
+    "headline": "Hampshire\u2019s Dawson set for ODI return",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+    "headline": "Saints host Sheffield United at St Mary\u2019s",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+    "headline": "Wonderkid Mayes hits record breaking 191",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/audi-f1-announce-arrival-to-grid-and-reveal-livery/",
+    "headline": "Audi F1 announce arrival to grid and reveal livery",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-yellow-rain-warning-issued-for-dorset/",
+    "headline": "BREAKING NEWS: Yellow rain warning issued for Dorset",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u21s-take-top-spot-in-pl-cup-group/",
+    "headline": "Bournemouth U21\u2019s take top spot in PL Cup group",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announces-plan-to-lower-energy-bills/",
+    "headline": "Dorset Council announces plan to lower energy bills",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dawson-shines-on-odi-return/",
+    "headline": "Hampshire\u2019s Dawson shines on ODI return despite England defeat",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
+    "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Councillor Williams",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Councillor Brown",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Jim Frevola",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin/",
+    "headline": "Live Stream BUzz News 16:15 Bulletin",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1215-bulletin/",
+    "headline": "Live Stream BUzz New\u2019s 12:15 Bulletin",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-end-winless-run-with-victory-over-sheffield-united/",
+    "headline": "Southampton end winless run with victory over Sheffield United",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/history-of-the-vitality-stadium/",
+    "headline": "The history of the Vitality Stadium",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/ufc-returns-after-six-week-break/",
+    "headline": "UFC returns after six-week break",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-drunk-driver-who-hit-bashley-star-jailed/",
+    "headline": "BREAKING NEWS: Drunk driver who hit Bashley star jailed",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "DC Joy Jarvis",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-service-offers-support-to-help-neurodiverse-independence/",
+    "headline": "Bournemouth service offers support to help neurodiverse independence",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Joe Phillips",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "David Lowe",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vs-liverpool-preview-and-predictions/",
+    "headline": "Bournemouth vs Liverpool preview and predictions.",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-podcast-week-2-roundup/",
+    "headline": "Buzz News podcast \u2013 Week 2 roundup",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
+    "headline": "Dorset Police launch survey for sexual offence victims",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
+    "headline": "How CAN are using leaflets to support the community",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Poonam Paranjpe",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Martin Robinson",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-andoni-iraola-previews-liverpool-clash/",
+    "headline": "LIVE BLOG: Andoni Iraola previews Liverpool clash",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Andoni Iraola",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1430-bulletin/",
+    "headline": "Live Stream BUzz News 14:30 bulletin",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1600-bulletin/",
+    "headline": "Live Stream BUzz News 16:00 Bulletin",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
+    "headline": "Man sentenced for people smuggling and class A drug supply",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "DCI Adam Smith",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/musgrave-winter-olympics/",
+    "headline": "Musgrave set for fifth Winter Olympic Games",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
+    "headline": "Out with the old, in with the new: UFC 324",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
+    "headline": "Profile pictures turn purple in support of South African Women",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Madison Love",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Helena Fremantle",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Patricia Leon Elias",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+    "headline": "The charity inspiring those who are going through Brain injury",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/another-weather-warning-issued-for-dorset/",
+    "headline": "Another Weather Warning Issued for Dorset",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Doug Turner",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-shock-liverpool-as-the-premier-league-delivers-drama/",
+    "headline": "Bournemouth shock Liverpool as the Premier League delivers drama",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Andoni Iraola",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/brook-and-root-both-hit-centuries-in-final-odi/",
+    "headline": "Brook and Root both hit centuries in final ODI",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-senior-cup-dorchester-town-v-portland-united/",
+    "headline": "Dorset Senior Cup: Dorchester Town v Portland United",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-comes-together-on-holocaust-memorial-day-2026/",
+    "headline": "Dorset comes together on Holocaust Memorial Day 2026",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/huge-crime-raid/",
+    "headline": "Huge crime raid: Drugs, designer gear, and over \u00a3100k seized",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/international-holocaust-remembrance/",
+    "headline": "International Holocaust Remembrance",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Lisa",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Christel Lindner",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Toni Jones",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin-2/",
+    "headline": "Live Stream BUzz News 16:15 Bulletin",
+    "status": "error",
+    "error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin-2/"
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
+    "headline": "AUB graduate wins Purbeck Film Festival short film competition",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Aaliyah Hussain",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+    "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Thames Valley Police spokesman",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-through-to-dorset-senior-cup-final-despite-manager-frustration/",
+    "headline": "Dorchester through to Dorset Senior Cup final despite manager frustration",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Tom Killick",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
+    "headline": "Dorset Police appeal for a man after assault in Bournemouth",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Madeleine Duncanson",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-brought-a-heavy-flood-to-ringwood/",
+    "headline": "Family-run pub in Ringwood forced to close after flood",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Anonymous homeowner",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warnings-cause-evacuations/",
+    "headline": "Flood warnings cause evacuations",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Andy Hadley",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
+    "headline": "Gladiators: Inspiring passion and achieving excellence.",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Dragos",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
+    "headline": "International LEGO\u00ae Day helps Bournemouth children get creative",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "AK Cunningham",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/man-dies-after-lorry-enters-flooded-river/",
+    "headline": "Man dies after lorry enters flooded river",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
+    "headline": "Sarah Mullally confirmed as next Archbishop of Canterbury",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Trish Martin",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
+    "headline": "Starmer first Prime Minister to arrive in China since 2018",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Sir Keir Starmer",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Laura Bicker",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Dr Yu Jie",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
+    "headline": "Support package granted for pubs and venues",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 4,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Dan Tomlinson",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Mel Stride",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Daisy Cooper",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Emma McClarkin",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]
