@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T13:16:38Z",
-  "total_verified": 250,
+  "last_updated": "2026-01-28T14:50:29Z",
+  "total_verified": 255,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3121,23 +3121,15 @@
     {
       "id": "73471ed129f2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
-      "verify_quoted_sources": 4,
+      "verify_quoted_sources": 2,
       "verify_evidence": [
+        {
+          "name": "Hussain",
+          "context": "PERSON within 50 chars of quote: ...neighbour, Nelly, she didn’t make an effort with. Hussain said: “Essentially, everything goes wrong and the..."
+        },
         {
           "name": "Rachel Smith",
           "context": "PERSON within 50 chars of quote: ...e real.” She worked alongside fellow AUB students Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks..."
-        },
-        {
-          "name": "Emma Mackenzie",
-          "context": "PERSON within 50 chars of quote: ...orked alongside fellow AUB students Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks on the film. “T..."
-        },
-        {
-          "name": "Karyn Brooks",
-          "context": "PERSON within 50 chars of quote: ...Rachel Smith, Emma Mackenzie, Angelica Hirabe and Karyn Brooks on the film. “The things that were happening in t..."
-        },
-        {
-          "name": "Hussain",
-          "context": "PERSON within 50 chars of quote: ... of this film, which is a really nice thing.” For Hussain and her crew, winning the student prize filled th..."
         }
       ]
     },
@@ -3159,6 +3151,13 @@
     {
       "id": "6ba67a40766c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-tv-live-1215/",
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
+    },
+    {
+      "id": "930ec2f9fda0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-bundee-aki-dropped-from-ireland-six-nations-squad/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
@@ -3206,6 +3205,12 @@
       ]
     },
     {
+      "id": "2634400eeacb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warnings-cause-evacuations/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "801884df786c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
       "verify_quoted_sources": 4,
@@ -3240,6 +3245,32 @@
       ]
     },
     {
+      "id": "a3eb411c4e83",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ground-rent-capped-for-leaseholders-in-england-and-wales/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Starmer",
+          "context": "PERSON within 50 chars of quote: ...move would be a positive change for householders. Starmer said: “Good news for homeowners, we are capping t..."
+        },
+        {
+          "name": "Steve Reed",
+          "context": "PERSON within 50 chars of quote: ...ey during this Parliament. The housing secretary, Steve Reed said: “The leasehold system has tainted the dream..."
+        }
+      ]
+    },
+    {
+      "id": "31c44ca1c129",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "theLittle Brick Clubto",
+          "context": "PERSON within 50 chars of quote: ...urnemouth’s self-proclaimed “LEGO® – lady” set up theLittle Brick Clubto provide a learning space for young children to pl..."
+        }
+      ]
+    },
+    {
       "id": "0750c45c5b51",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
       "verify_quoted_sources": null,
@@ -3249,11 +3280,15 @@
     {
       "id": "b6a42b36134f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
-      "verify_quoted_sources": 4,
+      "verify_quoted_sources": 5,
       "verify_evidence": [
         {
           "name": "Rayan",
-          "context": "PERSON within 50 chars of quote: ...play for the side and play in the Premier League. Rayan said to AFCBTV: “I am very happy to play amongst ..."
+          "context": "PERSON within 50 chars of quote: ...play for the side and play in the Premier League. Rayan said toAFCBTV:“I am very happy to play amongst th..."
+        },
+        {
+          "name": "toAFCBTV:“I am very",
+          "context": "PERSON within 50 chars of quote: ...e side and play in the Premier League. Rayan said toAFCBTV:“I am very happy to play amongst the best and proving myself..."
         },
         {
           "name": "Valkmar",
@@ -3261,13 +3296,19 @@
         },
         {
           "name": "Bruno Murito",
-          "context": "PERSON within 50 chars of quote: ...has some big boots to fill. Brazilian journalist, Bruno Murito, said: “He’s one of the best youth attackers in B..."
+          "context": "PERSON within 50 chars of quote: ... has some big boots to fill. Brazilian journalist,Bruno Murito, said: “He’s one of the best youth attackers in B..."
         },
         {
           "name": "Murito",
           "context": "PERSON within 50 chars of quote: ...levels, scoring 10 goals and getting two assists. Murito said: “For the next World Cup in 2030, Rayan has ..."
         }
       ]
+    },
+    {
+      "id": "d7b415460c6f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "53490ce707b9",
