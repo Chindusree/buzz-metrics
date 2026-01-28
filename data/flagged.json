@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T11:17:06Z",
-  "total_flagged": 105,
+  "generated": "2026-01-28T11:55:13Z",
+  "total_flagged": 106,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3881,6 +3881,39 @@
       "review_status": "pending"
     },
     {
+      "id": "53490ce707b9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
+      "headline": "Starmer first Prime Minister to arrive in China since 2018",
+      "scrape_count": 0,
+      "verify_count": 3,
+      "confirmed_count": 0,
+      "possible_count": 3,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Laura Bicker",
+        "Yu Jie",
+        "Donald Trump"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Laura Bicker",
+          "gender": "female"
+        },
+        {
+          "name": "Yu Jie",
+          "gender": "unknown"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "bb6f6fe1370a",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/stars-football-academy-providing-pathway-for-next-generation/",
       "headline": "Stars Football academy providing pathway for ‘next generation’",
@@ -3932,22 +3965,26 @@
       "id": "5df6c8d154f1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
       "headline": "The new BCP strategy aims to tackle the homelessness issue",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 2,
-      "confirmed_count": 0,
-      "possible_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
       "filtered_count": 0,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Matthew Gillett"
+      ],
       "verify_evidence": [
         "Councillor Matthew Gillett",
         "Talbot Woods"
       ],
-      "confirmed": [],
-      "possible": [
+      "confirmed": [
         {
           "name": "Matthew Gillett",
-          "gender": "male"
-        },
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
         {
           "name": "Talbot Woods",
           "gender": "male"

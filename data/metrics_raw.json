@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-28T11:07:34Z",
-  "total_articles": 245,
+  "last_updated": "2026-01-28T11:45:29Z",
+  "total_articles": 246,
   "gender_breakdown": {
-    "male": 144,
+    "male": 145,
     "female": 52,
     "unknown": 20
   },
@@ -15715,7 +15715,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -15753,26 +15753,16 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Thomas Skiotys",
           "gender": "male",
           "position": "groq_detected"
-        },
-        {
-          "name": "Archie Boka",
-          "gender": "male",
-          "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Thomas Skiotys",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [
         "Archie Boka",
         "Dorset"
@@ -16724,7 +16714,33 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 4,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Rachel Smith",
+          "gender": "female"
+        },
+        {
+          "name": "Emma Mackenzie",
+          "gender": "female"
+        },
+        {
+          "name": "Karyn Brooks",
+          "gender": "female"
+        },
+        {
+          "name": "Hussain",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "General News"
     },
     {
       "id": "ba4f900fc5c7",
@@ -16870,7 +16886,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -16896,7 +16912,19 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Dorchester",
+        "Weymouth"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "f5a5c5b18b42",
@@ -16939,7 +16967,21 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Madeleine Duncanson",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "c1df7c5deebd",
@@ -16958,7 +17000,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -16997,7 +17039,22 @@
         ],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Harry Brook",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "0750c45c5b51",
@@ -17052,7 +17109,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Dorset Police",
@@ -17060,16 +17117,7 @@
           "position": "lastname_verb"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Robin Morgan",
-          "gender": "male"
-        },
-        {
-          "name": "David",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -17093,7 +17141,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17127,7 +17175,70 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Bruno Murito",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Rayan",
+        "Valkmar"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "53490ce707b9",
+      "headline": "Starmer first Prime Minister to arrive in China since 2018",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
+      "author": "Martha White",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "11:17",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 579,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-28-113012-800x400.png",
+            "classification": "uncredited",
+            "credit": "Image of Kier Starmer\n©House of Commons"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
     },
     {
       "id": "bb6f6fe1370a",
@@ -17146,7 +17257,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17185,7 +17296,24 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Sam Bayston",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Canford"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "25a5de87280d",
@@ -17204,7 +17332,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17235,7 +17363,18 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Tomlinson"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "5df6c8d154f1",
@@ -17253,12 +17392,18 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Matthew Gillett",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 1,
@@ -17291,9 +17436,15 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 2,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "Matthew Gillett",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "source_evidence_possible": [
         {
           "name": "Matthew Gillett",

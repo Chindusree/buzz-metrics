@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T11:17:04Z",
-  "total_verified": 245,
+  "last_updated": "2026-01-28T11:55:10Z",
+  "total_verified": 246,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3207,6 +3207,25 @@
         {
           "name": "Murito",
           "context": "PERSON within 50 chars of quote: ...levels, scoring 10 goals and getting two assists. Murito said: “For the next World Cup in 2030, Rayan has ..."
+        }
+      ]
+    },
+    {
+      "id": "53490ce707b9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Laura Bicker",
+          "context": "PERSON within 50 chars of quote: ...ince 2018. According toBBC’s China correspondent, Laura Bicker, “China believes the UK is too close to the US an..."
+        },
+        {
+          "name": "Yu Jie",
+          "context": "PERSON within 50 chars of quote: ...f Beijing, Shanghai and then Tokyo. Researcher Dr Yu Jie for policy institute Chatham House, says “China s..."
+        },
+        {
+          "name": "Donald Trump",
+          "context": "PERSON within 50 chars of quote: ...d organisation” amid “disruption” of US President Donald Trump’s foreign policy. Further details are expected to..."
         }
       ]
     },
