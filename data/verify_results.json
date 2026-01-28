@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T15:15:27Z",
-  "total_verified": 259,
+  "last_updated": "2026-01-28T16:48:42Z",
+  "total_verified": 262,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3217,6 +3217,12 @@
       "verify_evidence": []
     },
     {
+      "id": "f52a1faf4a9c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/final-midweek-fixtures-could-decide-european-qualification/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "2634400eeacb",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warnings-cause-evacuations/",
       "verify_quoted_sources": 0,
@@ -3311,6 +3317,12 @@
       "error": "Failed to fetch article text"
     },
     {
+      "id": "bc8ff57b3c1e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-footage-from-west-moors-collision/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "b6a42b36134f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
       "verify_quoted_sources": 5,
@@ -3340,8 +3352,13 @@
     {
       "id": "d7b415460c6f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Trish Martin",
+          "context": "PERSON within 50 chars of quote: ...rom the other half of the population of females.” Trish Martin stopped to share her thoughts. “Good for her, I s..."
+        }
+      ]
     },
     {
       "id": "53490ce707b9",
@@ -3400,6 +3417,21 @@
         {
           "name": "Talbot Woods",
           "context": "PERSON within 50 chars of quote: ...ing to Councillor Matthew Gillett, who represents Talbot Woods. “There has been an improvement in the number of ..."
+        }
+      ]
+    },
+    {
+      "id": "75fc7a47ca98",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/walking-football-gives-men-a-new-lease-of-life/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Paul Kybert",
+          "context": "PERSON within 50 chars of quote: ... support network while engaging in social events. Paul Kybert said: “Some of the other guys have lost their liv..."
+        },
+        {
+          "name": "Kybert",
+          "context": "PERSON within 50 chars of quote: ...can benefit from their coordination skills, as Mr Kybert said: “Some people in the sessions have had recen..."
         }
       ]
     }
