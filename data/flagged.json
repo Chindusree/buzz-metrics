@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T09:37:33Z",
-  "total_flagged": 98,
+  "generated": "2026-01-28T10:06:32Z",
+  "total_flagged": 100,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3755,6 +3755,70 @@
       "possible": [
         {
           "name": "Andy Hadley",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "0750c45c5b51",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "headline": "Police Appeal: Have You Seen David?",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Dorset Police"
+      ],
+      "verify_evidence": [
+        "Robin Morgan",
+        "David"
+      ],
+      "confirmed": [
+        {
+          "name": "Dorset Police",
+          "gender": "unknown",
+          "position": "lastname_verb"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Robin Morgan",
+          "gender": "male"
+        },
+        {
+          "name": "David",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "5df6c8d154f1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
+      "headline": "The new BCP strategy aims to tackle the homelessness issue",
+      "scrape_count": 0,
+      "verify_count": 2,
+      "confirmed_count": 0,
+      "possible_count": 2,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Councillor Matthew Gillett",
+        "Talbot Woods"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Matthew Gillett",
+          "gender": "male"
+        },
+        {
+          "name": "Talbot Woods",
           "gender": "male"
         }
       ],

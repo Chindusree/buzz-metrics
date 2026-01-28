@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-01-28T09:28:10Z",
-  "total_articles": 236,
+  "last_updated": "2026-01-28T09:56:01Z",
+  "total_articles": 238,
   "gender_breakdown": {
     "male": 138,
     "female": 51,
-    "unknown": 19
+    "unknown": 20
   },
   "articles": [
     {
@@ -12598,6 +12598,114 @@
         "video_count": 0,
         "audio_count": 0,
         "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "0750c45c5b51",
+      "headline": "Police Appeal: Have You Seen David?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "09:37",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 327,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Dorset Police",
+          "full_attribution": "Police said,",
+          "quote_snippet": "",
+          "position": "lastname_verb",
+          "gender": "unknown",
+          "gender_confidence": "low",
+          "gender_method": "none"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DAVID-300x400.jpeg",
+            "classification": "original",
+            "credit": "Dorset Police"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "5df6c8d154f1",
+      "headline": "The new BCP strategy aims to tackle the homelessness issue",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "09:54",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 1080,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/front-view-homeless-man-holding-cup-plastic-bag-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Homeless person holding a drink (Credit : freepik.com)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0168-2048x1234-1.jpeg",
+            "classification": "original",
+            "credit": "Infographic by Grace Colmer based on gov.uk data."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/EmdX9ao7hhk?feature=oembed"
+          }
+        ],
         "audio_evidence": []
       },
       "warnings": [

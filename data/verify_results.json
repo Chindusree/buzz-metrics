@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T09:37:30Z",
-  "total_verified": 236,
+  "last_updated": "2026-01-28T10:06:29Z",
+  "total_verified": 238,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3119,6 +3119,36 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-defeat-portland-united-on-penalties-after-1-1-cup-draw/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "0750c45c5b51",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Robin Morgan",
+          "context": "PERSON within 50 chars of quote: ...ast seen wearing a dark blue long coat. Inspector Robin Morgan of Dorset Police said, “David’s disappearance is ..."
+        },
+        {
+          "name": "David",
+          "context": "PERSON within 50 chars of quote: ...t. Inspector Robin Morgan of Dorset Police said, “David’s disappearance is out of character and we need t..."
+        }
+      ]
+    },
+    {
+      "id": "5df6c8d154f1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Councillor Matthew Gillett",
+          "context": "PERSON within 50 chars of quote: ...nd has shown consistent improvement, according to Councillor Matthew Gillett, who represents Talbot Woods. “There has been an ..."
+        },
+        {
+          "name": "Talbot Woods",
+          "context": "PERSON within 50 chars of quote: ...ing to Councillor Matthew Gillett, who represents Talbot Woods. “There has been an improvement in the number of ..."
+        }
+      ]
     }
   ]
 }
