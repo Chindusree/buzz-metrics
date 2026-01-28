@@ -47,17 +47,19 @@ EXEMPT_PATTERNS = [
     r'\bcourt report\b',
 ]
 
-# Groq prompt for AR and CD extraction
+# Groq prompt for AR and CD extraction (NOT source extraction - we use verified data)
 SSI_PROMPT = """You are analyzing a news article for journalistic substance. Extract:
 
 ## 1. ATTRIBUTION RIGOUR (AR)
-For each quoted source, score attribution quality:
+For EACH quoted source in the article, score attribution quality:
 | Score | Criteria |
 |-------|----------|
 | 1.0 | Full: Name + Role + Organisation |
 | 0.7 | Partial: Name + Role (no org) |
 | 0.4 | Vague: Descriptor only ("A resident") |
 | 0.1 | Anonymous: "Sources said" |
+
+Return one score per source (even if attribution is poor/anonymous).
 
 ## 2. CONTEXTUAL DEPTH (CD)
 Check for presence (true/false):
@@ -70,9 +72,7 @@ Check for presence (true/false):
 
 Return ONLY valid JSON:
 {
-  "sources": [
-    {"name": "Name as attributed", "attribution_score": 1.0, "reason": "Full: name+role+org"}
-  ],
+  "attribution_scores": [1.0, 0.7, 0.4],
   "context": {
     "has_statistics": true,
     "has_timeline": false,
@@ -80,7 +80,7 @@ Return ONLY valid JSON:
     "has_explanation": false
   }
 }
-If no sources, return empty array. No text outside JSON."""
+If no sources, return empty attribution_scores array. No text outside JSON."""
 
 
 def fetch_article_text(url):
@@ -173,8 +173,8 @@ def call_groq_for_ssi(article_text):
 
         result = json.loads(content)
 
-        # Validate structure
-        if 'sources' not in result or 'context' not in result:
+        # Validate structure (expect attribution_scores and context)
+        if 'attribution_scores' not in result or 'context' not in result:
             return None, 'Invalid Groq response structure'
 
         return result, None
@@ -211,14 +211,20 @@ def is_exempt(article):
     return False, None
 
 
-def calculate_ssi(article, groq_result, fetched_word_count):
+def calculate_ssi(verified_word_count, verified_sources, groq_result):
     """
     Calculate SSI score and components.
-    Uses fetched_word_count (from actual article text) not stored word_count.
+    Uses VERIFIED data from metrics_verified.json (not Groq-extracted sources).
+
+    Args:
+        verified_word_count: Word count from metrics_verified.json
+        verified_sources: Source count from metrics_verified.json
+        groq_result: Dict with attribution_scores and context from Groq
+
     Returns dict with ssi_score, ssi_components, etc.
     """
-    word_count = fetched_word_count  # Use freshly calculated word count
-    quoted_sources = article.get('quoted_sources', 0)
+    word_count = verified_word_count
+    quoted_sources = verified_sources
 
     # Auto-categorise by word count
     if word_count >= 800:
@@ -233,14 +239,13 @@ def calculate_ssi(article, groq_result, fetched_word_count):
     # WE: Word Efficiency
     we = min(word_count / hw, 1.0) if hw > 0 else 0
 
-    # SD: Source Density
+    # SD: Source Density (from VERIFIED source count)
     sd = min(quoted_sources / hs, 1.0) if hs > 0 else 0
 
-    # AR: Attribution Rigour (average of source scores)
-    sources = groq_result.get('sources', [])
-    if sources:
-        ar_scores = [s.get('attribution_score', 0) for s in sources]
-        ar = sum(ar_scores) / len(ar_scores)
+    # AR: Attribution Rigour (average of Groq attribution scores)
+    attribution_scores = groq_result.get('attribution_scores', [])
+    if attribution_scores:
+        ar = sum(attribution_scores) / len(attribution_scores)
     else:
         ar = 0
 
@@ -272,14 +277,7 @@ def calculate_ssi(article, groq_result, fetched_word_count):
             'has_comparison': context.get('has_comparison', False),
             'has_explanation': context.get('has_explanation', False)
         },
-        'ssi_sources': [
-            {
-                'name': s.get('name', 'Unknown'),
-                'attribution_score': s.get('attribution_score', 0),
-                'reason': s.get('reason', '')
-            }
-            for s in sources
-        ]
+        'ssi_attribution_scores': attribution_scores  # Store individual scores
     }
 
 
@@ -321,7 +319,7 @@ def main():
         print('ERROR: GROQ_API_KEY environment variable not set')
         sys.exit(1)
 
-    # Load input data
+    # Load input data (metrics_verified.json)
     print(f'Loading {DATA_FILE}...')
     try:
         with open(DATA_FILE, 'r') as f:
@@ -332,6 +330,25 @@ def main():
 
     articles = data.get('articles', [])
     print(f'✓ Loaded {len(articles)} articles')
+
+    # Build verified data lookups
+    print('✓ Building verified word_count and quoted_sources lookups...')
+    verified_lookup = {}
+    for article in articles:
+        url = article.get('url', '')
+        quoted_sources = article.get('quoted_sources', [])
+        # Handle both int and list for quoted_sources
+        if isinstance(quoted_sources, int):
+            source_count = quoted_sources
+        elif isinstance(quoted_sources, list):
+            source_count = len(quoted_sources)
+        else:
+            source_count = 0
+
+        verified_lookup[url] = {
+            'word_count': article.get('word_count', 0),
+            'sources': source_count
+        }
     print()
 
     # Filter for test mode
@@ -392,6 +409,11 @@ def main():
             stats['exempt'] += 1
             continue
 
+        # Get verified word count and sources
+        verified = verified_lookup.get(url, {'word_count': 0, 'sources': 0})
+        verified_wc = verified['word_count']
+        verified_sources = verified['sources']
+
         # Fetch article text
         print(f'  ↓ Fetching article text...')
         text, fetch_error = fetch_article_text(url)
@@ -401,16 +423,13 @@ def main():
                 'url': url,
                 'headline': headline,
                 'date': article.get('date'),
-                'word_count': article.get('word_count', 0),
-                'quoted_sources': article.get('quoted_sources', 0),
+                'word_count': verified_wc,
+                'quoted_sources': verified_sources,
                 'ssi_score': None,
                 'ssi_error': fetch_error
             })
             stats['errors'] += 1
             continue
-
-        # Calculate word count from fetched text
-        fetched_word_count = len(text.split())
 
         # Rate limiting
         time.sleep(GROQ_DELAY)
@@ -424,16 +443,16 @@ def main():
                 'url': url,
                 'headline': headline,
                 'date': article.get('date'),
-                'word_count': fetched_word_count,  # Use fetched word count
-                'quoted_sources': article.get('quoted_sources', 0),
+                'word_count': verified_wc,
+                'quoted_sources': verified_sources,
                 'ssi_score': None,
                 'ssi_error': groq_error
             })
             stats['errors'] += 1
             continue
 
-        # Calculate SSI
-        ssi_data = calculate_ssi(article, groq_result, fetched_word_count)
+        # Calculate SSI using VERIFIED word count and sources
+        ssi_data = calculate_ssi(verified_wc, verified_sources, groq_result)
 
         print(f'  ✓ SSI: {ssi_data["ssi_score"]} ({ssi_data["ssi_category"]})')
         print(f'    Components: WE={ssi_data["ssi_components"]["we"]}, SD={ssi_data["ssi_components"]["sd"]}, AR={ssi_data["ssi_components"]["ar"]}, CD={ssi_data["ssi_components"]["cd"]}')
@@ -442,8 +461,8 @@ def main():
             'url': url,
             'headline': headline,
             'date': article.get('date'),
-            'word_count': fetched_word_count,  # Use fetched word count
-            'quoted_sources': article.get('quoted_sources', 0),
+            'word_count': verified_wc,
+            'quoted_sources': verified_sources,
             'ssi_exempt': False,
             **ssi_data
         })

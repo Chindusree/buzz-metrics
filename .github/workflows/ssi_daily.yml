@@ -5,6 +5,9 @@ on:
     - cron: '0 17 * * 1-5'  # 5pm UTC, Mon-Fri
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   score:
     runs-on: ubuntu-latest
