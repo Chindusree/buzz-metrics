@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-28T16:38:22Z",
+  "last_updated": "2026-01-28T17:57:58Z",
   "total_articles": 262,
   "gender_breakdown": {
     "male": 151,
@@ -17939,12 +17939,18 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Sergeant Mike Burt",
+          "type": "original",
+          "gender": "male"
+        }
+      ],
       "images": {
         "total": 0,
         "original": 0,
