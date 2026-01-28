@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-oaks-head-coach-aiming-to-push-boundaries-in-dorset-basketball-league/",
+    "headline": "Bournemouth Oaks head coach aiming to \u2018push boundaries\u2019 in Dorset Basketball league",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Thomas Skiotys",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Archie Boka",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/residents-call-for-safer-more-inclusive-bournemouth-town-centre/",
+    "headline": "Residents call for safer, more inclusive Bournemouth town centre",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Jessica Toale",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+    "headline": "Storm Chandra batters BCP, heavy rain triggers flooding and travel disruption",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Ant Bholah",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]
