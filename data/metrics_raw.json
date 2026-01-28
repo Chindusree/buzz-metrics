@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-28T12:44:21Z",
-  "total_articles": 250,
+  "last_updated": "2026-01-28T15:04:07Z",
+  "total_articles": 259,
   "gender_breakdown": {
-    "male": 147,
+    "male": 150,
     "female": 52,
     "unknown": 20
   },
@@ -16683,7 +16683,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -16711,7 +16711,29 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Alan Connell",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Jonny Day",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Matai"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "73471ed129f2",
@@ -16763,24 +16785,16 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 4,
+      "quoted_sources_possible": 2,
       "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
-          "name": "Rachel Smith",
-          "gender": "female"
-        },
-        {
-          "name": "Emma Mackenzie",
-          "gender": "female"
-        },
-        {
-          "name": "Karyn Brooks",
-          "gender": "female"
-        },
-        {
           "name": "Hussain",
           "gender": "male"
+        },
+        {
+          "name": "Rachel Smith",
+          "gender": "female"
         }
       ],
       "sources_filtered_out": [],
@@ -16908,7 +16922,111 @@
         ],
         "audio_evidence": []
       },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "ff3b6320a403",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "author": "Alex Rathbone",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:44",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 224,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/reading-800x400.jpg",
+            "classification": "original",
+            "credit": "Luke Hills"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": []
+    },
+    {
+      "id": "930ec2f9fda0",
+      "headline": "Bundee Aki dropped from Ireland Six Nations squad",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-bundee-aki-dropped-from-ireland-six-nations-squad/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:22",
+      "category": "Sport",
+      "category_detail": "Rugby Union",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 290,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Untitled-design-3-800x400.png",
+            "classification": "original",
+            "credit": "Ailani Verrall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Sport"
     },
     {
       "id": "03c78db5fbfb",
@@ -17152,6 +17270,120 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "6427a1510aa0",
+      "headline": "Family-run pub in Ringwood forced to close after flood",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-brought-a-heavy-flood-to-ringwood/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:42",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 791,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 4,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824399_y-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Melnykova"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824826_y-279x300.jpg",
+            "classification": "uncredited",
+            "credit": "Flooding in Crow Lane (Credit : Kevin Jones)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824829_y-225x300.jpg",
+            "classification": "original",
+            "credit": "Crow Lane resident"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824828_y.jpg",
+            "classification": "original",
+            "credit": "Resident of Crow Lane"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "2634400eeacb",
+      "headline": "Flood warnings cause evacuations",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/flood-warnings-cause-evacuations/",
+      "author": "Martha White",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:34",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 640,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-28-at-12.25.11-1-800x400.jpeg",
+            "classification": "uncredited",
+            "credit": "Image of the effects of Storm Chandra. Photo credit to Julia Apte."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "801884df786c",
       "headline": "Former BU student Brad Currie heading to T20 World Cup",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
@@ -17168,7 +17400,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17202,7 +17434,30 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Brad Currie",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "C. Currie",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Currie’s",
+        "BUzz"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "0f54b653efea",
@@ -17221,7 +17476,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17252,7 +17507,265 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Dragos"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "a3eb411c4e83",
+      "headline": "Ground rent capped for leaseholders in England and Wales",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ground-rent-capped-for-leaseholders-in-england-and-wales/",
+      "author": "Gabriel Dela Cruz",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:22",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 760,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Keir Starmer",
+          "full_attribution": "a positive change for householders.Starmer said:",
+          "quote_snippet": "Good news for homeowners, we are capping the rent ",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        },
+        {
+          "name": "Steve Reed",
+          "full_attribution": "arliament.The housing secretary, Steve Reed said:",
+          "quote_snippet": "The leasehold system has tainted the dream of home",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3509-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Houses on Firs Glen Road Bournemouth, photo credit to Gabriel Dela Cruz"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3522-360x270.jpg",
+            "classification": "original",
+            "credit": "Gabriel Dela Cruz"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "before"
+        },
+        {
+          "name": "Steve Reed",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "31c44ca1c129",
+      "headline": "International LEGO® Day helps Bournemouth children get creative",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
+      "author": "Charlotte Spicer",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:20",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 768,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Unknown-800x400.jpeg",
+            "classification": "original",
+            "credit": "AK Cunningham"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-28-at-13.58.30-243x300.png",
+            "classification": "original",
+            "credit": "AK Cunningham"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "theLittle Brick Clubto",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "73ca5c3085b7",
+      "headline": "Local charity supports inclusive cycling in the New Forest",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-charity-supports-inclusive-cycling-in-the-new-forest/",
+      "author": "Theo Otesanya-Salvo",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:53",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 740,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Gareth Jones",
+          "full_attribution": "try England and other generous donors.Jones said:",
+          "quote_snippet": " Receiving the lottery fund was a good step in the",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "pronoun_attribution"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3818-800x400.jpg",
+            "classification": "original",
+            "credit": "Pedall Website"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "afbd2c4b4fa5",
+      "headline": "Man dies after lorry enters flooded river",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-dies-after-lorry-enters-flooded-river/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "15:00",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 201,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/A.png",
+            "classification": "original",
+            "credit": "Image from Buzz News"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "0750c45c5b51",
@@ -17375,7 +17888,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Bruno Murito",
@@ -17383,7 +17896,12 @@
           "position": "before"
         }
       ],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "toAFCBTV:“I am very",
+          "gender": "unknown"
+        }
+      ],
       "sources_filtered_out": [
         "Rayan",
         "Valkmar"
@@ -17392,6 +17910,58 @@
       "is_long_form": true,
       "word_count_status": "long_form",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "d7b415460c6f",
+      "headline": "Sarah Mullally confirmed as next Archbishop of Canterbury",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
+      "author": "Gabriel Dela Cruz",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "13:50",
+      "category": "News",
+      "category_detail": "National",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 172,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/81d1220b-7c89-445f-a930-cefe0241cf70-800x400.jpg",
+            "classification": "original",
+            "credit": "George Nall"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "53490ce707b9",
@@ -17454,7 +18024,9 @@
           "gender": "male"
         }
       ],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Starmer"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
