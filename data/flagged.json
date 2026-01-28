@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T09:05:13Z",
-  "total_flagged": 97,
+  "generated": "2026-01-28T09:37:33Z",
+  "total_flagged": 98,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3724,6 +3724,38 @@
         {
           "name": "para badminton",
           "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "ba4f900fc5c7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
+      "headline": "BCP Council to protect 99% of subsidised bus journeys",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Richard Wade"
+      ],
+      "verify_evidence": [
+        "Richard Wade",
+        "Cllr Andy Hadley"
+      ],
+      "confirmed": [
+        {
+          "name": "Richard Wade",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Andy Hadley",
+          "gender": "male"
         }
       ],
       "filtered": [],

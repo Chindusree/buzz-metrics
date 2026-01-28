@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T09:05:10Z",
-  "total_verified": 235,
+  "last_updated": "2026-01-28T09:37:30Z",
+  "total_verified": 236,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3038,8 +3038,9 @@
     {
       "id": "591afa6d3490",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-stream-buzz-news-1615-bulletin-2/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "fef8f85c0b24",
@@ -3097,6 +3098,21 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "ba4f900fc5c7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Richard Wade",
+          "context": "PERSON within 50 chars of quote: ... a meeting on February 4. Morebus general manager Richard Wade said: “We are pleased to have worked with BCP Cou..."
+        },
+        {
+          "name": "Cllr Andy Hadley",
+          "context": "PERSON within 50 chars of quote: ...ced links from Poole, Westbourne and Bournemouth. Cllr Andy Hadley, portfolio holder for sustainable travel, said: “..."
+        }
+      ]
     },
     {
       "id": "03c78db5fbfb",

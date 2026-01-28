@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-28T08:56:00Z",
-  "total_articles": 235,
+  "last_updated": "2026-01-28T09:28:10Z",
+  "total_articles": 236,
   "gender_breakdown": {
-    "male": 137,
+    "male": 138,
     "female": 51,
     "unknown": 19
   },
@@ -12505,6 +12505,59 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ]
+    },
+    {
+      "id": "ba4f900fc5c7",
+      "headline": "BCP Council to protect 99% of subsidised bus journeys",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
+      "author": "Conner Haddow",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "09:21",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 789,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Richard Wade",
+          "full_attribution": "ary 4.\nMorebus general manager Richard Wade said:",
+          "quote_snippet": "We are pleased to have worked with BCP Council to ",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/FullSizeRender-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Lemon"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "03c78db5fbfb",

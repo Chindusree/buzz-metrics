@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-01-28T09:05:13Z",
-  "total_articles": 235,
+  "last_updated": "2026-01-28T09:37:33Z",
+  "total_articles": 236,
   "summary": {
-    "avg_word_count": 575,
+    "avg_word_count": 576,
     "avg_quoted_sources": 1.0,
     "below_minimum_count": 49,
     "long_form_count": 40,
     "breaking_news_count": 18,
-    "total_images": 705,
-    "original_images": 114,
+    "total_images": 706,
+    "original_images": 115,
     "stock_images": 9,
     "uncredited_images": 248,
     "gender_breakdown": {
-      "male": 150,
+      "male": 151,
       "female": 60,
       "unknown": 34
     },
@@ -23,9 +23,9 @@
         "sources": 75
       },
       "General News": {
-        "count": 138,
-        "words": 67618,
-        "sources": 147
+        "count": 139,
+        "words": 68407,
+        "sources": 148
       },
       "Features": {
         "count": 9,
@@ -40,8 +40,8 @@
         "avg_sources": 0.9
       },
       "News": {
-        "count": 138,
-        "avg_word_count": 490,
+        "count": 139,
+        "avg_word_count": 492,
         "avg_sources": 1.1
       },
       "Features": {
@@ -144,7 +144,7 @@
     },
     {
       "date": "2026-01-28",
-      "article_count": 1,
+      "article_count": 2,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:49",
@@ -16771,6 +16771,79 @@
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
       "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "ba4f900fc5c7",
+      "headline": "BCP Council to protect 99% of subsidised bus journeys",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
+      "author": "Conner Haddow",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "09:21",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 789,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Richard Wade",
+          "full_attribution": "ary 4.\nMorebus general manager Richard Wade said:",
+          "quote_snippet": "We are pleased to have worked with BCP Council to ",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/FullSizeRender-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Lemon"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Richard Wade",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Andy Hadley",
+          "gender": "male"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
