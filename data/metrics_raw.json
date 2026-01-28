@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-28T15:50:38Z",
+  "last_updated": "2026-01-28T16:38:22Z",
   "total_articles": 262,
   "gender_breakdown": {
     "male": 151,
@@ -1688,7 +1688,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -1880,7 +1880,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -2353,7 +2353,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "Sport"
     },
     {
@@ -2411,7 +2411,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "Sport"
     },
     {
@@ -3444,7 +3444,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -4151,7 +4151,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -4327,8 +4327,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -4642,7 +4642,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -4897,7 +4897,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "Sport"
     },
     {
@@ -6554,7 +6554,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "below_minimum",
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -7885,8 +7885,8 @@
         "Will Croker"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -8141,7 +8141,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -8350,7 +8350,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "below_minimum",
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -8623,7 +8623,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "below_minimum",
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -8718,7 +8718,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -8786,7 +8786,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -9288,7 +9288,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -9689,7 +9689,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -10265,7 +10265,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -10361,8 +10361,8 @@
       ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -10568,8 +10568,8 @@
         "GB"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Features"
     },
     {
@@ -10781,7 +10781,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -10875,8 +10875,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -11327,8 +11327,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -11640,7 +11640,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -11743,8 +11743,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "below_minimum",
+      "is_long_form": true,
+      "word_count_status": "long_form",
       "category_normalised": "General News"
     },
     {
@@ -12101,8 +12101,8 @@
       ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -12247,8 +12247,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -12300,8 +12300,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -12353,7 +12353,7 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": true,
-      "is_long_form": true,
+      "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
     },
@@ -12492,7 +12492,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -13766,8 +13766,8 @@
         "Petersfield"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form"
+      "is_long_form": false,
+      "word_count_status": "standard"
     },
     {
       "id": "c2e814eb7131",
@@ -13834,7 +13834,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -13896,7 +13896,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -14049,7 +14049,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "below_minimum",
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -14220,7 +14220,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -14633,8 +14633,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -15694,8 +15694,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -15769,7 +15769,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "Sport"
     },
     {
@@ -15945,7 +15945,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -16187,7 +16187,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -16514,8 +16514,8 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -16596,8 +16596,8 @@
       ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -16732,7 +16732,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "Sport"
     },
     {
@@ -16799,8 +16799,8 @@
       ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -17144,8 +17144,8 @@
         "Weymouth"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -17202,7 +17202,7 @@
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -17364,7 +17364,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17382,7 +17382,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "2634400eeacb",
@@ -17510,8 +17519,8 @@
         "BUzz"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -17949,7 +17958,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "b6a42b36134f",
@@ -18023,8 +18041,8 @@
         "Valkmar"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -18044,7 +18062,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18070,9 +18088,14 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "Trish Martin",
+          "gender": "female"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -18145,7 +18168,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -18219,8 +18242,8 @@
         "Canford"
       ],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "Sport"
     },
     {
@@ -18281,7 +18304,7 @@
       ],
       "is_breaking_news": false,
       "is_long_form": false,
-      "word_count_status": "standard",
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
@@ -18361,8 +18384,8 @@
       ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
+      "is_long_form": false,
+      "word_count_status": "standard",
       "category_normalised": "General News"
     },
     {
@@ -18382,7 +18405,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18410,7 +18433,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Paul Kybert",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     }
   ]
 }

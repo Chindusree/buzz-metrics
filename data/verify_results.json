@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-28T16:00:40Z",
+  "last_updated": "2026-01-28T16:48:42Z",
   "total_verified": 262,
   "results": [
     {
@@ -3151,8 +3151,9 @@
     {
       "id": "6ba67a40766c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-tv-live-1215/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "ff3b6320a403",
