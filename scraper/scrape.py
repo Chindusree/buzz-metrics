@@ -3091,10 +3091,11 @@ def extract_article_metadata(url):
 
 def load_existing_data():
     """
-    Sprint 7.20: Load existing metrics_raw.json if it exists.
+    Sprint 7.20: Load existing metrics_verified.json if it exists.
+    Sprint 8.5: Changed to metrics_verified.json to preserve backfill data.
     Returns existing data structure or empty structure if file doesn't exist.
     """
-    path = '../data/metrics_raw.json'
+    path = '../data/metrics_verified.json'
     if os.path.exists(path):
         try:
             with open(path, 'r', encoding='utf-8') as f:
