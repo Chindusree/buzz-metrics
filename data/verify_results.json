@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T12:09:17Z",
-  "total_verified": 246,
+  "last_updated": "2026-01-28T12:55:18Z",
+  "total_verified": 250,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3100,6 +3100,25 @@
       "verify_evidence": []
     },
     {
+      "id": "4e2aa4070438",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Alan Connell",
+          "context": "PERSON within 50 chars of quote: ...in the final game of the PL Cup group. U21’s boss Alan Connell said to afcb.co.uk: “It was a great night for eve..."
+        },
+        {
+          "name": "Jonny Day",
+          "context": "PERSON within 50 chars of quote: ...irst appearance in nearly four months for forward Jonny Day, who’s been out through injury. “It was great to ..."
+        },
+        {
+          "name": "Matai",
+          "context": "PERSON within 50 chars of quote: ...ugh injury. “It was great to get more minutes for Matai Akinmboni and Jonny Day’s return to action the fi..."
+        }
+      ]
+    },
+    {
       "id": "73471ed129f2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
       "verify_quoted_sources": 4,
@@ -3136,6 +3155,12 @@
           "context": "PERSON within 50 chars of quote: ...ced links from Poole, Westbourne and Bournemouth. Cllr Andy Hadley, portfolio holder for sustainable travel, said: “..."
         }
       ]
+    },
+    {
+      "id": "6ba67a40766c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-tv-live-1215/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "03c78db5fbfb",
@@ -3181,6 +3206,40 @@
       ]
     },
     {
+      "id": "801884df786c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "C.\nCurrie",
+          "context": "PERSON within 50 chars of quote: ...y have jumped at the opportunity to play in group C. Currie said: “It’s been a bit of a whirlwind, phones rea..."
+        },
+        {
+          "name": "Currie’s",
+          "context": "PERSON within 50 chars of quote: ...unforeseen circumstances for us.” In Scotland and Currie’s last outing in World Cup 2024, they failed to mak..."
+        },
+        {
+          "name": "Currie",
+          "context": "PERSON within 50 chars of quote: ...rtbroken after his previous World Cup experience, Currie said: “I feel a little bit like revenge is needed..."
+        },
+        {
+          "name": "BUzz",
+          "context": "PERSON within 50 chars of quote: ...ch are Nepal, Italy and now Scotland. Currie told BUzz: “I think it could be a fascinating group and I j..."
+        }
+      ]
+    },
+    {
+      "id": "0f54b653efea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Dragos",
+          "context": "PERSON within 50 chars of quote: ... how it goes”, explained club founder and manager Dragos. “We finished second, and from that moment I knew..."
+        }
+      ]
+    },
+    {
       "id": "0750c45c5b51",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
       "verify_quoted_sources": null,
@@ -3213,8 +3272,12 @@
     {
       "id": "53490ce707b9",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
-      "verify_quoted_sources": 3,
+      "verify_quoted_sources": 4,
       "verify_evidence": [
+        {
+          "name": "Starmer",
+          "context": "PERSON within 50 chars of quote: ...mmentary on what’s happening in other countries.” Starmer is expected to hold talks with senior Chinese off..."
+        },
         {
           "name": "Laura Bicker",
           "context": "PERSON within 50 chars of quote: ...ince 2018. According toBBC’s China correspondent, Laura Bicker, “China believes the UK is too close to the US an..."

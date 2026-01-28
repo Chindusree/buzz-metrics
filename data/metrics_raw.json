@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-28T11:45:29Z",
-  "total_articles": 246,
+  "last_updated": "2026-01-28T12:44:21Z",
+  "total_articles": 250,
   "gender_breakdown": {
-    "male": 145,
+    "male": 147,
     "female": 52,
     "unknown": 20
   },
@@ -16667,6 +16667,53 @@
       "category_normalised": "General News"
     },
     {
+      "id": "4e2aa4070438",
+      "headline": "AFC Bournemouth’s development squad reach last eight of PL Cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "12:16",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 521,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Alan Connell",
+          "full_attribution": "said Connell.The Cherries will be hoping to conti",
+          "quote_snippet": "s return to action the first time since the end of",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "73471ed129f2",
       "headline": "AUB graduate wins Purbeck Film Festival short film competition",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
@@ -16814,6 +16861,54 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"
+    },
+    {
+      "id": "6ba67a40766c",
+      "headline": "BUzz News Tv live 12:15",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-tv-live-1215/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "11:59",
+      "category": "Sport",
+      "category_detail": "Local Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 20,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-e1769601363676-598x400.png",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/yvSU0mdB_MA?feature=oembed"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "03c78db5fbfb",
@@ -17057,6 +17152,109 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "801884df786c",
+      "headline": "Former BU student Brad Currie heading to T20 World Cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
+      "author": "Ben Wheeler",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "12:23",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 907,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Brad Currie",
+          "full_attribution": "r his previous World Cup experience, Currie said:",
+          "quote_snippet": "I feel a little bit like revenge is needed because",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "pronoun_attribution"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019542-162x300.png",
+            "classification": "original",
+            "credit": "Joe Carson"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "0f54b653efea",
+      "headline": "Gladiators: Inspiring passion and achieving excellence.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
+      "author": "Alex Rathbone",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "12:03",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 698,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_8630-800x400.jpg",
+            "classification": "original",
+            "credit": "Dragos Craciun"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/f71207dc-15a5-4a4f-a2fa-8035435ee8c4-360x221.jpg",
+            "classification": "original",
+            "credit": "Dragos Craciun"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
       "id": "0750c45c5b51",
       "headline": "Police Appeal: Have You Seen David?",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
@@ -17238,7 +17436,29 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Laura Bicker",
+          "gender": "female"
+        },
+        {
+          "name": "Yu Jie",
+          "gender": "unknown"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "bb6f6fe1370a",
@@ -17393,7 +17613,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17437,7 +17657,7 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Matthew Gillett",
@@ -17446,10 +17666,6 @@
         }
       ],
       "source_evidence_possible": [
-        {
-          "name": "Matthew Gillett",
-          "gender": "male"
-        },
         {
           "name": "Talbot Woods",
           "gender": "male"

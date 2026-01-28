@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T12:09:20Z",
-  "total_flagged": 106,
+  "generated": "2026-01-28T12:55:21Z",
+  "total_flagged": 109,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3734,6 +3734,41 @@
       "review_status": "pending"
     },
     {
+      "id": "4e2aa4070438",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "headline": "AFC Bournemouth’s development squad reach last eight of PL Cup",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Alan Connell"
+      ],
+      "verify_evidence": [
+        "Alan Connell",
+        "Jonny Day",
+        "Matai"
+      ],
+      "confirmed": [
+        {
+          "name": "Alan Connell",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jonny Day",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Matai"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "73471ed129f2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
       "headline": "AUB graduate wins Purbeck Film Festival short film competition",
@@ -3849,6 +3884,63 @@
       "review_status": "pending"
     },
     {
+      "id": "801884df786c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
+      "headline": "Former BU student Brad Currie heading to T20 World Cup",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Brad Currie"
+      ],
+      "verify_evidence": [
+        "C.\nCurrie",
+        "Currie’s",
+        "Currie",
+        "BUzz"
+      ],
+      "confirmed": [
+        {
+          "name": "Brad Currie",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "possible": [
+        {
+          "name": "C. Currie",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Currie’s",
+        "BUzz"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "0f54b653efea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
+      "headline": "Gladiators: Inspiring passion and achieving excellence.",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Dragos"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Dragos"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "b6a42b36134f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
       "headline": "Rayan excited to start Premier League challenge",
@@ -3885,12 +3977,13 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
       "headline": "Starmer first Prime Minister to arrive in China since 2018",
       "scrape_count": 0,
-      "verify_count": 3,
+      "verify_count": 4,
       "confirmed_count": 0,
       "possible_count": 3,
-      "filtered_count": 0,
+      "filtered_count": 1,
       "scrape_evidence": [],
       "verify_evidence": [
+        "Starmer",
         "Laura Bicker",
         "Yu Jie",
         "Donald Trump"
@@ -3910,7 +4003,9 @@
           "gender": "male"
         }
       ],
-      "filtered": [],
+      "filtered": [
+        "Starmer"
+      ],
       "review_status": "pending"
     },
     {
