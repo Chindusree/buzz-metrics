@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-28T15:15:30Z",
-  "total_flagged": 110,
+  "generated": "2026-01-28T16:00:43Z",
+  "total_flagged": 111,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3989,6 +3989,29 @@
         "Rayan",
         "Valkmar"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d7b415460c6f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
+      "headline": "Sarah Mullally confirmed as next Archbishop of Canterbury",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Trish Martin"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Trish Martin",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
