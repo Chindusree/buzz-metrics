@@ -1,0 +1,30 @@
+{
+  "total_wordpress": 187,
+  "scored": 159,
+  "exempt": 26,
+  "errors": 2,
+  "missing": 0,
+  "error_articles": [
+    {
+      "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
+      "error": "fetch_failed"
+    },
+    {
+      "headline": "WATCH: 3:45pm sports bulletin \u2013 January 16",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-345pm-sports-bulletin-january-16/",
+      "error": "fetch_failed"
+    }
+  ],
+  "missing_articles": [],
+  "fetch_test": {
+    "success": 10,
+    "failures": 0,
+    "failure_details": []
+  },
+  "content_quality": {
+    "good_indicators": 50,
+    "weak_indicators": 0,
+    "weak_details": []
+  }
+}

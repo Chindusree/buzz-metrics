@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
+    "headline": "The new BCP strategy aims to tackle the homelessness issue",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Matthew Gillett",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]

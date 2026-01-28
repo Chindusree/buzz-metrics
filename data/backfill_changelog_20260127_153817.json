@@ -1,0 +1,179 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
+    "headline": "AFC Bournemouth Under-21\u2019s reflect on Charlton victory",
+    "old_quoted_sources": 3,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Ethan Sills",
+        "gender": "male",
+        "position": ""
+      },
+      {
+        "name": "Owen Bevan",
+        "gender": "male",
+        "position": ""
+      },
+      {
+        "name": "Remy Rees-Dottin",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Ethan Sills",
+        "gender": {
+          "gender": "male",
+          "confidence": "high",
+          "method": "name_lookup"
+        },
+        "position": "before"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-linked-with-next-szoboszlai/",
+    "headline": "AFC Bournemouth linked with \u2018next Szoboszlai\u2019",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Milos Kerkez",
+        "gender": {
+          "gender": "they",
+          "confidence": "medium",
+          "method": "pronoun_context"
+        },
+        "position": "standalone_dash"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+    "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [
+      {
+        "name": "Sharon Small",
+        "gender": "female",
+        "position": ""
+      },
+      {
+        "name": "Simon Bull",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Sharon Small",
+        "gender": {
+          "gender": "female",
+          "confidence": "high",
+          "method": "name_lookup"
+        },
+        "position": "after"
+      },
+      {
+        "name": "Simon Bull",
+        "gender": {
+          "gender": "male",
+          "confidence": "high",
+          "method": "name_lookup"
+        },
+        "position": "lastname_verb"
+      },
+      {
+        "name": "By Maisie Edwin",
+        "gender": {
+          "gender": "female",
+          "confidence": "medium",
+          "method": "pronoun_context"
+        },
+        "position": "blockquote-inline"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-carrick-close-to-manchester-united-job/",
+    "headline": "BREAKING: Carrick agrees to Manchester United job",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-manchester-united-appoint-michael-carrick-as-head-coach/",
+    "headline": "BREAKING: Manchester United appoint Michael Carrick as head coach",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-u-21s-beat-charlton/",
+    "headline": "Bournemouth U-21s thrash Charlton in Professional Development League",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-women-to-play-manchester-city-at-snows-stadium/",
+    "headline": "Bournemouth Women to play Manchester City at Snows Stadium",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/college-staff-to-strike-this-week/",
+    "headline": "Bournemouth and Poole College staff to strike this week",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [
+      {
+        "name": "Jo Grady",
+        "gender": "unknown",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/contract-extension-for-hampshire-hawks-james-vince/",
+    "headline": "Contract Extension for Hampshire Hawks\u2019 James Vince",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [
+      {
+        "name": "Matt Perry-Lewis",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/council-owned-leisure-centre-set-for-expansion/",
+    "headline": "Council owned leisure centre set for expansion",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  }
+]

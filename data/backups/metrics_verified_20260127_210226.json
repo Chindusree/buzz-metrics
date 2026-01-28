@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-28T12:55:21Z",
-  "total_articles": 250,
+  "last_updated": "2026-01-27T18:01:46Z",
+  "total_articles": 234,
   "summary": {
-    "avg_word_count": 584,
+    "avg_word_count": 574,
     "avg_quoted_sources": 1.0,
-    "below_minimum_count": 51,
-    "long_form_count": 46,
+    "below_minimum_count": 49,
+    "long_form_count": 40,
     "breaking_news_count": 18,
-    "total_images": 724,
-    "original_images": 127,
-    "stock_images": 10,
-    "uncredited_images": 253,
+    "total_images": 704,
+    "original_images": 113,
+    "stock_images": 9,
+    "uncredited_images": 248,
     "gender_breakdown": {
-      "male": 159,
-      "female": 61,
-      "unknown": 35
+      "male": 150,
+      "female": 60,
+      "unknown": 34
     },
     "by_section": {
       "Sport": {
-        "count": 96,
-        "words": 58607,
-        "sources": 81
+        "count": 87,
+        "words": 52214,
+        "sources": 75
       },
       "General News": {
-        "count": 145,
-        "words": 72632,
-        "sources": 152
+        "count": 138,
+        "words": 67618,
+        "sources": 147
       },
       "Features": {
         "count": 9,
@@ -35,14 +35,14 @@
     },
     "by_category": {
       "Sport": {
-        "count": 96,
-        "avg_word_count": 610,
-        "avg_sources": 0.8
+        "count": 87,
+        "avg_word_count": 600,
+        "avg_sources": 0.9
       },
       "News": {
-        "count": 145,
-        "avg_word_count": 501,
-        "avg_sources": 1.0
+        "count": 138,
+        "avg_word_count": 490,
+        "avg_sources": 1.1
       },
       "Features": {
         "count": 9,
@@ -141,16 +141,6 @@
       "first_publish_on_time": true,
       "below_minimum_count": 3,
       "long_form_count": 3
-    },
-    {
-      "date": "2026-01-28",
-      "article_count": 16,
-      "target": 12,
-      "meets_target": true,
-      "first_publish_time": "08:49",
-      "first_publish_on_time": true,
-      "below_minimum_count": 2,
-      "long_form_count": 6
     }
   ],
   "articles": [
@@ -166,7 +156,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 829,
+      "word_count": 880,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -246,7 +236,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 382,
+      "word_count": 431,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -292,7 +282,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 360,
+      "word_count": 429,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -365,7 +355,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 211,
+      "word_count": 259,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -411,7 +401,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 101,
+      "word_count": 151,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -457,7 +447,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 450,
+      "word_count": 500,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -503,7 +493,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 372,
+      "word_count": 437,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -549,7 +539,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 376,
+      "word_count": 425,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -614,7 +604,7 @@
       "category_detail": "Cricket",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 365,
+      "word_count": 409,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -679,7 +669,7 @@
       "category_detail": "Health",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 351,
+      "word_count": 402,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -725,7 +715,7 @@
       "category_detail": "Boscombe",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 213,
+      "word_count": 263,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -803,7 +793,7 @@
       "category_detail": null,
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 177,
+      "word_count": 224,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -861,7 +851,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 395,
+      "word_count": 443,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -907,7 +897,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 88,
+      "word_count": 127,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -953,7 +943,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 357,
+      "word_count": 413,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1011,7 +1001,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 361,
+      "word_count": 403,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1057,7 +1047,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 351,
+      "word_count": 414,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1111,7 +1101,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 351,
+      "word_count": 420,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1157,7 +1147,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 367,
+      "word_count": 423,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1203,7 +1193,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 99,
+      "word_count": 146,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1257,7 +1247,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 251,
+      "word_count": 327,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1315,7 +1305,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 366,
+      "word_count": 416,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1361,7 +1351,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 373,
+      "word_count": 441,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1419,7 +1409,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 831,
+      "word_count": 886,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1492,7 +1482,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 375,
+      "word_count": 423,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1605,7 +1595,7 @@
       "category_detail": "Boxing",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 363,
+      "word_count": 415,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1775,7 +1765,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 329,
+      "word_count": 391,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1850,7 +1840,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 166,
+      "word_count": 218,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1896,7 +1886,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 618,
+      "word_count": 682,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -1964,7 +1954,7 @@
       "category_detail": null,
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 327,
+      "word_count": 365,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2042,7 +2032,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 375,
+      "word_count": 425,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2088,7 +2078,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 224,
+      "word_count": 263,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2232,7 +2222,7 @@
       "category_detail": "Ethics",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 232,
+      "word_count": 277,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2278,7 +2268,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 375,
+      "word_count": 432,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2336,7 +2326,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 376,
+      "word_count": 425,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2382,7 +2372,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 503,
+      "word_count": 564,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2457,7 +2447,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 346,
+      "word_count": 390,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2515,7 +2505,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 337,
+      "word_count": 405,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2573,7 +2563,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 565,
+      "word_count": 612,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2648,7 +2638,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 358,
+      "word_count": 407,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2694,7 +2684,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 411,
+      "word_count": 465,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2782,7 +2772,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 450,
+      "word_count": 499,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2871,7 +2861,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 290,
+      "word_count": 338,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2929,7 +2919,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 528,
+      "word_count": 578,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -2997,7 +2987,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 501,
+      "word_count": 559,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3062,7 +3052,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 141,
+      "word_count": 187,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3108,7 +3098,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 366,
+      "word_count": 408,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3171,7 +3161,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 379,
+      "word_count": 413,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3229,7 +3219,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 559,
+      "word_count": 611,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3240,24 +3230,24 @@
       "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "A spokesperson from the college",
-          "type": "press_statement",
-          "gender": "unknown"
+          "name": "Bournemouth and Poole College spokesperson",
+          "gender": "unknown",
+          "position": "groq_detected"
         },
         {
           "name": "Anne Marie Moriarty",
-          "type": "original",
-          "gender": "female"
+          "gender": "female",
+          "position": "groq_detected"
         },
         {
           "name": "Darren Tozer",
-          "type": "original",
-          "gender": "male"
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Peter Cooper",
-          "type": "original",
-          "gender": "male"
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "images": {
@@ -3274,18 +3264,28 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 4,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "A spokesperson from the college",
+          "name": "Bournemouth and Poole College spokesperson",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Darren Tozer",
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Peter Cooper",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [],
@@ -3429,7 +3429,7 @@
       "category_detail": "Boxing",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 253,
+      "word_count": 301,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3492,7 +3492,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 371,
+      "word_count": 425,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3538,7 +3538,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 290,
+      "word_count": 383,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3606,7 +3606,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 485,
+      "word_count": 539,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3676,7 +3676,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 484,
+      "word_count": 553,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3755,7 +3755,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 416,
+      "word_count": 469,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3935,7 +3935,7 @@
       "category_detail": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 463,
+      "word_count": 507,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -3981,7 +3981,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 183,
+      "word_count": 233,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4027,7 +4027,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 370,
+      "word_count": 422,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4092,7 +4092,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 1107,
+      "word_count": 1160,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4177,7 +4177,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 398,
+      "word_count": 447,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4242,7 +4242,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 340,
+      "word_count": 430,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4313,7 +4313,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 355,
+      "word_count": 412,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4381,7 +4381,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 225,
+      "word_count": 272,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4444,7 +4444,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 783,
+      "word_count": 844,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4490,7 +4490,7 @@
       "category_detail": null,
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 482,
+      "word_count": 518,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4558,7 +4558,7 @@
       "category_detail": "Golf",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 608,
+      "word_count": 659,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4649,7 +4649,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 533,
+      "word_count": 584,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4739,7 +4739,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 341,
+      "word_count": 393,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4804,7 +4804,7 @@
       "category_detail": null,
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 1108,
+      "word_count": 1192,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -4945,7 +4945,7 @@
       "category_detail": null,
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 407,
+      "word_count": 481,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5013,7 +5013,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 311,
+      "word_count": 363,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5059,7 +5059,7 @@
       "category_detail": "Boscombe",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 193,
+      "word_count": 264,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5105,7 +5105,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "News",
-      "word_count": 109,
+      "word_count": 165,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5149,7 +5149,7 @@
       "time": "11:25",
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
-      "word_count": 356,
+      "word_count": 361,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5367,7 +5367,7 @@
       "time": "14:21",
       "category": "Men's Football",
       "category_primary": "Sport",
-      "word_count": 324,
+      "word_count": 0,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5432,7 +5432,7 @@
       "time": "10:47",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 378,
+      "word_count": 374,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -5981,7 +5981,7 @@
       "time": "12:26",
       "category": "News Top",
       "category_primary": "News",
-      "word_count": 208,
+      "word_count": 219,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -6179,7 +6179,7 @@
       "time": "16:03",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 94,
+      "word_count": 111,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -6408,7 +6408,7 @@
       "time": "10:57",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 280,
+      "word_count": 279,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -6474,7 +6474,7 @@
       "time": "14:18",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 72,
+      "word_count": 0,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -6658,7 +6658,7 @@
       "time": "14:51",
       "category": "Dorset",
       "category_primary": "News",
-      "word_count": 356,
+      "word_count": 344,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -6714,7 +6714,7 @@
       "time": "12:24",
       "category": "Health",
       "category_primary": "Features",
-      "word_count": 942,
+      "word_count": 845,
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
@@ -6845,7 +6845,7 @@
       "time": "12:10",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 1206,
+      "word_count": 1169,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7226,7 +7226,7 @@
       "time": "14:42",
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
-      "word_count": 789,
+      "word_count": 786,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7676,7 +7676,7 @@
       "time": "09:15",
       "category": "1st News",
       "category_primary": "News",
-      "word_count": 137,
+      "word_count": 130,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7727,7 +7727,7 @@
       "time": "09:43",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 95,
+      "word_count": 93,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7778,7 +7778,7 @@
       "time": "16:52",
       "category": "1st News",
       "category_primary": "News",
-      "word_count": 69,
+      "word_count": 135,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7829,7 +7829,7 @@
       "time": "14:05",
       "category": "News",
       "category_primary": "News",
-      "word_count": 365,
+      "word_count": 712,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7894,7 +7894,7 @@
       "time": "15:40",
       "category": "News",
       "category_primary": "News",
-      "word_count": 371,
+      "word_count": 724,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -7967,7 +7967,7 @@
       "time": "14:10",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 562,
+      "word_count": 1094,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8046,7 +8046,7 @@
       "time": "10:44",
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
-      "word_count": 394,
+      "word_count": 392,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8102,7 +8102,7 @@
       "time": "08:48",
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
-      "word_count": 407,
+      "word_count": 773,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8155,7 +8155,7 @@
       "time": "11:07",
       "category": "News",
       "category_primary": "News",
-      "word_count": 394,
+      "word_count": 361,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8206,7 +8206,7 @@
       "time": "13:49",
       "category": "Bournemouth",
       "category_primary": "News",
-      "word_count": 283,
+      "word_count": 545,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8301,7 +8301,7 @@
       "time": "11:17",
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
-      "word_count": 393,
+      "word_count": 389,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8369,7 +8369,7 @@
       "time": "14:50",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 351,
+      "word_count": 686,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8442,7 +8442,7 @@
       "time": "12:24",
       "category": "Local",
       "category_primary": "News",
-      "word_count": 375,
+      "word_count": 0,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8573,7 +8573,7 @@
       "time": "08:58",
       "category": "Bournemouth",
       "category_primary": "News",
-      "word_count": 370,
+      "word_count": 727,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8653,7 +8653,7 @@
       "time": "13:48",
       "category": "Boscombe",
       "category_primary": "News",
-      "word_count": 439,
+      "word_count": 407,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8722,7 +8722,7 @@
       "time": "11:44",
       "category": "Dorset",
       "category_primary": "News",
-      "word_count": 351,
+      "word_count": 291,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8783,7 +8783,7 @@
       "time": "14:02",
       "category": "News",
       "category_primary": "News",
-      "word_count": 348,
+      "word_count": 682,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8878,7 +8878,7 @@
       "time": "12:48",
       "category": "News",
       "category_primary": "News",
-      "word_count": 314,
+      "word_count": 611,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -8946,7 +8946,7 @@
       "time": "12:22",
       "category": "Bournemouth",
       "category_primary": "News",
-      "word_count": 601,
+      "word_count": 593,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9175,7 +9175,7 @@
       "time": "14:50",
       "category": "cricket",
       "category_primary": "News",
-      "word_count": 384,
+      "word_count": 775,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9252,7 +9252,7 @@
       "time": "14:47",
       "category": "Local Football",
       "category_primary": "Sport",
-      "word_count": 359,
+      "word_count": 697,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9305,7 +9305,7 @@
       "time": "14:24",
       "category": "News",
       "category_primary": "News",
-      "word_count": 138,
+      "word_count": 263,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9368,7 +9368,7 @@
       "time": "16:06",
       "category": "1st News",
       "category_primary": "News",
-      "word_count": 269,
+      "word_count": 798,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9449,7 +9449,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 111,
+      "word_count": 218,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9500,7 +9500,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 408,
+      "word_count": 333,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9551,7 +9551,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 269,
+      "word_count": 475,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9616,7 +9616,7 @@
       "category": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 363,
+      "word_count": 713,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9775,7 +9775,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 303,
+      "word_count": 597,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9850,7 +9850,7 @@
       "category": "Dorset",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 375,
+      "word_count": 741,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9922,7 +9922,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 170,
+      "word_count": 325,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -9985,7 +9985,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 184,
+      "word_count": 347,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10049,7 +10049,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 158,
+      "word_count": 301,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10119,7 +10119,7 @@
       "category": "Health",
       "category_primary": "Features",
       "display_category": "General News",
-      "word_count": 148,
+      "word_count": 283,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10182,7 +10182,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 64,
+      "word_count": 125,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10233,7 +10233,7 @@
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 406,
+      "word_count": 787,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10301,7 +10301,7 @@
       "category": "cricket",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 391,
+      "word_count": 766,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10354,7 +10354,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 311,
+      "word_count": 612,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10426,7 +10426,7 @@
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 670,
+      "word_count": 1307,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10523,7 +10523,7 @@
       "category": "Dorset",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 377,
+      "word_count": 753,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10626,7 +10626,7 @@
       "category": "Health",
       "category_primary": "Features",
       "display_category": "General News",
-      "word_count": 446,
+      "word_count": 863,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10730,7 +10730,7 @@
       "category": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 352,
+      "word_count": 695,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10777,7 +10777,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 372,
+      "word_count": 729,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10872,7 +10872,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 329,
+      "word_count": 608,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -10942,7 +10942,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 561,
+      "word_count": 1099,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11037,7 +11037,7 @@
       "category": "cricket",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 343,
+      "word_count": 679,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11090,7 +11090,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 360,
+      "word_count": 711,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11186,7 +11186,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 106,
+      "word_count": 208,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11242,7 +11242,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 417,
+      "word_count": 188,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11305,7 +11305,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 105,
+      "word_count": 206,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11356,7 +11356,7 @@
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 370,
+      "word_count": 698,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11409,7 +11409,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 357,
+      "word_count": 876,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11489,7 +11489,7 @@
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 356,
+      "word_count": 699,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11554,7 +11554,7 @@
       "category": "News",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 379,
+      "word_count": 744,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11617,7 +11617,7 @@
       "category": "Boscombe",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 374,
+      "word_count": 727,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11687,7 +11687,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 119,
+      "word_count": 232,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11738,7 +11738,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 240,
+      "word_count": 468,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11801,7 +11801,7 @@
       "category": "cricket",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 374,
+      "word_count": 736,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -11854,7 +11854,7 @@
       "category": "1st News",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 1257,
+      "word_count": 187,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12017,7 +12017,7 @@
       "category": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 379,
+      "word_count": 743,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12082,7 +12082,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 436,
+      "word_count": 549,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12175,7 +12175,7 @@
       "category": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 441,
+      "word_count": 858,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12263,7 +12263,7 @@
       "category": "Men's Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 351,
+      "word_count": 693,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12316,7 +12316,7 @@
       "category": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 543,
+      "word_count": 1070,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12409,7 +12409,7 @@
       "category": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 418,
+      "word_count": 823,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12462,7 +12462,7 @@
       "category": "Boxing",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 425,
+      "word_count": 827,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12515,7 +12515,7 @@
       "category": "Health",
       "category_primary": "Features",
       "display_category": "General News",
-      "word_count": 384,
+      "word_count": 753,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12580,7 +12580,7 @@
       "category": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 340,
+      "word_count": 670,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -12654,7 +12654,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 1187,
+      "word_count": 2348,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13044,7 +13044,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 201,
+      "word_count": 398,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13117,7 +13117,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 245,
+      "word_count": 145,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13169,7 +13169,7 @@
       "category_detail": "Features",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 859,
+      "word_count": 840,
       "word_count_confidence": "medium",
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-university-rebuilds-the-television-that-started-it-all/index.html",
@@ -13272,7 +13272,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 353,
+      "word_count": 690,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13336,7 +13336,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 393,
+      "word_count": 777,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13390,7 +13390,7 @@
       "category_detail": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 17,
+      "word_count": 30,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13441,7 +13441,7 @@
       "category_detail": "Art",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 162,
+      "word_count": 308,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13783,7 +13783,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 110,
+      "word_count": 214,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13840,7 +13840,7 @@
       "category_detail": "Rugby Union",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 433,
+      "word_count": 843,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13928,7 +13928,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 187,
+      "word_count": 363,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -13996,7 +13996,7 @@
       "category_detail": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 302,
+      "word_count": 587,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14159,7 +14159,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 612,
+      "word_count": 110,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14325,7 +14325,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 228,
+      "word_count": 448,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14382,7 +14382,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 386,
+      "word_count": 758,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14451,7 +14451,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 352,
+      "word_count": 608,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14505,7 +14505,7 @@
       "category_detail": "Bournemouth",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 113,
+      "word_count": 222,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14663,7 +14663,7 @@
       "category_detail": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 515,
+      "word_count": 404,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -14720,7 +14720,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 430,
+      "word_count": 846,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15438,7 +15438,7 @@
       "category_detail": "Local Football",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 354,
+      "word_count": 692,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15506,7 +15506,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 339,
+      "word_count": 313,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15558,7 +15558,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 245,
+      "word_count": 476,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15631,7 +15631,7 @@
       "category_detail": "AFC Bournemouth",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 311,
+      "word_count": 444,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15721,7 +15721,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 363,
+      "word_count": 712,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15789,7 +15789,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 415,
+      "word_count": 802,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15857,27 +15857,16 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 345,
+      "word_count": 677,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 2,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Thomas Skiotys",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Archie Boka",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -15900,16 +15889,15 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
         {
           "name": "Thomas Skiotys",
-          "gender": "male",
-          "position": "groq_detected"
+          "gender": "male"
         }
       ],
-      "source_evidence_possible": [],
       "sources_filtered_out": [
         "Archie Boka",
         "Dorset"
@@ -15931,7 +15919,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 365,
+      "word_count": 723,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -15985,7 +15973,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 357,
+      "word_count": 703,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16039,7 +16027,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 284,
+      "word_count": 557,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16107,7 +16095,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "Sport",
-      "word_count": 360,
+      "word_count": 702,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16161,7 +16149,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 373,
+      "word_count": 735,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16220,24 +16208,20 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 175,
+      "word_count": 344,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
       "quoted_sources_confidence": "medium",
-      "sources_male": 1,
+      "sources_male": 0,
       "sources_female": 0,
-      "sources_unknown": 0,
+      "sources_unknown": 1,
       "source_evidence": [
         {
-          "name": "Dorset Police",
-          "full_attribution": "Police said",
-          "quote_snippet": "",
-          "position": "lastname_verb",
-          "gender": "male",
-          "gender_confidence": "medium",
-          "gender_method": "pronoun_context"
+          "name": "A witness",
+          "gender": "unknown",
+          "position": "groq_detected"
         }
       ],
       "images": {
@@ -16264,9 +16248,9 @@
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
-          "name": "Dorset Police",
+          "name": "A witness",
           "gender": "unknown",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [
@@ -16295,7 +16279,7 @@
       "category_detail": "Local",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 322,
+      "word_count": 633,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16349,16 +16333,32 @@
       "category_detail": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 368,
+      "word_count": 731,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 3,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 0,
+      "sources_female": 3,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Christel Lindner",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Toni Jones",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
       "images": {
         "total": 1,
         "original": 0,
@@ -16386,9 +16386,25 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Christel Lindner",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Toni Jones",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -16465,7 +16481,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 354,
+      "word_count": 698,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16538,7 +16554,7 @@
       "category_detail": "News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 361,
+      "word_count": 690,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16611,22 +16627,16 @@
       "category_detail": "News Top",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 457,
+      "word_count": 1023,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 1,
+      "quoted_sources": 0,
       "quoted_sources_confidence": "medium",
       "sources_male": 0,
-      "sources_female": 1,
+      "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Jessica Toale",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence": [],
       "images": {
         "total": 1,
         "original": 0,
@@ -16649,15 +16659,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Jessica Toale",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
@@ -16677,7 +16681,7 @@
       "category_detail": "Sport",
       "category_primary": "Sport",
       "display_category": "Sport",
-      "word_count": 483,
+      "word_count": 953,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16759,7 +16763,7 @@
       "category_detail": "1st News",
       "category_primary": "News",
       "display_category": "General News",
-      "word_count": 523,
+      "word_count": 593,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
@@ -16811,1084 +16815,6 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "4e2aa4070438",
-      "headline": "AFC Bournemouth\u2019s development squad reach last eight of PL Cup",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
-      "author": "Evan Morris",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "12:16",
-      "category": "Sport",
-      "category_detail": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 267,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Alan Connell",
-          "full_attribution": "said Connell.The Cherries will be hoping to conti",
-          "quote_snippet": "s return to action the first time since the end of",
-          "position": "after",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        }
-      ],
-      "images": {
-        "total": 0,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 0,
-        "details": []
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Alan Connell",
-          "gender": "male",
-          "position": "after"
-        }
-      ],
-      "source_evidence_possible": [
-        {
-          "name": "Jonny Day",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [
-        "Matai"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "73471ed129f2",
-      "headline": "AUB graduate wins Purbeck Film Festival short film competition",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
-      "author": "Tori Turner",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:40",
-      "category": "News",
-      "category_detail": "Entertainment",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 654,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 2,
-        "original": 2,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000162480-800x400.jpg",
-            "classification": "original",
-            "credit": "Michelle is Feeling Subpar"
-          },
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/67c70a68-af00-4a83-b8b1-64b5a753164d-225x300.jpg",
-            "classification": "original",
-            "credit": "Justina Reynolds"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 4,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [
-        {
-          "name": "Rachel Smith",
-          "gender": "female"
-        },
-        {
-          "name": "Emma Mackenzie",
-          "gender": "female"
-        },
-        {
-          "name": "Karyn Brooks",
-          "gender": "female"
-        },
-        {
-          "name": "Hussain",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "ba4f900fc5c7",
-      "headline": "BCP Council to protect 99% of subsidised bus journeys",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
-      "author": "Conner Haddow",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "09:21",
-      "category": "News",
-      "category_detail": "Bournemouth",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 425,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Richard Wade",
-          "full_attribution": "ary 4.\nMorebus general manager Richard Wade said:",
-          "quote_snippet": "We are pleased to have worked with BCP Council to ",
-          "position": "before",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/FullSizeRender-800x400.jpg",
-            "classification": "original",
-            "credit": "Ira Lemon"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Richard Wade",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "source_evidence_possible": [
-        {
-          "name": "Andy Hadley",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "6ba67a40766c",
-      "headline": "BUzz News Tv live 12:15",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-tv-live-1215/",
-      "author": "Riley Wallace",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "11:59",
-      "category": "Sport",
-      "category_detail": "Local Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 20,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 1,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-11.12.30-1-e1769601363676-598x400.png",
-            "classification": "uncredited",
-            "credit": "No credit"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 1,
-        "audio_count": 0,
-        "video_evidence": [
-          {
-            "platform": "youtube",
-            "url": "https://www.youtube.com/embed/yvSU0mdB_MA?feature=oembed"
-          }
-        ],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "below_minimum",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "03c78db5fbfb",
-      "headline": "Dorchester Town defeat Portland United on penalties after 1-1 cup draw.",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-defeat-portland-united-on-penalties-after-1-1-cup-draw/",
-      "author": "Alex Rathbone",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "08:49",
-      "category": "Sport",
-      "category_detail": "Men's Football",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 353,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/33ce6ef8-47a3-4dc4-8958-683c8e9b8c8d-360x270.jpg",
-            "classification": "original",
-            "credit": "Cameron Dennison)"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "24522cafe78d",
-      "headline": "Dorchester through to Dorset Senior Cup final despite manager frustration",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-through-to-dorset-senior-cup-final-despite-manager-frustration/",
-      "author": "Ailani Verrall",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:36",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 529,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6220-738x400.jpeg",
-            "classification": "original",
-            "credit": "Cameron Dennison"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Dorchester",
-        "Weymouth"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "f5a5c5b18b42",
-      "headline": "Dorset Police appeal for a man after assault in Bournemouth",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
-      "author": "Charlotte Spicer",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:03",
-      "category": "News",
-      "category_detail": "News",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 178,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 1,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/unnamed-file.jpg",
-            "classification": "uncredited",
-            "credit": "No credit"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [
-        {
-          "name": "Madeleine Duncanson",
-          "gender": "female"
-        }
-      ],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "c1df7c5deebd",
-      "headline": "England victorious in ODI series against Sri Lanka",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/england-victorious-in-odi-series-against-sri-lanka/",
-      "author": "Ben Wheeler",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:31",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 373,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Harry Brook",
-          "full_attribution": "ing performance, England captain Harry Brook said",
-          "quote_snippet": "I am very happy with how the spinners have bowled,",
-          "position": "before",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 0,
-        "stock": 1,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/chirayu-trivedi-iDTDvSDEVjw-unsplash-800x400.jpg",
-            "classification": "stock",
-            "credit": "Cricket ball with a black screen Cricket ball - photo by Chirayu Trivedi on Unsplash"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 1,
-        "audio_count": 0,
-        "video_evidence": [
-          {
-            "platform": "youtube",
-            "url": "https://www.youtube.com/embed/qF3uhl7Iau0?feature=oembed"
-          }
-        ],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Harry Brook",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "801884df786c",
-      "headline": "Former BU student Brad Currie heading to T20 World Cup",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/former-bu-student-brad-currie-heading-to-t20-world-cup/",
-      "author": "Ben Wheeler",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "12:23",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 465,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Brad Currie",
-          "full_attribution": "r his previous World Cup experience, Currie said:",
-          "quote_snippet": "I feel a little bit like revenge is needed because",
-          "position": "before",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "pronoun_attribution"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019542-162x300.png",
-            "classification": "original",
-            "credit": "Joe Carson"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Brad Currie",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "source_evidence_possible": [
-        {
-          "name": "C. Currie",
-          "gender": "unknown"
-        }
-      ],
-      "sources_filtered_out": [
-        "Currie\u2019s",
-        "BUzz"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "0f54b653efea",
-      "headline": "Gladiators: Inspiring passion and achieving excellence.",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
-      "author": "Alex Rathbone",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "12:03",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 354,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 2,
-        "original": 2,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_8630-800x400.jpg",
-            "classification": "original",
-            "credit": "Dragos Craciun"
-          },
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/f71207dc-15a5-4a4f-a2fa-8035435ee8c4-360x221.jpg",
-            "classification": "original",
-            "credit": "Dragos Craciun"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Dragos"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "0750c45c5b51",
-      "headline": "Police Appeal: Have You Seen David?",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
-      "author": "George Nall",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "09:37",
-      "category": "News",
-      "category_detail": "Bournemouth",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 327,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 1,
-      "source_evidence": [
-        {
-          "name": "Dorset Police",
-          "full_attribution": "Police said,",
-          "quote_snippet": "",
-          "position": "lastname_verb",
-          "gender": "unknown",
-          "gender_confidence": "low",
-          "gender_method": "none"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/DAVID-300x400.jpeg",
-            "classification": "original",
-            "credit": "Dorset Police"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dorset Police",
-          "gender": "unknown",
-          "position": "lastname_verb"
-        }
-      ],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "below_minimum",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "b6a42b36134f",
-      "headline": "Rayan excited to start Premier League challenge",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
-      "author": "Evan Morris",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:39",
-      "category": "Sport",
-      "category_detail": "AFC Bournemouth",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 411,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Bruno Murito",
-          "full_attribution": "ing 10 goals and getting two assists.Murito said:",
-          "quote_snippet": "For the next World Cup in 2030, Rayan has a really",
-          "position": "before",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "name_lookup"
-        }
-      ],
-      "images": {
-        "total": 1,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/image0-228x300.jpeg",
-            "classification": "original",
-            "credit": "AFCB Instagram"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Bruno Murito",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Rayan",
-        "Valkmar"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "53490ce707b9",
-      "headline": "Starmer first Prime Minister to arrive in China since 2018",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
-      "author": "Martha White",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "11:17",
-      "category": "News",
-      "category_detail": "News Top",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 347,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 1,
-        "original": 0,
-        "stock": 0,
-        "uncredited": 1,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-28-113012-800x400.png",
-            "classification": "uncredited",
-            "credit": "Image of Kier Starmer\n\u00a9House of Commons"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 3,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [
-        {
-          "name": "Laura Bicker",
-          "gender": "female"
-        },
-        {
-          "name": "Yu Jie",
-          "gender": "unknown"
-        },
-        {
-          "name": "Donald Trump",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [
-        "Starmer"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "bb6f6fe1370a",
-      "headline": "Stars Football academy providing pathway for \u2018next generation\u2019",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/stars-football-academy-providing-pathway-for-next-generation/",
-      "author": "Connor Hannon",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:09",
-      "category": "Sport",
-      "category_detail": "Sport",
-      "category_primary": "Sport",
-      "display_category": "Sport",
-      "word_count": 503,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Sam Bayston",
-          "full_attribution": "ult team at the pinnacle of that.\"\nBayston added:",
-          "quote_snippet": "The vision behind the project is to have our young",
-          "position": "before",
-          "gender": "male",
-          "gender_confidence": "high",
-          "gender_method": "pronoun_attribution"
-        }
-      ],
-      "images": {
-        "total": 2,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 1,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-3-2-800x400.jpg",
-            "classification": "uncredited",
-            "credit": "No credit"
-          },
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9832-360x260.png",
-            "classification": "original",
-            "credit": "Stars Football"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Sam Bayston",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Canford"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
-      "category_normalised": "Sport"
-    },
-    {
-      "id": "25a5de87280d",
-      "headline": "Support package granted for pubs and venues",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
-      "author": "Gabriel Dela Cruz",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "10:33",
-      "category": "News",
-      "category_detail": "National",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 332,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 0,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [],
-      "images": {
-        "total": 2,
-        "original": 2,
-        "stock": 0,
-        "uncredited": 0,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_9655-2-800x400.jpg",
-            "classification": "original",
-            "credit": "Sam Morris"
-          },
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_2341-2-360x270.jpg",
-            "classification": "original",
-            "credit": "A bar with lots of drinks, shot by Charlotte Spicer"
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 0,
-        "audio_count": 0,
-        "video_evidence": [],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 0,
-      "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [],
-      "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Tomlinson"
-      ],
-      "is_breaking_news": false,
-      "is_long_form": false,
-      "word_count_status": "standard",
-      "category_normalised": "General News"
-    },
-    {
-      "id": "5df6c8d154f1",
-      "headline": "The new BCP strategy aims to tackle the homelessness issue",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-new-bcp-strategy-aims-to-tackle-the-homelessness-issue/",
-      "author": "Ira Melnykova",
-      "author_confidence": "high",
-      "date": "2026-01-28",
-      "time": "09:54",
-      "category": "News",
-      "category_detail": "Bournemouth",
-      "category_primary": "News",
-      "display_category": "General News",
-      "word_count": 544,
-      "word_count_confidence": "high",
-      "content_type": "standard",
-      "shorthand_url": null,
-      "quoted_sources": 1,
-      "quoted_sources_confidence": "medium",
-      "sources_male": 1,
-      "sources_female": 0,
-      "sources_unknown": 0,
-      "source_evidence": [
-        {
-          "name": "Matthew Gillett",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
-      "images": {
-        "total": 2,
-        "original": 1,
-        "stock": 0,
-        "uncredited": 1,
-        "details": [
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/front-view-homeless-man-holding-cup-plastic-bag-800x400.jpg",
-            "classification": "uncredited",
-            "credit": "Homeless person holding a drink (Credit : freepik.com)"
-          },
-          {
-            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0168-2048x1234-1.jpeg",
-            "classification": "original",
-            "credit": "Infographic by Grace Colmer based on gov.uk data."
-          }
-        ]
-      },
-      "embeds": {
-        "video_count": 1,
-        "audio_count": 0,
-        "video_evidence": [
-          {
-            "platform": "youtube",
-            "url": "https://www.youtube.com/embed/EmdX9ao7hhk?feature=oembed"
-          }
-        ],
-        "audio_evidence": []
-      },
-      "warnings": [
-        "No quoted sources in article >500 words"
-      ],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Matthew Gillett",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
-      "source_evidence_possible": [
-        {
-          "name": "Talbot Woods",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [],
-      "is_breaking_news": false,
-      "is_long_form": true,
-      "word_count_status": "long_form",
       "category_normalised": "General News"
     }
   ]

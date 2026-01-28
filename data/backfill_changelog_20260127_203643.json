@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/international-holocaust-remembrance/",
+    "headline": "International Holocaust Remembrance",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Lisa",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Christel Lindner",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Toni Jones",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]

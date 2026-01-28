@@ -1,0 +1,21 @@
+{
+  "total_shorthand": 2,
+  "all_shorthand": [
+    {
+      "headline": "Bournemouth Lions captain on lengthy injury spell",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "word_count": 780,
+      "sei_score": 35.0,
+      "sei_exempt": false
+    },
+    {
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "word_count": 879,
+      "sei_score": 35.0,
+      "sei_exempt": false
+    }
+  ],
+  "suspects": [],
+  "suspect_count": 0
+}

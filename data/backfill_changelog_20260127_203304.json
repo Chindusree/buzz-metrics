@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+    "headline": "Storm Chandra batters BCP, heavy rain triggers flooding and travel disruption",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Ant Bholah",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]

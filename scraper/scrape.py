@@ -2306,7 +2306,13 @@ def extract_wordpress_content(soup):
         }
 
     # Find article body container
-    article_body = soup.find('article') or soup.find('div', class_=lambda x: x and ('content' in str(x).lower() or 'entry' in str(x).lower()))
+    # Sprint 8.6: WORDCOUNT FIX - Target .entry-content for clean article body only
+    # Previous: Used <article> which included header, byline, metadata (~2x inflation)
+    article_body = soup.find('div', class_='entry-content')
+
+    if not article_body:
+        # Fallback to article tag if entry-content not found
+        article_body = soup.find('article')
 
     if not article_body:
         return {
@@ -2339,36 +2345,16 @@ def extract_wordpress_content(soup):
     # Create a copy to work with
     article_copy = BeautifulSoup(str(article_body), 'lxml')
 
-    # Remove peripherals
-    for item in peripherals_to_remove:
-        if isinstance(item, str):
-            for tag in article_copy.find_all(item):
-                tag.decompose()
-        elif isinstance(item, dict):
-            for tag in article_copy.find_all(**item):
-                tag.decompose()
+    # Sprint 8.6: SIMPLIFIED EXTRACTION - Match SSI approach
+    # Remove only essential unwanted elements (keep it simple)
+    for element in article_copy.find_all(['script', 'style', 'figure']):
+        element.decompose()
 
-    # Extract clean body text from only content elements
-    # Sprint 7.25: Added 'div' to handle articles with div-based content (e.g., x_elementToProof)
-    content_elements = article_copy.find_all(['p', 'div', 'h2', 'h3', 'h4', 'blockquote'])
-
-    text_parts = []
-    for elem in content_elements:
-        text = elem.get_text(strip=True)
-
-        # Skip caption text
-        if is_caption_text(text):
-            continue
-
-        # Skip very short fragments
-        if len(text.split()) < 3:
-            continue
-
-        text_parts.append(text)
-
-    # Join for body text
-    # Sprint 8.1: Use newlines to preserve line structure for pattern matching
-    body_text = '\n'.join(text_parts)
+    # Get text directly (no complex element iteration)
+    body_text = article_copy.get_text(separator='\n', strip=True)
+    # Clean up excessive newlines
+    import re as re_module
+    body_text = re_module.sub(r'\n\s*\n+', '\n\n', body_text)
 
     # Count words
     word_count = count_words(body_text)

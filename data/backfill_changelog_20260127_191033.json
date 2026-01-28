@@ -1,0 +1,130 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
+    "headline": "AFC Bournemouth Under-21\u2019s reflect on Charlton victory",
+    "old_quoted_sources": 3,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [
+      {
+        "name": "Ethan Sills",
+        "gender": "male",
+        "position": ""
+      },
+      {
+        "name": "Owen Bevan",
+        "gender": "male",
+        "position": ""
+      },
+      {
+        "name": "Remy Rees-Dottin",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Ethan Sills",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Owen Bevan",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Remy Rees-Dottin",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/",
+    "headline": "BCP Council under scrutiny over disabled parking access in Poole Quay",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [
+      {
+        "name": "Sharon Small",
+        "gender": "female",
+        "position": ""
+      },
+      {
+        "name": "Simon Bull",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Sharon Small",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Simon Bull",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-and-poole-college-staff-strike-update/",
+    "headline": "Bournemouth and Poole College staff strike update",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 4,
+    "old_source_evidence": [
+      {
+        "name": "A spokesperson from the college",
+        "gender": "unknown",
+        "position": ""
+      },
+      {
+        "name": "Peter Cooper",
+        "gender": "male",
+        "position": ""
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "A spokesperson from the college",
+        "gender": "unknown",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Anne Marie Moriarty",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Darren Tozer",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Peter Cooper",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+    "headline": "Storm Chandra batters BCP, heavy rain triggers flooding and travel disruption",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [],
+    "new_source_evidence": [
+      {
+        "name": "Ant Bholah",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": true
+  }
+]

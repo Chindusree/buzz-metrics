@@ -1,0 +1,442 @@
+{
+  "total_checked": 215,
+  "shorthand_found": 28,
+  "properly_detected": 2,
+  "missed_detection": 26,
+  "all_shorthand": [
+    {
+      "headline": "Bournemouth Lions captain on lengthy injury spell",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/back-with-a-bang/index.html",
+      "content_type_in_sei": "shorthand",
+      "word_count_in_sei": 780,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Dorset driver gives up her car for TukTuk trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tuk-tuk-dorset-entrepreneur/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Can UPFs be avoided on a budget?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/UPFs-on-a-budget/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 62.5
+    },
+    {
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 47.5
+    },
+    {
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/dorset-demons-spearheading-wheelchair-basketball-in-dorset/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-king-of-match-racing-ian-williams/index.html",
+      "content_type_in_sei": "shorthand",
+      "word_count_in_sei": 879,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-92challenge/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 70.0
+    },
+    {
+      "headline": "The fast fashion disconnect",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-fast-fashion-disconnect/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 75.0
+    },
+    {
+      "headline": "Unknown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 75.0
+    },
+    {
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 65.0
+    },
+    {
+      "headline": "When education takes a stand",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-and-poole-college-strikes-feature/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/CervicalCancerPreventionWeek-IsabelleTaylor/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 87.5
+    },
+    {
+      "headline": "Art against odds: the shifting art scene in Boscombe",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/art-against-odds/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 72.5
+    },
+    {
+      "headline": "Bournemouth University rebuilds the television that started it all",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "shorthand_url": "https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbuzznews.shorthandstories.com%2Fbournemouth-university-rebuilds-the-television-that-started-it-all%2Findex.html&data=05%7C02%7Cs5620721%40bournemouth.ac.uk%7C36eb85d8b01e42ef9f0e08de5a817383%7Cede29655d09742e4bbb5f38d427fbfb8%7C0%7C0%7C639047709187867847%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3vXpubw2N%2Bkqcuc64M9x8KbOeKwVUZIA99TgZM3Ri7Q%3D&reserved=0",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Charlie Stevens: Living the dream",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/charlie-stevens/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 50
+    },
+    {
+      "headline": "Cherries host Liverpool in Saturday evening clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/cherries-preview/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 70.0
+    },
+    {
+      "headline": "Out with the old, in with the new: UFC 324",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Out-with-the-old-in-with-the-new-UFC-324/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 37.5
+    },
+    {
+      "headline": "Tamburello: The fast-rising racket sport you\u2019ve never heard of",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Bowra-Foundation/",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 45.0
+    },
+    {
+      "headline": "The financial struggle of tennis",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/financialstrugglesoftennis/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 37.5
+    },
+    {
+      "headline": "The football team that isn\u2019t about football",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-team-nobody-wants-to-play-for/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Welcome to the lions den",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/LIONSDEN/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 52.5
+    },
+    {
+      "headline": "F You: the goalkeeping gloves for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/goalkeeper-charity-gloves/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 0.0
+    },
+    {
+      "headline": "Bournemouth run club celebrates four years of community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-run-club-celebrates-four-years-of-community/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 42.5
+    }
+  ],
+  "missed": [
+    {
+      "headline": "Dorset driver gives up her car for TukTuk trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tuk-tuk-dorset-entrepreneur/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Can UPFs be avoided on a budget?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/UPFs-on-a-budget/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 62.5
+    },
+    {
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 47.5
+    },
+    {
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/dorset-demons-spearheading-wheelchair-basketball-in-dorset/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/finding-strength-through-boxing-a-bournemouth-fighters-story/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-92challenge/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 70.0
+    },
+    {
+      "headline": "The fast fashion disconnect",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-fast-fashion-disconnect/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 75.0
+    },
+    {
+      "headline": "Unknown",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Britainsunsungheroesatsea/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 75.0
+    },
+    {
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "shorthand_url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 65.0
+    },
+    {
+      "headline": "When education takes a stand",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-and-poole-college-strikes-feature/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/CervicalCancerPreventionWeek-IsabelleTaylor/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 87.5
+    },
+    {
+      "headline": "Art against odds: the shifting art scene in Boscombe",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/art-against-odds/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 72.5
+    },
+    {
+      "headline": "Bournemouth University rebuilds the television that started it all",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "shorthand_url": "https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbuzznews.shorthandstories.com%2Fbournemouth-university-rebuilds-the-television-that-started-it-all%2Findex.html&data=05%7C02%7Cs5620721%40bournemouth.ac.uk%7C36eb85d8b01e42ef9f0e08de5a817383%7Cede29655d09742e4bbb5f38d427fbfb8%7C0%7C0%7C639047709187867847%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3vXpubw2N%2Bkqcuc64M9x8KbOeKwVUZIA99TgZM3Ri7Q%3D&reserved=0",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Charlie Stevens: Living the dream",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/charlie-stevens/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 50
+    },
+    {
+      "headline": "Cherries host Liverpool in Saturday evening clash",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/cherries-preview/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 35.0
+    },
+    {
+      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 70.0
+    },
+    {
+      "headline": "Out with the old, in with the new: UFC 324",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Out-with-the-old-in-with-the-new-UFC-324/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 37.5
+    },
+    {
+      "headline": "Tamburello: The fast-rising racket sport you\u2019ve never heard of",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 32.5
+    },
+    {
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Bowra-Foundation/",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 45.0
+    },
+    {
+      "headline": "The financial struggle of tennis",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/financialstrugglesoftennis/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 37.5
+    },
+    {
+      "headline": "The football team that isn\u2019t about football",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-team-nobody-wants-to-play-for/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 17.5
+    },
+    {
+      "headline": "Welcome to the lions den",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/LIONSDEN/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 52.5
+    },
+    {
+      "headline": "F You: the goalkeeping gloves for charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/goalkeeper-charity-gloves/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 0.0
+    },
+    {
+      "headline": "Bournemouth run club celebrates four years of community",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
+      "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-run-club-celebrates-four-years-of-community/index.html",
+      "content_type_in_sei": "UNKNOWN",
+      "word_count_in_sei": 0,
+      "sei_score": 42.5
+    }
+  ]
+}
