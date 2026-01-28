@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T14:50:29Z",
-  "total_verified": 255,
+  "last_updated": "2026-01-28T15:15:27Z",
+  "total_verified": 259,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3156,6 +3156,12 @@
       "error": "Failed to fetch article text"
     },
     {
+      "id": "ff3b6320a403",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "930ec2f9fda0",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-bundee-aki-dropped-from-ireland-six-nations-squad/",
       "verify_quoted_sources": 0,
@@ -3203,6 +3209,12 @@
           "context": "PERSON within 50 chars of quote: ...rtsabout the bowling performance, England captain Harry Brook said “I am very happy with how the spinners have ..."
         }
       ]
+    },
+    {
+      "id": "6427a1510aa0",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-brought-a-heavy-flood-to-ringwood/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "2634400eeacb",
@@ -3269,6 +3281,27 @@
           "context": "PERSON within 50 chars of quote: ...urnemouth’s self-proclaimed “LEGO® – lady” set up theLittle Brick Clubto provide a learning space for young children to pl..."
         }
       ]
+    },
+    {
+      "id": "73ca5c3085b7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-charity-supports-inclusive-cycling-in-the-new-forest/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Gareth Jones",
+          "context": "PERSON within 50 chars of quote: ...ing in an exclusive interview with BUZZ news with Gareth Jones, operations manager at Pedall, he said:“When they..."
+        },
+        {
+          "name": "Jones",
+          "context": "PERSON within 50 chars of quote: ...ed by Forestry England and other generous donors. Jones said: “ Receiving the lottery fund was a good ste..."
+        }
+      ]
+    },
+    {
+      "id": "afbd2c4b4fa5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-dies-after-lorry-enters-flooded-river/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "0750c45c5b51",

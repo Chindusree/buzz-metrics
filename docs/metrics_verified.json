@@ -1,30 +1,30 @@
 {
-  "last_updated": "2026-01-28T14:50:32Z",
-  "total_articles": 255,
+  "last_updated": "2026-01-28T15:15:30Z",
+  "total_articles": 259,
   "summary": {
-    "avg_word_count": 582,
+    "avg_word_count": 581,
     "avg_quoted_sources": 1.0,
-    "below_minimum_count": 53,
+    "below_minimum_count": 55,
     "long_form_count": 46,
     "breaking_news_count": 18,
-    "total_images": 731,
-    "original_images": 132,
+    "total_images": 738,
+    "original_images": 138,
     "stock_images": 10,
-    "uncredited_images": 255,
+    "uncredited_images": 256,
     "gender_breakdown": {
-      "male": 161,
+      "male": 162,
       "female": 61,
       "unknown": 35
     },
     "by_section": {
       "Sport": {
-        "count": 97,
-        "words": 58897,
-        "sources": 81
+        "count": 99,
+        "words": 59861,
+        "sources": 82
       },
       "General News": {
-        "count": 149,
-        "words": 74972,
+        "count": 151,
+        "words": 75964,
         "sources": 154
       },
       "Features": {
@@ -35,12 +35,12 @@
     },
     "by_category": {
       "Sport": {
-        "count": 97,
-        "avg_word_count": 607,
+        "count": 99,
+        "avg_word_count": 605,
         "avg_sources": 0.8
       },
       "News": {
-        "count": 149,
+        "count": 151,
         "avg_word_count": 503,
         "avg_sources": 1.0
       },
@@ -144,12 +144,12 @@
     },
     {
       "date": "2026-01-28",
-      "article_count": 21,
+      "article_count": 25,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:49",
       "first_publish_on_time": true,
-      "below_minimum_count": 4,
+      "below_minimum_count": 6,
       "long_form_count": 6
     }
   ],
@@ -17081,6 +17081,58 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "ff3b6320a403",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "author": "Alex Rathbone",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:44",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 224,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/reading-800x400.jpg",
+            "classification": "original",
+            "credit": "Luke Hills"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "930ec2f9fda0",
       "headline": "Bundee Aki dropped from Ireland Six Nations squad",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-bundee-aki-dropped-from-ireland-six-nations-squad/",
@@ -17372,6 +17424,75 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "6427a1510aa0",
+      "headline": "Family-run pub in Ringwood forced to close after flood",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-brought-a-heavy-flood-to-ringwood/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:42",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 791,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 4,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824399_y-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Melnykova"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824826_y-279x300.jpg",
+            "classification": "uncredited",
+            "credit": "Flooding in Crow Lane (Credit : Kevin Jones)"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824829_y-225x300.jpg",
+            "classification": "original",
+            "credit": "Crow Lane resident"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5463052518112824828_y.jpg",
+            "classification": "original",
+            "credit": "Resident of Crow Lane"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "2634400eeacb",
@@ -17713,6 +17834,126 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "73ca5c3085b7",
+      "headline": "Local charity supports inclusive cycling in the New Forest",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-charity-supports-inclusive-cycling-in-the-new-forest/",
+      "author": "Theo Otesanya-Salvo",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "14:53",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 740,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Gareth Jones",
+          "full_attribution": "try England and other generous donors.Jones said:",
+          "quote_snippet": " Receiving the lottery fund was a good step in the",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "pronoun_attribution"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3818-800x400.jpg",
+            "classification": "original",
+            "credit": "Pedall Website"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Gareth Jones",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "afbd2c4b4fa5",
+      "headline": "Man dies after lorry enters flooded river",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/man-dies-after-lorry-enters-flooded-river/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "15:00",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 201,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/A.png",
+            "classification": "original",
+            "credit": "Image from Buzz News"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
