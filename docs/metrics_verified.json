@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-01-28T08:31:16Z",
-  "total_articles": 234,
+  "last_updated": "2026-01-28T09:05:13Z",
+  "total_articles": 235,
   "summary": {
-    "avg_word_count": 574,
+    "avg_word_count": 575,
     "avg_quoted_sources": 1.0,
     "below_minimum_count": 49,
     "long_form_count": 40,
     "breaking_news_count": 18,
-    "total_images": 704,
-    "original_images": 113,
+    "total_images": 705,
+    "original_images": 114,
     "stock_images": 9,
     "uncredited_images": 248,
     "gender_breakdown": {
@@ -18,8 +18,8 @@
     },
     "by_section": {
       "Sport": {
-        "count": 87,
-        "words": 52214,
+        "count": 88,
+        "words": 52899,
         "sources": 75
       },
       "General News": {
@@ -35,8 +35,8 @@
     },
     "by_category": {
       "Sport": {
-        "count": 87,
-        "avg_word_count": 600,
+        "count": 88,
+        "avg_word_count": 601,
         "avg_sources": 0.9
       },
       "News": {
@@ -141,6 +141,16 @@
       "first_publish_on_time": true,
       "below_minimum_count": 3,
       "long_form_count": 3
+    },
+    {
+      "date": "2026-01-28",
+      "article_count": 1,
+      "target": 12,
+      "meets_target": false,
+      "first_publish_time": "08:49",
+      "first_publish_on_time": true,
+      "below_minimum_count": 0,
+      "long_form_count": 0
     }
   ],
   "articles": [
@@ -16766,6 +16776,60 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"
+    },
+    {
+      "id": "03c78db5fbfb",
+      "headline": "Dorchester Town defeat Portland United on penalties after 1-1 cup draw.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-defeat-portland-united-on-penalties-after-1-1-cup-draw/",
+      "author": "Alex Rathbone",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "08:49",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 685,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/33ce6ef8-47a3-4dc4-8958-683c8e9b8c8d-360x270.jpg",
+            "classification": "original",
+            "credit": "Cameron Dennison)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     }
   ]
 }

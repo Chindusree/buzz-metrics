@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T08:31:13Z",
-  "total_verified": 234,
+  "last_updated": "2026-01-28T09:05:10Z",
+  "total_verified": 235,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3095,6 +3095,12 @@
     {
       "id": "26b451659ac1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/storm-chandra-batters-bcp-heavy-rain-triggers-flooding-and-travel-disruption/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "03c78db5fbfb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-defeat-portland-united-on-penalties-after-1-1-cup-draw/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     }

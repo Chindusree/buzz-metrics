@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-27T17:25:49Z",
-  "total_articles": 234,
+  "last_updated": "2026-01-28T08:56:00Z",
+  "total_articles": 235,
   "gender_breakdown": {
     "male": 137,
     "female": 51,
@@ -12493,6 +12493,51 @@
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Unknown-800x400.png",
             "classification": "original",
             "credit": "Areas impacted by Storm Chandra. Photo Credit - The Met Office."
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
+      "id": "03c78db5fbfb",
+      "headline": "Dorchester Town defeat Portland United on penalties after 1-1 cup draw.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-town-defeat-portland-united-on-penalties-after-1-1-cup-draw/",
+      "author": "Alex Rathbone",
+      "author_confidence": "high",
+      "date": "2026-01-28",
+      "time": "08:49",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 685,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/33ce6ef8-47a3-4dc4-8958-683c8e9b8c8d-360x270.jpg",
+            "classification": "original",
+            "credit": "Cameron Dennison)"
           }
         ]
       },
