@@ -17494,12 +17494,18 @@
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,
-      "quoted_sources": 0,
+      "quoted_sources": 1,
       "quoted_sources_confidence": "low",
-      "sources_male": 0,
+      "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
-      "source_evidence": [],
+      "source_evidence": [
+        {
+          "name": "Matthew Gillett",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "images": {
         "total": 2,
         "original": 1,
@@ -17532,9 +17538,15 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 0,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 2,
-      "source_evidence_confirmed": [],
+      "source_evidence_confirmed": [
+        {
+          "name": "Matthew Gillett",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "source_evidence_possible": [
         {
           "name": "Matthew Gillett",
