@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T09:01:40Z",
-  "total_verified": 263,
+  "last_updated": "2026-01-29T10:02:33Z",
+  "total_verified": 264,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3434,6 +3434,12 @@
           "context": "PERSON within 50 chars of quote: ...can benefit from their coordination skills, as Mr Kybert said: “Some people in the sessions have had recen..."
         }
       ]
+    },
+    {
+      "id": "d9e808b1f78b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "01b20e64608c",

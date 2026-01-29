@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T08:50:18Z",
-  "total_articles": 263,
+  "last_updated": "2026-01-29T09:51:51Z",
+  "total_articles": 264,
   "gender_breakdown": {
     "male": 166,
     "female": 70,
@@ -11777,19 +11777,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Councillor Williams",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Councillor Brown",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Jim Frevola",
           "gender": "male",
@@ -11797,7 +11787,10 @@
         }
       ],
       "source_evidence_possible": [],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Williams",
+        "Brown"
+      ],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
@@ -13067,7 +13060,7 @@
       "source_evidence_confirmed": [
         {
           "name": "DC Joy Jarvis",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -13198,7 +13191,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -13987,14 +13980,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Poonam Paranjpe",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Martin Robinson",
           "gender": "male",
@@ -14003,8 +13991,7 @@
       ],
       "source_evidence_possible": [],
       "sources_filtered_out": [
-        "Paranjpe",
-        "Robinson"
+        "Poonam Paranjpe"
       ],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -14307,7 +14294,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -14338,22 +14325,13 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "DCI Adam Smith",
-          "gender": "male",
-          "position": "groq_detected"
-        }
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "DCI Adam Smith"
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Adam Smith",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
@@ -14657,7 +14635,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 3,
       "sources_unknown": 0,
@@ -14698,32 +14676,20 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 1,
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Madison Love",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Helena Fremantle",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Patricia Leon Elias",
           "gender": "female",
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Patricia",
-          "gender": "female"
-        }
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Madison Love",
+        "Helena Fremantle"
       ],
-      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -16399,7 +16365,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 0,
       "sources_female": 3,
       "sources_unknown": 0,
@@ -16462,7 +16428,7 @@
         },
         {
           "name": "Toni Jones",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -17014,26 +16980,18 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 2,
-      "source_evidence_confirmed": [
-        {
-          "name": "Aaliyah Hussain",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
-        {
-          "name": "Hussain",
-          "gender": "male"
-        },
         {
           "name": "Rachel Smith",
           "gender": "female"
         }
       ],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Aaliyah Hussain"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -17217,17 +17175,13 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Thames Valley Police spokesman",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Thames Valley Police spokesman"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
@@ -17425,7 +17379,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -17457,7 +17411,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Madeleine Duncanson",
@@ -17465,12 +17419,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Madeleine Duncanson",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -17620,7 +17569,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Anonymous homeowner",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -17874,15 +17823,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dragos",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Dragos"
@@ -17996,7 +17939,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -18039,7 +17982,7 @@
       "source_evidence_confirmed": [
         {
           "name": "AK Cunningham",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -18394,7 +18337,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -18426,7 +18369,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Trish Martin",
@@ -18434,12 +18377,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Trish Martin",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -18463,7 +18401,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 2,
       "sources_unknown": 0,
@@ -18507,10 +18445,10 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 3,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
-          "name": "Sir Keir Starmer",
+          "name": "Keir Starmer",
           "gender": "male",
           "position": "groq_detected"
         },
@@ -18520,28 +18458,18 @@
           "position": "groq_detected"
         },
         {
-          "name": "Dr Yu Jie",
-          "gender": "female",
+          "name": "Yu Jie",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [
         {
-          "name": "Laura Bicker",
-          "gender": "female"
-        },
-        {
-          "name": "Yu Jie",
-          "gender": "unknown"
-        },
-        {
           "name": "Donald Trump",
           "gender": "male"
         }
       ],
-      "sources_filtered_out": [
-        "Starmer"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
@@ -18639,7 +18567,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 4,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 2,
       "sources_unknown": 0,
@@ -18702,7 +18630,7 @@
         },
         {
           "name": "Mel Stride",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         },
         {
@@ -18717,9 +18645,7 @@
         }
       ],
       "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Tomlinson"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "below_minimum",
@@ -18869,6 +18795,51 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "d9e808b1f78b",
+      "headline": "BCP Council praised for housing standards",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "09:38",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 545,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-29-092851.png",
+            "classification": "original",
+            "credit": "BCP Council Meeting Recording 14"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "No quoted sources in article >500 words"
+      ]
+    },
+    {
       "id": "01b20e64608c",
       "headline": "Five English Clubs Secure Top Eight in Champions League",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
@@ -18885,7 +18856,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18908,7 +18879,18 @@
         ],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Solanke"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     }
   ]
 }
