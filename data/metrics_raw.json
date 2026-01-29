@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-29T10:43:41Z",
-  "total_articles": 268,
+  "last_updated": "2026-01-29T11:20:29Z",
+  "total_articles": 271,
   "gender_breakdown": {
-    "male": 168,
+    "male": 169,
     "female": 70,
     "unknown": 20
   },
@@ -18811,7 +18811,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18829,7 +18829,18 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Lorient"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "d9e808b1f78b",
@@ -18902,7 +18913,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18935,6 +18946,60 @@
         ],
         "audio_evidence": []
       },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Joe Salmon",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Lidl"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "2b78e65e03d8",
+      "headline": "Collision in Bournemouth: appeals for witnesses and footage",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+      "author": "Sub-editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:46",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 200,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": []
     },
     {
@@ -18954,7 +19019,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18982,7 +19047,33 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Vice-Chairman Andy Rossiter",
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Carr",
+          "gender": "male"
+        },
+        {
+          "name": "Dan",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Dolphins"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "01b20e64608c",
@@ -19050,6 +19141,99 @@
       "category_primary": "News",
       "display_category": "General News",
       "word_count": 75,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "29824d478ff4",
+      "headline": "Heavy flooding disrupts Chapel Gate sport",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
+      "author": "Nico Theodorou",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:09",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 363,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ewan Corbett",
+          "full_attribution": "he grounds.\nChapel Gate worker Ewan Corbett says,",
+          "quote_snippet": "Obviously people aren",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "2606f780b84b",
+      "headline": "Police appeal for information on Boscombe burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+      "author": "Editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:03",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 221,
       "word_count_confidence": "high",
       "content_type": "standard",
       "shorthand_url": null,

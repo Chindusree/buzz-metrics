@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-29T10:54:17Z",
-  "total_flagged": 114,
+  "generated": "2026-01-29T11:32:22Z",
+  "total_flagged": 116,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4207,6 +4207,29 @@
       "review_status": "pending"
     },
     {
+      "id": "2b78e65e03d8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+      "headline": "Collision in Bournemouth: appeals for witnesses and footage",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Paul Hind"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Paul Hind",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "d226164905fd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
       "headline": "Dan Carr’s dream start to life at Poole Town",
@@ -4265,6 +4288,29 @@
       "filtered": [
         "Solanke"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "2606f780b84b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+      "headline": "Police appeal for information on Boscombe burglary",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Sarah Dutton"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Sarah Dutton",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T10:54:14Z",
-  "total_verified": 268,
+  "last_updated": "2026-01-29T11:32:19Z",
+  "total_verified": 271,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3472,6 +3472,17 @@
       ]
     },
     {
+      "id": "2b78e65e03d8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Paul Hind",
+          "context": "PERSON within 50 chars of quote: ...ce bail while enquiries continue. Police Sergeant Paul Hind, of the Roads Policing Team, said: “I am appealin..."
+        }
+      ]
+    },
+    {
       "id": "d226164905fd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
       "verify_quoted_sources": 5,
@@ -3514,6 +3525,32 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "29824d478ff4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Ewan Corbett",
+          "context": "PERSON within 50 chars of quote: ...g flooding across the grounds. Chapel Gate worker Ewan Corbett says, “Obviously people aren’t happy, they’ve pai..."
+        },
+        {
+          "name": "Corbett",
+          "context": "PERSON within 50 chars of quote: ...e lose out on making a bit of money for the day.” Corbett revealed that games that did go ahead were also a..."
+        }
+      ]
+    },
+    {
+      "id": "2606f780b84b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Sarah Dutton",
+          "context": "PERSON within 50 chars of quote: ...ket and light-coloured trousers. Police Constable Sarah Dutton, of Bournemouth police, said: “We are carrying ou..."
+        }
+      ]
     }
   ]
 }

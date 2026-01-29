@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-01-29T10:54:17Z",
-  "total_articles": 268,
+  "last_updated": "2026-01-29T11:32:22Z",
+  "total_articles": 271,
   "summary": {
-    "avg_word_count": 435,
+    "avg_word_count": 433,
     "avg_quoted_sources": 1.1,
-    "below_minimum_count": 79,
+    "below_minimum_count": 81,
     "long_form_count": 27,
     "breaking_news_count": 18,
     "total_images": 739,
@@ -12,19 +12,19 @@
     "stock_images": 10,
     "uncredited_images": 256,
     "gender_breakdown": {
-      "male": 178,
+      "male": 179,
       "female": 70,
       "unknown": 41
     },
     "by_section": {
       "Sport": {
-        "count": 104,
-        "words": 49238,
-        "sources": 88
+        "count": 105,
+        "words": 49601,
+        "sources": 89
       },
       "General News": {
-        "count": 155,
-        "words": 56430,
+        "count": 157,
+        "words": 56851,
         "sources": 179
       },
       "Features": {
@@ -35,14 +35,14 @@
     },
     "by_category": {
       "Sport": {
-        "count": 104,
-        "avg_word_count": 473,
+        "count": 105,
+        "avg_word_count": 472,
         "avg_sources": 0.8
       },
       "News": {
-        "count": 155,
-        "avg_word_count": 364,
-        "avg_sources": 1.2
+        "count": 157,
+        "avg_word_count": 362,
+        "avg_sources": 1.1
       },
       "Features": {
         "count": 9,
@@ -154,12 +154,12 @@
     },
     {
       "date": "2026-01-29",
-      "article_count": 6,
+      "article_count": 9,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:30",
       "first_publish_on_time": true,
-      "below_minimum_count": 1,
+      "below_minimum_count": 3,
       "long_form_count": 0
     }
   ],
@@ -19123,6 +19123,57 @@
       "category_normalised": "General News"
     },
     {
+      "id": "2b78e65e03d8",
+      "headline": "Collision in Bournemouth: appeals for witnesses and footage",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+      "author": "Sub-editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:46",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 200,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Paul Hind",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
       "id": "d226164905fd",
       "headline": "Dan Carr’s dream start to life at Poole Town",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
@@ -19288,6 +19339,119 @@
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [],
       "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "29824d478ff4",
+      "headline": "Heavy flooding disrupts Chapel Gate sport",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
+      "author": "Nico Theodorou",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:09",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 363,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ewan Corbett",
+          "full_attribution": "he grounds.\nChapel Gate worker Ewan Corbett says,",
+          "quote_snippet": "Obviously people aren",
+          "position": "before",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "2606f780b84b",
+      "headline": "Police appeal for information on Boscombe burglary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+      "author": "Editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:03",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 221,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Sarah Dutton",
+          "gender": "female"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
