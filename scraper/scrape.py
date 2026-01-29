@@ -2204,8 +2204,13 @@ def extract_wordpress_images(soup):
     """
     Extract and classify images from WordPress article body.
 
+    Sprint 8.7: Two-pass extraction for featured + body images
+    - Featured image: img.wp-post-image (outside entry-content)
+    - Body images: all img inside entry-content
+    - Deduplicates by src URL to avoid double-counting
+
     Args:
-        soup: BeautifulSoup object of article content
+        soup: BeautifulSoup object of article content (entry-content div)
 
     Returns:
         dict: Image statistics and details
@@ -2219,8 +2224,68 @@ def extract_wordpress_images(soup):
             'details': []
         }
 
-    # Use existing extract_images function
-    return extract_images(soup)
+    # Sprint 8.7: Two-pass extraction
+    # Pass 1: Look for featured image in parent article element
+    featured_img = None
+    featured_src = None
+
+    # Navigate up to parent article element
+    article_elem = soup.find_parent('article')
+    if article_elem:
+        # Featured images have class 'wp-post-image' and are outside entry-content
+        featured_img = article_elem.find('img', class_='wp-post-image')
+        if featured_img:
+            featured_src = featured_img.get('src', '')
+
+    # Pass 2: Extract body images from entry-content (original behavior)
+    body_images_data = extract_images(soup)
+
+    # If no featured image found, return body images as-is
+    if not featured_img or not featured_src:
+        return body_images_data
+
+    # Check if featured image is already in body images (deduplicate)
+    already_counted = any(
+        detail.get('src', '') == featured_src
+        for detail in body_images_data.get('details', [])
+    )
+
+    if already_counted:
+        # Featured image already counted in body, no need to add
+        return body_images_data
+
+    # Featured image is NOT in body images - add it
+    # Classify the featured image
+    classification, credit = classify_image(featured_img, article_elem)
+
+    # Create new details list with featured image first
+    featured_detail = {
+        'src': featured_src,
+        'classification': classification,
+        'credit': credit if credit else 'No credit found'
+    }
+
+    # Combine featured + body images
+    all_details = [featured_detail] + body_images_data.get('details', [])
+
+    # Update counts
+    result = {
+        'total': body_images_data.get('total', 0) + 1,
+        'original': body_images_data.get('original', 0),
+        'stock': body_images_data.get('stock', 0),
+        'uncredited': body_images_data.get('uncredited', 0),
+        'details': all_details
+    }
+
+    # Update classification counts based on featured image
+    if classification == 'original':
+        result['original'] += 1
+    elif classification == 'stock':
+        result['stock'] += 1
+    else:
+        result['uncredited'] += 1
+
+    return result
 
 
 def extract_shorthand_images_clean(soup):
