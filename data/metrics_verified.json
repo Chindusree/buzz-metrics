@@ -18985,11 +18985,17 @@
         }
       ],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 1,
+        "original": 1,
         "stock": 0,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/BU-1-e1769682155295-800x400.jpg",
+            "classification": "original",
+            "credit": "Theo Otesanya-Salvo"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19060,11 +19066,16 @@
         }
       ],
       "images": {
-        "total": 1,
-        "original": 1,
+        "total": 2,
+        "original": 2,
         "stock": 0,
         "uncredited": 0,
         "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5465304317926510203_y-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Melnykova"
+          },
           {
             "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-29-092851.png",
             "classification": "original",
@@ -19136,11 +19147,17 @@
         }
       ],
       "images": {
-        "total": 0,
+        "total": 1,
         "original": 0,
         "stock": 0,
-        "uncredited": 0,
-        "details": []
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-21-at-15.55.29-800x400.png",
+            "classification": "uncredited",
+            "credit": "Image of Lidl. Credit : Sam Morris."
+          }
+        ]
       },
       "embeds": {
         "video_count": 1,
@@ -19201,11 +19218,17 @@
         }
       ],
       "images": {
-        "total": 0,
+        "total": 1,
         "original": 0,
-        "stock": 0,
+        "stock": 1,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/nicole-logan-UkPxN57vaDc-unsplash-800x400.jpg",
+            "classification": "stock",
+            "credit": "Dash cam footage, image from Unsplash by Nicole Logan"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19269,11 +19292,17 @@
         }
       ],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 1,
+        "original": 1,
         "stock": 0,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3785-800x400.jpg",
+            "classification": "original",
+            "credit": "Poole Town"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19343,11 +19372,17 @@
         }
       ],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 1,
+        "original": 1,
         "stock": 0,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6267-e1769674190925-800x400.jpeg",
+            "classification": "original",
+            "credit": "Ailani Verrall"
+          }
+        ]
       },
       "embeds": {
         "video_count": 1,
@@ -19402,11 +19437,32 @@
       "sources_unknown": 0,
       "source_evidence": [],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 4,
+        "original": 2,
         "stock": 0,
-        "uncredited": 0,
-        "details": []
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5465304317926510666_y-800x400.jpg",
+            "classification": "original",
+            "credit": "Ira Melnykova"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/652919be-fb73-41d4-84d6-e01d29684179-258x300.jpg",
+            "classification": "uncredited",
+            "credit": "Statement from BCP Council, via X"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_1039-360x270.jpeg",
+            "classification": "original",
+            "credit": "Iford Bridge Home Park after Storm Chandra, image shot by Grace Oakins"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-29-at-13.28.09-2-360x198.png",
+            "classification": "uncredited",
+            "credit": "Yellow warning set to continue, image via Met Office"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19448,11 +19504,17 @@
       "sources_unknown": 0,
       "source_evidence": [],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 1,
+        "original": 1,
         "stock": 0,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/bu-sign-800x400.jpg",
+            "classification": "original",
+            "credit": "Ailani Verrall"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19500,11 +19562,17 @@
         }
       ],
       "images": {
-        "total": 0,
-        "original": 0,
+        "total": 1,
+        "original": 1,
         "stock": 0,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/flood-800x400.jpg",
+            "classification": "original",
+            "credit": "Zack Walker"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
@@ -19558,11 +19626,17 @@
         }
       ],
       "images": {
-        "total": 0,
+        "total": 1,
         "original": 0,
-        "stock": 0,
+        "stock": 1,
         "uncredited": 0,
-        "details": []
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/the-blowup-hHHxrXUEdko-unsplash-800x400.jpg",
+            "classification": "stock",
+            "credit": "Police are appealing for any information on the incident. Credit: The blowup on Unsplash"
+          }
+        ]
       },
       "embeds": {
         "video_count": 0,
