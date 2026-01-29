@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T11:32:19Z",
-  "total_verified": 271,
+  "last_updated": "2026-01-29T12:05:58Z",
+  "total_verified": 272,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3523,6 +3523,12 @@
     {
       "id": "9605da4510a2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "e7296ea7ee31",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/game-management-causing-problems-for-afc-bournemouth/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },

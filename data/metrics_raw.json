@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T11:20:29Z",
-  "total_articles": 271,
+  "last_updated": "2026-01-29T11:55:10Z",
+  "total_articles": 272,
   "gender_breakdown": {
     "male": 169,
     "female": 70,
@@ -18982,7 +18982,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19000,7 +19000,21 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Paul Hind",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "d226164905fd",
@@ -19175,6 +19189,43 @@
       "category_normalised": "General News"
     },
     {
+      "id": "e7296ea7ee31",
+      "headline": "Game management causing problems for AFC Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/game-management-causing-problems-for-afc-bournemouth/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:26",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 427,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "29824d478ff4",
       "headline": "Heavy flooding disrupts Chapel Gate sport",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
@@ -19191,7 +19242,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19219,7 +19270,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ewan Corbett",
+          "gender": "male",
+          "position": "before"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "2606f780b84b",
@@ -19238,7 +19304,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "low",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19256,7 +19322,21 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Sarah Dutton",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     }
   ]
 }

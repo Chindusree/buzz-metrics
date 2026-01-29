@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T11:32:22Z",
-  "total_articles": 271,
+  "last_updated": "2026-01-29T12:06:01Z",
+  "total_articles": 272,
   "summary": {
     "avg_word_count": 433,
     "avg_quoted_sources": 1.1,
@@ -18,8 +18,8 @@
     },
     "by_section": {
       "Sport": {
-        "count": 105,
-        "words": 49601,
+        "count": 106,
+        "words": 50028,
         "sources": 89
       },
       "General News": {
@@ -35,7 +35,7 @@
     },
     "by_category": {
       "Sport": {
-        "count": 105,
+        "count": 106,
         "avg_word_count": 472,
         "avg_sources": 0.8
       },
@@ -154,7 +154,7 @@
     },
     {
       "date": "2026-01-29",
-      "article_count": 9,
+      "article_count": 10,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:30",
@@ -19344,6 +19344,52 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News"
+    },
+    {
+      "id": "e7296ea7ee31",
+      "headline": "Game management causing problems for AFC Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/game-management-causing-problems-for-afc-bournemouth/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "11:26",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 427,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "29824d478ff4",
