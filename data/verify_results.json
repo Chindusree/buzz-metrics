@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T10:02:33Z",
-  "total_verified": 264,
+  "last_updated": "2026-01-29T10:54:14Z",
+  "total_verified": 268,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3436,10 +3436,67 @@
       ]
     },
     {
+      "id": "e10332f5725f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Lorient",
+          "context": "PERSON within 50 chars of quote: ...7 years: securing the club’s place in the elite.” Lorient currently sit ninth in Ligue 1 and will now look ..."
+        }
+      ]
+    },
+    {
       "id": "d9e808b1f78b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "9f94dcbe9218",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Joe Salmon",
+          "context": "PERSON within 50 chars of quote: ... 29, 2026//  byCharlotte Spicer Local councillor, Joe Salmon,  feels “relief” over new Lidl store being pushed..."
+        },
+        {
+          "name": "Lidl",
+          "context": "PERSON within 50 chars of quote: ... councillor, Joe Salmon,  feels “relief” over new Lidl store being pushed back. An application was submi..."
+        },
+        {
+          "name": "Councillor Joe Salmon",
+          "context": "PERSON within 50 chars of quote: ...o provide land for a walking and cycling network. Councillor Joe Salmon has said: “It’s a massive sense of relief that we..."
+        }
+      ]
+    },
+    {
+      "id": "d226164905fd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
+      "verify_quoted_sources": 5,
+      "verify_evidence": [
+        {
+          "name": "Carr",
+          "context": "PERSON within 50 chars of quote: .... After the remarkable win on Saturday afternoon, Carr said: “It was great to make my debut today, thank..."
+        },
+        {
+          "name": "Dolphins",
+          "context": "PERSON within 50 chars of quote: ...gn. On why the time was right for his move to the Dolphins, Carr said: “In terms of where my life is now at,..."
+        },
+        {
+          "name": "Andy Rossiter",
+          "context": "PERSON within 50 chars of quote: ... this season, it was a no-brainer.” Vice-Chairman Andy Rossiter commented on his arrival: “Dan is another stateme..."
+        },
+        {
+          "name": "Dan",
+          "context": "PERSON within 50 chars of quote: ...Chairman Andy Rossiter commented on his arrival: “Dan is another statement signing for the club, he’s a..."
+        },
+        {
+          "name": "dancarr",
+          "context": "PERSON within 50 chars of quote: ...ove.” Category:Local,News Top,SportTag:#PooleTown,dancarr,dolphin,English football,Non-League..."
+        }
+      ]
     },
     {
       "id": "01b20e64608c",
@@ -3451,6 +3508,12 @@
           "context": "PERSON within 50 chars of quote: ...l Spurs’ place in the top eight. After the match, Solanke said he was introduced “to try and get that secon..."
         }
       ]
+    },
+    {
+      "id": "9605da4510a2",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     }
   ]
 }

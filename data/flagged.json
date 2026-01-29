@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-29T10:02:36Z",
-  "total_flagged": 111,
+  "generated": "2026-01-29T10:54:17Z",
+  "total_flagged": 114,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4154,6 +4154,97 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "e10332f5725f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
+      "headline": "AFC Bournemouth owners Black Knight Football Club go global",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Lorient"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Lorient"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "9f94dcbe9218",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Joe Salmon"
+      ],
+      "verify_evidence": [
+        "Joe Salmon",
+        "Lidl",
+        "Councillor Joe Salmon"
+      ],
+      "confirmed": [
+        {
+          "name": "Joe Salmon",
+          "gender": "male",
+          "position": "after"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Lidl"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d226164905fd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
+      "headline": "Dan Carr’s dream start to life at Poole Town",
+      "scrape_count": 1,
+      "verify_count": 5,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Vice-Chairman Andy Rossiter"
+      ],
+      "verify_evidence": [
+        "Carr",
+        "Dolphins",
+        "Andy Rossiter",
+        "Dan",
+        "dancarr"
+      ],
+      "confirmed": [
+        {
+          "name": "Vice-Chairman Andy Rossiter",
+          "gender": "unknown",
+          "position": "after"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Carr",
+          "gender": "male"
+        },
+        {
+          "name": "Dan",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Dolphins"
+      ],
       "review_status": "pending"
     },
     {

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-29T09:51:51Z",
-  "total_articles": 264,
+  "last_updated": "2026-01-29T10:43:41Z",
+  "total_articles": 268,
   "gender_breakdown": {
-    "male": 166,
+    "male": 168,
     "female": 70,
     "unknown": 20
   },
@@ -18795,6 +18795,43 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "e10332f5725f",
+      "headline": "AFC Bournemouth owners Black Knight Football Club go global",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:29",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 472,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "d9e808b1f78b",
       "headline": "BCP Council praised for housing standards",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
@@ -18811,7 +18848,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -18837,7 +18874,115 @@
       },
       "warnings": [
         "No quoted sources in article >500 words"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "9f94dcbe9218",
+      "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "author": "Charlotte Spicer",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:10",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 365,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Joe Salmon",
+          "full_attribution": "Joe Salmon added.\nWhile the push back means local",
+          "quote_snippet": "s not up to standard.",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "high",
+          "gender_method": "name_lookup"
+        }
+      ],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/LIDL-story-.mp4?_=1"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "d226164905fd",
+      "headline": "Dan Carr’s dream start to life at Poole Town",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
+      "author": "Connor Hannon",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:27",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 372,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Vice-Chairman Andy Rossiter",
+          "full_attribution": "Vice-Chairman Andy Rossiter commented on his arri",
+          "quote_snippet": "In terms of where my life is now at, I felt now wa",
+          "position": "after",
+          "gender": "male",
+          "gender_confidence": "medium",
+          "gender_method": "pronoun_context"
+        }
+      ],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "01b20e64608c",
@@ -18891,6 +19036,43 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "9605da4510a2",
+      "headline": "Floods continue after Storm Chandra hits Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-29",
+      "time": "10:02",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 75,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     }
   ]
 }
