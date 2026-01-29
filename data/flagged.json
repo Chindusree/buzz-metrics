@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-28T18:09:35Z",
+  "generated": "2026-01-29T09:01:43Z",
   "total_flagged": 111,
   "flagged_articles": [
     {
@@ -2717,6 +2717,35 @@
       "review_status": "pending"
     },
     {
+      "id": "8e2121a22f89",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-afc-bournemouth-await-decision-for-stadium-enabling-works/",
+      "headline": "LIVE BLOG: AFC Bournemouth await decision for stadium enabling works",
+      "scrape_count": 3,
+      "verify_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Councillor Williams",
+        "Councillor Brown",
+        "Jim Frevola"
+      ],
+      "verify_evidence": [],
+      "confirmed": [
+        {
+          "name": "Jim Frevola",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Williams",
+        "Brown"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "d8bc8a4e3dde",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
       "headline": "Rapist sentenced following assault in Bournemouth home",
@@ -3178,21 +3207,29 @@
       "id": "07acbc846781",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/how-can-are-using-leaflets-to-support-the-community/",
       "headline": "How CAN are using leaflets to support the community",
-      "scrape_count": 0,
+      "scrape_count": 2,
       "verify_count": 2,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 0,
-      "filtered_count": 2,
-      "scrape_evidence": [],
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Poonam Paranjpe",
+        "Martin Robinson"
+      ],
       "verify_evidence": [
         "Paranjpe",
         "Robinson"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Martin Robinson",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [],
       "filtered": [
-        "Paranjpe",
-        "Robinson"
+        "Poonam Paranjpe"
       ],
       "review_status": "pending"
     },
@@ -3242,46 +3279,53 @@
       "id": "2063683a978e",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
       "headline": "Man sentenced for people smuggling and class A drug supply",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 1,
       "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "DCI Adam Smith"
+      ],
       "verify_evidence": [
         "Adam Smith"
       ],
       "confirmed": [],
-      "possible": [
-        {
-          "name": "Adam Smith",
-          "gender": "male"
-        }
+      "possible": [],
+      "filtered": [
+        "DCI Adam Smith"
       ],
-      "filtered": [],
       "review_status": "pending"
     },
     {
       "id": "c05f8cf99ad1",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
       "headline": "Profile pictures turn purple in support of South African Women",
-      "scrape_count": 0,
+      "scrape_count": 3,
       "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Madison Love",
+        "Helena Fremantle",
+        "Patricia Leon Elias"
+      ],
       "verify_evidence": [
         "Patricia"
       ],
-      "confirmed": [],
-      "possible": [
+      "confirmed": [
         {
-          "name": "Patricia",
-          "gender": "female"
+          "name": "Patricia Leon Elias",
+          "gender": "female",
+          "position": "groq_detected"
         }
       ],
-      "filtered": [],
+      "possible": [],
+      "filtered": [
+        "Madison Love",
+        "Helena Fremantle"
+      ],
       "review_status": "pending"
     },
     {
@@ -3772,12 +3816,14 @@
       "id": "73471ed129f2",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aub-graduate-wins-purbeck-film-festival-short-film-competition/",
       "headline": "AUB graduate wins Purbeck Film Festival short film competition",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 2,
       "confirmed_count": 0,
-      "possible_count": 2,
-      "filtered_count": 0,
-      "scrape_evidence": [],
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Aaliyah Hussain"
+      ],
       "verify_evidence": [
         "Hussain",
         "Rachel Smith"
@@ -3785,15 +3831,13 @@
       "confirmed": [],
       "possible": [
         {
-          "name": "Hussain",
-          "gender": "male"
-        },
-        {
           "name": "Rachel Smith",
           "gender": "female"
         }
       ],
-      "filtered": [],
+      "filtered": [
+        "Aaliyah Hussain"
+      ],
       "review_status": "pending"
     },
     {
@@ -3829,48 +3873,53 @@
       "review_status": "pending"
     },
     {
+      "id": "ff3b6320a403",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "scrape_count": 1,
+      "verify_count": 0,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Thames Valley Police spokesman"
+      ],
+      "verify_evidence": [],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Thames Valley Police spokesman"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "24522cafe78d",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorchester-through-to-dorset-senior-cup-final-despite-manager-frustration/",
       "headline": "Dorchester through to Dorset Senior Cup final despite manager frustration",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 2,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 0,
       "filtered_count": 2,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Tom Killick"
+      ],
       "verify_evidence": [
         "Dorchester",
         "Weymouth"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Tom Killick",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [],
       "filtered": [
         "Dorchester",
         "Weymouth"
       ],
-      "review_status": "pending"
-    },
-    {
-      "id": "f5a5c5b18b42",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
-      "headline": "Dorset Police appeal for a man after assault in Bournemouth",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Madeleine Duncanson"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Madeleine Duncanson",
-          "gender": "female"
-        }
-      ],
-      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -3914,12 +3963,14 @@
       "id": "0f54b653efea",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/gladiators-inspiring-passion-and-achieving-excellence/",
       "headline": "Gladiators: Inspiring passion and achieving excellence.",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 1,
       "confirmed_count": 0,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Dragos"
+      ],
       "verify_evidence": [
         "Dragos"
       ],
@@ -3934,16 +3985,24 @@
       "id": "31c44ca1c129",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
       "headline": "International LEGO® Day helps Bournemouth children get creative",
-      "scrape_count": 0,
+      "scrape_count": 1,
       "verify_count": 1,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 1,
       "filtered_count": 0,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "AK Cunningham"
+      ],
       "verify_evidence": [
         "theLittle Brick Clubto"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "AK Cunningham",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [
         {
           "name": "theLittle Brick Clubto",
@@ -3992,62 +4051,49 @@
       "review_status": "pending"
     },
     {
-      "id": "d7b415460c6f",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/sarah-mullally-confirmed-as-next-archbishop-of-canterbury/",
-      "headline": "Sarah Mullally confirmed as next Archbishop of Canterbury",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Trish Martin"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Trish Martin",
-          "gender": "female"
-        }
-      ],
-      "filtered": [],
-      "review_status": "pending"
-    },
-    {
       "id": "53490ce707b9",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
       "headline": "Starmer first Prime Minister to arrive in China since 2018",
-      "scrape_count": 0,
+      "scrape_count": 3,
       "verify_count": 4,
-      "confirmed_count": 0,
-      "possible_count": 3,
-      "filtered_count": 1,
-      "scrape_evidence": [],
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Sir Keir Starmer",
+        "Laura Bicker",
+        "Dr Yu Jie"
+      ],
       "verify_evidence": [
         "Starmer",
         "Laura Bicker",
         "Yu Jie",
         "Donald Trump"
       ],
-      "confirmed": [],
-      "possible": [
+      "confirmed": [
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        },
         {
           "name": "Laura Bicker",
-          "gender": "female"
+          "gender": "female",
+          "position": "groq_detected"
         },
         {
           "name": "Yu Jie",
-          "gender": "unknown"
-        },
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
         {
           "name": "Donald Trump",
           "gender": "male"
         }
       ],
-      "filtered": [
-        "Starmer"
-      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -4075,26 +4121,6 @@
       "possible": [],
       "filtered": [
         "Canford"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "25a5de87280d",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
-      "headline": "Support package granted for pubs and venues",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Tomlinson"
-      ],
-      "confirmed": [],
-      "possible": [],
-      "filtered": [
-        "Tomlinson"
       ],
       "review_status": "pending"
     },
@@ -4128,6 +4154,26 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "01b20e64608c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
+      "headline": "Five English Clubs Secure Top Eight in Champions League",
+      "scrape_count": 0,
+      "verify_count": 1,
+      "confirmed_count": 0,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "Solanke"
+      ],
+      "confirmed": [],
+      "possible": [],
+      "filtered": [
+        "Solanke"
+      ],
       "review_status": "pending"
     }
   ]

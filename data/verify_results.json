@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-28T18:09:32Z",
-  "total_verified": 262,
+  "last_updated": "2026-01-29T09:01:40Z",
+  "total_verified": 263,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3432,6 +3432,17 @@
         {
           "name": "Kybert",
           "context": "PERSON within 50 chars of quote: ...can benefit from their coordination skills, as Mr Kybert said: “Some people in the sessions have had recen..."
+        }
+      ]
+    },
+    {
+      "id": "01b20e64608c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Solanke",
+          "context": "PERSON within 50 chars of quote: ...l Spurs’ place in the top eight. After the match, Solanke said he was introduced “to try and get that secon..."
         }
       ]
     }
