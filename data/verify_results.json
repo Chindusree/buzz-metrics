@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T11:41:26Z",
-  "total_verified": 289,
+  "last_updated": "2026-01-30T13:06:58Z",
+  "total_verified": 292,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3679,6 +3679,25 @@
       "verify_evidence": []
     },
     {
+      "id": "8c596adcba4d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-reveals-rayan-could-start-against-wolves/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Norberto Neto",
+          "context": "PERSON within 50 chars of quote: ...n to play for Bournemouth after former goalkeeper Norberto Neto and current striker Evailson. Iraola said: “Obvio..."
+        },
+        {
+          "name": "Evanilson",
+          "context": "PERSON within 50 chars of quote: ...e will slowly, slowly take also the language like Evanilson is doing now.” The Cherries also announced the si..."
+        },
+        {
+          "name": "Lazio",
+          "context": "PERSON within 50 chars of quote: ... Christos Mandas this week too, from Italian side Lazio. Iraola said: “Christos is a player that we were ..."
+        }
+      ]
+    },
+    {
       "id": "b30834fdd227",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
       "verify_quoted_sources": 0,
@@ -3738,6 +3757,31 @@
           "context": "PERSON within 50 chars of quote: ...or young people to come and play pool and darts.” Said Hamlin. “I think the biggest reaction for me is they wal..."
         }
       ]
+    },
+    {
+      "id": "f2bb1c45446c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/spanish-footballer-coach-juan-cano-valverde-triumphs-over-set-backs/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Valverde",
+          "context": "PERSON within 50 chars of quote: ...language and in desperate need of work and money. Valverde said: “My dream has always been to be involved in..."
+        },
+        {
+          "name": "Juan Cano Valverde",
+          "context": "PERSON within 50 chars of quote: ...ng, but I kept trying my hardest.” Image captions Juan Cano Valverde on a trip to AFC Bournemouth with R.S.D Alcala (C..."
+        },
+        {
+          "name": "Scott Rowles",
+          "context": "PERSON within 50 chars of quote: ... best out of everyone, a top guy.” Image captions Scott Rowles with Valverde for Poole Town Under 23s (Credit: S..."
+        }
+      ]
+    },
+    {
+      "id": "adddf255b109",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "51f73690a036",

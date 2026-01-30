@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T11:41:29Z",
-  "total_flagged": 120,
+  "generated": "2026-01-30T13:07:01Z",
+  "total_flagged": 121,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4362,6 +4362,42 @@
       "possible": [],
       "filtered": [
         "Bass"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "8c596adcba4d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-reveals-rayan-could-start-against-wolves/",
+      "headline": "Andoni Iraola reveals Rayan could start against Wolves",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "Andoni Iraola"
+      ],
+      "verify_evidence": [
+        "Norberto Neto",
+        "Evanilson",
+        "Lazio"
+      ],
+      "confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Norberto Neto",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Evanilson",
+        "Lazio"
       ],
       "review_status": "pending"
     },

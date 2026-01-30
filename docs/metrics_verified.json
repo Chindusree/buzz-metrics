@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-30T11:41:29Z",
-  "total_articles": 289,
+  "last_updated": "2026-01-30T13:07:01Z",
+  "total_articles": 292,
   "summary": {
-    "avg_word_count": 433,
-    "avg_quoted_sources": 1.1,
-    "below_minimum_count": 87,
-    "long_form_count": 29,
+    "avg_word_count": 434,
+    "avg_quoted_sources": 1.2,
+    "below_minimum_count": 88,
+    "long_form_count": 30,
     "breaking_news_count": 19,
-    "total_images": 562,
-    "original_images": 249,
+    "total_images": 576,
+    "original_images": 256,
     "stock_images": 26,
-    "uncredited_images": 287,
+    "uncredited_images": 294,
     "gender_breakdown": {
-      "male": 210,
-      "female": 81,
-      "unknown": 41
+      "male": 213,
+      "female": 82,
+      "unknown": 42
     },
     "by_section": {
       "Sport": {
-        "count": 113,
-        "words": 53442,
-        "sources": 105
+        "count": 115,
+        "words": 54738,
+        "sources": 108
       },
       "General News": {
-        "count": 167,
-        "words": 60593,
-        "sources": 208
+        "count": 168,
+        "words": 60885,
+        "sources": 210
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 113,
-        "avg_word_count": 473,
+        "count": 115,
+        "avg_word_count": 476,
         "avg_sources": 0.9
       },
       "News": {
-        "count": 167,
-        "avg_word_count": 363,
+        "count": 168,
+        "avg_word_count": 362,
         "avg_sources": 1.2
       },
       "Features": {
@@ -164,13 +164,13 @@
     },
     {
       "date": "2026-01-30",
-      "article_count": 9,
+      "article_count": 12,
       "target": 12,
-      "meets_target": false,
+      "meets_target": true,
       "first_publish_time": "08:36",
       "first_publish_on_time": true,
-      "below_minimum_count": 3,
-      "long_form_count": 2
+      "below_minimum_count": 4,
+      "long_form_count": 3
     }
   ],
   "articles": [
@@ -20828,6 +20828,98 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "8c596adcba4d",
+      "headline": "Andoni Iraola reveals Rayan could start against Wolves",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-reveals-rayan-could-start-against-wolves/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "11:42",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 419,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andoni Iraola",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot_2026-01-30_at_11.33.12_optimized_2000-800x400.png",
+            "classification": "original",
+            "credit": "Jacob Deighton"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/image1-1-e1769596815814-323x300.jpeg",
+            "classification": "original",
+            "credit": "AFCB Instagram"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/624073248_17898501510380468_6348655070351494082_n-225x300.jpg",
+            "classification": "original",
+            "credit": "afcb"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/-tl4UUgn-ws?feature=oembed"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Norberto Neto",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Evanilson",
+        "Lazio"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "b30834fdd227",
       "headline": "Aston Villa comeback highlights Europa League final league-phase drama",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
@@ -21195,6 +21287,221 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "f2bb1c45446c",
+      "headline": "Spanish coach Juan Cano Valverde triumphs over set backs",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/spanish-footballer-coach-juan-cano-valverde-triumphs-over-set-backs/",
+      "author": "Connor Hannon",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "11:44",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 877,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/juan-cano-valverde-triumph-over-setback/index.html",
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Juan Cano Valverde",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Juan Cano Valverde",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Scott Rowles",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Scott Rowles",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 9,
+        "original": 4,
+        "stock": 0,
+        "uncredited": 5,
+        "details": [
+          {
+            "src": "./assets/er4MlKaNmb/312c01fe-ceac-4da3-844c-638e7ebaab92-thumbnail.jpeg",
+            "credit": "Juan Cano Valverde",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/JgTCAcG3K7/56618933-fc86-4302-bc11-17471800c721-thumbnail.jpeg",
+            "credit": "Juan Cano Valverde",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/um0l86Z2Pk/8842a777-b31c-42c6-89fd-8f3b85e7fca2-thumbnail.jpeg",
+            "credit": "Juan Cano Valverde",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/k3FHUph3XC/f20ca8c0-d264-42b6-b19c-68550a73f1b1-3-thumbnail.jpeg",
+            "credit": "Scott Rowles",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/er4MlKaNmb/312c01fe-ceac-4da3-844c-638e7ebaab92-1600x777.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/JgTCAcG3K7/56618933-fc86-4302-bc11-17471800c721-1440x1440.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/um0l86Z2Pk/8842a777-b31c-42c6-89fd-8f3b85e7fca2-1440x1080.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/k3FHUph3XC/f20ca8c0-d264-42b6-b19c-68550a73f1b1-3-895x626.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Juan Cano Valverde",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Scott Rowles",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "adddf255b109",
+      "headline": "Train delays in Dorset continue due to weather",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "12:29",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 292,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Anonymous local",
+          "gender": "unknown",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Anonymous local",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Lisa",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3704-1-1-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Delay to London screen Photo Credits: Riley Wallace Delay to London screen\nPhoto Credits: Riley Wallace"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3722-360x242.jpg",
+            "classification": "uncredited",
+            "credit": "Delay to London screenPhoto Credits: Riley  Delay to London screenPhoto Credits: Riley Wallace"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Anonymous local",
+          "gender": "unknown",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "51f73690a036",
