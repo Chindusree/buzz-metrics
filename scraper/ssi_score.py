@@ -175,8 +175,8 @@ def is_exempt(article, headline):
     if word_count < 150:
         return True, 'Snippet (< 150 words)'
 
-    # 2. BREAKING
-    if headline.startswith('BREAKING'):
+    # 2. BREAKING (case-insensitive)
+    if headline.upper().startswith('BREAKING'):
         return True, 'Breaking news'
 
     # 3. LIVE BULLETIN
