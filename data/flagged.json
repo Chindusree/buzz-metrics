@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T10:45:12Z",
-  "total_flagged": 119,
+  "generated": "2026-01-30T11:41:29Z",
+  "total_flagged": 120,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4479,6 +4479,61 @@
       ],
       "filtered": [
         "Verwood"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "238a12ab93ae",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "headline": "£750 million investment sent to transform Bournemouth",
+      "scrape_count": 6,
+      "verify_count": 3,
+      "confirmed_count": 5,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Tanya",
+        "Jacob",
+        "Karl",
+        "Fraser Mills",
+        "Millie Earl",
+        "Jen"
+      ],
+      "verify_evidence": [
+        "Jacob",
+        "Karl",
+        "Fraser Mills"
+      ],
+      "confirmed": [
+        {
+          "name": "Tanya",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Jacob",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Karl",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Millie Earl",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Jen",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Fraser Mills"
       ],
       "review_status": "pending"
     }

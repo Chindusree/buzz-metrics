@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T10:45:09Z",
-  "total_verified": 287,
+  "last_updated": "2026-01-30T11:41:26Z",
+  "total_verified": 289,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3704,6 +3704,17 @@
       ]
     },
     {
+      "id": "820130679f1d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/19-year-old-award-winning-bartender/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Ben",
+          "context": "PERSON within 50 chars of quote: ...me until my bar manager tackled me to the floor.” Ben’s journey into mixology didn’t start with luxury ..."
+        }
+      ]
+    },
+    {
       "id": "8e013310a41b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-person-dies-on-tracks-near-wool-railway-station/",
       "verify_quoted_sources": 0,
@@ -3754,6 +3765,25 @@
         {
           "name": "Roy Mortime",
           "context": "PERSON within 50 chars of quote: ... against Hamworthy United Reserves. Photo credit: Roy Mortime. “There’s still an awful lot of work to do,” he a..."
+        }
+      ]
+    },
+    {
+      "id": "238a12ab93ae",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Jacob",
+          "context": "PERSON within 50 chars of quote: ...om online shopping have reshaped the high street. Jacob believes safety is also a growing concern. “Onlin..."
+        },
+        {
+          "name": "Karl",
+          "context": "PERSON within 50 chars of quote: ...pinion. “It’s got worse than it used to be,” says Karl, who volunteers for the Big Issue. Fraser Mills, ..."
+        },
+        {
+          "name": "Fraser Mills",
+          "context": "PERSON within 50 chars of quote: ...be,” says Karl, who volunteers for the Big Issue. Fraser Mills, who lived in Bournemouth for around 55 years, de..."
         }
       ]
     }

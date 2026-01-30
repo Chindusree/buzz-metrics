@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-30T10:34:14Z",
-  "total_articles": 287,
+  "last_updated": "2026-01-30T11:28:30Z",
+  "total_articles": 289,
   "gender_breakdown": {
-    "male": 237,
-    "female": 106,
+    "male": 241,
+    "female": 109,
     "unknown": 18
   },
   "articles": [
@@ -20821,6 +20821,60 @@
       "category_normalised": "General News"
     },
     {
+      "id": "820130679f1d",
+      "headline": "Meet the 19-year-old award-winning bartender proving you don’t need to break a bank to make a nice cocktail",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/19-year-old-award-winning-bartender/",
+      "author": "Ira Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "10:50",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 475,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ben Davies",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Ben Davies",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5470027338843098295_y-1-800x400.jpg",
+            "classification": "original",
+            "credit": "Julia Apte"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "8e013310a41b",
       "headline": "Person dies on tracks near Wool Railway Station",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-person-dies-on-tracks-near-wool-railway-station/",
@@ -20861,7 +20915,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "f6e7b0a0d80d",
@@ -20880,7 +20943,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20925,7 +20988,31 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Lee Hamill",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "King",
+          "gender": "male"
+        },
+        {
+          "name": "Said Hamlin",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "51f73690a036",
@@ -20944,7 +21031,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20979,7 +21066,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andy Hadley",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "c8f104ef097c",
@@ -21102,6 +21204,132 @@
       "is_long_form": true,
       "word_count_status": "long_form",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "238a12ab93ae",
+      "headline": "£750 million investment sent to transform Bournemouth",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "author": "Martha White",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "11:20",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 835,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/750-million-investment-promises-renewal-but-can-it-restore-bournemouth-copy/index.html",
+      "quoted_sources": 6,
+      "quoted_sources_confidence": "high",
+      "sources_male": 3,
+      "sources_female": 3,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Tanya",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Tanya",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Jacob",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jacob",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Karl",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Karl",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Fraser Mills",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Fraser Mills",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Millie Earl",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Millie Earl",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Jen",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jen",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 4,
+        "details": [
+          {
+            "src": "./assets/rPhnqZzAfC/screenshot-2026-01-30-at-10.15.35-thumbnail.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/vfw6crGdGd/screenshot-2026-01-30-at-10.24.31-1048x1336.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/rPhnqZzAfC/screenshot-2026-01-30-at-10.15.35-2808x1516.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
     }
   ]
 }
