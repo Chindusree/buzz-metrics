@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
 """
-Story Substance Index (SSI) Scoring Script
+Story Substance Index (SSI) Scoring Script - Version 2.1
 
-Calculates SSI for BUzz articles using 4 components:
+Calculates SSI for BUzz articles using 5 components:
 - WE (Word Efficiency): Word count vs threshold
 - SD (Source Density): Source count vs threshold
 - AR (Attribution Rigour): Quality of source attribution
 - CD (Contextual Depth): Presence of context elements
+- OI (Originality Index): Source provenance and originality
 
-Formula: SSI = 100 × (WE + SD + AR + CD) / 4
+Formula (Standard): SSI = 100 × (WE + SD + AR + CD + OI) / 5
+Formula (Sourceless): SSI = 100 × (WE + SD + CD + OI) / 4  (AR excluded)
 
-Each component ranges from 0 to 1.
+Intake Gates:
+- 40-CAP: Applied when SD = 0 (no sources)
+- 50-CAP: Applied when OI < 0.5 (churnalism)
 """
 
 import json
@@ -28,59 +32,21 @@ OUTPUT_FILE = '../data/metrics_ssi.json'
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 GROQ_DELAY = 1.5  # seconds between API calls
 
-# SSI Thresholds by category
+# SSI 2.1 House Targets
 THRESHOLDS = {
-    'News': {'word_count': 350, 'sources': 2},
+    'News': {'word_count': 350, 'sources': 3},
     'Feature': {'word_count': 800, 'sources': 4}
 }
 
-# Exemption patterns (case-insensitive)
-EXEMPT_PATTERNS = [
-    r'\bmatch report\b',
-    r'\bfinal whistle\b',
-    r'\bfull.?time\b',
-    r'\bhalf.?time\b',
-    r'\bline.?ups?\b',
-    r'\bstarting XI\b',
-    r'\blive blog\b',
-    r'\bbreaking\b',
-    r'\bcourt report\b',
+# Local markers for OI scoring
+LOCAL_MARKERS = [
+    'dorset', 'bournemouth', 'poole', 'bcp', 'christchurch',
+    'bournemouth university', r'\bbu\b', 'aub',
+    'afc bournemouth', 'cherries'
 ]
 
-# Groq prompt for AR and CD extraction (NOT source extraction - we use verified data)
-SSI_PROMPT = """You are analyzing a news article for journalistic substance. Extract:
-
-## 1. ATTRIBUTION RIGOUR (AR)
-For EACH quoted source in the article, score attribution quality:
-| Score | Criteria |
-|-------|----------|
-| 1.0 | Full: Name + Role + Organisation |
-| 0.7 | Partial: Name + Role (no org) |
-| 0.4 | Vague: Descriptor only ("A resident") |
-| 0.1 | Anonymous: "Sources said" |
-
-Return one score per source (even if attribution is poor/anonymous).
-
-## 2. CONTEXTUAL DEPTH (CD)
-Check for presence (true/false):
-| Element | Description |
-|---------|-------------|
-| statistics | Numerical data with cited source |
-| timeline | Reference to past events, dates, background |
-| comparison | Local vs national, before vs after |
-| explanation | How a process, policy, or system works |
-
-Return ONLY valid JSON:
-{
-  "attribution_scores": [1.0, 0.7, 0.4],
-  "context": {
-    "has_statistics": true,
-    "has_timeline": false,
-    "has_comparison": true,
-    "has_explanation": false
-  }
-}
-If no sources, return empty attribution_scores array. No text outside JSON."""
+# Groq prompt template
+SSI_PROMPT_TEMPLATE = open('ssi_prompt_v2.1.md', 'r').read()
 
 
 def fetch_article_text(url):
@@ -100,7 +66,6 @@ def fetch_article_text(url):
         # Handle Shorthand embeds
         shorthand_story = soup.find('div', class_='shorthand-story')
         if shorthand_story:
-            # For Shorthand, get text from sections
             sections = shorthand_story.find_all(['p', 'h1', 'h2', 'h3', 'blockquote'])
             if sections:
                 text = '\n\n'.join([s.get_text(strip=True) for s in sections if s.get_text(strip=True)])
@@ -132,15 +97,23 @@ def fetch_article_text(url):
         return '', f'Parse error: {str(e)}'
 
 
-def call_groq_for_ssi(article_text):
+def call_groq_for_ssi(article_text, headline, word_count, category):
     """
-    Call Groq API to extract AR scores and CD flags.
+    Call Groq API to extract SSI components using v2.1 prompt.
     Returns (result_dict, error)
     """
     if not GROQ_API_KEY:
         return None, 'GROQ_API_KEY not set'
 
     try:
+        # Build user message with article metadata
+        user_message = f"""HEADLINE: {headline}
+WORD_COUNT: {word_count}
+CATEGORY: {category}
+
+ARTICLE_TEXT:
+{article_text}"""
+
         response = requests.post(
             'https://api.groq.com/openai/v1/chat/completions',
             headers={
@@ -150,8 +123,8 @@ def call_groq_for_ssi(article_text):
             json={
                 'model': 'llama-3.3-70b-versatile',
                 'messages': [
-                    {'role': 'system', 'content': SSI_PROMPT},
-                    {'role': 'user', 'content': article_text}
+                    {'role': 'system', 'content': SSI_PROMPT_TEMPLATE},
+                    {'role': 'user', 'content': user_message}
                 ],
                 'temperature': 0.1,
                 'max_tokens': 2000
@@ -173,9 +146,10 @@ def call_groq_for_ssi(article_text):
 
         result = json.loads(content)
 
-        # Validate structure (expect attribution_scores and context)
-        if 'attribution_scores' not in result or 'context' not in result:
-            return None, 'Invalid Groq response structure'
+        # Validate structure
+        required_fields = ['ssi_score', 'ssi_components', 'ssi_context_flags', 'ssi_unique_sources']
+        if not all(field in result for field in required_fields):
+            return None, f'Invalid Groq response structure: missing fields'
 
         return result, None
 
@@ -189,39 +163,60 @@ def call_groq_for_ssi(article_text):
         return None, f'Groq extraction error: {str(e)}'
 
 
-def is_exempt(article):
-    """Check if article should be exempt from SSI scoring."""
-    headline = article.get('headline', '').lower()
+def is_exempt(article, headline):
+    """
+    Check if article should be exempt from SSI scoring (SSI 2.1 rules).
+    Returns (is_exempt, reason)
+    """
     word_count = article.get('word_count', 0)
-    content_type = article.get('content_type', 'standard')
+    headline_lower = headline.lower()
 
-    # Snippet exception
+    # 1. SNIPPET
     if word_count < 150:
         return True, 'Snippet (< 150 words)'
 
-    # Shorthand embed-only exception
-    if content_type == 'shorthand' and word_count < 100:
-        return True, 'Shorthand embed-only'
+    # 2. BREAKING
+    if headline.startswith('BREAKING'):
+        return True, 'Breaking news'
 
-    # Pattern matching
-    for pattern in EXEMPT_PATTERNS:
-        if re.search(pattern, headline, re.IGNORECASE):
-            return True, f'Pattern match: {pattern}'
+    # 3. LIVE BULLETIN
+    if 'buzz news tv' in headline_lower:
+        return True, 'Live bulletin'
+
+    # 4. LIVE BLOG
+    if 'as it happened' in headline_lower or headline_lower.startswith('live:'):
+        return True, 'Live blog'
+
+    # 5. MATCH REPORT (sport + past tense verbs)
+    sport_keywords = ['football', 'basketball', 'rugby', 'cricket', 'netball', 'hockey']
+    past_verbs = ['beat', 'defeated', 'won', 'lost to', 'thrashed', 'edged past']
+    is_sport = any(kw in headline_lower for kw in sport_keywords)
+    has_past = any(verb in headline_lower for verb in past_verbs)
+    if is_sport and has_past:
+        return True, 'Match report'
+
+    # 6. MATCH PREVIEW (sport + future phrases)
+    future_phrases = ['to play', 'to face', 'set to', ' vs ', ' v ']
+    has_future = any(phrase in headline_lower for phrase in future_phrases)
+    if is_sport and has_future:
+        return True, 'Match preview'
 
     return False, None
 
 
-def calculate_ssi(verified_word_count, verified_sources, groq_result):
+def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
     """
-    Calculate SSI score and components.
-    Uses VERIFIED data from metrics_verified.json (not Groq-extracted sources).
+    Calculate SSI 2.1 score using Groq-provided components.
+
+    This function extracts components from Groq and recalculates the final
+    SSI score to ensure correct formula and gate application.
 
     Args:
         verified_word_count: Word count from metrics_verified.json
         verified_sources: Source count from metrics_verified.json
-        groq_result: Dict with attribution_scores and context from Groq
+        groq_result: Component data from Groq (WE, SD, AR, CD, OI, flags)
 
-    Returns dict with ssi_score, ssi_components, etc.
+    Returns dict with ssi_score, components, gates, etc.
     """
     word_count = verified_word_count
     quoted_sources = verified_sources
@@ -229,55 +224,75 @@ def calculate_ssi(verified_word_count, verified_sources, groq_result):
     # Auto-categorise by word count
     if word_count >= 800:
         category = 'Feature'
-        hw = THRESHOLDS['Feature']['word_count']
-        hs = THRESHOLDS['Feature']['sources']
     else:
         category = 'News'
-        hw = THRESHOLDS['News']['word_count']
-        hs = THRESHOLDS['News']['sources']
 
-    # WE: Word Efficiency
-    we = min(word_count / hw, 1.0) if hw > 0 else 0
+    # Extract Groq's component values
+    components = groq_result.get('ssi_components', {})
+    context_flags = groq_result.get('ssi_context_flags', {})
+    ssi_sources = groq_result.get('ssi_sources', [])
+    unique_sources = groq_result.get('ssi_unique_sources', 0)
 
-    # SD: Source Density (from VERIFIED source count)
-    sd = min(quoted_sources / hs, 1.0) if hs > 0 else 0
+    # Get component values
+    we = components.get('we', 0)
+    sd = components.get('sd', 0)
+    ar = components.get('ar')  # May be null
+    cd = components.get('cd', 0)
+    oi = components.get('oi', 0)
 
-    # AR: Attribution Rigour (average of Groq attribution scores)
-    attribution_scores = groq_result.get('attribution_scores', [])
-    if attribution_scores:
-        ar = sum(attribution_scores) / len(attribution_scores)
+    # Cap WE and SD at 1.0 for formula calculation
+    # (Groq may return uncapped ratios like SD=1.33)
+    we_capped = min(we, 1.0)
+    sd_capped = min(sd, 1.0)
+
+    # RECALCULATE SSI using 2.1 formula
+    # Standard (when SD > 0): SSI = 100 × (WE + SD + AR + CD + OI) / 5
+    # Sourceless (when SD = 0): SSI = 100 × (WE + SD + CD + OI) / 4  (AR excluded)
+
+    if sd == 0:
+        # Sourceless formula (AR excluded)
+        base_ssi = 100 * (we_capped + sd_capped + cd + oi) / 4.0
+        ar = None  # Ensure AR is null for sourceless
     else:
-        ar = 0
+        # Standard formula
+        ar_val = ar if ar is not None else 0
+        base_ssi = 100 * (we_capped + sd_capped + ar_val + cd + oi) / 5.0
 
-    # CD: Contextual Depth (count of flags / 4)
-    context = groq_result.get('context', {})
-    cd_flags = [
-        context.get('has_statistics', False),
-        context.get('has_timeline', False),
-        context.get('has_comparison', False),
-        context.get('has_explanation', False)
-    ]
-    cd = sum(cd_flags) / 4.0
+    # Apply gates in order
+    ssi_score = base_ssi
+    gate = None
 
-    # SSI: Arithmetic mean of components
-    ssi = 100 * (we + sd + ar + cd) / 4.0
+    # Gate 1: 40-CAP (when SD = 0)
+    if sd == 0:
+        if ssi_score > 40:
+            ssi_score = 40
+            gate = '40-CAP'
+
+    # Gate 2: 50-CAP (when OI < 0.5)
+    if oi < 0.5:
+        if ssi_score > 50:
+            ssi_score = 50
+            gate = '50-CAP'
 
     return {
-        'ssi_score': round(ssi, 1),
+        'ssi_score': round(ssi_score, 1),
         'ssi_category': category,
         'ssi_components': {
             'we': round(we, 2),
             'sd': round(sd, 2),
-            'ar': round(ar, 2),
-            'cd': round(cd, 2)
+            'ar': round(ar, 2) if ar is not None else None,
+            'cd': round(cd, 2),
+            'oi': round(oi, 2)
         },
         'ssi_context_flags': {
-            'has_statistics': context.get('has_statistics', False),
-            'has_timeline': context.get('has_timeline', False),
-            'has_comparison': context.get('has_comparison', False),
-            'has_explanation': context.get('has_explanation', False)
+            'has_data': context_flags.get('has_data', False),
+            'has_timeline': context_flags.get('has_timeline', False),
+            'has_comparison': context_flags.get('has_comparison', False),
+            'has_structural': context_flags.get('has_structural', False)
         },
-        'ssi_attribution_scores': attribution_scores  # Store individual scores
+        'ssi_sources': ssi_sources,
+        'ssi_unique_sources': unique_sources,
+        'ssi_gate': gate
     }
 
 
@@ -295,7 +310,7 @@ def load_existing_ssi():
 def main():
     """Main scoring loop."""
     print('=' * 80)
-    print('SSI SCORING SCRIPT')
+    print('SSI 2.1 SCORING SCRIPT')
     print('=' * 80)
     print()
 
@@ -303,7 +318,6 @@ def main():
     test_mode = '--test' in sys.argv
     test_slugs = []
     if test_mode:
-        # Get slugs after --test flag
         try:
             test_idx = sys.argv.index('--test')
             test_slugs = sys.argv[test_idx + 1:]
@@ -394,7 +408,7 @@ def main():
             continue
 
         # Check exemptions
-        exempt, exempt_reason = is_exempt(article)
+        exempt, exempt_reason = is_exempt(article, headline)
         if exempt:
             print(f'  ⊘  Exempt: {exempt_reason}')
             results.append({
@@ -413,6 +427,9 @@ def main():
         verified = verified_lookup.get(url, {'word_count': 0, 'sources': 0})
         verified_wc = verified['word_count']
         verified_sources = verified['sources']
+
+        # Auto-categorise
+        category = 'Feature' if verified_wc >= 800 else 'News'
 
         # Fetch article text
         print(f'  ↓ Fetching article text...')
@@ -434,9 +451,9 @@ def main():
         # Rate limiting
         time.sleep(GROQ_DELAY)
 
-        # Call Groq for AR and CD
-        print(f'  🤖 Calling Groq for SSI extraction...')
-        groq_result, groq_error = call_groq_for_ssi(text)
+        # Call Groq for SSI 2.1 calculation
+        print(f'  🤖 Calling Groq for SSI 2.1 extraction...')
+        groq_result, groq_error = call_groq_for_ssi(text, headline, verified_wc, category)
         if groq_error:
             print(f'  ✗ Groq error: {groq_error}')
             results.append({
@@ -451,11 +468,15 @@ def main():
             stats['errors'] += 1
             continue
 
-        # Calculate SSI using VERIFIED word count and sources
-        ssi_data = calculate_ssi(verified_wc, verified_sources, groq_result)
+        # Process Groq's SSI 2.1 calculation
+        ssi_data = calculate_ssi_v2_1(verified_wc, verified_sources, groq_result)
 
-        print(f'  ✓ SSI: {ssi_data["ssi_score"]} ({ssi_data["ssi_category"]})')
-        print(f'    Components: WE={ssi_data["ssi_components"]["we"]}, SD={ssi_data["ssi_components"]["sd"]}, AR={ssi_data["ssi_components"]["ar"]}, CD={ssi_data["ssi_components"]["cd"]}')
+        gate_display = f' [{ssi_data["ssi_gate"]}]' if ssi_data.get('ssi_gate') else ''
+        print(f'  ✓ SSI: {ssi_data["ssi_score"]}{gate_display} ({ssi_data["ssi_category"]})')
+
+        components = ssi_data["ssi_components"]
+        ar_display = f'{components["ar"]}' if components["ar"] is not None else 'null'
+        print(f'    Components: WE={components["we"]}, SD={components["sd"]}, AR={ar_display}, CD={components["cd"]}, OI={components["oi"]}')
 
         results.append({
             'url': url,
@@ -495,6 +516,7 @@ def main():
 
     output = {
         'last_updated': datetime.utcnow().isoformat() + 'Z',
+        'ssi_version': '2.1',
         'summary': {
             'total_articles': stats['total'],
             'scored': stats['scored'],
