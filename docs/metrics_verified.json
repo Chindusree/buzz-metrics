@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-30T14:49:51Z",
-  "total_articles": 301,
+  "last_updated": "2026-01-30T15:47:06Z",
+  "total_articles": 310,
   "summary": {
-    "avg_word_count": 442,
+    "avg_word_count": 443,
     "avg_quoted_sources": 1.2,
-    "below_minimum_count": 90,
-    "long_form_count": 32,
-    "breaking_news_count": 19,
-    "total_images": 602,
-    "original_images": 263,
+    "below_minimum_count": 92,
+    "long_form_count": 33,
+    "breaking_news_count": 21,
+    "total_images": 624,
+    "original_images": 270,
     "stock_images": 28,
-    "uncredited_images": 311,
+    "uncredited_images": 326,
     "gender_breakdown": {
-      "male": 220,
-      "female": 85,
+      "male": 227,
+      "female": 90,
       "unknown": 43
     },
     "by_section": {
       "Sport": {
-        "count": 121,
-        "words": 58438,
-        "sources": 114
+        "count": 125,
+        "words": 60403,
+        "sources": 118
       },
       "General News": {
-        "count": 171,
-        "words": 62498,
-        "sources": 215
+        "count": 176,
+        "words": 64812,
+        "sources": 223
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 121,
+        "count": 125,
         "avg_word_count": 483,
         "avg_sources": 0.9
       },
       "News": {
-        "count": 171,
-        "avg_word_count": 365,
+        "count": 176,
+        "avg_word_count": 368,
         "avg_sources": 1.3
       },
       "Features": {
@@ -164,13 +164,13 @@
     },
     {
       "date": "2026-01-30",
-      "article_count": 21,
+      "article_count": 30,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:36",
       "first_publish_on_time": true,
-      "below_minimum_count": 6,
-      "long_form_count": 5
+      "below_minimum_count": 8,
+      "long_form_count": 6
     }
   ],
   "articles": [
@@ -20920,6 +20920,97 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "d5e3236c077f",
+      "headline": "Are the young people priced out of the plate?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/are-the-young-people-priced-out-of-the-plate/",
+      "author": "Iryna Melnykova",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:17",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 617,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-hidden-side-of-rare-earth-minerals-copy/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ben Davies",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Ben Davies",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 4,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 4,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/gMGJAINNPJ/photo_5470027338843098441_y-1280x960.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/uMoAypA6oE/photo_5470027338843098623_x-1.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/UQ9rbbfUMI/photo_5470027338843098285_y-1280x1196.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ben Davies",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "b30834fdd227",
       "headline": "Aston Villa comeback highlights Europa League final league-phase drama",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
@@ -20970,6 +21061,115 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "340f187bf2f5",
+      "headline": "BREAKING: Bournemouth’s Iranian community responds to Donald Trump’s threats",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-iran-warns-retaliation-to-us-attack-will-not-be-limited/",
+      "author": "Sub-editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:00",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 509,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 3,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Kathy Abbasirad",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Kathy Abbasirad",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Donald Trump",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Keir Starmer",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 2,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/photo_5470027338843098914_y-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/18171-360x190.jpg",
+            "classification": "uncredited",
+            "credit": "Illustration of Iran flag (Credit : freepik.com)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kathy Abbasirad",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Starmer said:“I",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "9e102ae610c4",
@@ -21173,6 +21373,134 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"
+    },
+    {
+      "id": "ad3314404ab8",
+      "headline": "Dominic Sadi: From the South Coast to Serbia",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:20",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 834,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Dominic-Sadi-feature/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Dominic Sadi",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Dominic Sadi",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 9,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 7,
+        "details": [
+          {
+            "src": "./assets/eedS4Ulwy7/img_9416-thumbnail.jpeg",
+            "credit": "Evan Morris",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/40ZALGX50p/img_4017-thumbnail.jpeg",
+            "credit": "afcb",
+            "classification": "original"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/eedS4Ulwy7/img_9416-1792x1344.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/3zLJGedapQ/sadi-6-3200x2133.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/wZhwECbefq/sadi-4-2895x3200.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/vo3zgj4b0E/sadi-7-1440x960.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/40ZALGX50p/img_4017-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/hVlCZ8sPKw/sadi-1-1168x1440.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 4,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dominic Sadi",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Jack Hillman",
+          "gender": "male"
+        },
+        {
+          "name": "Jacob Deighton",
+          "gender": "male"
+        },
+        {
+          "name": "Alex Scott",
+          "gender": "male"
+        },
+        {
+          "name": "Leeds United",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "52d3b537471c",
@@ -21495,6 +21823,253 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "ff3a91f5b1e9",
+      "headline": "January complications forces Wimborne pub to close",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/january-complications-forces-wimborne-pub-to-close/",
+      "author": "Gabriel Dela Cruz",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:48",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 281,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Tim Allen",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Tim Allen",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Shannon Brown",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Shannon Brown",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/tempImage2ESNBG-800x400.jpg",
+            "classification": "original",
+            "credit": "Tim Allen and Shannon Brown, owners of The Barley Mow - shot by Gabriel Dela Cruz"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_3555.heic",
+            "classification": "original",
+            "credit": "The interior of The Barley Mow is getting redone. Image shot by Gabriel Dela Cruz"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Tim Allen",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Shannon Brown",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Both Allen",
+          "gender": "unknown"
+        },
+        {
+          "name": "Said Allen",
+          "gender": "male"
+        },
+        {
+          "name": "Valentine",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [
+        "Fingers"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "c686d291734e",
+      "headline": "Jessica Toale MP on her plans for Bournemouth West",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-mp-on-her-plans-for-bournemouth-west/",
+      "author": "Abby West",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:33",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 737,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jessica Toale",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jessica Toale",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Screenshot-2026-01-30-152832-800x400.png",
+            "classification": "original",
+            "credit": "Photo credit - Abby West"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jessica Toale",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "d567a1bebba1",
+      "headline": "Keep your eyes on Iris",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/keep-your-eyes-on-iris/",
+      "author": "Ben Wheeler",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:18",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 366,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Daisy Gill",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Daisy Gill",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019689-746x400.png",
+            "classification": "original",
+            "credit": "Olivia Pagden"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Daisy Gill",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Iris",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
       "id": "e0ad545af58d",
       "headline": "Kings Park Stadium closure leaves local athletes without track",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
@@ -21680,6 +22255,75 @@
       "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "dde18415573c",
+      "headline": "Local walking charity steps up to break barriers across Dorset.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-walking-charity-steps-up-to-break-barriers-across-dorset/",
+      "author": "Theo Otesanya-Salvo",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:06",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 364,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "David Mitchell",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "David Mitchell",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/30ab95e2-76ee-4337-a1b5-c9c6cee150db-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "No credit"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "David Mitchell",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
@@ -21888,6 +22532,77 @@
         }
       ],
       "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "fb4c101743bb",
+      "headline": "Richmond Park Bowls Club celebrate their 120th anniversary",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/richmond-park-bowls-club-celebrate-their-120th-anniversary/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:51",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 401,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Peter Blake",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Peter Blake",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_0397-800x400.jpg",
+            "classification": "original",
+            "credit": "Moritz Baer"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Peter Blake",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Bowls"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -22305,6 +23020,75 @@
         {
           "name": "Andy Hadley",
           "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "706f0f3361e9",
+      "headline": "Two men jailed following investigation into robbery near Dorchester",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-men-jailed-following-investigation-into-robbery-near-dorchester/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:58",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 170,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Florence Winstanley",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Florence Winstanley",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Dorset-police.jpeg",
+            "classification": "uncredited",
+            "credit": "Two men arrested, Cain Hughes and Kalup Hughes Two men arrested, \nCain Hughes and Kalup Hughes"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Florence Winstanley",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],

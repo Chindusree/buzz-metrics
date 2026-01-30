@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T14:49:48Z",
-  "total_verified": 301,
+  "last_updated": "2026-01-30T15:47:03Z",
+  "total_verified": 310,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3698,16 +3698,51 @@
       ]
     },
     {
+      "id": "d5e3236c077f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/are-the-young-people-priced-out-of-the-plate/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Ben",
+          "context": "PERSON within 50 chars of quote: ... “People are much more careful now,” he explains. Ben is not alone in noticing the shift. Across the UK..."
+        }
+      ]
+    },
+    {
       "id": "b30834fdd227",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
     {
+      "id": "340f187bf2f5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-iran-warns-retaliation-to-us-attack-will-not-be-limited/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Ms Abbasirad",
+          "context": "PERSON within 50 chars of quote: ...ld go to Iran, but it is not possible,” she said. Ms Abbasirad explained that members of the local Iranian commu..."
+        },
+        {
+          "name": "Donald Trump",
+          "context": "PERSON within 50 chars of quote: ...the more people are aware, the more can be done.” Donald Trump has said Iran must do “two things” to avoid US mi..."
+        },
+        {
+          "name": "Trump",
+          "context": "PERSON within 50 chars of quote: ... power. And number two, stop killing protesters,” Trump said, adding that there are “a lot of very big, v..."
+        },
+        {
+          "name": "Starmer said:“I",
+          "context": "PERSON within 50 chars of quote: ...he UK would support potential US strikes on Iran, Starmer said:“I am saying we support the goal and we are talking ..."
+        }
+      ]
+    },
+    {
       "id": "9e102ae610c4",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-1430-friday-news-bulletin/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "f3bb4bc3924f",
@@ -3740,6 +3775,29 @@
         {
           "name": "Duncan-Jordan",
           "context": "PERSON within 50 chars of quote: ... that “not much” progress has been made on talks. Duncan-Jordan continued: “The sticking point is that the access..."
+        }
+      ]
+    },
+    {
+      "id": "ad3314404ab8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Jack Hillman",
+          "context": "PERSON within 50 chars of quote: ...Champions League.\" Sadi spoke with BUzz reporters Jack Hillman and Jacob Deighton on an exclusive podcast that y..."
+        },
+        {
+          "name": "Jacob Deighton",
+          "context": "PERSON within 50 chars of quote: ...\" Sadi spoke with BUzz reporters Jack Hillman and Jacob Deighton on an exclusive podcast that you can listen to he..."
+        },
+        {
+          "name": "Alex Scott",
+          "context": "PERSON within 50 chars of quote: ...mier League football as in April 2024 he replaced Alex Scott to come on in their 3-0 victory over Brighton. \"T..."
+        },
+        {
+          "name": "Leeds United",
+          "context": "PERSON within 50 chars of quote: ...as well.\" The side fell short in the game against Leeds United at this stage last season through a 90th minute w..."
         }
       ]
     },
@@ -3797,6 +3855,63 @@
       ]
     },
     {
+      "id": "ff3a91f5b1e9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/january-complications-forces-wimborne-pub-to-close/",
+      "verify_quoted_sources": 6,
+      "verify_evidence": [
+        {
+          "name": "Allen",
+          "context": "PERSON within 50 chars of quote: ...rprised by the scale of work that had to be done. Allen said, “Originally, it was supposed to be a bit of..."
+        },
+        {
+          "name": "Brown",
+          "context": "PERSON within 50 chars of quote: ...hy the decision was made to start refurbishments. Brown said: “A lot of our regulars are away at the mome..."
+        },
+        {
+          "name": "Both Allen",
+          "context": "PERSON within 50 chars of quote: ...e do see a lot of bookings and tables cancelled.” Both Allen and Brown are hoping to reopen The Barley Mow nex..."
+        },
+        {
+          "name": "Fingers",
+          "context": "PERSON within 50 chars of quote: ...are hoping to reopen The Barley Mow next Friday. “Fingers crossed, it’s going to be very tight.” Said Allen..."
+        },
+        {
+          "name": "Said Allen",
+          "context": "PERSON within 50 chars of quote: .... “Fingers crossed, it’s going to be very tight.” Said Allen. Brown hinted at a Valentine’s theme for its sche..."
+        },
+        {
+          "name": "Valentine",
+          "context": "PERSON within 50 chars of quote: ... to be very tight.” Said Allen. Brown hinted at a Valentine’s theme for its scheduled opening. Two new chefs ..."
+        }
+      ]
+    },
+    {
+      "id": "c686d291734e",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-mp-on-her-plans-for-bournemouth-west/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Jessica Toale",
+          "context": "PERSON within 50 chars of quote: ...special educational needs provision this year, as Jessica Toale says: “none of it is working.” “Parents all the t..."
+        }
+      ]
+    },
+    {
+      "id": "d567a1bebba1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/keep-your-eyes-on-iris/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Iris",
+          "context": "PERSON within 50 chars of quote: ...ll, on what effort goes into keeping a horse like Iris in the impeccable condition that she is in. “Just..."
+        },
+        {
+          "name": "Gill",
+          "context": "PERSON within 50 chars of quote: ...field but pretty much the whole day is consumed.” Gill got into the sport from her mum and was on a hors..."
+        }
+      ]
+    },
+    {
       "id": "e0ad545af58d",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
       "verify_quoted_sources": 3,
@@ -3823,6 +3938,17 @@
         {
           "name": "Jamie Whisken",
           "context": "PERSON within 50 chars of quote: ...zone ahead of the game on Saturday. Poole captain Jamie Whisken looked ahead to the game and said: “I think on ou..."
+        }
+      ]
+    },
+    {
+      "id": "dde18415573c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-walking-charity-steps-up-to-break-barriers-across-dorset/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "David",
+          "context": "PERSON within 50 chars of quote: ...g groups from across England, Scotland and Wales. David added: “ To see the growth in the group is amazin..."
         }
       ]
     },
@@ -3859,6 +3985,17 @@
         {
           "name": "Said Hamlin",
           "context": "PERSON within 50 chars of quote: ...or young people to come and play pool and darts.” Said Hamlin. “I think the biggest reaction for me is they wal..."
+        }
+      ]
+    },
+    {
+      "id": "fb4c101743bb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/richmond-park-bowls-club-celebrate-their-120th-anniversary/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Bowls",
+          "context": "PERSON within 50 chars of quote: ...ing to get them interested. Everyone is welcome.” Bowls is often seen as a traditional pastime, but membe..."
         }
       ]
     },
@@ -3915,6 +4052,17 @@
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-bus-services-axed/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
+    },
+    {
+      "id": "706f0f3361e9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-men-jailed-following-investigation-into-robbery-near-dorchester/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Florence Winstanley",
+          "context": "PERSON within 50 chars of quote: ...s as the two men involved. Investigations Officer Florence Winstanley, of Dorset County CID, said: “The judge praised t..."
+        }
+      ]
     },
     {
       "id": "8c2304bf90f7",

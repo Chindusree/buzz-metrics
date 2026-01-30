@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T14:49:51Z",
-  "total_flagged": 125,
+  "generated": "2026-01-30T15:47:06Z",
+  "total_flagged": 130,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4402,6 +4402,52 @@
       "review_status": "pending"
     },
     {
+      "id": "340f187bf2f5",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-iran-warns-retaliation-to-us-attack-will-not-be-limited/",
+      "headline": "BREAKING: Bournemouth’s Iranian community responds to Donald Trump’s threats",
+      "scrape_count": 3,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Kathy Abbasirad",
+        "Donald Trump",
+        "Keir Starmer"
+      ],
+      "verify_evidence": [
+        "Ms Abbasirad",
+        "Donald Trump",
+        "Trump",
+        "Starmer said:“I"
+      ],
+      "confirmed": [
+        {
+          "name": "Kathy Abbasirad",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Starmer said:“I",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
+      "review_status": "pending"
+    },
+    {
       "id": "f3bb4bc3924f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
       "headline": "Boxer George Liddard gives support to local charity",
@@ -4429,6 +4475,52 @@
         "Scarfs",
         "Liddard"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "ad3314404ab8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
+      "headline": "Dominic Sadi: From the South Coast to Serbia",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 4,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Dominic Sadi"
+      ],
+      "verify_evidence": [
+        "Jack Hillman",
+        "Jacob Deighton",
+        "Alex Scott",
+        "Leeds United"
+      ],
+      "confirmed": [
+        {
+          "name": "Dominic Sadi",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Jack Hillman",
+          "gender": "male"
+        },
+        {
+          "name": "Jacob Deighton",
+          "gender": "male"
+        },
+        {
+          "name": "Alex Scott",
+          "gender": "male"
+        },
+        {
+          "name": "Leeds United",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -4504,6 +4596,90 @@
       "filtered": [
         "”Brandon"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "ff3a91f5b1e9",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/january-complications-forces-wimborne-pub-to-close/",
+      "headline": "January complications forces Wimborne pub to close",
+      "scrape_count": 2,
+      "verify_count": 6,
+      "confirmed_count": 2,
+      "possible_count": 3,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Tim Allen",
+        "Shannon Brown"
+      ],
+      "verify_evidence": [
+        "Allen",
+        "Brown",
+        "Both Allen",
+        "Fingers",
+        "Said Allen",
+        "Valentine"
+      ],
+      "confirmed": [
+        {
+          "name": "Tim Allen",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Shannon Brown",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Both Allen",
+          "gender": "unknown"
+        },
+        {
+          "name": "Said Allen",
+          "gender": "male"
+        },
+        {
+          "name": "Valentine",
+          "gender": "female"
+        }
+      ],
+      "filtered": [
+        "Fingers"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d567a1bebba1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/keep-your-eyes-on-iris/",
+      "headline": "Keep your eyes on Iris",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Daisy Gill"
+      ],
+      "verify_evidence": [
+        "Iris",
+        "Gill"
+      ],
+      "confirmed": [
+        {
+          "name": "Daisy Gill",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Iris",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -4589,6 +4765,34 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "fb4c101743bb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/richmond-park-bowls-club-celebrate-their-120th-anniversary/",
+      "headline": "Richmond Park Bowls Club celebrate their 120th anniversary",
+      "scrape_count": 1,
+      "verify_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Peter Blake"
+      ],
+      "verify_evidence": [
+        "Bowls"
+      ],
+      "confirmed": [
+        {
+          "name": "Peter Blake",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Bowls"
+      ],
       "review_status": "pending"
     },
     {
