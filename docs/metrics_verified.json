@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-30T15:47:06Z",
-  "total_articles": 310,
+  "last_updated": "2026-01-30T16:51:21Z",
+  "total_articles": 312,
   "summary": {
-    "avg_word_count": 443,
+    "avg_word_count": 445,
     "avg_quoted_sources": 1.2,
     "below_minimum_count": 92,
-    "long_form_count": 33,
+    "long_form_count": 34,
     "breaking_news_count": 21,
-    "total_images": 624,
+    "total_images": 633,
     "original_images": 270,
     "stock_images": 28,
-    "uncredited_images": 326,
+    "uncredited_images": 335,
     "gender_breakdown": {
-      "male": 227,
+      "male": 229,
       "female": 90,
       "unknown": 43
     },
     "by_section": {
       "Sport": {
-        "count": 125,
-        "words": 60403,
-        "sources": 118
+        "count": 126,
+        "words": 61460,
+        "sources": 119
       },
       "General News": {
-        "count": 176,
-        "words": 64812,
-        "sources": 223
+        "count": 177,
+        "words": 65473,
+        "sources": 224
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 125,
-        "avg_word_count": 483,
+        "count": 126,
+        "avg_word_count": 488,
         "avg_sources": 0.9
       },
       "News": {
-        "count": 176,
-        "avg_word_count": 368,
+        "count": 177,
+        "avg_word_count": 370,
         "avg_sources": 1.3
       },
       "Features": {
@@ -164,13 +164,13 @@
     },
     {
       "date": "2026-01-30",
-      "article_count": 30,
+      "article_count": 32,
       "target": 12,
       "meets_target": true,
       "first_publish_time": "08:36",
       "first_publish_on_time": true,
       "below_minimum_count": 8,
-      "long_form_count": 6
+      "long_form_count": 7
     }
   ],
   "articles": [
@@ -7382,7 +7382,7 @@
       ],
       "display_category": "General News",
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Jessica Toale",
@@ -7395,15 +7395,8 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Chris Downer",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [
-        "Bournemouth"
-      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
@@ -14675,7 +14668,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Jessica Toale",
@@ -14688,15 +14681,8 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Chris Downer",
-          "gender": "male"
-        }
-      ],
-      "sources_filtered_out": [
-        "Bournemouth"
-      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
@@ -21223,6 +21209,115 @@
       "category_normalised": "General News"
     },
     {
+      "id": "a8bb8f2f4a19",
+      "headline": "Bournemouth drowned by Storm Chandra",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
+      "author": "Max Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "16:03",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 661,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Doug Turner",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Doug Turner",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 6,
+        "details": [
+          {
+            "src": "./assets/NYCHwzET3m/whatsapp-video-2026-01-30-at-10.47.54-am-2-frame-0ms-848x480.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ihCDXq8wcf/video-2026-01-30-10-47-56-frame-0ms-848x480.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/NFxAq3cQ3B/outlook-0or5sko4-360x204-360x204.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/8DrgfKK7R7/img_1796-1-4096x3072.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/mjHI2cZbBA/img_1905-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 3,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          },
+          {
+            "platform": "html5",
+            "url": "embedded"
+          },
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Doug Turner",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
       "id": "f3bb4bc3924f",
       "headline": "Boxer George Liddard gives support to local charity",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
@@ -22606,6 +22701,92 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "af74ac855ef6",
+      "headline": "Scott Mitchell – from farmer’s son to world champion, and back again",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/scott-mitchell-from-farmers-son-to-world-champion-and-back-again/",
+      "author": "Benjamin Jones",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:50",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1057,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Scott-Mitchell-Story/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Scott Mitchell",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Scott Mitchell",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/sBRw8RvVgG/img_9278-4096x5461.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/N6s5RP9T1g/6fd0a5a0-7f40-454c-b5f5-43939cad5ab2-1286x965.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Scott Mitchell",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
       "category_normalised": "Sport"
     },
     {

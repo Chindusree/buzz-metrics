@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T15:47:03Z",
-  "total_verified": 310,
+  "last_updated": "2026-01-30T16:51:18Z",
+  "total_verified": 312,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -1345,25 +1345,8 @@
     {
       "id": "d0eceb2acc05",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "verify_quoted_sources": 4,
-      "verify_evidence": [
-        {
-          "name": "Bournemouth",
-          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
-        },
-        {
-          "name": "Dean Johnstone",
-          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
-        },
-        {
-          "name": "Johnstone",
-          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
-        },
-        {
-          "name": "Chris Downer",
-          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
-        }
-      ]
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "37619d905b65",
@@ -2645,25 +2628,8 @@
     {
       "id": "1699874fc561",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
-      "verify_quoted_sources": 4,
-      "verify_evidence": [
-        {
-          "name": "Bournemouth",
-          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
-        },
-        {
-          "name": "Dean Johnstone",
-          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
-        },
-        {
-          "name": "Johnstone",
-          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
-        },
-        {
-          "name": "Chris Downer",
-          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
-        }
-      ]
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "614081e9e3da",
@@ -3745,6 +3711,12 @@
       "error": "Failed to fetch article text"
     },
     {
+      "id": "a8bb8f2f4a19",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "f3bb4bc3924f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
       "verify_quoted_sources": 4,
@@ -3888,13 +3860,8 @@
     {
       "id": "c686d291734e",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-mp-on-her-plans-for-bournemouth-west/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Jessica Toale",
-          "context": "PERSON within 50 chars of quote: ...special educational needs provision this year, as Jessica Toale says: “none of it is working.” “Parents all the t..."
-        }
-      ]
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "d567a1bebba1",
@@ -3998,6 +3965,12 @@
           "context": "PERSON within 50 chars of quote: ...ing to get them interested. Everyone is welcome.” Bowls is often seen as a traditional pastime, but membe..."
         }
       ]
+    },
+    {
+      "id": "af74ac855ef6",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/scott-mitchell-from-farmers-son-to-world-champion-and-back-again/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "f2bb1c45446c",

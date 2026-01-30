@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T15:47:06Z",
-  "total_flagged": 130,
+  "generated": "2026-01-30T16:51:21Z",
+  "total_flagged": 128,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -1631,48 +1631,6 @@
       "review_status": "pending"
     },
     {
-      "id": "d0eceb2acc05",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "headline": "Running together: How Bournemouth’s run clubs are building community",
-      "scrape_count": 2,
-      "verify_count": 4,
-      "confirmed_count": 2,
-      "possible_count": 1,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Jessica Toale",
-        "Dean Johnstone"
-      ],
-      "verify_evidence": [
-        "Bournemouth",
-        "Dean Johnstone",
-        "Johnstone",
-        "Chris Downer"
-      ],
-      "confirmed": [
-        {
-          "name": "Jessica Toale",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Dean Johnstone",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Chris Downer",
-          "gender": "male"
-        }
-      ],
-      "filtered": [
-        "Bournemouth"
-      ],
-      "review_status": "pending"
-    },
-    {
       "id": "37619d905b65",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
       "headline": "Southern League Premier South preview",
@@ -3146,48 +3104,6 @@
       "possible": [],
       "filtered": [
         "Poonam Paranjpe"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "1699874fc561",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
-      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
-      "scrape_count": 2,
-      "verify_count": 4,
-      "confirmed_count": 2,
-      "possible_count": 1,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Jessica Toale",
-        "Dean Johnstone"
-      ],
-      "verify_evidence": [
-        "Bournemouth",
-        "Dean Johnstone",
-        "Johnstone",
-        "Chris Downer"
-      ],
-      "confirmed": [
-        {
-          "name": "Jessica Toale",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Dean Johnstone",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Chris Downer",
-          "gender": "male"
-        }
-      ],
-      "filtered": [
-        "Bournemouth"
       ],
       "review_status": "pending"
     },

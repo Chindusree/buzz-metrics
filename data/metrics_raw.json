@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-01-30T15:34:49Z",
-  "total_articles": 310,
+  "last_updated": "2026-01-30T16:39:13Z",
+  "total_articles": 312,
   "gender_breakdown": {
-    "male": 259,
+    "male": 261,
     "female": 118,
     "unknown": 21
   },
@@ -20769,7 +20769,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/the-hidden-side-of-rare-earth-minerals-copy/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20826,7 +20826,22 @@
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ben Davies",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "b30834fdd227",
@@ -20957,7 +20972,37 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Kathy Abbasirad",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Starmer said:“I",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "9e102ae610c4",
@@ -21009,6 +21054,100 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News"
+    },
+    {
+      "id": "a8bb8f2f4a19",
+      "headline": "Bournemouth drowned by Storm Chandra",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
+      "author": "Max Reynolds",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "16:03",
+      "category": "News",
+      "category_detail": "Local",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 661,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/powering-a-better-future-copy/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Doug Turner",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Doug Turner",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 6,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 6,
+        "details": [
+          {
+            "src": "./assets/NYCHwzET3m/whatsapp-video-2026-01-30-at-10.47.54-am-2-frame-0ms-848x480.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ihCDXq8wcf/video-2026-01-30-10-47-56-frame-0ms-848x480.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/NFxAq3cQ3B/outlook-0or5sko4-360x204-360x204.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/8DrgfKK7R7/img_1796-1-4096x3072.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/mjHI2cZbBA/img_1905-4032x3024.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 3,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          },
+          {
+            "platform": "html5",
+            "url": "embedded"
+          },
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
     },
     {
       "id": "f3bb4bc3924f",
@@ -21179,7 +21318,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Dominic-Sadi-feature/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -21256,7 +21395,39 @@
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 4,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dominic Sadi",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Jack Hillman",
+          "gender": "male"
+        },
+        {
+          "name": "Jacob Deighton",
+          "gender": "male"
+        },
+        {
+          "name": "Alex Scott",
+          "gender": "male"
+        },
+        {
+          "name": "Leeds United",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "52d3b537471c",
@@ -21645,7 +21816,42 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 3,
+      "source_evidence_confirmed": [
+        {
+          "name": "Tim Allen",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Shannon Brown",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Both Allen",
+          "gender": "unknown"
+        },
+        {
+          "name": "Said Allen",
+          "gender": "male"
+        },
+        {
+          "name": "Valentine",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [
+        "Fingers"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "c686d291734e",
@@ -21664,7 +21870,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -21699,7 +21905,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Jessica Toale",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "d567a1bebba1",
@@ -21718,7 +21939,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -21753,7 +21974,27 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Daisy Gill",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Iris",
+          "gender": "female"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "e0ad545af58d",
@@ -21962,7 +22203,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -21997,7 +22238,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "David Mitchell",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": true,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "820130679f1d",
@@ -22225,7 +22481,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -22260,7 +22516,95 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Peter Blake",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Bowls"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "af74ac855ef6",
+      "headline": "Scott Mitchell – from farmer’s son to world champion, and back again",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/scott-mitchell-from-farmers-son-to-world-champion-and-back-again/",
+      "author": "Benjamin Jones",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "15:50",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1057,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Scott-Mitchell-Story/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Scott Mitchell",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Scott Mitchell",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 3,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/sBRw8RvVgG/img_9278-4096x5461.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/N6s5RP9T1g/6fd0a5a0-7f40-454c-b5f5-43939cad5ab2-1286x965.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
     },
     {
       "id": "f2bb1c45446c",
@@ -22701,7 +23045,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -22736,7 +23080,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Florence Winstanley",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "8c2304bf90f7",
