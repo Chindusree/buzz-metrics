@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T08:50:57Z",
-  "total_verified": 281,
+  "last_updated": "2026-01-30T09:49:26Z",
+  "total_verified": 284,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3669,6 +3669,37 @@
         {
           "name": "Emily Davis",
           "context": "PERSON within 50 chars of quote: ...ocus, creativity, and shared human experience. As Emily Davis puts it, “Music isn’t just an extra. It’s essenti..."
+        }
+      ]
+    },
+    {
+      "id": "d1c03e2da339",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "b30834fdd227",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "52d3b537471c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "David Sidwick",
+          "context": "PERSON within 50 chars of quote: ...nd, rising by 7.6%. Police and Crime Commissioner David Sidwick said the rise is partly due to a “new digital sys..."
+        },
+        {
+          "name": "Chloe Davis",
+          "context": "PERSON within 50 chars of quote: ...er infrastructure, “Probably more street lights.” Chloe Davis echoed this “Some areas are quite dark, “Especial..."
+        },
+        {
+          "name": "Dorset",
+          "context": "PERSON within 50 chars of quote: ...ecifically in this park.” The ONS data shows that Dorset is statistically more secure than most of the UK,..."
         }
       ]
     },

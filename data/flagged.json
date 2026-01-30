@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T08:51:00Z",
-  "total_flagged": 117,
+  "generated": "2026-01-30T09:49:29Z",
+  "total_flagged": 118,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4362,6 +4362,46 @@
       "possible": [],
       "filtered": [
         "Bass"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "52d3b537471c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
+      "headline": "Dorset places in top 10 safest counties",
+      "scrape_count": 4,
+      "verify_count": 3,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 3,
+      "scrape_evidence": [
+        "Alfie Lobson",
+        "Chloe Davis",
+        "Tatiana Celikova",
+        "David Sidwick"
+      ],
+      "verify_evidence": [
+        "David Sidwick",
+        "Chloe Davis",
+        "Dorset"
+      ],
+      "confirmed": [
+        {
+          "name": "Chloe Davis",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "David Sidwick",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Alfie Lobson",
+        "Tatiana Celikova",
+        "Dorset"
       ],
       "review_status": "pending"
     },

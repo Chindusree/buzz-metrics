@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-01-30T08:39:47Z",
-  "total_articles": 281,
+  "last_updated": "2026-01-30T09:38:08Z",
+  "total_articles": 284,
   "gender_breakdown": {
-    "male": 232,
-    "female": 104,
+    "male": 235,
+    "female": 106,
     "unknown": 18
   },
   "articles": [
@@ -505,14 +505,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Jo Grady",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Bournemouth and Poole college spokesperson"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -709,7 +707,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Mr. B",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -783,7 +781,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Sergeant Mike Burt",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -1082,15 +1080,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Fran Mathers",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Fran Mathers"
@@ -1269,15 +1261,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dorset Fire and Rescue",
-          "gender": "unknown",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Dorset Fire and Rescue"
@@ -1919,14 +1905,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Stump",
-          "gender": "male",
-          "position": "groq_detected"
-        },
         {
           "name": "Mary Richards",
           "gender": "female",
@@ -2151,12 +2132,12 @@
       "source_evidence_confirmed": [
         {
           "name": "Anutin Charnvirakul",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
           "name": "Suriya Juangroongruangkit",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -2358,7 +2339,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Jo O'Connell",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -2745,7 +2726,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Nobby Lovelass",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -3060,8 +3041,8 @@
       "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
-          "name": "Sir Kier Starmer",
-          "gender": "male",
+          "name": "Kier Starmer",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -3486,7 +3467,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Matty Lewis",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -3514,7 +3495,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 2,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -3565,19 +3546,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Anne Marie Moriarty",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Darren Tozer",
-          "gender": "male",
-          "position": "groq_detected"
-        },
         {
           "name": "Peter Cooper",
           "gender": "male",
@@ -4042,7 +4013,7 @@
         },
         {
           "name": "Lesley Fereti",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -4664,7 +4635,7 @@
           "position": "groq_detected"
         },
         {
-          "name": "Dr Amy Tatum",
+          "name": "Amy Tatum",
           "gender": "female",
           "position": "groq_detected"
         }
@@ -4816,7 +4787,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Cam Sing",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -5133,7 +5104,7 @@
         },
         {
           "name": "Jo Bussell",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -5199,14 +5170,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Hayley Whiting",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Alison Hulme",
           "gender": "female",
@@ -5329,8 +5295,8 @@
           "position": "groq_detected"
         },
         {
-          "name": "Mr Justice Linden",
-          "gender": "male",
+          "name": "Justice Linden",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -5350,7 +5316,7 @@
         },
         {
           "name": "Detective Inspector Mark Jenkins",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -5917,7 +5883,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -5960,11 +5926,11 @@
       "warnings": [],
       "display_category": "Sport",
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Roan Fox",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -5973,12 +5939,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Roan Fox",
-          "gender": "unknown"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -6064,14 +6025,9 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Vitality Stadium Spokesperson",
-          "gender": "unknown",
-          "position": "groq_detected"
-        },
         {
           "name": "Sara Armstrong",
           "gender": "female",
@@ -6080,7 +6036,7 @@
       ],
       "source_evidence_possible": [],
       "sources_filtered_out": [
-        "AFC Bournemouth"
+        "Vitality Stadium Spokesperson"
       ],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -6177,7 +6133,7 @@
       ],
       "display_category": "General News",
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Sophia Lloyd",
@@ -6190,7 +6146,12 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "Heather Smith",
+          "gender": "female"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
@@ -6337,7 +6298,7 @@
         },
         {
           "name": "Ali Jeffs",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -6510,7 +6471,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Jamie Randell",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -6711,7 +6672,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Abi Paler",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -6935,7 +6896,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Detective Chief Inspector Neil Meade",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -7254,7 +7215,7 @@
       ],
       "display_category": "General News",
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Jessica Toale",
@@ -7268,10 +7229,6 @@
         }
       ],
       "source_evidence_possible": [
-        {
-          "name": "Dean Johnstone",
-          "gender": "male"
-        },
         {
           "name": "Chris Downer",
           "gender": "male"
@@ -7347,7 +7304,7 @@
       "source_evidence_confirmed": [
         {
           "name": "IK Hill",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -7464,17 +7421,17 @@
       "source_evidence_confirmed": [
         {
           "name": "Marcjanna Augustyn",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
           "name": "Kaouther Kooli",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
           "name": "Sal",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -7633,7 +7590,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 4,
+      "quoted_sources_confirmed": 3,
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
@@ -7648,11 +7605,6 @@
         },
         {
           "name": "Sharon Gale",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Nyah Boston-Shears",
           "gender": "female",
           "position": "groq_detected"
         }
@@ -8032,17 +7984,12 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "display_category": "General News",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Ivan Darley",
           "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Anne Marie Moriarty",
-          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -8459,16 +8406,11 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
           "name": "Grant Hancox",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Will Croker",
           "gender": "male",
           "position": "groq_detected"
         }
@@ -9007,7 +8949,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Detective Inspector Marcus McCorkell",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -9075,22 +9017,17 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
-          "name": "Jadien Davies",
-          "gender": "nonbinary",
-          "position": "groq_detected"
-        },
-        {
           "name": "Evelyn Eales",
-          "gender": "nonbinary",
+          "gender": "female",
           "position": "groq_detected"
         },
         {
           "name": "Robin",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -9160,15 +9097,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Bournemouth Oaks owner",
-          "gender": "unknown",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Bournemouth Oaks owner"
@@ -9313,7 +9244,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Jess",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         },
         {
@@ -9469,14 +9400,9 @@
       },
       "warnings": [],
       "display_category": "Sport",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
-        {
-          "name": "Freddie Beasley",
-          "gender": "male",
-          "position": "groq_detected"
-        },
         {
           "name": "Halle Hariss",
           "gender": "female",
@@ -9625,7 +9551,7 @@
         },
         {
           "name": "Kit",
-          "gender": "unknown",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -9886,17 +9812,12 @@
       },
       "warnings": [],
       "display_category": "General News",
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Kane",
           "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Shahn",
-          "gender": "female",
           "position": "groq_detected"
         },
         {
@@ -10032,7 +9953,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -10079,7 +10000,6 @@
         }
       ],
       "sources_filtered_out": [
-        "Police Constable Daniel Walker",
         "Weymouth"
       ],
       "is_breaking_news": true,
@@ -10225,7 +10145,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Ri Baroche",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -10445,7 +10365,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Jamie Randell",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -10508,15 +10428,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Niki Edwards",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Niki Edwards"
@@ -10919,7 +10833,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -11047,7 +10961,7 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 5,
       "source_evidence_confirmed": [
         {
@@ -11057,11 +10971,6 @@
         },
         {
           "name": "Tulisa Broom",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "chateaulabriance",
           "gender": "unknown",
           "position": "groq_detected"
         }
@@ -11329,7 +11238,7 @@
       "source_evidence_confirmed": [
         {
           "name": "George Godfrey",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         },
         {
@@ -11638,7 +11547,7 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Marc Rosenberg",
@@ -11647,7 +11556,7 @@
         },
         {
           "name": "Sandi Marshall",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         },
         {
@@ -11660,10 +11569,6 @@
         {
           "name": "Chestnut Nursery",
           "gender": "unknown"
-        },
-        {
-          "name": "Andy",
-          "gender": "male"
         }
       ],
       "sources_filtered_out": [
@@ -11966,7 +11871,7 @@
         },
         {
           "name": "Paitin Du Plooy",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -12399,19 +12304,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Councillor Williams",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Councillor Brown",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Jim Frevola",
           "gender": "male",
@@ -12594,7 +12489,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Dragoș Crăciun",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -12668,16 +12563,16 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 4,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Anonymous victim",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
           "name": "Chret Callender",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -12691,12 +12586,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Mary Aspinall-Miles",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -13193,7 +13083,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -13262,7 +13152,7 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Melvyn Leach",
@@ -13276,10 +13166,6 @@
         }
       ],
       "source_evidence_possible": [
-        {
-          "name": "Willy",
-          "gender": "male"
-        },
         {
           "name": "Akiba Halpert",
           "gender": "male"
@@ -13411,7 +13297,7 @@
         },
         {
           "name": "Dr. Virginia Quiney",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -13448,7 +13334,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/art-against-odds/index.html",
       "quoted_sources": 3,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 1,
       "sources_female": 2,
       "sources_unknown": 0,
@@ -13522,7 +13408,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 4,
+      "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
           "name": "Tom Pouncy",
@@ -13541,14 +13427,6 @@
         }
       ],
       "source_evidence_possible": [
-        {
-          "name": "Tom",
-          "gender": "male"
-        },
-        {
-          "name": "Ellen Gillett",
-          "gender": "female"
-        },
         {
           "name": "Generative AI",
           "gender": "unknown"
@@ -13689,7 +13567,7 @@
       "source_evidence_confirmed": [
         {
           "name": "DC Joy Jarvis",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -13717,7 +13595,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/bournemouth-university-rebuilds-the-television-that-started-it-all/index.html",
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -13776,7 +13654,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 3,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Gary Toms",
@@ -13790,14 +13668,6 @@
         }
       ],
       "source_evidence_possible": [
-        {
-          "name": "Gary",
-          "gender": "male"
-        },
-        {
-          "name": "Baird",
-          "gender": "male"
-        },
         {
           "name": "John Logie",
           "gender": "male"
@@ -14075,7 +13945,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/charlie-stevens/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -14144,7 +14014,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
           "name": "Charlie Stevens",
@@ -14156,9 +14026,14 @@
         {
           "name": "HNK Rijeka",
           "gender": "unknown"
+        },
+        {
+          "name": "Alex Scott",
+          "gender": "male"
         }
       ],
       "sources_filtered_out": [
+        "Poole",
         "Photo Credit"
       ],
       "is_breaking_news": false,
@@ -14549,14 +14424,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Poonam Paranjpe",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Martin Robinson",
           "gender": "male",
@@ -14885,15 +14755,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "DCI Adam Smith",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "DCI Adam Smith"
@@ -15102,7 +14966,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Out-with-the-old-in-with-the-new-UFC-324/index.html",
       "quoted_sources": 4,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 4,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -15191,7 +15055,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Local Gym owner",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -15206,7 +15070,7 @@
         },
         {
           "name": "Shakiel Mahjouri",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -15275,19 +15139,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
-        {
-          "name": "Madison Love",
-          "gender": "female",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Helena Fremantle",
-          "gender": "female",
-          "position": "groq_detected"
-        },
         {
           "name": "Patricia Leon Elias",
           "gender": "female",
@@ -15547,7 +15401,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Bowra-Foundation/",
       "quoted_sources": 3,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -15622,7 +15476,7 @@
         "No quoted sources in article >500 words"
       ],
       "quoted_sources_confirmed": 3,
-      "quoted_sources_possible": 3,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Mark Bowra",
@@ -15640,20 +15494,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Megan",
-          "gender": "female"
-        },
-        {
-          "name": "Mark",
-          "gender": "male"
-        },
-        {
-          "name": "Darren Stratman",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
@@ -15755,17 +15596,12 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
           "name": "James White",
           "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Furneaux",
-          "gender": "unknown",
           "position": "groq_detected"
         },
         {
@@ -15784,7 +15620,9 @@
           "gender": "male"
         }
       ],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Furneaux"
+      ],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
@@ -15922,7 +15760,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/LIONSDEN/index.html",
       "quoted_sources": 4,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 4,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -15995,16 +15833,11 @@
       "warnings": [
         "Shorthand word count may have ~20% inflation"
       ],
-      "quoted_sources_confirmed": 4,
-      "quoted_sources_possible": 2,
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Grant Hancox",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Will Croker",
           "gender": "male",
           "position": "groq_detected"
         },
@@ -16019,17 +15852,10 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Drew Mellor",
-          "gender": "male"
-        },
-        {
-          "name": "Matthew",
-          "gender": "male"
-        }
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Will Croker"
       ],
-      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -16296,7 +16122,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 2,
       "source_evidence_confirmed": [
         {
           "name": "Christos Mandas",
@@ -16313,10 +16139,13 @@
         {
           "name": "Fraser Forster",
           "gender": "male"
+        },
+        {
+          "name": "Lazio Correspondent",
+          "gender": "unknown"
         }
       ],
       "sources_filtered_out": [
-        "Mandas",
         "Provedel"
       ],
       "is_breaking_news": true,
@@ -16437,7 +16266,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 0,
+      "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
           "name": "Patrick Rowson",
@@ -16445,7 +16274,12 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [],
+      "source_evidence_possible": [
+        {
+          "name": "Said Rowson",
+          "gender": "male"
+        }
+      ],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -16507,16 +16341,11 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Thomas Skiotys",
-          "gender": "male",
-          "position": "groq_detected"
-        },
-        {
-          "name": "Archie Boka",
           "gender": "male",
           "position": "groq_detected"
         }
@@ -16704,7 +16533,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Calum Maton",
-          "gender": "male",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -17043,7 +16872,7 @@
         },
         {
           "name": "Toni Jones",
-          "gender": "female",
+          "gender": "male",
           "position": "groq_detected"
         }
       ],
@@ -17233,7 +17062,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Jamie Whisken",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         }
       ],
@@ -17595,15 +17424,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 1,
-      "source_evidence_confirmed": [
-        {
-          "name": "Aaliyah Hussain",
-          "gender": "female",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [
         {
           "name": "Rachel Smith",
@@ -17635,7 +17458,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -17672,7 +17495,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Richard Wade",
@@ -17685,12 +17508,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Andy Hadley",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -17802,15 +17620,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Thames Valley Police spokesman",
-          "gender": "unknown",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Thames Valley Police spokesman"
@@ -18198,7 +18010,7 @@
       "source_evidence_confirmed": [
         {
           "name": "Anonymous homeowner",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -18454,15 +18266,9 @@
       "warnings": [
         "No quoted sources in article >500 words"
       ],
-      "quoted_sources_confirmed": 1,
+      "quoted_sources_confirmed": 0,
       "quoted_sources_possible": 0,
-      "source_evidence_confirmed": [
-        {
-          "name": "Dragos",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
+      "source_evidence_confirmed": [],
       "source_evidence_possible": [],
       "sources_filtered_out": [
         "Dragos"
@@ -18535,7 +18341,7 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 3,
+      "quoted_sources_confirmed": 2,
       "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
@@ -18547,15 +18353,12 @@
           "name": "Steve Reed",
           "gender": "male",
           "position": "groq_detected"
-        },
-        {
-          "name": "Spokesperson for the Residential Freehold Association",
-          "gender": "unknown",
-          "position": "groq_detected"
         }
       ],
       "source_evidence_possible": [],
-      "sources_filtered_out": [],
+      "sources_filtered_out": [
+        "Spokesperson for the Residential Freehold Association"
+      ],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -18621,7 +18424,7 @@
       "source_evidence_confirmed": [
         {
           "name": "AK Cunningham",
-          "gender": "female",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -18943,14 +18746,9 @@
         "audio_evidence": []
       },
       "warnings": [],
-      "quoted_sources_confirmed": 2,
+      "quoted_sources_confirmed": 1,
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
-        {
-          "name": "Rayan",
-          "gender": "male",
-          "position": "groq_detected"
-        },
         {
           "name": "Bruno Murito",
           "gender": "male",
@@ -19105,7 +18903,7 @@
       "quoted_sources_possible": 1,
       "source_evidence_confirmed": [
         {
-          "name": "Sir Keir Starmer",
+          "name": "Keir Starmer",
           "gender": "male",
           "position": "groq_detected"
         },
@@ -19115,8 +18913,8 @@
           "position": "groq_detected"
         },
         {
-          "name": "Dr Yu Jie",
-          "gender": "female",
+          "name": "Yu Jie",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -19283,7 +19081,7 @@
         },
         {
           "name": "Mel Stride",
-          "gender": "male",
+          "gender": "female",
           "position": "groq_detected"
         },
         {
@@ -19466,7 +19264,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19542,7 +19340,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 3,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -19704,7 +19502,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19736,7 +19534,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Paul Hind",
@@ -19744,12 +19542,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Paul Hind",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -19773,7 +19566,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "medium",
+      "quoted_sources_confidence": "high",
       "sources_male": 2,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19810,7 +19603,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 2,
-      "quoted_sources_possible": 2,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Dan Carr",
@@ -19823,18 +19616,10 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Carr",
-          "gender": "male"
-        },
-        {
-          "name": "Dan",
-          "gender": "male"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [
-        "Dolphins"
+        "Dolphins",
+        "dancarr"
       ],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -19858,7 +19643,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -19893,7 +19678,22 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Dan Blagden",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "9883df311ded",
@@ -19962,7 +19762,29 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Tammy Jo",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Dorset council",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Charminster"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "d2f37b570400",
@@ -20026,7 +19848,32 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Luke De-Benedictis",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Fred Parkes",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Meyrick Park Golf Club",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "8ef329c6551c",
@@ -20090,7 +19937,27 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Barney Hedgecock",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Andy Cole",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
     },
     {
       "id": "01b20e64608c",
@@ -20155,9 +20022,7 @@
         }
       ],
       "source_evidence_possible": [],
-      "sources_filtered_out": [
-        "Solanke"
-      ],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
@@ -20363,7 +20228,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 0,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20387,7 +20252,16 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "2606f780b84b",
@@ -20406,7 +20280,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "low",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -20438,7 +20312,7 @@
       },
       "warnings": [],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 1,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "Sarah Dutton",
@@ -20446,12 +20320,7 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Sarah Dutton",
-          "gender": "female"
-        }
-      ],
+      "source_evidence_possible": [],
       "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": false,
@@ -20475,7 +20344,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20520,7 +20389,30 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "B.J. Green",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Buzz",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Wembley",
+        "Jags"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "310dd22ead56",
@@ -20539,7 +20431,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 2,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 1,
@@ -20589,7 +20481,24 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "A Bournemouth local"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "83b895c0c8d1",
@@ -20658,6 +20567,209 @@
         ],
         "audio_evidence": []
       },
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Emily Davis",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Michael Chaffin",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [
+        "Bass"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "d1c03e2da339",
+      "headline": "AS IT HAPPENED: Andoni Iraola speaks ahead of Wolves trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "author": "Evan Morris",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "08:58",
+      "category": "Sport",
+      "category_detail": "AFC Bournemouth",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 328,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andoni Iraola",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Untitled-design-e1769763082106-800x400.png",
+            "classification": "original",
+            "credit": "Evan Morris"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "b30834fdd227",
+      "headline": "Aston Villa comeback highlights Europa League final league-phase drama",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
+      "author": "Ailani Verrall",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "09:20",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 394,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 1,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6298-800x400.jpeg",
+            "classification": "stock",
+            "credit": "A football stand before a Europa League game. Credit: Pexels"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "52d3b537471c",
+      "headline": "Dorset places in top 10 safest counties",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "09:18",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 360,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 4,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 2,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Alfie Lobson",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Alfie Lobson",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Chloe Davis",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Chloe Davis",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Tatiana Celikova",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Tatiana Celikova",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "David Sidwick",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "David Sidwick",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Infographic-800x400.png",
+            "classification": "original",
+            "credit": "Dorset Police"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
       "warnings": []
     },
     {
@@ -20677,7 +20789,7 @@
       "content_type": "shorthand",
       "shorthand_url": "https://buzznews.shorthandstories.com/Verwood-Town-Vs-Sherborne-Town-Reserves-preview/index.html",
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20754,7 +20866,33 @@
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Ricky Barton",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Roy Mortimer",
+          "gender": "male"
+        },
+        {
+          "name": "Hamworthy United Reserves",
+          "gender": "unknown"
+        }
+      ],
+      "sources_filtered_out": [
+        "Verwood"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     }
   ]
 }
