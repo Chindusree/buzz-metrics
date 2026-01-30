@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T14:10:18Z",
-  "total_flagged": 123,
+  "generated": "2026-01-30T14:49:51Z",
+  "total_flagged": 125,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4472,6 +4472,41 @@
       "review_status": "pending"
     },
     {
+      "id": "c194aff8104b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
+      "headline": "Inside a Bournemouth F1 fan’s challenge to attend every Grand Prix",
+      "scrape_count": 1,
+      "verify_count": 3,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Brandon Burgess"
+      ],
+      "verify_evidence": [
+        "”Brandon",
+        "Max Verstappen",
+        "Brandon"
+      ],
+      "confirmed": [
+        {
+          "name": "Brandon Burgess",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Max Verstappen",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "”Brandon"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "e0ad545af58d",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
       "headline": "Kings Park Stadium closure leaves local athletes without track",
@@ -4554,6 +4589,55 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "87743283ceea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
+      "headline": "The ground rent trap: Is Starmer’s cap enough?",
+      "scrape_count": 4,
+      "verify_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Keir Starmer",
+        "Steve Reed",
+        "Matthew Hillier",
+        "A spokesperson for the RFA"
+      ],
+      "verify_evidence": [
+        "Steve Reed",
+        "Matthew Hillier",
+        "Hillier",
+        "Bill"
+      ],
+      "confirmed": [
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Steve Reed",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Matthew Hillier",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Bill",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "A spokesperson for the RFA"
+      ],
       "review_status": "pending"
     },
     {

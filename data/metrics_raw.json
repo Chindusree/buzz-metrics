@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-01-30T13:56:57Z",
-  "total_articles": 295,
+  "last_updated": "2026-01-30T14:37:40Z",
+  "total_articles": 301,
   "gender_breakdown": {
-    "male": 246,
-    "female": 112,
-    "unknown": 20
+    "male": 252,
+    "female": 113,
+    "unknown": 21
   },
   "articles": [
     {
@@ -20805,6 +20805,48 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "9e102ae610c4",
+      "headline": "BUzz News 14:30 Friday News Bulletin",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-1430-friday-news-bulletin/",
+      "author": "Editor Red",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:29",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 0,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 0,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 0,
+        "details": []
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/pr8Iea23vgU?si=NgiR1Tpto_ux8gVw"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
       "id": "f3bb4bc3924f",
       "headline": "Boxer George Liddard gives support to local charity",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
@@ -20847,7 +20889,94 @@
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [
+        {
+          "name": "Chris Billam-Smith",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "BUzz",
+        "Scarfs",
+        "Liddard"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "12fb010fcbcb",
+      "headline": "Calls for rail travel to be made accessible in Dorset",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/calls-for-rail-travel-to-be-made-accessible-in-dorset/",
+      "author": "Abby West",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:03",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 519,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 2,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Abbie Harrington",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Abbie Harrington",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Neil Duncan-Jordan",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Neil Duncan-Jordan",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 2,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6964-800x400.jpeg",
+            "classification": "original",
+            "credit": "Photo credit - Abby West"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/IMG_6982-360x270.jpeg",
+            "classification": "original",
+            "credit": "Photo credit – Abby West"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "52d3b537471c",
@@ -20974,7 +21103,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 0,
       "sources_female": 1,
       "sources_unknown": 0,
@@ -21019,7 +21148,133 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Katie Dawkins",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "c194aff8104b",
+      "headline": "Inside a Bournemouth F1 fan’s challenge to attend every Grand Prix",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
+      "author": "Tori Turner",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:10",
+      "category": "Sport",
+      "category_detail": "Formula 1",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 1945,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/inside-a-bournemouth-f1-fans-challenge-to-attend-every-grand-prix/index.html",
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Brandon Burgess",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Brandon Burgess",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 11,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 11,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/TGCcfuS8Nl/screenshot_20260130_123555_instagram.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/nFfnMFaT0L/screenshot_20260130_123951_instagram.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/ziz7YoyKGl/screenshot_20260130_131202_tiktok.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/06RNjiw83f/whatsapp-image-2026-01-29-at-14.59.30.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/8svseVt2yv/screenshot_20260130_121803_instagram.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/4bWVTzu2K9/screenshot_20260130_121742_instagram.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/MHNuxGBcZ5/1920_maxverstappencurrentf1regworldchampionandheinekenreg0.0ambassadorsteppedintopresenttheseasontickettobrandonburgess-1800x1200.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/2Ly5eXQZiM/ftf2-3024x4032.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/o069ey3vQ8/screenshot_20260130_133716_instagram.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/86DnhKpPGE/ftf4-4096x5461.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "html5",
+            "url": "embedded"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
     },
     {
       "id": "e0ad545af58d",
@@ -21106,6 +21361,92 @@
             "url": "https://www.youtube.com/embed/YeFPIS--MFM?si=uoFDQy5z5igDSppB"
           }
         ],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 3,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Rich Herrett",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Tim Hughes",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Anonymous source",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Said",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Brooke Ironside"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "d435bf74cd5b",
+      "headline": "LOOK AHEAD: This weekend’s non league fixtures",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/look-ahead-this-weekends-non-league-fixtures/",
+      "author": "Connor Hannon",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:37",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 456,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jamie Whisken",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Jamie Whisken",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/929A9318.jpg-2-800x400.webp",
+            "classification": "original",
+            "credit": "Lauren Kelly"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
         "audio_evidence": []
       },
       "warnings": []
@@ -21446,6 +21787,112 @@
       "category_normalised": "Sport"
     },
     {
+      "id": "87743283ceea",
+      "headline": "The ground rent trap: Is Starmer’s cap enough?",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
+      "author": "George Nall",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:05",
+      "category": "News",
+      "category_detail": "Bournemouth",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 1094,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/the-ground-rent-trap-is-starmers-cap-enough/index.html",
+      "quoted_sources": 4,
+      "quoted_sources_confidence": "high",
+      "sources_male": 3,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Keir Starmer",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Steve Reed",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Steve Reed",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Matthew Hillier",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Matthew Hillier",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "A spokesperson for the RFA",
+          "gender": "unknown",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "A spokesperson for the RFA",
+          "position": "groq_detected",
+          "type": "press_statement"
+        }
+      ],
+      "images": {
+        "total": 5,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 5,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/rzSO0L6TlM/house-2-2871x2370.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/CQEsDWuamp/house-3-3552x2068.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/BgRMbF0f2p/house-4-360x270.jpg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          },
+          {
+            "src": "./assets/yoXdvzdEkm/house-5-3568x2068.png",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
+    },
+    {
       "id": "adddf255b109",
       "headline": "Train delays in Dorset continue due to weather",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
@@ -21602,6 +22049,54 @@
       "is_long_form": false,
       "word_count_status": "below_minimum",
       "category_normalised": "General News"
+    },
+    {
+      "id": "8c2304bf90f7",
+      "headline": "UEFA champions league play off draw fixtures anounced",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "author": "Monty Eldridge",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "14:27",
+      "category": "Sport",
+      "category_detail": "Men's Football",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 496,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 2,
+        "original": 0,
+        "stock": 2,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/janosch-diggelmann-Ept2Na00VGY-unsplash-800x400.jpg",
+            "classification": "stock",
+            "credit": "UCL football. Photo credit: unsplash"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/janosch-diggelmann-Ept2Na00VGY-unsplash-360x240.jpg",
+            "classification": "stock",
+            "credit": "UCL football. Photo credit: unsplash"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "c8f104ef097c",

@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T14:10:15Z",
-  "total_verified": 295,
+  "last_updated": "2026-01-30T14:49:48Z",
+  "total_verified": 301,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3704,6 +3704,12 @@
       "verify_evidence": []
     },
     {
+      "id": "9e102ae610c4",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-1430-friday-news-bulletin/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "f3bb4bc3924f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
       "verify_quoted_sources": 4,
@@ -3723,6 +3729,17 @@
         {
           "name": "Liddard",
           "context": "PERSON within 50 chars of quote: ...give back.” The charity night included a Q&A with Liddard and Billam-Smith, a raffle, an auction as well as..."
+        }
+      ]
+    },
+    {
+      "id": "12fb010fcbcb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/calls-for-rail-travel-to-be-made-accessible-in-dorset/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Duncan-Jordan",
+          "context": "PERSON within 50 chars of quote: ... that “not much” progress has been made on talks. Duncan-Jordan continued: “The sticking point is that the access..."
         }
       ]
     },
@@ -3761,6 +3778,25 @@
       ]
     },
     {
+      "id": "c194aff8104b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "”Brandon",
+          "context": "PERSON within 50 chars of quote: ...s and I had to use all of my annual leave at work.”Brandon said. The idea of a budget for this challenge ste..."
+        },
+        {
+          "name": "Max Verstappen",
+          "context": "PERSON within 50 chars of quote: ...an Grand Prix weekend by four-time world champion Max Verstappen. “I had about five minutes to chat with him and h..."
+        },
+        {
+          "name": "Brandon",
+          "context": "PERSON within 50 chars of quote: ...s a real pinch me moment, he remembered my face!” Brandon infront of Red Bull Racing's garage | Credit: Bra..."
+        }
+      ]
+    },
+    {
       "id": "e0ad545af58d",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
       "verify_quoted_sources": 3,
@@ -3776,6 +3812,17 @@
         {
           "name": "Said",
           "context": "PERSON within 50 chars of quote: ...he beachfront until the athletic stadium reopens. Said: “When speaking to other coaches, the numbers are..."
+        }
+      ]
+    },
+    {
+      "id": "d435bf74cd5b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/look-ahead-this-weekends-non-league-fixtures/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Jamie Whisken",
+          "context": "PERSON within 50 chars of quote: ...zone ahead of the game on Saturday. Poole captain Jamie Whisken looked ahead to the game and said: “I think on ou..."
         }
       ]
     },
@@ -3835,6 +3882,29 @@
       ]
     },
     {
+      "id": "87743283ceea",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Steve Reed",
+          "context": "PERSON within 50 chars of quote: ...the building, not a freeholder. Housing Secretary Steve Reed said: “The leasehold system has tainted the dream..."
+        },
+        {
+          "name": "Matthew Hillier",
+          "context": "PERSON within 50 chars of quote: ...wnership and calling time on leasehold for good.” Matthew Hillier (38), Branch Executive at Hearnes, describes Bour..."
+        },
+        {
+          "name": "Hillier",
+          "context": "PERSON within 50 chars of quote: ...s are the \"bread and butter\" of the local market. Hillier welcomes the proposed cap but remains sceptical a..."
+        },
+        {
+          "name": "Bill",
+          "context": "PERSON within 50 chars of quote: ...’ll get it thorough, it's got too much press” The Bill also proposes the abolition of forfeiture. Curren..."
+        }
+      ]
+    },
+    {
       "id": "adddf255b109",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
       "verify_quoted_sources": 0,
@@ -3843,6 +3913,12 @@
     {
       "id": "51f73690a036",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-bus-services-axed/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "8c2304bf90f7",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
       "verify_quoted_sources": 0,
       "verify_evidence": []
     },
