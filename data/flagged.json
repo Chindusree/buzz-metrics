@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-29T12:06:01Z",
-  "total_flagged": 116,
+  "generated": "2026-01-30T08:51:00Z",
+  "total_flagged": 117,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -25,17 +25,17 @@
         {
           "name": "Ethan Sills",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Owen Bevan",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Remy Rees-Dottin",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -66,12 +66,12 @@
         {
           "name": "Sharon Small",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Simon Bull",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -81,33 +81,6 @@
         }
       ],
       "filtered": [],
-      "review_status": "pending"
-    },
-    {
-      "id": "college-staff-to-strike-this-week",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/college-staff-to-strike-this-week/",
-      "headline": "Bournemouth and Poole College staff to strike this week",
-      "scrape_count": 2,
-      "verify_count": 0,
-      "confirmed_count": 1,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "Jo Grady",
-        "Bournemouth and Poole college spokesperson"
-      ],
-      "verify_evidence": [],
-      "confirmed": [
-        {
-          "name": "Jo Grady",
-          "gender": "unknown",
-          "position": ""
-        }
-      ],
-      "possible": [],
-      "filtered": [
-        "Bournemouth and Poole college spokesperson"
-      ],
       "review_status": "pending"
     },
     {
@@ -132,7 +105,7 @@
         {
           "name": "Matt Perry-Lewis",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -150,15 +123,14 @@
       "id": "eyewitness-account-of-boscombe-sovereign-centre-fire",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/eyewitness-account-of-boscombe-sovereign-centre-fire/",
       "headline": "Eyewitness account of Boscombe Sovereign Centre fire",
-      "scrape_count": 3,
+      "scrape_count": 2,
       "verify_count": 4,
       "confirmed_count": 2,
       "possible_count": 0,
       "filtered_count": 4,
       "scrape_evidence": [
         "Mr. B",
-        "Sovereign Centre spokesperson",
-        "Dorset Fire and Rescue"
+        "Sovereign Centre spokesperson"
       ],
       "verify_evidence": [
         "Dorset Fire and Rescue",
@@ -170,12 +142,12 @@
         {
           "name": "Mr. B",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Sovereign Centre spokesperson",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -251,7 +223,7 @@
         {
           "name": "Kristian Campbell",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -303,32 +275,32 @@
         {
           "name": "Millie Earl",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Darren Pidwell",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Mike Cox",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "David Brown",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Richard Harrett",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Andy Martin",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -423,12 +395,12 @@
         {
           "name": "Mary Richards",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Ed",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -458,7 +430,7 @@
         {
           "name": "Simon Bull",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -490,12 +462,12 @@
         {
           "name": "Jenna Markham",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Elena Cole",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -533,12 +505,12 @@
         {
           "name": "Jared Smith",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Ryan Brown",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -577,17 +549,17 @@
         {
           "name": "Kier Starmer",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Liz Kendall",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Elon Musk",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -625,7 +597,7 @@
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -659,7 +631,7 @@
         {
           "name": "Jack Williamson",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -675,13 +647,12 @@
       "id": "bournemouth-and-poole-college-staff-strike-update",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-and-poole-college-staff-strike-update/",
       "headline": "Bournemouth and Poole College staff strike update",
-      "scrape_count": 4,
+      "scrape_count": 3,
       "verify_count": 1,
-      "confirmed_count": 2,
+      "confirmed_count": 1,
       "possible_count": 0,
       "filtered_count": 2,
       "scrape_evidence": [
-        "A spokesperson from the college",
         "Anne Marie Moriarty",
         "Darren Tozer",
         "Peter Cooper"
@@ -691,14 +662,9 @@
       ],
       "confirmed": [
         {
-          "name": "A spokesperson from the college",
-          "gender": "unknown",
-          "position": ""
-        },
-        {
           "name": "Peter Cooper",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -729,7 +695,7 @@
         {
           "name": "Chris Billam-Smith",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -764,12 +730,12 @@
         {
           "name": "Tomas Skiotys",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Dan Middleton",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -802,12 +768,12 @@
         {
           "name": "Mark Benham",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Lesley Fereti",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -889,7 +855,7 @@
         {
           "name": "Jessica Hennessy",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -928,17 +894,17 @@
         {
           "name": "Alex Horsley",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Ben Phillips",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -973,7 +939,7 @@
         {
           "name": "Sam Bayston",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -991,12 +957,13 @@
       "id": "mp-urges-tighter-regulation-after-leaving-x",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/mp-urges-tighter-regulation-after-leaving-x/",
       "headline": "MP urges tighter regulation after leaving X",
-      "scrape_count": 2,
+      "scrape_count": 3,
       "verify_count": 4,
-      "confirmed_count": 2,
+      "confirmed_count": 3,
       "possible_count": 0,
       "filtered_count": 2,
       "scrape_evidence": [
+        "The MP",
         "Vikki Slade",
         "Dr Amy Tatum"
       ],
@@ -1008,14 +975,19 @@
       ],
       "confirmed": [
         {
+          "name": "The MP",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
           "name": "Vikki Slade",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Amy Tatum",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1046,7 +1018,7 @@
         {
           "name": "Cam Sing",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1062,15 +1034,14 @@
       "id": "pga-tour-returning-player-offer-issued-to-four-stars",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/pga-tour-returning-player-offer-issued-to-four-stars/",
       "headline": "PGA Tour returning player offer issued to FOUR STARS",
-      "scrape_count": 3,
+      "scrape_count": 2,
       "verify_count": 4,
-      "confirmed_count": 3,
+      "confirmed_count": 2,
       "possible_count": 3,
       "filtered_count": 0,
       "scrape_evidence": [
         "Isaac Rowsell",
-        "Harry Shaw",
-        "Brooks Koepka"
+        "Harry Shaw"
       ],
       "verify_evidence": [
         "Harry Shaw",
@@ -1082,17 +1053,12 @@
         {
           "name": "Isaac Rowsell",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Harry Shaw",
           "gender": "male",
-          "position": ""
-        },
-        {
-          "name": "Brooks Koepka",
-          "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1137,22 +1103,22 @@
         {
           "name": "Andy Hill",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Steve Lyne",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Brian Murphy",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Jo Bussell",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1182,7 +1148,7 @@
         {
           "name": "Alison Hulme",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1221,42 +1187,42 @@
         {
           "name": "Sophie Quinn",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Michelle Rush",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Justice Linden",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Alisdair Williamson KC",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Nicholas Hagan KC",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Sarah Jones KC",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Detective Inspector Mark Jenkins",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Kate Lewis",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1296,7 +1262,7 @@
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1327,7 +1293,7 @@
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1368,44 +1334,13 @@
         {
           "name": "Oliver Glasner",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
         {
           "name": "Marc",
           "gender": "male"
-        }
-      ],
-      "filtered": [],
-      "review_status": "pending"
-    },
-    {
-      "id": "0c209a33d1b4",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-rugby-club-head-to-old-tiffinians/",
-      "headline": "Bournemouth Rugby Club head to Old Tiffinians",
-      "scrape_count": 1,
-      "verify_count": 1,
-      "confirmed_count": 1,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [
-        "Grant Hancox"
-      ],
-      "verify_evidence": [
-        "Roan Fox"
-      ],
-      "confirmed": [
-        {
-          "name": "Grant Hancox",
-          "gender": "male",
-          "position": ""
-        }
-      ],
-      "possible": [
-        {
-          "name": "Roan Fox",
-          "gender": "unknown"
         }
       ],
       "filtered": [],
@@ -1421,7 +1356,7 @@
       "possible_count": 0,
       "filtered_count": 1,
       "scrape_evidence": [
-        "AFC Bournemouth",
+        "Vitality Stadium Spokesperson",
         "Sara Armstrong"
       ],
       "verify_evidence": [
@@ -1432,13 +1367,52 @@
         {
           "name": "Sara Armstrong",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
       "filtered": [
-        "AFC Bournemouth"
+        "Vitality Stadium Spokesperson"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "be5e87cc8d38",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "headline": "Can UPFs be avoided on a budget?",
+      "scrape_count": 2,
+      "verify_count": 3,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Sophia Lloyd",
+        "Rebecca Brown"
+      ],
+      "verify_evidence": [
+        "Brown",
+        "Heather Smith",
+        "Smith"
+      ],
+      "confirmed": [
+        {
+          "name": "Sophia Lloyd",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Rebecca Brown",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Heather Smith",
+          "gender": "female"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -1466,17 +1440,17 @@
         {
           "name": "Andrew Wilmot",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "James Wilder",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Ali Jeffs",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1510,12 +1484,12 @@
         {
           "name": "Terry Dennis",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Pete Ball",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1551,7 +1525,7 @@
         {
           "name": "Ian Williams",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1592,7 +1566,7 @@
         {
           "name": "Detective Chief Inspector Neil Meade",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1612,8 +1586,8 @@
       "possible_count": 2,
       "filtered_count": 3,
       "scrape_evidence": [
-        "Matt Reeds",
-        "Dan Wilson"
+        "Dan Wilson",
+        "Matt Reeds"
       ],
       "verify_evidence": [
         "Nottingham Forest",
@@ -1629,14 +1603,14 @@
       ],
       "confirmed": [
         {
-          "name": "Matt Reeds",
-          "gender": "male",
-          "position": ""
-        },
-        {
           "name": "Dan Wilson",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Matt Reeds",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1660,16 +1634,14 @@
       "id": "d0eceb2acc05",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
       "headline": "Running together: How Bournemouth’s run clubs are building community",
-      "scrape_count": 4,
+      "scrape_count": 2,
       "verify_count": 4,
-      "confirmed_count": 4,
-      "possible_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [
-        "Andrew Mace",
-        "Jordan Lench",
-        "Myles Haskell",
-        "Grace Ashton"
+        "Jessica Toale",
+        "Dean Johnstone"
       ],
       "verify_evidence": [
         "Bournemouth",
@@ -1679,31 +1651,17 @@
       ],
       "confirmed": [
         {
-          "name": "Andrew Mace",
-          "gender": "male",
-          "position": ""
-        },
-        {
-          "name": "Jordan Lench",
-          "gender": "male",
-          "position": ""
-        },
-        {
-          "name": "Myles Haskell",
-          "gender": "male",
-          "position": ""
-        },
-        {
-          "name": "Grace Ashton",
+          "name": "Jessica Toale",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Dean Johnstone",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
-        {
-          "name": "Dean Johnstone",
-          "gender": "male"
-        },
         {
           "name": "Chris Downer",
           "gender": "male"
@@ -1735,7 +1693,7 @@
         {
           "name": "IK Hill",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1775,17 +1733,17 @@
         {
           "name": "Marcjanna Augustyn",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Kaouther Kooli",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Sal",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1822,7 +1780,7 @@
         {
           "name": "Becca Parker",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1857,17 +1815,17 @@
         {
           "name": "David Richmond-Coggan",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Alison Hulme",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Sharon Gale",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1900,7 +1858,7 @@
         {
           "name": "Ewan Corbett",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1931,7 +1889,7 @@
         {
           "name": "Ivan Darley",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -1965,7 +1923,7 @@
         {
           "name": "Harvey Bertrand",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -1997,7 +1955,7 @@
         {
           "name": "Grant Hancox",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2035,7 +1993,7 @@
         {
           "name": "Thomas Frank",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2066,7 +2024,7 @@
         {
           "name": "Chris Senior",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2099,12 +2057,12 @@
         {
           "name": "Evelyn Eales",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Robin",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2156,12 +2114,12 @@
         {
           "name": "Halle Hariss",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Chris Neilson",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2197,12 +2155,12 @@
         {
           "name": "Adam Carty",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Francesca Sweet",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2230,12 +2188,12 @@
         {
           "name": "Kane",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Matthew Sim",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2250,17 +2208,23 @@
       "headline": "BREAKING NEWS: More details on attack at Dorchester Town",
       "scrape_count": 1,
       "verify_count": 2,
-      "confirmed_count": 0,
+      "confirmed_count": 1,
       "possible_count": 1,
-      "filtered_count": 2,
+      "filtered_count": 1,
       "scrape_evidence": [
-        "Police Constable Daniel Walker"
+        "Daniel Walker"
       ],
       "verify_evidence": [
         "Weymouth",
         "Dorchester Town"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Daniel Walker",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [
         {
           "name": "Dorchester Town",
@@ -2268,7 +2232,6 @@
         }
       ],
       "filtered": [
-        "Police Constable Daniel Walker",
         "Weymouth"
       ],
       "review_status": "pending"
@@ -2296,7 +2259,7 @@
         {
           "name": "Kieran Filmer",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2337,12 +2300,12 @@
         {
           "name": "Ri Baroche",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Claire Hillier",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2374,7 +2337,7 @@
         {
           "name": "Peter Ryan",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2422,7 +2385,7 @@
         {
           "name": "Sarah Donnelly",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2451,7 +2414,7 @@
         {
           "name": "Dominic Solanke",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2482,7 +2445,7 @@
         {
           "name": "Joe Salmon",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2495,14 +2458,13 @@
       "id": "9fc5b169ab48",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/mark-mcadam-speaks-cherries-transfers/",
       "headline": "Mark McAdam speaks Cherries transfers",
-      "scrape_count": 2,
+      "scrape_count": 1,
       "verify_count": 4,
-      "confirmed_count": 2,
+      "confirmed_count": 1,
       "possible_count": 4,
       "filtered_count": 0,
       "scrape_evidence": [
-        "Mark McAdam",
-        "Andoni Iraola"
+        "Mark McAdam"
       ],
       "verify_evidence": [
         "Bill Foley’s",
@@ -2514,12 +2476,7 @@
         {
           "name": "Mark McAdam",
           "gender": "male",
-          "position": ""
-        },
-        {
-          "name": "Andoni Iraola",
-          "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2572,12 +2529,12 @@
         {
           "name": "Dan Ford",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Tulisa Broom",
           "gender": "unknown",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2637,17 +2594,17 @@
         {
           "name": "Dylan Fletcher",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Hannah Mills",
           "gender": "female",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Tom Slingsby",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2674,14 +2631,15 @@
       "id": "8a49bc59dabd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/younger-men-should-embrace-gardening-say-bournemouth-nursery/",
       "headline": "Younger Men should embrace gardening, say Bournemouth nursery",
-      "scrape_count": 2,
+      "scrape_count": 3,
       "verify_count": 4,
-      "confirmed_count": 2,
-      "possible_count": 2,
+      "confirmed_count": 3,
+      "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [
         "Marc Rosenberg",
-        "Sandi Marshall"
+        "Sandi Marshall",
+        "Andy"
       ],
       "verify_evidence": [
         "Minds",
@@ -2693,22 +2651,23 @@
         {
           "name": "Marc Rosenberg",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Sandi Marshall",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Andy",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
         {
           "name": "Chestnut Nursery",
           "gender": "unknown"
-        },
-        {
-          "name": "Andy",
-          "gender": "male"
         }
       ],
       "filtered": [
@@ -2746,51 +2705,6 @@
       "review_status": "pending"
     },
     {
-      "id": "d8bc8a4e3dde",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
-      "headline": "Rapist sentenced following assault in Bournemouth home",
-      "scrape_count": 4,
-      "verify_count": 2,
-      "confirmed_count": 3,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [
-        "The victim",
-        "The victim",
-        "Chret Callender",
-        "Judge Fuller KC"
-      ],
-      "verify_evidence": [
-        "Callender",
-        "Mary Aspinall-Miles"
-      ],
-      "confirmed": [
-        {
-          "name": "The victim",
-          "gender": "female",
-          "position": ""
-        },
-        {
-          "name": "Chret Callender",
-          "gender": "unknown",
-          "position": ""
-        },
-        {
-          "name": "Judge Fuller KC",
-          "gender": "male",
-          "position": ""
-        }
-      ],
-      "possible": [
-        {
-          "name": "Mary Aspinall-Miles",
-          "gender": "female"
-        }
-      ],
-      "filtered": [],
-      "review_status": "pending"
-    },
-    {
       "id": "0ec9e8580501",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/samee-charity-aims-to-open-new-location-for-their-sen-interns/",
       "headline": "Samee Charity aims to open new location for their SEN interns",
@@ -2812,12 +2726,12 @@
         {
           "name": "Tyler Burt",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         },
         {
           "name": "Adrien Cuthbert",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -2850,7 +2764,7 @@
         {
           "name": "Kevin Smith",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -2866,12 +2780,12 @@
       "headline": "A Family Story of Survival",
       "scrape_count": 2,
       "verify_count": 3,
-      "confirmed_count": 1,
-      "possible_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 1,
       "filtered_count": 0,
       "scrape_evidence": [
         "Melvyn Leach",
-        "Melvyn Leach"
+        "Willy"
       ],
       "verify_evidence": [
         "Melvyn",
@@ -2882,14 +2796,15 @@
         {
           "name": "Melvyn Leach",
           "gender": "male",
-          "position": ""
+          "position": "groq_detected"
+        },
+        {
+          "name": "Willy",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
-        {
-          "name": "Willy",
-          "gender": "male"
-        },
         {
           "name": "Akiba Halpert",
           "gender": "male"
@@ -2910,7 +2825,7 @@
       "scrape_evidence": [
         "Jenny Greenfield",
         "Eleanor Davis",
-        "DR Virginia Quiney"
+        "Dr. Virginia Quiney"
       ],
       "verify_evidence": [
         "Taylor",
@@ -2932,8 +2847,8 @@
           "position": "groq_detected"
         },
         {
-          "name": "Virginia Quiney",
-          "gender": "female",
+          "name": "Dr. Virginia Quiney",
+          "gender": "unknown",
           "position": "groq_detected"
         }
       ],
@@ -2954,13 +2869,15 @@
       "id": "8b5ef3784984",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
       "headline": "Art against odds: the shifting art scene in Boscombe",
-      "scrape_count": 1,
+      "scrape_count": 3,
       "verify_count": 8,
-      "confirmed_count": 1,
-      "possible_count": 4,
+      "confirmed_count": 3,
+      "possible_count": 2,
       "filtered_count": 2,
       "scrape_evidence": [
-        "Amanda"
+        "Tom Pouncy",
+        "Ellen Gillett",
+        "Amanda Williams"
       ],
       "verify_evidence": [
         "Tom",
@@ -2974,20 +2891,22 @@
       ],
       "confirmed": [
         {
-          "name": "Amanda",
-          "gender": "female",
-          "position": "after"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Tom",
-          "gender": "male"
+          "name": "Tom Pouncy",
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Ellen Gillett",
-          "gender": "female"
+          "gender": "female",
+          "position": "groq_detected"
         },
+        {
+          "name": "Amanda Williams",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
         {
           "name": "Generative AI",
           "gender": "unknown"
@@ -3023,7 +2942,7 @@
         {
           "name": "Andy Cole",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3039,13 +2958,14 @@
       "id": "70f6e8d4a3fa",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
       "headline": "Bournemouth University rebuilds the television that started it all",
-      "scrape_count": 1,
+      "scrape_count": 2,
       "verify_count": 3,
-      "confirmed_count": 1,
-      "possible_count": 3,
+      "confirmed_count": 2,
+      "possible_count": 1,
       "filtered_count": 0,
       "scrape_evidence": [
-        "Iain"
+        "Gary Toms",
+        "Iain Logie Baird"
       ],
       "verify_evidence": [
         "Gary",
@@ -3054,20 +2974,17 @@
       ],
       "confirmed": [
         {
-          "name": "Iain",
+          "name": "Gary Toms",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
+        },
+        {
+          "name": "Iain Logie Baird",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
-        {
-          "name": "Gary",
-          "gender": "male"
-        },
-        {
-          "name": "Baird",
-          "gender": "male"
-        },
         {
           "name": "John Logie",
           "gender": "male"
@@ -3080,14 +2997,13 @@
       "id": "8aef66c9151c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
       "headline": "Charlie Stevens: Living the dream",
-      "scrape_count": 2,
+      "scrape_count": 1,
       "verify_count": 6,
-      "confirmed_count": 2,
-      "possible_count": 1,
-      "filtered_count": 1,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 2,
       "scrape_evidence": [
-        "Charlie Stevens on his development whilst on loan at Poole Town.",
-        "Charlie Stevens on Alex Scott"
+        "Charlie Stevens"
       ],
       "verify_evidence": [
         "Stevens",
@@ -3099,23 +3015,23 @@
       ],
       "confirmed": [
         {
-          "name": "Charlie Stevens on his development whilst on loan at Poole Town.",
+          "name": "Charlie Stevens",
           "gender": "male",
-          "position": "blockquote-inline"
-        },
-        {
-          "name": "Charlie Stevens on Alex Scott",
-          "gender": "male",
-          "position": "blockquote-inline"
+          "position": "groq_detected"
         }
       ],
       "possible": [
         {
           "name": "HNK Rijeka",
           "gender": "unknown"
+        },
+        {
+          "name": "Alex Scott",
+          "gender": "male"
         }
       ],
       "filtered": [
+        "Poole",
         "Photo Credit"
       ],
       "review_status": "pending"
@@ -3141,12 +3057,12 @@
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         },
         {
           "name": "Arne Slot",
           "gender": "male",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3256,12 +3172,12 @@
         {
           "name": "Jessica Toale",
           "gender": "female",
-          "position": "before"
+          "position": "groq_detected"
         },
         {
           "name": "Dean Johnstone",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3352,12 +3268,12 @@
         {
           "name": "Jason Littlefield",
           "gender": "male",
-          "position": "blockquote-inline"
+          "position": "groq_detected"
         },
         {
           "name": "Jasmine Bosenick",
           "gender": "female",
-          "position": "blockquote-inline"
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -3367,49 +3283,17 @@
       "review_status": "pending"
     },
     {
-      "id": "442442e51cf0",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
-      "headline": "The charity inspiring those who are going through Brain injury",
-      "scrape_count": 0,
-      "verify_count": 3,
-      "confirmed_count": 0,
-      "possible_count": 3,
-      "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Megan",
-        "Mark",
-        "Darren Stratman"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Megan",
-          "gender": "female"
-        },
-        {
-          "name": "Mark",
-          "gender": "male"
-        },
-        {
-          "name": "Darren Stratman",
-          "gender": "male"
-        }
-      ],
-      "filtered": [],
-      "review_status": "pending"
-    },
-    {
       "id": "dc90ae812d3c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
       "headline": "The financial struggle of tennis",
-      "scrape_count": 2,
+      "scrape_count": 3,
       "verify_count": 6,
       "confirmed_count": 2,
       "possible_count": 2,
-      "filtered_count": 0,
+      "filtered_count": 1,
       "scrape_evidence": [
         "James White",
+        "Furneaux",
         "Harry James"
       ],
       "verify_evidence": [
@@ -3424,12 +3308,12 @@
         {
           "name": "James White",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         },
         {
           "name": "Harry James",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3442,7 +3326,9 @@
           "gender": "male"
         }
       ],
-      "filtered": [],
+      "filtered": [
+        "Furneaux"
+      ],
       "review_status": "pending"
     },
     {
@@ -3471,7 +3357,7 @@
         {
           "name": "George Dean",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3501,13 +3387,16 @@
       "id": "68171a537e36",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
       "headline": "Welcome to the lions den",
-      "scrape_count": 1,
+      "scrape_count": 4,
       "verify_count": 3,
-      "confirmed_count": 1,
-      "possible_count": 2,
-      "filtered_count": 0,
+      "confirmed_count": 3,
+      "possible_count": 0,
+      "filtered_count": 1,
       "scrape_evidence": [
-        "Grant Hancox"
+        "Grant Hancox",
+        "Will Croker",
+        "Drew Mellor",
+        "Matthew Barker"
       ],
       "verify_evidence": [
         "Hancox",
@@ -3518,20 +3407,23 @@
         {
           "name": "Grant Hancox",
           "gender": "male",
-          "position": "before"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Drew Mellor",
-          "gender": "male"
+          "position": "groq_detected"
         },
         {
-          "name": "Matthew",
-          "gender": "male"
+          "name": "Drew Mellor",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Matthew Barker",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
-      "filtered": [],
+      "possible": [],
+      "filtered": [
+        "Will Croker"
+      ],
       "review_status": "pending"
     },
     {
@@ -3553,7 +3445,7 @@
         {
           "name": "Andoni Iraola",
           "gender": "male",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3572,10 +3464,10 @@
       "scrape_count": 2,
       "verify_count": 6,
       "confirmed_count": 2,
-      "possible_count": 1,
-      "filtered_count": 2,
+      "possible_count": 2,
+      "filtered_count": 1,
       "scrape_evidence": [
-        "Lazio Correspondent",
+        "Christos Mandas",
         "Michel Sakr"
       ],
       "verify_evidence": [
@@ -3588,26 +3480,61 @@
       ],
       "confirmed": [
         {
-          "name": "Lazio Correspondent",
-          "gender": "unknown",
-          "position": "before"
+          "name": "Christos Mandas",
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
           "name": "Michel Sakr",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
         {
           "name": "Fraser Forster",
           "gender": "male"
+        },
+        {
+          "name": "Lazio Correspondent",
+          "gender": "unknown"
         }
       ],
       "filtered": [
-        "Mandas",
         "Provedel"
       ],
+      "review_status": "pending"
+    },
+    {
+      "id": "6e5dee8c4f6a",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-to-complete-five-marathons-in-five-days-on-cross-trainer/",
+      "headline": "Bournemouth Man to Complete Five Marathons in Five Days on Cross Trainer",
+      "scrape_count": 1,
+      "verify_count": 2,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 0,
+      "scrape_evidence": [
+        "Patrick Rowson"
+      ],
+      "verify_evidence": [
+        "Rowson",
+        "Said Rowson"
+      ],
+      "confirmed": [
+        {
+          "name": "Patrick Rowson",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Said Rowson",
+          "gender": "male"
+        }
+      ],
+      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -3653,7 +3580,7 @@
       "possible_count": 1,
       "filtered_count": 1,
       "scrape_evidence": [
-        "Dorset Police"
+        "A witness"
       ],
       "verify_evidence": [
         "NewsTag",
@@ -3661,9 +3588,9 @@
       ],
       "confirmed": [
         {
-          "name": "Dorset Police",
+          "name": "A witness",
           "gender": "unknown",
-          "position": "lastname_verb"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3697,7 +3624,7 @@
         {
           "name": "Kerry Isom",
           "gender": "female",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3729,7 +3656,7 @@
         {
           "name": "Jamie Whisken",
           "gender": "female",
-          "position": "after"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3751,7 +3678,7 @@
       "possible_count": 2,
       "filtered_count": 0,
       "scrape_evidence": [
-        "Cairo Phillips"
+        "Dan Phillips"
       ],
       "verify_evidence": [
         "Buzz",
@@ -3759,9 +3686,9 @@
       ],
       "confirmed": [
         {
-          "name": "Cairo Phillips",
-          "gender": "unknown",
-          "position": "before"
+          "name": "Dan Phillips",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3798,7 +3725,7 @@
         {
           "name": "Alan Connell",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3838,38 +3765,6 @@
       "filtered": [
         "Aaliyah Hussain"
       ],
-      "review_status": "pending"
-    },
-    {
-      "id": "ba4f900fc5c7",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-to-protect-99-of-subsidised-bus-journeys/",
-      "headline": "BCP Council to protect 99% of subsidised bus journeys",
-      "scrape_count": 1,
-      "verify_count": 2,
-      "confirmed_count": 1,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [
-        "Richard Wade"
-      ],
-      "verify_evidence": [
-        "Richard Wade",
-        "Cllr Andy Hadley"
-      ],
-      "confirmed": [
-        {
-          "name": "Richard Wade",
-          "gender": "male",
-          "position": "before"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Andy Hadley",
-          "gender": "male"
-        }
-      ],
-      "filtered": [],
       "review_status": "pending"
     },
     {
@@ -3944,7 +3839,7 @@
         {
           "name": "Brad Currie",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -3978,6 +3873,42 @@
       "possible": [],
       "filtered": [
         "Dragos"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "a3eb411c4e83",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ground-rent-capped-for-leaseholders-in-england-and-wales/",
+      "headline": "Ground rent capped for leaseholders in England and Wales",
+      "scrape_count": 3,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Keir Starmer",
+        "Steve Reed",
+        "Spokesperson for the Residential Freehold Association"
+      ],
+      "verify_evidence": [
+        "Starmer",
+        "Steve Reed"
+      ],
+      "confirmed": [
+        {
+          "name": "Keir Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Steve Reed",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Spokesperson for the Residential Freehold Association"
       ],
       "review_status": "pending"
     },
@@ -4016,12 +3947,13 @@
       "id": "b6a42b36134f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
       "headline": "Rayan excited to start Premier League challenge",
-      "scrape_count": 1,
+      "scrape_count": 2,
       "verify_count": 5,
       "confirmed_count": 1,
       "possible_count": 1,
       "filtered_count": 2,
       "scrape_evidence": [
+        "Rayan",
         "Bruno Murito"
       ],
       "verify_evidence": [
@@ -4035,7 +3967,7 @@
         {
           "name": "Bruno Murito",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [
@@ -4115,7 +4047,7 @@
         {
           "name": "Sam Bayston",
           "gender": "male",
-          "position": "before"
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -4160,16 +4092,30 @@
       "id": "e10332f5725f",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
       "headline": "AFC Bournemouth owners Black Knight Football Club go global",
-      "scrape_count": 0,
+      "scrape_count": 2,
       "verify_count": 1,
-      "confirmed_count": 0,
+      "confirmed_count": 2,
       "possible_count": 0,
       "filtered_count": 1,
-      "scrape_evidence": [],
+      "scrape_evidence": [
+        "Bill Foley",
+        "Loïc Féry"
+      ],
       "verify_evidence": [
         "Lorient"
       ],
-      "confirmed": [],
+      "confirmed": [
+        {
+          "name": "Bill Foley",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Loïc Féry",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [],
       "filtered": [
         "Lorient"
@@ -4197,7 +4143,7 @@
         {
           "name": "Joe Salmon",
           "gender": "male",
-          "position": "after"
+          "position": "groq_detected"
         }
       ],
       "possible": [],
@@ -4207,39 +4153,17 @@
       "review_status": "pending"
     },
     {
-      "id": "2b78e65e03d8",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
-      "headline": "Collision in Bournemouth: appeals for witnesses and footage",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 1,
-      "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Paul Hind"
-      ],
-      "confirmed": [],
-      "possible": [
-        {
-          "name": "Paul Hind",
-          "gender": "male"
-        }
-      ],
-      "filtered": [],
-      "review_status": "pending"
-    },
-    {
       "id": "d226164905fd",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
       "headline": "Dan Carr’s dream start to life at Poole Town",
-      "scrape_count": 1,
+      "scrape_count": 2,
       "verify_count": 5,
-      "confirmed_count": 1,
-      "possible_count": 2,
-      "filtered_count": 1,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 2,
       "scrape_evidence": [
-        "Vice-Chairman Andy Rossiter"
+        "Dan Carr",
+        "Andy Rossiter"
       ],
       "verify_evidence": [
         "Carr",
@@ -4250,67 +4174,235 @@
       ],
       "confirmed": [
         {
-          "name": "Vice-Chairman Andy Rossiter",
-          "gender": "unknown",
-          "position": "after"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Carr",
-          "gender": "male"
+          "name": "Dan Carr",
+          "gender": "male",
+          "position": "groq_detected"
         },
         {
-          "name": "Dan",
-          "gender": "male"
+          "name": "Andy Rossiter",
+          "gender": "male",
+          "position": "groq_detected"
         }
       ],
-      "filtered": [
-        "Dolphins"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "01b20e64608c",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
-      "headline": "Five English Clubs Secure Top Eight in Champions League",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
-      "possible_count": 0,
-      "filtered_count": 1,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Solanke"
-      ],
-      "confirmed": [],
       "possible": [],
       "filtered": [
-        "Solanke"
+        "Dolphins",
+        "dancarr"
       ],
       "review_status": "pending"
     },
     {
-      "id": "2606f780b84b",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
-      "headline": "Police appeal for information on Boscombe burglary",
-      "scrape_count": 0,
-      "verify_count": 1,
-      "confirmed_count": 0,
+      "id": "9883df311ded",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announce-school-transport-cancellation-due-to-weather/",
+      "headline": "Dorset Council announce school transport cancellation due to weather",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Tammy Jo",
+        "Dorset council"
+      ],
+      "verify_evidence": [
+        "Tammy Jo",
+        "Charminster"
+      ],
+      "confirmed": [
+        {
+          "name": "Tammy Jo",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Dorset council",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Charminster"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "d2f37b570400",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driving-ranges-have-positive-implications-for-traditional-golf-courses/",
+      "headline": "Driving ranges have ‘positive’ implications for traditional golf courses",
+      "scrape_count": 2,
+      "verify_count": 2,
+      "confirmed_count": 2,
       "possible_count": 1,
       "filtered_count": 0,
-      "scrape_evidence": [],
-      "verify_evidence": [
-        "Sarah Dutton"
+      "scrape_evidence": [
+        "Luke De-Benedictis",
+        "Fred Parkes"
       ],
-      "confirmed": [],
+      "verify_evidence": [
+        "Meyrick Park Golf Club",
+        "Fred Parkes"
+      ],
+      "confirmed": [
+        {
+          "name": "Luke De-Benedictis",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Fred Parkes",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
       "possible": [
         {
-          "name": "Sarah Dutton",
-          "gender": "female"
+          "name": "Meyrick Park Golf Club",
+          "gender": "unknown"
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "be7316e020c8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-nfl-in-london-exclusive-b-j-green-ii-interview/",
+      "headline": "The rise of NFL in London – exclusive B. J. Green II interview",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 1,
+      "filtered_count": 2,
+      "scrape_evidence": [
+        "B.J. Green"
+      ],
+      "verify_evidence": [
+        "Buzz",
+        "Wembley",
+        "Jags",
+        "Green"
+      ],
+      "confirmed": [
+        {
+          "name": "B.J. Green",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Buzz",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Wembley",
+        "Jags"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "310dd22ead56",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-set-to-last-the-week/",
+      "headline": "Train delays set to last the week",
+      "scrape_count": 2,
+      "verify_count": 0,
+      "confirmed_count": 1,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "A Bournemouth local",
+        "Lisa"
+      ],
+      "verify_evidence": [],
+      "confirmed": [
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "A Bournemouth local"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "83b895c0c8d1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "headline": "Why young people should join orchestra",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 0,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Emily Davis",
+        "Michael Chaffin"
+      ],
+      "verify_evidence": [
+        "Davis",
+        "Michael Chaffin",
+        "Bass",
+        "Emily Davis"
+      ],
+      "confirmed": [
+        {
+          "name": "Emily Davis",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Michael Chaffin",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [],
+      "filtered": [
+        "Bass"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "c8f104ef097c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Ricky Barton"
+      ],
+      "verify_evidence": [
+        "Verwood",
+        "Roy Mortimer",
+        "Hamworthy United Reserves",
+        "Roy Mortime"
+      ],
+      "confirmed": [
+        {
+          "name": "Ricky Barton",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Roy Mortimer",
+          "gender": "male"
+        },
+        {
+          "name": "Hamworthy United Reserves",
+          "gender": "unknown"
+        }
+      ],
+      "filtered": [
+        "Verwood"
+      ],
       "review_status": "pending"
     }
   ]

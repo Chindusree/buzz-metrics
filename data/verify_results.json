@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-29T12:05:58Z",
-  "total_verified": 272,
+  "last_updated": "2026-01-30T08:50:57Z",
+  "total_verified": 281,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3510,6 +3510,62 @@
       ]
     },
     {
+      "id": "92255bedd3bd",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dashcam-appeal-for-road-collision-in-poole/",
+      "verify_quoted_sources": 1,
+      "verify_evidence": [
+        {
+          "name": "Dan Blagden",
+          "context": "PERSON within 50 chars of quote: ...ider failed to stop at the scene Police Constable Dan Blagden, of the Roads Policing Team, said: “We are carryi..."
+        }
+      ]
+    },
+    {
+      "id": "9883df311ded",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announce-school-transport-cancellation-due-to-weather/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Tammy Jo",
+          "context": "PERSON within 50 chars of quote: ... whether their school will remain open or close.” Tammy Jo, a mother of four, will have to miss a hospital a..."
+        },
+        {
+          "name": "Charminster",
+          "context": "PERSON within 50 chars of quote: ...to the cancellations. Tammy lives in a village in Charminster, which has been affected by flooding and said: “I..."
+        }
+      ]
+    },
+    {
+      "id": "d2f37b570400",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driving-ranges-have-positive-implications-for-traditional-golf-courses/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Meyrick Park Golf Club",
+          "context": "PERSON within 50 chars of quote: ...playing the sport in 2025. Traditional golfer and Meyrick Park Golf Club member, Fred Parkes said: “I’ve been playing golf..."
+        },
+        {
+          "name": "Fred Parkes",
+          "context": "PERSON within 50 chars of quote: ...itional golfer and Meyrick Park Golf Club member, Fred Parkes said: “I’ve been playing golf for the last six ye..."
+        }
+      ]
+    },
+    {
+      "id": "8ef329c6551c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/firefighter-brigade-union-battles-fire-station-closures/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Barney Hedgecock",
+          "context": "PERSON within 50 chars of quote: ... meeting at Salisbury City Hall on February 10th. Barney Hedgecock, Fairness at Work Representative at FBU, said: “R..."
+        },
+        {
+          "name": "Andy Cole",
+          "context": "PERSON within 50 chars of quote: ...WFRS released on January 23rd, Chief Fire Officer Andy Cole said: “Dorset & Wiltshire Fire & Rescue Authority..."
+        }
+      ]
+    },
+    {
       "id": "01b20e64608c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
       "verify_quoted_sources": 1,
@@ -3548,6 +3604,12 @@
       ]
     },
     {
+      "id": "416e9af6501b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/inside-black-knight-football-club-and-bill-foley/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
       "id": "2606f780b84b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
       "verify_quoted_sources": 1,
@@ -3555,6 +3617,81 @@
         {
           "name": "Sarah Dutton",
           "context": "PERSON within 50 chars of quote: ...ket and light-coloured trousers. Police Constable Sarah Dutton, of Bournemouth police, said: “We are carrying ou..."
+        }
+      ]
+    },
+    {
+      "id": "be7316e020c8",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-nfl-in-london-exclusive-b-j-green-ii-interview/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Buzz",
+          "context": "PERSON within 50 chars of quote: ...ve end for theJacksonville Jaguarsand he spoke to Buzz news about the rise of NFL in London. “I think th..."
+        },
+        {
+          "name": "Wembley",
+          "context": "PERSON within 50 chars of quote: ...aking on playing at Wembley Stadium Green said, “ Wembley can compete with the best NFL stadiums, Wembley w..."
+        },
+        {
+          "name": "Jags",
+          "context": "PERSON within 50 chars of quote: ...start to finish. Wembley was really awesome.” The Jags and Green’s season has come to an end after the J..."
+        },
+        {
+          "name": "Green",
+          "context": "PERSON within 50 chars of quote: ...to the Bills in their Wild Card matchup. However, Green is already thinking about his UK return. “I’m loo..."
+        }
+      ]
+    },
+    {
+      "id": "310dd22ead56",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-set-to-last-the-week/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "83b895c0c8d1",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Davis",
+          "context": "PERSON within 50 chars of quote: ...es into other areas of life. Performance anxiety, Davis argues, is not something to fear. “People get anx..."
+        },
+        {
+          "name": "Michael Chaffin",
+          "context": "PERSON within 50 chars of quote: ...into exams, presentations, interviews, anything.” Michael Chaffin, Sub-Principal No.4 Double Bass with the BSO, bel..."
+        },
+        {
+          "name": "Bass",
+          "context": "PERSON within 50 chars of quote: ...hing.” Michael Chaffin, Sub-Principal No.4 Double Bass with the BSO, believes one of the biggest barrier..."
+        },
+        {
+          "name": "Emily Davis",
+          "context": "PERSON within 50 chars of quote: ...ocus, creativity, and shared human experience. As Emily Davis puts it, “Music isn’t just an extra. It’s essenti..."
+        }
+      ]
+    },
+    {
+      "id": "c8f104ef097c",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Verwood",
+          "context": "PERSON within 50 chars of quote: ...e that, and that depends on who’s available.” For Verwood, the challenge is clear. Deal with the pressure, ..."
+        },
+        {
+          "name": "Roy Mortimer",
+          "context": "PERSON within 50 chars of quote: ...wood Town away at Blandford United. Photo credit: Roy Mortimer. “There was an embedded feeling that when things ..."
+        },
+        {
+          "name": "Hamworthy United Reserves",
+          "context": "PERSON within 50 chars of quote: ...edit: Roy Mortime. Verwood Town in action against Hamworthy United Reserves. Photo credit: Roy Mortime. “There’s still an awf..."
+        },
+        {
+          "name": "Roy Mortime",
+          "context": "PERSON within 50 chars of quote: ... against Hamworthy United Reserves. Photo credit: Roy Mortime. “There’s still an awful lot of work to do,” he a..."
         }
       ]
     }
