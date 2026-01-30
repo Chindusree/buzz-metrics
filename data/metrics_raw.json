@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-01-30T12:55:39Z",
-  "total_articles": 292,
+  "last_updated": "2026-01-30T13:56:57Z",
+  "total_articles": 295,
   "gender_breakdown": {
-    "male": 244,
-    "female": 110,
-    "unknown": 19
+    "male": 246,
+    "female": 112,
+    "unknown": 20
   },
   "articles": [
     {
@@ -20677,7 +20677,7 @@
       "content_type": "standard",
       "shorthand_url": null,
       "quoted_sources": 1,
-      "quoted_sources_confidence": "high",
+      "quoted_sources_confidence": "medium",
       "sources_male": 1,
       "sources_female": 0,
       "sources_unknown": 0,
@@ -20727,7 +20727,30 @@
         ],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 1,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "Norberto Neto",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [
+        "Evanilson",
+        "Lazio"
+      ],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
     },
     {
       "id": "b30834fdd227",
@@ -20780,6 +20803,51 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "Sport"
+    },
+    {
+      "id": "f3bb4bc3924f",
+      "headline": "Boxer George Liddard gives support to local charity",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
+      "author": "Nico Theodorou",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "13:25",
+      "category": "Sport",
+      "category_detail": "Boxing",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 0,
+      "word_count_confidence": "medium",
+      "content_type": "shorthand",
+      "shorthand_url": "https://buzznews.shorthandstories.com/Boxer-George-Liddard-supports-local-charity/index.html",
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "low",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 0,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "./assets/logo-black-no-text.svg",
+            "credit": "No credit found",
+            "classification": "uncredited"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [
+        "Shorthand word count may have ~20% inflation"
+      ]
     },
     {
       "id": "52d3b537471c",
@@ -20888,6 +20956,159 @@
       "is_long_form": false,
       "word_count_status": "standard",
       "category_normalised": "General News"
+    },
+    {
+      "id": "041a52bf8cbb",
+      "headline": "Iford to hold women’s international driving range tournament",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "author": "Ben Wheeler",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "13:38",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 431,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "high",
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Katie Dawkins",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Katie Dawkins",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 3,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019674-800x400.jpg",
+            "classification": "original",
+            "credit": "Jack Turnbull"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019676-360x205.jpg",
+            "classification": "original",
+            "credit": "Jack Turnbull"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1000019675-177x300.jpg",
+            "classification": "original",
+            "credit": "Katie Dawkins"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": []
+    },
+    {
+      "id": "e0ad545af58d",
+      "headline": "Kings Park Stadium closure leaves local athletes without track",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
+      "author": "Duarte Fialho",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "11:51",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 372,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 4,
+      "quoted_sources_confidence": "high",
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Brooke Ironside",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Brooke Ironside",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Rich Herrett",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Rich Herrett",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Tim Hughes",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Tim Hughes",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Anonymous source",
+          "gender": "unknown",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Anonymous source",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Athletics-800x400.jpg",
+            "classification": "original",
+            "credit": "Ruby Jarret"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 1,
+        "audio_count": 0,
+        "video_evidence": [
+          {
+            "platform": "youtube",
+            "url": "https://www.youtube.com/embed/YeFPIS--MFM?si=uoFDQy5z5igDSppB"
+          }
+        ],
+        "audio_evidence": []
+      },
+      "warnings": []
     },
     {
       "id": "820130679f1d",
@@ -21202,7 +21423,27 @@
       },
       "warnings": [
         "Shorthand word count may have ~20% inflation"
-      ]
+      ],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Juan Cano Valverde",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Scott Rowles",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": true,
+      "word_count_status": "long_form",
+      "category_normalised": "Sport"
     },
     {
       "id": "adddf255b109",
@@ -21271,7 +21512,27 @@
         "video_evidence": [],
         "audio_evidence": []
       },
-      "warnings": []
+      "warnings": [],
+      "quoted_sources_confirmed": 2,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Anonymous local",
+          "gender": "unknown",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Lisa",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
     },
     {
       "id": "51f73690a036",

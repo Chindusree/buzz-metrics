@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T13:06:58Z",
-  "total_verified": 292,
+  "last_updated": "2026-01-30T14:10:15Z",
+  "total_verified": 295,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3704,6 +3704,29 @@
       "verify_evidence": []
     },
     {
+      "id": "f3bb4bc3924f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "BUzz",
+          "context": "PERSON within 50 chars of quote: ...ard has a strong connection with Bashley, he told BUzz, “I grew up in the area in summer holidays, I sta..."
+        },
+        {
+          "name": "Scarfs",
+          "context": "PERSON within 50 chars of quote: ...ion behind supporting Scarf New Forest, he said, “Scarfs are doing good things down in that area, so when ..."
+        },
+        {
+          "name": "Chris Billam-Smith",
+          "context": "PERSON within 50 chars of quote: ...hing I'd like to do. “We had a great evening with Chris Billam-Smith and you know, it was good to meet some of the peo..."
+        },
+        {
+          "name": "Liddard",
+          "context": "PERSON within 50 chars of quote: ...give back.” The charity night included a Q&A with Liddard and Billam-Smith, a raffle, an auction as well as..."
+        }
+      ]
+    },
+    {
       "id": "52d3b537471c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
       "verify_quoted_sources": 3,
@@ -3719,6 +3742,40 @@
         {
           "name": "Dorset",
           "context": "PERSON within 50 chars of quote: ...ecifically in this park.” The ONS data shows that Dorset is statistically more secure than most of the UK,..."
+        }
+      ]
+    },
+    {
+      "id": "041a52bf8cbb",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "verify_quoted_sources": 2,
+      "verify_evidence": [
+        {
+          "name": "Katie Dawkins",
+          "context": "PERSON within 50 chars of quote: ...erlands. Leading the event at Iford is golf coach Katie Dawkins who said, “ we did the ‘three range range off’ be..."
+        },
+        {
+          "name": "Dawkins",
+          "context": "PERSON within 50 chars of quote: ...also had 18 players of their own. This time round Dawkins is hoping for more competitors, “so the idea is t..."
+        }
+      ]
+    },
+    {
+      "id": "e0ad545af58d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Rich Herrett",
+          "context": "PERSON within 50 chars of quote: ...nd carried out by Cleland Service. BCP Councillor Rich Herrett said: “During our ongoing conversation around rep..."
+        },
+        {
+          "name": "Tim Hughes",
+          "context": "PERSON within 50 chars of quote: ...s will cause more damage. Bournemouth AC chairman Tim Hughes said: “About a year ago now, the surface started ..."
+        },
+        {
+          "name": "Said",
+          "context": "PERSON within 50 chars of quote: ...he beachfront until the athletic stadium reopens. Said: “When speaking to other coaches, the numbers are..."
         }
       ]
     },

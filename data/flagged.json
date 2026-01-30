@@ -1,6 +1,6 @@
 {
-  "generated": "2026-01-30T13:07:01Z",
-  "total_flagged": 121,
+  "generated": "2026-01-30T14:10:18Z",
+  "total_flagged": 123,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -4402,6 +4402,36 @@
       "review_status": "pending"
     },
     {
+      "id": "f3bb4bc3924f",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
+      "headline": "Boxer George Liddard gives support to local charity",
+      "scrape_count": 0,
+      "verify_count": 4,
+      "confirmed_count": 0,
+      "possible_count": 1,
+      "filtered_count": 3,
+      "scrape_evidence": [],
+      "verify_evidence": [
+        "BUzz",
+        "Scarfs",
+        "Chris Billam-Smith",
+        "Liddard"
+      ],
+      "confirmed": [],
+      "possible": [
+        {
+          "name": "Chris Billam-Smith",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "BUzz",
+        "Scarfs",
+        "Liddard"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "52d3b537471c",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
       "headline": "Dorset places in top 10 safest counties",
@@ -4438,6 +4468,54 @@
         "Alfie Lobson",
         "Tatiana Celikova",
         "Dorset"
+      ],
+      "review_status": "pending"
+    },
+    {
+      "id": "e0ad545af58d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
+      "headline": "Kings Park Stadium closure leaves local athletes without track",
+      "scrape_count": 4,
+      "verify_count": 3,
+      "confirmed_count": 3,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Brooke Ironside",
+        "Rich Herrett",
+        "Tim Hughes",
+        "Anonymous source"
+      ],
+      "verify_evidence": [
+        "Rich Herrett",
+        "Tim Hughes",
+        "Said"
+      ],
+      "confirmed": [
+        {
+          "name": "Rich Herrett",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Tim Hughes",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Anonymous source",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Said",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Brooke Ironside"
       ],
       "review_status": "pending"
     },
