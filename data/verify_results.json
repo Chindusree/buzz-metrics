@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-01-30T09:49:26Z",
-  "total_verified": 284,
+  "last_updated": "2026-01-30T10:45:09Z",
+  "total_verified": 287,
   "results": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3702,6 +3702,37 @@
           "context": "PERSON within 50 chars of quote: ...ecifically in this park.” The ONS data shows that Dorset is statistically more secure than most of the UK,..."
         }
       ]
+    },
+    {
+      "id": "8e013310a41b",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-person-dies-on-tracks-near-wool-railway-station/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
+    },
+    {
+      "id": "f6e7b0a0d80d",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "verify_quoted_sources": 3,
+      "verify_evidence": [
+        {
+          "name": "Hamill",
+          "context": "PERSON within 50 chars of quote: ... a time where nightlife is a struggling industry, Hamill and King are taking the plunge. “We’re new owners..."
+        },
+        {
+          "name": "King",
+          "context": "PERSON within 50 chars of quote: ...re nightlife is a struggling industry, Hamill and King are taking the plunge. “We’re new owners, this is..."
+        },
+        {
+          "name": "Said Hamlin",
+          "context": "PERSON within 50 chars of quote: ...or young people to come and play pool and darts.” Said Hamlin. “I think the biggest reaction for me is they wal..."
+        }
+      ]
+    },
+    {
+      "id": "51f73690a036",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-bus-services-axed/",
+      "verify_quoted_sources": 0,
+      "verify_evidence": []
     },
     {
       "id": "c8f104ef097c",

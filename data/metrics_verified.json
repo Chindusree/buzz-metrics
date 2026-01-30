@@ -1,31 +1,31 @@
 {
-  "last_updated": "2026-01-30T09:49:29Z",
-  "total_articles": 284,
+  "last_updated": "2026-01-30T10:45:12Z",
+  "total_articles": 287,
   "summary": {
-    "avg_word_count": 433,
+    "avg_word_count": 431,
     "avg_quoted_sources": 1.1,
-    "below_minimum_count": 85,
+    "below_minimum_count": 87,
     "long_form_count": 28,
     "breaking_news_count": 18,
-    "total_images": 552,
-    "original_images": 244,
+    "total_images": 557,
+    "original_images": 248,
     "stock_images": 26,
-    "uncredited_images": 282,
+    "uncredited_images": 283,
     "gender_breakdown": {
-      "male": 205,
+      "male": 207,
       "female": 78,
       "unknown": 41
     },
     "by_section": {
       "Sport": {
-        "count": 112,
-        "words": 53075,
-        "sources": 104
+        "count": 113,
+        "words": 53442,
+        "sources": 105
       },
       "General News": {
-        "count": 163,
-        "words": 58889,
-        "sources": 201
+        "count": 165,
+        "words": 59283,
+        "sources": 202
       },
       "Features": {
         "count": 9,
@@ -35,13 +35,13 @@
     },
     "by_category": {
       "Sport": {
-        "count": 112,
-        "avg_word_count": 474,
+        "count": 113,
+        "avg_word_count": 473,
         "avg_sources": 0.9
       },
       "News": {
-        "count": 163,
-        "avg_word_count": 361,
+        "count": 165,
+        "avg_word_count": 359,
         "avg_sources": 1.2
       },
       "Features": {
@@ -164,12 +164,12 @@
     },
     {
       "date": "2026-01-30",
-      "article_count": 4,
+      "article_count": 7,
       "target": 12,
       "meets_target": false,
       "first_publish_time": "08:36",
       "first_publish_on_time": true,
-      "below_minimum_count": 1,
+      "below_minimum_count": 3,
       "long_form_count": 1
     }
   ],
@@ -20985,6 +20985,215 @@
       "is_breaking_news": false,
       "is_long_form": false,
       "word_count_status": "standard",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "8e013310a41b",
+      "headline": "Person dies on tracks near Wool Railway Station",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-person-dies-on-tracks-near-wool-railway-station/",
+      "author": "Riley Wallace",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "10:25",
+      "category": "News",
+      "category_detail": "1st News",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 61,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 0,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1024px-Wool_railway_station_Dorset_geograph_3295992-800x400.jpg",
+            "classification": "original",
+            "credit": "Wool railway station, Dorset. Opened in 1847 by the Southampton & Dorchester Railway. View west towards Dorchester and Weymouth. Wool railway station, Dorset. Opened in 1847 by the Southampton & Dorchester Railway. View west towards Dorchester and Weymouth.\nPhoto credits: Nigel Thompson (Creative Commons Attribution Share-alike license 2.0)"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 0,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
+      "category_normalised": "General News"
+    },
+    {
+      "id": "f6e7b0a0d80d",
+      "headline": "Q Sports Bar in Boscombe is redeveloping their darts setup.",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "author": "Ben Jones",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "10:28",
+      "category": "Sport",
+      "category_detail": "Sport",
+      "category_primary": "Sport",
+      "display_category": "Sport",
+      "word_count": 367,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Lee Hamill",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Lee Hamill",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 3,
+        "original": 2,
+        "stock": 0,
+        "uncredited": 1,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/Adobe-Express-file-14-800x400.jpg",
+            "classification": "uncredited",
+            "credit": "Owners Lee Hamlin and Mark King"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/d2f05b93-1133-481d-9f5b-05ce1a1cfa5f-1-172x300.jpg",
+            "classification": "original",
+            "credit": "Mark King"
+          },
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/b168d4ff-1c0f-4e8d-9b33-f8a5cde9394b-360x270.jpg",
+            "classification": "original",
+            "credit": "Mark King"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 2,
+      "source_evidence_confirmed": [
+        {
+          "name": "Lee Hamill",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [
+        {
+          "name": "King",
+          "gender": "male"
+        },
+        {
+          "name": "Said Hamlin",
+          "gender": "male"
+        }
+      ],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "standard",
+      "category_normalised": "Sport"
+    },
+    {
+      "id": "51f73690a036",
+      "headline": "Two Dorset school bus services to be axed",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-bus-services-axed/",
+      "author": "Conner Haddow",
+      "author_confidence": "high",
+      "date": "2026-01-30",
+      "time": "09:40",
+      "category": "News",
+      "category_detail": "News Top",
+      "category_primary": "News",
+      "display_category": "General News",
+      "word_count": 333,
+      "word_count_confidence": "high",
+      "content_type": "standard",
+      "shorthand_url": null,
+      "quoted_sources": 1,
+      "quoted_sources_confidence": "medium",
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andy Hadley",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andy Hadley",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "images": {
+        "total": 1,
+        "original": 1,
+        "stock": 0,
+        "uncredited": 0,
+        "details": [
+          {
+            "src": "https://buzz.bournemouth.ac.uk/wp-content/uploads/2026/01/1024px-Wilts__Dorset_bus_1412_HF09_FVT_14_April_2011-800x400.jpg",
+            "classification": "original",
+            "credit": "Chris Sampson"
+          }
+        ]
+      },
+      "embeds": {
+        "video_count": 0,
+        "audio_count": 0,
+        "video_evidence": [],
+        "audio_evidence": []
+      },
+      "warnings": [],
+      "quoted_sources_confirmed": 1,
+      "quoted_sources_possible": 0,
+      "source_evidence_confirmed": [
+        {
+          "name": "Andy Hadley",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
+      "is_breaking_news": false,
+      "is_long_form": false,
+      "word_count_status": "below_minimum",
       "category_normalised": "General News"
     },
     {
