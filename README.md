@@ -28,9 +28,9 @@ Track student journalism output for teaching and editorial feedback.
 
 | File | Contents | Updated By |
 |------|----------|------------|
-| `metrics_verified.json` | Article metadata, SEI scores, source counts | SEI workflow |
-| `metrics_ssi.json` | SSI scores and components | SSI workflow |
-| `metrics_bns.json` | BNS scores (BREAKING articles only) | BNS workflow (planned) |
+| `metrics_sei.json` | Base article data + SEI scores | sei_daily.yml (1pm, 4pm) |
+| `metrics_ssi.json` | SSI scores and components | ssi_daily.yml |
+| `metrics_bns.json` | BNS scores (BREAKING only) | TBD |
 
 **Why separate files?** See [ADR-001: Data Architecture](docs/decisions/001-data-architecture.md)
 

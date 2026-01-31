@@ -14,9 +14,9 @@ BUzz Metrics calculates multiple indices (SEI, SSI, BNS) for student journalism 
 
 | File | Contents |
 |------|----------|
-| `metrics_verified.json` | Article metadata, SEI scores, source counts |
+| `metrics_sei.json` | Base article data + SEI scores |
 | `metrics_ssi.json` | SSI scores and components |
-| `metrics_bns.json` | BNS scores (BREAKING articles only) |
+| `metrics_bns.json` | BNS scores (BREAKING only) |
 
 ## Rationale
 
