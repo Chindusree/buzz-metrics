@@ -1,4 +1,194 @@
 {
-  "last_updated": "2026-01-31T15:30:00Z",
-  "articles": []
+  "last_updated": "2026-01-31T18:00:00Z",
+  "methodology_version": "1.3",
+  "summary": {
+    "aggregate_score": 70,
+    "eligible_stories": 13,
+    "breakdown": {
+      "owned": 4,
+      "first_dominant": 2,
+      "first_close": 3,
+      "behind_close": 2,
+      "behind_clear": 2,
+      "not_eligible": 4
+    },
+    "total_points": 910
+  },
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-helicopter-search-for-missing-49-year-old-man/",
+      "headline": "Dorset Police launch helicopter search for missing 49 year-old man",
+      "bns_score": null,
+      "bns_verdict": "OWNED",
+      "bns_tier": "OWNED",
+      "bns_points": 100,
+      "bns_comparisons": null,
+      "notes": "No BBC/Echo coverage"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/more-details-on-attack-at-dorchester-town/",
+      "headline": "More details on attack at Dorchester Town",
+      "bns_score": null,
+      "bns_verdict": "OWNED",
+      "bns_tier": "OWNED",
+      "bns_points": 100,
+      "bns_comparisons": null,
+      "notes": "No pro coverage"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/previously-wanted-christchurch-man-arrested/",
+      "headline": "Previously wanted Christchurch man arrested",
+      "bns_score": null,
+      "bns_verdict": "OWNED",
+      "bns_tier": "OWNED",
+      "bns_points": 100,
+      "bns_comparisons": null,
+      "notes": "No BBC/Echo coverage"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouths-iranian-community-responds-to-trumps-threats/",
+      "headline": "Bournemouth's Iranian community responds to Trump's threats",
+      "bns_score": null,
+      "bns_verdict": "OWNED",
+      "bns_tier": "OWNED",
+      "bns_points": 100,
+      "bns_comparisons": null,
+      "notes": "Original local interview"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/vitality-stadium-expansion-approved/",
+      "headline": "Vitality Stadium expansion approved",
+      "bns_score": 92,
+      "bns_verdict": "FIRST",
+      "bns_tier": "FIRST_DOMINANT",
+      "bns_points": 85,
+      "bns_comparisons": {"yahoo": {"minutes_diff": 92}},
+      "notes": "Live blog from BCP Council meeting"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-confirm-rayan-signing/",
+      "headline": "AFC Bournemouth confirm Rayan signing",
+      "bns_score": 31,
+      "bns_verdict": "FIRST",
+      "bns_tier": "FIRST_DOMINANT",
+      "bns_points": 85,
+      "bns_comparisons": {"bbc": {"minutes_diff": 31}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/romain-faivre-joins-auxerre-on-loan/",
+      "headline": "Romain Faivre joins Auxerre on loan",
+      "bns_score": 12,
+      "bns_verdict": "FIRST",
+      "bns_tier": "FIRST_CLOSE",
+      "bns_points": 70,
+      "bns_comparisons": {"yahoo": {"minutes_diff": 12}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-confirms-mandas-signing/",
+      "headline": "AFC Bournemouth confirms Mandas signing",
+      "bns_score": 2,
+      "bns_verdict": "FIRST",
+      "bns_tier": "FIRST_CLOSE",
+      "bns_points": 70,
+      "bns_comparisons": {"yahoo": {"minutes_diff": 2}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-agree-deal-in-principle-for-rayan/",
+      "headline": "Cherries agree deal in principle for Rayan",
+      "bns_score": null,
+      "bns_verdict": "FIRST",
+      "bns_tier": "FIRST_CLOSE",
+      "bns_points": 70,
+      "bns_comparisons": null,
+      "benefit_of_doubt": true,
+      "notes": "Benefit of doubt (local story, pro time unavailable)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/missing-poole-woman-found/",
+      "headline": "Missing Poole woman found",
+      "bns_score": -1,
+      "bns_verdict": "BEHIND",
+      "bns_tier": "BEHIND_CLOSE",
+      "bns_points": 40,
+      "bns_comparisons": {"echo": {"minutes_diff": -1}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/drunk-driver-who-hit-bashley-star-jailed/",
+      "headline": "Drunk driver who hit Bashley star jailed",
+      "bns_score": -10,
+      "bns_verdict": "BEHIND",
+      "bns_tier": "BEHIND_CLOSE",
+      "bns_points": 40,
+      "bns_comparisons": {"yahoo": {"minutes_diff": -10}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-fire-stations-at-risk-of-closure/",
+      "headline": "Dorset Fire Stations at risk of closure",
+      "bns_score": -35,
+      "bns_verdict": "BEHIND",
+      "bns_tier": "BEHIND_CLEAR",
+      "bns_points": 25,
+      "bns_comparisons": {"salisbury_journal": {"minutes_diff": -35}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/manchester-united-appoint-carrick/",
+      "headline": "Manchester United appoint Carrick",
+      "bns_score": -55,
+      "bns_verdict": "BEHIND",
+      "bns_tier": "BEHIND_CLEAR",
+      "bns_points": 25,
+      "bns_comparisons": {"sky": {"minutes_diff": -55}},
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/carrick-agrees-to-man-united-job/",
+      "headline": "Carrick agrees to Man United job",
+      "bns_score": null,
+      "bns_verdict": "NOT_ELIGIBLE",
+      "bns_tier": null,
+      "bns_points": null,
+      "bns_comparisons": null,
+      "exempt_reason": "Wire credited",
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/glasner-confirms-guehi-departure/",
+      "headline": "Glasner confirms Guehi departure",
+      "bns_score": null,
+      "bns_verdict": "NOT_ELIGIBLE",
+      "bns_tier": null,
+      "bns_points": null,
+      "bns_comparisons": null,
+      "exempt_reason": "Press conference",
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/glasner-set-to-leave-palace/",
+      "headline": "Glasner set to leave Palace",
+      "bns_score": null,
+      "bns_verdict": "NOT_ELIGIBLE",
+      "bns_tier": null,
+      "bns_points": null,
+      "bns_comparisons": null,
+      "exempt_reason": "Press conference",
+      "notes": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/yellow-rain-warning-for-dorset/",
+      "headline": "Yellow rain warning for Dorset",
+      "bns_score": null,
+      "bns_verdict": "NOT_ELIGIBLE",
+      "bns_tier": null,
+      "bns_points": null,
+      "bns_comparisons": null,
+      "exempt_reason": "Met Office announcement",
+      "notes": null
+    }
+  ]
 }
