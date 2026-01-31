@@ -901,11 +901,64 @@
 <div class="modal-overlay" id="bnsModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">Breaking News Score</h3>
+            <h3 class="modal-title">How We Calculate BNS</h3>
             <button class="modal-close" onclick="closeBNSModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>[Placeholder: BNS methodology will go here]</p>
+            <p>In journalism, speed matters. Audiences increasingly encounter news through social feeds where the first credible report captures attention. BNS asks: when students attempt breaking news, do they reach audiences before or after professional outlets?</p>
+
+            <p>We compared BUzz's BREAKING stories against coverage from BBC, Bournemouth Echo, Sky Sports, Yahoo, and other relevant professional outlets. Publication timestamps were recorded and the difference calculated in minutes.</p>
+
+            <p><strong>Stories were classified by outcome:</strong></p>
+
+            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>OWNED</strong> — No professional outlet covered the story. BUzz served an audience no one else did.</p>
+
+            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>FIRST</strong> — BUzz published before professionals. We distinguish dominant margins (30+ minutes) from close contests.</p>
+
+            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>BEHIND</strong> — Professionals were faster. We distinguish near-misses from clear lags.</p>
+
+            <p>Points reward both speed and initiative. OWNED scores highest because identifying stories professionals overlook requires editorial judgment — not just fast fingers.</p>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #edeae3;">
+                        <th style="text-align: left; padding: 0.5rem; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600;">Verdict</th>
+                        <th style="text-align: right; padding: 0.5rem; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600;">Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #f5f5f5;">
+                        <td style="padding: 0.5rem;">OWNED</td>
+                        <td style="text-align: right; padding: 0.5rem;">100</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #f5f5f5;">
+                        <td style="padding: 0.5rem;">FIRST (dominant)</td>
+                        <td style="text-align: right; padding: 0.5rem;">85</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #f5f5f5;">
+                        <td style="padding: 0.5rem;">FIRST (close)</td>
+                        <td style="text-align: right; padding: 0.5rem;">70</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #f5f5f5;">
+                        <td style="padding: 0.5rem;">BEHIND (close)</td>
+                        <td style="text-align: right; padding: 0.5rem;">40</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem;">BEHIND (clear)</td>
+                        <td style="text-align: right; padding: 0.5rem;">25</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Wire rewrites, press conferences, and simultaneous official releases are excluded; the competitive conditions did not apply.</p>
+
+            <p><strong>BNS = Σ Points ÷ Eligible Stories</strong></p>
+
+            <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>Example:</strong> January 2026: Of 17 BREAKING stories, 13 were eligible. Four OWNED, five FIRST, four BEHIND. Total: 910 points.<br>BNS = 910 ÷ 13 = 70</p>
+
+            <p>Limitations: Professional timestamps sourced via search; niche or paywalled coverage may be missed.</p>
+
+            <p><em>Full methodology paper forthcoming.</em></p>
         </div>
     </div>
 </div>
@@ -918,19 +971,18 @@
         try {
             console.log('=== STEP 2: Loading data and wiring hero stats ===');
 
-            // Fetch both SEI and SSI data
-            const [seiResponse, ssiResponse] = await Promise.all([
-                fetch('./metrics_sei.json'),
-                fetch('./metrics_ssi.json')
+            // Fetch SEI, SSI, and BNS data
+            const [seiData, ssiData, bnsData] = await Promise.all([
+                fetch('./metrics_sei.json').then(r => r.json()),
+                fetch('./metrics_ssi.json').then(r => r.json()),
+                fetch('./metrics_bns.json').then(r => r.json()).catch(() => ({ summary: null, articles: [] }))
             ]);
-
-            const seiData = await seiResponse.json();
-            const ssiData = await ssiResponse.json();
 
             // Merge SSI scores into SEI data by matching article URLs
             const ssiMap = new Map(ssiData.articles.map(a => [a.url, a]));
             metricsData = {
                 ...seiData,
+                bnsData: bnsData, // Store BNS data at top level
                 articles: seiData.articles.map(article => ({
                     ...article,
                     ssi_score: ssiMap.get(article.url)?.ssi_score,
@@ -1388,15 +1440,18 @@
 
             console.log('SSI scores:', { overall: ssiMean, news: ssiNewsMean, sport: ssiSportMean, articles: ssiArticles.length });
 
-            // BNS - placeholder data (will be replaced with real data later)
-            const bniData = {
-                score: 87,
-                beat_competitors: 3,
-                within_30_mins: 2,
-                stories_tracked: 5
-            };
+            // BNS - real data from metrics_bns.json
+            const bnsScore = metricsData.bnsData?.summary?.aggregate_score ?? '—';
 
-            const bnsBreakdown = { news: 85, sport: 89 };
+            // Build BNS tooltip from breakdown
+            let bnsTooltip = '';
+            if (metricsData.bnsData?.summary?.breakdown) {
+                const b = metricsData.bnsData.summary.breakdown;
+                const owned = b.owned || 0;
+                const first = (b.first_dominant || 0) + (b.first_close || 0);
+                const behind = (b.behind_close || 0) + (b.behind_clear || 0);
+                bnsTooltip = `${owned} OWNED · ${first} FIRST · ${behind} BEHIND`;
+            }
 
             // SSI and BNS side by side - simplified
             html += `
@@ -1412,7 +1467,7 @@
                     <div class="index-card">
                         <h3>Breaking News Scor<span style="color: #ea5a6a;">E</span></h3>
                         <div class="score-container">
-                            <div class="score" data-tooltip="News ${bnsBreakdown.news} · Sport ${bnsBreakdown.sport}">${bniData.score}</div>
+                            <div class="score" data-tooltip="${bnsTooltip}">${bnsScore}</div>
                         </div>
                         <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">E</span> Speed to publish vs BBC & Bournemouth Echo. <a href="#" onclick="showBNSMethodology(event)">See how this is calculated</a>.</p>
                     </div>

@@ -514,6 +514,19 @@ def main():
             'avg_ssi': round(sum(scores) / len(scores), 1) if scores else 0
         }
 
+    # Merge with existing data (if not test mode)
+    all_articles = results  # Start with newly scored articles
+    if not test_mode and existing_ssi:
+        # Add existing articles that weren't re-scored
+        existing_articles = existing_ssi.get('articles', [])
+        new_urls = {a['url'] for a in results}
+        for existing_article in existing_articles:
+            if existing_article['url'] not in new_urls:
+                all_articles.append(existing_article)
+        print()
+        print(f'✓ Merged {len(results)} new + {len(existing_articles) - len(results)} existing = {len(all_articles)} total articles')
+        print()
+
     output = {
         'last_updated': datetime.utcnow().isoformat() + 'Z',
         'ssi_version': '2.1',
@@ -525,7 +538,7 @@ def main():
             'skipped': stats['skipped'],
             'by_category': summary_by_category
         },
-        'articles': results
+        'articles': all_articles
     }
 
     # In test mode, just print results
