@@ -1,24 +1,1516 @@
 {
-  "last_updated": "2026-01-30T19:27:11.696606Z",
+  "last_updated": "2026-01-31T21:31:59.563568Z",
   "ssi_version": "2.1",
   "summary": {
     "total_articles": 312,
-    "scored": 187,
-    "exempt": 40,
-    "errors": 34,
-    "skipped": 51,
+    "scored": 225,
+    "exempt": 46,
+    "errors": 41,
+    "skipped": 261,
     "by_category": {
+      "News": {
+        "count": 218,
+        "avg_ssi": 58.6
+      },
       "Feature": {
         "count": 7,
         "avg_ssi": 68.5
-      },
-      "News": {
-        "count": 180,
-        "avg_ssi": 57.9
       }
     }
   },
   "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/final-midweek-fixtures-could-decide-european-qualification/",
+      "headline": "Final Midweek Fixtures Could Decide European Qualification",
+      "date": "2026-01-28",
+      "word_count": 358,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 37.5,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.5,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-footage-from-west-moors-collision/",
+      "headline": "Police appeal for footage from West Moors collision",
+      "date": "2026-01-28",
+      "word_count": 233,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 50,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.66,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.5,
+        "oi": 0.3
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Sergeant Mike Burt",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": "50-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/walking-football-gives-men-a-new-lease-of-life/",
+      "headline": "Walking football gives men a new lease of life",
+      "date": "2026-01-28",
+      "word_count": 360,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Paul Kybert",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
+      "headline": "AFC Bournemouth owners Black Knight Football Club go global",
+      "date": "2026-01-29",
+      "word_count": 472,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 76.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Bill Foley",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Lo\u00efc F\u00e9ry",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
+      "headline": "BCP Council praised for housing standards",
+      "date": "2026-01-29",
+      "word_count": 545,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 82.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.9,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Councillor Kieron Wilson",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Kelly Deane",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Roger Smithers",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Regulator of Social Housing",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+      "date": "2026-01-29",
+      "word_count": 365,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 76.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.5,
+        "oi": 1.0
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Joe Salmon",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+      "headline": "Collision in Bournemouth: appeals for witnesses and footage",
+      "date": "2026-01-29",
+      "word_count": 200,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 64.1,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.57,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Police Sergeant Paul Hind",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
+      "headline": "Dan Carr\u2019s dream start to life at Poole Town",
+      "date": "2026-01-29",
+      "word_count": 372,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 73.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.25,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Dan Carr",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Andy Rossiter",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dashcam-appeal-for-road-collision-in-poole/",
+      "headline": "Dashcam appeal for road collision in Poole",
+      "date": "2026-01-29",
+      "word_count": 200,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 53.1,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.57,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.25,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Police Constable Dan Blagden",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-council-announce-school-transport-cancellation-due-to-weather/",
+      "headline": "Dorset Council announce school transport cancellation due to weather",
+      "date": "2026-01-29",
+      "word_count": 199,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 45.0,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.57,
+        "sd": 0.33,
+        "ar": 0.55,
+        "cd": 0.5,
+        "oi": 0.3
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Dorset Council",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Tammy Jo",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/driving-ranges-have-positive-implications-for-traditional-golf-courses/",
+      "headline": "Driving ranges have \u2018positive\u2019 implications for traditional golf courses",
+      "date": "2026-01-29",
+      "word_count": 351,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 78.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Luke De-Benedictis",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Fred Parkes",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/firefighter-brigade-union-battles-fire-station-closures/",
+      "headline": "Firefighter Brigade Union battles fire station closures",
+      "date": "2026-01-29",
+      "word_count": 364,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 78.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Barney Hedgecock",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Andy Cole",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
+      "headline": "Five English Clubs Secure Top Eight in Champions League",
+      "date": "2026-01-29",
+      "word_count": 388,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 45.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.25,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Dominic Solanke",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "headline": "Floods continue after Storm Chandra hits Bournemouth",
+      "date": "2026-01-29",
+      "word_count": 75,
+      "quoted_sources": 0,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Snippet (< 150 words)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/game-management-causing-problems-for-afc-bournemouth/",
+      "headline": "Game management causing problems for AFC Bournemouth",
+      "date": "2026-01-29",
+      "word_count": 427,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 40,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.5,
+        "oi": 0.3
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
+      "headline": "Heavy flooding disrupts Chapel Gate sport",
+      "date": "2026-01-29",
+      "word_count": 363,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Ewan Corbett",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Met Office",
+          "ar_score": 0.1,
+          "oi_tier": "WIRE",
+          "oi_score": 0.3
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/inside-black-knight-football-club-and-bill-foley/",
+      "headline": "Inside Black Knight Football Club and Bill Foley",
+      "date": "2026-01-29",
+      "word_count": 451,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 40,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.75,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+      "headline": "Police appeal for information on Boscombe burglary",
+      "date": "2026-01-29",
+      "word_count": 221,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 65.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.63,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Police Constable Sarah Dutton",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-rise-of-nfl-in-london-exclusive-b-j-green-ii-interview/",
+      "headline": "The rise of NFL in\u00a0London \u2013 exclusive B. J. Green II interview",
+      "date": "2026-01-29",
+      "word_count": 451,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 81.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.75,
+        "oi": 1.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "B.J. Green",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-set-to-last-the-week/",
+      "headline": "Train delays set to last the week",
+      "date": "2026-01-29",
+      "word_count": 260,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 50,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.74,
+        "sd": 0.67,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.3
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Lisa",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "One local",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": "50-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "headline": "Why young people should join orchestra",
+      "date": "2026-01-29",
+      "word_count": 655,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 83.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Emily Davis",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Michael Chaffin",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "headline": "AS IT HAPPENED: Andoni Iraola speaks ahead of Wolves trip",
+      "date": "2026-01-30",
+      "word_count": 328,
+      "quoted_sources": 1,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Live blog"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/andoni-iraola-reveals-rayan-could-start-against-wolves/",
+      "headline": "Andoni Iraola reveals Rayan could start against Wolves",
+      "date": "2026-01-30",
+      "word_count": 419,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 73.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Andoni Iraola",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/are-the-young-people-priced-out-of-the-plate/",
+      "headline": "Are the young people priced out of the plate?",
+      "date": "2026-01-30",
+      "word_count": 617,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
+      "headline": "Aston Villa comeback highlights Europa League final league-phase drama",
+      "date": "2026-01-30",
+      "word_count": 394,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 31.2,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.25,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-iran-warns-retaliation-to-us-attack-will-not-be-limited/",
+      "headline": "BREAKING: Bournemouth\u2019s Iranian community responds to Donald Trump\u2019s threats",
+      "date": "2026-01-30",
+      "word_count": 509,
+      "quoted_sources": 3,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Breaking news"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/buzz-news-1430-friday-news-bulletin/",
+      "headline": "BUzz News 14:30 Friday News Bulletin",
+      "date": "2026-01-30",
+      "word_count": 0,
+      "quoted_sources": 0,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Snippet (< 150 words)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boxer-george-liddard-gives-support-to-local-charity/",
+      "headline": "Boxer George Liddard gives support to local charity",
+      "date": "2026-01-30",
+      "word_count": 0,
+      "quoted_sources": 0,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Snippet (< 150 words)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/calls-for-rail-travel-to-be-made-accessible-in-dorset/",
+      "headline": "Calls for rail travel to be made accessible in Dorset",
+      "date": "2026-01-30",
+      "word_count": 519,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 78.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Abbie Harrington",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Tom Hayes",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Neil Duncan-Jordan",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Lord Hendy",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
+      "headline": "Dominic Sadi: From the South Coast to Serbia",
+      "date": "2026-01-30",
+      "word_count": 834,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
+      "headline": "Dorset places in top 10 safest counties",
+      "date": "2026-01-30",
+      "word_count": 360,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 73.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Alfie Lobson",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Chloe Davis",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Tatiana Celikova",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "David Sidwick",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Dorset Police",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Office for National Statistics (ONS)",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "BCP Council",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "headline": "Iford to hold women\u2019s international driving range tournament",
+      "date": "2026-01-30",
+      "word_count": 431,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Katie Dawkins",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
+      "headline": "Inside a Bournemouth F1 fan\u2019s challenge to attend every Grand Prix",
+      "date": "2026-01-30",
+      "word_count": 1945,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/january-complications-forces-wimborne-pub-to-close/",
+      "headline": "January complications forces Wimborne pub to close",
+      "date": "2026-01-30",
+      "word_count": 281,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 70.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.8,
+        "sd": 0.67,
+        "ar": 1.0,
+        "cd": 0.25,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Tim Allen",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Shannon Brown",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-mp-on-her-plans-for-bournemouth-west/",
+      "headline": "Jessica Toale MP on her plans for Bournemouth West",
+      "date": "2026-01-30",
+      "word_count": 737,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.4,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.74,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Jessica Toale",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/keep-your-eyes-on-iris/",
+      "headline": "Keep your eyes on Iris",
+      "date": "2026-01-30",
+      "word_count": 366,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 61.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.25,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Daisy Gill",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/kings-park-stadium-closure-leaves-local-athletes-without-track/",
+      "headline": "Kings Park Stadium closure leaves local athletes without track",
+      "date": "2026-01-30",
+      "word_count": 372,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 77.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.9,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Brooke Ironside",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Rich Herrett",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Tim Hughes",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/look-ahead-this-weekends-non-league-fixtures/",
+      "headline": "LOOK AHEAD: This weekend\u2019s non league fixtures",
+      "date": "2026-01-30",
+      "word_count": 456,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 31.2,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.25,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Jamie Whisken",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-walking-charity-steps-up-to-break-barriers-across-dorset/",
+      "headline": "Local walking charity steps up to break barriers across Dorset.",
+      "date": "2026-01-30",
+      "word_count": 364,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 72.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "David Mitchell",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/19-year-old-award-winning-bartender/",
+      "headline": "Meet the 19-year-old award-winning bartender proving you don\u2019t need to break a bank to make a nice cocktail",
+      "date": "2026-01-30",
+      "word_count": 475,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 71.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Ben Davies",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-person-dies-on-tracks-near-wool-railway-station/",
+      "headline": "Person dies on tracks near Wool Railway Station",
+      "date": "2026-01-30",
+      "word_count": 61,
+      "quoted_sources": 0,
+      "ssi_exempt": true,
+      "ssi_exempt_reason": "Snippet (< 150 words)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "headline": "Q Sports Bar in Boscombe is redeveloping their darts setup.",
+      "date": "2026-01-30",
+      "word_count": 367,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 31.2,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.25,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Mark King",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Lee Hamill",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/richmond-park-bowls-club-celebrate-their-120th-anniversary/",
+      "headline": "Richmond Park Bowls Club celebrate their 120th anniversary",
+      "date": "2026-01-30",
+      "word_count": 401,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Peter Blake",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/spanish-footballer-coach-juan-cano-valverde-triumphs-over-set-backs/",
+      "headline": "Spanish coach Juan Cano Valverde triumphs over set backs",
+      "date": "2026-01-30",
+      "word_count": 877,
+      "quoted_sources": 2,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
+      "headline": "The ground rent trap: Is Starmer\u2019s cap enough?",
+      "date": "2026-01-30",
+      "word_count": 1094,
+      "quoted_sources": 4,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
+      "headline": "Train delays in Dorset continue due to weather",
+      "date": "2026-01-30",
+      "word_count": 292,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 65.0,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.83,
+        "sd": 0.67,
+        "ar": 0.55,
+        "cd": 0.5,
+        "oi": 0.7
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Local",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Lisa",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Met Office",
+          "ar_score": 0.1,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-bus-services-axed/",
+      "headline": "Two Dorset school bus services to be axed",
+      "date": "2026-01-30",
+      "word_count": 333,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 76.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.95,
+        "sd": 0.33,
+        "ar": 1.0,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Cllr Andy Hadley",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-men-jailed-following-investigation-into-robbery-near-dorchester/",
+      "headline": "Two men jailed following investigation into robbery near Dorchester",
+      "date": "2026-01-30",
+      "word_count": 170,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 41.4,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.49,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.25,
+        "oi": 0.3
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Investigations Officer Florence Winstanley",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "headline": "UEFA champions league play off draw fixtures anounced",
+      "date": "2026-01-30",
+      "word_count": 496,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 37.5,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.41,
+        "sd": 0,
+        "ar": null,
+        "cd": 0.5,
+        "oi": 0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
+      "date": "2026-01-30",
+      "word_count": 1072,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "headline": "\u00a3750 million investment sent to transform Bournemouth",
+      "date": "2026-01-30",
+      "word_count": 835,
+      "quoted_sources": 6,
+      "ssi_score": null,
+      "ssi_error": "Shorthand embed with no extractable text"
+    },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
       "headline": "AFC Bournemouth Under-21\u2019s reflect on Charlton victory",

@@ -527,16 +527,47 @@ def main():
         print(f'✓ Merged {len(results)} new + {len(existing_articles) - len(results)} existing = {len(all_articles)} total articles')
         print()
 
+    # Recalculate summary stats from all_articles (not just results)
+    final_stats = {
+        'total_articles': len(all_articles),
+        'scored': 0,
+        'exempt': 0,
+        'errors': 0
+    }
+    final_by_category = {}
+
+    for article in all_articles:
+        if article.get('ssi_exempt'):
+            final_stats['exempt'] += 1
+        elif article.get('ssi_error'):
+            final_stats['errors'] += 1
+        elif article.get('ssi_score') is not None:
+            final_stats['scored'] += 1
+            cat = article.get('ssi_category', 'Unknown')
+            if cat not in final_by_category:
+                final_by_category[cat] = {'scores': [], 'count': 0}
+            final_by_category[cat]['scores'].append(article['ssi_score'])
+            final_by_category[cat]['count'] += 1
+
+    # Calculate category averages
+    summary_by_category_final = {}
+    for cat, data in final_by_category.items():
+        scores = data['scores']
+        summary_by_category_final[cat] = {
+            'count': data['count'],
+            'avg_ssi': round(sum(scores) / len(scores), 1) if scores else 0
+        }
+
     output = {
         'last_updated': datetime.utcnow().isoformat() + 'Z',
         'ssi_version': '2.1',
         'summary': {
-            'total_articles': stats['total'],
-            'scored': stats['scored'],
-            'exempt': stats['exempt'],
-            'errors': stats['errors'],
+            'total_articles': final_stats['total_articles'],
+            'scored': final_stats['scored'],
+            'exempt': final_stats['exempt'],
+            'errors': final_stats['errors'],
             'skipped': stats['skipped'],
-            'by_category': summary_by_category
+            'by_category': summary_by_category_final
         },
         'articles': all_articles
     }
