@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUzz Dashboard Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, serif; background: #f8f6f1; color: #1a1a1a; line-height: 1.5; }
+        a { color: #1a1a1a; text-decoration: underline; text-decoration-color: #ea5a6a; }
+        a:hover { color: #ea5a6a; }
+        /* Header accent bar - coral */
+        .header { background: #1a1a1a; color: white; position: sticky; top: 0; z-index: 100; border-bottom: 3px solid #ea5a6a; }
+        .header-inner { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+        .header-top { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; }
+        .logo { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.5rem; color: #ea5a6a; }
+        .header-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+        .date-select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.4rem 0.75rem; border-radius: 6px; font-size: 0.85rem; }
+        .nav { display: flex; overflow-x: auto; max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+        .nav a { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.75rem 1rem; white-space: nowrap; }
+        .nav a:first-child { padding-left: 0; }
+        .nav a.active { color: white; }
+        .nav a:hover { color: white; }
+        main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
+        .section { margin-bottom: 2.5rem; }
+        .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 2px solid #1a1a1a; }
+        .section-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.4rem; font-weight: 700; }
+        .section-sub { font-size: 0.85rem; color: #767676; }
+        #stories-toggle, #targets-toggle {
+            display: block;
+            text-align: right;
+            padding: 0.4rem 0;
+            font-size: 0.8em;
+            color: #333;
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.2s;
+        }
+        #stories-toggle:hover, #targets-toggle:hover { color: #1a1a1a; }
+        .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .stat-card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .stat-card.featured { grid-column: span 2; background: #1a1a1a; color: white; text-align: center; padding: 1.5rem; }
+        .stat-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1; }
+        .stat-card.featured .stat-value { font-size: 4rem; }
+        .stat-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #767676; margin-top: 0.25rem; }
+        .stat-card.featured .stat-label { color: rgba(255,255,255,0.6); }
+        .stat-detail { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 0.4rem; }
+        .analysis-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        .analysis-grid .card.gender-card { grid-column: span 1; padding: 1.5rem; }
+        .analysis-grid .card.gender-card .gender-row { margin-bottom: 1rem; }
+        .analysis-grid .card.gender-card .gender-track { height: 20px; }
+        .analysis-grid .card.gender-card .gender-label { font-size: 0.85rem; width: 80px; }
+        .analysis-grid .card.gender-card .gender-value { font-size: 0.85rem; width: 70px; }
+        .card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .card-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #767676; margin-bottom: 0.75rem; }
+        .gender-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; }
+        .gender-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.75rem; font-weight: 500; width: 60px; }
+        .gender-track { flex: 1; height: 14px; background: #f0ede6; border-radius: 7px; overflow: hidden; }
+        .gender-bar { height: 100%; border-radius: 7px; }
+        .gender-bar.female { background: #e84a7f; width: 47%; }
+        .gender-bar.male { background: #64748b; width: 53%; }
+        .gender-bar.they { background: #f5734a; width: 0%; }
+        .gender-bar.unknown { background: #9ca3af; width: 0%; }
+        .gender-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.75rem; font-weight: 600; width: 55px; text-align: right; }
+        .gender-note { font-size: 0.6rem; font-style: italic; color: #767676; margin-top: 1.25rem; text-align: left; }
+        .gender-footnote { font-size: 0.6rem; font-style: italic; color: #767676; margin-top: 0.5rem; text-align: left; line-height: 1.4; }
+        .section-item { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid #edeae3; }
+        .section-item:last-child { border-bottom: none; }
+        .section-name { font-weight: 500; font-size: 0.9rem; }
+        .section-meta { font-size: 0.75rem; color: #767676; }
+        .section-count { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.1rem; }
+        .heatmap { display: grid; grid-template-columns: 45px repeat(10, 1fr); gap: 3px; }
+        .hm-header { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.55rem; font-weight: 600; text-align: center; color: #767676; }
+        .hm-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 500; display: flex; align-items: center; }
+        .hm-cell { aspect-ratio: 1; border-radius: 2px; background: #f0ede6; min-height: 14px; }
+        .hm-cell.l1 { background: rgba(234,90,106,0.25); }
+        .hm-cell.l2 { background: rgba(234,90,106,0.5); }
+        .hm-cell.l3 { background: #ea5a6a; }
+        .hm-cell.clickable { cursor: pointer; transition: all 0.2s; }
+        .hm-cell.clickable:hover { filter: brightness(0.85); box-shadow: 0 0 0 1px rgba(26,26,26,0.15); }
+        .hm-legend { display: flex; gap: 0.75rem; margin-top: 0.6rem; font-size: 0.65rem; color: #767676; }
+        .legend-item { display: flex; align-items: center; gap: 0.25rem; }
+        .legend-swatch { width: 10px; height: 10px; border-radius: 2px; }
+        .stories-table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .stories-table th { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #767676; text-align: left; padding: 0.75rem; background: #f8f6f1; border-bottom: 2px solid #edeae3; }
+        .stories-table td { padding: 0.75rem; border-bottom: 1px solid #f8f6f1; font-size: 0.85rem; }
+        .story-headline { font-family: Georgia, serif; font-weight: 500; font-size: 0.95rem; color: #1a1a1a; display: block; margin-bottom: 0.15rem; text-decoration: none; }
+        .story-headline:hover { text-decoration: underline; }
+        .story-author { font-size: 0.75rem; color: #767676; }
+        .story-time { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; }
+        .story-section { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.65rem; font-weight: 500; color: #ea5a6a; }
+        .story-stat { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; }
+        .contributors-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .contrib-card { background: white; border-radius: 6px; padding: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s; }
+        .contrib-card:hover { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .contrib-name { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 0.9rem; }
+        .contrib-meta { font-size: 0.7rem; color: #767676; }
+        .contrib-count { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.5rem; font-weight: 700; color: #ea5a6a; }
+        .toggle-btn { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; padding: 0.4rem 0.75rem; border: 1px solid #edeae3; background: white; border-radius: 6px; margin-right: 0.5rem; margin-bottom: 0.75rem; }
+        .toggle-btn.active { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+        .footer { background: #1a1a1a; color: rgba(255,255,255,0.6); padding: 0.32rem 1.5rem; margin-top: 2rem; }
+        .footer-about { max-width: 800px; margin: 2rem auto; background: #1a1a1a; border-radius: 8px; padding: 0.375rem 2rem; font-size: 0.8rem; line-height: 1.4; }
+        .footer-about h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 0.75rem 0; color: #999; }
+        .footer-about p { font-family: Georgia, serif; margin: 0 0 0.75rem 0; color: #bbb; }
+        .footer-about p:last-child { margin-bottom: 0; }
+        .footer-about a { color: #ddd; text-decoration: none; }
+        .footer-about a:hover { color: #ea5a6a; }
+        .expect-box { background: rgba(255,255,255,0.05); border-radius: 6px; padding: 0.75rem; margin-top: 0.75rem; }
+        .expect-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); margin-bottom: 0.4rem; }
+        .expect-list { list-style: none; font-size: 0.75rem; }
+        .expect-list li { margin-bottom: 0.2rem; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.15); z-index: 1000; }
+        .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
+        .modal-content { background: white; border-radius: 8px; max-width: 600px; width: 90%; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 2px solid #edeae3; }
+        .modal-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.1rem; font-weight: 700; }
+        .modal-close { font-size: 1.5rem; font-weight: 300; color: #767676; cursor: pointer; background: none; border: none; padding: 0; line-height: 1; }
+        .modal-close:hover { color: #1a1a1a; }
+        .modal-body { padding: 1.5rem; overflow-y: auto; }
+        .modal-body p { margin-bottom: 1rem; line-height: 1.6; }
+        .modal-body p:last-child { margin-bottom: 0; }
+        .modal-body ol { margin: 1rem 0; padding-left: 1.5rem; }
+        .modal-body ol li { margin-bottom: 0.75rem; line-height: 1.6; }
+        .modal-body em { font-style: italic; }
+        .modal-body strong { font-weight: 700; }
+        .modal-story { margin-bottom: 1.5rem; }
+        .modal-story:last-child { margin-bottom: 0; }
+        .modal-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
+        .modal-story-headline a { color: #1a1a1a; text-decoration: none; }
+        .modal-story-headline a:hover { text-decoration: underline; }
+        .modal-story-meta { font-size: 0.75rem; color: #767676; }
+        .sources-list { list-style: none; padding: 0; margin: 0; }
+        .sources-list li { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.95rem; padding: 0.5rem 0; border-bottom: 1px solid #edeae3; }
+        .sources-list li:last-child { border-bottom: none; }
+        .sources-list li:before { content: '• '; color: #ea5a6a; font-weight: 700; margin-right: 0.5rem; }
+        .rhythm-story { margin-bottom: 1.25rem; }
+        .rhythm-story:last-child { margin-bottom: 0; }
+        .rhythm-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; line-height: 1.3; }
+        .rhythm-story-headline a { color: #1a1a1a; text-decoration: none; }
+        .rhythm-story-headline a:hover { text-decoration: underline; }
+        .rhythm-story-meta { font-size: 0.75rem; color: #767676; }
+        @media (max-width: 480px) {
+            .header-label { display: none; }
+            .nav a { font-size: 0.7rem; padding: 0.75rem 0.5rem; }
+            .heatmap { grid-template-columns: 38px repeat(10, 1fr); gap: 2px; }
+            .hm-cell { min-height: 20px; }
+            .hm-header { font-size: 0.5rem; }
+            .hm-label { font-size: 0.6rem; }
+            .stories-table { font-size: 0.75rem; }
+            .stories-table th, .stories-table td { padding: 0.5rem 0.35rem; }
+            .stories-table th:nth-child(4), .stories-table td:nth-child(4) { display: none; }
+            .story-headline { font-size: 0.85rem; }
+            .story-author { font-size: 0.7rem; }
+            .story-time { font-size: 0.75rem; }
+            .story-section { font-size: 0.6rem; }
+        }
+        @media (min-width: 640px) {
+            .hero-grid { grid-template-columns: repeat(4, 1fr); }
+            .stat-card.featured { grid-column: span 4; }
+            .analysis-grid { grid-template-columns: repeat(2, 1fr); }
+            .analysis-grid .card.gender-card { grid-column: span 2; }
+            .analysis-grid .card.rhythm-card { grid-column: span 2; }
+            .contributors-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* SEI Unified Box */
+        .sei-unified-box {
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 1rem;
+        }
+        .sei-header {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #767676;
+            margin-bottom: 0.75rem;
+            text-align: left;
+        }
+        .sei-hero-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        .sei-hero-value .sei-total {
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: #767676;
+        }
+        .sei-bar-track {
+            height: 22px;
+            background: #e5e0dc;
+            border-radius: 11px;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+        .sei-bar-fill {
+            height: 100%;
+            background: #333;
+            border-radius: 11px;
+            transition: width 0.3s ease;
+        }
+        .sei-divider {
+            height: 1px;
+            background: #edeae3;
+            margin: 1.5rem 0 0 0;
+        }
+        .sei-bottom-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 1rem;
+        }
+        .sei-compartment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.75rem 1rem;
+        }
+        .sei-compartment:first-child {
+            border-right: 1px solid #edeae3;
+        }
+        .sei-compartment-label {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #767676;
+            margin-bottom: 0.5rem;
+        }
+        .sei-compartment-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #1a1a1a;
+        }
+        .sei-footnote {
+            font-size: 0.6rem;
+            font-style: italic;
+            color: #767676;
+            margin-top: 1rem;
+            text-align: left;
+            line-height: 1.4;
+            padding: 0 1rem;
+        }
+        .sei-footnote a {
+            color: #767676;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sei-footnote a:hover {
+            color: #ea5a6a;
+        }
+
+        /* Index Cards - SEI, SSI, BNI */
+        .index-card {
+            background: white;
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .index-card h3 {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #767676;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            text-align: left;
+        }
+        .index-card .score-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .index-card .score {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1;
+            cursor: pointer;
+            position: relative;
+        }
+        .index-card .score-label {
+            font-family: Georgia, serif;
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 4px;
+            text-align: center;
+        }
+        .index-card .score-subtitle {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 0.625rem;
+            color: #64748b;
+            margin-top: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .index-card .score::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Georgia, serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #1a1a1a;
+            background: #faf9f6;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 8px 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 150ms ease;
+            z-index: 10;
+        }
+        .index-card .score:hover::after {
+            opacity: 1;
+        }
+        .index-card .subtext {
+            font-size: 0.85rem;
+            color: #767676;
+            margin-top: 0.75rem;
+        }
+        .index-card .footnote {
+            font-size: 0.6rem;
+            font-style: italic;
+            color: #767676;
+            margin-top: 1rem;
+            text-align: left;
+            line-height: 1.4;
+        }
+        .index-card .footnote a {
+            color: #767676;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .index-card .footnote a:hover {
+            color: #ea5a6a;
+        }
+
+        /* SEI Sparkline */
+        .sei-sparkline {
+            margin: 1rem 0;
+            height: 100px;
+            position: relative;
+            padding-right: 20px;
+        }
+        .sei-sparkline svg {
+            width: 100%;
+            height: 100%;
+        }
+        .sei-sparkline-line {
+            fill: none;
+            stroke: #ea5a6a;
+            stroke-width: 2.5;
+        }
+        .sei-sparkline-grid {
+            stroke: #e5e5e5;
+            stroke-width: 1;
+        }
+        .sei-sparkline-dot {
+            fill: #ea5a6a;
+            cursor: pointer;
+        }
+        .sei-sparkline-label {
+            font-family: Georgia, serif;
+            font-size: 11px;
+            fill: #64748b;
+        }
+        .sei-sparkline-tooltip {
+            position: absolute;
+            font-family: Georgia, serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #1a1a1a;
+            background: #faf9f6;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 8px 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 150ms ease;
+            z-index: 10;
+        }
+
+        /* SEI Category Bars - Single Day View */
+        .sei-category-bars {
+            margin: 1rem 0;
+        }
+        .sei-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .sei-bar-row:last-child {
+            margin-bottom: 0;
+        }
+        .sei-bar-label {
+            font-family: Georgia, serif;
+            font-size: 12px;
+            color: #64748b;
+            min-width: 50px;
+        }
+        .sei-bar-track {
+            flex: 1;
+            height: 12px;
+            background: #e5e5e5;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .sei-bar-fill {
+            height: 100%;
+            background: #9ca3af;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        .sei-bar-value {
+            font-family: Georgia, serif;
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 600;
+            min-width: 30px;
+            text-align: right;
+        }
+
+        /* Simplified index cards - SSI and BNS */
+        .indices-row .index-card {
+            min-height: 200px;
+            justify-content: space-between;
+        }
+        .indices-row .index-card .score-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .indices-row .index-card .score {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Refined tooltip on hover */
+        .indices-row .index-card .score::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Georgia, serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #1a1a1a;
+            background: #faf9f6;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 8px 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 150ms ease;
+        }
+        .indices-row .index-card .score:hover::after {
+            opacity: 1;
+        }
+
+        /* Link styling */
+        .indices-row .index-card .footnote a {
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .indices-row .index-card .footnote a:hover {
+            color: #ea5a6a;
+            text-decoration: none;
+        }
+
+        /* House style for index card footnote links (SEI, SSI, BNS) */
+        .index-card .footnote a.index-link {
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .index-card .footnote a.index-link:hover {
+            color: #ea5a6a;
+            text-decoration: none;
+        }
+
+        /* Indices row - SSI and BNS side by side */
+        .indices-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: stretch;
+            grid-column: span 2;
+        }
+        .indices-row .index-card {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <div class="header-top">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="cropped-Buzz-logo-white.png" alt="BUzz" style="height: 32px;">
+                <span class="header-label">Newsday Dashboard</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Showing:</span>
+                <select class="date-select">
+                    <option>Wed, 22 Jan</option>
+                </select>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#glance" class="active">At a glance</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#targets">Targets</a>
+            <a href="#stories">Stories</a>
+            <a href="#contributors">Contributors</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- AT A GLANCE -->
+    <section id="glance" class="section">
+        <div class="section-header">
+            <h2 class="section-title">At a glance</h2>
+            <span class="section-sub">Wednesday's output</span>
+        </div>
+        <div class="hero-grid">
+            <div class="stat-card featured">
+                <div class="stat-value">3,948</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">7</div>
+                <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Quoted Sources</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">19</div>
+                <div class="stat-label">Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Embeds</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANALYSIS -->
+    <section id="analysis" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Analysis</h2>
+        </div>
+
+        <div class="analysis-grid">
+            <!-- Gender -->
+            <div class="card">
+                <h3 class="card-title">Who else<span style="color: #ea5a6a;">?</span></h3>
+                <div class="gender-row">
+                    <span class="gender-label">Women</span>
+                    <div class="gender-track"><div class="gender-bar female"></div></div>
+                    <span class="gender-value">47% (8)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Men</span>
+                    <div class="gender-track"><div class="gender-bar male"></div></div>
+                    <span class="gender-value">53% (9)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Non-binary</span>
+                    <div class="gender-track"><div class="gender-bar unknown"></div></div>
+                    <span class="gender-value">0% (0)</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Unknown</span>
+                    <div class="gender-track"><div class="gender-bar unknown"></div></div>
+                    <span class="gender-value">0% (0)</span>
+                </div>
+                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+            </div>
+
+            <!-- Sections -->
+            <div class="card">
+                <h3 class="card-title">By Section</h3>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">News</div>
+                        <div class="section-meta">2,693 words · 12 sources</div>
+                    </div>
+                    <div class="section-count">4</div>
+                </div>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">Sport</div>
+                        <div class="section-meta">843 words · 3 sources</div>
+                    </div>
+                    <div class="section-count">2</div>
+                </div>
+                <div class="section-item">
+                    <div>
+                        <div class="section-name">Lifestyle</div>
+                        <div class="section-meta">412 words · 2 sources</div>
+                    </div>
+                    <div class="section-count">1</div>
+                </div>
+            </div>
+
+            <!-- Heatmap -->
+            <div class="card">
+                <h3 class="card-title">Publication Rhythm</h3>
+                <div class="heatmap">
+                    <div></div>
+                    <div class="hm-header">08</div><div class="hm-header">09</div><div class="hm-header">10</div><div class="hm-header">11</div><div class="hm-header">12</div><div class="hm-header">13</div><div class="hm-header">14</div><div class="hm-header">15</div><div class="hm-header">16</div><div class="hm-header">17</div>
+                    <div class="hm-label">News</div>
+                    <div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell l1"></div><div class="hm-cell"></div>
+                    <div class="hm-label">Sport</div>
+                    <div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell l1"></div><div class="hm-cell"></div><div class="hm-cell"></div><div class="hm-cell"></div>
+                </div>
+                <div class="hm-legend">
+                    <div class="legend-item"><div class="legend-swatch" style="background:#f0ede6;"></div><span>None</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:rgba(196,18,48,0.25);"></div><span>1</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:rgba(196,18,48,0.5);"></div><span>2</span></div>
+                    <div class="legend-item"><div class="legend-swatch" style="background:#ea5a6a;"></div><span>3+</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGETS -->
+    <section id="targets" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Targets</h2>
+            <span class="section-sub">Editorial expectations <span style="color: #ea5a6a; font-size: 0.6rem;">✓</span></span>
+        </div>
+        <div class="card">
+            <table class="stories-table">
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>Stories</th>
+                        <th>First Published</th>
+                        <th>Below 350w</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21 Jan</td>
+                        <td>8/12</td>
+                        <td>09:15 ✓</td>
+                        <td>1</td>
+                        <td>47% W</td>
+                    </tr>
+                    <tr>
+                        <td>20 Jan</td>
+                        <td>12/12 ✓</td>
+                        <td>10:45</td>
+                        <td>2</td>
+                        <td>33% W</td>
+                    </tr>
+                    <tr>
+                        <td>19 Jan</td>
+                        <td>12/12 ✓</td>
+                        <td>08:30 ✓</td>
+                        <td>0 ✓</td>
+                        <td>53% W</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="gender-note" style="margin-top: 0.75rem;"><span style="color: #ea5a6a;">✓</span> = target met. Stories: min 12/day. First published: before 10:00. Word count: min 350 (except match reports). Gender: promote source diversity.</p>
+        </div>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Stories</h2>
+            <span class="section-sub">7 stories</span>
+        </div>
+        <div>
+            <button class="toggle-btn active" data-filter="all">All</button>
+            <button class="toggle-btn" data-filter="news">News</button>
+            <button class="toggle-btn" data-filter="sport">Sport</button>
+        </div>
+        <table class="stories-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Section</th>
+                    <th>Story</th>
+                    <th>Words</th>
+                    <th>Sources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="story-time">09:15</span></td>
+                    <td><span class="story-section">Sport</span></td>
+                    <td><span class="story-headline">AFC Bournemouth secure crucial win</span><span class="story-author">James Mitchell</span></td>
+                    <td><span class="story-stat">487</span></td>
+                    <td><span class="story-stat" style="color:#ea5a6a;">2</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">10:30</span></td>
+                    <td><span class="story-section">News</span></td>
+                    <td><span class="story-headline">Council announces cycling infrastructure</span><span class="story-author">Sarah Chen</span></td>
+                    <td><span class="story-stat">623</span></td>
+                    <td><span class="story-stat" style="color:#ea5a6a;">3</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">11:45</span></td>
+                    <td><span class="story-section">News</span></td>
+                    <td><span class="story-headline">Student mental health sees record demand</span><span class="story-author">Emma Thompson</span></td>
+                    <td><span class="story-stat">891</span></td>
+                    <td><span class="story-stat" style="color:#ea5a6a;">4</span></td>
+                </tr>
+                <tr>
+                    <td><span class="story-time">12:20</span></td>
+                    <td><span class="story-section">Lifestyle</span></td>
+                    <td><span class="story-headline">Local café wins sustainability award</span><span class="story-author">Tom Richards</span></td>
+                    <td><span class="story-stat">412</span></td>
+                    <td><span class="story-stat" style="color:#ea5a6a;">2</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CONTRIBUTORS -->
+    <section id="contributors" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Contributors</h2>
+        </div>
+        <div>
+            <button class="toggle-btn active">Today</button>
+            <button class="toggle-btn">This Week</button>
+        </div>
+        <div class="contributors-grid">
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">James Mitchell</div>
+                    <div class="contrib-meta">1.5 avg sources</div>
+                </div>
+                <div class="contrib-count">2</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Sarah Chen</div>
+                    <div class="contrib-meta">3.0 avg sources</div>
+                </div>
+                <div class="contrib-count">2</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Emma Thompson</div>
+                    <div class="contrib-meta">4.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Tom Richards</div>
+                    <div class="contrib-meta">2.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+            <div class="contrib-card">
+                <div>
+                    <div class="contrib-name">Lucy Adams</div>
+                    <div class="contrib-meta">2.0 avg sources</div>
+                </div>
+                <div class="contrib-count">1</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-about">
+        <h3>About this dashboard</h3>
+        <p>BUzz Metrics is an automated tool for journalism education, being developed at Bournemouth University. This prototype provides real-time quality metrics to support evidence-based editorial feedback for student journalists.</p>
+        <p>Newsrooms typically measure traffic. We want to encourage the next generation of journalists to think beyond clicks — to reflect on whose voices they amplify, how they source their stories, and how better they can serve their audiences. Our approach is informed by journalism research at Bournemouth University and industry best practices from the <a href="https://www.bbc.co.uk/5050" target="_blank">BBC 50:50 Project</a>, the <a href="https://diversitypledge.org/" target="_blank">Diversity Pledge Institute</a> and <a href="https://wan-ifra.org/" target="_blank">WAN-IFRA</a>.</p>
+        <p>We estimate source counts using automated pattern matching and natural language processing. Gender is inferred from first names using the gender-guesser library. All data is drawn from publicly published articles on buzz.bournemouth.ac.uk.</p>
+        <p>The metrics have known limitations. Context matters: a match report might not need quotes; an investigation needs many. Use this data as guidance, to reflect on practice, not as a scorecard.</p>
+    </div>
+</footer>
+
+<!-- Contributor Stories Modal -->
+<div class="modal-overlay" id="contributorModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <button class="modal-close" onclick="closeContributorModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Sources Modal -->
+<div class="modal-overlay" id="sourcesModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Quoted sources</h3>
+            <button class="modal-close" onclick="closeSourcesModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="sourcesModalBody"></div>
+    </div>
+</div>
+
+<!-- Rhythm Modal -->
+<div class="modal-overlay" id="rhythmModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="rhythmModalTitle"></h3>
+            <button class="modal-close" onclick="closeRhythmModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="rhythmModalBody"></div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="seiModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">How We Calculate SEI</h3>
+            <button class="modal-close" onclick="closeSEIModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>SEI measures sourcing integrity across three components:</p>
+
+            <ol>
+                <li><em>Inclusion</em> — proportion of non-male sources quoted, with a penalty for single-source stories</li>
+                <li><em>Structural Agency</em> — whether non-male sources explain 'why' (experts, decision-makers) not just 'what happened'</li>
+                <li><em>Impact Equity</em> — coverage of key stakeholders, penalising 'ghost sources' who should have been contacted</li>
+            </ol>
+
+            <p>Components are weighted by story type:</p>
+
+            <p><strong>SEI = (Inclusion × 0.3) + (Structural Agency × w) + (Impact Equity × (0.7 − w))</strong></p>
+
+            <p>Each story is scored against its own context. Match reports, breaking news, and court reports are exempt.</p>
+
+            <p>Scores: 0–100. Gender inferred from first names; roles classified via AI. All methods have limitations.</p>
+
+            <p><em>Full methodology paper forthcoming.</em></p>
+        </div>
+    </div>
+</div>
+
+<!-- SSI Modal -->
+<div class="modal-overlay" id="ssiModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Story Substance Index</h3>
+            <button class="modal-close" onclick="closeSSIModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>[Placeholder: SSI methodology will go here]</p>
+        </div>
+    </div>
+</div>
+
+<!-- BNS Modal -->
+<div class="modal-overlay" id="bnsModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Breaking News Score</h3>
+            <button class="modal-close" onclick="closeBNSModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>[Placeholder: BNS methodology will go here]</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Step 2: Wire up hero stats + date selector
+    let metricsData = null;
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        try {
+            console.log('=== STEP 2: Loading data and wiring hero stats ===');
+
+            // Fetch both SEI and SSI data
+            const [seiResponse, ssiResponse] = await Promise.all([
+                fetch('./metrics_sei.json'),
+                fetch('./metrics_ssi.json')
+            ]);
+
+            const seiData = await seiResponse.json();
+            const ssiData = await ssiResponse.json();
+
+            // Merge SSI scores into SEI data by matching article URLs
+            const ssiMap = new Map(ssiData.articles.map(a => [a.url, a]));
+            metricsData = {
+                ...seiData,
+                articles: seiData.articles.map(article => ({
+                    ...article,
+                    ssi_score: ssiMap.get(article.url)?.ssi_score,
+                    ssi_exempt: ssiMap.get(article.url)?.ssi_exempt,
+                    ssi_components: ssiMap.get(article.url)?.ssi_components,
+                    ssi_sources: ssiMap.get(article.url)?.ssi_sources
+                }))
+            };
+
+            console.log('✓ Data loaded and merged:', metricsData.articles.length, 'articles');
+
+            // Initialize
+            populateDateSelector();
+            setupContributorsToggle();
+            setupStoriesFilter();
+
+            // Default to most recent date
+            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+            const defaultDate = dates[0];
+            console.log('Default date:', defaultDate);
+
+            document.querySelector('.date-select').value = defaultDate;
+            updateHeroStats(defaultDate);
+
+        } catch (error) {
+            console.error('❌ Error loading data:', error);
+        }
+    });
+
+    function populateDateSelector() {
+        try {
+            const dateSelect = document.querySelector('.date-select');
+            if (!dateSelect) {
+                console.error('Date selector not found!');
+                return;
+            }
+
+            const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
+
+            console.log('Available dates:', dates);
+            console.log('Date selector element:', dateSelect);
+
+            // Clear existing options
+            while (dateSelect.firstChild) {
+                dateSelect.removeChild(dateSelect.firstChild);
+            }
+
+            // Add "All Dates" as first option
+            const allOption = document.createElement('option');
+            allOption.value = 'all';
+            allOption.textContent = 'All Dates';
+            dateSelect.appendChild(allOption);
+            console.log('Added "All Dates" option');
+
+            // Add individual dates
+            dates.forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                const d = new Date(date + 'T00:00:00');
+                option.textContent = d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+                dateSelect.appendChild(option);
+            });
+
+            console.log('Total options in dropdown:', dateSelect.options.length);
+
+            // Add change listener
+            dateSelect.addEventListener('change', (e) => {
+                console.log('Date changed to:', e.target.value);
+                // Reset stories display count when changing dates
+                storiesDisplayCount = storiesInitialLimit;
+                updateHeroStats(e.target.value);
+            });
+        } catch (error) {
+            console.error('Error in populateDateSelector:', error);
+        }
+    }
+
+    function updateHeroStats(selectedDate) {
+        // Filter articles for selected date or show all
+        const filteredArticles = selectedDate === 'all'
+            ? metricsData.articles
+            : metricsData.articles.filter(a => a.date === selectedDate);
+        console.log('Filtered articles for', selectedDate, ':', filteredArticles.length);
+
+        // Calculate totals
+        const totalWords = filteredArticles.reduce((sum, a) => sum + (a.word_count || 0), 0);
+        const totalSources = filteredArticles.reduce((sum, a) => sum + (a.quoted_sources || 0), 0);
+        const totalImages = filteredArticles.reduce((sum, a) => sum + (a.images?.total || 0), 0);
+
+        // Embeds: video_count + audio_count
+        const totalEmbeds = filteredArticles.reduce((sum, a) => {
+            const embeds = a.embeds || {};
+            return sum + (embeds.video_count || 0) + (embeds.audio_count || 0);
+        }, 0);
+
+        const avgSources = filteredArticles.length > 0
+            ? (totalSources / filteredArticles.length).toFixed(1)
+            : '0.0';
+
+        console.log('Stats:', {
+            stories: filteredArticles.length,
+            words: totalWords,
+            sources: totalSources,
+            images: totalImages,
+            embeds: totalEmbeds,
+            avgSources: avgSources
+        });
+
+        // Update hero stats display
+        const heroGrid = document.querySelector('.hero-grid');
+        heroGrid.innerHTML = `
+            <div class="stat-card featured">
+                <div class="stat-value">${totalWords.toLocaleString()}</div>
+                <div class="stat-label">Words</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${filteredArticles.length}</div>
+                <div class="stat-label">Stories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalSources}</div>
+                <div class="stat-label">Quoted Sources</div>
+                <div class="stat-detail">${avgSources} avg per story</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalImages}</div>
+                <div class="stat-label">Images</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${totalEmbeds}</div>
+                <div class="stat-label">Embeds</div>
+            </div>
+        `;
+
+        // Update subtitle
+        if (selectedDate === 'all') {
+            document.querySelector('.section-sub').textContent = 'All dates combined';
+        } else {
+            const d = new Date(selectedDate + 'T00:00:00');
+            document.querySelector('.section-sub').textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+        }
+
+        console.log('✓ Hero stats updated');
+
+        // Step 3: Update Analysis section
+        updateAnalysisSection(filteredArticles, selectedDate);
+    }
+
+    function updateAnalysisSection(filteredArticles, selectedDate) {
+        console.log('=== STEP 3: Updating Analysis section ===');
+
+        // Calculate SEI scores
+        const validArticles = filteredArticles.filter(a =>
+            a.sei_score !== null && a.sei_score !== undefined && !a.sei_exempt
+        );
+
+        const overallSEI = validArticles.length > 0
+            ? Math.round(validArticles.reduce((sum, a) => sum + a.sei_score, 0) / validArticles.length)
+            : 0;
+
+        const newsArticles = validArticles.filter(a =>
+            (a.display_category || '').toLowerCase().includes('news')
+        );
+        const newsSEI = newsArticles.length > 0
+            ? Math.round(newsArticles.reduce((sum, a) => sum + a.sei_score, 0) / newsArticles.length)
+            : '—';
+
+        const sportArticles = validArticles.filter(a =>
+            (a.display_category || '').toLowerCase().includes('sport')
+        );
+        const sportSEI = sportArticles.length > 0
+            ? Math.round(sportArticles.reduce((sum, a) => sum + a.sei_score, 0) / sportArticles.length)
+            : '—';
+
+        console.log('SEI scores:', { overall: overallSEI, news: newsSEI, sport: sportSEI });
+
+        // Gender breakdown
+        const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
+        filteredArticles.forEach(article => {
+            const sources = article.source_evidence || [];
+            sources.forEach(source => {
+                const gender = source.gender || 'unknown';
+                if (genderCounts.hasOwnProperty(gender)) {
+                    genderCounts[gender]++;
+                } else {
+                    genderCounts.unknown++;
+                }
+            });
+        });
+
+        const total = genderCounts.female + genderCounts.male + genderCounts.they + genderCounts.unknown;
+        const femalePercent = total > 0 ? Math.round((genderCounts.female / total) * 100) : 0;
+        const malePercent = total > 0 ? Math.round((genderCounts.male / total) * 100) : 0;
+        const theyPercent = total > 0 ? Math.round((genderCounts.they / total) * 100) : 0;
+        const unknownPercent = total > 0 ? Math.round((genderCounts.unknown / total) * 100) : 0;
+
+        console.log('Gender counts:', genderCounts);
+
+        // By Section breakdown
+        const sectionData = {};
+        filteredArticles.forEach(article => {
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            const section = normalizedCategory || 'Unknown';
+            if (!sectionData[section]) {
+                sectionData[section] = { count: 0, sources: 0 };
+            }
+            sectionData[section].count++;
+            sectionData[section].sources += article.quoted_sources || 0;
+        });
+
+        console.log('Section data:', sectionData);
+
+        // Publication rhythm
+        const rhythmData = {
+            'General News': Array(10).fill(0),
+            'Sport': Array(10).fill(0)
+        };
+
+        filteredArticles.forEach(article => {
+            if (!article.time) return;
+            const hour = parseInt(article.time.split(':')[0]);
+            if (hour < 8 || hour > 17) return;
+
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            if (rhythmData[normalizedCategory]) {
+                rhythmData[normalizedCategory][hour - 8]++;
+            }
+        });
+
+        console.log('Rhythm data:', rhythmData);
+
+        // Build Analysis section HTML
+        const analysisGrid = document.querySelector('.analysis-grid');
+        let html = '';
+
+        // Gender card
+        html += `
+            <div class="card gender-card">
+                <h3 class="card-title">Who else<span style="color: #ea5a6a;">?</span></h3>
+                <div class="gender-row">
+                    <span class="gender-label">Women</span>
+                    <div class="gender-track"><div class="gender-bar female" style="width: ${femalePercent}%"></div></div>
+                    <span class="gender-value">${femalePercent}% (${genderCounts.female})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Men</span>
+                    <div class="gender-track"><div class="gender-bar male" style="width: ${malePercent}%"></div></div>
+                    <span class="gender-value">${malePercent}% (${genderCounts.male})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Non-binary</span>
+                    <div class="gender-track"><div class="gender-bar they" style="width: ${theyPercent}%"></div></div>
+                    <span class="gender-value">${theyPercent}% (${genderCounts.they})</span>
+                </div>
+                <div class="gender-row">
+                    <span class="gender-label">Unclassified</span>
+                    <div class="gender-track"><div class="gender-bar unknown" style="width: ${unknownPercent}%"></div></div>
+                    <span class="gender-value">${unknownPercent}% (${genderCounts.unknown})</span>
+                </div>
+                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+            </div>
+        `;
+
+        // Calculate daily SEI scores for sparkline
+        const dailySEI = {};
+        filteredArticles.forEach(article => {
+            if (article.sei_score !== undefined && article.sei_score !== null) {
+                if (!dailySEI[article.date]) {
+                    dailySEI[article.date] = { total: 0, count: 0 };
+                }
+                dailySEI[article.date].total += article.sei_score;
+                dailySEI[article.date].count++;
+            }
+        });
+
+        const sparklineData = Object.keys(dailySEI)
+            .sort()
+            .map(date => ({
+                date,
+                value: Math.round(dailySEI[date].total / dailySEI[date].count)
+            }));
+
+        const newsdaysCount = sparklineData.length;
+
+        // Calculate overall mean across all dates for single-day subtitle
+        const allArticlesWithSEI = metricsData.articles.filter(a =>
+            a.sei_score !== null && a.sei_score !== undefined && !a.sei_exempt
+        );
+        const overallMeanSEI = allArticlesWithSEI.length > 0
+            ? Math.round(allArticlesWithSEI.reduce((sum, a) => sum + a.sei_score, 0) / allArticlesWithSEI.length)
+            : 0;
+
+        // Generate sparkline SVG with axes and grid
+        const chartWidth = 800;
+        const chartHeight = 100;
+        const paddingLeft = 35;
+        const paddingRight = 30;
+        const paddingTop = 10;
+        const paddingBottom = 25;
+        const plotWidth = chartWidth - paddingLeft - paddingRight;
+        const plotHeight = chartHeight - paddingTop - paddingBottom;
+
+        if (sparklineData.length > 0) {
+            const values = sparklineData.map(d => d.value);
+            const minValue = Math.min(...values);
+            const maxValue = Math.max(...values);
+
+            // Calculate nice round Y-axis values
+            const dataRange = maxValue - minValue;
+            let yTicks;
+
+            if (dataRange <= 10) {
+                // Tight range: use 5-unit increments
+                const baseValue = Math.floor(minValue / 5) * 5;
+                yTicks = [baseValue, baseValue + 5, baseValue + 10, baseValue + 15];
+            } else {
+                // Wider range: use 10-unit increments
+                const baseValue = Math.floor(minValue / 10) * 10;
+                yTicks = [baseValue, baseValue + 10, baseValue + 20, baseValue + 30];
+            }
+
+            const yMin = yTicks[0];
+            const yMax = yTicks[yTicks.length - 1];
+            const yRange = yMax - yMin;
+
+            // Create straight line path
+            let pathD = '';
+            sparklineData.forEach((d, i) => {
+                const x = paddingLeft + (i / (sparklineData.length - 1)) * plotWidth;
+                const y = paddingTop + plotHeight - ((d.value - yMin) / yRange) * plotHeight;
+
+                if (i === 0) {
+                    pathD += `M ${x} ${y}`;
+                } else {
+                    pathD += ` L ${x} ${y}`;
+                }
+            });
+
+            // Generate horizontal grid lines
+            const gridLines = yTicks.map(tickValue => {
+                const y = paddingTop + plotHeight - ((tickValue - yMin) / yRange) * plotHeight;
+                return `<line class="sei-sparkline-grid" x1="${paddingLeft}" y1="${y}" x2="${chartWidth - paddingRight}" y2="${y}" />`;
+            }).join('');
+
+            // Generate Y-axis labels
+            const yLabels = yTicks.map(tickValue => {
+                const y = paddingTop + plotHeight - ((tickValue - yMin) / yRange) * plotHeight;
+                return `<text class="sei-sparkline-label" x="${paddingLeft - 8}" y="${y}" text-anchor="end" dominant-baseline="middle">${tickValue}</text>`;
+            }).join('');
+
+            // Generate X-axis labels
+            const xLabels = sparklineData.map((d, i) => {
+                const x = paddingLeft + (i / (sparklineData.length - 1)) * plotWidth;
+                const dateObj = new Date(d.date);
+                const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).replace(',', '');
+                return `<text class="sei-sparkline-label" x="${x}" y="${chartHeight - 5}" text-anchor="middle">${formattedDate}</text>`;
+            }).join('');
+
+            // Generate dots
+            const dots = sparklineData.map((d, i) => {
+                const x = paddingLeft + (i / (sparklineData.length - 1)) * plotWidth;
+                const y = paddingTop + plotHeight - ((d.value - yMin) / yRange) * plotHeight;
+                return `<circle class="sei-sparkline-dot" cx="${x}" cy="${y}" r="3" data-value="${d.value}" />`;
+            }).join('');
+
+            var sparklineSVG = `
+                <svg viewBox="0 0 ${chartWidth} ${chartHeight}" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100px;">
+                    ${gridLines}
+                    ${yLabels}
+                    ${xLabels}
+                    <path class="sei-sparkline-line" d="${pathD}" />
+                    ${dots}
+                </svg>
+            `;
+        } else {
+            var sparklineSVG = '';
+        }
+
+        // SEI card (full width) - different layouts for single day vs all dates
+        if (selectedDate === 'all') {
+            // All dates: show sparkline
+            html += `
+                <div class="index-card" style="grid-column: span 2;">
+                    <h3>Source Equity Inde<span style="color: #ea5a6a;">X</span></h3>
+                    <div class="score-container">
+                        <div class="score" data-tooltip="Mean across ${newsdaysCount} newsdays · News ${newsSEI} · Sport ${sportSEI}">${overallSEI}</div>
+                    </div>
+                    <div class="sei-sparkline" id="seiSparkline">
+                        ${sparklineSVG}
+                        <div class="sei-sparkline-tooltip" id="seiTooltip"></div>
+                    </div>
+                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Measures sourcing integrity: who is quoted, who has agency, who is missed. <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is calculated</a>.</p>
+                </div>
+            `;
+        } else {
+            // Single day: show category bars
+            const newsPercent = (newsSEI / 100) * 100;
+            const sportPercent = (sportSEI / 100) * 100;
+
+            html += `
+                <div class="index-card" style="grid-column: span 2;">
+                    <h3>Source Equity Inde<span style="color: #ea5a6a;">X</span></h3>
+                    <div class="score-container">
+                        <div class="score">${overallSEI}</div>
+                        <div class="score-subtitle">TODAY</div>
+                    </div>
+                    <div class="sei-category-bars">
+                        <div class="sei-bar-row">
+                            <span class="sei-bar-label">News</span>
+                            <div class="sei-bar-track">
+                                <div class="sei-bar-fill" style="width: ${newsPercent}%"></div>
+                            </div>
+                            <span class="sei-bar-value">${newsSEI}</span>
+                        </div>
+                        <div class="sei-bar-row">
+                            <span class="sei-bar-label">Sport</span>
+                            <div class="sei-bar-track">
+                                <div class="sei-bar-fill" style="width: ${sportPercent}%"></div>
+                            </div>
+                            <span class="sei-bar-value">${sportSEI}</span>
+                        </div>
+                    </div>
+                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Measures sourcing integrity: who is quoted, who has agency, who is missed. <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is calculated</a>.</p>
+                </div>
+            `;
+        }
+
+        // Conditional display: SSI/BNI cards OR Publication Rhythm
+        if (selectedDate === 'all') {
+            // Calculate SSI from real data
+            const ssiArticles = filteredArticles.filter(a =>
+                a.ssi_score !== null && a.ssi_score !== undefined && !a.ssi_exempt
+            );
+
+            const ssiMean = ssiArticles.length > 0
+                ? Math.round(ssiArticles.reduce((sum, a) => sum + a.ssi_score, 0) / ssiArticles.length)
+                : '—';
+
+            // Calculate News/Sport breakdown for SSI
+            const ssiNews = ssiArticles.filter(a =>
+                (a.display_category || '').toLowerCase().includes('news')
+            );
+            const ssiSport = ssiArticles.filter(a =>
+                (a.display_category || '').toLowerCase().includes('sport')
+            );
+
+            const ssiNewsMean = ssiNews.length > 0
+                ? Math.round(ssiNews.reduce((sum, a) => sum + a.ssi_score, 0) / ssiNews.length)
+                : '—';
+            const ssiSportMean = ssiSport.length > 0
+                ? Math.round(ssiSport.reduce((sum, a) => sum + a.ssi_score, 0) / ssiSport.length)
+                : '—';
+
+            console.log('SSI scores:', { overall: ssiMean, news: ssiNewsMean, sport: ssiSportMean, articles: ssiArticles.length });
+
+            // BNS - placeholder data (will be replaced with real data later)
+            const bniData = {
+                score: 87,
+                beat_competitors: 3,
+                within_30_mins: 2,
+                stories_tracked: 5
+            };
+
+            const bnsBreakdown = { news: 85, sport: 89 };
+
+            // SSI and BNS side by side - simplified
+            html += `
+                <div class="indices-row">
+                    <div class="index-card">
+                        <h3>Story Substance Inde<span style="color: #ea5a6a;">X</span></h3>
+                        <div class="score-container">
+                            <div class="score" data-tooltip="News ${ssiNewsMean} · Sport ${ssiSportMean}">${ssiMean}</div>
+                        </div>
+                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Composite metric measuring newsgathering strength. <a href="#" onclick="showSSIMethodology(event)">See how this is calculated</a>.</p>
+                    </div>
+
+                    <div class="index-card">
+                        <h3>Breaking News Scor<span style="color: #ea5a6a;">E</span></h3>
+                        <div class="score-container">
+                            <div class="score" data-tooltip="News ${bnsBreakdown.news} · Sport ${bnsBreakdown.sport}">${bniData.score}</div>
+                        </div>
+                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">E</span> Speed to publish vs BBC & Bournemouth Echo. <a href="#" onclick="showBNSMethodology(event)">See how this is calculated</a>.</p>
+                    </div>
+                </div>
+            `;
+        } else {
+            // Show Publication Rhythm heatmap (single-date view)
+            let heatmapHTML = '<div class="heatmap">';
+            heatmapHTML += '<div class="hm-header"></div>';
+            for (let h = 8; h <= 17; h++) {
+                heatmapHTML += `<div class="hm-header">${h}</div>`;
+            }
+
+            Object.entries(rhythmData).forEach(([section, counts]) => {
+                const displaySection = section === 'General News' ? 'News' : section;
+                heatmapHTML += `<div class="hm-label">${displaySection}</div>`;
+                counts.forEach((count, index) => {
+                    const hour = index + 8; // Hours start at 8
+                    let className = 'hm-cell';
+                    if (count === 1) className += ' l1';
+                    else if (count === 2) className += ' l2';
+                    else if (count >= 3) className += ' l3';
+
+                    // Make cells clickable if count > 0
+                    if (count > 0) {
+                        className += ' clickable';
+                        heatmapHTML += `<div class="${className}" data-section="${section}" data-hour="${hour}" data-count="${count}"></div>`;
+                    } else {
+                        heatmapHTML += `<div class="${className}"></div>`;
+                    }
+                });
+            });
+
+            heatmapHTML += '</div>';
+            heatmapHTML += `
+                <div class="hm-legend">
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: #f0ede6"></div>
+                        <span>None</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: rgba(196,18,48,0.25)"></div>
+                        <span>1 story</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: rgba(196,18,48,0.5)"></div>
+                        <span>2 stories</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-swatch" style="background: #ea5a6a"></div>
+                        <span>3+ stories</span>
+                    </div>
+                </div>
+            `;
+
+            html += `
+                <div class="card rhythm-card">
+                    <h3 class="card-title">Publication Rhythm</h3>
+                    ${heatmapHTML}
+                </div>
+            `;
+        }
+
+        analysisGrid.innerHTML = html;
+
+        // Add sparkline tooltip handlers
+        const sparklineDots = document.querySelectorAll('.sei-sparkline-dot');
+        const tooltip = document.getElementById('seiTooltip');
+        if (tooltip && sparklineDots.length > 0) {
+            sparklineDots.forEach(dot => {
+                dot.addEventListener('mouseenter', (e) => {
+                    const value = e.target.getAttribute('data-value');
+                    tooltip.textContent = value;
+                    tooltip.style.opacity = '1';
+
+                    const rect = e.target.getBoundingClientRect();
+                    const sparklineRect = document.getElementById('seiSparkline').getBoundingClientRect();
+                    tooltip.style.left = (rect.left - sparklineRect.left + rect.width / 2 - tooltip.offsetWidth / 2) + 'px';
+                    tooltip.style.top = (rect.bottom - sparklineRect.top + 8) + 'px';
+                });
+
+                dot.addEventListener('mouseleave', () => {
+                    tooltip.style.opacity = '0';
+                });
+            });
+        }
+
+        // Add click handlers to heatmap cells (only for single-date views)
+        if (selectedDate !== 'all') {
+            document.querySelectorAll('.hm-cell.clickable').forEach(cell => {
+                cell.addEventListener('click', () => {
+                    const section = cell.getAttribute('data-section');
+                    const hour = parseInt(cell.getAttribute('data-hour'));
+                    showRhythmModal(section, hour, filteredArticles);
+                });
+            });
+        }
+
+        console.log('✓ Analysis section updated');
+
+        // Step 4: Update Targets and Stories tables
+        updateTargetsTable(selectedDate);
+        updateStoriesTable(filteredArticles, selectedDate);
+
+        // Step 5: Update Contributors
+        updateContributors(selectedDate);
+    }
+
+    function updateTargetsTable(selectedDate) {
+        console.log('=== STEP 4: Updating Targets table ===');
+
+        const tbody = document.querySelector('#targets .stories-table tbody');
+        tbody.innerHTML = '';
+
+        // Calculate daily stats from articles
+        const dateMap = {};
+        metricsData.articles.forEach(article => {
+            const date = article.date;
+            if (!dateMap[date]) {
+                dateMap[date] = {
+                    date: date,
+                    articles: [],
+                    article_count: 0,
+                    below_minimum_count: 0,
+                    first_publish_time: null
+                };
+            }
+            dateMap[date].articles.push(article);
+            dateMap[date].article_count++;
+
+            // Count below 350 words
+            if (article.word_count < 350) {
+                dateMap[date].below_minimum_count++;
+            }
+
+            // Track first publish time
+            if (article.time) {
+                if (!dateMap[date].first_publish_time || article.time < dateMap[date].first_publish_time) {
+                    dateMap[date].first_publish_time = article.time;
+                }
+            }
+        });
+
+        // Update table header based on selected date
+        const targetsDateHeader = document.querySelector('#targets .stories-table thead th:first-child');
+        if (targetsDateHeader) {
+            targetsDateHeader.textContent = selectedDate === 'all' ? 'ALL DATES' : 'DATE';
+        }
+
+        // Sort dates descending (newest first)
+        const allDates = Object.keys(dateMap).sort().reverse();
+
+        // Show latest 5 dates or all if expanded
+        const datesToShow = targetsExpanded
+            ? allDates
+            : allDates.slice(0, targetsCollapsedLimit);
+
+        datesToShow.forEach(date => {
+            const dayData = dateMap[date];
+            const dayArticles = dayData.articles;
+
+            // Calculate gender breakdown
+            const genderCounts = { female: 0, male: 0, they: 0, unknown: 0 };
+            dayArticles.forEach(article => {
+                (article.source_evidence || []).forEach(source => {
+                    const gender = source.gender || 'unknown';
+                    if (genderCounts.hasOwnProperty(gender)) genderCounts[gender]++;
+                    else genderCounts.unknown++;
+                });
+            });
+
+            const totalGender = genderCounts.female + genderCounts.male + genderCounts.they;
+            const womenPercent = totalGender > 0 ? Math.round((genderCounts.female / totalGender) * 100) : 0;
+
+            const d = new Date(date + 'T00:00:00');
+            const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
+
+            const storiesTarget = dayData.article_count >= 12 ? '<span style="color: #ea5a6a;">✓</span>' : '';
+
+            let firstPubDisplay = dayData.first_publish_time || '';
+            if (dayData.first_publish_time) {
+                const [h, m] = dayData.first_publish_time.split(':').map(Number);
+                const minutes = h * 60 + m;
+                if (minutes < 600) firstPubDisplay += ' <span style="color: #ea5a6a;">✓</span>';
+            }
+
+            const belowTarget = dayData.below_minimum_count === 0 ? '<span style="color: #ea5a6a;">✓</span>' : '';
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${dateStr}</td>
+                <td>${dayData.article_count} ${storiesTarget}</td>
+                <td>${firstPubDisplay}</td>
+                <td>${dayData.below_minimum_count} ${belowTarget}</td>
+                <td>${womenPercent}% W</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        // Add/update toggle
+        updateTargetsToggle(allDates.length);
+
+        console.log('✓ Targets table updated');
+    }
+
+    function updateTargetsToggle(totalCount) {
+        // Remove existing toggle if present
+        const existingToggle = document.querySelector('#targets-toggle');
+        if (existingToggle) {
+            existingToggle.remove();
+        }
+
+        // Only show toggle if there are more than 5 dates
+        if (totalCount <= targetsCollapsedLimit) return;
+
+        // Create toggle at bottom of targets section
+        const targetsSection = document.querySelector('#targets');
+        const toggle = document.createElement('div');
+        toggle.id = 'targets-toggle';
+        toggle.textContent = targetsExpanded ? '▲ less' : '▼ more';
+
+        // Add click handler
+        toggle.addEventListener('click', () => {
+            targetsExpanded = !targetsExpanded;
+            const selectedDate = document.querySelector('.date-select').value;
+            updateHeroStats(selectedDate);
+        });
+
+        targetsSection.appendChild(toggle);
+    }
+
+    // Global state for stories filtering and incremental loading
+    let currentStoriesFilter = 'all';
+    let storiesDisplayCount = 10; // Start with 10
+    const storiesInitialLimit = 10;
+    const storiesIncrementSize = 25;
+
+    // Global state for targets table expand/collapse
+    let targetsExpanded = false;
+    const targetsCollapsedLimit = 5;
+
+    function updateStoriesTable(filteredArticles, selectedDate) {
+        console.log('=== STEP 4: Updating Stories table ===');
+        console.log('Input articles:', filteredArticles.length);
+        console.log('Current filter:', currentStoriesFilter);
+        console.log('Selected date:', selectedDate);
+
+        // Apply section filter
+        let articlesToShow = filteredArticles;
+        if (currentStoriesFilter !== 'all') {
+            articlesToShow = filteredArticles.filter(article => {
+                const category = article.display_category || 'Unknown';
+                // Normalize both "News" and "General News" to match "news" filter
+                const normalizedCategory = (category === 'General News' || category === 'News') ? 'news' : category.toLowerCase();
+                return normalizedCategory === currentStoriesFilter.toLowerCase();
+            });
+        }
+
+        console.log('After filter:', articlesToShow.length);
+
+        // Sort by date (newest first) when "All Dates", otherwise by time
+        const sortedArticles = [...articlesToShow].sort((a, b) => {
+            if (selectedDate === 'all') {
+                // Sort by date, then time
+                const dateCompare = (b.date || '').localeCompare(a.date || '');
+                if (dateCompare !== 0) return dateCompare;
+                return (b.time || '00:00').localeCompare(a.time || '00:00');
+            } else {
+                // Sort by time only
+                const timeA = a.time || '00:00';
+                const timeB = b.time || '00:00';
+                return timeB.localeCompare(timeA);
+            }
+        });
+
+        console.log('Sorted articles:', sortedArticles.length);
+
+        // Update table header (TIME vs DATE)
+        const timeHeader = document.querySelector('#stories .stories-table thead th:first-child');
+        if (timeHeader) {
+            timeHeader.textContent = selectedDate === 'all' ? 'Date' : 'Time';
+        }
+
+        // Determine how many to show based on current display count
+        const articlesToDisplay = sortedArticles.slice(0, storiesDisplayCount);
+
+        // Update table body
+        const tbody = document.querySelector('#stories .stories-table tbody');
+        tbody.innerHTML = '';
+
+        articlesToDisplay.forEach(article => {
+            const row = document.createElement('tr');
+            const section = (article.display_category === 'General News' ? 'News' : article.display_category) || 'Unknown';
+            const author = article.author || 'Unknown';
+
+            // Show date or time based on selectedDate
+            let timeOrDateDisplay;
+            if (selectedDate === 'all') {
+                // Show date in "DD Mon" format (e.g., "13 Jan")
+                const d = new Date(article.date + 'T00:00:00');
+                timeOrDateDisplay = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
+            } else {
+                // Show time
+                timeOrDateDisplay = article.time || 'N/A';
+            }
+
+            const words = (article.word_count || 0).toLocaleString();
+            const sources = article.quoted_sources || 0;
+
+            row.innerHTML = `
+                <td class="story-time">${timeOrDateDisplay}</td>
+                <td><span class="story-section">${section}</span></td>
+                <td>
+                    <a href="${article.url}" target="_blank" class="story-headline">${article.headline}</a>
+                    <div class="story-author">${author}</div>
+                </td>
+                <td class="story-stat">${words}</td>
+                <td class="story-stat" style="cursor: pointer; color: ${sources > 0 ? '#ea5a6a' : 'inherit'};">${sources}</td>
+            `;
+
+            // Add click handler to sources count if > 0
+            if (sources > 0) {
+                const sourcesCell = row.querySelector('td:last-child');
+                sourcesCell.addEventListener('click', () => {
+                    showSourcesModal(article);
+                });
+            }
+
+            tbody.appendChild(row);
+        });
+
+        // Update stories count in subtitle
+        const subtitle = document.querySelector('#stories .section-sub');
+        if (subtitle) {
+            subtitle.textContent = `${sortedArticles.length} ${sortedArticles.length === 1 ? 'story' : 'stories'}`;
+        }
+
+        // Update toggle text in header
+        updateStoriesToggle(sortedArticles.length);
+
+        console.log('✓ Stories table updated');
+    }
+
+    function updateStoriesToggle(totalCount) {
+        // Remove existing toggle if present
+        const existingToggle = document.querySelector('#stories-toggle');
+        if (existingToggle) {
+            existingToggle.remove();
+        }
+
+        // Only show toggle if there are more than initial limit (10 stories)
+        if (totalCount <= storiesInitialLimit) return;
+
+        // Create toggle at bottom of stories section
+        const storiesSection = document.querySelector('#stories');
+        const toggle = document.createElement('div');
+        toggle.id = 'stories-toggle';
+
+        // Determine if we're showing all or if there's more to show
+        const isShowingAll = storiesDisplayCount >= totalCount;
+        toggle.textContent = isShowingAll ? '▲ less' : '▼ more';
+
+        // Add click handler
+        toggle.addEventListener('click', () => {
+            if (isShowingAll) {
+                // Collapse back to initial 10
+                storiesDisplayCount = storiesInitialLimit;
+            } else {
+                // Increment by 25 (but not beyond total)
+                storiesDisplayCount = Math.min(storiesDisplayCount + storiesIncrementSize, totalCount);
+            }
+
+            const selectedDate = document.querySelector('.date-select').value;
+            updateHeroStats(selectedDate);
+        });
+
+        storiesSection.appendChild(toggle);
+    }
+
+    function updateContributors(selectedDate) {
+        console.log('=== STEP 5: Updating Contributors ===');
+
+        let articlesToUse = [];
+        const currentView = document.querySelector('#contributors .toggle-btn.active')?.textContent || 'Today';
+
+        // When "All Dates" is selected, show all contributors
+        if (selectedDate === 'all') {
+            articlesToUse = metricsData.articles;
+        } else if (currentView === 'Today') {
+            articlesToUse = metricsData.articles.filter(a => a.date === selectedDate);
+        } else {
+            // This Week: last 7 days ending on selectedDate
+            const endDate = new Date(selectedDate + 'T00:00:00');
+            const startDate = new Date(endDate);
+            startDate.setDate(startDate.getDate() - 6);
+
+            articlesToUse = metricsData.articles.filter(a => {
+                const articleDate = new Date(a.date + 'T00:00:00');
+                return articleDate >= startDate && articleDate <= endDate;
+            });
+        }
+
+        console.log('Contributors view:', currentView, 'Articles:', articlesToUse.length);
+
+        // Generic bylines to filter out
+        const genericBylines = ['Editor Blue', 'Editor Green', 'Editor Red', 'Editor', 'BUzz', 'Unknown', 'Sub Editor'];
+
+        // Aggregate by author
+        const contributorData = {};
+        articlesToUse.forEach(article => {
+            const author = article.author || 'Unknown';
+
+            // Filter out generic bylines and names starting with "Editor"
+            if (genericBylines.includes(author) || author.startsWith('Editor')) {
+                return;
+            }
+
+            if (!contributorData[author]) {
+                contributorData[author] = { count: 0, totalSources: 0 };
+            }
+            contributorData[author].count++;
+            contributorData[author].totalSources += article.quoted_sources || 0;
+        });
+
+        // Sort by story count descending - show ALL contributors
+        const sorted = Object.entries(contributorData)
+            .map(([name, data]) => {
+                const totalSources = data.totalSources;
+                const displayMeta = totalSources === 0 ? '' : `${totalSources} ${totalSources === 1 ? 'source' : 'sources'}`;
+
+                return {
+                    name,
+                    count: data.count,
+                    displayMeta
+                };
+            })
+            .sort((a, b) => b.count - a.count);
+
+        console.log('Contributors (filtered):', sorted.length);
+
+        // Update display - show ALL contributors (no limit)
+        const container = document.querySelector('.contributors-grid');
+        container.innerHTML = '';
+
+        sorted.forEach(contributor => {
+            const card = document.createElement('div');
+            card.className = 'contrib-card';
+            card.innerHTML = `
+                <div>
+                    <div class="contrib-name">${contributor.name}</div>
+                    <div class="contrib-meta">${contributor.displayMeta}</div>
+                </div>
+                <div class="contrib-count">${contributor.count}</div>
+            `;
+
+            // Add click handler to entire card
+            card.addEventListener('click', () => {
+                showContributorStories(contributor.name, articlesToUse);
+            });
+
+            container.appendChild(card);
+        });
+
+        console.log('✓ Contributors updated');
+    }
+
+    // Setup toggle button handlers on load
+    function setupContributorsToggle() {
+        const toggleButtons = document.querySelectorAll('#contributors .toggle-btn');
+        toggleButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Update active state
+                toggleButtons.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Update contributors with current selected date
+                const selectedDate = document.querySelector('.date-select').value;
+                updateContributors(selectedDate);
+            });
+        });
+    }
+
+    // Setup stories filter toggle buttons
+    function setupStoriesFilter() {
+        const filterButtons = document.querySelectorAll('#stories .toggle-btn');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                // Update active state
+                filterButtons.forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Update filter and reset to initial 10 stories
+                currentStoriesFilter = e.target.getAttribute('data-filter');
+                storiesDisplayCount = storiesInitialLimit;
+
+                // Refresh stories table
+                const selectedDate = document.querySelector('.date-select').value;
+                updateHeroStats(selectedDate);
+            });
+        });
+    }
+
+    // Contributor stories modal functions
+    function showContributorStories(authorName, articlesPool) {
+        console.log('Showing stories for:', authorName);
+
+        // Filter articles by author
+        const authorArticles = articlesPool.filter(a => a.author === authorName);
+
+        // Sort by time (earliest first)
+        authorArticles.sort((a, b) => {
+            const timeA = a.time || '23:59';
+            const timeB = b.time || '23:59';
+            return timeA.localeCompare(timeB);
+        });
+
+        // Update modal content
+        document.getElementById('modalTitle').textContent = `${authorName}'s stories`;
+
+        const modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = '';
+
+        authorArticles.forEach(article => {
+            const date = new Date(article.date + 'T00:00:00');
+            const dateStr = date.getDate() + ' ' + date.toLocaleDateString('en-GB', { month: 'short' });
+            const time = article.time || 'N/A';
+            const words = article.word_count || 0;
+            const sources = article.quoted_sources || 0;
+
+            const storyDiv = document.createElement('div');
+            storyDiv.className = 'modal-story';
+            storyDiv.innerHTML = `
+                <div class="modal-story-headline">
+                    <a href="${article.url}" target="_blank">${article.headline}</a>
+                </div>
+                <div class="modal-story-meta">
+                    ${dateStr}, ${time} · ${words} words · ${sources} ${sources === 1 ? 'source' : 'sources'}
+                </div>
+            `;
+            modalBody.appendChild(storyDiv);
+        });
+
+        // Show modal
+        document.getElementById('contributorModal').classList.add('active');
+    }
+
+    function closeContributorModal() {
+        document.getElementById('contributorModal').classList.remove('active');
+    }
+
+    // Close modal on overlay click
+    document.getElementById('contributorModal').addEventListener('click', (e) => {
+        if (e.target.id === 'contributorModal') {
+            closeContributorModal();
+        }
+    });
+
+    // Sources modal functions
+    function showSourcesModal(article) {
+        const sources = article.source_evidence || [];
+
+        if (sources.length === 0) return;
+
+        const modalBody = document.getElementById('sourcesModalBody');
+        modalBody.innerHTML = '';
+
+        const ul = document.createElement('ul');
+        ul.className = 'sources-list';
+
+        sources.forEach(source => {
+            const li = document.createElement('li');
+            li.textContent = source.name;
+            ul.appendChild(li);
+        });
+
+        modalBody.appendChild(ul);
+        document.getElementById('sourcesModal').classList.add('active');
+    }
+
+    function closeSourcesModal() {
+        document.getElementById('sourcesModal').classList.remove('active');
+    }
+
+    // Close sources modal on overlay click
+    document.getElementById('sourcesModal').addEventListener('click', (e) => {
+        if (e.target.id === 'sourcesModal') {
+            closeSourcesModal();
+        }
+    });
+
+    // Rhythm modal functions
+    function showRhythmModal(section, hour, articlesPool) {
+        // Filter articles by section and hour
+        const hourArticles = articlesPool.filter(article => {
+            if (!article.time) return false;
+            const articleHour = parseInt(article.time.split(':')[0]);
+            // Normalize category names
+            const normalizedCategory = article.display_category === 'News' ? 'General News' : article.display_category;
+            return normalizedCategory === section && articleHour === hour;
+        });
+
+        if (hourArticles.length === 0) return;
+
+        // Format hour range for title
+        const hourEnd = (hour + 1).toString().padStart(2, '0');
+        const hourStart = hour.toString().padStart(2, '0');
+        const displaySection = section === 'General News' ? 'News' : section;
+        const title = `${displaySection} · ${hourStart}:00–${hourEnd}:59`;
+
+        document.getElementById('rhythmModalTitle').textContent = title;
+
+        const modalBody = document.getElementById('rhythmModalBody');
+        modalBody.innerHTML = '';
+
+        hourArticles.forEach(article => {
+            const author = article.author || 'Unknown';
+            const words = article.word_count || 0;
+
+            const storyDiv = document.createElement('div');
+            storyDiv.className = 'rhythm-story';
+            storyDiv.innerHTML = `
+                <div class="rhythm-story-headline">
+                    <a href="${article.url}" target="_blank">${article.headline}</a>
+                </div>
+                <div class="rhythm-story-meta">
+                    ${author} · ${words} words
+                </div>
+            `;
+            modalBody.appendChild(storyDiv);
+        });
+
+        document.getElementById('rhythmModal').classList.add('active');
+    }
+
+    function closeRhythmModal() {
+        document.getElementById('rhythmModal').classList.remove('active');
+    }
+
+    // Close rhythm modal on overlay click
+    document.getElementById('rhythmModal').addEventListener('click', (e) => {
+        if (e.target.id === 'rhythmModal') {
+            closeRhythmModal();
+        }
+    });
+
+    // SEI Methodology modal
+    function showSEIMethodology(event) {
+        event.preventDefault();
+        document.getElementById('seiModal').classList.add('active');
+    }
+
+    function closeSEIModal() {
+        document.getElementById('seiModal').classList.remove('active');
+    }
+
+    function showSSIMethodology(event) {
+        event.preventDefault();
+        document.getElementById('ssiModal').classList.add('active');
+    }
+
+    function closeSSIModal() {
+        document.getElementById('ssiModal').classList.remove('active');
+    }
+
+    function showBNSMethodology(event) {
+        event.preventDefault();
+        document.getElementById('bnsModal').classList.add('active');
+    }
+
+    function closeBNSModal() {
+        document.getElementById('bnsModal').classList.remove('active');
+    }
+
+    // Close modals on overlay click
+    document.getElementById('seiModal').addEventListener('click', (e) => {
+        if (e.target.id === 'seiModal') {
+            closeSEIModal();
+        }
+    });
+
+    document.getElementById('ssiModal').addEventListener('click', (e) => {
+        if (e.target.id === 'ssiModal') {
+            closeSSIModal();
+        }
+    });
+
+    document.getElementById('bnsModal').addEventListener('click', (e) => {
+        if (e.target.id === 'bnsModal') {
+            closeBNSModal();
+        }
+    });
+</script>
+
+</body>
+</html>

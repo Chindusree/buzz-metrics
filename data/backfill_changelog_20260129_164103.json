@@ -1,0 +1,228 @@
+[
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-owners-black-knight-football-club-go-global/",
+    "headline": "AFC Bournemouth owners Black Knight Football Club go global",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [
+      {
+        "name": "Bill Foley",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Lo\u00efc F\u00e9ry",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Bill Foley",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Lo\u00efc F\u00e9ry",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-housing-standards/",
+    "headline": "BCP Council praised for housing standards",
+    "old_quoted_sources": 3,
+    "new_quoted_sources": 3,
+    "old_source_evidence": [
+      {
+        "name": "Kieron Wilson",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Kelly Deane",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Roger Smithers",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Kieron Wilson",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Kelly Deane",
+        "gender": "female",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Roger Smithers",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+    "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Joe Salmon",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Joe Salmon",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/collision-in-bournemouth-appeals-for-witnesses-and-footage/",
+    "headline": "Collision in Bournemouth: appeals for witnesses and footage",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Paul Hind",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Paul Hind",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/dan-carrs-dream-start-to-life-at-poole-town/",
+    "headline": "Dan Carr\u2019s dream start to life at Poole Town",
+    "old_quoted_sources": 2,
+    "new_quoted_sources": 2,
+    "old_source_evidence": [
+      {
+        "name": "Dan Carr",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Andy Rossiter",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Dan Carr",
+        "gender": "male",
+        "position": "groq_detected"
+      },
+      {
+        "name": "Andy Rossiter",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/five-english-clubs-secure-top-eight-in-champions-league/",
+    "headline": "Five English Clubs Secure Top Eight in Champions League",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Dominic Solanke",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Dominic Solanke",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+    "headline": "Floods continue after Storm Chandra hits Bournemouth",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/game-management-causing-problems-for-afc-bournemouth/",
+    "headline": "Game management causing problems for AFC Bournemouth",
+    "old_quoted_sources": 0,
+    "new_quoted_sources": 0,
+    "old_source_evidence": [],
+    "new_source_evidence": [],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/heavy-flooding-disrupts-chapel-gate-sport/",
+    "headline": "Heavy flooding disrupts Chapel Gate sport",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Ewan Corbett",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Ewan Corbett",
+        "gender": "male",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  },
+  {
+    "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-for-information-on-boscombe-burglary/",
+    "headline": "Police appeal for information on Boscombe burglary",
+    "old_quoted_sources": 1,
+    "new_quoted_sources": 1,
+    "old_source_evidence": [
+      {
+        "name": "Sarah Dutton",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "new_source_evidence": [
+      {
+        "name": "Sarah Dutton",
+        "gender": "female",
+        "position": "groq_detected"
+      }
+    ],
+    "changed": false
+  }
+]
