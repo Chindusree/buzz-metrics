@@ -196,19 +196,17 @@ def is_exempt(article, headline):
     if 'as it happened' in headline_lower or headline_lower.startswith('live:'):
         return True, 'Live blog'
 
-    # 5. MATCH REPORT (sport + past tense verbs)
-    sport_keywords = ['football', 'basketball', 'rugby', 'cricket', 'netball', 'hockey']
-    past_verbs = ['beat', 'defeated', 'won', 'lost to', 'thrashed', 'edged past']
-    is_sport = any(kw in headline_lower for kw in sport_keywords)
-    has_past = any(verb in headline_lower for verb in past_verbs)
-    if is_sport and has_past:
-        return True, 'Match report'
+    # 5. MATCH REPORT (Sport + past tense match verbs)
+    category = article.get('display_category', '').lower()
+    if category == 'sport' or 'sport' in article.get('categories', []):
+        match_report_patterns = ['beat', 'beaten', 'defeated', 'thrashed', 'won', 'lost to', 'fall to', 'fell to', 'draw with', 'drew with']
+        if any(pattern in headline_lower for pattern in match_report_patterns):
+            return True, 'Match report'
 
-    # 6. MATCH PREVIEW (sport + future phrases)
-    future_phrases = ['to play', 'to face', 'set to', ' vs ', ' v ']
-    has_future = any(phrase in headline_lower for phrase in future_phrases)
-    if is_sport and has_future:
-        return True, 'Match preview'
+        # 6. MATCH PREVIEW (Sport + future phrases)
+        preview_patterns = ['to play', 'to face', 'set to', ' vs ', ' v ', 'preview']
+        if any(pattern in headline_lower for pattern in preview_patterns):
+            return True, 'Match preview'
 
     return False, None
 
@@ -242,15 +240,21 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
     ssi_sources = groq_result.get('ssi_sources', [])
     unique_sources = groq_result.get('ssi_unique_sources', 0)
 
-    # Get component values
-    we = components.get('we', 0)
-    sd = components.get('sd', 0)
+    # CALCULATE WE LOCALLY (Groq unreliable for arithmetic)
+    hw = 800 if category == 'Feature' else 350
+    we = min(verified_word_count / hw, 1.0) if verified_word_count > 0 else 0.0
+
+    # CALCULATE SD LOCALLY from Groq's source list
+    hs = 4 if category == 'Feature' else 3
+    unique_sources = len(ssi_sources)
+    sd = unique_sources / hs  # Allow uncapped for later capping
+
+    # Get other component values from Groq
     ar = components.get('ar')  # May be null
     cd = components.get('cd', 0)
     oi = components.get('oi', 0)
 
     # Cap WE and SD at 1.0 for formula calculation
-    # (Groq may return uncapped ratios like SD=1.33)
     we_capped = min(we, 1.0)
     sd_capped = min(sd, 1.0)
 
