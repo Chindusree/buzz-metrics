@@ -117,13 +117,16 @@
         .modal-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.1rem; font-weight: 700; }
         .modal-close { font-size: 1.5rem; font-weight: 300; color: #767676; cursor: pointer; background: none; border: none; padding: 0; line-height: 1; }
         .modal-close:hover { color: #1a1a1a; }
-        .modal-body { padding: 1.5rem; overflow-y: auto; }
+        .modal-body { padding: 1.5rem 2.5rem; overflow-y: auto; }
         .modal-body p { margin-bottom: 1rem; line-height: 1.6; }
         .modal-body p:last-child { margin-bottom: 0; }
         .modal-body ol { margin: 1rem 0; padding-left: 1.5rem; }
         .modal-body ol li { margin-bottom: 0.75rem; line-height: 1.6; }
+        .modal-body ul { margin: 1rem 0 1.5rem 0; padding-left: 1.5rem; }
+        .modal-body ul li { margin-bottom: 0.75rem; line-height: 1.6; }
         .modal-body em { font-style: italic; }
         .modal-body strong { font-weight: 700; }
+        #bnsModal .modal-body table { width: auto; max-width: 300px; margin: 1rem auto; }
         .modal-story { margin-bottom: 1.5rem; }
         .modal-story:last-child { margin-bottom: 0; }
         .modal-story-headline { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 500; margin-bottom: 0.25rem; }
@@ -905,19 +908,19 @@
             <button class="modal-close" onclick="closeBNSModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>In journalism, speed matters. Audiences increasingly encounter news through social feeds where the first credible report captures attention. BNS asks: when students attempt breaking news, do they reach audiences before or after professional outlets?</p>
+            <p>BNS measures speed to audience, comparing BUzz breaking news against BBC, Bournemouth Echo, Sky Sports, and Yahoo.</p>
 
-            <p>We compared BUzz's BREAKING stories against coverage from BBC, Bournemouth Echo, Sky Sports, Yahoo, and other relevant professional outlets. Publication timestamps were recorded and the difference calculated in minutes.</p>
+            <p>It answers: On stories tagged breaking news, how did students fare against professionals?</p>
 
-            <p><strong>Stories were classified by outcome:</strong></p>
+            <p>Publication timestamps recorded; differences calculated in minutes. Stories classified as:</p>
 
-            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>OWNED</strong> — No professional outlet covered the story. BUzz served an audience no one else did.</p>
+            <ul>
+                <li><strong>Owned</strong> — No professional covered it; BUzz served an audience no one else did</li>
+                <li><strong>First</strong> — BUzz published before professionals (dominant: 30+ min; close: &lt;30 min)</li>
+                <li><strong>Behind</strong> — Professionals faster (close: &lt;15 min; clear: 15+ min)</li>
+            </ul>
 
-            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>FIRST</strong> — BUzz published before professionals. We distinguish dominant margins (30+ minutes) from close contests.</p>
-
-            <p style="margin-left: 1.5rem; margin-bottom: 0.75rem;"><strong>BEHIND</strong> — Professionals were faster. We distinguish near-misses from clear lags.</p>
-
-            <p>Points reward both speed and initiative. OWNED scores highest because identifying stories professionals overlook requires editorial judgment — not just fast fingers.</p>
+            <p>Owned scores highest (100 pts) because identifying stories professionals overlook requires editorial judgment, not just speed.</p>
 
             <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
                 <thead>
@@ -928,37 +931,37 @@
                 </thead>
                 <tbody>
                     <tr style="border-bottom: 1px solid #f5f5f5;">
-                        <td style="padding: 0.5rem;">OWNED</td>
+                        <td style="padding: 0.5rem;">Owned</td>
                         <td style="text-align: right; padding: 0.5rem;">100</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #f5f5f5;">
-                        <td style="padding: 0.5rem;">FIRST (dominant)</td>
+                        <td style="padding: 0.5rem;">First (dominant)</td>
                         <td style="text-align: right; padding: 0.5rem;">85</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #f5f5f5;">
-                        <td style="padding: 0.5rem;">FIRST (close)</td>
+                        <td style="padding: 0.5rem;">First (close)</td>
                         <td style="text-align: right; padding: 0.5rem;">70</td>
                     </tr>
                     <tr style="border-bottom: 1px solid #f5f5f5;">
-                        <td style="padding: 0.5rem;">BEHIND (close)</td>
+                        <td style="padding: 0.5rem;">Behind (close)</td>
                         <td style="text-align: right; padding: 0.5rem;">40</td>
                     </tr>
                     <tr>
-                        <td style="padding: 0.5rem;">BEHIND (clear)</td>
+                        <td style="padding: 0.5rem;">Behind (clear)</td>
                         <td style="text-align: right; padding: 0.5rem;">25</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p>Wire rewrites, press conferences, and simultaneous official releases are excluded; the competitive conditions did not apply.</p>
+            <p>Excluded: Wire rewrites, press conferences, simultaneous official releases.</p>
 
-            <p><strong>BNS = Σ Points ÷ Eligible Stories</strong></p>
+            <p style="margin-top: 1.5em; margin-bottom: 1.5em; font-weight: normal;">BNS = &Sigma; Points &div; Eligible Stories</p>
 
-            <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>Example:</strong> January 2026: Of 17 BREAKING stories, 13 were eligible. Four OWNED, five FIRST, four BEHIND. Total: 910 points.<br>BNS = 910 ÷ 13 = 70</p>
+            <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>This cohort:</strong> 17 stories tagged breaking; 13 eligible. Four Owned, five First, four Behind. Total: 910 points &rarr; BNS = 910 &div; 13 = 70</p>
 
-            <p>Limitations: Professional timestamps sourced via search; niche or paywalled coverage may be missed.</p>
+            <p>Limitations: Measures speed only (reporting strength assessed by SSI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
 
-            <p><em>Full methodology paper forthcoming.</em></p>
+            <p><em><a href="#">See draft of methodology paper</a></em></p>
         </div>
     </div>
 </div>
@@ -1450,7 +1453,7 @@
                 const owned = b.owned || 0;
                 const first = (b.first_dominant || 0) + (b.first_close || 0);
                 const behind = (b.behind_close || 0) + (b.behind_clear || 0);
-                bnsTooltip = `${owned} OWNED · ${first} FIRST · ${behind} BEHIND`;
+                bnsTooltip = `${owned} Owned · ${first} First · ${behind} Behind`;
             }
 
             // SSI and BNS side by side - simplified

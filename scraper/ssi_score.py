@@ -421,7 +421,9 @@ def main():
     existing_ssi = load_existing_ssi()
     existing_urls = set()
     if existing_ssi and not test_mode:
-        existing_urls = {a['url'] for a in existing_ssi.get('articles', [])}
+        # Only skip articles that have actual SSI data (ssi_score or ssi_exempt)
+        existing_urls = {a['url'] for a in existing_ssi.get('articles', [])
+                         if 'ssi_score' in a or 'ssi_exempt' in a}
         print(f'✓ Found existing SSI data for {len(existing_urls)} articles')
         print(f'  (will skip articles already scored)')
         print()
