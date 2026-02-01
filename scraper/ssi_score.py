@@ -249,10 +249,43 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
     unique_sources = len(ssi_sources)
     sd = unique_sources / hs  # Allow uncapped for later capping
 
-    # Get other component values from Groq
-    ar = components.get('ar')  # May be null
-    cd = components.get('cd', 0)
-    oi = components.get('oi', 0)
+    # CALCULATE AR LOCALLY from source ar_scores (with defensive fallbacks)
+    AR_MAP = {"Full": 1.0, "Partial": 0.7, "Vague": 0.4, "Anonymous": 0.1}
+    if ssi_sources:
+        ar_scores = []
+        for s in ssi_sources:
+            if isinstance(s.get('ar_score'), (int, float)):
+                ar_scores.append(s['ar_score'])
+            elif s.get('ar_tier') in AR_MAP:
+                ar_scores.append(AR_MAP[s['ar_tier']])
+            else:
+                ar_scores.append(0.7)  # Conservative default (Partial)
+        ar = sum(ar_scores) / len(ar_scores)
+    else:
+        ar = None  # Excluded from formula when SD=0
+
+    # CALCULATE OI LOCALLY from source oi_scores (with defensive fallbacks)
+    OI_MAP = {"ORIGINAL": 1.0, "GOOD_FAITH": 0.8, "INSTITUTIONAL": 0.5, "WIRE": 0.3}
+    if ssi_sources:
+        oi_scores = []
+        for s in ssi_sources:
+            if isinstance(s.get('oi_score'), (int, float)):
+                oi_scores.append(s['oi_score'])
+            elif s.get('oi_tier') in OI_MAP:
+                oi_scores.append(OI_MAP[s['oi_tier']])
+            else:
+                oi_scores.append(0.8)  # Conservative default (GOOD_FAITH)
+        oi = sum(oi_scores) / len(oi_scores)
+    else:
+        oi = 0.0
+
+    # CALCULATE CD LOCALLY from context flags
+    cd = sum([
+        0.25 if context_flags.get('has_data') else 0,
+        0.25 if context_flags.get('has_timeline') else 0,
+        0.25 if context_flags.get('has_comparison') else 0,
+        0.25 if context_flags.get('has_structural') else 0
+    ])
 
     # Cap WE and SD at 1.0 for formula calculation
     we_capped = min(we, 1.0)
