@@ -63,6 +63,15 @@ def fetch_article_text(url):
 
         soup = BeautifulSoup(response.content, 'html.parser')
 
+        # Handle standalone Shorthand URLs
+        if 'shorthandstories.com' in url or 'shorthand.social' in url:
+            paragraphs = soup.find_all('p')
+            if paragraphs:
+                text = '\n\n'.join([p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True)])
+                if len(text) > 50:
+                    return text, None
+            return '', 'Shorthand standalone page with no extractable text'
+
         # Handle Shorthand embeds
         shorthand_story = soup.find('div', class_='shorthand-story')
         if shorthand_story:
@@ -433,7 +442,9 @@ def main():
 
         # Fetch article text
         print(f'  ↓ Fetching article text...')
-        text, fetch_error = fetch_article_text(url)
+        # For Shorthand articles, use the shorthand_url from SEI data if available
+        fetch_url = article.get('shorthand_url') if article.get('content_type') == 'shorthand' else url
+        text, fetch_error = fetch_article_text(fetch_url)
         if fetch_error:
             print(f'  ✗ Fetch error: {fetch_error}')
             results.append({

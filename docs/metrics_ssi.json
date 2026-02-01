@@ -1,24 +1,1705 @@
 {
-  "last_updated": "2026-01-31T21:31:59.563568Z",
+  "last_updated": "2026-02-01T06:54:54.715110Z",
   "ssi_version": "2.1",
   "summary": {
     "total_articles": 312,
-    "scored": 225,
+    "scored": 263,
     "exempt": 46,
-    "errors": 41,
-    "skipped": 261,
+    "errors": 3,
+    "skipped": 271,
     "by_category": {
       "News": {
-        "count": 218,
-        "avg_ssi": 58.6
+        "count": 229,
+        "avg_ssi": 58.8
       },
       "Feature": {
-        "count": 7,
-        "avg_ssi": 68.5
+        "count": 34,
+        "avg_ssi": 72.7
       }
     }
   },
   "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
+      "headline": "Bournemouth Lions captain on lengthy injury spell",
+      "date": "2026-01-14",
+      "word_count": 765,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 62.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.22,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Grant Hancox",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Andy Curtis",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
+      "headline": "Dorset driver gives up her car for TukTuk trip",
+      "date": "2026-01-14",
+      "word_count": 400,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 40,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Jo O'Connell",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
+      "headline": "Bournemouth run club celebrates four years of community",
+      "date": "2026-01-15",
+      "word_count": 364,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 73.3,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "William Vaughan",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Grace Ashton",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Andrew Mace",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
+      "headline": "F You: the goalkeeping gloves for charity",
+      "date": "2026-01-15",
+      "word_count": 570,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 66.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Harry Shaw",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/olivier-award-winning-dear-england-tour-kicks-off-in-southampton/",
+      "headline": "Olivier Award winning \u2018Dear England\u2019 tour kicks off in Southampton",
+      "date": "2026-01-15",
+      "word_count": 783,
+      "quoted_sources": 0,
+      "ssi_exempt": false,
+      "ssi_score": 37.5,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 2.23,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.5,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
+      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
+      "date": "2026-01-16",
+      "word_count": 714,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 67.6,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.71,
+        "sd": 0.67,
+        "ar": 0.55,
+        "cd": 0.75,
+        "oi": 0.7
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Vitality Stadium Spokesperson",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Sara Armstrong",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Dr Brent Pease",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "headline": "Can UPFs be avoided on a budget?",
+      "date": "2026-01-16",
+      "word_count": 1825,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 71.8,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 0.52,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Sophia Lloyd",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Rebecca Brown",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Heather Smith",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
+      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
+      "date": "2026-01-16",
+      "word_count": 1428,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 82.6,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.75,
+        "ar": 0.83,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Andrew Wilmot",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "James Wilder",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Ali Jeffs",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Jonathan Haidt",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
+      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
+      "date": "2026-01-16",
+      "word_count": 929,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 80.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Terry Dennis",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Pete Ball",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
+      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
+      "date": "2026-01-16",
+      "word_count": 799,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 71.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 2.28,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Gabrielle Reid",
+          "ar_score": 0.7,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
+      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
+      "date": "2026-01-16",
+      "word_count": 837,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 70.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Ian Williams",
+          "ar_score": 0.7,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "date": "2026-01-16",
+      "word_count": 978,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 78.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Dan Wilson",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Matt Reeds",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
+      "date": "2026-01-16",
+      "word_count": 942,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 60.7,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.5,
+        "cd": 0.5,
+        "oi": 0.53
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Doug Turner",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Dorset & Wiltshire Fire and Rescue",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Met Office",
+          "ar_score": 0.4,
+          "oi_tier": "WIRE",
+          "oi_score": 0.3
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "headline": "The fast fashion disconnect",
+      "date": "2026-01-16",
+      "word_count": 1117,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 72.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.75,
+        "cd": 0.75,
+        "oi": 0.6
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Professor Marcjanna Augustyn",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Marketing professor Kaouther Kooli",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Sal, founder of Studio Sal",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Fortune Business Insights",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Uniform Market",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "The State of Fashion 2024 report",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "The Business of Fashion and McKinsey",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "H&M",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "The Roundup",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 9,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "headline": "Unknown",
+      "date": "2026-01-16",
+      "word_count": 974,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 78.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "David Richmond-Coggan",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Alison Hulme",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Nyah Boston-Shears",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Sharon Gale",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "date": "2026-01-16",
+      "word_count": 698,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 65.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.5
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Cindy Lou",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Chanelle Paris",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "World Economic Forum",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "World Wide Fund for Nature",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Spanish National Research Council",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "UN",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Oxford University",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 7,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "headline": "When education takes a stand",
+      "date": "2026-01-16",
+      "word_count": 999,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 83.3,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Ivan Darley",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Bournemouth and Poole College",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
+      "headline": "Southampton look to end winless streak against Sheffield United",
+      "date": "2026-01-20",
+      "word_count": 768,
+      "quoted_sources": 0,
+      "ssi_score": null,
+      "ssi_error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "date": "2026-01-23",
+      "word_count": 965,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 78.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Jenny Greenfield",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Eleanor Davis",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Dr. Virginia Quiney",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "NHS England South East",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Centre of Disease Control and Prevention (CDC)",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 5,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
+      "headline": "Art against odds: the shifting art scene in Boscombe",
+      "date": "2026-01-23",
+      "word_count": 1089,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 83.3,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Tom Pouncy",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Ellen Gillett",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Amanda Williams",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
+      "headline": "Bournemouth University rebuilds the television that started it all",
+      "date": "2026-01-23",
+      "word_count": 859,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 80.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Gary Toms",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Iain Logie Baird",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
+      "headline": "Charlie Stevens: Living the dream",
+      "date": "2026-01-23",
+      "word_count": 848,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 80.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 1.0,
+        "cd": 0.75,
+        "oi": 1.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Charlie Stevens",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
+      "headline": "Cherries host Liverpool in Saturday evening clash",
+      "date": "2026-01-23",
+      "word_count": 933,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 78.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "ssi_sources": [
+        {
+          "name": "Andoni Iraola",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Arne Slot",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
+      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
+      "date": "2026-01-23",
+      "word_count": 942,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 70.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Doug Turner",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
+      "headline": "Out with the old, in with the new: UFC 324",
+      "date": "2026-01-23",
+      "word_count": 1198,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 71.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.62,
+        "cd": 0.75,
+        "oi": 0.68
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Local Gym owner",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Anthony Smith",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Din Thomas",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Shakiel Mahjouri",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Nico Theodorou",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 5,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
+      "headline": "Tamburello: The fast-rising racket sport you\u2019ve never heard of",
+      "date": "2026-01-23",
+      "word_count": 1191,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 80.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Jason Littlefield",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Jasmine Bosenick",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "date": "2026-01-23",
+      "word_count": 1053,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 83.3,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Mark Bowra",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Darren Stratman",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Megan Hill",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
+      "headline": "The financial struggle of tennis",
+      "date": "2026-01-23",
+      "word_count": 911,
+      "quoted_sources": 3,
+      "ssi_exempt": false,
+      "ssi_score": 65.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.14,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "James White",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Furneaux",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Harry James",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
+      "headline": "The football team that isn\u2019t about football",
+      "date": "2026-01-23",
+      "word_count": 1328,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 73.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "George Dean",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Rob Allen",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Sam Woolford",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Chris Webb",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Ben Shephard",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Lewis Capaldi",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 6,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "headline": "Welcome to the lions den",
+      "date": "2026-01-23",
+      "word_count": 780,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 71.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 0.67,
+        "sd": 0.67,
+        "ar": 0.85,
+        "cd": 0.5,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Grant Hancox",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Will Croker",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Drew Mellor",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Matthew Barker",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
+      "headline": "International LEGO\u00ae Day helps Bournemouth children get creative",
+      "date": "2026-01-28",
+      "word_count": 768,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Failed to parse Groq JSON: Expecting ',' delimiter: line 4 column 17 (char 61)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
+      "headline": "Police Appeal: Have You Seen David?",
+      "date": "2026-01-28",
+      "word_count": 327,
+      "quoted_sources": 1,
+      "ssi_score": null,
+      "ssi_error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/are-the-young-people-priced-out-of-the-plate/",
+      "headline": "Are the young people priced out of the plate?",
+      "date": "2026-01-30",
+      "word_count": 617,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 71.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Ben Davies",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
+      "headline": "Bournemouth drowned by Storm Chandra",
+      "date": "2026-01-30",
+      "word_count": 661,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 71.7,
+      "ssi_category": "News",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.33,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Doug Turner",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Dorset & Wiltshire Fire and Rescue",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Met Office",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 3,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
+      "headline": "Dominic Sadi: From the South Coast to Serbia",
+      "date": "2026-01-30",
+      "word_count": 834,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 65.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Dominic Sadi",
+          "ar_score": 0.7,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
+      "headline": "Inside a Bournemouth F1 fan\u2019s challenge to attend every Grand Prix",
+      "date": "2026-01-30",
+      "word_count": 1945,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 40,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 0.94,
+        "sd": 0.0,
+        "ar": null,
+        "cd": 0.75,
+        "oi": 0.0
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [],
+      "ssi_unique_sources": 0,
+      "ssi_gate": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/scott-mitchell-from-farmers-son-to-world-champion-and-back-again/",
+      "headline": "Scott Mitchell \u2013 from farmer\u2019s son to world champion, and back again",
+      "date": "2026-01-30",
+      "word_count": 1057,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 65.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Scott Mitchell",
+          "ar_score": 0.7,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/spanish-footballer-coach-juan-cano-valverde-triumphs-over-set-backs/",
+      "headline": "Spanish coach Juan Cano Valverde triumphs over set backs",
+      "date": "2026-01-30",
+      "word_count": 877,
+      "quoted_sources": 2,
+      "ssi_exempt": false,
+      "ssi_score": 80.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.85,
+        "cd": 0.75,
+        "oi": 0.9
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Juan Cano Valverde",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        },
+        {
+          "name": "Scott Rowles",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 2,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
+      "headline": "The ground rent trap: Is Starmer\u2019s cap enough?",
+      "date": "2026-01-30",
+      "word_count": 1094,
+      "quoted_sources": 4,
+      "ssi_exempt": false,
+      "ssi_score": 75.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.5,
+        "ar": 0.7,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Keir Starmer",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Steve Reed",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        },
+        {
+          "name": "Matthew Hillier",
+          "ar_score": 0.7,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Residential Freehold Association spokesperson",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.5
+        }
+      ],
+      "ssi_unique_sources": 4,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
+      "date": "2026-01-30",
+      "word_count": 1072,
+      "quoted_sources": 1,
+      "ssi_exempt": false,
+      "ssi_score": 69.0,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.25,
+        "ar": 0.7,
+        "cd": 0.5,
+        "oi": 1.0
+      },
+      "ssi_context_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Ricky Barton",
+          "ar_score": 0.7,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0
+        }
+      ],
+      "ssi_unique_sources": 1,
+      "ssi_gate": null
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "headline": "\u00a3750 million investment sent to transform Bournemouth",
+      "date": "2026-01-30",
+      "word_count": 835,
+      "quoted_sources": 6,
+      "ssi_exempt": false,
+      "ssi_score": 79.4,
+      "ssi_category": "Feature",
+      "ssi_components": {
+        "we": 1.0,
+        "sd": 0.75,
+        "ar": 0.67,
+        "cd": 0.75,
+        "oi": 0.8
+      },
+      "ssi_context_flags": {
+        "has_data": true,
+        "has_timeline": false,
+        "has_comparison": true,
+        "has_structural": true
+      },
+      "ssi_sources": [
+        {
+          "name": "Tanya",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Jacob",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Karl",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Fraser Mills",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Millie Earl",
+          "ar_score": 1.0,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        },
+        {
+          "name": "Jen",
+          "ar_score": 0.4,
+          "oi_tier": "GOOD_FAITH",
+          "oi_score": 0.8
+        }
+      ],
+      "ssi_unique_sources": 6,
+      "ssi_gate": null
+    },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/final-midweek-fixtures-could-decide-european-qualification/",
       "headline": "Final Midweek Fixtures Could Decide European Qualification",
@@ -776,15 +2457,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/are-the-young-people-priced-out-of-the-plate/",
-      "headline": "Are the young people priced out of the plate?",
-      "date": "2026-01-30",
-      "word_count": 617,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/aston-villa-comeback-highlights-europa-league-final-league-phase-drama/",
       "headline": "Aston Villa comeback highlights Europa League final league-phase drama",
       "date": "2026-01-30",
@@ -889,15 +2561,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dominic-sadi-from-the-south-coast-to-serbia/",
-      "headline": "Dominic Sadi: From the South Coast to Serbia",
-      "date": "2026-01-30",
-      "word_count": 834,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-places-in-top-10-safest-counties/",
       "headline": "Dorset places in top 10 safest counties",
       "date": "2026-01-30",
@@ -998,15 +2661,6 @@
       ],
       "ssi_unique_sources": 1,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/full-time-formula/",
-      "headline": "Inside a Bournemouth F1 fan\u2019s challenge to attend every Grand Prix",
-      "date": "2026-01-30",
-      "word_count": 1945,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/january-complications-forces-wimborne-pub-to-close/",
@@ -1339,24 +2993,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/spanish-footballer-coach-juan-cano-valverde-triumphs-over-set-backs/",
-      "headline": "Spanish coach Juan Cano Valverde triumphs over set backs",
-      "date": "2026-01-30",
-      "word_count": 877,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-ground-rent-trap-is-starmers-cap-enough/",
-      "headline": "The ground rent trap: Is Starmer\u2019s cap enough?",
-      "date": "2026-01-30",
-      "word_count": 1094,
-      "quoted_sources": 4,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/train-delays-continue/",
       "headline": "Train delays in Dorset continue due to weather",
       "date": "2026-01-30",
@@ -1492,24 +3128,6 @@
       "ssi_sources": [],
       "ssi_unique_sources": 0,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
-      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
-      "date": "2026-01-30",
-      "word_count": 1072,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
-      "headline": "\u00a3750 million investment sent to transform Bournemouth",
-      "date": "2026-01-30",
-      "word_count": 835,
-      "quoted_sources": 6,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouth-under-21s-delighted-with-charlton-victory/",
@@ -2295,15 +3913,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/grant-hancox-acl-feature-2/",
-      "headline": "Bournemouth Lions captain on lengthy injury spell",
-      "date": "2026-01-14",
-      "word_count": 765,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-sea-dippers-helping-to-create-community/",
       "headline": "Bournemouth Sea Dippers helping to create community",
       "date": "2026-01-14",
@@ -2505,15 +4114,6 @@
       ],
       "ssi_unique_sources": 2,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-women-tuktuk-trip/",
-      "headline": "Dorset driver gives up her car for TukTuk trip",
-      "date": "2026-01-14",
-      "word_count": 400,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorsets-holocaust-memorial-day-2026/",
@@ -3103,15 +4703,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-run-club-celebrates-four-years-of-community/",
-      "headline": "Bournemouth run club celebrates four years of community",
-      "date": "2026-01-15",
-      "word_count": 364,
-      "quoted_sources": 4,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/chris-billam-smith-reveals-ideal-timeline-for-return/",
       "headline": "Boxer Chris Billam-Smith reveals ideal timeline for return",
       "date": "2026-01-15",
@@ -3325,15 +4916,6 @@
       ],
       "ssi_unique_sources": 2,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/f-you-the-goalkeeping-gloves-for-charity/",
-      "headline": "F You: the goalkeeping gloves for charity",
-      "date": "2026-01-15",
-      "word_count": 570,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/formercherrykepahelpsarsenalbeatchelsea/",
@@ -3614,15 +5196,6 @@
       ],
       "ssi_unique_sources": 2,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/olivier-award-winning-dear-england-tour-kicks-off-in-southampton/",
-      "headline": "Olivier Award winning \u2018Dear England\u2019 tour kicks off in Southampton",
-      "date": "2026-01-15",
-      "word_count": 783,
-      "quoted_sources": 0,
-      "ssi_score": null,
-      "ssi_error": "Failed to parse Groq JSON: Expecting ',' delimiter: line 4 column 16 (char 60)"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/over-110-drink-driving-arrest-made-during-campaign/",
@@ -4110,24 +5683,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/",
-      "headline": "Bournemouth Vitality Stadium expansion raises light pollution concerns",
-      "date": "2026-01-16",
-      "word_count": 714,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
-      "headline": "Can UPFs be avoided on a budget?",
-      "date": "2026-01-16",
-      "word_count": 1825,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/council-ramp-up-action-on-online-sales-of-age-restricted-products/",
       "headline": "Council ramp up action on online sales of age-restricted products",
       "date": "2026-01-16",
@@ -4152,24 +5707,6 @@
       "ssi_sources": [],
       "ssi_unique_sources": 0,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/disconnect-to-reconnect-removing-smartphones-from-dorset-schools/",
-      "headline": "Disconnect to reconnect: removing smartphones from Dorset schools",
-      "date": "2026-01-16",
-      "word_count": 1428,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-demons-wheelchair-basketball-at-heart-of-dorset/",
-      "headline": "Dorset Demons: Wheelchair basketball at the heart of Dorset",
-      "date": "2026-01-16",
-      "word_count": 929,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-are-appealing-for-dashcam-footage-of-a356-accident/",
@@ -4203,15 +5740,6 @@
       ],
       "ssi_unique_sources": 1,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/finding-strength-through-boxing-a-bournemouth-fighters-story/",
-      "headline": "Finding strength through boxing: a Bournemouth fighter\u2019s story",
-      "date": "2026-01-16",
-      "word_count": 799,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/podcast-the-toll-of-homelessness/",
@@ -4265,15 +5793,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/lymingtons-sailor-extends-record-championship-reign-in-shenzhen/",
-      "headline": "Lymington\u2019s sailor extends record championship reign in Shenzhen",
-      "date": "2026-01-16",
-      "word_count": 837,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/man-charged-after-human-remains-found/",
       "headline": "Man charged after human remains found",
       "date": "2026-01-16",
@@ -4316,15 +5835,6 @@
       "ssi_exempt_reason": "Snippet (< 150 words)"
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
-      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
-      "date": "2026-01-16",
-      "word_count": 978,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-racing-driver-reza-seewooruthun-kicks-off-his-2026-season/",
       "headline": "Poole racing driver Reza Seewooruthun kicks off his 2026 season",
       "date": "2026-01-16",
@@ -4349,15 +5859,6 @@
       "ssi_sources": [],
       "ssi_unique_sources": 0,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "headline": "Running together: How Bournemouth\u2019s run clubs are building community",
-      "date": "2026-01-16",
-      "word_count": 942,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
@@ -4393,15 +5894,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
-      "headline": "The fast fashion disconnect",
-      "date": "2026-01-16",
-      "word_count": 1117,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/tonight-stitch-and-movie-night/",
       "headline": "Tonight stitch and movie night",
       "date": "2026-01-16",
@@ -4433,15 +5925,6 @@
       ],
       "ssi_unique_sources": 1,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
-      "headline": "Unknown",
-      "date": "2026-01-16",
-      "word_count": 974,
-      "quoted_sources": 4,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/var-errors-have-afc-bournemouth-in-the-forefront/",
@@ -4483,15 +5966,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
-      "headline": "Veganuary: not just a trend but a sustainable goal",
-      "date": "2026-01-16",
-      "word_count": 698,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/watch-live-2-30pm-bulletin-january-16/",
       "headline": "WATCH: 2.30pm bulletin \u2013 January 16",
       "date": "2026-01-16",
@@ -4508,15 +5982,6 @@
       "quoted_sources": 0,
       "ssi_exempt": true,
       "ssi_exempt_reason": "Snippet (< 150 words)"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
-      "headline": "When education takes a stand",
-      "date": "2026-01-16",
-      "word_count": 999,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
@@ -5193,15 +6658,6 @@
       ],
       "ssi_unique_sources": 3,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/",
-      "headline": "Southampton look to end winless streak against Sheffield United",
-      "date": "2026-01-20",
-      "word_count": 768,
-      "quoted_sources": 0,
-      "ssi_score": null,
-      "ssi_error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/itvs-this-morning-pays-bournemouth-university-a-visit/",
@@ -6737,24 +8193,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
-      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
-      "date": "2026-01-23",
-      "word_count": 965,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/art-against-odds-the-shifting-art-scene-in-boscombe/",
-      "headline": "Art against odds: the shifting art scene in Boscombe",
-      "date": "2026-01-23",
-      "word_count": 1089,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/breaking-news-dorset-fire-stations-announce-stations-at-risk-of-closure/",
       "headline": "BREAKING NEWS: Dorset Fire Stations announce stations at risk of closure",
       "date": "2026-01-23",
@@ -6771,15 +8209,6 @@
       "quoted_sources": 1,
       "ssi_exempt": true,
       "ssi_exempt_reason": "Breaking news"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-university-rebuilds-the-television-that-started-it-all/",
-      "headline": "Bournemouth University rebuilds the television that started it all",
-      "date": "2026-01-23",
-      "word_count": 859,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-service-offers-support-to-help-neurodiverse-independence/",
@@ -6880,24 +8309,6 @@
       "ssi_sources": [],
       "ssi_unique_sources": 0,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/charlie-stevens-living-the-dream/",
-      "headline": "Charlie Stevens: Living the dream",
-      "date": "2026-01-23",
-      "word_count": 848,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-host-liverpool-in-saturday-evening-clash/",
-      "headline": "Cherries host Liverpool in Saturday evening clash",
-      "date": "2026-01-23",
-      "word_count": 933,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-launch-survey-for-sexual-offence-victims/",
@@ -7018,15 +8429,6 @@
       ],
       "ssi_unique_sources": 2,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
-      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
-      "date": "2026-01-23",
-      "word_count": 942,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/live-blog-andoni-iraola-previews-liverpool-clash/",
@@ -7174,15 +8576,6 @@
       "ssi_exempt_reason": "Snippet (< 150 words)"
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/out-with-the-old-in-with-the-new-ufc-324/",
-      "headline": "Out with the old, in with the new: UFC 324",
-      "date": "2026-01-23",
-      "word_count": 1198,
-      "quoted_sources": 4,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
       "headline": "Profile pictures turn purple in support of South African Women",
       "date": "2026-01-23",
@@ -7265,51 +8658,6 @@
       ],
       "ssi_unique_sources": 2,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/tamburello-the-fast-rising-racket-sport-youve-never-heard-of/",
-      "headline": "Tamburello: The fast-rising racket sport you\u2019ve never heard of",
-      "date": "2026-01-23",
-      "word_count": 1191,
-      "quoted_sources": 2,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
-      "headline": "The charity inspiring those who are going through Brain injury",
-      "date": "2026-01-23",
-      "word_count": 1053,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-financial-struggle-of-tennis/",
-      "headline": "The financial struggle of tennis",
-      "date": "2026-01-23",
-      "word_count": 911,
-      "quoted_sources": 3,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
-      "headline": "The football team that isn\u2019t about football",
-      "date": "2026-01-23",
-      "word_count": 1328,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
-      "headline": "Welcome to the lions den",
-      "date": "2026-01-23",
-      "word_count": 780,
-      "quoted_sources": 4,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/16-cup-finals-left-bashleys-fight-for-survival/",
@@ -8439,15 +9787,6 @@
       "ssi_gate": null
     },
     {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/",
-      "headline": "International LEGO\u00ae Day helps Bournemouth children get creative",
-      "date": "2026-01-28",
-      "word_count": 768,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Failed to parse Groq JSON: Expecting ',' delimiter: line 4 column 17 (char 61)"
-    },
-    {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/local-charity-supports-inclusive-cycling-in-the-new-forest/",
       "headline": "Local charity supports inclusive cycling in the New Forest",
       "date": "2026-01-28",
@@ -8505,15 +9844,6 @@
       "ssi_sources": [],
       "ssi_unique_sources": 0,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/",
-      "headline": "Police Appeal: Have You Seen David?",
-      "date": "2026-01-28",
-      "word_count": 327,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Request failed: 404 Client Error: Not Found for url: https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/"
     },
     {
       "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
@@ -8748,24 +10078,6 @@
       ],
       "ssi_unique_sources": 1,
       "ssi_gate": null
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
-      "headline": "Bournemouth drowned by Storm Chandra",
-      "date": "2026-01-30",
-      "word_count": 661,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
-    },
-    {
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/scott-mitchell-from-farmers-son-to-world-champion-and-back-again/",
-      "headline": "Scott Mitchell \u2013 from farmer\u2019s son to world champion, and back again",
-      "date": "2026-01-30",
-      "word_count": 1057,
-      "quoted_sources": 1,
-      "ssi_score": null,
-      "ssi_error": "Shorthand embed with no extractable text"
     }
   ]
 }
