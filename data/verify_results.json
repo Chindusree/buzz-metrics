@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-02T10:04:33Z",
+  "last_updated": "2026-02-02T10:56:09Z",
   "total_verified": 312,
   "results": [
     {
@@ -3157,13 +3157,9 @@
     {
       "id": "f5a5c5b18b42",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/dorset-police-appeal-for-a-man-after-assault-in-bournemouth/",
-      "verify_quoted_sources": 1,
-      "verify_evidence": [
-        {
-          "name": "Madeleine Duncanson",
-          "context": "PERSON within 50 chars of quote: ... appealing for more information. Police Constable Madeleine Duncanson, of Dorset Police, said: “This was an unprovoked ..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "c1df7c5deebd",
