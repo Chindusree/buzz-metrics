@@ -1,0 +1,131 @@
+{
+  "generated": "2026-02-02",
+  "total": 30,
+  "method": "Stratified (4 HIGH_NGI + 4 LOW_NGI + 3 40-CAP + 3 50-CAP + 2 SHORTHAND + 14 RANDOM), seed=42",
+  "batch_1": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "stratum": "SHORTHAND"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "stratum": "50-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "stratum": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "stratum": "LOW_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "stratum": "50-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "stratum": "50-CAP"
+    }
+  ],
+  "batch_2": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "stratum": "HIGH_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "stratum": "HIGH_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "stratum": "SHORTHAND"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "stratum": "HIGH_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "stratum": "LOW_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "stratum": "LOW_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+      "stratum": "RANDOM"
+    }
+  ],
+  "batch_3": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "stratum": "LOW_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "stratum": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "stratum": "RANDOM"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "stratum": "40-CAP"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "stratum": "HIGH_NGI"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "stratum": "RANDOM"
+    }
+  ]
+}

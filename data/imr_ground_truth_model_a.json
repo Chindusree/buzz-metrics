@@ -1,0 +1,801 @@
+{
+  "generated": "2026-02-02",
+  "model": "Model A (Groq/Llama)",
+  "version": "NGI 2.2 (production)",
+  "source_file": "data/metrics_ssi.json",
+  "total_articles": 30,
+  "purpose": "IMR validation ground truth - Model A production scores",
+  "articles": [
+    {
+      "id": 1,
+      "slug": "wimborne-parkway-postponement",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "headline": "Wimborne trip to Plymouth postponed",
+      "date": "2026-01-20",
+      "word_count": 359,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.75,
+      "ngi_score": 40,
+      "gate": "40-CAP",
+      "sources_detail": []
+    },
+    {
+      "id": 2,
+      "slug": "poole-towns-kitmen-aiming-to-complete-the-92",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "date": "2026-01-16",
+      "word_count": 978,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 85.0,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Dan Wilson",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Matt Reeds",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "diverse-abilities-launch-new-adult-soft-play-fundraiser",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "headline": "Diverse Abilities launch new adult soft play fundraiser",
+      "date": "2026-01-21",
+      "word_count": 303,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 0.6,
+      "cd_score": 0.5,
+      "ngi_score": 66.0,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Fran Potton",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "rayan-excited-to-start-premier-league-challenge",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "headline": "Rayan excited to start Premier League challenge",
+      "date": "2026-01-28",
+      "word_count": 411,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 88.3,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Rayan",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Bruno Murito",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "headline": "Update: Investigation into Elon Musk\u2019s X following Grok AI sexual deepfakes",
+      "date": "2026-01-14",
+      "word_count": 450,
+      "sources": 3,
+      "ar_score": 0.78,
+      "oi_score": 0.28,
+      "cd_score": 0.75,
+      "ngi_score": 50,
+      "gate": "50-CAP",
+      "sources_detail": [
+        {
+          "name": "Sir Kier Starmer",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "Liz Kendall",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "Elon Musk",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Sensitivity A.I.",
+          "ar_tier": "Vague",
+          "ar_score": 0.4,
+          "oi_tier": "WIRE",
+          "oi_score": 0.1,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "youngcherriesfall",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "headline": "Young Cherries fall to disappointing defeat",
+      "date": "2026-01-16",
+      "word_count": 411,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.75,
+      "ngi_score": 40,
+      "gate": "40-CAP",
+      "sources_detail": []
+    },
+    {
+      "id": 7,
+      "slug": "player-ratings-jimenez-and-tavernier-star-in-away-performance",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "headline": "Cherries player ratings: Jimenez and Tavernier star in away performance",
+      "date": "2026-01-20",
+      "word_count": 394,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0,
+      "ngi_score": 25.0,
+      "gate": null,
+      "sources_detail": []
+    },
+    {
+      "id": 8,
+      "slug": "bournemouth-iranian-protests",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "date": "2026-01-20",
+      "word_count": 283,
+      "sources": 3,
+      "ar_score": 0.55,
+      "oi_score": 0.22,
+      "cd_score": 0.75,
+      "ngi_score": 50,
+      "gate": "50-CAP",
+      "sources_detail": [
+        {
+          "name": "Human Rights Activists News Agency",
+          "ar_tier": "Vague",
+          "ar_score": 0.1,
+          "oi_tier": "WIRE",
+          "oi_score": 0.1,
+          "counts_for_sd": false
+        },
+        {
+          "name": "A protester",
+          "ar_tier": "Anonymous",
+          "ar_score": 0.1,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Donald Trump",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "WIRE",
+          "oi_score": 0.1,
+          "counts_for_sd": false
+        },
+        {
+          "name": "Abbas Araghchi",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "WIRE",
+          "oi_score": 0.1,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "ben-edgell-praises-poole-town-fc-partnership-with-sen",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "headline": "Ben Edgell praises Poole Town FC partnership with SEN",
+      "date": "2026-01-27",
+      "word_count": 363,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 81.7,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Ben Edgell",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "veganuary-not-just-a-trend-but-a-sustainable-goal",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "date": "2026-01-16",
+      "word_count": 698,
+      "sources": 3,
+      "ar_score": 0.91,
+      "oi_score": 0.31,
+      "cd_score": 1.0,
+      "ngi_score": 50,
+      "gate": "50-CAP",
+      "sources_detail": [
+        {
+          "name": "World Economic Forum",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "World Wide Fund for Nature",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "Spanish National Research Council",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "UN",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        },
+        {
+          "name": "Cindy Lou",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Chanelle Paris",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Oxford University",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "bournemouth-councillor-relieved-over-new-lidl-store-postponement",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+      "date": "2026-01-29",
+      "word_count": 365,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 81.7,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Joe Salmon",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "20-year-old-man-on-trial-for-manslaughter-following-stabbing",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "headline": "20 year-old man on trial for manslaughter following stabbing",
+      "date": "2026-01-21",
+      "word_count": 111,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.2,
+      "cd_score": 0.25,
+      "ngi_score": 19.2,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Dr Jefferies",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "why-young-people-should-join-orchestra",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "headline": "Why young people should join orchestra",
+      "date": "2026-01-29",
+      "word_count": 655,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 88.3,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Emily Davis",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Michael Chaffin",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "headline": "Poole trampoline athlete Jared Smith sets sights on European glory",
+      "date": "2026-01-14",
+      "word_count": 565,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 88.3,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Jared Smith",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Ryan Brown",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "when-education-takes-a-stand",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "headline": "When education takes a stand",
+      "date": "2026-01-16",
+      "word_count": 999,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 1.0,
+      "ngi_score": 90.0,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Ivan Darley",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "iford-to-hold-womens-international-driving-range-tournament",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "headline": "Iford to hold women\u2019s international driving range tournament",
+      "date": "2026-01-30",
+      "word_count": 431,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 81.7,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Katie Dawkins",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "wonderkid-mayes-hits-record-breaking-191",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "headline": "Wonderkid Mayes hits record breaking 191",
+      "date": "2026-01-21",
+      "word_count": 343,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.5,
+      "ngi_score": 37.0,
+      "gate": null,
+      "sources_detail": []
+    },
+    {
+      "id": 18,
+      "slug": "bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "date": "2026-01-28",
+      "word_count": 224,
+      "sources": 1,
+      "ar_score": null,
+      "oi_score": 0.2,
+      "cd_score": 0.25,
+      "ngi_score": 27.3,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Thames Valley Police spokesman",
+          "ar_tier": "Vague",
+          "ar_score": 0.4,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "saints-host-sheffield-united-at-st-marys",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
+      "date": "2026-01-21",
+      "word_count": 352,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.75,
+      "ngi_score": 40,
+      "gate": "40-CAP",
+      "sources_detail": []
+    },
+    {
+      "id": 20,
+      "slug": "rain-hinders-raducanus-austrailian-open-preperation",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+      "headline": "Rain hinders Emma Raducanu\u2019s Australian Open preparation",
+      "date": "2026-01-13",
+      "word_count": 361,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.5,
+      "ngi_score": 37.5,
+      "gate": null,
+      "sources_detail": []
+    },
+    {
+      "id": 21,
+      "slug": "nine-arrests-made-in-dorset-over-organised-crime-ring",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "headline": "Nine arrests made in Dorset over organised crime ring",
+      "date": "2026-01-23",
+      "word_count": 113,
+      "sources": 1,
+      "ar_score": null,
+      "oi_score": 0.2,
+      "cd_score": 0,
+      "ngi_score": 13.1,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Detective Superintendent Emma Sweetzer",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "INSTITUTIONAL",
+          "oi_score": 0.2,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "slug": "christchurch-chef-reveals-excitement-over-new-locally-produced-menus",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/",
+      "headline": "Christchurch chef reveals excitement over new locally-produced menus",
+      "date": "2026-01-15",
+      "word_count": 290,
+      "sources": 2,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.75,
+      "ngi_score": 84.9,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Quentin Royles",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Simon Bennett",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "slug": "cherries-closing-in-on-deal-for-mandas",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "headline": "Cherries closing in on deal for Mandas",
+      "date": "2026-01-20",
+      "word_count": 394,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.1,
+      "cd_score": 0.75,
+      "ngi_score": 40,
+      "gate": "40-CAP",
+      "sources_detail": [
+        {
+          "name": "Fabrizio Romano",
+          "ar_tier": "Vague",
+          "ar_score": 0.4,
+          "oi_tier": "WIRE",
+          "oi_score": 0.1,
+          "counts_for_sd": false
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "afc-bournemouths-development-squad-reach-last-eight-of-pl-cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "headline": "AFC Bournemouth\u2019s development squad reach last eight of PL Cup",
+      "date": "2026-01-28",
+      "word_count": 267,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 0.6,
+      "cd_score": 0,
+      "ngi_score": 53.9,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Alan Connell",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "slug": "q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "headline": "Q Sports Bar in Boscombe is redeveloping their darts setup.",
+      "date": "2026-01-30",
+      "word_count": 367,
+      "sources": 1,
+      "ar_score": 0.7,
+      "oi_score": 0.6,
+      "cd_score": 0.5,
+      "ngi_score": 69.3,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Mark King",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        },
+        {
+          "name": "Lee Hamill",
+          "ar_tier": "Partial",
+          "ar_score": 0.7,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "slug": "uefa-champions-league-play-off-draw-fixtures-anounced",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "headline": "UEFA champions league play off draw fixtures anounced",
+      "date": "2026-01-30",
+      "word_count": 496,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.5,
+      "ngi_score": 37.5,
+      "gate": null,
+      "sources_detail": []
+    },
+    {
+      "id": 27,
+      "slug": "live-andoni-iraola-speaks-ahead-of-wolves-trip",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "headline": "AS IT HAPPENED: Andoni Iraola speaks ahead of Wolves trip",
+      "date": "2026-01-30",
+      "word_count": 328,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 1.0,
+      "cd_score": 0.25,
+      "ngi_score": 70.4,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Andoni Iraola",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "ORIGINAL",
+          "oi_score": 1.0,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "slug": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
+      "date": "2026-01-14",
+      "word_count": 376,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.75,
+      "ngi_score": 40,
+      "gate": "40-CAP",
+      "sources_detail": []
+    },
+    {
+      "id": 29,
+      "slug": "verwood-town-vs-sherborne-town-reserves-preview",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
+      "date": "2026-01-30",
+      "word_count": 1072,
+      "sources": 1,
+      "ar_score": 1.0,
+      "oi_score": 0.6,
+      "cd_score": 0.75,
+      "ngi_score": 72.0,
+      "gate": null,
+      "sources_detail": [
+        {
+          "name": "Ricky Barton",
+          "ar_tier": "Full",
+          "ar_score": 1.0,
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "counts_for_sd": true
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "slug": "floods-continue",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "headline": "Floods continue after Storm Chandra hits Bournemouth",
+      "date": "2026-01-29",
+      "word_count": 75,
+      "sources": 0,
+      "ar_score": null,
+      "oi_score": 0.0,
+      "cd_score": 0.5,
+      "ngi_score": 17.9,
+      "gate": null,
+      "sources_detail": []
+    }
+  ]
+}

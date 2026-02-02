@@ -1,0 +1,57 @@
+================================================================================
+SSI v2.1 - COMPLETE DATASET REPORT
+================================================================================
+
+COMMIT: 9cabd4f (AR/OI/CD local calculation fix + skip logic fix)
+DATE: 2026-02-01
+
+================================================================================
+COMPLETION SUMMARY
+================================================================================
+Total articles:        312
+✓ Scored:              248 (79.5%)
+⊘ Exempt:              60 (19.2%)
+✗ Errors:              4 (1.3%)
+Completion rate:       98.7%
+
+================================================================================
+SSI STATISTICS (248 scored articles)
+================================================================================
+Average SSI:           67.6
+Min SSI:               19.3
+Max SSI:               96.0
+
+================================================================================
+ERROR BREAKDOWN (4 errors)
+================================================================================
+Groq JSON parse:       2 (API failures)
+404 fetch errors:      2 (deleted/moved articles)
+
+Groq JSON parse errors:
+  • Unknown
+    https://buzz.bournemouth.ac.uk/2026/01/olivier-award-winning-dear-england-tour-kicks-off-in-southampton/
+  • Unknown
+    https://buzz.bournemouth.ac.uk/2026/01/international-lego-day-helps-bournemouth-children-get-creative/
+
+404 fetch errors:
+  • Unknown
+    https://buzz.bournemouth.ac.uk/2026/01/southampton-vs-sheffield-preview/
+  • Unknown
+    https://buzz.bournemouth.ac.uk/2026/01/police-appeal-have-you-seen-david/
+
+================================================================================
+VALIDATION STATUS
+================================================================================
+✅ AICR Round 2: 5/5 articles validated (see AICR_ROUND2_FULL_COMPARISON.txt)
+✅ Boscombe Fire: Independent extraction validated system scores
+✅ Component accuracy: 100% exact matches on WE/SD/AR/CD/OI
+
+================================================================================
+CONCLUSION
+================================================================================
+Dataset is 98.7% complete (308/312 articles scored or exempt).
+Remaining 4 errors are permanent failures (2 Groq API, 2 deleted articles).
+AR/OI/CD local calculation fix validated with HIGH confidence.
+
+✓ READY FOR PRODUCTION USE
+================================================================================

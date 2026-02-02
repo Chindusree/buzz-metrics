@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
 """
-Story Substance Index (SSI) Scoring Script - Version 2.1
+News Gathering Index (NGI) Scoring Script - Version 2.2
 
-Calculates SSI for BUzz articles using 5 components:
+Calculates NGI for BUzz articles using 5 components:
 - WE (Word Efficiency): Word count vs threshold
-- SD (Source Density): Source count vs threshold
+- SD (Source Density): JOURNALISTIC source count (OI >= 0.5) vs threshold
 - AR (Attribution Rigour): Quality of source attribution
 - CD (Contextual Depth): Presence of context elements
-- OI (Originality Index): Source provenance and originality
+- OI (Originality Index): Source provenance (contextual assessment)
 
 Formula (Standard): SSI = 100 × (WE + SD + AR + CD + OI) / 5
 Formula (Sourceless): SSI = 100 × (WE + SD + CD + OI) / 4  (AR excluded)
 
 Intake Gates:
-- 40-CAP: Applied when SD = 0 (no sources)
-- 50-CAP: Applied when OI < 0.5 (churnalism)
+- 40-CAP: Applied when SD = 0 (no journalistic sources)
+- 50-CAP: Applied when OI < 0.4 (churnalism) - UPDATED from < 0.5
+
+NGI 2.2 Changes from SSI 2.1:
+- OI tiers: GOOD_FAITH (0.8) → PROBABLE_ORIGINAL (0.6)
+- OI tiers: INSTITUTIONAL (0.5) → INSTITUTIONAL (0.2)
+- OI tiers: WIRE (0.3) → WIRE (0.1)
+- SD gating: Only sources with OI >= 0.5 count
+- 50-CAP threshold: OI < 0.5 → OI < 0.4
+- Exemptions: Only word_count = 0 (was: breaking, previews, reports, snippets)
 """
 
 import json
@@ -45,8 +53,8 @@ LOCAL_MARKERS = [
     'afc bournemouth', 'cherries'
 ]
 
-# Groq prompt template
-SSI_PROMPT_TEMPLATE = open('ssi_prompt_v2.1.md', 'r').read()
+# Groq prompt template (NGI 2.2)
+SSI_PROMPT_TEMPLATE = open('ngi_prompt_v2.2.md', 'r').read()
 
 
 def fetch_article_text(url):
@@ -174,39 +182,15 @@ ARTICLE_TEXT:
 
 def is_exempt(article, headline):
     """
-    Check if article should be exempt from SSI scoring (SSI 2.1 rules).
+    Check if article should be exempt from NGI scoring (NGI 2.2 rules).
+    NGI 2.2: ONLY exempt word_count = 0 (non-text content like videos/livestreams)
     Returns (is_exempt, reason)
     """
     word_count = article.get('word_count', 0)
-    headline_lower = headline.lower()
 
-    # 1. SNIPPET
-    if word_count < 150:
-        return True, 'Snippet (< 150 words)'
-
-    # 2. BREAKING (case-insensitive)
-    if headline.upper().startswith('BREAKING'):
-        return True, 'Breaking news'
-
-    # 3. LIVE BULLETIN
-    if 'buzz news tv' in headline_lower:
-        return True, 'Live bulletin'
-
-    # 4. LIVE BLOG
-    if 'as it happened' in headline_lower or headline_lower.startswith('live:'):
-        return True, 'Live blog'
-
-    # 5. MATCH REPORT (Sport + past tense match verbs)
-    category = article.get('display_category', '').lower()
-    if category == 'sport' or 'sport' in article.get('categories', []):
-        match_report_patterns = ['beat', 'beaten', 'defeated', 'thrashed', 'won', 'lost to', 'fall to', 'fell to', 'draw with', 'drew with']
-        if any(pattern in headline_lower for pattern in match_report_patterns):
-            return True, 'Match report'
-
-        # 6. MATCH PREVIEW (Sport + future phrases)
-        preview_patterns = ['to play', 'to face', 'set to', ' vs ', ' v ', 'preview']
-        if any(pattern in headline_lower for pattern in preview_patterns):
-            return True, 'Match preview'
+    # NGI 2.2: Only exempt non-text content (word_count = 0)
+    if word_count == 0:
+        return True, 'non_text_content'
 
     return False, None
 
@@ -244,10 +228,40 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
     hw = 800 if category == 'Feature' else 350
     we = min(verified_word_count / hw, 1.0) if verified_word_count > 0 else 0.0
 
-    # CALCULATE SD LOCALLY from Groq's source list
+    # CALCULATE OI LOCALLY from source oi_scores (with defensive fallbacks)
+    # NGI 2.2: Updated tier values
+    OI_MAP = {"ORIGINAL": 1.0, "PROBABLE_ORIGINAL": 0.6, "GOOD_FAITH": 0.6, "INSTITUTIONAL": 0.2, "WIRE": 0.1}
+    if ssi_sources:
+        oi_scores = []
+        for s in ssi_sources:
+            if isinstance(s.get('oi_score'), (int, float)):
+                oi_scores.append(s['oi_score'])
+            elif s.get('oi_tier') in OI_MAP:
+                oi_scores.append(OI_MAP[s['oi_tier']])
+            else:
+                oi_scores.append(0.6)  # Conservative default (PROBABLE_ORIGINAL)
+        oi = sum(oi_scores) / len(oi_scores)
+    else:
+        oi = 0.0
+
+    # CALCULATE SD LOCALLY - NGI 2.2: Only count sources with OI >= 0.5
     hs = 4 if category == 'Feature' else 3
     unique_sources = len(ssi_sources)
-    sd = unique_sources / hs  # Allow uncapped for later capping
+
+    # NGI 2.2: Count journalistic sources (OI >= 0.5)
+    journalistic_sources = 0
+    if ssi_sources:
+        for s in ssi_sources:
+            s_oi = s.get('oi_score')
+            if s_oi is None and s.get('oi_tier') in OI_MAP:
+                s_oi = OI_MAP[s.get('oi_tier')]
+            if s_oi is not None and s_oi >= 0.5:
+                journalistic_sources += 1
+                s['counts_for_sd'] = True
+            else:
+                s['counts_for_sd'] = False
+
+    sd = journalistic_sources / hs  # Allow uncapped for later capping
 
     # CALCULATE AR LOCALLY from source ar_scores (with defensive fallbacks)
     AR_MAP = {"Full": 1.0, "Partial": 0.7, "Vague": 0.4, "Anonymous": 0.1}
@@ -263,21 +277,6 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
         ar = sum(ar_scores) / len(ar_scores)
     else:
         ar = None  # Excluded from formula when SD=0
-
-    # CALCULATE OI LOCALLY from source oi_scores (with defensive fallbacks)
-    OI_MAP = {"ORIGINAL": 1.0, "GOOD_FAITH": 0.8, "INSTITUTIONAL": 0.5, "WIRE": 0.3}
-    if ssi_sources:
-        oi_scores = []
-        for s in ssi_sources:
-            if isinstance(s.get('oi_score'), (int, float)):
-                oi_scores.append(s['oi_score'])
-            elif s.get('oi_tier') in OI_MAP:
-                oi_scores.append(OI_MAP[s['oi_tier']])
-            else:
-                oi_scores.append(0.8)  # Conservative default (GOOD_FAITH)
-        oi = sum(oi_scores) / len(oi_scores)
-    else:
-        oi = 0.0
 
     # CALCULATE CD LOCALLY from context flags
     cd = sum([
@@ -314,8 +313,8 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
             ssi_score = 40
             gate = '40-CAP'
 
-    # Gate 2: 50-CAP (when OI < 0.5)
-    if oi < 0.5:
+    # Gate 2: 50-CAP (when OI < 0.4) - NGI 2.2: Updated from < 0.5
+    if oi < 0.4:
         if ssi_score > 50:
             ssi_score = 50
             gate = '50-CAP'
@@ -338,6 +337,7 @@ def calculate_ssi_v2_1(verified_word_count, verified_sources, groq_result):
         },
         'ssi_sources': ssi_sources,
         'ssi_unique_sources': unique_sources,
+        'ssi_journalistic_sources': journalistic_sources,  # NGI 2.2: Count of sources with OI >= 0.5
         'ssi_gate': gate
     }
 

@@ -1,0 +1,222 @@
+{
+  "extracted_by": "Claude (Model B)",
+  "extraction_date": "2026-02-02",
+  "batch": 1,
+  "model": "Claude Sonnet 4.5",
+  "method": "Independent extraction via HTML parsing and regex pattern matching",
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "word_count": 359,
+      "sources": [],
+      "source_count": 0,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 0 sources from 0 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "word_count": 0,
+      "sources": [],
+      "source_count": 0,
+      "extraction_notes": "Minimal text content (word_count=0)"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "word_count": 332,
+      "sources": [
+        {
+          "name": "She",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "Adults can still have fun, we want to install that in everyone and let that big kid energy out."
+        },
+        {
+          "name": "Fran",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "We have one guy who we support in his 50s and the first time he used a slide was with us."
+        }
+      ],
+      "source_count": 2,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "extraction_notes": "Claude extracted 2 sources from 4 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "word_count": 431,
+      "sources": [
+        {
+          "name": "Rayan",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 1.0,
+          "ar_reasoning": "Full attribution: name + role + organization identified in context",
+          "sample_quote": "I am very happy to play amongst the best and proving myself."
+        },
+        {
+          "name": "He",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "Bournemouth built a very good sporting project for me, they have amazing work with developing talent"
+        },
+        {
+          "name": "Murito",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "He\u2019s one of the best youth attackers in Brazil, he has so much potential, he\u2019s the best prospect at "
+        }
+      ],
+      "source_count": 3,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": true,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 3 sources from 5 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "word_count": 450,
+      "sources": [
+        {
+          "name": "Liz Kendall",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "No clear provenance indicators, assuming original reporting",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "no woman or child should live in fear of having their image manipulated by technology"
+        },
+        {
+          "name": "Kendall",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "No clear provenance indicators, assuming original reporting",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "Today I can announce to the house that this offence will be brought into force this week and that I "
+        }
+      ],
+      "source_count": 2,
+      "cd_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 2 sources from 3 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "word_count": 418,
+      "sources": [],
+      "source_count": 0,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 0 sources from 0 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "word_count": 394,
+      "sources": [],
+      "source_count": 0,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 0 sources from 0 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "word_count": 294,
+      "sources": [
+        {
+          "name": "Trump",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.7,
+          "ar_reasoning": "Partial attribution: name + role identified, organization not clear",
+          "sample_quote": "turned violent and bloody"
+        }
+      ],
+      "source_count": 1,
+      "cd_flags": {
+        "has_data": true,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": false
+      },
+      "extraction_notes": "Claude extracted 1 sources from 1 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "word_count": 363,
+      "sources": [
+        {
+          "name": "Ben Edgell",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 1.0,
+          "ar_reasoning": "Full attribution: name + role + organization identified in context",
+          "sample_quote": "I don\u2019t think as a community we do enough to support, for me this is a great platform to do this"
+        },
+        {
+          "name": "Mr Edgell",
+          "oi_tier": "PROBABLE_ORIGINAL",
+          "oi_score": 0.6,
+          "oi_reasoning": "Local source with no wire indicators, no explicit BUzz attribution",
+          "ar_score": 0.4,
+          "ar_reasoning": "Vague attribution: name only, no role or organization",
+          "sample_quote": "For our last game, we had one person working on the turnstiles, he can go away now with that experie"
+        }
+      ],
+      "source_count": 2,
+      "cd_flags": {
+        "has_data": false,
+        "has_timeline": true,
+        "has_comparison": false,
+        "has_structural": true
+      },
+      "extraction_notes": "Claude extracted 2 sources from 2 quoted passages"
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "word_count": 0,
+      "sources": [],
+      "source_count": 0,
+      "extraction_notes": "Minimal text content (word_count=0)"
+    }
+  ]
+}

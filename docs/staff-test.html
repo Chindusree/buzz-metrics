@@ -16,7 +16,7 @@
         .header-top { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; }
         .logo { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 1.5rem; color: #ea5a6a; }
         .header-label { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
-        .date-select { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 0.4rem 0.75rem; border-radius: 6px; font-size: 0.85rem; }
+        .date-select { background: transparent; border: none; border-bottom: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.9); padding: 6px 10px; border-radius: 0; font-size: 0.75rem; }
         .nav { display: flex; overflow-x: auto; max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
         .nav a { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.75rem 1rem; white-space: nowrap; }
         .nav a:first-child { padding-left: 0; }
@@ -39,7 +39,7 @@
         }
         #stories-toggle:hover, #targets-toggle:hover { color: #1a1a1a; }
         .hero-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
-        .stat-card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .stat-card { background: white; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); text-align: center; }
         .stat-card.featured { grid-column: span 2; background: #1a1a1a; color: white; text-align: center; padding: 1.5rem; }
         .stat-value { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1; }
         .stat-card.featured .stat-value { font-size: 4rem; }
@@ -106,6 +106,7 @@
         .footer-about p:last-child { margin-bottom: 0; }
         .footer-about a { color: #ddd; text-decoration: none; }
         .footer-about a:hover { color: #ea5a6a; }
+        .footer-about .keyword { border-bottom: 1px solid #ea5a6a; padding-bottom: 2px; }
         .expect-box { background: rgba(255,255,255,0.05); border-radius: 6px; padding: 0.75rem; margin-top: 0.75rem; }
         .expect-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.6rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.4); margin-bottom: 0.4rem; }
         .expect-list { list-style: none; font-size: 0.75rem; }
@@ -507,14 +508,20 @@
         }
 
         /* House style for index card footnote links (SEI, SSI, BNS) */
-        .index-card .footnote a.index-link {
+        .index-card .footnote a.index-link,
+        .gender-note a.index-link {
             color: #64748b;
             text-decoration: none;
             transition: color 0.2s;
         }
-        .index-card .footnote a.index-link:hover {
-            color: #ea5a6a;
-            text-decoration: none;
+        .index-card .footnote a.index-link:hover,
+        .gender-note a.index-link:hover {
+            color: #1a1a1a;
+        }
+        .index-card .footnote a.index-link .keyword,
+        .gender-note a.index-link .keyword {
+            border-bottom: 1px solid #ea5a6a;
+            padding-bottom: 2px;
         }
 
         /* Indices row - SSI and BNS side by side */
@@ -618,7 +625,7 @@
                     <div class="gender-track"><div class="gender-bar unknown"></div></div>
                     <span class="gender-value">0% (0)</span>
                 </div>
-                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank" class="index-link"><span class="keyword">50:50</span></a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
             </div>
 
             <!-- Sections -->
@@ -820,7 +827,7 @@
     <div class="footer-about">
         <h3>About this dashboard</h3>
         <p>BUzz Metrics is an automated tool for journalism education, being developed at Bournemouth University. This prototype provides real-time quality metrics to support evidence-based editorial feedback for student journalists.</p>
-        <p>Newsrooms typically measure traffic. We want to encourage the next generation of journalists to think beyond clicks — to reflect on whose voices they amplify, how they source their stories, and how better they can serve their audiences. Our approach is informed by journalism research at Bournemouth University and industry best practices from the <a href="https://www.bbc.co.uk/5050" target="_blank">BBC 50:50 Project</a>, the <a href="https://diversitypledge.org/" target="_blank">Diversity Pledge Institute</a> and <a href="https://wan-ifra.org/" target="_blank">WAN-IFRA</a>.</p>
+        <p>Newsrooms typically measure traffic. We want to encourage the next generation of journalists to think beyond clicks — to reflect on whose voices they amplify, how they source their stories, and how better they can serve their audiences. Our approach is informed by journalism research at Bournemouth University and industry best practices from the <a href="https://www.bbc.co.uk/5050" target="_blank"><span class="keyword">BBC 50:50 Project</span></a>, the <a href="https://diversitypledge.org/" target="_blank"><span class="keyword">Diversity Pledge Institute</span></a> and <a href="https://wan-ifra.org/" target="_blank"><span class="keyword">WAN-IFRA</span></a>.</p>
         <p>We estimate source counts using automated pattern matching and natural language processing. Gender is inferred from first names using the gender-guesser library. All data is drawn from publicly published articles on buzz.bournemouth.ac.uk.</p>
         <p>The metrics have known limitations. Context matters: a match report might not need quotes; an investigation needs many. Use this data as guidance, to reflect on practice, not as a scorecard.</p>
     </div>
@@ -891,11 +898,29 @@
 <div class="modal-overlay" id="ssiModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">Story Substance Index</h3>
+            <h3 class="modal-title">Newsgathering Index</h3>
             <button class="modal-close" onclick="closeSSIModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>[Placeholder: SSI methodology will go here]</p>
+            <p>NGI measures the clay of journalism — the raw material gathered through active reporting, before writing begins. It does not assess writing quality or production finesse. In essence: was reportorial labour invested, and was that labour original?</p>
+
+            <p><strong>This calculation:</strong> 295 articles scored; 9 exempt (video/audio content only). Mean NGI: 60.</p>
+
+            <p><strong>Validation:</strong> Inter-Model Reliability agreement: 85% (<a href="#">see more about IMR</a>)</p>
+
+            <p>Five components, each scored 0–1:</p>
+
+            <ul>
+                <li><strong>Word Efficiency (WE)</strong> — Volume against house target</li>
+                <li><strong>Source Density (SD)</strong> — Breadth of original sourcing</li>
+                <li><strong>Attribution Rigour (AR)</strong> — Quality of source identification</li>
+                <li><strong>Contextual Depth (CD)</strong> — Presence of data, timeline, comparison, or explanation</li>
+                <li><strong>Originality Index (OI)</strong> — Source provenance: original vs wire/PR</li>
+            </ul>
+
+            <p>Only journalistic sources (OI &ge; 0.5) contribute to SD. Stories with no original sources cap at 40; those predominantly reliant on secondary material cap at 50.</p>
+
+            <p style="margin-top: 1.5em; margin-bottom: 1.5em; font-weight: normal;">NGI = 100 &times; (WE + SD + AR + CD + OI) &div; 5</p>
         </div>
     </div>
 </div>
@@ -959,7 +984,7 @@
 
             <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>This cohort:</strong> 17 stories tagged breaking; 13 eligible. Four Owned, five First, four Behind. Total: 910 points &rarr; BNS = 910 &div; 13 = 70</p>
 
-            <p>Limitations: Measures speed only (reporting strength assessed by SSI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
+            <p>Limitations: Measures speed only (reporting strength assessed by NGI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
 
             <p><em><a href="#">See draft of methodology paper</a></em></p>
         </div>
@@ -1122,7 +1147,7 @@
 
         // Update subtitle
         if (selectedDate === 'all') {
-            document.querySelector('.section-sub').textContent = 'All dates combined';
+            document.querySelector('.section-sub').textContent = 'All dates';
         } else {
             const d = new Date(selectedDate + 'T00:00:00');
             document.querySelector('.section-sub').textContent = d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -1247,7 +1272,7 @@
                     <div class="gender-track"><div class="gender-bar unknown" style="width: ${unknownPercent}%"></div></div>
                     <span class="gender-value">${unknownPercent}% (${genderCounts.unknown})</span>
                 </div>
-                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank">50:50</a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
+                <p class="gender-note"><span style="color: #ea5a6a; font-weight: 600;">?</span> Whose voices do we quote? Sourcing should fit the story, but challenge your defaults. See BBC good practice, <a href="https://www.bbc.co.uk/5050" target="_blank" class="index-link"><span class="keyword">50:50</span></a>. Gender estimated via first-name lookup and context analysis. May not always reflect identity.</p>
             </div>
         `;
 
@@ -1379,7 +1404,7 @@
                         ${sparklineSVG}
                         <div class="sei-sparkline-tooltip" id="seiTooltip"></div>
                     </div>
-                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Measures sourcing integrity: who is quoted, who has agency, who is missed. <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is calculated</a>.</p>
+                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> <span style="color: #1a1a1a;">Measures sourcing integrity: who is quoted, who has agency, who is missed.</span> <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is <span class="keyword">calculated</span>.</a></p>
                 </div>
             `;
         } else {
@@ -1391,7 +1416,7 @@
                 <div class="index-card" style="grid-column: span 2;">
                     <h3>Source Equity Inde<span style="color: #ea5a6a;">X</span></h3>
                     <div class="score-container">
-                        <div class="score">${overallSEI}</div>
+                        <div class="score" data-tooltip="News ${newsSEI} · Sport ${sportSEI}">${overallSEI}</div>
                         <div class="score-subtitle">TODAY</div>
                     </div>
                     <div class="sei-category-bars">
@@ -1410,7 +1435,7 @@
                             <span class="sei-bar-value">${sportSEI}</span>
                         </div>
                     </div>
-                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Measures sourcing integrity: who is quoted, who has agency, who is missed. <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is calculated</a>.</p>
+                    <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> <span style="color: #1a1a1a;">Measures sourcing integrity: who is quoted, who has agency, who is missed.</span> <a href="#" onclick="showSEIMethodology(event)" class="index-link">See how this is <span class="keyword">calculated</span>.</a></p>
                 </div>
             `;
         }
@@ -1460,11 +1485,11 @@
             html += `
                 <div class="indices-row">
                     <div class="index-card">
-                        <h3>Story Substance Inde<span style="color: #ea5a6a;">X</span></h3>
+                        <h3>Newsgathering Inde<span style="color: #ea5a6a;">X</span></h3>
                         <div class="score-container">
                             <div class="score" data-tooltip="News ${ssiNewsMean} · Sport ${ssiSportMean}">${ssiMean}</div>
                         </div>
-                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> Composite metric measuring newsgathering strength. <a href="#" onclick="showSSIMethodology(event)">See how this is calculated</a>.</p>
+                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">X</span> <span style="color: #1a1a1a;">Composite metric measuring newsgathering strength.</span> <a href="#" onclick="showSSIMethodology(event)" class="index-link">See how this is <span class="keyword">calculated</span>.</a></p>
                     </div>
 
                     <div class="index-card">
@@ -1472,7 +1497,7 @@
                         <div class="score-container">
                             <div class="score" data-tooltip="${bnsTooltip}">${bnsScore}</div>
                         </div>
-                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">E</span> Speed to publish vs BBC & Bournemouth Echo. <a href="#" onclick="showBNSMethodology(event)">See how this is calculated</a>.</p>
+                        <p class="footnote"><span style="color: #ea5a6a; font-weight: 600; font-family: 'Bricolage Grotesque', sans-serif;">E</span> <span style="color: #1a1a1a;">Speed to publish vs BBC & Bournemouth Echo.</span> <a href="#" onclick="showBNSMethodology(event)" class="index-link">See how this is <span class="keyword">calculated</span>.</a></p>
                     </div>
                 </div>
             `;

@@ -1,0 +1,182 @@
+========================================================================================================================
+AICR ROUND 2 - FULL COMPARISON TABLE
+Model B (Claude Code) vs System
+========================================================================================================================
+
+ARTICLE 1: BCP Council under scrutiny over disabled parking access in Poole Quay
+URL: https://buzz.bournemouth.ac.uk/2026/01/bcp-disabled-parking-poole-quay/
+Category: News | Word Count: 360 | Content Type: WordPress
+
+SOURCES (2):
+  1. Sharon Small - AR: 1.0 (Full), OI: 0.8 (GOOD_FAITH)
+  2. Simon Bull - AR: 1.0 (Full), OI: 0.8 (GOOD_FAITH)
+
+CONTEXT FLAGS:
+  DATA: ✗ | TIMELINE: ✗ | COMPARISON: ✓ | STRUCTURAL: ✓
+
+COMPONENT COMPARISON:
+  Component    System    CC (Model B)    Diff    Threshold    Status
+  ───────────────────────────────────────────────────────────────────
+  WE           1.00      1.00            0.00    ±0.05        ✅ PASS
+  SD           0.67      0.67            0.00    ±0.10        ✅ PASS
+  AR           1.00      1.00            0.00    ±0.20        ✅ PASS
+  CD           0.50      0.50            0.00    ±0.25        ✅ PASS
+  OI           0.80      0.80            0.00    ±0.20        ✅ PASS
+  SSI          79.3      79.4            0.1     ±10.0        ✅ PASS
+
+GATE: None
+OVERALL: ✅ ALL COMPONENTS PASS
+
+========================================================================================================================
+
+ARTICLE 2: Contract Extension for Hampshire Hawks' James Vince
+URL: https://buzz.bournemouth.ac.uk/2026/01/contract-extension-for-hampshire-hawks-james-vince/
+Category: News | Word Count: 365 | Content Type: WordPress
+
+SOURCES (1):
+  1. Matt Perry-Lewis - AR: 0.7 (Partial), OI: 0.8 (GOOD_FAITH)
+
+CONTEXT FLAGS:
+  DATA: ✓ | TIMELINE: ✓ | COMPARISON: ✗ | STRUCTURAL: ✗
+
+COMPONENT COMPARISON:
+  Component    System    CC (Model B)    Diff    Threshold    Status
+  ───────────────────────────────────────────────────────────────────
+  WE           1.00      1.00            0.00    ±0.05        ✅ PASS
+  SD           0.33      0.33            0.00    ±0.10        ✅ PASS
+  AR           0.70      0.70            0.00    ±0.20        ✅ PASS
+  CD           0.50      0.50            0.00    ±0.25        ✅ PASS
+  OI           0.80      0.80            0.00    ±0.20        ✅ PASS
+  SSI          66.7      66.6            0.1     ±10.0        ✅ PASS
+
+GATE: None
+OVERALL: ✅ ALL COMPONENTS PASS
+
+========================================================================================================================
+
+ARTICLE 3: Eyewitness account of Boscombe Sovereign Centre fire
+URL: https://buzz.bournemouth.ac.uk/2026/01/eyewitness-account-of-boscombe-sovereign-centre-fire/
+Category: News | Word Count: 213 | Content Type: WordPress
+
+SOURCES (3):
+  1. Dorset Fire and Rescue - AR: 0.7 (Partial), OI: 0.5 (INSTITUTIONAL)
+  2. Mr. B - AR: 0.1 (Anonymous), OI: 0.8 (GOOD_FAITH)
+  3. Sovereign Centre spokesperson - AR: 0.4 (Vague), OI: 0.5 (INSTITUTIONAL)
+
+CONTEXT FLAGS:
+  DATA: ✗ | TIMELINE: ✓ | COMPARISON: ✗ | STRUCTURAL: ✗
+
+COMPONENT COMPARISON:
+  Component    System    CC (Model B)    Diff    Threshold    Status
+  ───────────────────────────────────────────────────────────────────
+  WE           0.61      0.61            0.00    ±0.05        ✅ PASS
+  SD           1.00      1.00            0.00    ±0.10        ✅ PASS
+  AR           0.40      0.40            0.00    ±0.20        ✅ PASS
+  CD           0.25      0.25            0.00    ±0.25        ✅ PASS
+  OI           0.60      0.60            0.00    ±0.20        ✅ PASS
+  SSI          57.2      57.2            0.0     ±10.0        ✅ PASS
+
+GATE: None
+OVERALL: ✅ ALL COMPONENTS PASS
+
+========================================================================================================================
+
+ARTICLE 4: Bournemouth Vitality Stadium expansion raises light pollution concerns
+URL: https://buzz.bournemouth.ac.uk/2026/01/bournemouth-vitality-stadium-expansion-raises-light-pollution-concerns/
+Category: News | Word Count: 714 | Content Type: Shorthand
+
+SOURCES (3):
+  1. Vitality Stadium Spokesperson - AR: 0.4 (Vague), OI: 0.5 (INSTITUTIONAL)
+  2. Sara Armstrong - AR: 0.7 (Partial), OI: 0.8 (GOOD_FAITH)
+  3. Dr Brent Pease - AR: 1.0 (Full), OI: 1.0 (ORIGINAL)
+
+CONTEXT FLAGS:
+  DATA: ✓ | TIMELINE: ✓ | COMPARISON: ✗ | STRUCTURAL: ✓
+
+COMPONENT COMPARISON:
+  Component    System    CC (Model B)    Diff    Threshold    Status
+  ───────────────────────────────────────────────────────────────────
+  WE           1.00      1.00            0.00    ±0.05        ✅ PASS
+  SD           1.00      1.00            0.00    ±0.10        ✅ PASS
+  AR           0.70      0.70            0.00    ±0.20        ✅ PASS
+  CD           0.75      0.75            0.00    ±0.25        ✅ PASS
+  OI           0.77      0.77            0.00    ±0.20        ✅ PASS
+  SSI          84.3      84.4            0.1     ±10.0        ✅ PASS
+
+GATE: None
+OVERALL: ✅ ALL COMPONENTS PASS
+
+========================================================================================================================
+
+ARTICLE 5: Can UPFs be avoided on a budget?
+URL: https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/
+Category: Feature | Word Count: 1825 | Content Type: Shorthand
+
+SOURCES (3):
+  1. Sophia Lloyd - AR: 1.0 (Full), OI: 0.8 (GOOD_FAITH)
+  2. Rebecca Brown - AR: 1.0 (Full), OI: 0.8 (GOOD_FAITH)
+  3. Heather Smith - AR: 1.0 (Full), OI: 0.8 (GOOD_FAITH)
+
+CONTEXT FLAGS:
+  DATA: ✓ | TIMELINE: ✓ | COMPARISON: ✓ | STRUCTURAL: ✓
+
+COMPONENT COMPARISON:
+  Component    System    CC (Model B)    Diff    Threshold    Status
+  ───────────────────────────────────────────────────────────────────
+  WE           1.00      1.00            0.00    ±0.05        ✅ PASS
+  SD           0.75      0.75            0.00    ±0.10        ✅ PASS
+  AR           1.00      1.00            0.00    ±0.20        ✅ PASS
+  CD           1.00      1.00            0.00    ±0.25        ✅ PASS
+  OI           0.80      0.80            0.00    ±0.20        ✅ PASS
+  SSI          91.0      91.0            0.0     ±10.0        ✅ PASS
+
+GATE: None
+OVERALL: ✅ ALL COMPONENTS PASS
+
+========================================================================================================================
+
+VALIDATION SUMMARY
+========================================================================================================================
+
+Articles Validated: 5/5
+All Components Status: ✅ ALL PASS
+
+Results by Article:
+  1. BCP Disabled Parking:        ✅ ALL PASS (SSI Δ0.1)
+  2. James Vince Contract:        ✅ ALL PASS (SSI Δ0.1)
+  3. Boscombe Fire Eyewitness:    ✅ ALL PASS (SSI Δ0.0) - EXACT MATCH
+  4. Vitality Stadium:            ✅ ALL PASS (SSI Δ0.1)
+  5. UPFs on Budget:              ✅ ALL PASS (SSI Δ0.0) - EXACT MATCH
+
+Component Accuracy:
+  WE:  5/5 exact matches (100%)
+  SD:  5/5 exact matches (100%)
+  AR:  5/5 exact matches (100%)
+  CD:  5/5 exact matches (100%)
+  OI:  5/5 exact matches (100%)
+  SSI: 2/5 exact, 3/5 within ±0.1 (all within ±10 threshold)
+
+SSI Score Differences:
+  - Max difference: 0.1 (rounding tolerance)
+  - Avg difference: 0.06
+  - All differences attributable to floating-point rounding
+
+========================================================================================================================
+
+RECOMMENDATION: ✅ AR/OI/CD LOCAL CALCULATION FIX VALIDATED AND APPROVED
+
+The AR/OI/CD local calculation fix (commit 9cabd4f) is validated with HIGH confidence:
+  ✅ All 5 articles show exact or near-exact component matches
+  ✅ AR calculation from source ar_scores: VERIFIED
+  ✅ OI calculation from source oi_scores: VERIFIED
+  ✅ CD calculation from context flags: VERIFIED
+  ✅ WE/SD local arithmetic: VERIFIED (from previous commits)
+
+Minor SSI differences (≤0.1) are due to floating-point rounding and well within acceptable tolerance.
+
+Date: 2026-02-01
+Validator: Claude Code (Model B)
+System: SSI v2.1 with full local component calculation
+Commit: 9cabd4f
+
+========================================================================================================================
