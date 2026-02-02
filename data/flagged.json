@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-02T13:13:10Z",
-  "total_flagged": 128,
+  "generated": "2026-02-02T14:19:55Z",
+  "total_flagged": 131,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -1631,6 +1631,48 @@
       "review_status": "pending"
     },
     {
+      "id": "d0eceb2acc05",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
+      "headline": "Running together: How Bournemouth’s run clubs are building community",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jessica Toale",
+        "Dean Johnstone"
+      ],
+      "verify_evidence": [
+        "Bournemouth",
+        "Dean Johnstone",
+        "Johnstone",
+        "Chris Downer"
+      ],
+      "confirmed": [
+        {
+          "name": "Jessica Toale",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Dean Johnstone",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Chris Downer",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Bournemouth"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "37619d905b65",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/southern-league-premier-south-preview/",
       "headline": "Southern League Premier South preview",
@@ -3108,6 +3150,48 @@
       "review_status": "pending"
     },
     {
+      "id": "1699874fc561",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
+      "headline": "Jessica Toale priorities survey to tackle main issues in Bournemouth",
+      "scrape_count": 2,
+      "verify_count": 4,
+      "confirmed_count": 2,
+      "possible_count": 1,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Jessica Toale",
+        "Dean Johnstone"
+      ],
+      "verify_evidence": [
+        "Bournemouth",
+        "Dean Johnstone",
+        "Johnstone",
+        "Chris Downer"
+      ],
+      "confirmed": [
+        {
+          "name": "Jessica Toale",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Dean Johnstone",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Chris Downer",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Bournemouth"
+      ],
+      "review_status": "pending"
+    },
+    {
       "id": "2063683a978e",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/man-sentenced-for-people-smuggling-and-class-a-drug-supply/",
       "headline": "Man sentenced for people smuggling and class A drug supply",
@@ -4361,6 +4445,46 @@
         }
       ],
       "filtered": [],
+      "review_status": "pending"
+    },
+    {
+      "id": "a8bb8f2f4a19",
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
+      "headline": "Bournemouth drowned by Storm Chandra",
+      "scrape_count": 1,
+      "verify_count": 4,
+      "confirmed_count": 1,
+      "possible_count": 2,
+      "filtered_count": 1,
+      "scrape_evidence": [
+        "Doug Turner"
+      ],
+      "verify_evidence": [
+        "Bournemouth",
+        "Dean Johnstone",
+        "Johnstone",
+        "Chris Downer"
+      ],
+      "confirmed": [
+        {
+          "name": "Doug Turner",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "possible": [
+        {
+          "name": "Dean Johnstone",
+          "gender": "male"
+        },
+        {
+          "name": "Chris Downer",
+          "gender": "male"
+        }
+      ],
+      "filtered": [
+        "Bournemouth"
+      ],
       "review_status": "pending"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-02T13:13:07Z",
+  "last_updated": "2026-02-02T14:19:52Z",
   "total_verified": 312,
   "results": [
     {
@@ -1345,8 +1345,25 @@
     {
       "id": "d0eceb2acc05",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/running-together-how-bournemouths-run-clubs-are-building-community/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Bournemouth",
+          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
+        },
+        {
+          "name": "Dean Johnstone",
+          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
+        },
+        {
+          "name": "Johnstone",
+          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
+        },
+        {
+          "name": "Chris Downer",
+          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
+        }
+      ]
     },
     {
       "id": "37619d905b65",
@@ -2628,8 +2645,25 @@
     {
       "id": "1699874fc561",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/jessica-toale-priorities-survey-to-tackle-main-issues-in-bournemouth/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Bournemouth",
+          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
+        },
+        {
+          "name": "Dean Johnstone",
+          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
+        },
+        {
+          "name": "Johnstone",
+          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
+        },
+        {
+          "name": "Chris Downer",
+          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
+        }
+      ]
     },
     {
       "id": "614081e9e3da",
@@ -3709,8 +3743,25 @@
     {
       "id": "a8bb8f2f4a19",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-drowned-by-storm-chandra/",
-      "verify_quoted_sources": 0,
-      "verify_evidence": []
+      "verify_quoted_sources": 4,
+      "verify_evidence": [
+        {
+          "name": "Bournemouth",
+          "context": "PERSON within 50 chars of quote: ... said: “I stood for election here because I think Bournemouth is an absolutely amazing place but like a lot of ..."
+        },
+        {
+          "name": "Dean Johnstone",
+          "context": "PERSON within 50 chars of quote: ...from being overlooked. Local Bournemouth resident Dean Johnstone said : “It is great to see that locals are being ..."
+        },
+        {
+          "name": "Johnstone",
+          "context": "PERSON within 50 chars of quote: ...at he believes to be the most important priority, Johnstone said: “For me, revitalising the town centre is ve..."
+        },
+        {
+          "name": "Chris Downer",
+          "context": "PERSON within 50 chars of quote: ...ris Downer, wikicommons The Square, Bournemouth | Chris Downer, wikicommons Toale said: “I can only do my job if..."
+        }
+      ]
     },
     {
       "id": "f3bb4bc3924f",
