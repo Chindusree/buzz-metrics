@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-02-01T06:54:54.715110Z",
+  "last_updated": "2026-02-02T17:32:43.390256Z",
   "ssi_version": "2.1",
   "summary": {
     "total_articles": 312,
     "scored": 263,
     "exempt": 46,
     "errors": 3,
-    "skipped": 271,
+    "skipped": 312,
     "by_category": {
       "News": {
         "count": 229,
