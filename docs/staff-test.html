@@ -869,27 +869,27 @@
 <div class="modal-overlay" id="seiModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">How We Calculate SEI</h3>
+            <h3 class="modal-title">How we calculate SEI</h3>
             <button class="modal-close" onclick="closeSEIModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>SEI measures sourcing integrity across three components:</p>
+            <p>SEI measures sourcing integrity across three components.</p>
 
             <ol>
-                <li><em>Inclusion</em> — proportion of non-male sources quoted, with a penalty for single-source stories</li>
-                <li><em>Structural Agency</em> — whether non-male sources explain 'why' (experts, decision-makers) not just 'what happened'</li>
-                <li><em>Impact Equity</em> — coverage of key stakeholders, penalising 'ghost sources' who should have been contacted</li>
+                <li><em>Inclusion:</em> proportion of non-male sources quoted</li>
+                <li><em>Structural Agency:</em> whether non-male sources explain 'why' (experts, decision-makers), not just 'what happened'</li>
+                <li><em>Impact Equity:</em> coverage of key stakeholders and considering absent perspectives — sources who should have been contacted.</li>
             </ol>
 
             <p>Components are weighted by story type:</p>
 
-            <p><strong>SEI = (Inclusion × 0.3) + (Structural Agency × w) + (Impact Equity × (0.7 − w))</strong></p>
+            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
+                <em style="font-size: 1.1em; font-style: italic;">SEI</em> = (<em>I</em> &times; 0.3) + (<em>A</em> &times; <em>w</em>) + (<em>S</em> &times; (0.7 &minus; <em>w</em>))
+            </div>
 
             <p>Each story is scored against its own context. Match reports, breaking news, and court reports are exempt.</p>
 
-            <p>Scores: 0–100. Gender inferred from first names; roles classified via AI. All methods have limitations.</p>
-
-            <p><em>Full methodology paper forthcoming.</em></p>
+            <p>Scores: 0–100. Gender inferred from first names; roles classified via AI.</p>
         </div>
     </div>
 </div>
@@ -911,16 +911,18 @@
             <p>Five components, each scored 0–1:</p>
 
             <ul>
-                <li><strong>Word Efficiency (WE)</strong> — Volume against house target</li>
-                <li><strong>Source Density (SD)</strong> — Breadth of original sourcing</li>
-                <li><strong>Attribution Rigour (AR)</strong> — Quality of source identification</li>
-                <li><strong>Contextual Depth (CD)</strong> — Presence of data, timeline, comparison, or explanation</li>
-                <li><strong>Originality Index (OI)</strong> — Source provenance: original vs wire/PR</li>
+                <li><em>Word Efficiency (WE)</em> — Volume against house target</li>
+                <li><em>Source Density (SD)</em> — Breadth of original sourcing</li>
+                <li><em>Attribution Rigour (AR)</em> — Quality of source identification</li>
+                <li><em>Contextual Depth (CD)</em> — Presence of data, timeline, comparison, or explanation</li>
+                <li><em>Originality Index (OI)</em> — Source provenance: original vs wire/PR</li>
             </ul>
 
             <p>Only journalistic sources (OI &ge; 0.5) contribute to SD. Stories with no original sources cap at 40; those predominantly reliant on secondary material cap at 50.</p>
 
-            <p style="margin-top: 1.5em; margin-bottom: 1.5em; font-weight: normal;">NGI = 100 &times; (WE + SD + AR + CD + OI) &div; 5</p>
+            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
+                <em style="font-size: 1.1em; font-style: italic;">NGI</em> = 100 &times; (<em>WE</em> + <em>SD</em> + <em>AR</em> + <em>CD</em> + <em>OI</em>) &div; 5
+            </div>
         </div>
     </div>
 </div>
@@ -929,7 +931,7 @@
 <div class="modal-overlay" id="bnsModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">How We Calculate BNS</h3>
+            <h3 class="modal-title">How we calculate BNS</h3>
             <button class="modal-close" onclick="closeBNSModal()">&times;</button>
         </div>
         <div class="modal-body">
@@ -940,9 +942,9 @@
             <p>Publication timestamps recorded; differences calculated in minutes. Stories classified as:</p>
 
             <ul>
-                <li><strong>Owned</strong> — No professional covered it; BUzz served an audience no one else did</li>
-                <li><strong>First</strong> — BUzz published before professionals (dominant: 30+ min; close: &lt;30 min)</li>
-                <li><strong>Behind</strong> — Professionals faster (close: &lt;15 min; clear: 15+ min)</li>
+                <li><em>Owned</em> — No professional covered it; BUzz served an audience no one else did</li>
+                <li><em>First</em> — BUzz published before professionals (dominant: 30+ min; close: &lt;30 min)</li>
+                <li><em>Behind</em> — Professionals faster (close: &lt;15 min; clear: 15+ min)</li>
             </ul>
 
             <p>Owned scores highest (100 pts) because identifying stories professionals overlook requires editorial judgment, not just speed.</p>
@@ -980,7 +982,9 @@
 
             <p>Excluded: Wire rewrites, press conferences, simultaneous official releases.</p>
 
-            <p style="margin-top: 1.5em; margin-bottom: 1.5em; font-weight: normal;">BNS = &Sigma; Points &div; Eligible Stories</p>
+            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
+                <em style="font-size: 1.1em; font-style: italic;">BNS</em> = &Sigma; Points &div; Eligible Stories
+            </div>
 
             <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>This cohort:</strong> 17 stories tagged breaking; 13 eligible. Four Owned, five First, four Behind. Total: 910 points &rarr; BNS = 910 &div; 13 = 70</p>
 
