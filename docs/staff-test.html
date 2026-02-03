@@ -898,13 +898,13 @@
 <div class="modal-overlay" id="ssiModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">Newsgathering Index</h3>
+            <h3 class="modal-title">Original Reporting Index</h3>
             <button class="modal-close" onclick="closeSSIModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>NGI measures the clay of journalism — the raw material gathered through active reporting, before writing begins. It does not assess writing quality or production finesse. In essence: was reportorial labour invested, and was that labour original?</p>
+            <p>ORI measures the clay of journalism — the raw material gathered through active reporting, before writing begins. It does not assess writing quality or production finesse. In essence: was reportorial labour invested, and was that labour original?</p>
 
-            <p><strong>This calculation:</strong> 295 articles scored; 9 exempt (video/audio content only). Mean NGI: 60.</p>
+            <p><strong>This calculation:</strong> 295 articles scored; 9 exempt (video/audio content only). Mean ORI: 60.</p>
 
             <p><strong>Validation:</strong> Inter-Model Reliability agreement: 85% (<a href="#">see more about IMR</a>)</p>
 
@@ -921,7 +921,7 @@
             <p>Only journalistic sources (OI &ge; 0.5) contribute to SD. Stories with no original sources cap at 40; those predominantly reliant on secondary material cap at 50.</p>
 
             <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
-                <em style="font-size: 1.1em; font-style: italic;">NGI</em> = 100 &times; (<em>WE</em> + <em>SD</em> + <em>AR</em> + <em>CD</em> + <em>OI</em>) &div; 5
+                <em style="font-size: 1.1em; font-style: italic;">ORI</em> = 100 &times; (<em>WE</em> + <em>SD</em> + <em>AR</em> + <em>CD</em> + <em>OI</em>) &div; 5
             </div>
         </div>
     </div>
@@ -988,7 +988,7 @@
 
             <p style="background: #f9f9f9; padding: 1rem; border-left: 3px solid #ea5a6a; margin: 1rem 0;"><strong>This cohort:</strong> 17 stories tagged breaking; 13 eligible. Four Owned, five First, four Behind. Total: 910 points &rarr; BNS = 910 &div; 13 = 70</p>
 
-            <p>Limitations: Measures speed only (reporting strength assessed by NGI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
+            <p>Limitations: Measures speed only (reporting strength assessed by ORI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
 
             <p><em><a href="#">See draft of methodology paper</a></em></p>
         </div>
@@ -1489,7 +1489,7 @@
             html += `
                 <div class="indices-row">
                     <div class="index-card">
-                        <h3>Newsgathering Inde<span style="color: #ea5a6a;">X</span></h3>
+                        <h3>Original Reporting Inde<span style="color: #ea5a6a;">X</span></h3>
                         <div class="score-container">
                             <div class="score" data-tooltip="News ${ssiNewsMean} · Sport ${ssiSportMean}">${ssiMean}</div>
                         </div>
