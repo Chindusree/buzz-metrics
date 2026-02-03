@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-03T10:52:51Z",
+  "last_updated": "2026-02-03T11:47:02Z",
   "total_articles": 312,
   "summary": {
     "avg_word_count": 445,
@@ -15876,7 +15876,7 @@
         "Shorthand word count may have ~20% inflation"
       ],
       "quoted_sources_confirmed": 1,
-      "quoted_sources_possible": 4,
+      "quoted_sources_possible": 0,
       "source_evidence_confirmed": [
         {
           "name": "George Dean",
@@ -15884,27 +15884,8 @@
           "position": "groq_detected"
         }
       ],
-      "source_evidence_possible": [
-        {
-          "name": "Allen",
-          "gender": "male"
-        },
-        {
-          "name": "Kick",
-          "gender": "male"
-        },
-        {
-          "name": "Chris",
-          "gender": "male"
-        },
-        {
-          "name": "Sands United",
-          "gender": "unknown"
-        }
-      ],
-      "sources_filtered_out": [
-        "Photo Credit"
-      ],
+      "source_evidence_possible": [],
+      "sources_filtered_out": [],
       "is_breaking_news": false,
       "is_long_form": true,
       "word_count_status": "long_form",
