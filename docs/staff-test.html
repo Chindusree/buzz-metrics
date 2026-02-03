@@ -1677,16 +1677,16 @@
             const d = new Date(date + 'T00:00:00');
             const dateStr = d.getDate() + ' ' + d.toLocaleDateString('en-GB', { month: 'short' });
 
-            const storiesTarget = dayData.article_count >= 12 ? '<span style="color: #ea5a6a;">✓</span>' : '';
+            const storiesTarget = dayData.article_count >= 12 ? '<span style="color: #64748b;">✓</span>' : '';
 
             let firstPubDisplay = dayData.first_publish_time || '';
             if (dayData.first_publish_time) {
                 const [h, m] = dayData.first_publish_time.split(':').map(Number);
                 const minutes = h * 60 + m;
-                if (minutes < 600) firstPubDisplay += ' <span style="color: #ea5a6a;">✓</span>';
+                if (minutes < 600) firstPubDisplay += ' <span style="color: #64748b;">✓</span>';
             }
 
-            const belowTarget = dayData.below_minimum_count === 0 ? '<span style="color: #ea5a6a;">✓</span>' : '';
+            const belowTarget = dayData.below_minimum_count === 0 ? '<span style="color: #64748b;">✓</span>' : '';
 
             const row = document.createElement('tr');
             row.innerHTML = `
