@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-02T17:49:46Z",
-  "total_flagged": 131,
+  "generated": "2026-02-03T11:47:02Z",
+  "total_flagged": 130,
   "flagged_articles": [
     {
       "id": "afc-bournemouth-under-21s-delighted-with-charlton-victory",
@@ -3328,58 +3328,6 @@
       ],
       "filtered": [
         "Furneaux"
-      ],
-      "review_status": "pending"
-    },
-    {
-      "id": "2838086ca30b",
-      "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
-      "headline": "The football team that isn’t about football",
-      "scrape_count": 1,
-      "verify_count": 8,
-      "confirmed_count": 1,
-      "possible_count": 4,
-      "filtered_count": 1,
-      "scrape_evidence": [
-        "George Dean"
-      ],
-      "verify_evidence": [
-        "George Dean",
-        "Allen",
-        "Dean",
-        "Kick",
-        "George",
-        "Chris",
-        "Sands United",
-        "Photo Credit"
-      ],
-      "confirmed": [
-        {
-          "name": "George Dean",
-          "gender": "male",
-          "position": "groq_detected"
-        }
-      ],
-      "possible": [
-        {
-          "name": "Allen",
-          "gender": "male"
-        },
-        {
-          "name": "Kick",
-          "gender": "male"
-        },
-        {
-          "name": "Chris",
-          "gender": "male"
-        },
-        {
-          "name": "Sands United",
-          "gender": "unknown"
-        }
-      ],
-      "filtered": [
-        "Photo Credit"
       ],
       "review_status": "pending"
     },

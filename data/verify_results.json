@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-02T17:49:43Z",
+  "last_updated": "2026-02-03T11:46:59Z",
   "total_verified": 312,
   "results": [
     {
@@ -2820,41 +2820,9 @@
     {
       "id": "2838086ca30b",
       "url": "https://buzz.bournemouth.ac.uk/2026/01/sands-united/",
-      "verify_quoted_sources": 8,
-      "verify_evidence": [
-        {
-          "name": "George Dean",
-          "context": "PERSON within 50 chars of quote: ... Rob’s story to a country that needed to hear it. George Dean who runs Sands United Salisbury said: “Ultimately..."
-        },
-        {
-          "name": "Allen",
-          "context": "PERSON within 50 chars of quote: ...you can.” One example of the teams that grew from Allen’s idea was Sands United Salisbury which was forme..."
-        },
-        {
-          "name": "Dean",
-          "context": "PERSON within 50 chars of quote: ...024 but still has a lot of contact with the club. Dean said: “it wouldn’t exist without him; his energy ..."
-        },
-        {
-          "name": "Kick",
-          "context": "PERSON within 50 chars of quote: ...other charities such as the mental health charity Kick out the stigma. “They’re really important because..."
-        },
-        {
-          "name": "George",
-          "context": "PERSON within 50 chars of quote: ...wife Katie’s conversation about their experience. George said: “It was really speaking to Chris who was a ..."
-        },
-        {
-          "name": "Chris",
-          "context": "PERSON within 50 chars of quote: ...perience. George said: “It was really speaking to Chris who was a member of Sands United Salisbury that g..."
-        },
-        {
-          "name": "Sands United",
-          "context": "PERSON within 50 chars of quote: ...tely the loss of your baby that takes you there.” Sands United shirt: Photo Credit to: George Dean Sands United ..."
-        },
-        {
-          "name": "Photo Credit",
-          "context": "PERSON within 50 chars of quote: ...r baby that takes you there.” Sands United shirt: Photo Credit to: George Dean Sands United shirt: Photo Credit ..."
-        }
-      ]
+      "verify_quoted_sources": null,
+      "verify_evidence": [],
+      "error": "Failed to fetch article text"
     },
     {
       "id": "68171a537e36",
