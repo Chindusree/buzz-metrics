@@ -1,6 +1,6 @@
 # BUzz Metrics
 
-A prototype analytics dashboard for Bournemouth University's student newsroom. Developed as part of research into automated journalism quality measurement.
+A prototype analytics dashboard for a student newsroom at Bournemouth University, UK. Developed as part of research into automated journalism quality measurement.
 
 **[Live Dashboard](https://chindusree.github.io/buzz-metrics/)**
 
