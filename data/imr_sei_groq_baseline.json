@@ -1,0 +1,2713 @@
+{
+  "extracted": "2026-02-02",
+  "purpose": "SEI IMR validation - Groq baseline",
+  "sample_size": 30,
+  "articles": [
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "headline": "Wimborne trip to Plymouth postponed",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 50,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": true
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context and explanation to make sense, as it discusses a specific football match and its postponement."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "male",
+          "reasoning": "The topic is men's football, which is inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "The postponement of the Wimborne Town vs Plymouth Parkway football match",
+          "stakeholders": [
+            {
+              "group": "Wimborne Town football team",
+              "examples": [
+                "Tim Sills",
+                "Max Bustamante"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Plymouth Parkway football team",
+              "examples": [
+                "Chris McPhee",
+                "James Watts-Barciela",
+                "Gunnar Franke"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Football league officials",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Fans of Wimborne Town and Plymouth Parkway",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-towns-kitmen-aiming-to-complete-the-92/",
+      "headline": "Poole Town\u2019s Kitmen aiming to complete the 92",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 17.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Dan Wilson",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Matt Reeds",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is driven by personal experience and observation, featuring the stories of two individuals, Dan Wilson and Matt Reeds, and their passion for ground hopping."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of football and ground hopping is not inherently gendered."
+        },
+        "quoted_sources": [
+          {
+            "name": "Dan Wilson",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Dan Wilson is a participant in the story, sharing his personal experience and passion for ground hopping."
+          },
+          {
+            "name": "Matt Reeds",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Matt Reeds is a participant in the story, sharing his personal experience and passion for ground hopping."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Two kitmen for Poole Town, Dan Wilson and Matt Reeds, aim to visit all 92 football grounds in England's top four leagues.",
+          "stakeholders": [
+            {
+              "group": "Poole Town Football Club",
+              "examples": [
+                "Dan Wilson",
+                "Matt Reeds"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Football fans",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Groundhopping community",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local football teams",
+              "examples": [
+                "AFC Bournemouth",
+                "Portsmouth"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "headline": "Diverse Abilities launch new adult soft play fundraiser",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 22.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Fran Potton",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional context and explanation of the charity's work and its impact on the community."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of charity work and supporting people with disabilities is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Fran Potton",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Fran Potton is a Community Fundraiser for Diverse Abilities and is explaining the charity's work and its impact on the community, making her an internal stakeholder."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Diverse Abilities opening their soft play area to adults for a fundraising event",
+          "stakeholders": [
+            {
+              "group": "Diverse Abilities staff",
+              "examples": [
+                "Fran Potton"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Beneficiaries of Diverse Abilities",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Adults with disabilities in the local community",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local healthcare professionals",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "headline": "Rayan excited to start Premier League challenge",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0.0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Rayan",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Bruno Murito",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional explanation to make sense, covering a sports transfer and including expert analysis from a journalist."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of football is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Rayan",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Rayan is a participant in the story, being the player who was transferred to AFC Bournemouth."
+          },
+          {
+            "name": "Bruno Murito",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Bruno Murito is a journalist providing expert analysis on Rayan's potential and the transfer."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Rayan's transfer to AFC Bournemouth",
+          "stakeholders": [
+            {
+              "group": "AFC Bournemouth",
+              "examples": [
+                "AFC Bournemouth management"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Vasco da Gama",
+              "examples": [
+                "Vasco da Gama management"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Brazilian football fans",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Premier League players and teams",
+              "examples": [
+                "Manchester City"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 1,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "headline": "Update: Investigation into Elon Musk\u2019s X following Grok AI sexual deepfakes",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 45.0,
+      "sei_components": {
+        "inclusion": 33.3,
+        "structural_agency": 50.0,
+        "impact_equity": 50.0,
+        "ghost_ratio": 0.5
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 3,
+      "sources_male": 2,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Sir Kier Starmer",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Liz Kendall",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Elon Musk",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, covering government actions and policies related to AI and online safety."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of AI and online safety is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Sir Kier Starmer",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As the Prime Minister, he has external authority on the topic of government actions and policies."
+          },
+          {
+            "name": "Liz Kendall",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As the Secretary of Technology, she has external authority on the topic of technology and online safety."
+          },
+          {
+            "name": "Elon Musk",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "As the owner of X, his specific role and experience matter in the context of the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The UK government's response to X's AI chatbot Grok creating sexualized images",
+          "stakeholders": [
+            {
+              "group": "Government officials",
+              "examples": [
+                "Sir Kier Starmer",
+                "Liz Kendall"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "X and its representatives",
+              "examples": [
+                "Elon Musk"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Women's rights organizations",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Victims of non-consensual intimate image creation",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 1,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 1,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "headline": "Young Cherries fall to disappointing defeat",
+      "sei_exempt": "match_report",
+      "sei_exempt_reason": null,
+      "sei_score": null,
+      "sei_components": null,
+      "sei_weights": {},
+      "sei_modifiers": {},
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {}
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "headline": "Cherries player ratings: Jimenez and Tavernier star in away performance",
+      "sei_exempt": "match_report",
+      "sei_exempt_reason": null,
+      "sei_score": null,
+      "sei_components": null,
+      "sei_weights": {},
+      "sei_modifiers": {},
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {}
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community.",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 22.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0.0,
+        "impact_equity": 75.0,
+        "ghost_ratio": 0.25
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 3,
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "A protester",
+          "gender": "unknown",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Abbas Araghchi",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, covering protests in Iran and the response from various authorities."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of protests in Iran is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "A protester",
+            "gender": "Unknown",
+            "role": "IMPACT",
+            "role_reasoning": "The protester is directly affected by the situation and is sharing their personal experience."
+          },
+          {
+            "name": "Donald Trump",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As the US President, Donald Trump has external authority on the topic and is providing a statement on the situation."
+          },
+          {
+            "name": "Abbas Araghchi",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As Iran's foreign minister, Abbas Araghchi has external authority on the topic and is providing a statement on the situation."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Protests in Iran and the response from various authorities",
+          "stakeholders": [
+            {
+              "group": "Protesters in Iran",
+              "examples": [
+                "Iranian citizens"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Iranian government",
+              "examples": [
+                "Ayatollah Ali Khamenei",
+                "Abbas Araghchi"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "International authorities",
+              "examples": [
+                "Donald Trump",
+                "US government"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Families of protesters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 2,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 1
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "headline": "Ben Edgell praises Poole Town FC partnership with SEN",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ben Edgell",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves a partnership between Poole Town FC and SWRAC to support young people with SEND."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of supporting young people with SEND is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Ben Edgell",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Ben Edgell is the Commercial Manager of Poole Town FC, and his specific role and experience matter in explaining the partnership with SWRAC."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Poole Town FC and SWRAC partner to support young people with SEND",
+          "stakeholders": [
+            {
+              "group": "SWRAC students",
+              "examples": [
+                "young people with SEND"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Poole Town FC staff",
+              "examples": [
+                "Ben Edgell"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "SWRAC staff",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local community",
+              "examples": [
+                "parents of young people with SEND"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/veganuary-not-just-a-trend-but-a-sustainable-goal/",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 65.0,
+      "sei_components": {
+        "inclusion": 100.0,
+        "structural_agency": 0,
+        "impact_equity": 50.0,
+        "ghost_ratio": 0.5
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 3,
+      "sources_male": 0,
+      "sources_female": 3,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Frederica Sindici",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Cindy Lou",
+          "gender": "female",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Chanelle Paris",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is written in a shorthand format, has a word count of 786, and falls under the category of New Features, which suggests a feature-length piece driven by observation and lived experience."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of veganism and sustainability is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Frederica Sindici",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "As the owner of Mad Cucumbers, Frederica Sindici's specific experience and involvement in the vegan restaurant matter to the story."
+          },
+          {
+            "name": "Cindy Lou",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "As a customer who has been vegan for over 30 years, Cindy Lou's personal experience and perspective on veganism are relevant to the story."
+          },
+          {
+            "name": "Chanelle Paris",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "As a customer who has been vegan for over 30 years, Chanelle Paris's personal experience and perspective on veganism are relevant to the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The adoption of veganism and its impact on the environment and individuals.",
+          "stakeholders": [
+            {
+              "group": "Vegan restaurant owners",
+              "examples": [
+                "Frederica Sindici"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Long-term vegans",
+              "examples": [
+                "Cindy Lou",
+                "Chanelle Paris"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Environmental organizations",
+              "examples": [
+                "World Economic Forum",
+                "World Wide Fund for Nature"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Potential vegans",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 3,
+          "non_male_sources": 3,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 3,
+          "impact_non_male": 3,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "headline": "Bournemouth councillor relieved over new Lidl store postponement",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Joe Salmon",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves a planning committee decision and a councillor's comments on the proposal."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of a new Lidl store and its impact on the local high street is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Joe Salmon",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "As a local councillor, Joe Salmon's specific role and experience with the proposal matter, making him an internal authority on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The planning committee's decision to defer the proposal for a new Lidl store on Westover Retail Park.",
+          "stakeholders": [
+            {
+              "group": "Local businesses",
+              "examples": [
+                "small independent businesses"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Residents",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Lidl",
+              "examples": [
+                "Lidl representatives"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Local government",
+              "examples": [
+                "councillors",
+                "planning committee members"
+              ],
+              "was_quoted": true
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "headline": "20 year-old man on trial for manslaughter following stabbing",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 62.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 100.0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves court proceedings and a fatal stabbing."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of a stabbing and court proceedings is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Dr Jefferies",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Dr Jefferies is a forensic analyst providing expert testimony in the court case."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "A 20-year-old man is being trialled for manslaughter and possession of a weapon after a fatal stabbing in Bournemouth square.",
+          "stakeholders": [
+            {
+              "group": "Defendant",
+              "examples": [
+                "Thomas Betteridge"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Victim's family",
+              "examples": [
+                "Cameron Hamilton's family"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Law enforcement",
+              "examples": [
+                "Bournemouth Crown court officials"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Forensic experts",
+              "examples": [
+                "Dr Jefferies"
+              ],
+              "was_quoted": true
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "headline": "Why young people should join orchestra",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 32.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Emily Davis",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Emily Davis",
+          "position": "groq_detected",
+          "type": "original"
+        },
+        {
+          "name": "Michael Chaffin",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Michael Chaffin",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is driven by personal experience and observation, featuring interviews with musicians and exploring the human side of orchestra life."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of orchestra life is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Emily Davis",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "As a musician, Emily Davis's personal experience and involvement in the orchestra make her an internal authority on the topic."
+          },
+          {
+            "name": "Michael Chaffin",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "As a musician and Sub-Principal No.4 Double Bass with the BSO, Michael Chaffin's specific role and experience make him an internal authority on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The article explores the human side of orchestra life and its benefits for young people.",
+          "stakeholders": [
+            {
+              "group": "Young people interested in music",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Orchestra musicians",
+              "examples": [
+                "Emily Davis",
+                "Michael Chaffin"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Music educators",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Parents of young people interested in music",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 1,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "headline": "Poole trampoline athlete Jared Smith sets sights on European glory",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Jared Smith",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Ryan Brown",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context and explanation of the European Championship trials and the sport of trampolining."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of trampolining is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Jared Smith",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Jared Smith is a participant in the European Championship trials and his specific experience and involvement in the sport matter to the story."
+          },
+          {
+            "name": "Ryan Brown",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Ryan Brown is a teammate of Jared Smith and his opinion on Smith's chances of securing a spot in the Championships is relevant to the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Jared Smith's participation in the European Championship trials",
+          "stakeholders": [
+            {
+              "group": "Trampolinists",
+              "examples": [
+                "Jared Smith",
+                "Ryan Brown"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Coaches and trainers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "European Championship organizers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "British Gymnastics officials",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "headline": "When education takes a stand",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 32.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 1,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ivan Darley",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is written in shorthand format, has a word count of 1086, and is categorized as a feature, indicating that it is driven by observation and lived experience rather than institutional analysis."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of the article is about college staff strikes, which is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Ivan Darley",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Ivan Darley is a maths teacher at Bournemouth and Poole College and is directly affected by the strikes, making him an internal source with personal stake."
+          },
+          {
+            "name": "Anne Marie Moriarty",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Anne Marie Moriarty is the Vice Chair and Secretary of Bournemouth and Poole College and is directly involved in the strikes, making her an internal source with personal stake."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Bournemouth and Poole College staff go on strike over pay and working conditions",
+          "stakeholders": [
+            {
+              "group": "College staff",
+              "examples": [
+                "Ivan Darley",
+                "Anne Marie Moriarty"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "College management",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Students",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local community",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 1,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "headline": "Iford to hold women\u2019s international driving range tournament",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 32.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Katie Dawkins",
+          "gender": "female",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Katie Dawkins",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is driven by observation and lived experience, covering a community event, the 'Galentines Tee Party', which suggests an experiential story type."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "female",
+          "reasoning": "The topic of the article is about women's golf, which is inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Katie Dawkins",
+            "gender": "F",
+            "role": "IMPACT",
+            "role_reasoning": "Katie Dawkins is the golf coach leading the event at Iford and her specific experience and involvement in the event matter, making her an internal authority."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The 'Galentines Tee Party' golf tournament for women at Iford golf club and other locations.",
+          "stakeholders": [
+            {
+              "group": "Women golfers participating in the event",
+              "examples": [
+                "Katie Dawkins"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Golf clubs hosting the event",
+              "examples": [
+                "Iford golf club"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Inrange technology providers",
+              "examples": [
+                "Inrange"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Potential women golfers who may be interested in the event",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 1,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "headline": "Wonderkid Mayes hits record breaking 191",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional context and explanation to make sense, as it discusses cricket matches, teams, and tournaments."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of cricket is not inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "England under 19s cricket team's performance in the ICC U19 Cricket World Cup",
+          "stakeholders": [
+            {
+              "group": "England under 19s cricket team",
+              "examples": [
+                "Ben Mayes",
+                "Liam Dawson"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Hampshire Cricket",
+              "examples": [
+                "Hampshire Cricket academy"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Scotland cricket team",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "ICC U19 Cricket World Cup organizers",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0.0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 1,
+      "source_evidence": [
+        {
+          "name": "Thames Valley Police spokesman",
+          "gender": "unknown",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves a disturbance at a football match and the subsequent charges against two men."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of a disturbance at a football match is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Thames Valley Police spokesman",
+            "gender": "Unknown",
+            "role": "STRUCTURAL",
+            "role_reasoning": "The spokesman is representing an institution larger than the story's subject, providing external authority on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "A disturbance at a football match resulted in a steward being injured and two men being charged.",
+          "stakeholders": [
+            {
+              "group": "Thames Valley Police",
+              "examples": [
+                "Thames Valley Police spokesman"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Football match attendees",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Stewards and event staff",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Reading and Barnsley football clubs",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "headline": "Saints host Sheffield United at St Mary\u2019s",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 50,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": true
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context and expert analysis to make sense, as it discusses a football match and the teams' current standings."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "male",
+          "reasoning": "The topic is men's football, which is inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "Southampton hosts Sheffield United in a football match",
+          "stakeholders": [
+            {
+              "group": "Southampton football team",
+              "examples": [
+                "Tonda Eckert",
+                "Leo Scienza",
+                "Ross Stewart"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Sheffield United football team",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Football fans",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Football league officials",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+      "headline": "Rain hinders Emma Raducanu\u2019s Australian Open preparation",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional explanation to make sense, covering a sports event with specific details about the tournament and players."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of sports is not inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "Emma Raducanu's Hobart International First Round match against Camila Osorio",
+          "stakeholders": [
+            {
+              "group": "Tennis players",
+              "examples": [
+                "Emma Raducanu",
+                "Camila Osorio"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Tennis tournament organizers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Australian Open organizers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Tennis fans",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "headline": "Nine arrests made in Dorset over organised crime ring",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 62.5,
+      "sei_components": {
+        "inclusion": 50.0,
+        "structural_agency": 100.0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 0,
+      "sources_female": 1,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Emma Sweetzer",
+          "gender": "female",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional context and explanation to make sense, as it involves a police crackdown on organised crime and includes a statement from a Detective Superintendent."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of crime is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Emma Sweetzer",
+            "gender": "F",
+            "role": "STRUCTURAL",
+            "role_reasoning": "As a Detective Superintendent, Emma Sweetzer is an official representing a law enforcement institution, providing external authority on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Dorset Police's crackdown on organised crime in Bournemouth",
+          "stakeholders": [
+            {
+              "group": "Dorset Police",
+              "examples": [
+                "Detective Superintendent Emma Sweetzer"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Organised crime suspects",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Bournemouth residents",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local community leaders",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 1,
+          "male_sources": 0,
+          "structural_sources": 1,
+          "structural_non_male": 1,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/",
+      "headline": "Christchurch chef reveals excitement over new locally-produced menus",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 2,
+      "sources_male": 2,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Quentin Royles",
+          "gender": "male",
+          "position": "groq_detected"
+        },
+        {
+          "name": "Simon Bennett",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it discusses the restaurant's new menu and its impact on local businesses."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of the story is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Quentin Royles",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Quentin Royles is the chef of the restaurant and is explaining the restaurant's use of local produce, which is a personal stake in the story."
+          },
+          {
+            "name": "Simon Bennett",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Simon Bennett is the manager of the restaurant and is explaining the restaurant's support for local businesses, which is a personal stake in the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The restaurant's new menu and its impact on local businesses",
+          "stakeholders": [
+            {
+              "group": "Local farmers and producers",
+              "examples": [
+                "independent producers in Romsey, New Milton, Hampshire and Mudeford"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Restaurant staff",
+              "examples": [
+                "Quentin Royles",
+                "Simon Bennett"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Local business owners",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Customers of the restaurant",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "headline": "Cherries closing in on deal for Mandas",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0.0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context and explanation to make sense, as it discusses AFC Bournemouth's transfer deals and squad dynamics."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of football transfers is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Fabrizio Romano",
+            "gender": "M",
+            "role": "STRUCTURAL",
+            "role_reasoning": "Fabrizio Romano is an expert in football transfers, providing external authority on the topic."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "AFC Bournemouth's transfer deals and squad dynamics",
+          "stakeholders": [
+            {
+              "group": "AFC Bournemouth players",
+              "examples": [
+                "Tyler Adams",
+                "Andoni Iraola"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "AFC Bournemouth management",
+              "examples": [
+                "Andoni Iraola"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Transfer targets and their representatives",
+              "examples": [
+                "Christos Mandas",
+                "Rayan"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Football fans and supporters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 1,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "headline": "AFC Bournemouth\u2019s development squad reach last eight of PL Cup",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 50,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": true
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Alan Connell",
+          "gender": "male",
+          "position": "groq_detected"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context to make sense, as it discusses a specific football match and the team's progress in the cup."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "male",
+          "reasoning": "The topic is men's football, which is inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Alan Connell",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Connell is the U21's boss and is explaining his team's performance, which makes his specific role and experience matter."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "AFC Bournemouth U21's beat Sheffield United in the PL Cup",
+          "stakeholders": [
+            {
+              "group": "AFC Bournemouth U21's team",
+              "examples": [
+                "Eugene Nyarko",
+                "Matai Akinmboni",
+                "Jonny Day"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Sheffield United team",
+              "examples": [
+                "Aaron Reid"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Coaches and staff",
+              "examples": [
+                "Alan Connell"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Fans and supporters",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "headline": "Q Sports Bar in Boscombe is redeveloping their darts setup.",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 7.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Lee Hamill",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Lee Hamill",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The story requires institutional explanation to make sense, as it involves the refurbishment of a sports bar and its transition into a modern venue."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of a sports bar is not inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Mark King",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "As one of the owners of the sports bar, Mark King's specific experience and involvement in the refurbishment process matters."
+          },
+          {
+            "name": "Lee Hamill",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "As one of the owners of the sports bar, Lee Hamill's specific experience and involvement in the refurbishment process matters."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "The refurbishment of Q Sports Bar in Boscombe",
+          "stakeholders": [
+            {
+              "group": "Bar owners",
+              "examples": [
+                "Mark King",
+                "Lee Hamill"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Customers",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Local residents",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Sports enthusiasts",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 2,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 2,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "headline": "UEFA champions league play off draw fixtures anounced",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional context and explanation to make sense, as it covers various teams and their performances in the UEFA Champions League."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of the UEFA Champions League is not inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "The UEFA Champions League draw and team performances",
+          "stakeholders": [
+            {
+              "group": "UEFA Champions League teams",
+              "examples": [
+                "Borussia Dortmund",
+                "Atalanta",
+                "Olympiakos",
+                "Bayer Leverkusen"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Team managers/coaches",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Football players",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Football fans",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "headline": "AS IT HAPPENED: Andoni Iraola speaks ahead of Wolves trip",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 50,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": true
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Andoni Iraola",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Andoni Iraola",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional explanation to make sense, as it covers a press conference and discusses team management and player signings."
+        },
+        "beat_context": {
+          "is_gendered_beat": true,
+          "expected_gender": "male",
+          "reasoning": "The topic is men's football, which is inherently about one gender."
+        },
+        "quoted_sources": [
+          {
+            "name": "Andoni Iraola",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Iraola is the manager of the team and is explaining his team's work and decisions, making his specific role and experience matter."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Andoni Iraola's press conference at the AFC Bournemouth performance centre",
+          "stakeholders": [
+            {
+              "group": "AFC Bournemouth players",
+              "examples": [
+                "Rayan",
+                "Evanilson"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "AFC Bournemouth management",
+              "examples": [
+                "Andoni Iraola"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Wolves team",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "AFC Bournemouth fans",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 0.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 0.0,
+        "ghost_ratio": 1.0
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional explanation to make sense, covering a sport event with specific teams and leagues."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of the article is about a sport event, which is not inherently gendered."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "The semi-final of the Dorset Senior Cup between Sherborne Town and Weymouth",
+          "stakeholders": [
+            {
+              "group": "Sherborne Town",
+              "examples": [
+                "Sherborne Town players",
+                "Sherborne Town coach"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Weymouth",
+              "examples": [
+                "Weymouth players",
+                "Weymouth coach"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Dorset Senior Cup organizers",
+              "examples": [
+                "Dorset Senior Cup committee"
+              ],
+              "was_quoted": false
+            },
+            {
+              "group": "Fans and spectators",
+              "examples": [
+                "Sherborne Town fans",
+                "Weymouth fans"
+              ],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 0,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 4
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "headline": "Verwood Town Vs Sherborne Town Reserves preview",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 17.5,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0,
+        "impact_equity": 25.0,
+        "ghost_ratio": 0.75
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0,
+        "impact_weight": 0.7
+      },
+      "sei_modifiers": {
+        "sdc_applied": true,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 1,
+      "sources_male": 1,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [
+        {
+          "name": "Ricky Barton",
+          "gender": "male",
+          "gender_confidence": "groq",
+          "gender_method": "groq_llm",
+          "quote_snippet": "(extracted by Groq)",
+          "full_attribution": "Ricky Barton",
+          "position": "groq_detected",
+          "type": "original"
+        }
+      ],
+      "groq_response": {
+        "story_classification": {
+          "type": "EXPERIENTIAL",
+          "reasoning": "The article is written in a shorthand format, has a word count over 800, and is categorized as Sport, which suggests a feature-length piece driven by observation and lived experience."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of the article is about a football team, which is not inherently gendered."
+        },
+        "quoted_sources": [
+          {
+            "name": "Ricky Barton",
+            "gender": "M",
+            "role": "IMPACT",
+            "role_reasoning": "Ricky Barton is the manager of Verwood Town and is explaining his team's strategy and experiences, which makes him an internal source with personal stake in the story."
+          }
+        ],
+        "stakeholder_mapping": {
+          "core_event": "Verwood Town's upcoming match against Sherborne Town Reserves",
+          "stakeholders": [
+            {
+              "group": "Verwood Town players",
+              "examples": [
+                "Ricky Barton"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Sherborne Town Reserves players",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Verwood Town fans",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "Dorset Premier League officials",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 1,
+          "non_male_sources": 0,
+          "male_sources": 1,
+          "structural_sources": 0,
+          "structural_non_male": 0,
+          "impact_sources": 1,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 3
+        }
+      }
+    },
+    {
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "headline": "Floods continue after Storm Chandra hits Bournemouth",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "sei_score": 15.0,
+      "sei_components": {
+        "inclusion": 0.0,
+        "structural_agency": 0.0,
+        "impact_equity": 50.0,
+        "ghost_ratio": 0.5
+      },
+      "sei_weights": {
+        "inclusion_weight": 0.3,
+        "structural_weight": 0.4,
+        "impact_weight": 0.29999999999999993
+      },
+      "sei_modifiers": {
+        "sdc_applied": false,
+        "contextual_baseline_applied": false
+      },
+      "quoted_sources": 0,
+      "sources_male": 0,
+      "sources_female": 0,
+      "sources_unknown": 0,
+      "source_evidence": [],
+      "groq_response": {
+        "story_classification": {
+          "type": "STANDARD",
+          "reasoning": "The article requires institutional explanation to make sense, covering storm updates, flood warnings, and transport disruptions."
+        },
+        "beat_context": {
+          "is_gendered_beat": false,
+          "expected_gender": "neutral",
+          "reasoning": "The topic of storm updates and flood warnings is not inherently about one gender."
+        },
+        "quoted_sources": [],
+        "stakeholder_mapping": {
+          "core_event": "Storm Chandra causes flooding across Dorset and the south west.",
+          "stakeholders": [
+            {
+              "group": "Residents",
+              "examples": [],
+              "was_quoted": false
+            },
+            {
+              "group": "BCP Council",
+              "examples": [
+                "BCP Council"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Transport providers",
+              "examples": [
+                "Network Rail"
+              ],
+              "was_quoted": true
+            },
+            {
+              "group": "Emergency services",
+              "examples": [],
+              "was_quoted": false
+            }
+          ]
+        },
+        "sei_inputs": {
+          "total_sources": 2,
+          "non_male_sources": 0,
+          "male_sources": 0,
+          "structural_sources": 2,
+          "structural_non_male": 0,
+          "impact_sources": 0,
+          "impact_non_male": 0,
+          "total_stakeholder_groups": 4,
+          "ghost_stakeholder_count": 2
+        }
+      }
+    }
+  ]
+}

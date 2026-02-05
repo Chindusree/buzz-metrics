@@ -1,0 +1,391 @@
+{
+  "batch": 1,
+  "articles_covered": "1-5",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch + BeautifulSoup for Shorthand",
+  "articles": [
+    {
+      "id": 1,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wimborne-parkway-postponement/",
+      "slug": "wimborne-parkway-postponement",
+      "headline": "Wimborne trip to Plymouth postponed",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "News brief reporting match postponement. No personal narrative or experiential journey. Pure event reporting."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Sports news brief about match postponement. While football is male-dominated, this is administrative/fixture news with no expected gender bias for sources."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "Football match postponement due to waterlogged pitch",
+        "stakeholders": [
+          {
+            "group": "Wimborne Town FC (players, manager Tim Sills, coaching staff)",
+            "examples": [
+              "Tim Sills (manager)",
+              "Max Bustamante (player)",
+              "Lewis Williams (player)",
+              "Will Fletcher (player)",
+              "Joe Smith (player)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Plymouth Parkway FC (players, manager Chris McPhee, coaching staff)",
+            "examples": [
+              "Chris McPhee (manager)",
+              "James Watts-Barciela (player)",
+              "Gunnar Franke (player)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Fans of both clubs",
+            "examples": [
+              "Wimborne Town supporters",
+              "Plymouth Parkway supporters"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "League administrators (Southern League Premier South officials)",
+            "examples": [
+              "Fixture schedulers",
+              "League officials"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    },
+    {
+      "id": 2,
+      "url": "https://buzznews.shorthandstories.com/the-92challenge/index.html",
+      "slug": "poole-towns-kitmen-aiming-to-complete-the-92",
+      "headline": "Poole Town's kitmen aiming to complete the 92",
+      "story_classification": {
+        "type": "EXPERIENTIAL",
+        "reasoning": "Feature-length human interest story following Dan Wilson and Matt Reeds' personal journey to visit all 92 football league grounds. Centers on their lived experience, memories, and relationship. Rich with quotes, photos, and personal narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "While football culture is male-dominated, the story is about personal hobby/passion (ground hopping) rather than competitive sport. However, groundhopping community is predominantly male."
+      },
+      "quoted_sources": [
+        {
+          "name": "Dan Wilson",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Dan IS the story - one of two protagonists. Cannot be replaced by another expert. He is the subject experiencing the journey, not an external authority. Test: Could this source be replaced by another expert? NO - he is the groundhopper being profiled."
+        },
+        {
+          "name": "Matt Reeds",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Matt IS the story - the other protagonist. Cannot be replaced by another expert. He is the subject experiencing the journey. Test: Could this source be replaced by another expert? NO - he is the groundhopper being profiled."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Two Poole Town kitmen pursuing personal goal to visit all 92 English Football League grounds",
+        "stakeholders": [
+          {
+            "group": "Dan Wilson and Matt Reeds (groundhoppers/protagonists)",
+            "examples": [
+              "Dan Wilson",
+              "Matt Reeds"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Poole Town FC (employer/club)",
+            "examples": [
+              "Poole Town FC management",
+              "Players they kit for"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Groundhopping community",
+            "examples": [
+              "Todd Weedon (mentioned in photo caption)",
+              "Other groundhoppers"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Football clubs/fans at the 92 grounds",
+            "examples": [
+              "Bradford City",
+              "Brentford",
+              "Tottenham",
+              "Northampton Town"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 0,
+        "male_sources": 2,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 3,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/diverse-abilities-launch-new-adult-soft-play-fundraiser/",
+      "slug": "diverse-abilities-launch-new-adult-soft-play-fundraiser",
+      "headline": "Diverse Abilities Launch New Adult Soft Play Fundraiser",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "News report about charity fundraising event. Straightforward reporting with one organizational spokesperson. Not a personal journey or experiential narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Charity/fundraising/disability services beat has no inherent gender bias. Both men and women work in charity sector and disability advocacy."
+      },
+      "quoted_sources": [
+        {
+          "name": "Fran Potton",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Fran is Community Fundraiser for Diverse Abilities - she IS part of the organization running the event. She's not an external expert; she's an organizational insider explaining their own initiative. Test: Could this source be replaced by another expert? NO - she represents the organization that IS the story."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Charity hosting adult soft play fundraiser event at The Treehouse",
+        "stakeholders": [
+          {
+            "group": "Diverse Abilities staff and organizers",
+            "examples": [
+              "Fran Potton (Community Fundraiser)",
+              "Other Diverse Abilities staff"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Adults with disabilities using Diverse Abilities services",
+            "examples": [
+              "Man in his 50s who used slide for first time",
+              "Other service users"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "General adult attendees of Big Kid Energy event",
+            "examples": [
+              "Adults attending February 6th event"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Future beneficiaries of fundraising (children/adults in respite care and school therapy programs)",
+            "examples": [
+              "Children in respite care",
+              "Students in school-based therapy programs"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 1,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 4,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rayan-excited-to-start-premier-league-challenge/",
+      "slug": "rayan-excited-to-start-premier-league-challenge",
+      "headline": "Rayan Excited to Start Premier League Challenge",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Transfer news story about player signing. While includes Rayan's personal perspective, this is standard sports reporting about a transfer, not an experiential journey narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's professional football - inherently male-only beat. All players, managers, and typically journalists covering transfers are male."
+      },
+      "quoted_sources": [
+        {
+          "name": "Rayan",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Rayan IS the story - the player being signed. Cannot be replaced by another expert. He's the subject of the transfer news, not an external authority. Test: Could this source be replaced by another expert? NO - he is THE signing being profiled."
+        },
+        {
+          "name": "Bruno Murito",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Brazilian journalist providing expert analysis of Rayan's potential and market value. He is NOT part of the transfer story - he's an external expert offering professional assessment. Test: Could this source be replaced by another expert? YES - any Brazilian football journalist could provide similar analysis."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "AFC Bournemouth signs 19-year-old Brazilian forward Rayan for \u00a330 million",
+        "stakeholders": [
+          {
+            "group": "Rayan and his family",
+            "examples": [
+              "Rayan (player)",
+              "Valkmar (father)",
+              "His mother"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "AFC Bournemouth FC",
+            "examples": [
+              "Club management",
+              "Coaching staff",
+              "Norberto Neto (teammate)",
+              "Evanilson (teammate)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "CR Vasco da Gama",
+            "examples": [
+              "Vasco management",
+              "Former teammates"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "AFC Bournemouth fans",
+            "examples": [
+              "Supporters attending matches",
+              "Season ticket holders"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 0,
+        "male_sources": 2,
+        "structural_sources": 1,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 5,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes/",
+      "slug": "investigation-into-elon-musks-x-following-grok-ai-sexual-deepfakes",
+      "headline": "Investigation into Elon Musk's X Following Grok AI Sexual Deepfakes",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Hard news story about regulatory investigation. Standard reporting with government/political sources. No personal narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Tech regulation/online safety beat. Both men and women work in tech policy, government regulation, and online safety advocacy. Story centers on impact on women/children but beat itself is gender-neutral."
+      },
+      "quoted_sources": [
+        {
+          "name": "Sir Keir Starmer",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Prime Minister providing government response to investigation. He is external authority figure making policy statements, not directly affected by or part of the core event (the deepfakes issue). Test: Could this source be replaced by another expert? YES - another government official could provide similar policy response."
+        },
+        {
+          "name": "Liz Kendall",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Secretary of Technology providing regulatory/policy response. External government authority explaining enforcement, not directly affected by deepfakes. Test: Could this source be replaced by another expert? YES - another tech policy official could explain regulations."
+        },
+        {
+          "name": "Elon Musk",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Owner of X platform under investigation. He IS part of the story - his platform/company is the subject of investigation. Test: Could this source be replaced by another expert? NO - he owns the platform, cannot be replaced."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Ofcom investigates X platform over Grok AI creating sexualized deepfake images including of children",
+        "stakeholders": [
+          {
+            "group": "Women and children victimized by deepfakes",
+            "examples": [
+              "Victims of non-consensual deepfake images",
+              "Children depicted in sexualized images"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "X/Grok (Elon Musk's platform and AI)",
+            "examples": [
+              "Elon Musk",
+              "X management",
+              "X developers"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "UK Government regulators",
+            "examples": [
+              "Ofcom",
+              "Liz Kendall",
+              "Sir Keir Starmer"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "General public/X users",
+            "examples": [
+              "Paying X subscribers",
+              "General platform users"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 1,
+        "male_sources": 2,
+        "structural_sources": 2,
+        "structural_non_male": 1,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "batch": 5,
+  "articles_covered": "21-25",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch",
+  "articles": [
+    {
+      "id": 21,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/nine-arrests-made-in-dorset-over-organised-crime-ring/",
+      "slug": "nine-arrests-made-in-dorset-over-organised-crime-ring",
+      "headline": "Nine arrests made in Dorset over organised crime ring",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Hard news crime reporting. Standard police statement reporting about arrests and seizures."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Crime/policing beat. Not inherently gendered - organized crime involves all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Detective Superintendent Emma Sweetzer",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Dorset Police Detective Superintendent providing official police statement about enforcement action. External authority representing law enforcement, not part of the crime story. Test: Could this source be replaced by another expert? YES - any senior police official could provide similar policy statement."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Nine arrests in Dorset organized crime crackdown",
+        "stakeholders": [
+          {
+            "group": "Arrested suspects",
+            "examples": [
+              "Six men in twenties",
+              "One woman in twenties",
+              "Man in forties",
+              "Man in sixties"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Dorset Police",
+            "examples": [
+              "Detective Superintendent Emma Sweetzer",
+              "Officers conducting searches"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Local communities affected by drugs",
+            "examples": [
+              "Bournemouth residents",
+              "Victims of drug trade"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Property owners",
+            "examples": [
+              "Bournemouth premises being searched"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 1,
+        "male_sources": 0,
+        "structural_sources": 1,
+        "structural_non_male": 1,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 22,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/christchurch-chef-reveals-excitement-over-new-locally-produced-menus/",
+      "slug": "christchurch-chef-reveals-excitement-over-new-locally-produc",
+      "headline": "Christchurch Chef Reveals Excitement Over New Locally-Produced Menus",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Business/food news about restaurant launching local produce initiative. Standard reporting with business representatives quoted."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Food/restaurant beat. Not inherently gendered - chefs and restaurant managers of all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Quentin Royles",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Chef at Eighteen Restaurant leading the local produce initiative. He IS the story - the restaurant implementing the change. Test: Could this source be replaced by another expert? NO - he's the chef at the specific restaurant being profiled."
+        },
+        {
+          "name": "Simon Bennett",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Restaurant Manager at Eighteen Restaurant involved in the initiative. He IS part of the business being profiled. Test: Could this source be replaced by another expert? NO - he manages the specific restaurant implementing the change."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Eighteen Restaurant launches menus featuring local Dorset produce",
+        "stakeholders": [
+          {
+            "group": "Restaurant staff",
+            "examples": [
+              "Quentin Royles (Chef)",
+              "Simon Bennett (Manager)"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Local producers/suppliers",
+            "examples": [
+              "Independent producers in Romsey",
+              "New Milton farmers",
+              "Mudeford fishmongers"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Restaurant customers",
+            "examples": [
+              "Diners at Eighteen Restaurant"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Broader hospitality sector",
+            "examples": [
+              "Other Dorset restaurants",
+              "6,365 closed farming businesses"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 0,
+        "male_sources": 2,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 23,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/cherries-closing-in-on-deal-for-mandas/",
+      "slug": "cherries-closing-in-on-deal-for-mandas",
+      "headline": "Cherries Closing in on Deal for Mandas",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Transfer news. Standard sports reporting about potential player signing with transfer journalist quoted."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's professional football transfer news. Inherently male-only beat."
+      },
+      "quoted_sources": [
+        {
+          "name": "Fabrizio Romano",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Transfer news journalist/expert providing information about the deal. External authority reporting on transfers, not part of the club or deal. Test: Could this source be replaced by another expert? YES - any transfer journalist could report similar information."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "AFC Bournemouth pursuing loan deal for Lazio goalkeeper Christos Mandas",
+        "stakeholders": [
+          {
+            "group": "AFC Bournemouth",
+            "examples": [
+              "Andoni Iraola (manager)",
+              "Djorde Petrovic",
+              "Fraser Forster",
+              "Will Dennis"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Christos Mandas",
+            "examples": [
+              "Christos Mandas (24, Greek goalkeeper)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Lazio FC",
+            "examples": [
+              "Lazio management"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Transfer experts/media",
+            "examples": [
+              "Fabrizio Romano"
+            ],
+            "was_quoted": true
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 1,
+        "structural_sources": 1,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 24,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/afc-bournemouths-development-squad-reach-last-eight-of-pl-cup/",
+      "slug": "afc-bournemouths-development-squad-reach-last-eight-of-pl-cu",
+      "headline": "AFC Bournemouth's Development Squad Reach Last Eight of PL Cup",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Match report with manager quote. Standard sports reporting about U21 cup victory."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's football U21 match report. Inherently male-only beat."
+      },
+      "quoted_sources": [
+        {
+          "name": "Alan Connell",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Manager of AFC Bournemouth U21s commenting on his team's performance. He IS part of the story - the manager of the team that won. Test: Could this source be replaced by another expert? NO - he's THE manager of the team being profiled."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "AFC Bournemouth U21s defeat Sheffield United 2-1 to reach PL Cup quarterfinals",
+        "stakeholders": [
+          {
+            "group": "Bournemouth U21 players and staff",
+            "examples": [
+              "Alan Connell (manager)",
+              "Eugene Nyarko",
+              "Matai Akinmboni",
+              "Jonny Day"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Sheffield United U21s",
+            "examples": [
+              "Sheffield United players",
+              "Aaron Reid"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "PL Cup competition",
+            "examples": [
+              "Competition organizers",
+              "Quarterfinal opponents"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Bournemouth supporters",
+            "examples": [
+              "Fans following U21 team"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 25,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup/",
+      "slug": "q-sports-bar-in-boscombe-is-redeveloping-their-darts-setup",
+      "headline": "Q Sports Bar in Boscombe is Redeveloping Their Darts Setup",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Local business news about venue renovation. Standard reporting with business owner quoted about changes."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Business/entertainment venue beat. Not inherently gendered - sports bars serve all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Lee Hamlin",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Co-owner of Q Sports Bar explaining their renovation plans. He IS the story - the business owner making the changes. Test: Could this source be replaced by another expert? NO - he owns the specific venue being profiled."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Q Sports Bar transforming snooker room into dedicated darts space",
+        "stakeholders": [
+          {
+            "group": "Bar owners/management",
+            "examples": [
+              "Lee Hamlin (co-owner)",
+              "Mark King (co-owner)"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Young people/students (target demographic)",
+            "examples": [
+              "Students",
+              "Young darts players"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Existing pool players",
+            "examples": [
+              "Older clientele",
+              "Weekly league players"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Sports fans",
+            "examples": [
+              "Super Bowl viewers",
+              "World Cup fans"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    }
+  ]
+}

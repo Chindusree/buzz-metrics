@@ -1,0 +1,240 @@
+{
+  "batch": 11,
+  "articles_covered": "48-49",
+  "generated": "2026-02-04",
+  "model": "Claude (Model B)",
+  "articles": [
+    {
+      "article_id": 48,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/support-package-granted-for-pubs-and-venues/",
+      "headline": "Support package granted for pubs and venues",
+      "author": "Gabriel Dela Cruz",
+      "publication_date": "2026-01-28",
+      "word_count": 353,
+      "exemption_status": {
+        "is_exempt": false,
+        "exemption_reason": null,
+        "exemption_notes": "Not a match report, preview, live bulletin, or video/audio-only content"
+      },
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Policy announcement story focused on government support package for pubs and venues. Sources are policymakers and industry representatives discussing business rates policy."
+      },
+      "beat_context": {
+        "primary_beat": "Business/Economy",
+        "is_gendered_beat": false,
+        "expected_gender": null,
+        "beat_notes": "Business rates policy affecting hospitality sector"
+      },
+      "quoted_sources": [
+        {
+          "name": "Dan Tomlinson",
+          "gender": "M",
+          "title": "Treasury Minister",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Government minister announcing and defending the support package policy. Holds institutional power to shape policy outcomes.",
+          "quote_context": "Stated the three-year package would provide approximately £1,650 for the average pub in 2026-2027. Emphasized pubs as 'the cornerstone of so many communities.'"
+        },
+        {
+          "name": "Mel Stride",
+          "gender": "M",
+          "title": "Shadow Chancellor",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Senior opposition politician providing political critique of government policy. Holds institutional position of influence.",
+          "quote_context": "Dismissed the measure as insufficient, questioning 'Is this it?' and warning measures would 'only delay the pain for a while.'"
+        },
+        {
+          "name": "Daisy Cooper",
+          "gender": "F",
+          "title": "Liberal Democrat Treasury Spokesperson",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Political spokesperson representing party position on economic policy. Holds institutional political power.",
+          "quote_context": "Noted pubs still face higher bills and other high street businesses receive 'nothing at all.' Recommended broader discounts and VAT cut."
+        },
+        {
+          "name": "Emma McClarkin",
+          "gender": "F",
+          "title": "Chief Executive of the British Beer and Pub Association",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Industry association leader representing sector interests. Holds institutional power to influence policy through organized advocacy.",
+          "quote_context": "Pledged organizational support while pursuing long-term business rate reforms."
+        }
+      ],
+      "stakeholder_mapping": {
+        "structural_power": {
+          "description": "Policymakers, politicians, industry association executives",
+          "individuals": [
+            "Dan Tomlinson (Treasury Minister)",
+            "Mel Stride (Shadow Chancellor)",
+            "Daisy Cooper (Lib Dem Treasury Spokesperson)",
+            "Emma McClarkin (British Beer and Pub Association CEO)"
+          ],
+          "quoted": true
+        },
+        "implementation_power": {
+          "description": "Government departments, regulatory bodies implementing the business rates changes",
+          "individuals": [
+            "Office for Budget Responsibility (mentioned, not quoted)"
+          ],
+          "quoted": false
+        },
+        "direct_impact": {
+          "description": "Individual pub owners, music venue operators, hospitality business owners affected by rates",
+          "individuals": [],
+          "quoted": false
+        },
+        "indirect_impact": {
+          "description": "Pub employees, musicians, local communities served by pubs and venues",
+          "individuals": [],
+          "quoted": false
+        }
+      },
+      "sei_inputs": {
+        "total_sources": 4,
+        "female_sources": 2,
+        "male_sources": 2,
+        "unknown_gender_sources": 0,
+        "structural_sources": 4,
+        "impact_sources": 0,
+        "female_structural": 2,
+        "male_structural": 2,
+        "female_impact": 0,
+        "male_impact": 0
+      },
+      "sei_score": 0.500,
+      "calculation_notes": "SEI = (2 female / 4 total sources) = 0.500"
+    },
+    {
+      "article_id": 49,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bcp-council-vote-on-tax-base-proposal/",
+      "headline": "BCP Council Vote on Tax Base Proposal",
+      "author": "Julia Apte",
+      "publication_date": "2026-01-14",
+      "word_count": 384,
+      "exemption_status": {
+        "is_exempt": false,
+        "exemption_reason": null,
+        "exemption_notes": "Not a match report, preview, live bulletin, or video/audio-only content"
+      },
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Local government policy story about council tax decision affecting beach hut owners. Sources are council members and community association representative discussing policy decision."
+      },
+      "beat_context": {
+        "primary_beat": "Local Government",
+        "is_gendered_beat": false,
+        "expected_gender": null,
+        "beat_notes": "Council tax policy and local government finance"
+      },
+      "quoted_sources": [
+        {
+          "name": "Millie Earl",
+          "gender": "F",
+          "title": "Council Leader",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Council leader with institutional power to set policy and make budget decisions. Holds top elected position in local government.",
+          "quote_context": "Explained financial pressures facing the council, noting they are 'likely to lose £20 million over the next three years from the various grant we get.'"
+        },
+        {
+          "name": "Darren Pidwell",
+          "gender": "M",
+          "title": "Chair of the Mudeford and Sandbanks Beach hut Association",
+          "role": "IMPACT",
+          "role_reasoning": "Represents beach hut owners directly affected by the council tax decision. Though holds leadership position in association, primarily speaks for those experiencing policy impact.",
+          "quote_context": "Expressed frustration about council 'targeting Mudeford and Sandbanks hut owners to raise additional revenues and with no prior consultation.'"
+        },
+        {
+          "name": "Mike Cox",
+          "gender": "M",
+          "title": "Christchurch Councillor",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Elected councillor with voting power on policy decisions. Holds institutional government position.",
+          "quote_context": "Acknowledged burden on some residents, expressing 'sympathy for those who inherited their beach hut and are not individually wealthy themselves.'"
+        },
+        {
+          "name": "David Brown",
+          "gender": "M",
+          "title": "Bearwood and Merley Councillor",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Elected councillor defending policy decision. Holds institutional government position with policy-making power.",
+          "quote_context": "Defended decision's impact on vulnerable groups, noting they 'haven't pulled the Local Council Support Scheme.'"
+        },
+        {
+          "name": "Richard Harrett",
+          "gender": "M",
+          "title": "Wallisdown and Winton West Councillor",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Elected councillor with policy-making power. Holds institutional government position.",
+          "quote_context": "Noted beach hut association's frustrations about 'lack of investment in the view along the seafront.'"
+        },
+        {
+          "name": "Andy Martin",
+          "gender": "M",
+          "title": "Highcliffe and Walkford Councillor",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Elected councillor highlighting policy rationale. Holds institutional government position.",
+          "quote_context": "Highlighted revenue impact: 'The revenue that we will accrue from this is £211,000 which is a huge amount of money.'"
+        }
+      ],
+      "stakeholder_mapping": {
+        "structural_power": {
+          "description": "Council leaders, elected councillors with policy-making authority",
+          "individuals": [
+            "Millie Earl (Council Leader)",
+            "Mike Cox (Christchurch Councillor)",
+            "David Brown (Bearwood and Merley Councillor)",
+            "Richard Harrett (Wallisdown and Winton West Councillor)",
+            "Andy Martin (Highcliffe and Walkford Councillor)"
+          ],
+          "quoted": true
+        },
+        "implementation_power": {
+          "description": "Council staff, tax collection departments implementing the policy",
+          "individuals": [
+            "Seafront team (mentioned, not quoted)"
+          ],
+          "quoted": false
+        },
+        "direct_impact": {
+          "description": "Beach hut owners at Mudeford and Sandbanks facing tax increases",
+          "individuals": [
+            "Darren Pidwell (Beach hut Association Chair, representing owners)",
+            "Beach hut owners who inherited huts"
+          ],
+          "quoted": true
+        },
+        "indirect_impact": {
+          "description": "Residents benefiting from services funded by increased revenue, low-income residents on Local Council Support Scheme",
+          "individuals": [],
+          "quoted": false
+        }
+      },
+      "sei_inputs": {
+        "total_sources": 6,
+        "female_sources": 1,
+        "male_sources": 5,
+        "unknown_gender_sources": 0,
+        "structural_sources": 5,
+        "impact_sources": 1,
+        "female_structural": 1,
+        "male_structural": 4,
+        "female_impact": 0,
+        "male_impact": 1
+      },
+      "sei_score": 0.167,
+      "calculation_notes": "SEI = (1 female / 6 total sources) = 0.167"
+    }
+  ],
+  "batch_summary": {
+    "total_articles_in_batch": 2,
+    "successfully_scored": 2,
+    "exempt_articles": 0,
+    "average_sei_score": 0.334,
+    "gender_breakdown": {
+      "total_female_sources": 3,
+      "total_male_sources": 7,
+      "total_unknown_sources": 0,
+      "total_sources": 10
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "batch": 7,
+  "articles_covered": "31-35",
+  "generated": "2026-02-04",
+  "model": "Claude (Model B)",
+  "method": "WebFetch",
+  "extraction_notes": "Articles 31-33 returned minimal/no body content via WebFetch. Only articles 34-35 had sufficient content for full SEI analysis.",
+  "articles": [
+    {
+      "article_id": 31,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-fast-fashion-disconnect/",
+      "headline": "The fast fashion disconnect",
+      "author": "Editor Green",
+      "published_date": "2026-01-16",
+      "extraction_status": "INCOMPLETE",
+      "extraction_issue": "No article body content accessible via WebFetch - only metadata retrieved",
+      "word_count": null,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": null,
+      "classification_reasoning": null,
+      "beat_context": {
+        "is_gendered_beat": null,
+        "expected_gender": null,
+        "beat_reasoning": null
+      },
+      "quoted_sources": [],
+      "stakeholder_analysis": {
+        "stakeholder_groups": [],
+        "ghost_stakeholders": []
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 0,
+        "ghost_stakeholder_count": 0
+      },
+      "sei_score": null
+    },
+    {
+      "article_id": 32,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/a-preventable-cancer-why-cervical-cancer-prevention-week-matters/",
+      "headline": "A preventable cancer: Why Cervical Cancer Prevention Week matters",
+      "author": "Isabelle Taylor",
+      "published_date": "2026-01-23",
+      "extraction_status": "INCOMPLETE",
+      "extraction_issue": "No article body content accessible via WebFetch - only metadata retrieved",
+      "word_count": null,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": null,
+      "classification_reasoning": null,
+      "beat_context": {
+        "is_gendered_beat": null,
+        "expected_gender": null,
+        "beat_reasoning": null
+      },
+      "quoted_sources": [],
+      "stakeholder_analysis": {
+        "stakeholder_groups": [],
+        "ghost_stakeholders": []
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 0,
+        "ghost_stakeholder_count": 0
+      },
+      "sei_score": null
+    },
+    {
+      "article_id": 33,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/750-million-investment-sent-to-transform-bournemouth/",
+      "headline": "£750 million investment sent to transform Bournemouth",
+      "author": "Martha White",
+      "published_date": "2026-01-30",
+      "extraction_status": "INCOMPLETE",
+      "extraction_issue": "No article body content accessible via WebFetch - only metadata retrieved",
+      "word_count": null,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": null,
+      "classification_reasoning": null,
+      "beat_context": {
+        "is_gendered_beat": null,
+        "expected_gender": null,
+        "beat_reasoning": null
+      },
+      "quoted_sources": [],
+      "stakeholder_analysis": {
+        "stakeholder_groups": [],
+        "ghost_stakeholders": []
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 0,
+        "ghost_stakeholder_count": 0
+      },
+      "sei_score": null
+    },
+    {
+      "article_id": 34,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/mp-urges-tighter-regulation-after-leaving-x/",
+      "headline": "MP urges tighter regulation after leaving X",
+      "author": "Grace Oakins",
+      "published_date": "2026-01-15",
+      "extraction_status": "COMPLETE",
+      "word_count": 375,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": "STANDARD",
+      "classification_reasoning": "This is a policy/regulation story about AI regulation and social media platform oversight. It requires institutional and expert context about technology policy, platform regulation, and societal impacts. While personal experience (MP's decision to leave X) is present, the story is fundamentally about regulatory responses to AI technology.",
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "neutral",
+        "beat_reasoning": "Technology/regulation beat. While the specific incident involves gendered harm (AI undressing images), the beat itself (tech policy/regulation) is typically gender-neutral. Both men and women are technology policy experts and politicians."
+      },
+      "quoted_sources": [
+        {
+          "name": "Vikki Slade",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Slade is the central figure whose personal experience (leaving X) drives this story. She is not replaceable - this story exists because of her specific action and perspective as an MP who experienced harm on the platform. Her lived experience of 'derogatory comments' and 'vile' responses makes her an impact source, not a structural expert who could be swapped out.",
+          "title": "MP for Mid Dorset and North Poole",
+          "organization": "UK Parliament",
+          "quote_context": "Primary subject discussing her decision to leave X due to derogatory comments and concerns about Grok AI feature"
+        },
+        {
+          "name": "Dr Amy Tatum",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Tatum provides expert analysis about misogyny on social media and women's representation. She is an academic expert who could be replaced by another communications scholar or social media researcher. The story needs expert commentary on the broader implications, but it doesn't require Tatum specifically - any qualified expert on digital misogyny could fulfill this role.",
+          "title": "Communication and Media Lecturer",
+          "organization": "Bournemouth University",
+          "quote_context": "Provides expert commentary on misogyny on X and concerns about women closing social media spaces"
+        }
+      ],
+      "stakeholder_analysis": {
+        "stakeholder_groups": [
+          {
+            "group": "Social media users (particularly women experiencing harassment)",
+            "quoted": true,
+            "quoted_source": "Vikki Slade"
+          },
+          {
+            "group": "Platform regulators and policymakers",
+            "quoted": true,
+            "quoted_source": "Vikki Slade (as MP advocating for regulation)"
+          },
+          {
+            "group": "Social media platform companies (X/Twitter, Elon Musk)",
+            "quoted": false
+          },
+          {
+            "group": "Academic/research community studying digital harms",
+            "quoted": true,
+            "quoted_source": "Dr Amy Tatum"
+          }
+        ],
+        "ghost_stakeholders": [
+          "Social media platform companies (X/Twitter, Elon Musk)"
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 2,
+        "structural_sources": 1,
+        "structural_non_male": 1,
+        "impact_sources": 1,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 1
+      },
+      "sei_score": 0.75
+    },
+    {
+      "article_id": 35,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/profile-pictures-turn-purple-in-support-of-south-african-women/",
+      "headline": "Profile pictures turn purple in support of South African Women",
+      "author": "Tyler Tamou",
+      "published_date": "2026-01-23",
+      "extraction_status": "COMPLETE",
+      "word_count": 530,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": "STANDARD",
+      "classification_reasoning": "This is a story about social media activism, news media practices, and how information spreads. While it includes personal experience from a shop owner, the story requires institutional context about journalism, news organizations (BBC, Reuters), and social media's role in news dissemination. The focus is on structural questions about media ecosystems rather than individual lived experiences.",
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "beat_reasoning": "This covers media/journalism beat and social media/technology beat. While the underlying issue is gender-based violence, the beat being covered is news media practices and social media activism, which are gender-neutral beats. Both men and women work as journalists, media producers, and social media analysts."
+      },
+      "quoted_sources": [
+        {
+          "name": "Madison Love",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Love is sharing her lived experience as a member of the South African diaspora community in Dorset who organized a fundraiser. Her connection to the South African community and her personal observations about social media versus news coverage make her perspective specific and non-replaceable. She represents the community experiencing and responding to the issue, not an expert who could be swapped out.",
+          "title": "Owner",
+          "organization": "No1 South African shop, Christchurch",
+          "quote_context": "Community member who hosted fundraiser for Women's shutdown, discussing social media awareness versus traditional news coverage"
+        },
+        {
+          "name": "Helena Fremantle",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Fremantle provides institutional perspective from BBC on how news organizations track and respond to social media trends. She represents BBC as an organization and could be replaced by another BBC producer or news professional. The story needs BBC's perspective, but it doesn't require Fremantle specifically.",
+          "title": "Assistant Producer",
+          "organization": "BBC",
+          "quote_context": "Discussing BBC's monitoring of social media and news selection processes"
+        },
+        {
+          "name": "Patricia Leon Elias",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Leon Elias provides expert institutional perspective from Reuters on how news organizations balance speed and accuracy when social media surfaces stories. She represents Reuters' editorial approach and could be replaced by another Reuters editor or senior news professional. The story needs a major news agency perspective, but not specifically her.",
+          "title": "Senior Manager",
+          "organization": "Reuters",
+          "quote_context": "Explaining how Reuters evaluates social media signals and prioritizes accuracy over speed"
+        }
+      ],
+      "stakeholder_analysis": {
+        "stakeholder_groups": [
+          {
+            "group": "South African diaspora communities (organizing activism)",
+            "quoted": true,
+            "quoted_source": "Madison Love"
+          },
+          {
+            "group": "Traditional news organizations (BBC, Reuters)",
+            "quoted": true,
+            "quoted_source": "Helena Fremantle, Patricia Leon Elias"
+          },
+          {
+            "group": "Social media users/activists participating in awareness campaigns",
+            "quoted": false
+          },
+          {
+            "group": "South African women affected by gender-based violence",
+            "quoted": false
+          }
+        ],
+        "ghost_stakeholders": [
+          "Social media users/activists participating in awareness campaigns",
+          "South African women affected by gender-based violence"
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 3,
+        "structural_sources": 2,
+        "structural_non_male": 2,
+        "impact_sources": 1,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 2
+      },
+      "sei_score": 0.50
+    }
+  ]
+}

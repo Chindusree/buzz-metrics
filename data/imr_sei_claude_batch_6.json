@@ -1,0 +1,183 @@
+{
+  "batch": 6,
+  "articles_covered": "26-30",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch + BeautifulSoup for Shorthand",
+  "articles": [
+    {
+      "id": 26,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/uefa-champions-league-play-off-draw-fixtures-anounced/",
+      "slug": "uefa-champions-league-play-off-draw-fixtures-anounced",
+      "headline": "UEFA Champions League Play-Off Draw Fixtures Announced",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Competition draw announcement. Pure factual reporting of fixtures with no quotes or analysis."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's professional football (Champions League). Inherently male-only beat."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "UEFA Champions League play-off draw announced with 8 matchups",
+        "stakeholders": [
+          {
+            "group": "Participating clubs",
+            "examples": [
+              "Borussia Dortmund",
+              "Atalanta",
+              "Real Madrid",
+              "Benfica",
+              "PSG",
+              "Monaco"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "UEFA/competition organizers",
+            "examples": [
+              "UEFA officials",
+              "Draw organizers"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Fans of participating clubs",
+            "examples": [
+              "Supporters worldwide"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Broadcasting/media",
+            "examples": [
+              "Sports media",
+              "Broadcasters"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    },
+    {
+      "id": 27,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/live-andoni-iraola-speaks-ahead-of-wolves-trip/",
+      "slug": "live-andoni-iraola-speaks-ahead-of-wolves-trip",
+      "headline": "AS IT HAPPENED: Andoni Iraola speaks ahead of Wolves trip",
+      "sei_exempt": true,
+      "sei_exempt_reason": "live_bulletin",
+      "story_classification": null,
+      "beat_context": null,
+      "quoted_sources": null,
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    },
+    {
+      "id": 28,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/holders-weymouth-travel-to-sherborne-in-dorset-senior-cup/",
+      "slug": "holders-weymouth-travel-to-sherborne-in-dorset-senior-cup",
+      "headline": "Holders Weymouth travel to Sherborne in Dorset Senior Cup",
+      "sei_exempt": true,
+      "sei_exempt_reason": "match_preview",
+      "story_classification": null,
+      "beat_context": null,
+      "quoted_sources": null,
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    },
+    {
+      "id": 29,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/verwood-town-vs-sherborne-town-reserves-preview/",
+      "slug": "verwood-town-vs-sherborne-town-reserves-preview",
+      "headline": "Verwood Town vs Sherborne Town Reserves preview",
+      "sei_exempt": true,
+      "sei_exempt_reason": "match_preview",
+      "story_classification": null,
+      "beat_context": null,
+      "quoted_sources": null,
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    },
+    {
+      "id": 30,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/floods-continue/",
+      "slug": "floods-continue",
+      "headline": "Floods Continue After Storm Chandra Hits Bournemouth",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Hard news about weather emergency. Standard reporting on storm damage and flooding with no quoted sources."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Weather/disaster reporting beat. Not inherently gendered - storms affect all people."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "Storm Chandra causes widespread flooding across Dorset",
+        "stakeholders": [
+          {
+            "group": "Affected residents",
+            "examples": [
+              "Iford Bridge Home Park evacuees",
+              "Dorset residents"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Local government/emergency services",
+            "examples": [
+              "BCP Council",
+              "Emergency responders"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Transportation services",
+            "examples": [
+              "Network Rail",
+              "Train operators"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Weather/environmental agencies",
+            "examples": [
+              "Met Office",
+              "Flood warning services"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    }
+  ]
+}

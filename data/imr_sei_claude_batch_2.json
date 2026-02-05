@@ -1,0 +1,386 @@
+{
+  "batch": 2,
+  "articles_covered": "6-10",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch + BeautifulSoup for Shorthand",
+  "articles": [
+    {
+      "id": 6,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/youngcherriesfall/",
+      "slug": "youngcherriesfall",
+      "headline": "Young Cherries fall to disappointing defeat",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Match report for U21 game. Pure sports reporting with no quoted sources. Standard reporting format covering game events and league standings."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's football match report (U21 development league). Inherently male-only beat."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "AFC Bournemouth U21s lose 2-1 to Colchester United U21s",
+        "stakeholders": [
+          {
+            "group": "AFC Bournemouth U21 players and coaching staff",
+            "examples": [
+              "Alan Connell (coach)",
+              "Koby Mottoh",
+              "Balraj Landa"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Colchester United U21 players and staff",
+            "examples": [
+              "Kaion Lisbie",
+              "Kai Martin",
+              "Frankie Beckles",
+              "Lennox Emery"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Brentford U21s (league rivals)",
+            "examples": [
+              "Brentford U21 team"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "PDL league officials and other teams",
+            "examples": [
+              "Professional Development League organizers"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    },
+    {
+      "id": 7,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/player-ratings-jimenez-and-tavernier-star-in-away-performance/",
+      "slug": "player-ratings-jimenez-and-tavernier-star-in-away-performance",
+      "headline": "Cherries Player Ratings: Jimenez and Tavernier Star in Away Performance",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Player ratings article - analytical match coverage. Pure sports analysis with no quoted sources or personal narratives."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's Premier League football. Inherently male-only beat."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "AFC Bournemouth draw 1-1 with Brighton at Amex Stadium",
+        "stakeholders": [
+          {
+            "group": "AFC Bournemouth players",
+            "examples": [
+              "Djorde Petrovic",
+              "Adrien Truffert",
+              "James Hill",
+              "Marcos Senesi",
+              "Alex Jimenez",
+              "Alex Scott",
+              "Lewis Cook",
+              "Marcus Tavernier",
+              "Amine Adli",
+              "Eli Junior Kroupi",
+              "Evanilson"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "AFC Bournemouth management",
+            "examples": [
+              "Andoni Iraola"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Brighton & Hove Albion players",
+            "examples": [
+              "Kostoulas",
+              "Yankuba Minteh",
+              "Mitoma",
+              "Bart Verbruggen"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Fans of both clubs",
+            "examples": [
+              "Bournemouth supporters",
+              "Brighton supporters"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    },
+    {
+      "id": 8,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-iranian-protests/",
+      "slug": "bournemouth-iranian-protests",
+      "headline": "Crowds gathered in Bournemouth town centre to show solidarity with the Iranian community",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Hard news story about political protest. Requires institutional context about Iranian civil unrest. Standard reporting with quoted sources."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Civil unrest/political protest beat. Not inherently gendered - protests involve people of all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Anonymous Protester",
+          "gender": "U",
+          "role": "IMPACT",
+          "role_reasoning": "Protester directly participating in solidarity demonstration. They ARE part of the story - someone affected by the Iranian situation expressing their demands. Test: Could this source be replaced by another expert? NO - they are a participant in the event being covered."
+        },
+        {
+          "name": "Donald Trump",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Former US President providing external political commentary on Iranian protests. He is NOT part of the Bournemouth protest or directly affected - he's an international political figure offering policy statements. Test: Could this source be replaced by another expert? YES - any international political leader could provide similar commentary."
+        },
+        {
+          "name": "Abbas Araghchi",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Iran's Foreign Minister providing government response. External authority figure representing Iranian government, not directly affected by protests. Test: Could this source be replaced by another expert? YES - any Iranian government official could provide official response."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Solidarity protest in Bournemouth for Iranian civil unrest",
+        "stakeholders": [
+          {
+            "group": "Bournemouth protesters/Iranian diaspora",
+            "examples": [
+              "Anonymous protester",
+              "Approximately 100 demonstrators"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Iranian protesters in Iran",
+            "examples": [
+              "Protesters in Iran",
+              "Families of 3,000+ killed"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Iranian government",
+            "examples": [
+              "Ayatollah Ali Khamenei",
+              "Abbas Araghchi"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "International political actors",
+            "examples": [
+              "Donald Trump",
+              "US government"
+            ],
+            "was_quoted": true
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 0,
+        "male_sources": 2,
+        "structural_sources": 2,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 1
+      }
+    },
+    {
+      "id": 9,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/ben-edgell-praises-poole-town-fc-partnership-with-sen/",
+      "slug": "ben-edgell-praises-poole-town-fc-partnership-with-sen",
+      "headline": "Ben Edgell praises Poole Town FC partnership with SEN",
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "News story about community partnership. Straightforward reporting with organizational spokesperson. Not experiential narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Community partnership/disability services beat. Not inherently gendered - SEND support involves all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Ben Edgell",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Commercial Manager of Poole Town FC - he IS part of the organization running the partnership. He's not an external expert; he's an organizational insider explaining their own initiative. Test: Could this source be replaced by another expert? NO - he represents the club that IS the story."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Poole Town FC partners with SWRAC to support young people with SEND",
+        "stakeholders": [
+          {
+            "group": "Poole Town FC staff",
+            "examples": [
+              "Ben Edgell (Commercial Manager)"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "SWRAC students with SEND",
+            "examples": [
+              "Young people aged 16-30 with SEND",
+              "Over 200 young adults annually"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "SWRAC staff and organization",
+            "examples": [
+              "SWRAC educators",
+              "SWRAC management"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Local community/families",
+            "examples": [
+              "Parents of SEND students",
+              "Local residents"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 10,
+      "url": "https://jules-angel.shorthandstories.com/veganuary-not-just-a-trend-but-a-sustainable-goal/index.html",
+      "slug": "veganuary-not-just-a-trend-but-a-sustainable-goal",
+      "headline": "Veganuary: not just a trend but a sustainable goal",
+      "story_classification": {
+        "type": "EXPERIENTIAL",
+        "reasoning": "Shorthand feature with human interest focus. Includes personal stories from long-term vegans sharing lived experiences. Observation-driven piece about veganism and sustainability with personal narratives."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Veganism/sustainability beat. Not inherently gendered - veganism is practiced by all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Frederica Sindici",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Owner of Mad Cucumbers restaurant - she IS the business being featured. She's not an external expert on veganism; she's a restaurant owner sharing her experience running a vegan establishment. Test: Could this source be replaced by another expert? NO - she owns the specific restaurant being profiled."
+        },
+        {
+          "name": "Cindy Lou",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Customer sharing personal 30+ year vegan experience. She IS experiencing the challenges/benefits of veganism firsthand. Test: Could this source be replaced by another expert? NO - she's sharing lived experience, not replaceable expertise."
+        },
+        {
+          "name": "Chanelle Paris",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Customer sharing personal 30+ year vegan experience. She IS experiencing veganism. Test: Could this source be replaced by another expert? NO - personal lived experience narrative."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Veganuary campaign and impact of vegan diet on environment/accessibility",
+        "stakeholders": [
+          {
+            "group": "Vegan restaurant owners",
+            "examples": [
+              "Frederica Sindici (Mad Cucumbers owner)"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Long-term vegans/customers",
+            "examples": [
+              "Cindy Lou",
+              "Chanelle Paris"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "People considering veganism/Veganuary participants",
+            "examples": [
+              "Potential vegans",
+              "Veganuary challenge participants"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Environmental organizations/researchers",
+            "examples": [
+              "World Economic Forum",
+              "World Wide Fund for Nature",
+              "Spanish National Research Council",
+              "UN",
+              "Oxford University"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 3,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 3,
+        "impact_non_male": 3,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 2
+      }
+    }
+  ]
+}

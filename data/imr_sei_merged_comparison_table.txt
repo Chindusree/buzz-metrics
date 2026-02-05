@@ -1,0 +1,80 @@
+================================================================================================================================================================
+SEI IMR COMPARISON TABLE - COMPLETE SAMPLE (Batches 1-11)
+Model A: Groq/Llama (Production Baseline)
+Model B: Claude/Sonnet (Independent Validation)
+================================================================================================================================================================
+ID   Headline                                           Model   Total Non-M Struct  S-NM Impact  I-NM Ghost  Incl  StrAg  ImpEq    SEI
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    Wimborne trip to Plymouth postponed                Groq        0     0      0     0      0     0     4  0.00   0.00   0.00  50.00
+1    Wimborne trip to Plymouth postponed                Claude      0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+3    Diverse Abilities Launch New Adult Soft Play Fundr Groq        1     1      0     0      1     1     3 50.00   0.00  25.00  22.50
+3    Diverse Abilities Launch New Adult Soft Play Fundr Claude      1     1      0     0      1     1     3 100.00   0.00  75.00   0.56
+4    Rayan Excited to Start Premier League Challenge    Groq        2     0      1     0      1     0     4  0.00   0.00   0.00   0.00
+4    Rayan Excited to Start Premier League Challenge    Claude      2     0      1     0      1     0     3  0.00   0.00   0.00   0.00
+5    Investigation into Elon Musk's X Following Grok AI Groq        3     1      2     1      1     0     2 33.30  50.00  50.00  45.00
+5    Investigation into Elon Musk's X Following Grok AI Claude      3     1      2     1      1     0     2 33.33  50.00   0.00   0.28
+8    Crowds gathered in Bournemouth town centre to show Groq        3     0      2     0      1     0     1  0.00   0.00  75.00  22.50
+8    Crowds gathered in Bournemouth town centre to show Claude      3     0      2     0      1     0     1  0.00   0.00   0.00   0.00
+9    Ben Edgell praises Poole Town FC partnership with  Groq        1     0      0     0      1     0     3  0.00   0.00  25.00   7.50
+9    Ben Edgell praises Poole Town FC partnership with  Claude      1     0      0     0      1     0     3  0.00   0.00   0.00   0.00
+11   Bournemouth Councillor Relieved Over New Lidl Stor Groq        1     0      0     0      1     0     3  0.00   0.00  25.00   7.50
+11   Bournemouth Councillor Relieved Over New Lidl Stor Claude      1     0      0     0      1     0     3  0.00   0.00   0.00   0.00
+12   20 Year-Old Man on Trial for Manslaughter Followin Groq        1     1      1     1      0     0     3 50.00 100.00  25.00  62.50
+12   20 Year-Old Man on Trial for Manslaughter Followin Claude      1     1      1     1      0     0     3 100.00 100.00   0.00   0.65
+13   Why Young People Should Join Orchestra             Groq        2     1      0     0      2     1     3 50.00   0.00  25.00  32.50
+13   Why Young People Should Join Orchestra             Claude      2     1      0     0      2     1     3 50.00   0.00  37.50   0.28
+14   Poole Trampoline Athlete Jared Smith Sets Sights o Groq        2     0      0     0      2     0     3  0.00   0.00  25.00   7.50
+14   Poole Trampoline Athlete Jared Smith Sets Sights o Claude      2     0      0     0      2     0     3  0.00   0.00   0.00   0.00
+15   When education takes a stand                       Groq        2     1      0     0      2     1     3 50.00   0.00  25.00  32.50
+15   When education takes a stand                       Claude      2     1      0     0      2     1     3 50.00   0.00  37.50   0.28
+16   Iford to Hold Women's International Driving Range  Groq        1     1      0     0      1     1     3 50.00   0.00  25.00  32.50
+16   Iford to Hold Women's International Driving Range  Claude      1     1      0     0      1     1     3 100.00   0.00  75.00   0.56
+17   Wonderkid Mayes hits record breaking 191           Groq        0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+17   Wonderkid Mayes hits record breaking 191           Claude      0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+18   Bournemouth man charged after fight breaks out dur Groq        1     0      1     0      0     0     3  0.00   0.00  25.00   7.50
+18   Bournemouth man charged after fight breaks out dur Claude      1     0      1     0      0     0     3  0.00   0.00   0.00   0.00
+21   Nine arrests made in Dorset over organised crime r Groq        1     1      1     1      0     0     3 50.00 100.00  25.00  62.50
+21   Nine arrests made in Dorset over organised crime r Claude      1     1      1     1      0     0     3 100.00 100.00   0.00   0.65
+22   Christchurch Chef Reveals Excitement Over New Loca Groq        2     0      0     0      2     0     3  0.00   0.00  25.00   7.50
+22   Christchurch Chef Reveals Excitement Over New Loca Claude      2     0      0     0      2     0     3  0.00   0.00   0.00   0.00
+23   Cherries Closing in on Deal for Mandas             Groq        1     0      1     0      0     0     4  0.00   0.00   0.00   0.00
+23   Cherries Closing in on Deal for Mandas             Claude      1     0      1     0      0     0     3  0.00   0.00   0.00   0.00
+24   AFC Bournemouth's Development Squad Reach Last Eig Groq        1     0      0     0      1     0     3  0.00   0.00  25.00  50.00
+24   AFC Bournemouth's Development Squad Reach Last Eig Claude      1     0      0     0      1     0     3  0.00   0.00   0.00   0.00
+25   Q Sports Bar in Boscombe is Redeveloping Their Dar Groq        2     0      0     0      2     0     3  0.00   0.00  25.00   7.50
+25   Q Sports Bar in Boscombe is Redeveloping Their Dar Claude      1     0      0     0      1     0     3  0.00   0.00   0.00   0.00
+26   UEFA Champions League Play-Off Draw Fixtures Annou Groq        0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+26   UEFA Champions League Play-Off Draw Fixtures Annou Claude      0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+30   Floods Continue After Storm Chandra Hits Bournemou Groq        2     0      2     0      0     0     2  0.00   0.00  50.00  15.00
+30   Floods Continue After Storm Chandra Hits Bournemou Claude      0     0      0     0      0     0     4  0.00   0.00   0.00   0.00
+34   MP urges tighter regulation after leaving X        Groq        2     2      1     1      1     1     2 100.00 100.00  50.00  85.00
+34   MP urges tighter regulation after leaving X        Claude      2     2      1     1      1     1     1 100.00 100.00  75.00   0.75
+35   Profile pictures turn purple in support of South A Groq        3     3      2     2      1     1     2 100.00 100.00  50.00  85.00
+35   Profile pictures turn purple in support of South A Claude      3     3      2     2      1     1     2 100.00 100.00  75.00   0.50
+36   Celebrating the RNLI's work in Poole               Groq        4     3      1     1      3     2     1 75.00 100.00  75.00  80.00
+36   Celebrating the RNLI's work in Poole               Claude      0     0      0     0      0     0     0  0.00   0.00   0.00   0.00
+37   Intersectional Uprising Protest Empowers Bournemou Groq        3     3      0     0      3     3     2 100.00   0.00  50.00  65.00
+37   Intersectional Uprising Protest Empowers Bournemou Claude      3     3      0     0      3     3     2 100.00   0.00  75.00   0.56
+38   Local care home combats loneliness on Blue Monday  Groq        3     3      0     0      3     3     2 100.00   0.00  50.00  65.00
+38   Local care home combats loneliness on Blue Monday  Claude      3     3      0     0      3     3     1 100.00   0.00  75.00   0.56
+39   Can UPFs be avoided on a budget?                   Groq        2     2      2     2      0     0     3 100.00 100.00  25.00  62.50
+39   Can UPFs be avoided on a budget?                   Claude      0     0      0     0      0     0     0  0.00   0.00   0.00   0.00
+40   Boscombe community wears their visibility cloaks a Groq        2     2      0     0      2     2     3 100.00   0.00  25.00  47.50
+40   Boscombe community wears their visibility cloaks a Claude      2     2      0     0      2     2     2 100.00   0.00  75.00   0.56
+41   Kier Starmer first Prime Minister to arrive in Chi Groq        3     2      2     2      1     0     3 66.70 100.00  25.00  67.50
+41   Kier Starmer first Prime Minister to arrive in Chi Claude      2     2      2     2      0     0     0 100.00 100.00   0.00   0.65
+43   Contract Extension for Hampshire Hawks' James Vinc Groq        1     0      0     0      1     0     4  0.00   0.00   0.00   0.00
+43   Contract Extension for Hampshire Hawks' James Vinc Claude      1     0      1     0      0     0     0  0.00   0.00   0.00   0.00
+44   Two people jailed following e-bike murder in Bourn Groq        8     4      6     2      2     2     1 50.00  33.30  75.00  50.80
+44   Two people jailed following e-bike murder in Bourn Claude      6     4      4     0      2     0     0 66.67   0.00   0.00   0.20
+46   Rapist sentenced following assault in Bournemouth  Groq        4     2      2     1      2     1     1 50.00  50.00  75.00  57.50
+46   Rapist sentenced following assault in Bournemouth  Claude      4     3      3     0      1     0     0 75.00   0.00   0.00   0.23
+48   Support package granted for pubs and venues        Groq        4     2      3     1      1     1     1 50.00  33.30  75.00  50.80
+48   Support package granted for pubs and venues        Claude      4     2      4     2      0     0     0 50.00  50.00   0.00   0.50
+49   BCP Council Vote on Tax Base Proposal              Groq        6     1      5     1      1     0     2 16.70  20.00  50.00  28.00
+49   BCP Council Vote on Tax Base Proposal              Claude      6     1      5     1      1     0     0 16.67  20.00   0.00   0.17
+================================================================================================================================================================
+
+Total articles in complete sample: 38
+Articles with both Groq and Claude scores: 34
+Percentage of production dataset (312 articles): 10.9%

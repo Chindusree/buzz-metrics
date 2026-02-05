@@ -1,0 +1,160 @@
+
+================================================================================
+SEI INTER-MODEL RELIABILITY (IMR) VALIDATION REPORT
+================================================================================
+Model A: Groq/Llama (Production Baseline)
+Model B: Claude/Sonnet (Independent Validation)
+Sample: 31 articles (9.9% of 312 production articles)
+Date: 2026-02-04
+
+================================================================================
+STEP 1: ARTICLE-BY-ARTICLE COMPARISON
+================================================================================
+ID   Short Name         Source  Gender  Struct  S-Gndr  Impact  I-Gndr  Ghost   Status
+----------------------------------------------------------------------------------------
+1    Wimborne           ✓       —       ✓       —       ✓       —       ✓       PASS  
+3    Diverse            ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+4    Rayan              ✓       ✓       ✓       ✓       ✓       ✓       ✗       FLAG  
+5    Musk X             ✓       ✓       ✓       ✓       ✓       ✓       ✓       PASS  
+8    Crowds             ✓       ✓       ✓       ✓       ✓       ✓       ✓       PASS  
+9    Edgell             ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+11   Councillor         ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+12   Manslaughter       ✓       ✓       ✓       ✓       ✓       —       ✓       PASS  
+13   Orchestra          ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+14   Trampoline         ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+15   Education          ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+16   Iford              ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+17   Mayes              ✓       —       ✓       —       ✓       —       ✓       PASS  
+18   Fight              ✓       ✓       ✓       ✓       ✓       —       ✓       PASS  
+21   Arrests            ✓       ✓       ✓       ✓       ✓       —       ✓       PASS  
+22   Chef               ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+23   Mandas             ✓       ✓       ✓       ✓       ✓       —       ✗       FLAG  
+24   Development        ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+25   Q Sports           ✗       ✓       ✓       —       ✗       ✓       ✓       FLAG  
+26   UEFA               ✓       —       ✓       —       ✓       —       ✓       PASS  
+34   MP X               ✓       ✓       ✓       ✓       ✓       ✓       ✗       FLAG  
+35   Purple             ✓       ✓       ✓       ✓       ✓       ✓       ✓       PASS  
+37   Uprising           ✓       ✓       ✓       —       ✓       ✓       ✓       PASS  
+38   Care home          ✓       ✓       ✓       —       ✓       ✓       ✗       FLAG  
+40   Boscombe           ✓       ✓       ✓       —       ✓       ✓       ✗       FLAG  
+41   Starmer            ✗       ✓       ✓       ✓       ✗       —       ✗       FLAG  
+43   Vince              ✓       ✓       ✗       —       ✗       —       ✗       FLAG  
+44   E-bike             ✗       ✓       ✗       ✗       ✓       ✗       ✗       FLAG  
+46   Rapist             ✓       ✗       ✗       ✗       ✗       ✗       ✗       FLAG  
+48   Pubs               ✓       ✓       ✗       ✗       ✗       —       ✗       FLAG  
+49   BCP Tax            ✓       ✓       ✓       ✓       ✓       ✓       ✗       FLAG  
+================================================================================
+
+================================================================================
+STEP 2: THREE-LEVEL SUMMARY
+================================================================================
+
+LEVEL 1 — ARTICLE-LEVEL AGREEMENT:
+  19/31 (61.3%) articles passed ALL thresholds (zero disagreements)
+
+LEVEL 2 — GLOBAL POOLED AGREEMENT:
+  158/187 observations (84.5%) agreed across all components
+
+LEVEL 3 — COMPONENT BREAKDOWN:
+Component          Agreements   Total Obs  %        Status    
+----------------------------------------------------------------------
+Source Count       28/31        31         90.3     ✓ PASS        
+Gender             27/28        28         96.4     ✓ PASS         
+Structural         27/31        31         87.1     ✓ PASS         
+S-Gender           11/14        14         78.6     ⚠ FLAGGED   
+Impact             26/31        31         83.9     ✓ PASS         
+I-Gender           19/21        21         90.5     ✓ PASS         
+Ghost              20/31        31         64.5     ⚠ FLAGGED   
+================================================================================
+
+================================================================================
+STEP 3: DISAGREEMENT INVENTORY
+================================================================================
+ID   Article            Component        Groq →   Claude  
+----------------------------------------------------------------------------
+4    Rayan              Ghost            4        3       
+23   Mandas             Ghost            4        3       
+25   Q Sports           Source Count     2        1       
+25   Q Sports           Impact           2        1       
+34   MP X               Ghost            2        1       
+38   Care home          Ghost            2        1       
+40   Boscombe           Ghost            3        2       
+41   Starmer            Source Count     3        2       
+41   Starmer            Impact           1        0       
+41   Starmer            Ghost            3        0       
+43   Vince              Structural       0        1       
+43   Vince              Impact           1        0       
+43   Vince              Ghost            4        0       
+44   E-bike             Source Count     8        6       
+44   E-bike             Structural       6        4       
+44   E-bike             S-Gender         2        0       
+44   E-bike             I-Gender         2        0       
+44   E-bike             Ghost            1        0       
+46   Rapist             Gender           2        3       
+46   Rapist             Structural       2        3       
+46   Rapist             S-Gender         1        0       
+46   Rapist             Impact           2        1       
+46   Rapist             I-Gender         1        0       
+46   Rapist             Ghost            1        0       
+48   Pubs               Structural       3        4       
+48   Pubs               S-Gender         1        2       
+48   Pubs               Impact           1        0       
+48   Pubs               Ghost            1        0       
+49   BCP Tax            Ghost            2        0       
+================================================================================
+
+Total disagreements: 29 across 12 articles
+Articles with disagreements: 12/31 (38.7%)
+Articles with full agreement: 19/31 (61.3%)
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. OVERALL RELIABILITY: 84.5%
+   - Strong inter-model agreement across most components
+   - 61.3% of articles achieved perfect agreement on all components
+
+2. FLAGGED COMPONENTS (below 80% threshold):
+
+   A. Ghost/Absent Perspectives (64.5% agreement)
+      - Most problematic component
+      - 11 disagreements across 11 articles
+      - Systematic bias: Claude consistently reports FEWER absent perspectives
+      - Suggests different stakeholder identification methodologies
+
+   B. S-Gender/Structural Source Gender (78.6% agreement)
+      - 3 disagreements (articles 44, 46, 48)
+      - Pattern: Claude identifies 0 non-male structural sources where Groq found 1-2
+      - Affects crime/policy reporting articles specifically
+
+3. HIGH-AGREEMENT COMPONENTS (>85%):
+   - Gender identification: 96.4%
+   - I-Gender (Impact source gender): 90.5%
+   - Source Count: 90.3%
+   - Structural source identification: 87.1%
+   - Impact source identification: 83.9%
+
+4. ARTICLES WITH MULTIPLE DISAGREEMENTS:
+   - Article 44 (E-bike murder): 5 disagreements
+   - Article 46 (Rapist sentencing): 6 disagreements
+   - Article 48 (Pubs support): 4 disagreements
+   - Article 43 (Vince contract): 3 disagreements
+   - Article 41 (Starmer China): 3 disagreements
+   
+   Pattern: Crime/policy articles with complex source structures
+
+================================================================================
+VALIDATION OUTCOME
+================================================================================
+
+✓ PASSED: Overall IMR of 84.5% demonstrates strong inter-model reliability
+⚠ ATTENTION REQUIRED: Ghost/Absent Perspectives component needs methodology review
+⚠ ATTENTION REQUIRED: S-Gender identification in crime/policy contexts
+
+RECOMMENDATION:
+- SEI metric is reliable for source counting and gender identification
+- Absent perspectives (Ghost) component requires standardization between models
+- Consider additional validation for articles with 5+ sources
+
+================================================================================

@@ -113,7 +113,7 @@
         .expect-list li { margin-bottom: 0.2rem; }
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.15); z-index: 1000; }
         .modal-overlay.active { display: flex; align-items: center; justify-content: center; }
-        .modal-content { background: white; border-radius: 8px; max-width: 600px; width: 90%; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
+        .modal-content { background: #faf9f6; border-radius: 8px; max-width: 600px; width: 90%; max-height: 80vh; overflow: hidden; display: flex; flex-direction: column; }
         .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 2px solid #edeae3; }
         .modal-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.1rem; font-weight: 700; }
         .modal-close { font-size: 1.5rem; font-weight: 300; color: #767676; cursor: pointer; background: none; border: none; padding: 0; line-height: 1; }
@@ -524,6 +524,18 @@
             padding-bottom: 2px;
         }
 
+        /* Modal body links with keyword underline */
+        .modal-body a.index-link {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .modal-body a.index-link .keyword {
+            text-decoration: underline;
+            text-decoration-color: #ea5a6a;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
         /* Indices row - SSI and BNS side by side */
         .indices-row {
             display: grid;
@@ -869,27 +881,44 @@
 <div class="modal-overlay" id="seiModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">How we calculate SEI</h3>
+            <h3 class="modal-title">How we calculate <span style="color: #ea5a6a;">SEI</span></h3>
             <button class="modal-close" onclick="closeSEIModal()">&times;</button>
         </div>
         <div class="modal-body">
-            <p>SEI measures sourcing integrity across three components.</p>
+            <p>The Source Equity Index (SEI) measures sourcing integrity, the professional depth and ethical intent of a reporter's selection of voices. It goes beyond the simple headcount to quantify who holds power in a story.</p>
 
-            <ol>
-                <li><em>Inclusion:</em> proportion of non-male sources quoted</li>
-                <li><em>Structural Agency:</em> whether non-male sources explain 'why' (experts, decision-makers), not just 'what happened'</li>
-                <li><em>Impact Equity:</em> coverage of key stakeholders and considering absent perspectives — sources who should have been contacted.</li>
-            </ol>
+            <p>We used a set of integrated automation, including an LLM (Llama 70B), to analyse sourcing integrity across three dimensions: who is quoted, how they are portrayed, and who is missing from the narrative.</p>
 
-            <p>Components are weighted by story type:</p>
+            <p><a href="https://chindu.notion.site/Who-speaks-who-explains-who-s-absent-a-context-adaptive-index-for-sourcing-integrity-in-journalis-2fc33c68229b80948f2ef2e32e6fab79" target="_blank" class="index-link">See more about SEI — <span class="keyword">Who speaks, who explains, who is missing</span>.</a></p>
 
-            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
-                <em style="font-size: 1.1em; font-style: italic;">SEI</em> = (<em>I</em> &times; 0.3) + (<em>A</em> &times; <em>w</em>) + (<em>S</em> &times; (0.7 &minus; <em>w</em>))
-            </div>
+            <p><strong>The dataset</strong></p>
 
-            <p>Each story is scored against its own context. Match reports, breaking news, and court reports are exempt.</p>
+            <p>We analysed a production dataset of 312 local news articles, of which 266 (85.3%) were scored. We exempted 46 articles (14.7%) comprising breaking news bulletins, match reports, court registers, video/audio content, and live blogs — content types where journalists have limited or no editorial choice in whom to quote. This focuses the SEI on stories where sourcing decisions reflect genuine editorial agency.</p>
 
-            <p>Scores: 0–100. Gender inferred from first names; roles classified via AI.</p>
+            <p>For eligible stories, the SEI calculates a score (0–100) based on three weighted components:</p>
+
+            <ul>
+                <li><strong>Inclusion:</strong> The proportion of sources identified as non-male</li>
+                <li><strong>Agency:</strong> Does the source explain why something happened (an expert or official), or simply witness what happened? This measures authority.</li>
+                <li><strong>Perspectives:</strong> Of the key stakeholders relevant to the story, who are missing, who are present?</li>
+            </ul>
+
+            <p><strong>Validation audit</strong></p>
+
+            <p>To ensure rigour, we ran the Inter-Model Reliability (IMR) audit, a new framework for consistency testing in automated analyses. We used Claude Opus for IMR testing, re-coding a stratified 10% sample (N=31) of the data.</p>
+
+            <p>Baseline IMR: 84.5%</p>
+
+            <ul>
+                <li>Article-level: 61.3% of articles passed all thresholds with zero human intervention.</li>
+                <li>Global agreement: 84.5% stability across 187 discrete observations.</li>
+                <li>Component ('code') breakdown: Gender Identity (96%), Source Extraction (90%), Structural Agency (87%), Impact Equity (84%), Absent Perspectives (65%).</li>
+                <li>Stability anchor: 100% (6/6).</li>
+            </ul>
+
+            <p>The 84.5% global agreement represents a conservative baseline score—the system as initially built, before refinement. The protocol identified one systematic issue (Absent Perspectives classification boundaries) where the validation model consistently identified fewer missing stakeholders than the production model. No further refinement was undertaken (though this would have improved the score with prompt fixing), as the core metrics of Gender Inclusion (96%) and Structural Agency (87%) proved highly stable and the concept was deemed proven.</p>
+
+            <p><a href="https://chindu.notion.site/Into-the-Wild-West-with-Inter-Model-Reliability-2fb33c68229b8024af8ef13d5c69f258" target="_blank" class="index-link">Read more about IMR — <span class="keyword">Into the Wild West with Inter-Model Reliability</span>.</a></p>
         </div>
     </div>
 </div>
@@ -898,31 +927,35 @@
 <div class="modal-overlay" id="ssiModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">Original Reporting Index</h3>
+            <h3 class="modal-title">How we calculate <span style="color: #ea5a6a;">ORI</span></h3>
             <button class="modal-close" onclick="closeSSIModal()">&times;</button>
         </div>
         <div class="modal-body">
             <p>ORI measures the clay of journalism — the raw material gathered through active reporting, before writing begins. It does not assess writing quality or production finesse. In essence: was reportorial labour invested, and was that labour original?</p>
 
-            <p><strong>This calculation:</strong> 295 articles scored; 9 exempt (video/audio content only). Mean ORI: 60.</p>
+            <p><a href="https://chindu.notion.site/Soleless-Journalism-and-the-Soul-of-Journalism-2fe33c68229b8056a987d146d5bba4bb?pvs=74" target="_blank" class="index-link">Read more about ORI — <span class="keyword">Soleless Journalism and the Soul of Journalism</span>.</a></p>
 
-            <p><strong>Validation:</strong> Inter-Model Reliability agreement: 85% (<a href="#">see more about IMR</a>)</p>
+            <p><strong>The dataset</strong></p>
+
+            <p>295 articles scored; 9 exempt (video/audio content only). Mean ORI: 60.</p>
+
+            <p><strong>Validation</strong></p>
+
+            <p>Inter-Model Reliability agreement: 85%. <a href="https://chindu.notion.site/Into-the-Wild-West-with-Inter-Model-Reliability-2fb33c68229b8024af8ef13d5c69f258?pvs=74" target="_blank" class="index-link">See more about <span class="keyword">IMR</span>.</a></p>
 
             <p>Five components, each scored 0–1:</p>
 
             <ul>
-                <li><em>Word Efficiency (WE)</em> — Volume against house target</li>
-                <li><em>Source Density (SD)</em> — Breadth of original sourcing</li>
-                <li><em>Attribution Rigour (AR)</em> — Quality of source identification</li>
-                <li><em>Contextual Depth (CD)</em> — Presence of data, timeline, comparison, or explanation</li>
-                <li><em>Originality Index (OI)</em> — Source provenance: original vs wire/PR</li>
+                <li><strong>Word Efficiency (WE)</strong> — Volume against house target</li>
+                <li><strong>Source Density (SD)</strong> — Breadth of original sourcing</li>
+                <li><strong>Attribution Rigour (AR)</strong> — Quality of source identification</li>
+                <li><strong>Contextual Depth (CD)</strong> — Presence of data, timeline, comparison, or explanation</li>
+                <li><strong>Originality Index (OI)</strong> — Source provenance: original vs wire/PR</li>
             </ul>
 
             <p>Only journalistic sources (OI &ge; 0.5) contribute to SD. Stories with no original sources cap at 40; those predominantly reliant on secondary material cap at 50.</p>
 
-            <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(0,0,0,0.02); border-radius: 4px;">
-                <em style="font-size: 1.1em; font-style: italic;">ORI</em> = 100 &times; (<em>WE</em> + <em>SD</em> + <em>AR</em> + <em>CD</em> + <em>OI</em>) &div; 5
-            </div>
+            <p style="margin-top: 1.5em; margin-bottom: 1.5em;">ORI = 100 &times; (WE + SD + AR + CD + OI) &div; 5</p>
         </div>
     </div>
 </div>
@@ -931,7 +964,7 @@
 <div class="modal-overlay" id="bnsModal">
     <div class="modal-content">
         <div class="modal-header">
-            <h3 class="modal-title">How we calculate BNS</h3>
+            <h3 class="modal-title">How we calculate <span style="color: #ea5a6a;">BNS</span></h3>
             <button class="modal-close" onclick="closeBNSModal()">&times;</button>
         </div>
         <div class="modal-body">
@@ -990,7 +1023,7 @@
 
             <p>Limitations: Measures speed only (reporting strength assessed by ORI). Professional timestamps sourced via search; niche/paywalled outlets may be missed. Point values and thresholds are design choices without empirical validation.</p>
 
-            <p><em><a href="#">See draft of methodology paper</a></em></p>
+            <p><a href="https://chindu.notion.site/Breaking-News-Score-2fe33c68229b80ff9b33d924ea4c8738?pvs=74" target="_blank" class="index-link">Read more about <span class="keyword">BNS</span>.</a></p>
         </div>
     </div>
 </div>
@@ -1031,9 +1064,9 @@
             setupContributorsToggle();
             setupStoriesFilter();
 
-            // Default to most recent date
+            // Default to "All Dates"
             const dates = [...new Set(metricsData.articles.map(a => a.date))].sort().reverse();
-            const defaultDate = dates[0];
+            const defaultDate = 'all';
             console.log('Default date:', defaultDate);
 
             document.querySelector('.date-select').value = defaultDate;

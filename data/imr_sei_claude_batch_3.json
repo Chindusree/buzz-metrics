@@ -1,0 +1,393 @@
+{
+  "batch": 3,
+  "articles_covered": "11-15",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch + BeautifulSoup for Shorthand",
+  "articles": [
+    {
+      "id": 11,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-councillor-relieved-over-new-lidl-store-postponement/",
+      "slug": "bournemouth-councillor-relieved-over-new-lidl-store-postpone",
+      "headline": "Bournemouth Councillor Relieved Over New Lidl Store Postponement",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Local government/planning news. Requires institutional context about planning committees and development proposals. Standard reporting with council spokesperson."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Local government/urban planning beat. Not inherently gendered - planning decisions involve all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Joe Salmon",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "BCP Councillor directly involved in the planning decision being covered. He IS part of the story - representing local interests in the planning committee. Test: Could this source be replaced by another expert? NO - he is THE councillor who raised objections and secured the deferral."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Planning committee defers proposed Lidl store on Westover Retail Park",
+        "stakeholders": [
+          {
+            "group": "Local government/councillors",
+            "examples": [
+              "Joe Salmon (BCP Councillor)",
+              "Green Party councillors",
+              "Planning committee members"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Independent retailers/high street businesses",
+            "examples": [
+              "Local independent businesses",
+              "High street retailers"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Corporate applicants",
+            "examples": [
+              "Lidl",
+              "Tesco (objectors)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Local residents",
+            "examples": [
+              "Potential housing residents",
+              "Local community"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 12,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/20-year-old-man-on-trial-for-manslaughter-following-stabbing/",
+      "slug": "20-year-old-man-on-trial-for-manslaughter-following-stabbing",
+      "headline": "20 Year-Old Man on Trial for Manslaughter Following Stabbing",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Court proceedings/crime reporting. Requires institutional context about legal process. Standard hard news reporting."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Crime/court reporting beat. Not inherently gendered - trials involve all genders as defendants, victims, and experts."
+      },
+      "quoted_sources": [
+        {
+          "name": "Dr Jefferies",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Forensic analyst providing expert testimony. External authority with professional expertise, not directly affected by the crime. Test: Could this source be replaced by another expert? YES - any qualified forensic analyst could provide similar medical testimony."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Thomas Betteridge on trial for manslaughter of Cameron Hamilton",
+        "stakeholders": [
+          {
+            "group": "Defendant",
+            "examples": [
+              "Thomas Betteridge (20, from Southsea)"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Victim's family",
+            "examples": [
+              "Cameron Hamilton (18, deceased)",
+              "Hamilton's family"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Court/legal system",
+            "examples": [
+              "Bournemouth Crown Court",
+              "Jurors",
+              "Legal counsel"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Expert witnesses",
+            "examples": [
+              "Dr Jefferies (forensic analyst)"
+            ],
+            "was_quoted": true
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 1,
+        "male_sources": 0,
+        "structural_sources": 1,
+        "structural_non_male": 1,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 13,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/why-young-people-should-join-orchestra/",
+      "slug": "why-young-people-should-join-orchestra",
+      "headline": "Why Young People Should Join Orchestra",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "EXPERIENTIAL",
+        "reasoning": "Feature-length piece driven by musicians' lived experiences in orchestras. Rich with personal narratives about teamwork, mental health benefits, and performance anxiety. Observation-based storytelling about human side of orchestra life."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Classical music/orchestra beat. Not inherently gendered - orchestras include musicians of all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Emily Davis",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Violinist sharing personal 20-year experience with London Philharmonia Orchestra. She IS experiencing orchestra life - sharing lived experience, not replaceable expertise. Test: Could this source be replaced by another expert? NO - personal narrative about her journey."
+        },
+        {
+          "name": "Michael Chaffin",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Sub-Principal Double Bass with BSO sharing personal experience and involvement in Explore the Orchestra concerts. He IS part of orchestra life, not external expert. Test: Could this source be replaced by another expert? NO - personal experience narrative."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Benefits of orchestral participation for young people",
+        "stakeholders": [
+          {
+            "group": "Orchestra musicians",
+            "examples": [
+              "Emily Davis",
+              "Michael Chaffin",
+              "BSO members"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Young people/potential musicians",
+            "examples": [
+              "Students",
+              "Youth considering music"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Music educators",
+            "examples": [
+              "Teachers",
+              "Instructors"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Parents/families",
+            "examples": [
+              "Parents of young musicians"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 1,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 14,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/poole-trampoline-athlete-jared-smith-sets-sights-on-european-glory/",
+      "slug": "poole-trampoline-athlete-jared-smith-sets-sights-on-european",
+      "headline": "Poole Trampoline Athlete Jared Smith Sets Sights on European Glory",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Sports profile/preview piece. While includes Jared's perspective, this is standard sports reporting about upcoming competition rather than experiential journey narrative."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Trampolining/gymnastics beat. Not inherently gendered - sport includes male and female competitors."
+      },
+      "quoted_sources": [
+        {
+          "name": "Jared Smith",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Trampolinist preparing for European Championship - he IS the story subject. Cannot be replaced by another expert. Test: Could this source be replaced by another expert? NO - he is THE athlete being profiled."
+        },
+        {
+          "name": "Ryan Brown",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Team GB athlete and teammate providing assessment of Jared's preparation. He IS part of the training environment/team, not external expert. Test: Could this source be replaced by another expert? NO - he's a teammate with direct knowledge of Jared's performance."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Jared Smith preparing for European Championship trials",
+        "stakeholders": [
+          {
+            "group": "Jared Smith and training team",
+            "examples": [
+              "Jared Smith",
+              "Ryan Brown (teammate)"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Coaches/trainers",
+            "examples": [
+              "Poole Gymnastics and Trampoline Club coaches"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "European Championship organizers",
+            "examples": [
+              "Competition organizers in Portugal"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "British Gymnastics officials",
+            "examples": [
+              "Selection committee",
+              "Team GB management"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 0,
+        "male_sources": 2,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 15,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/when-education-takes-a-stand/",
+      "slug": "when-education-takes-a-stand",
+      "headline": "When education takes a stand",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "EXPERIENTIAL",
+        "reasoning": "Shorthand feature profiling college staff strikes through personal stories. Driven by lived experiences of Ivan Darley and Anne Marie Moriarty sharing their frustrations, struggles, and motivations. Human-centered narrative about labor action."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Labor/education strike beat. Not inherently gendered - strikes involve all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Ivan Darley",
+          "gender": "M",
+          "role": "IMPACT",
+          "role_reasoning": "Maths teacher at Bournemouth and Poole College on strike. He IS the story - participant in the strike action sharing personal experience of pay disparity. Test: Could this source be replaced by another expert? NO - he's a striker sharing lived experience."
+        },
+        {
+          "name": "Anne Marie Moriarty",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Vice Chair and Secretary of Bournemouth and Poole College UCU branch on strike. She IS the story - strike organizer sharing personal stake in labor action. Test: Could this source be replaced by another expert? NO - she's a striker and union leader with personal involvement."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Bournemouth and Poole College staff three-day strike over pay and conditions",
+        "stakeholders": [
+          {
+            "group": "College staff/UCU members on strike",
+            "examples": [
+              "Ivan Darley",
+              "Anne Marie Moriarty",
+              "25 years teaching staff"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "College management/executives",
+            "examples": [
+              "Chief Executive",
+              "Executive Committee",
+              "College administration"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Students",
+            "examples": [
+              "60,000 students in FE over next 3 years",
+              "Current students"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Broader FE sector",
+            "examples": [
+              "UCU national",
+              "Association of Colleges",
+              "Government funding bodies"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 1,
+        "male_sources": 1,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    }
+  ]
+}

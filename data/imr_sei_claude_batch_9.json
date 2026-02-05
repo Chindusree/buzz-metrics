@@ -1,0 +1,177 @@
+{
+  "batch": 9,
+  "articles_covered": "41-43",
+  "generated": "2026-02-04",
+  "model": "Claude (Model B)",
+  "articles": [
+    {
+      "article_id": 41,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/starmer-first-prime-minister-to-arrive-in-china-since-2018/",
+      "headline": "Kier Starmer first Prime Minister to arrive in China since 2018",
+      "author": "Martha White",
+      "published_date": "2026-01-28",
+      "word_count": 362,
+      "sei_exempt": false,
+      "exempt_reason": null,
+      "story_classification": "STANDARD",
+      "classification_reasoning": "Traditional political/diplomatic news article reporting on a Prime Minister's visit to China, focused on policy and economic relations. Uses standard news format with institutional perspectives and expert analysis.",
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": null,
+        "beat_reasoning": "Politics/international relations is not a gendered beat. The story focuses on diplomatic and economic relations between UK and China."
+      },
+      "sources": [
+        {
+          "name": "Laura Bicker",
+          "gender": "F",
+          "gender_reasoning": "Laura is a traditionally female name, confirmed by BBC China Correspondent role",
+          "title": "BBC China Correspondent",
+          "role": "STRUCTURAL",
+          "role_reasoning": "As a media correspondent providing expert analysis on China-UK relations and foreign policy perspectives, Bicker offers structural analysis of the diplomatic situation rather than being directly impacted by the policies discussed.",
+          "is_quoted": true,
+          "stakeholder_group": "Media/Expert analysts"
+        },
+        {
+          "name": "Dr Yu Jie",
+          "gender": "U",
+          "gender_reasoning": "Yu Jie is a Chinese name where gender cannot be reliably determined without additional context. Dr Yu Jie could be male or female.",
+          "title": "Researcher, Chatham House Policy Institute",
+          "role": "STRUCTURAL",
+          "role_reasoning": "As a policy researcher at a think tank, Dr Yu Jie provides expert structural analysis on China's perception of UK stability and foreign investment patterns. This is institutional/policy analysis rather than direct impact experience.",
+          "is_quoted": true,
+          "stakeholder_group": "Academic/Research experts"
+        }
+      ],
+      "stakeholder_mapping": {
+        "government_officials": {
+          "identified": true,
+          "members": ["Sir Keir Starmer", "President Xi Jinping"],
+          "any_quoted": false
+        },
+        "experts_analysts": {
+          "identified": true,
+          "members": ["Laura Bicker", "Dr Yu Jie"],
+          "any_quoted": true
+        },
+        "affected_individuals": {
+          "identified": false,
+          "members": [],
+          "any_quoted": false
+        },
+        "civil_society": {
+          "identified": false,
+          "members": [],
+          "any_quoted": false
+        }
+      },
+      "sei_inputs": {
+        "total_sources": 2,
+        "male_sources": 0,
+        "female_sources": 1,
+        "unknown_sources": 1,
+        "structural_sources": 2,
+        "impact_sources": 0,
+        "male_structural": 0,
+        "male_impact": 0,
+        "female_structural": 1,
+        "female_impact": 0,
+        "unknown_structural": 1,
+        "unknown_impact": 0
+      }
+    },
+    {
+      "article_id": 42,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/the-charity-inspiring-those-who-are-going-through-brain-injury/",
+      "headline": "The charity inspiring those who are going through Brain injury",
+      "author": "Marcus Maccormack",
+      "published_date": "2026-01-23",
+      "word_count": 10,
+      "sei_exempt": true,
+      "exempt_reason": "Video/audio only (word count = 0 or minimal text)",
+      "exemption_note": "Article has word count of 10 with no substantive body text extracted. Appears to be primarily video/audio content with only headline and metadata available.",
+      "story_classification": null,
+      "classification_reasoning": null,
+      "beat_context": null,
+      "sources": [],
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    },
+    {
+      "article_id": 43,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/contract-extension-for-hampshire-hawks-james-vince/",
+      "headline": "Contract Extension for Hampshire Hawks' James Vince",
+      "author": "Roan Fox",
+      "published_date": "2026-01-13",
+      "word_count": 367,
+      "sei_exempt": false,
+      "exempt_reason": null,
+      "story_classification": "STANDARD",
+      "classification_reasoning": "Traditional sports news article about a contract extension. While it includes some biographical details about Vince's career and residence, the core focus is on the institutional announcement of a contract renewal with quotes from his agent providing structural context about the business decision.",
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": null,
+        "beat_reasoning": "Sports/cricket is not a gendered beat. While the article is about men's cricket, this is standard sports reporting applicable to any gender."
+      },
+      "sources": [
+        {
+          "name": "Matt Perry-Lewis",
+          "gender": "M",
+          "gender_reasoning": "Matt is a traditionally male name (Matthew), and Perry-Lewis as agent name indicates male gender",
+          "title": "Agent for James Vince",
+          "role": "STRUCTURAL",
+          "role_reasoning": "As Vince's agent, Perry-Lewis provides structural perspective on the contract negotiation and business decision-making process. He speaks about the contractual aspects, career strategy, and club loyalty from a professional management standpoint rather than from personal impact experience.",
+          "is_quoted": true,
+          "stakeholder_group": "Sports management/agents"
+        }
+      ],
+      "stakeholder_mapping": {
+        "club_officials": {
+          "identified": false,
+          "members": [],
+          "any_quoted": false
+        },
+        "players_coaches": {
+          "identified": true,
+          "members": ["James Vince", "Ben Brown"],
+          "any_quoted": false,
+          "note": "Vince is the subject but not directly quoted; Brown mentioned as new captain"
+        },
+        "agents_management": {
+          "identified": true,
+          "members": ["Matt Perry-Lewis"],
+          "any_quoted": true
+        },
+        "fans_community": {
+          "identified": false,
+          "members": [],
+          "any_quoted": false
+        }
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "male_sources": 1,
+        "female_sources": 0,
+        "unknown_sources": 0,
+        "structural_sources": 1,
+        "impact_sources": 0,
+        "male_structural": 1,
+        "male_impact": 0,
+        "female_structural": 0,
+        "female_impact": 0,
+        "unknown_structural": 0,
+        "unknown_impact": 0
+      }
+    }
+  ],
+  "batch_summary": {
+    "total_articles": 3,
+    "sei_scored": 2,
+    "sei_exempt": 1,
+    "exempt_breakdown": {
+      "video_audio_only": 1,
+      "match_reports": 0,
+      "match_previews": 0,
+      "live_bulletins": 0
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "batch": 10,
+  "articles_covered": "44-47",
+  "generated": "2026-02-04",
+  "model": "Claude (Model B)",
+  "articles": [
+    {
+      "article_id": 44,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/two-people-jailed-following-deliberate-collisions-in-bournemouth/",
+      "headline": "Two people jailed following e-bike murder in Bournemouth",
+      "author": "Grace Kehoe",
+      "publication_date": "2026-01-15",
+      "word_count": 1134,
+      "exemption_check": {
+        "is_match_report": false,
+        "is_match_preview": false,
+        "is_live_bulletin": false,
+        "is_video_audio_only": false,
+        "is_exempt": false
+      },
+      "story_classification": "STANDARD",
+      "classification_reasoning": "Court sentencing coverage of a murder case. While victim impact statements are included, the primary focus is on the legal proceedings, sentencing, and factual account of the crimes. Standard crime reporting structure.",
+      "beat_context": {
+        "primary_beat": "Crime/Courts",
+        "is_gendered_beat": false,
+        "expected_gender": null,
+        "beat_reasoning": "Crime story involving vehicle-as-weapon murder. Not inherently gendered despite female perpetrator - the story is about violent crime and sentencing, not gender-specific issues."
+      },
+      "quoted_sources": [
+        {
+          "name": "Sophie Quinn",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Partner of victim Joey Johnstone, providing personal impact statement about loss. Lived experience of being affected by the crime.",
+          "title_description": "Partner of victim, mother of his two children"
+        },
+        {
+          "name": "Michelle Rush",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Mother of victim, providing personal impact statement about the loss of her son. Direct family member affected by the crime.",
+          "title_description": "Mother of victim Joey Johnstone"
+        },
+        {
+          "name": "Mr Justice Linden",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Sentencing judge making official judicial statements about the case and its impact. Institutional authority figure.",
+          "title_description": "Sentencing judge"
+        },
+        {
+          "name": "Mark Jenkins",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Detective Inspector leading the investigation, providing official police perspective on the case. Institutional law enforcement authority.",
+          "title_description": "Detective Inspector, Dorset Police Major Crime Investigation Team"
+        },
+        {
+          "name": "Kate Lewis",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Senior Crown Prosecutor providing official CPS perspective on the severity of the crimes. Institutional legal authority.",
+          "title_description": "Senior District Crown Prosecutor, CPS"
+        },
+        {
+          "name": "Sarah Jones KC",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Lead prosecutor presenting the case details in court. Institutional legal authority representing the Crown.",
+          "title_description": "Prosecutor (KC - King's Counsel)"
+        }
+      ],
+      "stakeholder_mapping": {
+        "victims_survivors": {
+          "present": true,
+          "quoted": true,
+          "names": ["Sophie Quinn", "Michelle Rush"],
+          "notes": "Partner and mother of murder victim Joey Johnstone, both providing impact statements"
+        },
+        "activists_advocates_experts": {
+          "present": false,
+          "quoted": false,
+          "names": [],
+          "notes": "No victim advocates, violence prevention experts, or community activists quoted"
+        },
+        "officials_institutions": {
+          "present": true,
+          "quoted": true,
+          "names": ["Mr Justice Linden", "Mark Jenkins", "Kate Lewis", "Sarah Jones KC"],
+          "notes": "Judge, detective inspector, crown prosecutors - full institutional presence"
+        },
+        "community_members": {
+          "present": false,
+          "quoted": false,
+          "names": [],
+          "notes": "No community members, neighbors, or local residents quoted"
+        }
+      },
+      "sei_inputs": {
+        "total_quoted_sources": 6,
+        "structural_sources": 4,
+        "impact_sources": 2,
+        "male_sources": 2,
+        "female_sources": 4,
+        "unknown_gender_sources": 0,
+        "victims_survivors_quoted": 2,
+        "activists_advocates_quoted": 0,
+        "officials_quoted": 4,
+        "community_quoted": 0
+      }
+    },
+    {
+      "article_id": 45,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/semenyo-helps-manchester-city-past-newcastle-in-cup-first-leg/",
+      "headline": "Semenyo helps Manchester City past Newcastle in cup first leg",
+      "author": "Moritz Baer",
+      "publication_date": "2026-01-14",
+      "word_count": 447,
+      "exemption_check": {
+        "is_match_report": true,
+        "is_match_preview": false,
+        "is_live_bulletin": false,
+        "is_video_audio_only": false,
+        "is_exempt": true,
+        "exemption_reason": "Sports match report - past tense coverage of completed Carabao Cup semi-final first leg between Manchester City and Newcastle United"
+      },
+      "story_classification": "EXEMPT",
+      "sei_inputs": null,
+      "notes": "Article exempt from SEI scoring per match report exemption rules"
+    },
+    {
+      "article_id": 46,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rapist-sentenced-following-assault-in-bournemouth-home/",
+      "headline": "Rapist sentenced following assault in Bournemouth home",
+      "author": "Conner Haddow",
+      "publication_date": "2026-01-22",
+      "word_count": 435,
+      "exemption_check": {
+        "is_match_report": false,
+        "is_match_preview": false,
+        "is_live_bulletin": false,
+        "is_video_audio_only": false,
+        "is_exempt": false
+      },
+      "story_classification": "EXPERIENTIAL",
+      "classification_reasoning": "Sexual violence case with prominent victim impact statements describing trauma, emotional harm, and ongoing psychological effects. The victim's lived experience of assault and its aftermath is central to the coverage. Includes direct quotes about panic attacks, anxiety, fear, and loss of safety.",
+      "beat_context": {
+        "primary_beat": "Crime/Sexual Violence",
+        "is_gendered_beat": true,
+        "expected_gender": "F",
+        "beat_reasoning": "Sexual violence is a gendered beat - statistically impacts women disproportionately and relates to gender-based violence. The victim is female, and the crime is rape, which is inherently a gendered issue."
+      },
+      "quoted_sources": [
+        {
+          "name": "The Victim",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Survivor of sexual assault providing first-person account of trauma and ongoing effects. Direct lived experience of the harm. Multiple quotes about emotional wounds, panic attacks, anxiety, and loss of safety.",
+          "title_description": "Victim/survivor (identity protected)"
+        },
+        {
+          "name": "Judge Fuller KC",
+          "gender": "U",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Sentencing judge making official judicial statements characterizing the defendant's behavior and lack of remorse. Institutional authority figure.",
+          "title_description": "Sentencing judge"
+        },
+        {
+          "name": "Chret Callender",
+          "gender": "M",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Defendant providing testimony denying the crime. While he is the perpetrator, his quote represents his defense position in the structural legal process, not lived experience of harm.",
+          "title_description": "Defendant, convicted rapist"
+        },
+        {
+          "name": "Mary Aspinall-Miles",
+          "gender": "F",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Defense counsel representing the defendant in court proceedings. Legal professional acting in institutional capacity.",
+          "title_description": "Defense counsel"
+        }
+      ],
+      "stakeholder_mapping": {
+        "victims_survivors": {
+          "present": true,
+          "quoted": true,
+          "names": ["The Victim"],
+          "notes": "Survivor of sexual assault providing detailed impact statement about trauma and ongoing effects"
+        },
+        "activists_advocates_experts": {
+          "present": false,
+          "quoted": false,
+          "names": [],
+          "notes": "No sexual violence advocates, trauma experts, or support service representatives quoted. The Shores Sexual Assault Referral Centre contact information is provided but no spokesperson is quoted."
+        },
+        "officials_institutions": {
+          "present": true,
+          "quoted": true,
+          "names": ["Judge Fuller KC", "Chret Callender", "Mary Aspinall-Miles"],
+          "notes": "Judge and defense counsel representing the court system. Defendant's testimony included as part of legal proceedings."
+        },
+        "community_members": {
+          "present": false,
+          "quoted": false,
+          "names": [],
+          "notes": "No community members, neighbors, or other local perspectives included"
+        }
+      },
+      "sei_inputs": {
+        "total_quoted_sources": 4,
+        "structural_sources": 3,
+        "impact_sources": 1,
+        "male_sources": 1,
+        "female_sources": 2,
+        "unknown_gender_sources": 1,
+        "victims_survivors_quoted": 1,
+        "activists_advocates_quoted": 0,
+        "officials_quoted": 3,
+        "community_quoted": 0
+      }
+    },
+    {
+      "article_id": 47,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/welcome-to-the-lions-den/",
+      "headline": "Welcome to the lions den",
+      "author": "Editor Blue",
+      "publication_date": "2026-01-23",
+      "word_count": 5,
+      "exemption_check": {
+        "is_match_report": false,
+        "is_match_preview": false,
+        "is_live_bulletin": false,
+        "is_video_audio_only": true,
+        "is_exempt": true,
+        "exemption_reason": "Minimal content article (word count = 5). Article contains only headline, metadata, and featured image with caption. No substantive article body text, quotes, or sources present. Effectively a multimedia/photo article."
+      },
+      "story_classification": "EXEMPT",
+      "sei_inputs": null,
+      "notes": "Article exempt from SEI scoring - effectively no substantive text content beyond headline and image caption about Bournemouth rugby"
+    }
+  ]
+}

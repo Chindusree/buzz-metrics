@@ -1,0 +1,271 @@
+{
+  "batch": 8,
+  "articles_covered": "36-40",
+  "generated": "2026-02-04",
+  "model": "Claude (Model B)",
+  "method": "WebFetch",
+  "extraction_notes": "Articles 36 and 39 could not be fully extracted via WebFetch - content not available in rendered HTML. Successfully extracted articles 37, 38, and 40.",
+  "articles": [
+    {
+      "article_id": 36,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/celebrating-the-rnlis-work-in-poole/",
+      "headline": "Celebrating the RNLI's work in Poole",
+      "author": "Luke Hills",
+      "publication_date": "2026-01-16",
+      "extraction_status": "FAILED",
+      "failure_reason": "Article body content not available in WebFetch extraction - only metadata retrieved",
+      "sei_exempt": null,
+      "word_count": null
+    },
+    {
+      "article_id": 37,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/intersectional-uprising-protest-empowers-bournemouth-residents/",
+      "headline": "Intersectional Uprising Protest Empowers Bournemouth Residents",
+      "author": "Lewis Eyre",
+      "publication_date": "2026-01-20",
+      "word_count": 377,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": "EXPERIENTIAL",
+      "story_classification_reasoning": "This is a human interest story driven by the lived experiences of LGBTQ+ and activist community members sharing their personal motivations and experiences at a protest. The focus is on participants' voices and their personal journeys rather than institutional expertise.",
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "beat_reasoning": "LGBTQ+ rights and activism is not a gendered beat - it requires diverse voices across gender identities"
+      },
+      "quoted_sources": [
+        {
+          "name": "Jadien Davies",
+          "gender": "U",
+          "gender_reasoning": "Name does not clearly indicate gender",
+          "title": "Event Organizer",
+          "role": "IMPACT",
+          "role_reasoning": "Davies organized this specific protest event and speaks from personal lived experience ('younger me', personal health difficulties). Cannot be replaced by another organizer - they are the internal participant who made this event happen.",
+          "quote_context": "Spoke about motivation for organizing, personal journey, and participant resilience despite verbal abuse"
+        },
+        {
+          "name": "Evelyn Eales",
+          "gender": "U",
+          "gender_reasoning": "Evelyn can be used as a name across genders; they/them pronouns used in article suggest non-binary identification",
+          "title": "Health and Safety Co-ordinator",
+          "role": "IMPACT",
+          "role_reasoning": "Eales coordinated safety for this specific event and speaks from position as touring musician affected by the issues. Not replaceable - internal participant with personal stake in the protest outcomes.",
+          "quote_context": "Emphasized importance of safety and the right for participants to exist and be heard"
+        },
+        {
+          "name": "Robin",
+          "gender": "U",
+          "gender_reasoning": "Single name provided, gender-neutral name, context indicates trans advocacy",
+          "title": "Speaker, Trans and Women's Rights Advocate",
+          "role": "IMPACT",
+          "role_reasoning": "Robin spoke at the event from personal lived experience of sexual harassment and as a member of the trans community. Their testimony is personal and irreplaceable - they are the affected party, not an external expert.",
+          "quote_context": "Shared personal testimony about experiencing sexual harassment as a child"
+        }
+      ],
+      "stakeholder_groups": [
+        {
+          "group": "LGBTQ+ protest participants and organizers",
+          "quoted": true,
+          "reasoning": "Directly affected by rights issues, organized and participated in the march"
+        },
+        {
+          "group": "Trans and non-binary individuals",
+          "quoted": true,
+          "reasoning": "Specific sub-community within LGBTQ+ facing existential threats to rights"
+        },
+        {
+          "group": "European governments and policymakers",
+          "quoted": false,
+          "reasoning": "Institutions being protested against for neglecting marginalized groups"
+        },
+        {
+          "group": "General public/passersby",
+          "quoted": false,
+          "reasoning": "Mentioned as source of verbal abuse; broader audience for protest message"
+        }
+      ],
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 3,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 3,
+        "impact_non_male": 3,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 2
+      }
+    },
+    {
+      "article_id": 38,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/local-care-home-combats-loneliness-on-blue-monday/",
+      "headline": "Local care home combats loneliness on Blue Monday",
+      "author": "Justina Reynolds",
+      "publication_date": "2026-01-20",
+      "word_count": 389,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": "EXPERIENTIAL",
+      "story_classification_reasoning": "This story centers on lived experiences of loneliness in care settings, told through voices of care home staff and a resident. The focus is human interest and personal testimony about isolation rather than external institutional expertise.",
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "female",
+        "beat_reasoning": "Care work and elder care is a gendered beat with workforce predominantly female; societal expectations associate caregiving with women"
+      },
+      "quoted_sources": [
+        {
+          "name": "Jess",
+          "gender": "F",
+          "gender_reasoning": "Jess is typically a feminine name (short for Jessica), and context of activities supporter role in care home aligns with gendered workforce patterns",
+          "title": "Activities Supporter at Branksome Heights",
+          "role": "IMPACT",
+          "role_reasoning": "Jess works directly at this specific care home providing activities to combat loneliness. She speaks from her lived experience in the role and cannot be replaced by an external expert - she is the internal participant implementing the solution.",
+          "quote_context": "Spoke about the reality of loneliness and her role in addressing it"
+        },
+        {
+          "name": "Karen",
+          "gender": "F",
+          "gender_reasoning": "Karen is a feminine name",
+          "title": "Receptionist and Family Liaison",
+          "role": "IMPACT",
+          "role_reasoning": "Karen works at this specific care home in family liaison capacity and speaks from direct experience supporting families. Not replaceable - she is an internal participant with firsthand knowledge of family experiences at this facility.",
+          "quote_context": "Spoke about loneliness for family caregivers and importance of active social programming"
+        },
+        {
+          "name": "Barbara Adams",
+          "gender": "F",
+          "gender_reasoning": "Barbara is a feminine name",
+          "title": "Resident",
+          "role": "IMPACT",
+          "role_reasoning": "Barbara is a resident experiencing the care home's programming firsthand. Her lived experience of loneliness and social activities is irreplaceable - she is the affected party, not an expert observer.",
+          "quote_context": "Shared her positive experience participating in entertainment activities"
+        }
+      ],
+      "stakeholder_groups": [
+        {
+          "group": "Care home residents",
+          "quoted": true,
+          "reasoning": "Primary beneficiaries of loneliness interventions; experiencing isolation"
+        },
+        {
+          "group": "Care home staff and activities coordinators",
+          "quoted": true,
+          "reasoning": "Implementing programs to address loneliness; working directly with residents"
+        },
+        {
+          "group": "Family members and home caregivers",
+          "quoted": true,
+          "reasoning": "Karen spoke on their behalf about their loneliness and emotional burden; indirect beneficiaries of care home socialization"
+        },
+        {
+          "group": "Entertainers and visiting performers",
+          "quoted": false,
+          "reasoning": "Provide weekly programming but not directly quoted; enable social engagement"
+        }
+      ],
+      "sei_inputs": {
+        "total_sources": 3,
+        "non_male_sources": 3,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 3,
+        "impact_non_male": 3,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 1
+      }
+    },
+    {
+      "article_id": 39,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/can-upfs-be-avoided-on-a-budget/",
+      "headline": "Can UPFs be avoided on a budget?",
+      "author": "Editor Green",
+      "publication_date": "2026-01-16",
+      "extraction_status": "FAILED",
+      "failure_reason": "Article body content not available in WebFetch extraction - only metadata retrieved",
+      "sei_exempt": null,
+      "word_count": null
+    },
+    {
+      "article_id": 40,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/boscombe-community-wears-their-visibility-cloaks-and-gets-poetical/",
+      "headline": "Boscombe community wears their visibility cloaks and gets poetical",
+      "author": "Naomi Kativu",
+      "publication_date": "2026-01-21",
+      "word_count": 405,
+      "sei_exempt": false,
+      "exemption_reason": null,
+      "story_classification": "EXPERIENTIAL",
+      "story_classification_reasoning": "This is a human interest/arts and culture story focused on personal creative expression and lived experiences of local poets. The story centers on participants' voices and their relationship to poetry rather than institutional expertise.",
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "beat_reasoning": "Arts, poetry, and creative community events are not gendered beats - they require diverse voices across genders"
+      },
+      "quoted_sources": [
+        {
+          "name": "Ri Baroche",
+          "gender": "U",
+          "gender_reasoning": "Ri is a gender-neutral name/nickname; article uses 'they' pronouns in some contexts suggesting possible non-binary identification",
+          "title": "Multidisciplinary artist, performer, musician, theatre maker, and poet",
+          "role": "IMPACT",
+          "role_reasoning": "Baroche was the featured performer at this specific event and speaks from lived creative experience and personal journey with poetry. They are not a replaceable external expert but the internal participant - the artist whose performance is being covered.",
+          "quote_context": "Spoke about personal relationship with poetry and value of Bournemouth's creative community"
+        },
+        {
+          "name": "Claire Hillier",
+          "gender": "F",
+          "gender_reasoning": "Claire is a feminine name; referred to as 'Claire H the Poet'",
+          "title": "Poet (Claire H the Poet)",
+          "role": "IMPACT",
+          "role_reasoning": "Hillier is a local poet who performs at these events and speaks from lived experience as a Bournemouth creative. She is not replaceable - she is an internal participant in the local poetry scene sharing personal connection to the community.",
+          "quote_context": "Spoke about sense of belonging in the community and poetry's power to convey human experience"
+        }
+      ],
+      "stakeholder_groups": [
+        {
+          "group": "Local poets and performers",
+          "quoted": true,
+          "reasoning": "Featured participants creating and sharing work at the event"
+        },
+        {
+          "group": "Event attendees and audience members",
+          "quoted": false,
+          "reasoning": "Community members participating as audience, including those reading from local poetry books"
+        },
+        {
+          "group": "Venue (Chaplin's & the Cellar Bar)",
+          "quoted": false,
+          "reasoning": "Hosts the weekly event; provides platform for community gathering"
+        },
+        {
+          "group": "Broader Bournemouth creative community",
+          "quoted": true,
+          "reasoning": "Hillier and Baroche spoke about connecting with other creatives; described as active community from diverse backgrounds"
+        }
+      ],
+      "sei_inputs": {
+        "total_sources": 2,
+        "non_male_sources": 2,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 2,
+        "impact_non_male": 2,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 2
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_articles_attempted": 5,
+    "successfully_extracted": 3,
+    "failed_extractions": 2,
+    "sei_exempt_count": 0,
+    "standard_stories": 0,
+    "experiential_stories": 3,
+    "total_sources_extracted": 8,
+    "non_male_sources_extracted": 8,
+    "structural_sources_extracted": 0,
+    "impact_sources_extracted": 8,
+    "sources_on_gendered_beats": 3,
+    "sources_on_neutral_beats": 5
+  }
+}

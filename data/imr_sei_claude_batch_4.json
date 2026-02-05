@@ -1,0 +1,245 @@
+{
+  "batch": 4,
+  "articles_covered": "16-20",
+  "generated": "2026-02-03",
+  "model": "Claude (Model B)",
+  "method": "WebFetch",
+  "articles": [
+    {
+      "id": 16,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/iford-to-hold-womens-international-driving-range-tournament/",
+      "slug": "iford-to-hold-womens-international-driving-range-t",
+      "headline": "Iford to Hold Women's International Driving Range Tournament",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Event preview/promotion for upcoming tournament. Standard reporting about upcoming event with event organizer quoted."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "female",
+        "reasoning": "Women's golf-specific event. The story explicitly focuses on women's golf participation and women-only tournament."
+      },
+      "quoted_sources": [
+        {
+          "name": "Katie Dawkins",
+          "gender": "F",
+          "role": "IMPACT",
+          "role_reasoning": "Golf coach at Iford leading/organizing the Galentines Tee Party event. She IS the story - the event organizer being profiled. Test: Could this source be replaced by another expert? NO - she is THE organizer of this specific event."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Iford Golf Club hosting virtual driving range tournament for women golfers",
+        "stakeholders": [
+          {
+            "group": "Event organizers",
+            "examples": [
+              "Katie Dawkins (Golf coach)",
+              "Iford Golf Club staff"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Female golfers/participants",
+            "examples": [
+              "Women golfers from 6 clubs",
+              "100+ anticipated participants"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Technology provider",
+            "examples": [
+              "Inrange technology company"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "International golf clubs",
+            "examples": [
+              "Belfast",
+              "Dublin",
+              "Netherlands clubs",
+              "Sydney Swing City"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 1,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 1,
+        "impact_non_male": 1,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 17,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/wonderkid-mayes-hits-record-breaking-191/",
+      "slug": "wonderkid-mayes-hits-record-breaking-191",
+      "headline": "Wonderkid Mayes hits record breaking 191",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Match report about U19 cricket performance. Standard sports reporting covering past match results and player statistics."
+      },
+      "beat_context": {
+        "is_gendered_beat": true,
+        "expected_gender": "male",
+        "reasoning": "Men's cricket U19 match report. Inherently male-only beat."
+      },
+      "quoted_sources": [],
+      "stakeholder_mapping": {
+        "core_event": "Ben Mayes scores record-breaking 191 at ICC U19 Cricket World Cup",
+        "stakeholders": [
+          {
+            "group": "Ben Mayes and England U19 team",
+            "examples": [
+              "Ben Mayes",
+              "England U19 squad"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Hampshire Cricket Club",
+            "examples": [
+              "Hampshire management",
+              "Liam Dawson"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Scotland U19 team",
+            "examples": [
+              "Scotland U19 players"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "ICC/tournament organizers",
+            "examples": [
+              "ICC U19 World Cup officials"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 0,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 0,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 4
+      }
+    },
+    {
+      "id": 18,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/bournemouth-man-charged-after-fight-breaks-out-during-reading-fc-game/",
+      "slug": "bournemouth-man-charged-after-fight-breaks-out-during-readin",
+      "headline": "Bournemouth man charged after fight breaks out during Reading FC game",
+      "sei_exempt": false,
+      "sei_exempt_reason": null,
+      "story_classification": {
+        "type": "STANDARD",
+        "reasoning": "Crime/court reporting. Standard hard news about criminal charges following football violence."
+      },
+      "beat_context": {
+        "is_gendered_beat": false,
+        "expected_gender": "neutral",
+        "reasoning": "Crime reporting beat. Not inherently gendered - crimes and legal proceedings involve all genders."
+      },
+      "quoted_sources": [
+        {
+          "name": "Thames Valley Police Spokesman",
+          "gender": "U",
+          "role": "STRUCTURAL",
+          "role_reasoning": "Police spokesman providing official statement about safety priorities. External authority providing policy statement, not directly involved in the incident. Test: Could this source be replaced by another expert? YES - any police spokesperson could provide similar safety statement."
+        }
+      ],
+      "stakeholder_mapping": {
+        "core_event": "Two men charged after steward injured in disturbance at Reading FC match",
+        "stakeholders": [
+          {
+            "group": "Defendants",
+            "examples": [
+              "Reilly Wood (25, Bournemouth)",
+              "Second charged man"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Victim (injured steward)",
+            "examples": [
+              "Steward injured in altercation"
+            ],
+            "was_quoted": false
+          },
+          {
+            "group": "Thames Valley Police",
+            "examples": [
+              "Thames Valley Police Spokesman"
+            ],
+            "was_quoted": true
+          },
+          {
+            "group": "Football clubs/attendees",
+            "examples": [
+              "Reading FC",
+              "Barnsley FC",
+              "Match attendees"
+            ],
+            "was_quoted": false
+          }
+        ]
+      },
+      "sei_inputs": {
+        "total_sources": 1,
+        "non_male_sources": 0,
+        "male_sources": 0,
+        "structural_sources": 1,
+        "structural_non_male": 0,
+        "impact_sources": 0,
+        "impact_non_male": 0,
+        "total_stakeholder_groups": 4,
+        "ghost_stakeholder_count": 3
+      }
+    },
+    {
+      "id": 19,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/saints-host-sheffield-united-at-st-marys/",
+      "slug": "saints-host-sheffield-united-at-st-marys",
+      "headline": "Saints Host Sheffield United at St Mary's",
+      "sei_exempt": true,
+      "sei_exempt_reason": "match_preview",
+      "story_classification": null,
+      "beat_context": null,
+      "quoted_sources": null,
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    },
+    {
+      "id": 20,
+      "url": "https://buzz.bournemouth.ac.uk/2026/01/rain-hinders-raducanus-austrailian-open-preperation/",
+      "slug": "rain-hinders-raducanus-austrailian-open-preperation",
+      "headline": "Rain hinders Emma Raducanu's Australian Open preparation",
+      "sei_exempt": true,
+      "sei_exempt_reason": "match_report",
+      "story_classification": null,
+      "beat_context": null,
+      "quoted_sources": null,
+      "stakeholder_mapping": null,
+      "sei_inputs": null
+    }
+  ]
+}

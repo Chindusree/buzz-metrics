@@ -1,0 +1,72 @@
+================================================================================================================================================================
+SEI IMR COMPARISON TABLE - ALL 21 BOTH-SCORED ARTICLES
+Model A: Groq/Llama (Production Baseline)
+Model B: Claude/Sonnet (Independent Validation)
+================================================================================================================================================================
+
+ID   Headline                                      Model   Total Non-M Struct  S-NM Impact  I-NM   Ghost  Incl  StrAg  ImpEq   SEI
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1    Wimborne trip to Plymouth postponed           Groq        0     0      0     0      0     0 4/4    0.0    0.0    0.0  50.0
+                                                   Claude      0     0      0     0      0     0 4/4      —      —      —     —
+
+3    Diverse Abilities launch new adult soft pla   Groq        1     1      0     0      1     1 3/4   50.0    0.0   25.0  22.5
+                                                   Claude      1     1      0     0      1     1 3/4      —      —      —     —
+
+4    Rayan excited to start Premier League chall   Groq        2     0      1     0      1     0 4/4    0.0    0.0    0.0   0.0
+                                                   Claude      2     0      1     0      1     0 3/4      —      —      —     —
+
+5    Update: Investigation into Elon Musk’s X fo   Groq        3     1      2     1      1     0 2/4   33.3   50.0   50.0  45.0
+                                                   Claude      3     1      2     1      1     0 2/4      —      —      —     —
+
+8    Crowds gathered in Bournemouth town centre    Groq        3     1      2     0      1     0 1/4    0.0    0.0   75.0  22.5
+                                                   Claude      3     0      2     0      1     0 1/4      —      —      —     —
+
+9    Ben Edgell praises Poole Town FC partnershi   Groq        1     0      0     0      1     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      1     0      0     0      1     0 3/4      —      —      —     —
+
+11   Bournemouth councillor relieved over new Li   Groq        1     0      0     0      1     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      1     0      0     0      1     0 3/4      —      —      —     —
+
+12   20 year-old man on trial for manslaughter f   Groq        0     0      1     1      0     0 3/4   50.0  100.0   25.0  62.5
+                                                   Claude      1     1      1     1      0     0 3/4      —      —      —     —
+
+13   Why young people should join orchestra        Groq        2     1      0     0      2     1 3/4   50.0    0.0   25.0  32.5
+                                                   Claude      2     1      0     0      2     1 3/4      —      —      —     —
+
+14   Poole trampoline athlete Jared Smith sets s   Groq        2     0      0     0      2     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      2     0      0     0      2     0 3/4      —      —      —     —
+
+15   When education takes a stand                  Groq        2     1      0     0      2     1 3/4   50.0    0.0   25.0  32.5
+                                                   Claude      2     1      0     0      2     1 3/4      —      —      —     —
+
+16   Iford to hold women’s international driving   Groq        1     1      0     0      1     1 3/4   50.0    0.0   25.0  32.5
+                                                   Claude      1     1      0     0      1     1 3/4      —      —      —     —
+
+17   Wonderkid Mayes hits record breaking 191      Groq        0     0      0     0      0     0 4/4    0.0    0.0    0.0   0.0
+                                                   Claude      0     0      0     0      0     0 4/4      —      —      —     —
+
+18   Bournemouth man charged after fight breaks    Groq        1     1      1     0      0     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      1     0      1     0      0     0 3/4      —      —      —     —
+
+21   Nine arrests made in Dorset over organised    Groq        1     1      1     1      0     0 3/4   50.0  100.0   25.0  62.5
+                                                   Claude      1     1      1     1      0     0 3/4      —      —      —     —
+
+22   Christchurch chef reveals excitement over n   Groq        2     0      0     0      2     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      2     0      0     0      2     0 3/4      —      —      —     —
+
+23   Cherries closing in on deal for Mandas        Groq        0     0      1     0      0     0 4/4    0.0    0.0    0.0   0.0
+                                                   Claude      1     0      1     0      0     0 3/4      —      —      —     —
+
+24   AFC Bournemouth’s development squad reach l   Groq        1     0      0     0      1     0 3/4    0.0    0.0   25.0  50.0
+                                                   Claude      1     0      0     0      1     0 3/4      —      —      —     —
+
+25   Q Sports Bar in Boscombe is redeveloping th   Groq        1     0      0     0      2     0 3/4    0.0    0.0   25.0   7.5
+                                                   Claude      1     0      0     0      1     0 3/4      —      —      —     —
+
+26   UEFA champions league play off draw fixture   Groq        0     0      0     0      0     0 4/4    0.0    0.0    0.0   0.0
+                                                   Claude      0     0      0     0      0     0 4/4      —      —      —     —
+
+30   Floods continue after Storm Chandra hits Bo   Groq        0     0      2     0      0     0 2/4    0.0    0.0   50.0  15.0
+                                                   Claude      0     0      0     0      0     0 4/4      —      —      —     —
+
+================================================================================================================================================================

@@ -1,0 +1,94 @@
+================================================================================
+SEI IMR VALIDATION - FILE MANIFEST
+================================================================================
+Generated: 2026-02-03
+
+All files created during SEI Inter-Model Reliability validation comparing
+Claude (Model B) against Groq/Llama (Model A) baseline.
+
+================================================================================
+PRIMARY DATA FILES (Claude Extractions)
+================================================================================
+data/imr_sei_claude_batch_1.json    Articles 1-5 (Wimborne - Elon Musk)
+data/imr_sei_claude_batch_2.json    Articles 6-10 (Young Cherries - Veganuary)
+data/imr_sei_claude_batch_3.json    Articles 11-15 (Lidl - College strikes)
+data/imr_sei_claude_batch_4.json    Articles 16-20 (Iford golf - Raducanu)
+data/imr_sei_claude_batch_5.json    Articles 21-25 (Nine arrests - Q Sports Bar)
+data/imr_sei_claude_batch_6.json    Articles 26-30 (UEFA draw - Floods)
+
+Total: 30 articles extracted independently by Claude without reading Groq baseline
+
+================================================================================
+COMPARISON AND ANALYSIS FILES
+================================================================================
+data/imr_sei_comparison_full.json   Consolidated comparison dataset with all
+                                     21 both-scored articles including:
+                                     - Absent perspectives agreement
+                                     - Story type agreement
+                                     - Source count comparison
+                                     - Summary statistics
+
+data/imr_sei_final_report.txt       Initial comprehensive report (all 30 articles)
+                                     Created during batches 1-6 processing
+
+data/imr_sei_final_summary.txt      Final summary with corrected metrics
+                                     Based on 21 comparable articles
+                                     Includes observation counts for three-level
+                                     reporting
+
+/tmp/sei_imr_batches_4_6_comparison.txt  Detailed article-by-article breakdown
+                                          for batches 4-6 with side-by-side
+                                          comparisons
+
+================================================================================
+BASELINE DATA (Pre-existing)
+================================================================================
+data/imr_sei_groq_baseline.json     Groq/Llama production baseline
+                                     Note: Articles #6, #7 have empty 
+                                     groq_response dicts (extraction failures)
+
+================================================================================
+TEMPORARY EXTRACTION FILES
+================================================================================
+/tmp/article2_shorthand.txt         Diverse Abilities Shorthand extraction
+/tmp/article10_veganuary.txt        Veganuary Shorthand extraction
+/tmp/article15_shorthand.txt        College strikes Shorthand extraction
+/tmp/article29_shorthand.txt        Verwood preview Shorthand extraction
+
+================================================================================
+KEY FINDINGS SUMMARY
+================================================================================
+Comparable articles:        21 (out of 30 total)
+Absent perspectives:        95.2% agreement (20/21)
+Story type:                 95.2% agreement (20/21)
+Source extraction:          95.2% agreement (20/21)
+Gender classification:      100% agreement (15/15 with sources)
+Role classification:        100% agreement (15/15 with sources)
+
+Overall IMR:                96.2% average across core metrics
+
+Data quality issues:        2 Groq extraction failures (#6, #7)
+                            1 Groq source extraction error (#12)
+
+================================================================================
+USAGE NOTES
+================================================================================
+1. All Claude batch files contain complete SEI extractions with:
+   - Story classification (STANDARD/EXPERIENTIAL)
+   - Beat context (gendered or neutral)
+   - Quoted sources with gender and STRUCTURAL/IMPACT roles
+   - Stakeholder mapping (4 groups per article)
+   - SEI inputs for scoring
+
+2. imr_sei_comparison_full.json is the master comparison file for:
+   - Statistical analysis
+   - Generating three-level reporting
+   - Calculating inter-model reliability metrics
+
+3. Groq baseline has known data quality issues:
+   - Articles #6, #7: Empty groq_response (processing failures)
+   - Article #12: Missed Dr Jefferies source extraction
+
+4. All files use consistent URL identifiers for cross-referencing
+
+================================================================================
