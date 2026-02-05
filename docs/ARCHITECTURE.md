@@ -308,7 +308,8 @@ const merged = sei_articles.map(article => ({
 | v8.2 | 22 Jan | Mobile responsiveness |
 | v4.3-pre-live | 4 Feb | Staff dashboard complete |
 | v4.4-live | 5 Feb | 🔴 **PRODUCTION DEPLOYMENT** |
-| v4.5-cleanup | TBD | Archive old files |
+| v4.5-pre-cleanup | 5 Feb | Checkpoint before cleanup |
+| v4.5-cleanup | 5 Feb | ✅ **Archived 75 development files** |
 
 ---
 
@@ -318,8 +319,9 @@ const merged = sei_articles.map(article => ({
 - ✅ Newsday scraping complete (312 articles)
 - ✅ All workflows disabled
 - ✅ Dashboard live at chindusree.github.io/buzz-metrics
+- ✅ Repository cleanup complete (75 files archived)
 - ⏸️ No further automated updates planned
-- 📦 Cleanup pending (see CLEANUP_AUDIT.md)
+- 📦 Archive accessible via `archive/` folders and git tags
 
 ---
 
