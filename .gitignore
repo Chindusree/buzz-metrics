@@ -4,5 +4,3 @@ __pycache__/
 .DS_Store
 .env
 data/comparison.json
-.env
-data/comparison.json

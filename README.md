@@ -76,6 +76,20 @@ buzz-metrics/
 
 See [SCOPE_OF_WORK.md](docs/SCOPE_OF_WORK.md) for complete component inventory (216 files, ~238K lines).
 
+### Archived Files
+
+Development artifacts from the January 2026 build have been archived:
+- [HTML prototypes](docs/archive/development/) — 11 dashboard iterations
+- [Staff versions](docs/archive/staff-versions/) — 3 staff dashboard variants
+- [Old backups](docs/archive/backups/) — 2 pre-deployment backups
+- [Development notes](docs/archive/development-notes/) — Sprint plans, handover docs
+- [Debug scripts](scraper/archive/debug/) — 15 debugging scripts
+- [Test scripts](scraper/archive/sprint-tests/) — 16 sprint test files
+- [Migration scripts](scraper/archive/migrations/) — 12 one-time operations
+- [Experimental scripts](scraper/archive/experimental/) — 11 experimental features
+
+All archived files remain accessible in git history and in `archive/` folders.
+
 ---
 
 ## Setup
