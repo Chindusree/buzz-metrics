@@ -57,7 +57,10 @@ Three JSON files, merged on frontend:
 | `metrics_ssi.json` | ORI scores (legacy filename) |
 | `metrics_bns.json` | Breaking news scores |
 
-See [ADR-001](docs/decisions/001-data-architecture.md) for rationale.
+**Technical documentation:**
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — Complete system design, data flow, and file structure
+- [ADR-001](docs/decisions/001-data-architecture.md) — Why separate JSON files
+- [ADR-002](docs/decisions/002-ssi-ori-naming.md) — Why SSI filenames remain unchanged
 
 ---
 
@@ -70,6 +73,8 @@ buzz-metrics/
 ├── analysis/          # Investigation reports
 └── .github/workflows/ # Automation
 ```
+
+See [SCOPE_OF_WORK.md](docs/SCOPE_OF_WORK.md) for complete component inventory (216 files, ~238K lines).
 
 ---
 
