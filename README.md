@@ -1,49 +1,129 @@
-# BUzz Metrics Scraper
+# BUzz Metrics
 
-Automated tool to scrape articles from BUzz (https://buzz.bournemouth.ac.uk/), extract quality metrics, and display on a dashboard.
+A prototype analytics dashboard for Bournemouth University's student newsroom. Developed as part of research into automated journalism quality measurement.
 
-## Purpose
-Track student journalism output for teaching and editorial feedback.
+**[Live Dashboard](https://chindusree.github.io/buzz-metrics/)**
 
-## Metrics Extracted
-- Headline, Author, Date, Time
-- Category (Sport/News/Features)
-- Word count
-- Quoted source count (with evidence trail)
-- Content type (standard/shorthand)
-- **SEI** (Source Evidence Index) - Citation quality score
-- **SSI** (Story Substance Index) - Reporting depth and originality
-- **BNS** (Breaking News Score) - Speed vs professional outlets
+---
+
+## What This Is
+
+An experimental system that extracts and visualises sourcing patterns from student journalism. The dashboard allows filtering and exploration of article data — it does not grade individual student work.
+
+**Philosophy:** Guidance, not grading.
+
+---
+
+## The Three Indices
+
+| Index | Measures |
+|-------|----------|
+| **SEI** (Source Equity Index) | Sourcing diversity — who speaks, who explains, who's absent |
+| **ORI** (Original Reporting Index) | Newsgathering effort — original reporting vs churnalism |
+| **BNS** (Breaking News Score) | Speed to audience vs professional outlets |
+
+---
+
+## Dataset
+
+January 2026 pilot: 312 articles from BUzz newsdays.
+
+- **SEI:** 266 scored, 46 exempt (match reports, court registers, breaking news, live blogs)
+- **ORI:** 295 scored, 17 exempt (video/audio only)
+- **BNS:** 17 breaking news articles
+
+---
+
+## Validation
+
+A 10% stratified sample was validated using Inter-Model Reliability (IMR) — comparing outputs from two independent LLMs (Groq/Llama and Anthropic/Claude).
+
+| Index | Sample | Agreement |
+|-------|--------|-----------|
+| SEI | N=31 | 84.5% |
+| ORI | N=30 | 85.0% |
+
+This validates extraction consistency, not accuracy of the underlying methodology.
+
+---
 
 ## Architecture
-- `scraper/scrape.py` - Primary extraction (regex-based)
-- `scraper/verify.py` - Secondary verification (spaCy NLP)
-- `scraper/compare.py` - Cross-checks and flags discrepancies
-- `scraper/sei_production.py` - Source Evidence Index scoring
-- `scraper/ssi_score.py` - Story Substance Index scoring (v2.1)
-- `data/` - JSON output files (see Data Files below)
-- `docs/` - Dashboard (GitHub Pages)
 
-## Data Files
+Three JSON files, merged on frontend:
 
-| File | Contents | Updated By |
-|------|----------|------------|
-| `metrics_sei.json` | Base article data + SEI scores | sei_daily.yml (1pm, 4pm) |
-| `metrics_ssi.json` | SSI scores and components | ssi_daily.yml |
-| `metrics_bns.json` | BNS scores (BREAKING only) | TBD |
+| File | Contents |
+|------|----------|
+| `metrics_sei.json` | Article metadata + SEI scores |
+| `metrics_ssi.json` | ORI scores (legacy filename) |
+| `metrics_bns.json` | Breaking news scores |
 
-**Why separate files?** See [ADR-001: Data Architecture](docs/decisions/001-data-architecture.md)
+See [ADR-001](docs/decisions/001-data-architecture.md) for rationale.
+
+---
+
+## Repository Structure
+```
+buzz-metrics/
+├── scraper/           # Python scripts + LLM prompts
+├── data/              # Production JSON
+├── docs/              # GitHub Pages dashboard
+├── analysis/          # Investigation reports
+└── .github/workflows/ # Automation
+```
+
+---
 
 ## Setup
+
 ```bash
-cd scraper
-python3 -m venv venv
-source venv/bin/activate
+git clone https://github.com/Chindusree/buzz-metrics.git
+cd buzz-metrics/scraper
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
 ```
 
-## Usage
-```bash
-python scrape.py
+---
+
+## Methodology
+
+Working papers (in preparation):
+
+- **SEI:** *Who speaks, who explains, who's absent: A context-adaptive index for sourcing integrity in journalism*
+- **ORI:** *Measuring newsgathering labour in student journalism*
+- **IMR:** *Inter-Model Reliability: A consistency protocol for automated content analysis*
+
+---
+
+## Limitations
+
+- **Prototype:** Research tool, not production system
+- **Gender inference:** Name-based, limited beyond binary
+- **Validation:** Sample-based, not comprehensive
+- **Scope:** Measures sourcing patterns, not writing quality or news judgment
+
+---
+
+## Citation
+
+```bibtex
+@misc{buzzmetrics2026,
+  author = {Sreedharan, Chindu},
+  title = {BUzz Metrics: Automated Quality Analytics for Student Journalism},
+  year = {2026},
+  institution = {Bournemouth University},
+  url = {https://github.com/Chindusree/buzz-metrics}
+}
 ```
+
+---
+
+## License
+
+All rights reserved. This repository is public for transparency and academic review.
+
+For licensing enquiries, contact csreedharan@bournemouth.ac.uk
+
+---
+
+## Acknowledgements
+
+Developed at Bournemouth University.
