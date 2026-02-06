@@ -75,7 +75,7 @@ buzz-metrics/
 └── .github/workflows/ # Automation
 ```
 
-See [SCOPE_OF_WORK.md](docs/SCOPE_OF_WORK.md) for complete component inventory (216 files, ~238K lines).
+See [SCOPE_OF_WORK.md](docs/SCOPE_OF_WORK.md) for complete component inventory (216 files, 10,630 production lines).
 
 ### Archived Files
 

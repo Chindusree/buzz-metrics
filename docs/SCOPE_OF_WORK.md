@@ -1,13 +1,11 @@
 # BUzz Metrics — Scope of Work Summary
 
 **Project Duration:** January 13 - February 5, 2026 (23 consecutive days)
-**Development Hours:** ~230 hours (10 hours/day, including weekends)
+**Development Hours:** 230 hours intensive work
 **Final Deployment:** 2026-02-05 (v4.4-live)
-**Production Codebase:** ~10,600 lines of code (6 Python scripts, 2 dashboards, 3 prompts)
-**Total Development:** ~23,000 lines written (including 12,500 lines of test/debug code)
+**Production Codebase:** 10,630 lines of code (6 Python scripts, 2 dashboards, 3 prompts)
+**Total Development:** 23,000 lines written (including 12,500 lines of test/debug code)
 **Total Components:** 216 files (code, data, documentation)
-
-*Equivalent to 6 weeks of full-time work (40hr/week) compressed into 23 days.*
 
 ---
 
@@ -21,14 +19,14 @@
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  Backend Processing (6 Python scripts)                          │
-│  ├─ scrape.py ............................ 132,000 lines        │
-│  ├─ verify.py ............................ 6,200 lines          │
-│  ├─ compare.py ........................... 15,000 lines         │
-│  ├─ reconcile.py ......................... 14,000 lines         │
-│  ├─ sei_production.py .................... 18,000 lines         │
-│  └─ ssi_score.py (ORI) ................... 23,000 lines         │
+│  ├─ scrape.py ............................ 3,453 lines          │
+│  ├─ verify.py ............................ 209 lines            │
+│  ├─ compare.py ........................... 376 lines            │
+│  ├─ reconcile.py ......................... 427 lines            │
+│  ├─ sei_production.py .................... 522 lines            │
+│  └─ ssi_score.py (ORI) ................... 675 lines            │
 │                                          ─────────────           │
-│                                          208,200 lines           │
+│                                          5,662 lines             │
 │                                                                  │
 │  LLM Scoring Prompts (3 markdown files)                         │
 │  ├─ sei_prompt_template.md                                      │
@@ -36,8 +34,8 @@
 │  └─ ngi_prompt_v2.2.md                                          │
 │                                                                  │
 │  Frontend Dashboards (2 HTML applications)                      │
-│  ├─ index.html .........................  101,000 bytes         │
-│  └─ staff-test.html ....................  101,000 bytes         │
+│  ├─ index.html .........................  2,230 lines           │
+│  └─ staff-test.html ....................  2,230 lines           │
 │                                                                  │
 │  Data Outputs (85 JSON files)                                   │
 │  ├─ metrics_sei.json ................... 266 articles scored   │
@@ -111,8 +109,9 @@
 ### Code Volume
 | Metric | Value |
 |--------|-------|
-| **Total Python code** | ~210,000 lines |
-| **Frontend code** | ~200KB (HTML/CSS/JS) |
+| **Production Python** | 5,662 lines (6 scripts) |
+| **Frontend code** | 4,460 lines (2 dashboards) |
+| **LLM prompts** | 508 lines (3 markdown files) |
 | **Data generated** | 85 JSON files (~50MB) |
 | **Git commits** | 150+ commits |
 | **Git tags** | 15+ version tags |
@@ -307,7 +306,7 @@ DOCUMENTATION LAYER
 | **Documentation** | ~3,000 | Markdown files (ADRs, guides, reports) |
 | **Development Total** | **~15,500** | **Supporting development work** |
 
-**Grand Total Code Written:** ~23,000 lines (production + development)
+**Grand Total Code Written:** 23,000 lines (production + development)
 
 **Note:** The 216 total files include 85 JSON data files (generated output, not code written).
 
@@ -316,11 +315,10 @@ DOCUMENTATION LAYER
 **Timeline:** January 13 - February 5, 2026
 **Duration:** 23 consecutive days (including weekends)
 **Total hours:** 230 hours (10 hours/day sustained effort)
-**Equivalent workload:** 6 weeks full-time (40hr/week) or 29 standard workdays
 
 | Phase | Duration | Components Built |
 |-------|----------|------------------|
-| **Scraping** | 3 days | 6 scripts, 132K lines |
+| **Scraping** | 3 days | 6 scripts (scrape, verify, compare) |
 | **SEI Scoring** | 6 days | 3 scripts, 1 prompt, validation |
 | **ORI Scoring** | 4 days | 2 scripts, 3 prompts, validation |
 | **Frontend** | 8 days | 17 iterations, 2 dashboards |
@@ -404,9 +402,10 @@ DOCUMENTATION LAYER
 
 ## Conclusion
 
-The BUzz Metrics project represents **~30 days of intensive development** resulting in:
+The BUzz Metrics project represents **23 days of intensive development** (230 hours) resulting in:
 - **216 files** across 5 layers (scraping, scoring, frontend, automation, docs)
-- **~238,000 lines of code** (Python, HTML/CSS/JS, Markdown)
+- **10,630 lines of production code** (Python, HTML/CSS/JS, prompts)
+- **23,000 lines total** (including 12,500 lines of test/debug code)
 - **312 articles analyzed** with 3 quality indices
 - **85% validation confidence** via Inter-Model Reliability
 
