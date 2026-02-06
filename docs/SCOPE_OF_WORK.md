@@ -3,7 +3,9 @@
 **Project Duration:** January 13 - February 5, 2026 (23 consecutive days)
 **Development Hours:** ~230 hours (10 hours/day, including weekends)
 **Final Deployment:** 2026-02-05 (v4.4-live)
-**Total Components Built:** 216 files (~238,000 lines of code)
+**Production Codebase:** ~10,600 lines of code (6 Python scripts, 2 dashboards, 3 prompts)
+**Total Development:** ~23,000 lines written (including 12,500 lines of test/debug code)
+**Total Components:** 216 files (code, data, documentation)
 
 *Equivalent to 6 weeks of full-time work (40hr/week) compressed into 23 days.*
 
@@ -286,15 +288,28 @@ DOCUMENTATION LAYER
 | **Other** | 14 | 6% |
 | **TOTAL** | **216** | **100%** |
 
-### Lines of Code (Estimated)
+### Lines of Code Written
 
-| Language | Lines | Percentage |
-|----------|-------|------------|
-| **Python** | 210,000 | 88% |
-| **HTML/CSS/JS** | 20,000 | 8% |
-| **Markdown** | 8,000 | 3% |
-| **YAML** | 200 | <1% |
-| **TOTAL** | **~238,000** | **100%** |
+**Production Codebase (actively used):**
+
+| Component | Lines | Purpose |
+|-----------|-------|---------|
+| **Python backend** | 5,662 | Scraping, validation, SEI/ORI scoring |
+| **HTML/CSS/JS frontend** | 4,460 | Live + dev dashboards |
+| **LLM prompts** | 508 | SEI/ORI scoring instructions |
+| **Production Total** | **10,630** | **Active production system** |
+
+**Development Code (archived):**
+
+| Component | Lines | Purpose |
+|-----------|-------|---------|
+| **Test/Debug scripts** | 12,553 | Development, testing, migrations |
+| **Documentation** | ~3,000 | Markdown files (ADRs, guides, reports) |
+| **Development Total** | **~15,500** | **Supporting development work** |
+
+**Grand Total Code Written:** ~23,000 lines (production + development)
+
+**Note:** The 216 total files include 85 JSON data files (generated output, not code written).
 
 ### Development Effort
 
