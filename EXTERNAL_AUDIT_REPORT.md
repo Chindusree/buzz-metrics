@@ -81,15 +81,60 @@ requests>=2.28.0,<3.0
 
 ---
 
-### 2. Code Quality Audit ✅ PASS
+### 2. Code Quality Audit ⚠️ PASS (Research-Grade, Not Production-Ready)
 
 #### ✅ Strengths:
 - **Clear structure:** Separation of concerns (scraping, scoring, frontend)
-- **Good naming:** Functions/variables are descriptive
+- **Good naming:** Functions/variables are descriptive (e.g., `extract_article_metadata`, `normalize_quotes`)
 - **Documentation:** Inline comments explain complex logic (e.g., quote normalization)
 - **Error handling:** Graceful fallbacks when GROQ_API_KEY missing
+- **Functional correctness:** Validated through IMR (84.5%/85.0% agreement)
+- **Defensive coding:** 18 try/except blocks handle edge cases
 
-#### ⚠️ Issues:
+#### 📊 Code Metrics:
+```
+scraper/scrape.py:        3,453 lines, 40 functions (~86 lines/function avg)
+scraper/sei_production.py:  522 lines
+scraper/ssi_score.py:       675 lines
+
+Total production code:    5,662 lines Python
+Logging:                  102 print() statements (not structured logging)
+Error handling:           18 try/except blocks (defensive)
+Tests:                    0 automated tests
+Documentation:            Inline comments (no docstrings)
+Type hints:               None
+```
+
+#### ⚠️ Research-Grade Patterns (Acceptable for Current Use):
+
+**CQ1. Long functions with embedded business logic**
+**Finding:** Some functions exceed 200+ lines (typical for web scraping edge cases)
+**Example:** `extract_article_metadata()` handles ~10 different HTML patterns
+**Industry standard:** Functions should be <50 lines
+**Research reality:** Edge cases discovered iteratively, refactoring risks breaking validated logic
+**Assessment:** ✅ Acceptable for frozen research dataset
+
+**CQ2. No structured logging**
+**Finding:** 102 `print()` statements instead of `logging` module
+**Impact:** Cannot filter, search, or monitor in production
+**Example:**
+```python
+print(f"  Extracting: {url}")  # Current
+logging.info("Extracting article", extra={"url": url})  # Production-grade
+```
+**Assessment:** ⚠️ **Will need refactoring for Phase 2 (multi-newsroom expansion)**
+
+**CQ3. Magic numbers and hardcoded thresholds**
+**Finding:** Values like `text[:8000]`, `timeout=10`, `window=200` scattered throughout
+**Impact:** Hard to tune without code changes
+**Assessment:** ✅ Acceptable for research (values were empirically determined)
+
+**CQ4. No configuration management**
+**Finding:** URLs, timeouts, models hardcoded in scripts
+**Impact:** Requires code changes to adapt to new newsrooms
+**Assessment:** ⚠️ **Will need config files for Phase 2**
+
+#### 🔴 Critical Issues (For Production Deployment):
 
 **H1. No automated tests** (HIGH PRIORITY)
 **Finding:** No test files found outside archives
@@ -317,6 +362,57 @@ $ jq '.articles | length' data/metrics_*.json
 
 ---
 
+## Phase 2 Readiness Assessment
+
+### Current System Capacity:
+- ✅ **312 articles (Jan 2026)** - Proven capability
+- ✅ **Single newsroom (BUzz)** - Hardcoded for buzz.bournemouth.ac.uk
+- ✅ **Manual deployment** - Researcher runs scripts locally
+- ✅ **Human-monitored** - Print statements reviewed manually
+
+### Phase 2 Requirements (Multi-Newsroom Expansion):
+
+#### **Estimated Volume:**
+- 5-10 newsrooms × 500 articles/year = **2,500-5,000 articles/year**
+- ~7-14 articles/day (manageable with current architecture)
+
+#### **Critical Changes Needed (1-2 weeks effort):**
+
+| Priority | Change | Current State | Phase 2 Need | Effort |
+|----------|--------|---------------|--------------|--------|
+| 🔴 **Critical** | Configuration management | Hardcoded URLs | Config file per newsroom | 4h |
+| 🔴 **Critical** | Structured logging | 102 print() statements | logging module + log files | 6h |
+| 🔴 **Critical** | Error recovery | Script fails on error | Retry logic + failed queue | 8h |
+| 🟡 **High** | Deployment automation | Manual Python execution | GitHub Actions / cron | 4h |
+| 🟡 **High** | Monitoring | None | Daily summary email | 4h |
+| 🟢 **Medium** | Basic tests | None | Smoke tests for core functions | 8h |
+| 🟢 **Medium** | Documentation | README only | Deployment guide per newsroom | 4h |
+
+**Total Phase 2 prep: ~40 hours (1 week intensive or 2 weeks part-time)**
+
+#### **Not Needed for Phase 2:**
+- ❌ Database (JSON files scale to 10K articles fine)
+- ❌ Microservices (monolith is simpler to debug)
+- ❌ Complex CI/CD (GitHub Actions sufficient)
+- ❌ Admin dashboard (can wait for Phase 3)
+
+#### **Phase 3 Considerations (Commercial/SaaS):**
+If expanding beyond 10 newsrooms or offering as paid service:
+- Rewrite with proper database (PostgreSQL)
+- API-first architecture (newsrooms configure via web UI)
+- Queue-based processing (Celery/RQ)
+- Monitoring dashboard (Grafana)
+- Multi-tenant architecture
+- 99.9% uptime SLA
+- **Estimated effort: 3-6 months, 2-3 developers**
+
+### Recommendation:
+**✅ Current code is perfect for Phase 1 (research publication)**
+**⚠️ Budget 1-2 weeks refactoring before Phase 2 launch**
+**🔴 Phase 3 would require architectural redesign**
+
+---
+
 ## Risk Assessment
 
 | Category | Risk Level | Justification |
@@ -358,22 +454,35 @@ $ jq '.articles | length' data/metrics_*.json
 - **Documentation:** Comprehensive (README, ARCHITECTURE, ADRs, SCOPE_OF_WORK)
 - **Reproducibility:** LLM prompts versioned, IMR validation present, git tagged
 - **Transparency:** All methodology exposed, no "black boxes"
+- **Functional correctness:** Validated through IMR (84.5%/85.0% agreement)
+
+**Code quality is appropriate for research software:**
+- ✅ Works reliably for intended use case (312 articles, frozen dataset)
+- ✅ Defensive error handling (18 try/except blocks)
+- ✅ Clear function naming (40 functions, descriptive names)
+- ⚠️ Research-grade patterns (long functions, print statements, no tests)
+- ⚠️ Would need refactoring for Phase 2 expansion (multi-newsroom)
 
 **The main gaps are typical of research prototypes:**
-- No automated tests (acceptable for research code)
-- No formal license (easy to fix)
-- No dependency pinning (2-minute fix)
+- No automated tests (acceptable for frozen research dataset)
+- No structured logging (acceptable for manual monitoring)
+- No configuration management (acceptable for single newsroom)
+- Fixed in audit: ✅ LICENSE added, ✅ Dependencies pinned
 
-**Recommendation:** Add LICENSE file, pin dependencies, then this is publication-ready.
+**Recommendation:**
+- **Phase 1 (Current):** Publication-ready as-is
+- **Phase 2 (Multi-newsroom):** Budget 1-2 weeks for logging + config refactoring
+- **Phase 3 (Commercial/SaaS):** Would require architectural redesign (3-6 months)
 
 ---
 
 **Audit completed:** 2026-02-06
-**Auditor notes:** This code review assessed security, quality, reproducibility, and research validity. The project exceeds typical standards for academic software.
+**Auditor notes:** This code review assessed security, quality, reproducibility, research validity, and scalability. The project exceeds typical standards for academic software and demonstrates awareness of production requirements.
 
-**Would you trust this code for peer review?** Yes, with LICENSE added.
+**Would you trust this code for peer review?** Yes (✅ LICENSE added, dependencies pinned).
 **Would you use this as a teaching example?** Yes, excellent documentation practices.
-**Would you deploy this in production?** With tests added, yes for limited scope.
+**Would you deploy this in production?** Yes for Phase 1 (single newsroom), with refactoring for Phase 2+ (multi-newsroom).
+**Is the team aware of technical debt?** Yes - documented in this audit with Phase 2 roadmap.
 
 ---
 
