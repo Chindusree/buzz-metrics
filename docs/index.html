@@ -791,7 +791,7 @@
         <div class="section-header">
             <h2 class="section-title">Contributors</h2>
         </div>
-        <div>
+        <div class="toggle-btns">
             <button class="toggle-btn active">Today</button>
             <button class="toggle-btn">This Week</button>
         </div>
@@ -1917,22 +1917,29 @@
 
         let articlesToUse = [];
         const currentView = document.querySelector('#contributors .toggle-btn.active')?.textContent || 'Today';
+        const toggleContainer = document.querySelector('#contributors .toggle-btns');
 
-        // When "All Dates" is selected, show all contributors
+        // When "All Dates" is selected, hide toggle buttons and show all contributors
         if (selectedDate === 'all') {
             articlesToUse = metricsData.articles;
-        } else if (currentView === 'Today') {
-            articlesToUse = metricsData.articles.filter(a => a.date === selectedDate);
+            if (toggleContainer) toggleContainer.style.display = 'none';
         } else {
-            // This Week: last 7 days ending on selectedDate
-            const endDate = new Date(selectedDate + 'T00:00:00');
-            const startDate = new Date(endDate);
-            startDate.setDate(startDate.getDate() - 6);
+            // Show toggle buttons for specific dates
+            if (toggleContainer) toggleContainer.style.display = 'block';
 
-            articlesToUse = metricsData.articles.filter(a => {
-                const articleDate = new Date(a.date + 'T00:00:00');
-                return articleDate >= startDate && articleDate <= endDate;
-            });
+            if (currentView === 'Today') {
+                articlesToUse = metricsData.articles.filter(a => a.date === selectedDate);
+            } else {
+                // This Week: last 7 days ending on selectedDate
+                const endDate = new Date(selectedDate + 'T00:00:00');
+                const startDate = new Date(endDate);
+                startDate.setDate(startDate.getDate() - 6);
+
+                articlesToUse = metricsData.articles.filter(a => {
+                    const articleDate = new Date(a.date + 'T00:00:00');
+                    return articleDate >= startDate && articleDate <= endDate;
+                });
+            }
         }
 
         console.log('Contributors view:', currentView, 'Articles:', articlesToUse.length);
