@@ -28,14 +28,18 @@ INPUT LAYER
 │  BUzz Newsroom (WordPress)                                   │
 │  └─ 312 articles (Jan 2026)                                  │
 │     ├─ News (350w target)                                    │
-│     └─ Features (800w target)                                │
+│     ├─ Features (800w target)                                │
+│     └─ Shorthand embeds (longform multimedia stories)        │
 └──────────────────────────────────────────────────────────────┘
           ↓
 ┌──────────────────────────────────────────────────────────────┐
 │  SCRAPING LAYER (Python + BeautifulSoup)                     │
-│  ├─ scrape.py (132K) ← Main scraper                          │
-│  ├─ verify.py (6.2K) ← Data validation                       │
-│  └─ compare.py (15K) ← Reconciliation                        │
+│  ├─ scrape.py (3,453 lines) ← Main scraper                   │
+│  │   ├─ WordPress HTML extraction (BeautifulSoup)            │
+│  │   ├─ Shorthand iframe detection                           │
+│  │   └─ Shorthand JSON API fallback                          │
+│  ├─ verify.py (209 lines) ← Data validation                  │
+│  └─ compare.py (376 lines) ← Reconciliation                  │
 │                                                               │
 │  Output: data/metrics_verified.json                          │
 └──────────────────────────────────────────────────────────────┘

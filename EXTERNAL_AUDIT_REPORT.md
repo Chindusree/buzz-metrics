@@ -90,6 +90,7 @@ requests>=2.28.0,<3.0
 - **Error handling:** Graceful fallbacks when GROQ_API_KEY missing
 - **Functional correctness:** Validated through IMR (84.5%/85.0% agreement)
 - **Defensive coding:** 18 try/except blocks handle edge cases
+- **Shorthand extraction:** Solves iframe embedding challenge with fallback to Shorthand JSON API (see SCOPE_OF_WORK.md §1 Technical Challenges)
 
 #### 📊 Code Metrics:
 ```
