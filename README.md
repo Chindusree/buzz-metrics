@@ -26,7 +26,8 @@ An experimental system that extracts and visualises sourcing patterns from stude
 
 ## Dataset
 
-January 2026 pilot: 312 articles from BUzz newsdays.
+Developed: January 13 - February 5, 2026
+Data: 312 articles from BUzz newsdays (January 2026)
 
 - **SEI:** 266 scored, 46 exempt (match reports, court registers, breaking news, live blogs)
 - **ORI:** 295 scored, 17 exempt (video/audio only)
